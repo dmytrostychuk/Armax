@@ -438,3 +438,18 @@ body {
 .footer {
   margin-top: auto;
 }
+
+#input10,
+#input11 {
+  height: 20px;
+  border: 2px solid black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 20px;
+}
