@@ -419,13 +419,18 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url("../img/view.jpg");
   font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(17, 193, 199, 0.7882352941);
 }
 
 .container {
   margin: 0 auto;
   max-width: 1200px;
+  margin-top: 30px;
 }
 
 .section {
@@ -439,17 +444,58 @@ body {
   margin-top: auto;
 }
 
-#input10,
-#input11 {
-  height: 20px;
-  border: 2px solid black;
-}
-
 form {
   display: flex;
   flex-direction: column;
 }
 
-label {
+.calc__sheet,
+.calc__profile-pipe {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.disabled {
+  display: none;
+}
+
+.metal {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
   margin-bottom: 20px;
+}
+
+label {
+  position: relative;
+  margin-bottom: 10px;
+  width: 300px;
+  font-size: 18px;
+}
+
+label > input {
+  position: absolute;
+  width: 30%;
+  right: 0;
+}
+
+.result__box {
+  position: relative;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#mass,
+#area {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40%;
+  height: 20px;
+  margin: 0;
+  border: 2px solid black;
 }
