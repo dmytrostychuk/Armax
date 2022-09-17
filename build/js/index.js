@@ -1,43 +1,45 @@
-let calcSheetBtn = document.querySelector('.calc__sheet-btn');
-let calcProfilePipeBtn = document.querySelector('.calc__profile-pipe-btn');
-let calcPipeBtn = document.querySelector('.calc__pipe-btn');
+const calcFormButtons = document.querySelectorAll('.calc-form-button-js');
+const calcForms = document.querySelectorAll('.calc-form-js');
 
-let calcSheet = document.querySelector('.calc__sheet');
-let calcProfilePipe = document.querySelector('.calc__profile-pipe');
-let calcPipe = document.querySelector('.calc__pipe');
-
-calcSheetBtn.addEventListener('click', function () {
-  if (calcSheetBtn) {
-    calcSheet.classList.toggle('active');
-    calcProfilePipe.classList.toggle('disabled');
-  } else {
+function resetCalcForms() {
+  for (let i = 0; i < calcForms.length; i++) {
+    calcForms[i].classList.remove('active');
   }
-});
+}
 
-calcProfilePipeBtn.addEventListener('click', function () {
-  if (calcProfilePipeBtn) {
-    calcProfilePipe.classList.toggle('active');
-    calcProfilePipe.classList.remove('disabled');
-    calcSheet.classList.remove('acive');
-  } else {
-  }
-});
+function addFormActiveClass(type) {
+  Array.from(calcForms)
+    .filter((el) => el.dataset.type === type)[0]
+    .classList.add('active');
+}
 
-calcPipeBtn.addEventListener('click', function () {
-  if (calcPipeBtn) {
-    calcPipe.classList.toggle('active');
-  }
-});
+function handleFormButtonClick(e) {
+  resetCalcForms();
+  addFormActiveClass(e.target.dataset.type);
+}
 
-let length = document.querySelector('#length');
-let width = document.querySelector('#width');
-let weight = document.querySelector('#weight');
-let sheetBtn = document.querySelector('#calc__sheet-button');
+for (let i = 0; i < calcFormButtons.length; i++) {
+  calcFormButtons[i].addEventListener('click', handleFormButtonClick);
+}
 
-sheetBtn.addEventListener('click', function () {
-  mass.innerHTML =
+var length = document.querySelector('.length');
+var width = document.querySelector('.width');
+var weight = document.querySelector('.weight');
+let sheetBtn = document.querySelector('.calc__sheet-button');
+let pipeBtn = document.querySelector('.calc__pipe-button');
+
+sheetBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+  mass.innerHTML = (
     (Number(length.value) * Number(width.value) * Number(weight.value) * 7.85) /
-    1000000;
+    1000000
+  ).toFixed(2);
+  area.innerHTML = (
+    (Number(length.value) * Number(width.value)) /
+    1000000
+  ).toFixed(2);
+});
 
-  area.innerHTML = (Number(length.value) * Number(width.value)) / 1000000;
+pipeBtn.addEventListener('click', function (e) {
+  e.preventDefault();
 });
