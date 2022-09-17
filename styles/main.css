@@ -424,7 +424,7 @@ body {
 
 a {
   text-decoration: none;
-  color: rgba(17, 193, 199, 0.7882352941);
+  color: #000000;
 }
 
 .container {
@@ -490,7 +490,9 @@ label > input {
 }
 
 #mass,
-#area {
+#area,
+#mass1,
+#area1 {
   position: absolute;
   right: 0;
   top: 0;

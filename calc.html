@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title></title>
+	<link rel="stylesheet" href="styles/style-min.css" />
+</head>
+
+<body>
+
+	<header class="header"></header>
+	<main class="main container">
+		<a href="index.html">головна сторінка</a>
+		<div class="calc">
+			<div class="metal">
+				<button class="calc__sheet-btn calc-form-button-js" type="button" data-type="list">Лист</button>
+				<button class="calc__profile-pipe-btn calc-form-button-js" type="button" data-type="pipe">Труба
+					профільна</button>
+				<button class="calc__pipe-btn calc-form-button-js" type="button" data-type="pipe2">Труба</button>
+			</div>
+
+			<div class="calc__sheet calc-form-js" data-type="list">
+				<form action="">
+					<label for="length">Довжина мм
+						<input class="length" type="number">
+					</label>
+					<label for="width">Ширина мм
+						<input class="width" type="number">
+					</label>
+					<label for="weight">Товщина мм
+						<input class="weight" type="number">
+					</label>
+					<div class="result">
+						<div class="result__box">
+							Вага кг
+							<p id="mass">
+							</p>
+						</div>
+						<div class="result__box">
+							Площа м2
+							<p id="area">
+							</p>
+						</div>
+					</div>
+					<input class="calc__sheet-button" type="button" value="Розрахувати">
+
+				</form>
+			</div>
+			<div class="calc__profile-pipe calc-form-js" data-type="pipe">
+				<form action="">
+					<label for="length">Довжина труби мм
+						<input class="length" type="number">
+					</label>
+					<label for="width">Ширина труби мм
+						<input class="width" type="number">
+					</label>
+					<label for="weight">Товщина труби мм
+						<input class="weight" type="number">
+					</label>
+					<div class="result">
+						<div class="result__box">
+							Вага кг
+							<p id="mass1">
+							</p>
+						</div>
+						<div class="result__box">
+							Площа м2
+							<p id="area1">
+							</p>
+						</div>
+					</div>
+					<input class="calc__pipe-button" type="button" value="Розрахувати">
+				</form>
+			</div>
+
+		</div>
+
+	</main>
+	<footer class="footer">
+	</footer>
+	<script src="js/index.js"></script>
+</body>
+
+</html>
