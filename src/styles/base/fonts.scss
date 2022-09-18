@@ -1,9 +1,7 @@
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Regular'), local('Roboto-Regular'),
-    url('../fonts/Roboto-Regular.woff2') format('woff2'),
-    url('../fonts/Roboto-Regular.woff') format('woff'),
-    url('../fonts/Roboto-Regular.ttf') format('ttf');
+  font-family: 'Cera Pro';
+  font-style: medium;
+  font-weight: 500;
+  src: local('Cera Pro'), local('Cera Pro Medium'),
+    url('/src/fonts/Cera\ Pro\ Medium.ttf') format('ttf');
 }

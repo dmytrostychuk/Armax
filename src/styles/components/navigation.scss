@@ -1,0 +1,39 @@
+.nav {
+	position: absolute;
+	top: 60px;
+	opacity: 0;
+	transform: translateY(-200px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+	height: 500vw;
+	background-color: aqua;
+	
+}
+
+.nav__active {
+	
+	transform: translateY(0px);
+	flex-direction: column;
+	opacity: 1;
+}
+
+.nav__logo {
+	z-index: 3;
+}
+
+.nav__list {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	
+}
+
+.nav__list-social {
+	z-index: 3;
+}
+
+.nav__item {
+	padding: 0 5px;
+}

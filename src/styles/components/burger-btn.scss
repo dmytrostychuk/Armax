@@ -1,0 +1,7 @@
+.burger-btn {
+	z-index: 3;
+
+	@include mq ($from:tablet-wide) {
+		display: none;
+	}
+}

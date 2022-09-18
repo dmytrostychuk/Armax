@@ -2,7 +2,96 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: Roboto;
+  font-family: "Cera Pro", sans-serif;
+  font-size: 14px;
+
+  @include mq($from: phablet) {
+    font-size: 16px;
+  }
+
+  @include mq($from: tablet) {
+    font-size: 16px;
+  }
+
+  @include mq($from: tablet-wide) {
+    font-size: 20px;
+  }
+
+  @include mq($from: desktop) {
+    font-size: 24px;
+  }
+}
+
+.header {
+  margin-bottom: 0px;
+
+  @include mq($from: phablet) {
+    margin-bottom: 0px;
+  }
+
+  @include mq($from: tablet) {
+    margin-bottom: 0px;
+  }
+
+  @include mq($from: tablet-wide) {
+    margin-bottom: 0px;
+  }
+
+  @include mq($from: desktop) {
+    margin-bottom: 0px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: map-get($map: $breakpoints, $key: desktop);
+  padding: 0 15px;
+
+  @include mq($from: phablet) {
+    padding: 0 40px;
+  }
+
+  @include mq($from: tablet) {
+    padding: 0 60px;
+  }
+
+  @include mq($from: tablet-wide) {
+    padding: 0 70px;
+  }
+
+  @include mq($from: desktop) {
+    padding: 0 130px;
+  }
+}
+
+.section {
+  margin-bottom: $section-margin-bottom;
+
+  &--no-margin {
+    margin-bottom: 0;
+  }
+
+  @include mq($from: phablet) {
+    margin-bottom: 0;
+  }
+
+  @include mq($from: tablet) {
+    margin-bottom: 0;
+  }
+
+  @include mq($from: tablet-wide) {
+    margin-bottom: 0;
+  }
+
+  @include mq($from: desktop) {
+    margin-bottom: 0;
+  }
+}
+
+
+.lock {
+  overflow: hidden;
+  padding:0 9px;
 }
 
 a {
