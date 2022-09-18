@@ -1,3 +1,14 @@
+let burgerBtn = document.querySelector('.burger-btn');
+let menuNav = document.querySelector('.nav');
+
+if (burgerBtn) {
+  burgerBtn.addEventListener('click', function (e) {
+    document.body.classList.toggle('lock');
+    menuNav.classList.toggle('nav__active');
+  });
+}
+
+// calc
 const calcFormButtons = document.querySelectorAll('.calc-form-button-js');
 const calcForms = document.querySelectorAll('.calc-form-js');
 
