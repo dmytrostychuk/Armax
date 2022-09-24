@@ -4,6 +4,7 @@ body {
   min-height: 100vh;
   font-family: "Cera Pro", sans-serif;
   font-size: 14px;
+  color: #ffffff;
 
   @include mq($from: phablet) {
     font-size: 16px;
@@ -20,6 +21,14 @@ body {
   @include mq($from: desktop) {
     font-size: 24px;
   }
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: auto;
 }
 
 .header {
@@ -91,12 +100,11 @@ body {
 
 .lock {
   overflow: hidden;
-  padding:0 20px 0 0;
 }
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 .container {
