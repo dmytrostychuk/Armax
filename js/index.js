@@ -5,6 +5,7 @@ if (burgerBtn) {
   burgerBtn.addEventListener('click', function (e) {
     document.body.classList.toggle('lock');
     menuNav.classList.toggle('nav__active');
+    burgerBtn.classList.toggle('burger-btn-active');
   });
 }
 
