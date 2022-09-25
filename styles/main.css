@@ -534,7 +534,7 @@ label > input {
 }
 
 .header {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3897934174) 70%, rgb(0, 0, 0) 90%), url("../img/lazer.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3897934174) 0%, rgb(0, 0, 0) 100%), url("../img/lazer.jpg");
   background-position: center;
   background-repeat: no-repeat;
   height: 600px;
@@ -542,7 +542,6 @@ label > input {
 
 .header__container {
   margin: 0 auto;
-  border-bottom: 1px solid #000;
 }
 
 .menu {
@@ -612,8 +611,7 @@ label > input {
 .nav {
   position: absolute;
   top: 60px;
-  -webkit-transform: translateX(-200px);
-          transform: translateX(-200px);
+  opacity: 0;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -622,42 +620,43 @@ label > input {
 }
 
 .nav__active {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
+  -webkit-animation: menu-on 1s linear both;
+          animation: menu-on 1s linear both;
   flex-direction: column;
+}
+.nav__active .nav__item {
+  -webkit-animation: menu-on 1s linear both;
+          animation: menu-on 1s linear both;
+}
+.nav__active .nav__item:nth-child(1) {
+  -webkit-animation: menu-on 1s linear both;
+          animation: menu-on 1s linear both;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.nav__active .nav__item:nth-child(2) {
+  -webkit-animation: menu-on 1s linear both;
+          animation: menu-on 1s linear both;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.nav__active .nav__item:nth-child(3) {
+  -webkit-animation: menu-on 1s linear both;
+          animation: menu-on 1s linear both;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.nav__active .nav__item:nth-child(4) {
+  -webkit-animation: menu-on 1s linear both;
+          animation: menu-on 1s linear both;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .nav__list {
   display: flex;
   flex-direction: column;
   list-style: none;
-}
-
-.nav__item:nth-child(1) {
-  -webkit-animation: burger-menu 0.5s linear both;
-          animation: burger-menu 0.5s linear both;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-}
-.nav__item:nth-child(2) {
-  -webkit-animation: burger-menu 0.5s both;
-          animation: burger-menu 0.5s both;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-.nav__item:nth-child(3) {
-  -webkit-animation: burger-menu 0.5s both;
-          animation: burger-menu 0.5s both;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-.nav__item:nth-child(4) {
-  -webkit-animation: burger-menu 0.5s both;
-          animation: burger-menu 0.5s both;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
 }
 
 .menu {
@@ -674,25 +673,21 @@ label > input {
   padding: 0;
 }
 
-@-webkit-keyframes burger-menu {
+@-webkit-keyframes menu-on {
   0% {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    opacity: 1;
   }
 }
 
-@keyframes burger-menu {
+@keyframes menu-on {
   0% {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    opacity: 1;
   }
 }
 
