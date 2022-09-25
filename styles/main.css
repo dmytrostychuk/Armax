@@ -612,16 +612,19 @@ label > input {
 .nav {
   position: absolute;
   top: 60px;
-  opacity: 0;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   transition: 0.5s;
 }
 
 .nav__active {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
   flex-direction: column;
-  opacity: 1;
 }
 
 .nav__list {
@@ -631,22 +634,30 @@ label > input {
 }
 
 .nav__item:nth-child(1) {
-  -webkit-animation: burger-menu 1s;
-          animation: burger-menu 1s;
-  transition-duration: 1s;
+  -webkit-animation: burger-menu 0.5s linear both;
+          animation: burger-menu 0.5s linear both;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 .nav__item:nth-child(2) {
-  -webkit-animation: burger-menu 1.5s;
-          animation: burger-menu 1.5s;
-  transition-duration: 2s;
+  -webkit-animation: burger-menu 0.5s both;
+          animation: burger-menu 0.5s both;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 .nav__item:nth-child(3) {
-  -webkit-animation: burger-menu 2s;
-          animation: burger-menu 2s;
+  -webkit-animation: burger-menu 0.5s both;
+          animation: burger-menu 0.5s both;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 .nav__item:nth-child(4) {
-  -webkit-animation: burger-menu 2.5s;
-          animation: burger-menu 2.5s;
+  -webkit-animation: burger-menu 0.5s both;
+          animation: burger-menu 0.5s both;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 .menu {
@@ -664,22 +675,22 @@ label > input {
 }
 
 @-webkit-keyframes burger-menu {
-  from {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+  0% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
   }
-  to {
+  100% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
 }
 
 @keyframes burger-menu {
-  from {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+  0% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
   }
-  to {
+  100% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
