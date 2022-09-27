@@ -609,9 +609,9 @@ label > input {
 }
 
 .nav {
+  z-index: 3;
   position: absolute;
   top: 60px;
-  opacity: 0;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -620,37 +620,52 @@ label > input {
 }
 
 .nav__active {
-  -webkit-animation: menu-on 1s linear both;
-          animation: menu-on 1s linear both;
-  flex-direction: column;
+  background-color: rebeccapurple;
+}
+
+.nav__item {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 .nav__active .nav__item {
-  -webkit-animation: menu-on 1s linear both;
-          animation: menu-on 1s linear both;
+  -webkit-animation: menu-on 0.3s linear both;
+          animation: menu-on 0.3s linear both;
 }
 .nav__active .nav__item:nth-child(1) {
-  -webkit-animation: menu-on 1s linear both;
-          animation: menu-on 1s linear both;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.nav__active .nav__item:nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.nav__active .nav__item:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.nav__active .nav__item:nth-child(4) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
-.nav__active .nav__item:nth-child(2) {
-  -webkit-animation: menu-on 1s linear both;
-          animation: menu-on 1s linear both;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+.nav__close .nav__item {
+  -webkit-animation: menu-off 0.3s linear both;
+          animation: menu-off 0.3s linear both;
 }
-.nav__active .nav__item:nth-child(3) {
-  -webkit-animation: menu-on 1s linear both;
-          animation: menu-on 1s linear both;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+.nav__close .nav__item:nth-child(1) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
-.nav__active .nav__item:nth-child(4) {
-  -webkit-animation: menu-on 1s linear both;
-          animation: menu-on 1s linear both;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+.nav__close .nav__item:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.nav__close .nav__item:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.nav__close .nav__item:nth-child(4) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .nav__list {
@@ -690,7 +705,22 @@ label > input {
     opacity: 1;
   }
 }
-
+@-webkit-keyframes menu-off {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes menu-off {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @media (min-width: 560px) {
   body {
     font-size: 16px;
@@ -734,7 +764,6 @@ label > input {
     margin-left: 17px;
   }
 }
-
 @media (min-width: 768px) {
   body {
     font-size: 16px;
@@ -752,7 +781,6 @@ label > input {
     right: 43vw;
   }
 }
-
 @media (min-width: 1024px) {
   body {
     font-size: 20px;
@@ -776,7 +804,6 @@ label > input {
     background-color: aqua;
   }
 }
-
 @media (min-width: 1248px) {
   body {
     font-size: 24px;
