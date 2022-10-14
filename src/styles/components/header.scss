@@ -1,18 +1,11 @@
 .header {
-	background-image: linear-gradient(0deg, rgba(0,0,0,0.3897934173669467) 0%, rgba(0,0,0,1) 100%),
+	background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)),
  url("../img/lazer.jpg");
-	
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 600px;
 }
 
-
-.header__container {
-	
+.header__container {	
 	margin: 0 auto;
-}
-
-.menu {
-	display: flex;
 }

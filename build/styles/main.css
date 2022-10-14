@@ -409,17 +409,12 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: "Cera Pro";
-  font-style: medium;
-  font-weight: 500;
-  src: local("Cera Pro"), local("Cera Pro Medium"), url("/src/fonts/Cera Pro Medium.ttf") format("ttf");
-}
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Cera Pro", sans-serif;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   color: #ffffff;
 }
@@ -534,7 +529,7 @@ label > input {
 }
 
 .header {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3897934174) 0%, rgb(0, 0, 0) 100%), url("../img/lazer.jpg");
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url("../img/lazer.jpg");
   background-position: center;
   background-repeat: no-repeat;
   height: 600px;
@@ -542,10 +537,6 @@ label > input {
 
 .header__container {
   margin: 0 auto;
-}
-
-.menu {
-  display: flex;
 }
 
 .burger-btn {
@@ -557,6 +548,8 @@ label > input {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  z-index: 4;
+  transition: ease 2.3s;
 }
 .burger-btn::before, .burger-btn::after,
 .burger-btn span {
@@ -588,8 +581,11 @@ label > input {
 }
 
 .burger-btn-active {
-  width: 20px;
+  transition: ease 1.5s;
+  width: 30px;
   height: 20px;
+  -webkit-transform: translateX(130px);
+          transform: translateX(130px);
 }
 .burger-btn-active span {
   opacity: 0;
@@ -611,16 +607,24 @@ label > input {
 .nav {
   z-index: 3;
   position: absolute;
-  top: 60px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  transition: 0.5s;
+  padding-top: 170px;
+  transition: ease 1.5s;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
 }
 
 .nav__active {
-  background-color: rebeccapurple;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+  background-color: #333333;
+}
+
+.nav__close {
+  transition: ease 3.2s;
 }
 
 .nav__item {
@@ -632,56 +636,75 @@ label > input {
           animation: menu-on 0.3s linear both;
 }
 .nav__active .nav__item:nth-child(1) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 .nav__active .nav__item:nth-child(2) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 .nav__active .nav__item:nth-child(3) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 .nav__active .nav__item:nth-child(4) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 .nav__close .nav__item {
   -webkit-animation: menu-off 0.3s linear both;
           animation: menu-off 0.3s linear both;
 }
 .nav__close .nav__item:nth-child(1) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 .nav__close .nav__item:nth-child(2) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-.nav__close .nav__item:nth-child(3) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-.nav__close .nav__item:nth-child(4) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
+}
+.nav__close .nav__item:nth-child(3) {
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+.nav__close .nav__item:nth-child(4) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .nav__list {
   display: flex;
   flex-direction: column;
   list-style: none;
+  margin-top: 80px;
+  padding: 0 30px 30px 40px;
+  text-transform: uppercase;
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 5px;
+}
+
+.menu__title {
+  margin: 0;
+}
+
+.menu__link-logo:hover {
+  opacity: 0.3;
+  transition: all ease 0.3s;
+}
+
+.menu__link-logo {
+  transition: all ease 0.3s;
 }
 
 .menu__logo {
   font-size: 16px;
+  width: 110px;
+  margin: 0;
 }
 
 .menu__list {

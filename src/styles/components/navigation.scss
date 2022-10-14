@@ -1,13 +1,13 @@
 .nav {
 	z-index: 3;
 	position: absolute;
-	top: 60px;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
 	align-items: center;
-	transition: 0.5s;
-	
+  padding-top: 170px;
+	transition: ease 1.5s;
+  transform: translateX(-200px);
 
 	@include mq($from: tablet-wide) {
 		opacity: 1;
@@ -17,88 +17,46 @@
 }
 
 .nav__active {
-	background-color: rebeccapurple;
+  
+  transform: translateX(-30px);
+  background-color: #333333;
+
 }
+
+.nav__close {
+  transition: ease 3.2s;
+}
+
 
 .nav__item {
   animation-fill-mode: both;
+  
 	
   .nav__active & { 
+    
     animation: menu-on .3s linear both;
 
-    &:nth-child(1) { animation-delay: .2s }
-    &:nth-child(2) { animation-delay: .3s }
-    &:nth-child(3) { animation-delay: .4s }
-    &:nth-child(4) { animation-delay: .5s }
+    &:nth-child(1) { animation-delay: .6s }
+    &:nth-child(2) { animation-delay: .7s }
+    &:nth-child(3) { animation-delay: .8s }
+    &:nth-child(4) { animation-delay: .9s }
   }
 
   .nav__close & { 
     animation: menu-off .3s linear both; 
 
-    &:nth-child(1) { animation-delay: .5s }
-    &:nth-child(2) { animation-delay: .4s }
-    &:nth-child(3) { animation-delay: .3s }
-    &:nth-child(4) { animation-delay: .2s }
+    &:nth-child(1) { animation-delay: .25s }
+    &:nth-child(2) { animation-delay: .2s }
+    &:nth-child(3) { animation-delay: .15s }
+    &:nth-child(4) { animation-delay: .1s }
   }
 }
-
-// .nav__active {
-// 	animation: menu-on 1s linear both;
-// 	flex-direction: column;
-
-// 	.nav__item {
-// 		&:nth-child(1) {
-// 			animation: menu-on 1s linear both;
-// 			animation-delay: 0.5s;
-// 		}
-	
-// 		&:nth-child(2) {
-// 			animation: menu-on 1s linear both;
-// 			animation-delay: 1s;
-// 		}
-	
-// 		&:nth-child(3) {
-// 			animation: menu-on 1s linear both;
-// 			animation-delay: 1.5s;
-// 		}
-	
-// 		&:nth-child(4) {
-// 			animation: menu-on 1s linear both;
-// 			animation-delay: 2s;
-// 		}
-// 	}
-// }
-
-// .nav__close {
-// 	animation: menu-off 1s linear both;
-// 	.nav__item {
-		
-// 		&:nth-child(1) {
-// 			animation: menu-off 1s linear both;
-// 			animation-delay: 0.5s;
-// 		}
-	
-// 		&:nth-child(2) {
-// 			animation: menu-off 1s linear both;
-// 			animation-delay: 1s;
-// 		}
-	
-// 		&:nth-child(3) {
-// 			animation: menu-off 2s linear both;
-// 			animation-delay: 1.5s;
-// 		}
-	
-// 		&:nth-child(4) {
-// 			animation: menu-off 1s linear both;
-// 			animation-delay: 2s;
-// 		}
-// 	}
-// }
 
 .nav__list {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
+  margin-top: 80px;
+  padding: 0 30px 30px 40px ;
+  text-transform: uppercase;
 }
-
-
