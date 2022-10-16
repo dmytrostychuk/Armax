@@ -1,0 +1,15 @@
+.button {
+	display: block;
+	height: 40px;
+	margin: 0 auto;
+	border: none;
+	border-radius: 5px;
+	background-color: #D1A954;
+	cursor: pointer;
+	
+transition: width 1s cubic-bezier(0, 0, 1, 1) 1s;
+
+	&:hover {
+		width: 230px;
+	}
+}
