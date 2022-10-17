@@ -477,17 +477,23 @@ form {
 }
 
 .button {
+  position: relative;
   display: block;
   height: 40px;
+  width: 230px;
   margin: 0 auto;
   border: none;
   border-radius: 5px;
   background-color: #D1A954;
+  color: #ffffff;
   cursor: pointer;
-  transition: width 1s cubic-bezier(0, 0, 1, 1) 1s;
+  transition: 0.3s;
 }
 .button:hover {
-  width: 230px;
+  background-color: #b47c48;
+}
+.button:active {
+  background-color: #6e4b4b;
 }
 
 .calc__sheet,
@@ -845,7 +851,9 @@ label > input {
 }
 .header__content-title {
   position: relative;
+  margin: 0 auto;
   margin-bottom: 40px;
+  width: 300px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -874,6 +882,52 @@ label > input {
   text-align: center;
   line-height: 120%;
   margin-bottom: 50px;
+}
+
+.link-hover {
+  position: relative;
+  padding-bottom: 6px;
+  transition: 0.3s;
+}
+.link-hover:hover {
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.61);
+}
+.link-hover:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  opacity: 1;
+}
+.link-hover::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgb(110, 75, 75) 0%, rgb(252, 176, 69) 100%);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+}
+
+.link-social {
+  transition: 0.3s;
+}
+
+.link-social:hover {
+  transition: 0.3s;
+  opacity: 0.5;
 }
 
 @media (min-width: 560px) {
