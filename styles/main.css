@@ -479,11 +479,10 @@ form {
 .button {
   position: relative;
   display: block;
-  height: 40px;
-  width: 230px;
+  padding: 20px 40px;
   margin: 0 auto;
   border: none;
-  border-radius: 5px;
+  text-transform: uppercase;
   background-color: #D1A954;
   color: #ffffff;
   cursor: pointer;
@@ -553,11 +552,12 @@ label > input {
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url("../img/lazer.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  height: 490px;
+  height: auto;
 }
 
 .header__container {
   margin: 0 auto;
+  padding-bottom: 70px;
 }
 
 .burger-btn {
@@ -602,7 +602,7 @@ label > input {
 }
 
 .burger-btn-active {
-  transition: ease 1s;
+  transition: ease 1.5s;
   width: 30px;
   height: 20px;
   -webkit-transform: translateX(130px);
@@ -624,7 +624,6 @@ label > input {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-
 .nav {
   z-index: 3;
   position: absolute;
@@ -674,8 +673,8 @@ label > input {
           animation-delay: 0.9s;
 }
 .nav__close .nav__item {
-  -webkit-animation: menu-off 0.3s linear both;
-          animation: menu-off 0.3s linear both;
+  -webkit-animation: menu-off 0.2s linear both;
+          animation: menu-off 0.2s linear both;
 }
 .nav__close .nav__item:nth-child(1) {
   -webkit-animation-delay: 0.4s;
@@ -735,8 +734,8 @@ label > input {
           animation-delay: 1.3s;
 }
 .nav__close .nav__item-social {
-  -webkit-animation: menu-off 0.3s linear both;
-          animation: menu-off 0.3s linear both;
+  -webkit-animation: menu-off 0.2s linear both;
+          animation: menu-off 0.2s linear both;
 }
 .nav__close .nav__item-social:nth-child(1) {
   -webkit-animation-delay: 0.2s;
@@ -881,6 +880,7 @@ label > input {
 .header__content-text {
   text-align: center;
   line-height: 120%;
+  margin: 0 30px;
   margin-bottom: 50px;
 }
 
@@ -893,6 +893,9 @@ label > input {
   transition: 0.3s;
   color: rgba(255, 255, 255, 0.61);
 }
+.link-hover:active {
+  color: rgba(255, 255, 255, 0.363);
+}
 .link-hover:hover:before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
@@ -902,6 +905,10 @@ label > input {
   -webkit-transform-origin: left;
           transform-origin: left;
   opacity: 1;
+}
+.link-hover:active:before {
+  transition: 5s;
+  background: linear-gradient(90deg, rgb(110, 75, 75) 0%, rgb(112, 51, 51) 100%);
 }
 .link-hover::before {
   content: "";
@@ -943,6 +950,12 @@ label > input {
   .section {
     margin-bottom: 0;
   }
+  .button {
+    padding: 30px 50px;
+  }
+  .header__container {
+    padding-bottom: 100px;
+  }
   .burger-btn {
     width: 40px;
     height: 20px;
@@ -972,6 +985,22 @@ label > input {
     width: 20px;
     margin-left: 17px;
   }
+  .nav {
+    width: 270px;
+    padding-top: 100px;
+  }
+  .nav__active {
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+    padding-bottom: 92px;
+  }
+  .nav__list {
+    padding: 0 0 30px 20px;
+    width: 210px;
+  }
+  .menu__logo {
+    width: 150px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -986,9 +1015,6 @@ label > input {
   }
   .section {
     margin-bottom: 0;
-  }
-  .burger-btn-active {
-    right: 43vw;
   }
 }
 
