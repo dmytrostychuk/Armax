@@ -3,9 +3,14 @@
  url("../img/lazer.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 490px;
+	height: auto;
 }
 
 .header__container {	
 	margin: 0 auto;
+	padding-bottom: 70px;
+
+	@include mq($from: phablet) {
+    padding-bottom: 100px;
+  }
 }
