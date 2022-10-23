@@ -13,4 +13,8 @@
 	@include mq($from: phablet) {
     padding-bottom: 100px;
   }
+
+	@include mq($from: tablet) {
+    padding-bottom: 100px;
+  }
 }

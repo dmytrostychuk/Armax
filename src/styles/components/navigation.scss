@@ -15,10 +15,22 @@
     padding-top: 100px;
   }
 
+  @include mq($from: tablet) {
+    width: 280px;
+    justify-content: flex-start;
+    transform: translateX(-400px);
+    height: 560px;
+	}
+
 	@include mq($from: tablet-wide) {
-		opacity: 1;
-		transform: translateY(0px); 
-		background-color: aqua;
+    position: relative;
+    display: flex;
+    
+    flex-direction: row;
+    transform: translateX(0);
+    width: 100%;
+    height: auto;
+    padding-top: 0;
   }
 }
 
@@ -28,9 +40,15 @@
 
   @include mq($from: phablet) {
     transform: translateX(-40px);
-    padding-bottom: 92px;
   }
 
+  @include mq($from: tablet) {
+    transform: translateX(-60px);
+	}
+
+  @include mq($from: tablet-wide) {
+    opacity: 1;
+  }
 }
 
 .nav__close {
@@ -49,6 +67,10 @@
     &:nth-child(2) { animation-delay: .7s }
     &:nth-child(3) { animation-delay: .8s }
     &:nth-child(4) { animation-delay: .9s }
+    
+    @include mq($from: tablet-wide) {
+      opacity: 1;
+    }
   }
 
   .nav__close & { 
@@ -66,12 +88,15 @@
       &:nth-child(3) { animation-delay: .1s }
       &:nth-child(4) { animation-delay: .05s }
     }
+
+    @include mq($from: tablet-wide) {
+      opacity: 1;
+    }
   }
 }
 
 .nav__item-social {
   animation-fill-mode: both;
-  
 	
   .nav__active & { 
     animation: menu-on .3s linear both;
@@ -102,15 +127,32 @@
   padding: 0 0 30px 40px;
   text-transform: uppercase;
 
+  @include mq($from: tablet-wide) {
+    justify-content: space-between;
+    margin-left: 100px;
+  }
+
   li {
     margin-bottom: 20px;
     letter-spacing: 0.05em;
     line-height: 20px;
+
+    @include mq($from: tablet-wide) {
+      margin: 0;
+      
+      justify-content: space-between;
+    }
   }
 
   @include mq($from: phablet) {
     padding: 0 0 30px 20px;
     width: 210px;
+  }
+
+  @include mq($from: tablet-wide) {
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
   }
 }
 
@@ -127,10 +169,36 @@
       text-transform: lowercase;
     }
 
+    &:nth-child(5) {
+      display: none;
+    }
   }
 
   img {
     height: 30px;
   }
   
+  @include mq($from: tablet-wide) {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 10%;
+    height: 100%;
+    margin: 0;
+    flex-direction: column;
+    background-color: #333333;
+    writing-mode: vertical-lr;
+
+    li {
+
+      &:first-child,
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:nth-child(5) {
+        display: block;
+      }
+    }
+  }
 }

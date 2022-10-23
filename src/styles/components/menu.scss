@@ -1,14 +1,26 @@
 .menu {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 5px;
 	margin-bottom: 50px;
 	
+
+	@include mq($from: tablet-wide) {
+		margin-top: 50px;
+  }
 }
 
 .menu__title {
 	margin: 0;
+
+	@include mq($from: tablet-wide) {
+    position: absolute;
+		top: 50px;
+		left: 50%;
+		transform: translate(-50%);
+  }
 }
 
 .menu__link-logo:hover {
@@ -27,6 +39,10 @@
 
 	@include mq($from: phablet) {
     width: 150px;
+  }
+
+	@include mq($from: tablet) {
+    width: 200px;
   }
 }
 

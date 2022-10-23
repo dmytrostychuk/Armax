@@ -1,3 +1,10 @@
+.header__content {
+	@include mq($from: tablet-wide) {
+		margin-left: 100px;
+		margin-top: 140px;
+  }
+}
+
 .header__content-title {
 	position: relative;
 	margin: 0 auto;
@@ -19,12 +26,35 @@
 		background-color: #ffffff;
 		opacity: 0.4;
 		border-radius: 50%;
+
+		@include mq($from: tablet) {
+			left: 0;
+			bottom: -40px;
+			transform: translate(0);
+			
+		}
 	}
+
+	@include mq($from: tablet) {
+		font-size: 40px;
+		margin: 0;
+		margin-bottom: 80px;
+    text-align: start;
+  }
+
+	
 }
 
 .header__content-subtitle {
 	font-weight: 500;
 	font-size: 22px;
+
+	@include mq($from: tablet) {
+		display: block;
+		width: 500px;
+		margin-top: 20px;
+		line-height: 130%;
+  }
 }
 
 .header__content-text {
@@ -33,4 +63,9 @@ line-height: 120%;
 margin: 0 30px;
 margin-bottom: 50px;
 
+@include mq($from: tablet) {
+	text-align: start;
+	width: 410px;
+	margin: 0;
+}
 }
