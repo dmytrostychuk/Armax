@@ -1080,7 +1080,7 @@ label > input {
     margin-bottom: 0;
   }
   .button {
-    margin-left: 100px;
+    margin-left: 120px;
   }
   .burger-btn {
     display: none;
@@ -1088,6 +1088,7 @@ label > input {
   .nav {
     position: relative;
     display: flex;
+    margin-left: 20px;
     flex-direction: row;
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -1119,21 +1120,31 @@ label > input {
   }
   .nav__list-social {
     position: absolute;
-    top: 0;
-    left: 0px;
-    width: 10%;
-    height: 100%;
+    top: -50px;
+    left: -90px;
+    width: auto;
+    padding: 50px 70px 0 70px;
+    height: 625px;
     margin: 0;
-    flex-direction: column;
-    background-color: #333333;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: end;
+    background: rgba(51, 51, 51, 0.75);
     -webkit-writing-mode: vertical-lr;
             writing-mode: vertical-lr;
+  }
+  .nav__list-social li {
+    margin-bottom: 50px;
   }
   .nav__list-social li:first-child, .nav__list-social li:nth-child(2) {
     display: none;
   }
   .nav__list-social li:nth-child(5) {
     display: block;
+  }
+  .nav__list-social .nav__item---info {
+    font-size: 18px;
+    color: #C4C4C4;
   }
   .menu {
     margin-top: 50px;
@@ -1146,7 +1157,7 @@ label > input {
             transform: translate(-50%);
   }
   .header__content {
-    margin-left: 100px;
+    margin-left: 120px;
     margin-top: 140px;
   }
 }
