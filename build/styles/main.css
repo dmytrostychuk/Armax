@@ -1082,6 +1082,9 @@ label > input {
   .button {
     margin-left: 120px;
   }
+  .header__container {
+    padding-bottom: 70px;
+  }
   .burger-btn {
     display: none;
   }
@@ -1118,13 +1121,19 @@ label > input {
     width: 100%;
     padding: 0;
   }
+  .nav__list .nav__item--telegram {
+    margin-bottom: 30px;
+  }
+  .nav__list-social img {
+    height: 20px;
+  }
   .nav__list-social {
     position: absolute;
     top: -50px;
     left: -90px;
     width: auto;
-    padding: 50px 70px 0 70px;
-    height: 625px;
+    padding: 50px 50px 0 70px;
+    height: 685px;
     margin: 0;
     align-items: center;
     flex-direction: row-reverse;
@@ -1134,17 +1143,33 @@ label > input {
             writing-mode: vertical-lr;
   }
   .nav__list-social li {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
   .nav__list-social li:first-child, .nav__list-social li:nth-child(2) {
     display: none;
   }
   .nav__list-social li:nth-child(5) {
     display: block;
+    margin-bottom: 200px;
   }
-  .nav__list-social .nav__item---info {
+  .nav__item---info li {
+    margin-bottom: 150px;
+  }
+  .nav__item---info {
+    position: relative;
+    margin-bottom: 150px;
     font-size: 18px;
     color: #C4C4C4;
+  }
+  .nav__item---info::after {
+    content: "";
+    position: absolute;
+    bottom: -120px;
+    left: 7px;
+    width: 3px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
   }
   .menu {
     margin-top: 50px;

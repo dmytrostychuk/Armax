@@ -17,4 +17,8 @@
 	@include mq($from: tablet) {
     padding-bottom: 100px;
   }
+
+	@include mq($from: tablet-wide) {
+    padding-bottom: 70px;
+  }
 }
