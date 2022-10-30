@@ -31,7 +31,6 @@
 			left: 0;
 			bottom: -40px;
 			transform: translate(0);
-			
 		}
 	}
 
@@ -42,7 +41,9 @@
     text-align: start;
   }
 
-	
+	@include mq($from: tablet-wide) {
+		width: auto;
+  }
 }
 
 .header__content-subtitle {

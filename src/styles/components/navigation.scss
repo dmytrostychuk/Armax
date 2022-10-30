@@ -192,10 +192,10 @@
   @include mq($from: tablet-wide) {
     position: absolute;
     top: -50px;
-    left: -90px;
+    left: 0;
     width: auto;
     padding: 50px 50px 0 70px;
-    height: 685px;
+    height: 740px;
     margin: 0;
     align-items: center;
     flex-direction: row-reverse;
@@ -204,7 +204,7 @@
     writing-mode: vertical-lr;
 
     li {
-margin-bottom: 100px;
+      margin-bottom: 50px;
 
       &:first-child,
       &:nth-child(2) {
@@ -213,9 +213,18 @@ margin-bottom: 100px;
 
       &:nth-child(5) {
         display: block;
+        margin-bottom: 30px;
+      }
+
+      &:nth-child(6) {
+        display: block;
         margin-bottom: 200px;
       }
     }
+  }
+
+  @include mq($from: desktop) {
+    height: 800px;
   }
 }
 
@@ -244,6 +253,19 @@ margin-bottom: 100px;
       background-color: #C4C4C4;
     }
   }
-  
+}
+
+.nav__list--desktop {
+  display: none;
+
+  @include mq($from: tablet-wide) {
+    display: flex;
+  }
+}
+
+.nav__list--mobile {
+  @include mq($from: tablet-wide) {
+    display: none;
+  }
 }
 
