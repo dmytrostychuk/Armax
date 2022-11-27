@@ -15,6 +15,28 @@ if (burgerBtn) {
   });
 }
 
+//modal
+
+var modal = document.querySelector('.modal');
+var trigger = document.querySelector('.modal-active');
+var closeButton = document.querySelector('.close-button');
+
+function toggleModal() {
+  modal.classList.toggle('show-modal');
+
+  console.log('toggleModal');
+
+  if (window.innerWidth > 991) {
+    document.body.classList.toggle('lock');
+  } else if (!modal.classList.contains('show-modal')) {
+    document.body.classList.remove('lock');
+  }
+}
+
+trigger.addEventListener('click', toggleModal);
+closeButton.addEventListener('click', toggleModal);
+window.addEventListener('click', windowOnClick);
+
 // calc
 const calcFormButtons = document.querySelectorAll('.calc-form-button-js');
 const calcForms = document.querySelectorAll('.calc-form-js');
