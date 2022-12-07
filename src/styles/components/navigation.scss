@@ -1,9 +1,10 @@
 .nav {
 	z-index: 3;
 	position: absolute;
+  height: 100vh;
   top: 0px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-direction: column;
 	align-items: center;
   padding-top: 60px;
@@ -25,7 +26,6 @@
 	@include mq($from: tablet-wide) {
     position: relative;
     display: flex;
-    margin-left: 20px;
     flex-direction: row;
     transform: translateX(0);
     width: 100%;
@@ -37,6 +37,7 @@
 .nav__active {
   transform: translateX(-30px);
   background-color: #333333;
+  height: 100vh;
 
   @include mq($from: phablet) {
     transform: translateX(-40px);
@@ -124,12 +125,16 @@
   width: 170px;
   font-weight: 700;
 	list-style: none;
-  padding: 0 0 30px 40px;
+  padding: 0 10px 30px 60px;
   text-transform: uppercase;
+
+  @include mq($from: tablet) {
+    justify-content: space-between;
+    padding-left: 40px;
+  }
 
   @include mq($from: tablet-wide) {
     justify-content: space-between;
-    margin-left: 100px;
   }
 
   li {
@@ -191,10 +196,10 @@
   
   @include mq($from: tablet-wide) {
     position: absolute;
-    top: -50px;
+    top: 0;
     left: 0;
     width: auto;
-    padding: 50px 50px 0 70px;
+    padding: 0 50px 0 70px;
     height: 740px;
     margin: 0;
     align-items: center;

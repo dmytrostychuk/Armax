@@ -1,11 +1,25 @@
+.header__content--container {
+
+	@include mq($from: tablet) {
+		display: flex;
+		justify-content: space-between;
+		min-height: 360px;
+		
+  }
+}
+
 .header__content {
 	background-color: rgba(67, 79, 79, 0.537);
 	padding: 0 20px;
 	margin-bottom: 30px;
 
+	@include mq($from: tablet) {
+		width: 50%;
+		margin-bottom: 0;
+		margin-right: 10px;
+  }
+
 	@include mq($from: tablet-wide) {
-		margin-left: 120px;
-		margin-top: 140px;
   }
 }
 
@@ -13,6 +27,11 @@
 	padding: 40px 30px;
 	background-color: rgba(0,0,0,0.3);
 	border-radius: 20px;
+
+	@include mq($from: tablet) {
+		padding: 40px 20px;
+		height: auto;
+  }
 }
 
 .header__content-title {
@@ -44,7 +63,7 @@
 	}
 
 	@include mq($from: tablet) {
-		font-size: 40px;
+		font-size: 30px;
 		margin: 0;
 		margin-bottom: 80px;
     text-align: start;
@@ -74,7 +93,6 @@ letter-spacing: 0.1em;
 
 @include mq($from: tablet) {
 	text-align: start;
-	width: 410px;
 	margin: 0;
 }
 }

@@ -23,11 +23,10 @@
 
 	@include mq($from: tablet) {
 		margin: 0;
-    margin-top: 60px;
+    margin-top: 20px;
   }
 
 	@include mq($from: tablet-wide) {
-		margin-left: 120px;
   }
 
 }
