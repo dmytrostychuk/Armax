@@ -229,7 +229,8 @@
   }
 
   @include mq($from: desktop) {
-    height: 800px;
+    height: 850px;
+    justify-content: center;
   }
 }
 

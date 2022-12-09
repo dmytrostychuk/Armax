@@ -19,7 +19,8 @@
 		margin-right: 10px;
   }
 
-	@include mq($from: tablet-wide) {
+	@include mq($from: desktop) {
+		margin-right: 30px;
   }
 }
 
@@ -31,6 +32,10 @@
 	@include mq($from: tablet) {
 		padding: 40px 20px;
 		height: auto;
+  }
+
+	@include mq($from: desktop) {
+		padding: 40px 30px;
   }
 }
 
