@@ -1,14 +1,18 @@
 .header {
 	position: relative;
-	background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)),
+	background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.55), rgba(51, 51, 51, 0.9)),
  url("../img/lazer.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	
 	height: auto;
 
-	@include mq($from: tablet-wide) {
+	@include mq($from: tablet) {
 		height: 700px;
+	}
+
+	@include mq($from: tablet-wide) {
+		height: 800px;
 	}
 }
 
@@ -20,12 +24,7 @@
     padding-bottom: 100px;
   }
 
-	@include mq($from: tablet) {
-    padding-bottom: 100px;
-  }
-
 	@include mq($from: tablet-wide) {
-    padding-bottom: 70px;
 		padding-left: 170px;
   }
 

@@ -26,7 +26,7 @@
 
 .header__inner {
 	padding: 40px 30px;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(51,51,51,.65);
 	border-radius: 20px;
 
 	@include mq($from: tablet) {

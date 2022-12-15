@@ -4,6 +4,7 @@
 	transition: 0.3s;
 
 	&:hover {
+		letter-spacing: .2em;
 		transition: 0.3s;
 		color: rgba(255, 255, 255, 0.61);
 	}
@@ -20,6 +21,7 @@
 	}
 	
 	&:active:before {
+		
 		transition: 5s;
 		background: linear-gradient(90deg, rgba(110,75,75,1) 0%, rgba(112,51,51,1) 100%);
 	}

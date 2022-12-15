@@ -12,7 +12,6 @@
 	}
 
 	input {
-		
 		max-width: 500px;
 		height: 40px;
 		outline: 0px;
@@ -21,13 +20,30 @@
 		border-radius: 5px;
 		margin-bottom: 20px;
 
+		&::placeholder {
+			font-size: 18px;
+		}
+
 		@include mq($from: phablet) {
 			max-width: 600px;
+
+			&::placeholder {
+				font-size: 16px;
+			}
+		}
+
+		@include mq($from: tablet-wide) {
+
+			&::placeholder {
+				font-size: 20px;
+			}
 		}
 
 		@include mq($from: desktop) {
 			height: 50px;
 		}
+
+		
 	}
 	
 }
@@ -35,9 +51,15 @@
 .header__form-title {
 	margin-top: 0;
 	font-size: 24px;
+	text-align: center;
 
 	@include mq($from: tablet) {
 		font-size: 30px;
+		text-align: start;
+	}
+
+	@include mq($from: tablet-wide) {
+		
 	}
 
 	

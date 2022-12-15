@@ -8,7 +8,7 @@
   background-color: transparent;
   cursor: pointer;
 	z-index: 4;
-	transition: ease 1.5s;
+	transition: ease 2s;
 	
 
 	&::before,
@@ -75,7 +75,7 @@
 	transition: ease 1.7s;
 	width: 30px;
 	height: 20px;
-	transform: translateX(160px);
+	transform: translateX(180px);
 
 	span {
 		opacity: 0;
@@ -112,6 +112,7 @@
   }
 
 	@include mq($from: tablet) {
+		transform: translateX(220px);
 	}
 }
 

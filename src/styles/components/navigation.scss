@@ -7,20 +7,18 @@
 	justify-content: flex-start;
 	flex-direction: column;
 	align-items: center;
-  padding-top: 60px;
 	transition: ease 1.5s;
   transform: translateX(-300px);
 
   @include mq($from: phablet) {
-    width: 270px;
-    padding-top: 100px;
+    width: 300px;
   }
 
   @include mq($from: tablet) {
-    width: 280px;
+    width: 320px;
     justify-content: flex-start;
     transform: translateX(-400px);
-    height: 560px;
+    height: 700px;
 	}
 
 	@include mq($from: tablet-wide) {
@@ -44,7 +42,7 @@
   }
 
   @include mq($from: tablet) {
-    transform: translateX(-60px);
+    transform: translateX(-30px);
 	}
 
   @include mq($from: tablet-wide) {
@@ -122,19 +120,22 @@
 .nav__list {
 	display: flex;
 	flex-direction: column;
-  width: 170px;
+  width: 215px;
   font-weight: 700;
 	list-style: none;
-  padding: 0 10px 30px 60px;
+  padding: 0 0 30px 40px;
   text-transform: uppercase;
 
-  @include mq($from: tablet) {
-    justify-content: space-between;
-    padding-left: 40px;
-  }
+  &:nth-child(1) {
+    padding-top: 80px;
 
-  @include mq($from: tablet-wide) {
-    justify-content: space-between;
+    @include mq($from: tablet) {
+      padding-top: 100px;
+
+      @include mq($from: tablet-wide) {
+        padding-top: 0;
+      }
+    }
   }
 
   li {
@@ -144,14 +145,19 @@
 
     @include mq($from: tablet-wide) {
       margin: 0;
-      
       justify-content: space-between;
     }
   }
 
   @include mq($from: phablet) {
-    padding: 0 0 30px 20px;
-    width: 210px;
+    width: 250px;
+    padding: 0 0 30px 10px;
+  }
+
+  @include mq($from: tablet) {
+    justify-content: space-between;
+    width: 250px;
+    padding-left: 20px;
   }
 
   @include mq($from: tablet-wide) {
@@ -184,13 +190,25 @@
     &:nth-child(5) {
       display: none;
     }
+
+    &:nth-child(2) {
+      padding-bottom: 30px;
+    }
+
+    @include mq($from: tablet) {
+      font-size: 18px;
+
+      &:nth-child(2) {
+        padding-bottom: 30px;
+      }
+    }
   }
 
   img {
     height: 30px;
 
     @include mq($from: tablet-wide) {
-      height: 20px;
+      height: 30px;
     }
   }
   
@@ -201,12 +219,11 @@
     width: auto;
     height: 100%;
     padding: 35px 50px 0 70px;
-    
     margin: 0;
     align-items: center;
     flex-direction: row-reverse;
-    justify-content: center;
-    background: rgba(51, 51, 51, 0.75);
+    justify-content: end;
+    background: rgba(51, 51, 51, 0.65);
     writing-mode: vertical-lr;
 
     li {
@@ -219,7 +236,7 @@
 
       &:nth-child(5) {
         display: block;
-        margin-bottom: 30px;
+        margin-bottom: 35px;
       }
 
       &:nth-child(6) {

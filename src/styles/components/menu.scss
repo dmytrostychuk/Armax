@@ -4,10 +4,14 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 30px;
-	
+	padding-top: 10px;
+
+	@include mq($from: tablet) {
+		margin-bottom: 50px;
+  }
 
 	@include mq($from: tablet-wide) {
-		margin-top: 50px;
+		margin-top: 20px;
 		margin-bottom: 140px;
   }
 }
