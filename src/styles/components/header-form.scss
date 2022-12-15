@@ -24,12 +24,21 @@
 		@include mq($from: phablet) {
 			max-width: 600px;
 		}
+
+		@include mq($from: desktop) {
+			height: 50px;
+		}
 	}
 	
 }
 
 .header__form-title {
 	margin-top: 0;
-	text-align: center;
 	font-size: 24px;
+
+	@include mq($from: tablet) {
+		font-size: 30px;
+	}
+
+	
 }

@@ -1,10 +1,15 @@
 .header {
+	position: relative;
 	background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)),
  url("../img/lazer.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	
 	height: auto;
+
+	@include mq($from: tablet-wide) {
+		height: 700px;
+	}
 }
 
 .header__container {	
