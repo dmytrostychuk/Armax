@@ -520,7 +520,7 @@ label > input {
 
 .header {
   position: relative;
-  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.85), rgba(51, 51, 51, 0.85)), url("../img/lazer.jpg");
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.55), rgba(51, 51, 51, 0.9)), url("../img/lazer.jpg");
   background-position: center;
   background-repeat: no-repeat;
   height: auto;
@@ -541,7 +541,7 @@ label > input {
   background-color: transparent;
   cursor: pointer;
   z-index: 4;
-  transition: ease 1.5s;
+  transition: ease 2s;
 }
 .burger-btn::before, .burger-btn::after,
 .burger-btn span {
@@ -576,8 +576,8 @@ label > input {
   transition: ease 1.7s;
   width: 30px;
   height: 20px;
-  -webkit-transform: translateX(160px);
-          transform: translateX(160px);
+  -webkit-transform: translateX(180px);
+          transform: translateX(180px);
 }
 .burger-btn-active span {
   opacity: 0;
@@ -595,6 +595,7 @@ label > input {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+
 .nav {
   z-index: 3;
   position: absolute;
@@ -604,7 +605,6 @@ label > input {
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px;
   transition: ease 1.5s;
   -webkit-transform: translateX(-300px);
           transform: translateX(-300px);
@@ -730,11 +730,14 @@ label > input {
 .nav__list {
   display: flex;
   flex-direction: column;
-  width: 170px;
+  width: 215px;
   font-weight: 700;
   list-style: none;
-  padding: 0 10px 30px 60px;
+  padding: 0 0 30px 40px;
   text-transform: uppercase;
+}
+.nav__list:nth-child(1) {
+  padding-top: 80px;
 }
 .nav__list li {
   margin-bottom: 20px;
@@ -756,6 +759,9 @@ label > input {
 .nav__list-social li:nth-child(5) {
   display: none;
 }
+.nav__list-social li:nth-child(2) {
+  padding-bottom: 30px;
+}
 .nav__list-social img {
   height: 30px;
 }
@@ -770,6 +776,7 @@ label > input {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  padding-top: 10px;
 }
 
 .menu__title {
@@ -837,7 +844,7 @@ label > input {
 
 .header__inner {
   padding: 40px 30px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(51, 51, 51, 0.65);
   border-radius: 20px;
 }
 
@@ -881,6 +888,7 @@ label > input {
   transition: 0.3s;
 }
 .link-hover:hover {
+  letter-spacing: 0.2em;
   transition: 0.3s;
   color: rgba(255, 255, 255, 0.61);
 }
@@ -941,10 +949,17 @@ label > input {
   border-radius: 5px;
   margin-bottom: 20px;
 }
+.header__form input::-webkit-input-placeholder {
+  font-size: 18px;
+}
+.header__form input::placeholder {
+  font-size: 18px;
+}
 
 .header__form-title {
   margin-top: 0;
   font-size: 24px;
+  text-align: center;
 }
 
 @media (min-width: 560px) {
@@ -996,22 +1011,27 @@ label > input {
     margin-left: 17px;
   }
   .nav {
-    width: 270px;
-    padding-top: 100px;
+    width: 300px;
   }
   .nav__active {
     -webkit-transform: translateX(-40px);
             transform: translateX(-40px);
   }
   .nav__list {
-    padding: 0 0 30px 20px;
-    width: 210px;
+    width: 250px;
+    padding: 0 0 30px 10px;
   }
   .menu__logo {
     width: 150px;
   }
   .header__form input {
     max-width: 600px;
+  }
+  .header__form input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .header__form input::placeholder {
+    font-size: 16px;
   }
 }
 
@@ -1032,23 +1052,40 @@ label > input {
     margin: 0;
     margin-top: 20px;
   }
-  .header__container {
-    padding-bottom: 100px;
+  .header {
+    height: 700px;
+  }
+  .burger-btn-active {
+    -webkit-transform: translateX(220px);
+            transform: translateX(220px);
   }
   .nav {
-    width: 280px;
+    width: 320px;
     justify-content: flex-start;
     -webkit-transform: translateX(-400px);
             transform: translateX(-400px);
-    height: 560px;
+    height: 700px;
   }
   .nav__active {
-    -webkit-transform: translateX(-60px);
-            transform: translateX(-60px);
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  .nav__list:nth-child(1) {
+    padding-top: 100px;
   }
   .nav__list {
     justify-content: space-between;
-    padding-left: 40px;
+    width: 250px;
+    padding-left: 20px;
+  }
+  .nav__list-social li {
+    font-size: 18px;
+  }
+  .nav__list-social li:nth-child(2) {
+    padding-bottom: 30px;
+  }
+  .menu {
+    margin-bottom: 50px;
   }
   .menu__logo {
     width: 200px;
@@ -1098,6 +1135,7 @@ label > input {
   }
   .header__form-title {
     font-size: 30px;
+    text-align: start;
   }
 }
 
@@ -1115,10 +1153,9 @@ label > input {
     margin-bottom: 0;
   }
   .header {
-    height: 700px;
+    height: 800px;
   }
   .header__container {
-    padding-bottom: 70px;
     padding-left: 170px;
   }
   .burger-btn {
@@ -1143,9 +1180,6 @@ label > input {
   .nav__close .nav__item {
     opacity: 1;
   }
-  .nav__list {
-    justify-content: space-between;
-  }
   .nav__list li {
     margin: 0;
     justify-content: space-between;
@@ -1159,7 +1193,7 @@ label > input {
     margin-bottom: 30px;
   }
   .nav__list-social img {
-    height: 20px;
+    height: 30px;
   }
   .nav__list-social {
     position: absolute;
@@ -1171,8 +1205,8 @@ label > input {
     margin: 0;
     align-items: center;
     flex-direction: row-reverse;
-    justify-content: center;
-    background: rgba(51, 51, 51, 0.75);
+    justify-content: end;
+    background: rgba(51, 51, 51, 0.65);
     -webkit-writing-mode: vertical-lr;
             writing-mode: vertical-lr;
   }
@@ -1184,7 +1218,7 @@ label > input {
   }
   .nav__list-social li:nth-child(5) {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
   .nav__list-social li:nth-child(6) {
     display: block;
@@ -1216,7 +1250,7 @@ label > input {
     display: none;
   }
   .menu {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 140px;
   }
   .menu__title {
@@ -1228,6 +1262,18 @@ label > input {
   }
   .header__content-title {
     width: auto;
+  }
+  .header__form input::-webkit-input-placeholder {
+    font-size: 20px;
+  }
+  .header__form input::placeholder {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  .nav__list:nth-child(1) {
+    padding-top: 0;
   }
 }
 
