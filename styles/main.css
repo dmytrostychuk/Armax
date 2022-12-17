@@ -734,6 +734,7 @@ label > input {
   font-weight: 700;
   list-style: none;
   padding: 0 0 30px 40px;
+  transition: 0.3 ease;
   text-transform: uppercase;
 }
 .nav__list:nth-child(1) {
@@ -782,7 +783,6 @@ label > input {
 .menu__title {
   margin: 0;
 }
-
 .menu__link-logo:hover {
   opacity: 0.3;
   transition: all ease 0.3s;
@@ -1074,7 +1074,7 @@ label > input {
     padding-top: 100px;
   }
   .nav__list {
-    justify-content: space-between;
+    justify-content: end;
     width: 250px;
     padding-left: 20px;
   }
@@ -1156,7 +1156,7 @@ label > input {
     height: 800px;
   }
   .header__container {
-    padding-left: 170px;
+    padding-left: 140px;
   }
   .burger-btn {
     display: none;
@@ -1170,27 +1170,31 @@ label > input {
     width: 100%;
     height: auto;
     padding-top: 0;
+    transition: 0s;
   }
   .nav__active {
+    background-color: rgba(51, 51, 51, 0);
     opacity: 1;
   }
   .nav__active .nav__item {
     opacity: 1;
   }
   .nav__close .nav__item {
-    opacity: 1;
+    -webkit-animation: menu-on 0s linear both;
+            animation: menu-on 0s linear both;
+  }
+  .nav__item {
+    margin-left: 20px;
   }
   .nav__list li {
-    margin: 0;
     justify-content: space-between;
+    margin-bottom: 0;
+    font-size: 18px;
   }
   .nav__list {
     flex-direction: row;
     width: 100%;
     padding: 0;
-  }
-  .nav__list .nav__item--telegram {
-    margin-bottom: 30px;
   }
   .nav__list-social img {
     height: 30px;
@@ -1201,7 +1205,7 @@ label > input {
     left: 0;
     width: auto;
     height: 100%;
-    padding: 35px 50px 0 70px;
+    padding: 35px 40px 0 40px;
     margin: 0;
     align-items: center;
     flex-direction: row-reverse;
@@ -1251,17 +1255,13 @@ label > input {
   }
   .menu {
     margin-top: 20px;
-    margin-bottom: 140px;
-  }
-  .menu__title {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
+    margin-bottom: 110px;
   }
   .header__content-title {
     width: auto;
+  }
+  .link-hover:hover {
+    letter-spacing: 0.05em;
   }
   .header__form input::-webkit-input-placeholder {
     font-size: 20px;
@@ -1290,12 +1290,18 @@ label > input {
   .section {
     margin-bottom: 0;
   }
+  .header {
+    height: 900px;
+  }
   .header__container {
     padding-left: 165px;
     height: 800px;
   }
+  .nav__item {
+    margin-left: 25px;
+  }
   .nav__list-social {
-    height: 850px;
+    height: 90 0px;
     justify-content: center;
   }
   .header__content {
