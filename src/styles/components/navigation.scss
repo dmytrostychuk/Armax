@@ -1,7 +1,7 @@
 .nav {
 	z-index: 3;
 	position: absolute;
-  height: 100vh;
+  height: 800px;
   top: 0px;
 	display: flex;
 	justify-content: flex-start;
@@ -36,7 +36,7 @@
 .nav__active {
   transform: translateX(-30px);
   background-color: #333333;
-  height: 100vh;
+  height: 800px;
 
   @include mq($from: phablet) {
     transform: translateX(-40px);
@@ -99,7 +99,7 @@
   }
 
   @include mq($from: desktop) {
-    margin-left: 25px;
+    margin-left: 55px;
   }
 }
 

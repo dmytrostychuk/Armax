@@ -14,13 +14,18 @@
 	margin-bottom: 30px;
 
 	@include mq($from: tablet) {
-		width: 50%;
+		width: 55%;
 		margin-bottom: 0;
-		margin-right: 10px;
+		margin-right: 20px;
+  }
+
+	@include mq($from: tablet-wide) {
+		width: 65%;
+		margin-bottom: 0;
+		margin-right: 40px;
   }
 
 	@include mq($from: desktop) {
-		margin-right: 30px;
   }
 }
 

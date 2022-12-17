@@ -1,11 +1,10 @@
 .header {
 	position: relative;
+	height: 800px;
 	background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.55), rgba(51, 51, 51, 0.9)),
  url("../img/lazer.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	
-	height: auto;
 
 	@include mq($from: tablet) {
 		height: 700px;
@@ -22,11 +21,6 @@
 
 .header__container {	
 	margin: 0 auto;
-	padding-bottom: 70px;
-
-	@include mq($from: phablet) {
-    padding-bottom: 100px;
-  }
 
 	@include mq($from: tablet-wide) {
 		padding-left: 140px;
