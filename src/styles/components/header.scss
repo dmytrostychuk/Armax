@@ -14,6 +14,10 @@
 	@include mq($from: tablet-wide) {
 		height: 800px;
 	}
+
+	@include mq($from: desktop) {
+		height: 900px;
+	}
 }
 
 .header__container {	
@@ -25,7 +29,7 @@
   }
 
 	@include mq($from: tablet-wide) {
-		padding-left: 170px;
+		padding-left: 140px;
   }
 
 	@include mq($from: desktop) {

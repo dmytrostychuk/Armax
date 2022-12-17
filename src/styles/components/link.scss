@@ -2,11 +2,14 @@
 	position: relative;
 	padding-bottom: 6px;
 	transition: 0.3s;
-
 	&:hover {
 		letter-spacing: .2em;
 		transition: 0.3s;
 		color: rgba(255, 255, 255, 0.61);
+
+		@include mq($from: tablet-wide) {
+			letter-spacing: .05em;
+		}
 	}
 
 	&:active {

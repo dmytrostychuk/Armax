@@ -29,6 +29,7 @@
     width: 100%;
     height: auto;
     padding-top: 0;
+    transition: 0s;
   }
 }
 
@@ -46,6 +47,7 @@
 	}
 
   @include mq($from: tablet-wide) {
+    background-color: #33333300;
     opacity: 1;
   }
 }
@@ -58,7 +60,6 @@
 .nav__item {
   animation-fill-mode: both;
   
-	
   .nav__active & { 
     animation: menu-on .3s linear both;
 
@@ -89,8 +90,16 @@
     }
 
     @include mq($from: tablet-wide) {
-      opacity: 1;
+      animation: menu-on 0s linear both; 
     }
+  }
+
+  @include mq($from: tablet-wide) {
+    margin-left: 20px;
+  }
+
+  @include mq($from: desktop) {
+    margin-left: 25px;
   }
 }
 
@@ -124,6 +133,7 @@
   font-weight: 700;
 	list-style: none;
   padding: 0 0 30px 40px;
+  transition: .3 ease;
   text-transform: uppercase;
 
   &:nth-child(1) {
@@ -144,8 +154,10 @@
     line-height: 20px;
 
     @include mq($from: tablet-wide) {
-      margin: 0;
       justify-content: space-between;
+      margin-bottom: 0;
+
+      font-size: 18px;
     }
   }
 
@@ -155,7 +167,7 @@
   }
 
   @include mq($from: tablet) {
-    justify-content: space-between;
+    justify-content: end;
     width: 250px;
     padding-left: 20px;
   }
@@ -165,13 +177,11 @@
     width: 100%;
     padding: 0;
   }
+}
 
-  .nav__item--telegram {
-    @include mq($from: tablet-wide) {
-      margin-bottom: 30px;
-    }
+.nav__item--telegram {
+  @include mq($from: tablet-wide) {
   }
-  
 }
 
 .nav__list-social {
@@ -218,7 +228,7 @@
     left: 0;
     width: auto;
     height: 100%;
-    padding: 35px 50px 0 70px;
+    padding: 35px 40px 0 40px;
     margin: 0;
     align-items: center;
     flex-direction: row-reverse;
@@ -243,11 +253,13 @@
         display: block;
         margin-bottom: 200px;
       }
+
     }
   }
 
   @include mq($from: desktop) {
-    height: 850px;
+    height: 90
+    0px;
     justify-content: center;
   }
 }
