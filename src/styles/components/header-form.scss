@@ -21,7 +21,7 @@
 		margin-bottom: 20px;
 
 		&::placeholder {
-			font-size: 18px;
+			font-size: 16px;
 		}
 
 		@include mq($from: phablet) {
@@ -35,7 +35,7 @@
 		@include mq($from: tablet-wide) {
 
 			&::placeholder {
-				font-size: 20px;
+				font-size: 16px;
 			}
 		}
 

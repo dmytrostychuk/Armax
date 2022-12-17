@@ -10,8 +10,7 @@
 		margin-bottom: 50px;
   }
 
-	@include mq($from: tablet-wide) {
-		margin-top: 20px;
+	@include mq($from: tablet-wide) { 
 		margin-bottom: 110px;
   }
 }
