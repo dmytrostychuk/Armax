@@ -520,15 +520,14 @@ label > input {
 
 .header {
   position: relative;
+  height: 800px;
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.55), rgba(51, 51, 51, 0.9)), url("../img/lazer.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  height: auto;
 }
 
 .header__container {
   margin: 0 auto;
-  padding-bottom: 70px;
 }
 
 .burger-btn {
@@ -599,7 +598,7 @@ label > input {
 .nav {
   z-index: 3;
   position: absolute;
-  height: 100vh;
+  height: 800px;
   top: 0px;
   display: flex;
   justify-content: flex-start;
@@ -614,7 +613,7 @@ label > input {
   -webkit-transform: translateX(-30px);
           transform: translateX(-30px);
   background-color: #333333;
-  height: 100vh;
+  height: 800px;
 }
 
 .nav__close {
@@ -841,7 +840,6 @@ label > input {
   padding: 0 20px;
   margin-bottom: 30px;
 }
-
 .header__inner {
   padding: 40px 30px;
   background-color: rgba(51, 51, 51, 0.65);
@@ -978,9 +976,6 @@ label > input {
   .button {
     padding: 30px 50px;
   }
-  .header__container {
-    padding-bottom: 100px;
-  }
   .burger-btn {
     width: 40px;
     height: 20px;
@@ -1096,9 +1091,9 @@ label > input {
     min-height: 360px;
   }
   .header__content {
-    width: 50%;
+    width: 55%;
     margin-bottom: 0;
-    margin-right: 10px;
+    margin-right: 20px;
   }
   .header__inner {
     padding: 40px 20px;
@@ -1257,6 +1252,11 @@ label > input {
     margin-top: 20px;
     margin-bottom: 110px;
   }
+  .header__content {
+    width: 65%;
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
   .header__content-title {
     width: auto;
   }
@@ -1298,14 +1298,11 @@ label > input {
     height: 800px;
   }
   .nav__item {
-    margin-left: 25px;
+    margin-left: 55px;
   }
   .nav__list-social {
     height: 90 0px;
     justify-content: center;
-  }
-  .header__content {
-    margin-right: 30px;
   }
   .header__inner {
     padding: 40px 30px;
