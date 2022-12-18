@@ -389,7 +389,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: #ffffff;
-  background-color: #333333;
 }
 
 ul {
@@ -520,8 +519,8 @@ label > input {
 
 .header {
   position: relative;
-  height: 800px;
-  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.55), rgba(51, 51, 51, 0.9)), url("../img/lazer.jpg");
+  height: 850px;
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.55), rgb(51, 51, 51)), url("../img/lazer.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -598,7 +597,7 @@ label > input {
 .nav {
   z-index: 3;
   position: absolute;
-  height: 800px;
+  height: 850px;
   top: 0px;
   display: flex;
   justify-content: flex-start;
@@ -613,7 +612,7 @@ label > input {
   -webkit-transform: translateX(-30px);
           transform: translateX(-30px);
   background-color: #333333;
-  height: 800px;
+  height: 850px;
 }
 
 .nav__close {
@@ -948,16 +947,30 @@ label > input {
   margin-bottom: 20px;
 }
 .header__form input::-webkit-input-placeholder {
-  font-size: 18px;
+  font-size: 16px;
 }
 .header__form input::placeholder {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .header__form-title {
   margin-top: 0;
   font-size: 24px;
   text-align: center;
+}
+.preview {
+  color: #333333;
+}
+
+.preview__title {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.preview__link {
+  color: #d1a954;
+  border-bottom: 1px solid #dda429;
 }
 
 @media (min-width: 560px) {
@@ -975,6 +988,9 @@ label > input {
   }
   .button {
     padding: 30px 50px;
+  }
+  .header {
+    height: 800px;
   }
   .burger-btn {
     width: 40px;
@@ -1006,6 +1022,7 @@ label > input {
     margin-left: 17px;
   }
   .nav {
+    height: 800px;
     width: 300px;
   }
   .nav__active {
@@ -1249,7 +1266,6 @@ label > input {
     display: none;
   }
   .menu {
-    margin-top: 20px;
     margin-bottom: 110px;
   }
   .header__content {
@@ -1264,10 +1280,10 @@ label > input {
     letter-spacing: 0.05em;
   }
   .header__form input::-webkit-input-placeholder {
-    font-size: 20px;
+    font-size: 16px;
   }
   .header__form input::placeholder {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
