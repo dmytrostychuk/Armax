@@ -960,6 +960,8 @@ label > input {
 }
 .preview {
   color: #333333;
+  font-size: 16px;
+  padding: 0 10px;
 }
 
 .preview__title {
@@ -971,6 +973,12 @@ label > input {
 .preview__link {
   color: #d1a954;
   border-bottom: 1px solid #dda429;
+}
+
+.preview__text {
+  line-height: 1.5em;
+  word-spacing: 0.6em;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 560px) {
