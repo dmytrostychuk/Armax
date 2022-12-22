@@ -10,6 +10,8 @@ position: relative;
 width: 100%;
 height: auto;
 background-color: #333;
+margin-bottom: 100px;
+border-radius: 10px;
 
 &:hover {
     opacity: .1;
@@ -21,8 +23,13 @@ background-color: #333;
     margin: 0;
 }
 
+.services__name {
+    padding: 10px 20px;
+}
+
 .services__name-link {
-    color: #000000;
+    
+    color: #fff;
 
     &::after {
         content: "";
@@ -45,6 +52,7 @@ background-color: #333;
 
 .services__img {
     width: 100%;
+    border-radius: 10px;
 
     &:hover {
     }

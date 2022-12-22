@@ -989,6 +989,8 @@ label > input {
   width: 100%;
   height: auto;
   background-color: #333;
+  margin-bottom: 100px;
+  border-radius: 10px;
 }
 .services__card:hover {
   opacity: 0.1;
@@ -999,8 +1001,12 @@ label > input {
   margin: 0;
 }
 
+.services__name {
+  padding: 10px 20px;
+}
+
 .services__name-link {
-  color: #000000;
+  color: #fff;
 }
 .services__name-link::after {
   content: "";
@@ -1022,6 +1028,7 @@ label > input {
 
 .services__img {
   width: 100%;
+  border-radius: 10px;
 }
 
 @media (min-width: 560px) {
