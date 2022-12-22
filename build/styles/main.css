@@ -987,7 +987,11 @@ label > input {
 .services__card {
   position: relative;
   width: 100%;
-  height: 50px;
+  height: auto;
+  background-color: #333;
+}
+.services__card:hover {
+  opacity: 0.1;
 }
 
 .services__content {
