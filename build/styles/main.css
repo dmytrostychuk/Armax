@@ -976,6 +976,7 @@ label > input {
 
 .services {
   color: #000000;
+  padding-bottom: 500px;
 }
 
 .services__card {
@@ -985,28 +986,26 @@ label > input {
   background-color: #d1a954;
   margin-bottom: 25px;
   font-weight: 600;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  outline: 5px solid #ffffff;
+}
+.services__card:hover {
+  outline: 5px solid rgba(51, 51, 51, 0.65);
 }
 .services__card:hover .services__hover-content {
   opacity: 1;
 }
-.services__card:hover {
-  outline: 5px solid rgba(51, 51, 51, 0.65);
-  transition: all 0.1s ease-in-out;
-}
-
-.services__content {
+.services__card .services__content {
   margin: 0;
 }
-
-.services__name {
+.services__card .services__name {
   position: absolute;
   bottom: 0;
   margin: 20px 30px;
   padding: 10px 20px;
   text-align: center;
 }
-.services__name::after {
+.services__card .services__name::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1017,8 +1016,7 @@ label > input {
   bottom: 0;
   left: 0;
 }
-
-.services__name-link {
+.services__card .services__name-link {
   z-index: 1;
   position: relative;
   bottom: 0;
@@ -1029,18 +1027,15 @@ label > input {
   letter-spacing: 0.1em;
   line-height: 1.3em;
 }
-
-picture {
+.services__card picture {
   display: flex;
 }
-
-.services__img {
+.services__card .services__img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-
-.services__hover-content {
+.services__card .services__hover-content {
   background: linear-gradient(0deg, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.7));
   position: absolute;
   top: 0;
@@ -1053,8 +1048,7 @@ picture {
   opacity: 0;
   transition: all 0.35s ease-in-out;
 }
-
-.services__link::after {
+.services__card .services__link::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1062,26 +1056,28 @@ picture {
   top: 0;
   left: 0;
 }
-
-.services__hover-title {
+.services__card .services__hover-title {
+  margin-top: 20px;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
   color: #fff;
   transition: all 0.5s 0.1s ease-in-out;
   -webkit-transform: scale(0);
           transform: scale(0);
 }
-
-.services__hover-text {
+.services__card .services__hover-text {
   z-index: 2;
   color: #fff;
   position: absolute;
   left: 40px;
   bottom: 100px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-.services__hover-text::after {
+.services__card .services__hover-text::after {
   content: "";
   position: absolute;
   width: 5px;
@@ -1093,12 +1089,11 @@ picture {
   border-radius: 100%;
   opacity: 0;
 }
-.services__hover-text:hover::after {
+.services__card .services__hover-text:hover::after {
   right: -7px;
   opacity: 1;
 }
-
-.services__hover--circle::after, .services__hover--circle::before {
+.services__card .services__hover--circle::after, .services__card .services__hover--circle::before {
   content: "";
   position: absolute;
   bottom: 3px;
@@ -1110,11 +1105,11 @@ picture {
   border-radius: 100%;
   opacity: 0;
 }
-.services__hover--circle:hover::after {
+.services__card .services__hover--circle:hover::after {
   right: -14px;
   opacity: 1;
 }
-.services__hover--circle:hover::before {
+.services__card .services__hover--circle:hover::before {
   right: -21px;
   opacity: 1;
 }
@@ -1198,11 +1193,17 @@ picture {
   .header__form input::placeholder {
     font-size: 16px;
   }
-  .services__img {
+  .services__card {
+    max-width: 98.5%;
+    margin: 5px;
+    margin-bottom: 10px;
+  }
+  .services__card .services__img {
     height: 200px;
   }
-  .services__hover-text {
+  .services__card .services__hover-text {
     bottom: 70px;
+    left: 50px;
   }
 }
 
@@ -1312,16 +1313,14 @@ picture {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  .services__container {
     margin: 0 5px;
   }
-  .services__card:hover .services__hover-title {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
   .services__card {
-    max-width: 49.3%;
+    max-width: 48.6%;
+  }
+  .services__card .services__hover-text {
+    bottom: 85px;
+    left: 50px;
   }
 }
 
@@ -1459,11 +1458,43 @@ picture {
   .header__form input::placeholder {
     font-size: 16px;
   }
-  .services__name-link {
-    font-size: 1.3em;
+  .services__card:hover .services__hover-title {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
-  .services__img {
+  .services__card {
+    max-width: 49%;
+  }
+  .services__card .services__name-link {
+    font-size: 1.1em;
+    padding: 0 20px;
+  }
+  .services__card .services__img {
     height: auto;
+  }
+  .services__card .services__img {
+    height: 370px;
+  }
+  .services__card .services__hover-text:hover::after {
+    width: 7px;
+    height: 7px;
+    right: -10px;
+  }
+  .services__card .services__hover-text {
+    font-size: 1.2em;
+    font-weight: 600;
+    bottom: 100px;
+    left: 75px;
+  }
+  .services__card .services__hover--circle::after, .services__card .services__hover--circle::before {
+    width: 7px;
+    height: 7px;
+  }
+  .services__card .services__hover--circle:hover::after {
+    right: -20px;
+  }
+  .services__card .services__hover--circle:hover::before {
+    right: -30px;
   }
 }
 
@@ -1505,5 +1536,12 @@ picture {
   }
   .header__form input {
     height: 50px;
+  }
+  .services__container {
+    max-width: 2060px;
+    margin: 0 auto;
+  }
+  .services__card {
+    max-height: 370px;
   }
 }
