@@ -984,11 +984,15 @@ label > input {
   height: auto;
   background-color: #d1a954;
   margin-bottom: 25px;
-  border-radius: 10px;
   font-weight: 600;
+  transition: all 0.1s ease-in-out;
 }
 .services__card:hover .services__hover-content {
   opacity: 1;
+}
+.services__card:hover {
+  outline: 5px solid rgba(51, 51, 51, 0.65);
+  transition: all 0.1s ease-in-out;
 }
 
 .services__content {
@@ -998,6 +1002,7 @@ label > input {
 .services__name {
   position: absolute;
   bottom: 0;
+  margin: 20px 30px;
   padding: 10px 20px;
   text-align: center;
 }
@@ -1009,15 +1014,15 @@ label > input {
   background-color: #d1a954;
   -webkit-transform: skewX(-35deg);
           transform: skewX(-35deg);
-  bottom: 10px;
-  left: 20px;
+  bottom: 0;
+  left: 0;
 }
 
 .services__name-link {
   z-index: 1;
   position: relative;
-  bottom: 10px;
-  left: 20px;
+  bottom: 0;
+  left: 0;
   width: 100%;
   text-transform: uppercase;
   color: #fff;
@@ -1032,6 +1037,7 @@ picture {
 .services__img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .services__hover-content {
@@ -1065,33 +1071,52 @@ picture {
 }
 
 .services__hover-text {
-  color: #fff;
-}
-.services__hover-text span {
-  position: relative;
   z-index: 2;
+  color: #fff;
+  position: absolute;
+  left: 40px;
+  bottom: 100px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
-.services__hover-text span::after, .services__hover-text span::before {
+.services__hover-text::after {
   content: "";
   position: absolute;
-  width: 3px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
+  bottom: 3px;
+  right: 0;
   background-color: #fff;
+  transition: all 0.5s 0.1s ease-in-out;
+  border-radius: 100%;
+  opacity: 0;
 }
-.services__hover-text span::after {
+.services__hover-text:hover::after {
+  right: -7px;
+  opacity: 1;
+}
+
+.services__hover--circle::after, .services__hover--circle::before {
+  content: "";
+  position: absolute;
+  bottom: 3px;
   right: 0;
-  top: 2px;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  transition: all 0.5s 0.1s ease-in-out;
+  border-radius: 100%;
+  opacity: 0;
 }
-.services__hover-text span::before {
-  right: 0;
-  top: -2px;
-  -webkit-transform: rotate(-60deg);
-          transform: rotate(-60deg);
+.services__hover--circle:hover::after {
+  right: -14px;
+  opacity: 1;
 }
-.services__hover-text span:hover::before, .services__hover-text span:hover::after {
-  background-color: red;
+.services__hover--circle:hover::before {
+  right: -21px;
+  opacity: 1;
 }
 
 .section__title {
@@ -1173,17 +1198,11 @@ picture {
   .header__form input::placeholder {
     font-size: 16px;
   }
-  .services__container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .services__card:hover .services__hover-title {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
   .services__img {
     height: 200px;
+  }
+  .services__hover-text {
+    bottom: 70px;
   }
 }
 
@@ -1289,8 +1308,20 @@ picture {
     font-size: 30px;
     text-align: start;
   }
+  .services__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .services__container {
+    margin: 0 5px;
+  }
+  .services__card:hover .services__hover-title {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
   .services__card {
-    width: 49%;
+    max-width: 49.3%;
   }
 }
 
