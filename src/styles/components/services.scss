@@ -1,20 +1,24 @@
 .services {
-    color: #000000;
+    background-color: rgb(234, 233, 233);
+    color: #404044;
     padding-bottom: 500px;
+    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .services__container {
-    
+    margin: 0 auto;
+    background-color: rgb(234, 233, 233);
     @include mq($from: tablet) {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin: 0 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        padding: 5px;
     }
 
     @include mq($from: desktop) {
         max-width: 2060px;
-        margin: 0 auto;
     }
     
 }
@@ -22,15 +26,19 @@
 .services__card {
     position: relative;
     width: 100%;
+    margin-bottom: 5px;
     height: auto;
     background-color: #d1a954;
-    margin-bottom: 25px;
     font-weight: 600;
     transition: all 0.35s ease-in-out;
-    outline: 5px solid #ffffff;
+    
     
     &:hover {
-        outline: 5px solid rgba(51,51,51,.65);
+
+        @include mq($from: tablet) {
+            outline: 5px solid rgba(51,51,51,.65);
+        }
+        
     }
     
     &:hover .services__hover-content {
@@ -44,23 +52,18 @@
         }
     }
 
-    @include mq($from: phablet) {
-        max-width: 98.5%;
-        margin: 5px;
-        margin-bottom: 10px;
-    }
-    
     @include mq($from: tablet) {
-        max-width: 48.6%;
-    }
-    
-    @include mq($from: tablet-wide) {
-        max-width: 49%;
+        outline: 5px solid rgb(234, 233, 233);
     }
 
     @include mq($from: desktop) {
         max-height: 370px;
     }
+}
+
+.services__title {
+    margin-top: 0;
+}
 
 .services__content {
     margin: 0;
@@ -82,8 +85,8 @@
         transform: skewX(-35deg);
         bottom: 0;
         left: 0;
-      }
-  }
+    }
+}
   
 .services__name-link {
     z-index: 1;
@@ -108,7 +111,7 @@ picture {
 
 .services__img {
     width: 100%;
-    height: auto;
+    max-height: 200px;
     object-fit: cover;
 
     @include mq($from: phablet) {
@@ -116,11 +119,10 @@ picture {
     }
 
     @include mq($from: tablet-wide) {
-        height: auto;
+        height: 300px;
     }
 
     @include mq($from: tablet-wide) {
-        height: 370px;
     }
 }
 
@@ -158,6 +160,10 @@ picture {
     color: #fff;
     transition: all 0.5s 0.1s ease-in-out;
     transform: scale(0);
+
+    @include mq($from: tablet-wide) {
+        font-size: 1.125rem;
+    }  
 }
 
 .services__hover-text {
@@ -196,7 +202,7 @@ picture {
     }
 
     @include mq($from: phablet) {
-        bottom: 70px;
+        bottom: 80px;
         left: 50px;
     }  
     
@@ -206,7 +212,7 @@ picture {
     }  
 
     @include mq($from: tablet-wide) {
-        font-size: 1.2em;
+        font-size: 20px;
         font-weight: 600;
         bottom: 100px;
         left: 75px;
@@ -250,5 +256,4 @@ picture {
             right: -30px;
         }  
     }
-}
 }
