@@ -959,7 +959,7 @@ label > input {
   text-align: center;
 }
 .preview {
-  color: #333333;
+  color: #404044;
   font-size: 16px;
 }
 
@@ -975,37 +975,47 @@ label > input {
 }
 
 .services {
-  color: #000000;
+  background-color: rgb(234, 233, 233);
+  color: #404044;
   padding-bottom: 500px;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.services__container {
+  margin: 0 auto;
+  background-color: rgb(234, 233, 233);
 }
 
 .services__card {
   position: relative;
   width: 100%;
+  margin-bottom: 5px;
   height: auto;
   background-color: #d1a954;
-  margin-bottom: 25px;
   font-weight: 600;
   transition: all 0.35s ease-in-out;
-  outline: 5px solid #ffffff;
-}
-.services__card:hover {
-  outline: 5px solid rgba(51, 51, 51, 0.65);
 }
 .services__card:hover .services__hover-content {
   opacity: 1;
 }
-.services__card .services__content {
+
+.services__title {
+  margin-top: 0;
+}
+
+.services__content {
   margin: 0;
 }
-.services__card .services__name {
+
+.services__name {
   position: absolute;
   bottom: 0;
   margin: 20px 30px;
   padding: 10px 20px;
   text-align: center;
 }
-.services__card .services__name::after {
+.services__name::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1016,7 +1026,8 @@ label > input {
   bottom: 0;
   left: 0;
 }
-.services__card .services__name-link {
+
+.services__name-link {
   z-index: 1;
   position: relative;
   bottom: 0;
@@ -1027,15 +1038,17 @@ label > input {
   letter-spacing: 0.1em;
   line-height: 1.3em;
 }
-.services__card picture {
+
+picture {
   display: flex;
 }
-.services__card .services__img {
+
+.services__img {
   width: 100%;
-  height: auto;
+  max-height: 200px;
   object-fit: cover;
 }
-.services__card .services__hover-content {
+.services__hover-content {
   background: linear-gradient(0deg, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.7));
   position: absolute;
   top: 0;
@@ -1048,7 +1061,8 @@ label > input {
   opacity: 0;
   transition: all 0.35s ease-in-out;
 }
-.services__card .services__link::after {
+
+.services__link::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1056,7 +1070,8 @@ label > input {
   top: 0;
   left: 0;
 }
-.services__card .services__hover-title {
+
+.services__hover-title {
   margin-top: 20px;
   font-size: 1em;
   font-weight: 400;
@@ -1066,7 +1081,8 @@ label > input {
   -webkit-transform: scale(0);
           transform: scale(0);
 }
-.services__card .services__hover-text {
+
+.services__hover-text {
   z-index: 2;
   color: #fff;
   position: absolute;
@@ -1077,7 +1093,7 @@ label > input {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-.services__card .services__hover-text::after {
+.services__hover-text::after {
   content: "";
   position: absolute;
   width: 5px;
@@ -1089,11 +1105,12 @@ label > input {
   border-radius: 100%;
   opacity: 0;
 }
-.services__card .services__hover-text:hover::after {
+.services__hover-text:hover::after {
   right: -7px;
   opacity: 1;
 }
-.services__card .services__hover--circle::after, .services__card .services__hover--circle::before {
+
+.services__hover--circle::after, .services__hover--circle::before {
   content: "";
   position: absolute;
   bottom: 3px;
@@ -1105,11 +1122,11 @@ label > input {
   border-radius: 100%;
   opacity: 0;
 }
-.services__card .services__hover--circle:hover::after {
+.services__hover--circle:hover::after {
   right: -14px;
   opacity: 1;
 }
-.services__card .services__hover--circle:hover::before {
+.services__hover--circle:hover::before {
   right: -21px;
   opacity: 1;
 }
@@ -1193,16 +1210,11 @@ label > input {
   .header__form input::placeholder {
     font-size: 16px;
   }
-  .services__card {
-    max-width: 98.5%;
-    margin: 5px;
-    margin-bottom: 10px;
-  }
-  .services__card .services__img {
+  .services__img {
     height: 200px;
   }
-  .services__card .services__hover-text {
-    bottom: 70px;
+  .services__hover-text {
+    bottom: 80px;
     left: 50px;
   }
 }
@@ -1310,15 +1322,19 @@ label > input {
     text-align: start;
   }
   .services__container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 5px;
+  }
+  .services__card:hover {
+    outline: 5px solid rgba(51, 51, 51, 0.65);
   }
   .services__card {
-    max-width: 48.6%;
+    outline: 5px solid rgb(234, 233, 233);
   }
-  .services__card .services__hover-text {
+  .services__hover-text {
     bottom: 85px;
     left: 50px;
   }
@@ -1462,38 +1478,35 @@ label > input {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  .services__card {
-    max-width: 49%;
-  }
-  .services__card .services__name-link {
+  .services__name-link {
     font-size: 1.1em;
     padding: 0 20px;
   }
-  .services__card .services__img {
-    height: auto;
+  .services__img {
+    height: 300px;
   }
-  .services__card .services__img {
-    height: 370px;
+  .services__hover-title {
+    font-size: 1.125rem;
   }
-  .services__card .services__hover-text:hover::after {
+  .services__hover-text:hover::after {
     width: 7px;
     height: 7px;
     right: -10px;
   }
-  .services__card .services__hover-text {
-    font-size: 1.2em;
+  .services__hover-text {
+    font-size: 20px;
     font-weight: 600;
     bottom: 100px;
     left: 75px;
   }
-  .services__card .services__hover--circle::after, .services__card .services__hover--circle::before {
+  .services__hover--circle::after, .services__hover--circle::before {
     width: 7px;
     height: 7px;
   }
-  .services__card .services__hover--circle:hover::after {
+  .services__hover--circle:hover::after {
     right: -20px;
   }
-  .services__card .services__hover--circle:hover::before {
+  .services__hover--circle:hover::before {
     right: -30px;
   }
 }
@@ -1539,7 +1552,6 @@ label > input {
   }
   .services__container {
     max-width: 2060px;
-    margin: 0 auto;
   }
   .services__card {
     max-height: 370px;
