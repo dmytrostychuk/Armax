@@ -385,7 +385,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Encode Sans Condensed", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #ffffff;
@@ -519,10 +519,10 @@ label > input {
 
 .header {
   position: relative;
-  height: 850px;
+  height: 890px;
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.55), rgb(51, 51, 51)), url("../img/lazer.jpg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .header__container {
@@ -597,7 +597,7 @@ label > input {
 .nav {
   z-index: 3;
   position: absolute;
-  height: 850px;
+  height: 890px;
   top: 0px;
   display: flex;
   justify-content: flex-start;
@@ -612,7 +612,7 @@ label > input {
   -webkit-transform: translateX(-30px);
           transform: translateX(-30px);
   background-color: #333333;
-  height: 850px;
+  height: 890px;
 }
 
 .nav__close {
@@ -961,6 +961,8 @@ label > input {
 .preview {
   color: #404044;
   font-size: 16px;
+  line-height: 1.2;
+  margin-top: 40px;
 }
 
 .preview__link {
@@ -975,16 +977,16 @@ label > input {
 }
 
 .services {
-  background-color: rgb(234, 233, 233);
+  background-color: #F6F6F6;
   color: #404044;
   padding-bottom: 500px;
-  margin-top: 30px;
+  margin-top: 40px;
   padding-top: 30px;
 }
 
 .services__container {
   margin: 0 auto;
-  background-color: rgb(234, 233, 233);
+  background-color: #F6F6F6;
 }
 
 .services__card {
@@ -1049,7 +1051,7 @@ picture {
   object-fit: cover;
 }
 .services__hover-content {
-  background: linear-gradient(0deg, rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.7));
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.4), rgba(51, 51, 51, 0.9));
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1133,8 +1135,10 @@ picture {
 
 .section__title {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin-bottom: 35px;
 }
 
@@ -1325,7 +1329,7 @@ picture {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-row-gap: 5px;
     padding: 5px;
   }
   .services__card:hover {
@@ -1474,6 +1478,12 @@ picture {
   .header__form input::placeholder {
     font-size: 16px;
   }
+  .preview {
+    margin-top: 60px;
+  }
+  .services {
+    margin-top: 60px;
+  }
   .services__card:hover .services__hover-title {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -1483,6 +1493,7 @@ picture {
     padding: 0 20px;
   }
   .services__img {
+    max-height: 330px;
     height: 300px;
   }
   .services__hover-title {
