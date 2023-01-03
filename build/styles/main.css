@@ -410,6 +410,7 @@ img {
 }
 
 .section {
+  margin-bottom: 0;
   margin-bottom: 40px;
 }
 .section--no-margin {
@@ -877,6 +878,7 @@ label > input {
   text-align: center;
   line-height: 1.6em;
   letter-spacing: 0.1em;
+  font-size: 14px;
 }
 
 .link-hover {
@@ -970,16 +972,10 @@ label > input {
   border-bottom: 1px solid #dda429;
 }
 
-.preview__text {
-  line-height: 1.5em;
-  word-spacing: 0.6em;
-  margin-bottom: 20px;
-}
-
 .services {
   background-color: #F6F6F6;
   color: #404044;
-  padding-bottom: 500px;
+  padding-bottom: 60px;
   margin-top: 40px;
   padding-top: 30px;
 }
@@ -1142,6 +1138,21 @@ picture {
   margin-bottom: 35px;
 }
 
+.section__text {
+  font-size: 16px;
+  line-height: 1.5em;
+  word-spacing: 0.6em;
+  margin-bottom: 20px;
+}
+
+.principle {
+  color: #404044;
+}
+
+.principle__text {
+  text-align: center;
+}
+
 @media (min-width: 560px) {
   body {
     font-size: 16px;
@@ -1204,6 +1215,9 @@ picture {
   }
   .menu__logo {
     width: 150px;
+  }
+  .header__content-text {
+    font-size: 16px;
   }
   .header__form input {
     max-width: 600px;

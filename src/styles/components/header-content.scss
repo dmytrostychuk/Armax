@@ -97,12 +97,17 @@
 }
 
 .header__content-text {
-text-align: center;
-line-height: 1.6em;
-letter-spacing: 0.1em;
+	text-align: center;
+	line-height: 1.6em;
+	letter-spacing: 0.1em;
+	font-size: 14px;
 
-@include mq($from: tablet) {
-	text-align: start;
-	margin: 0;
-}
+	@include mq($from: phablet) {
+		font-size: 16px;
+	}
+
+	@include mq($from: tablet) {
+		text-align: start;
+		margin: 0;
+	}
 }
