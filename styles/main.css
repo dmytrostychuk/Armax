@@ -1145,12 +1145,16 @@ picture {
   margin-bottom: 20px;
 }
 
-.principle {
+.featured {
   color: #404044;
 }
 
-.principle__text {
+.featured__text {
   text-align: center;
+}
+
+.featured__span-image {
+  background-color: rebeccapurple;
 }
 
 @media (min-width: 560px) {
