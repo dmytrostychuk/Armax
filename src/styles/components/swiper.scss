@@ -1,0 +1,51 @@
+.partners__slider {
+	position: relative;
+
+	& .swiper-button-next::after,
+	& .swiper-button-prev::after {
+		font-size: 60px;
+		margin-top: 30px;
+		color: red;
+	}
+
+	& .swiper-button-next {
+		right: -10px;
+		transition: all 0.35s ease;
+
+		&:hover {
+			right: -20px;
+		}
+	}
+
+	& .swiper-button-prev {
+		left: -10px;
+		transition: all 0.35s ease;
+
+		&:hover {
+			left: -20px;
+		}
+	}
+
+}
+
+.swiper-button-next {
+	top: 30px;
+}
+
+.swiper {
+	position: relative;
+	width: 90%;
+
+	
+}
+
+.swiper-slide {
+	text-align: center;
+}
+
+.swiper-wrapper {
+	width: 100px;
+	align-items: center;
+}
+
+

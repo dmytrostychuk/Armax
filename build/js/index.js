@@ -15,6 +15,49 @@ if (burgerBtn) {
   });
 }
 
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 2,
+  infinity: true,
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 800,
+    disableOnInteraction: false,
+  },
+  speed: 800,
+  breakpoints: {
+    480: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
+  },
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  on: {
+    init() {
+      this.el.addEventListener('mouseenter', () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener('mouseleave', () => {
+        this.autoplay.start();
+      });
+    },
+  },
+});
+
 //modal
 
 var modal = document.querySelector('.modal');
