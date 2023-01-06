@@ -391,6 +391,11 @@ body {
   color: #ffffff;
 }
 
+main {
+  z-index: 1;
+  background-color: #ffffff;
+}
+
 ul {
   list-style: none;
 }
@@ -521,13 +526,20 @@ label > input {
 .header {
   position: relative;
   height: 890px;
-  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.55), rgb(51, 51, 51)), url("../img/lazer.jpg");
-  background-position: center;
-  background-repeat: repeat;
 }
 
 .header__container {
   margin: 0 auto;
+}
+
+.header__test {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.55), rgb(51, 51, 51)), url("../img/lazer.jpg");
+  background-position: center;
+  background-repeat: repeat;
 }
 
 .burger-btn {
@@ -834,8 +846,12 @@ label > input {
     opacity: 0;
   }
 }
+.header__content--container {
+  position: relative;
+}
 
 .header__content {
+  z-index: 1;
   background-color: rgba(67, 79, 79, 0.537);
   padding: 0 20px;
   margin-bottom: 30px;
@@ -936,6 +952,7 @@ label > input {
 }
 
 .header__form {
+  z-index: 1;
   margin: 0 auto;
   align-items: center;
 }
@@ -1203,6 +1220,47 @@ picture {
   font-size: 15px;
 }
 
+.partners__slider {
+  position: relative;
+}
+.partners__slider .swiper-button-next::after, .partners__slider .swiper-button-prev::after {
+  font-size: 60px;
+  margin-top: 30px;
+  color: red;
+}
+.partners__slider .swiper-button-next {
+  right: -10px;
+  transition: all 0.35s ease;
+}
+.partners__slider .swiper-button-next:hover {
+  right: -20px;
+}
+.partners__slider .swiper-button-prev {
+  left: -10px;
+  transition: all 0.35s ease;
+}
+.partners__slider .swiper-button-prev:hover {
+  left: -20px;
+}
+
+.swiper-button-next {
+  top: 30px;
+}
+
+.swiper {
+  position: relative;
+  width: 90%;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-wrapper {
+  width: 100px;
+  align-items: center;
+}
+
 @media (min-width: 560px) {
   body {
     font-size: 16px;
@@ -1411,7 +1469,7 @@ picture {
     outline: 5px solid rgba(51, 51, 51, 0.65);
   }
   .services__card {
-    outline: 5px solid rgb(234, 233, 233);
+    outline: 5px solid #F6F6F6;
   }
   .services__hover-text {
     bottom: 85px;

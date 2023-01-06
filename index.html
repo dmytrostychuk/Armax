@@ -11,10 +11,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
+
 <body>
+
   <header class="header">
+    <div class="header__test">
+    </div>
     <ul class="nav__list nav__list-social nav__list--desktop">
       <li class="nav__item-social"><a href="tel:+380687945051" class="link-hover">+38 (068) 999 99</a></li>
       <li class="nav__item-social"><a href="mailto:lazerarmax@gmail.com" class="link-hover">lazerarmax@gmail.com</a>
@@ -209,59 +214,85 @@
     <section class="section section--featured">
       <div class="container">
         <h3 class="section__title">Наші принципи</h3>
-        <p class="section__text section--featured-text">В своїй роботі ми дотримуємось принципів, які дозволяють нам бути
-            впевненими в тому,
-            що наші Клієнти
-            отримують кращий продукт з високим рівнем сервісу. Ми не просто виготовляємо металеві конструкції – ми
-            вирішуємо задачі
-            наших Клієнтів!!!
-          </p>
-          <div class="featured">
-            <div class="featured__card">
-              <div class="featured__image-card">
-                <img class="featured__image" src="img/ok.svg" alt="Okey" width="32" height="32">
-              </div>
-              <div class="featured__content">
-                <p class="featured__content-title">Якість</p>
-                <p class="featured__content-text">Єврометал працює тільки з перевіреними постачальниками і виробникам</p>
-              </div>
+        <p class="section__text section--featured-text">В своїй роботі ми дотримуємось принципів, які дозволяють нам
+          бути
+          впевненими в тому,
+          що наші Клієнти
+          отримують кращий продукт з високим рівнем сервісу. Ми не просто виготовляємо металеві конструкції – ми
+          вирішуємо задачі
+          наших Клієнтів!!!
+        </p>
+        <div class="featured">
+          <div class="featured__card">
+            <div class="featured__image-card">
+              <img class="featured__image" src="img/ok.svg" alt="Okey" width="32" height="32">
             </div>
-            <div class="featured__card">
-              <div class="featured__image-card">
-                <img class="featured__image" src="img/service.svg" alt="service" width="32" height="32">
-              </div>
-              <div class="featured__content">
-                <p class="featured__content-title">Сервіс</p>
-                <p class="featured__content-text">Наші фахівці нададуть будь-яку допомогу при реалізації Вашого проекту</p>
-              </div>
-            </div>
-            <div class="featured__card">
-              <div class="featured__image-card">
-                <img class="featured__image" src="img/price.svg" alt="Okey" width="32" height="32">
-              </div>
-              <div class="featured__content">
-                <p class="featured__content-title">Ціна</p>
-                <p class="featured__content-text">Ми розуміємо, що для успішної конкуренції наші ціни повинні бути мінімальними</p>
-              </div>
-              
-            </div>
-            <div class="featured__card">
-              <div class="featured__image-card">
-                <img class="featured__image" src="img/handshake.svg" alt="Okey" width="55" height="40">
-              </div>
-              <div class="featured__content">
-                <p class="featured__content-title">Надійність</p>
-                <p class="featured__content-text">Завдяки багаторічному досвіду роботи, ми гарантуємо поставку продукції в будь-якій ситуації</p>
-              </div>
-              
+            <div class="featured__content">
+              <p class="featured__content-title">Якість</p>
+              <p class="featured__content-text">Єврометал працює тільки з перевіреними постачальниками і виробникам</p>
             </div>
           </div>
-          
+          <div class="featured__card">
+            <div class="featured__image-card">
+              <img class="featured__image" src="img/service.svg" alt="service" width="32" height="32">
+            </div>
+            <div class="featured__content">
+              <p class="featured__content-title">Сервіс</p>
+              <p class="featured__content-text">Наші фахівці нададуть будь-яку допомогу при реалізації Вашого проекту
+              </p>
+            </div>
+          </div>
+          <div class="featured__card">
+            <div class="featured__image-card">
+              <img class="featured__image" src="img/price.svg" alt="Okey" width="32" height="32">
+            </div>
+            <div class="featured__content">
+              <p class="featured__content-title">Ціна</p>
+              <p class="featured__content-text">Ми розуміємо, що для успішної конкуренції наші ціни повинні бути
+                мінімальними</p>
+            </div>
+
+          </div>
+          <div class="featured__card">
+            <div class="featured__image-card">
+              <img class="featured__image" src="img/handshake.svg" alt="Okey" width="55" height="40">
+            </div>
+            <div class="featured__content">
+              <p class="featured__content-title">Надійність</p>
+              <p class="featured__content-text">Завдяки багаторічному досвіду роботи, ми гарантуємо поставку продукції в
+                будь-якій ситуації</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section partners">
+      <div class="container">
+        <div class="partners__slider">
+          <div class="swiper">
+            <div class="swiper-wrapper container">
+              <div class="swiper-slide"><img src="img/skf-logo.svg" alt="" height="50"></div>
+              <div class="swiper-slide"><img src="img/skf-logo.svg" alt="" height="60"></div>
+              <div class="swiper-slide"><img src="img/skf-logo.svg" alt="" height="70"></div>
+              <div class="swiper-slide"><img src="img/skf-logo.svg" alt="" height="60"></div>
+              <div class="swiper-slide"><img src="img/skf-logo.svg" alt="" height="80"></div>
+              <div class="swiper-slide"><img src="img/skf-logo.svg" alt="" height="60"></div>
+              <div class="swiper-slide"><img src="img/skf-logo.svg" alt="" height="90"></div>
+              <div class="swiper-slide"><img src="img/skf-logo.svg" alt="" height="60"></div>
+            </div>
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
       </div>
     </section>
   </main>
   <footer>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>
 
 
