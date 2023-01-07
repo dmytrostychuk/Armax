@@ -532,7 +532,7 @@ label > input {
   margin: 0 auto;
 }
 
-.header__test {
+.header__background {
   z-index: 0;
   height: 100%;
   width: 100%;
@@ -1162,14 +1162,13 @@ picture {
   margin-bottom: 20px;
 }
 
-.section--featured {
-  padding-bottom: 60px;
-  line-height: 1.8;
-  color: #404044;
+.section--center-text {
+  text-align: center;
 }
 
-.section--featured-text {
-  text-align: center;
+.section--featured {
+  line-height: 1.8;
+  color: #404044;
 }
 
 .featured {
@@ -1220,27 +1219,63 @@ picture {
   font-size: 15px;
 }
 
+.partners {
+  position: relative;
+  color: #404044;
+  padding-top: 10px;
+  padding-bottom: 130px;
+}
+
+.partners__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background-image: url("../img/bg-document.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
 .partners__slider {
   position: relative;
+  height: 150px;
+  width: 80%;
+  margin: 0 auto;
 }
-.partners__slider .swiper-button-next::after, .partners__slider .swiper-button-prev::after {
-  font-size: 60px;
-  margin-top: 30px;
-  color: red;
+.partners__slider .swiper-button-next::after,
+.partners__slider .swiper-button-prev::after {
+  display: none;
+}
+.partners__slider .swiper-button-next,
+.partners__slider .swiper-button-prev {
+  background-color: rgba(51, 51, 51, 0.65);
+  transition: all 0.35s ease-in-out;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  opacity: 0.5;
+}
+.partners__slider .swiper-button-next img,
+.partners__slider .swiper-button-prev img {
+  width: 20px;
+  height: 20px;
 }
 .partners__slider .swiper-button-next {
-  right: -10px;
-  transition: all 0.35s ease;
+  right: -30px;
 }
 .partners__slider .swiper-button-next:hover {
-  right: -20px;
+  opacity: 1;
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
 }
 .partners__slider .swiper-button-prev {
-  left: -10px;
-  transition: all 0.35s ease;
+  left: -30px;
 }
 .partners__slider .swiper-button-prev:hover {
-  left: -20px;
+  opacity: 1;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
 }
 
 .swiper-button-next {
@@ -1248,16 +1283,23 @@ picture {
 }
 
 .swiper {
-  position: relative;
-  width: 90%;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  width: 100%;
+  height: auto;
 }
 
 .swiper-wrapper {
-  width: 100px;
+  text-align: center;
   align-items: center;
 }
 

@@ -18,28 +18,26 @@ if (burgerBtn) {
 const swiper = new Swiper('.swiper', {
   slidesPerView: 2,
   infinity: true,
-  spaceBetween: 30,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  autoplay: {
-    delay: 800,
-    disableOnInteraction: false,
-  },
+  spaceBetween: 10,
+  // autoplay: {
+  //   delay: 800,
+  //   disableOnInteraction: false,
+  // },
   speed: 800,
   breakpoints: {
     480: {
-      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerView: 2,
     },
     768: {
-      slidesPerView: 4,
+      spaceBetween: 50,
+      slidesPerView: 3,
     },
     1024: {
-      slidesPerView: 5,
+      spaceBetween: 60,
+      slidesPerView: 4,
     },
   },
-  loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
