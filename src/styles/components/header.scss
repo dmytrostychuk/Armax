@@ -5,6 +5,7 @@
  url("../img/lazer.jpg");
 	background-position: center;
 	background-repeat: repeat;
+	transform: translate3d(0px, 0px, 0px);
 
 	@include mq($from: phablet) {
 		height: 800px;
