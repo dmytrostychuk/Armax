@@ -24,6 +24,11 @@ body {
   }
 }
 
+main {
+  z-index: 1;
+  background-color: #ffffff;
+}
+
 ul {
   list-style: none;
 }
@@ -122,10 +127,6 @@ a {
   &--no-margin {
     margin-bottom: 0;
   }
-}
-
-.footer {
-  margin-top: auto;
 }
 
 

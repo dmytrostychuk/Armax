@@ -1,15 +1,11 @@
 .section--featured {
-	padding-bottom: 60px;
 	line-height: 1.8;
 	color: #404044;
 }
 
-.section--featured-text{
-	text-align: center;
-}
-
 .featured {
 	margin-top: 80px;
+	margin-bottom: 30px;
 
 	@include mq($from: phablet) {
 		display: grid;

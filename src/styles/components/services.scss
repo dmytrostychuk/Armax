@@ -58,7 +58,7 @@
     }
 
     @include mq($from: tablet) {
-        outline: 5px solid rgb(234, 233, 233);
+        outline: 5px solid #F6F6F6;
     }
 
     @include mq($from: desktop) {
