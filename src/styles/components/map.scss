@@ -1,10 +1,14 @@
 .map {
-	margin-top: 30px;
 	max-width: 2060px;
 	margin: 0 auto;
+	
+
+	@include mq($from: phablet) {
+		margin-top: 50px;
+	  }
 }
 
 iframe {
 	width: 100%;
-	height: 300px;
+	height: 350px;
 }
