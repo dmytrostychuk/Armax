@@ -1335,6 +1335,10 @@ iframe {
   color: #363839;
 }
 
+.footer__container {
+  position: relative;
+}
+
 .footer__form {
   width: 100%;
   overflow: hidden;
