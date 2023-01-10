@@ -1322,10 +1322,11 @@ iframe {
   margin-top: 80px;
 }
 
+.footer__container {
+  position: relative;
+}
+
 .footer__form {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: auto;
   background-color: aqua;
