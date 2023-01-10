@@ -521,7 +521,10 @@ label > input {
 
 .header {
   position: relative;
-  height: 100vh;
+  height: 890px;
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.55), rgb(51, 51, 51)), url("../img/lazer.jpg");
+  background-position: center;
+  background-repeat: repeat;
 }
 .header__container {
   margin: 0 auto;
@@ -1284,7 +1287,7 @@ picture {
   position: relative;
   color: #404044;
   padding-top: 10px;
-  padding-bottom: 70px;
+  padding-bottom: 120px;
   margin-bottom: 0;
 }
 
@@ -1301,14 +1304,13 @@ picture {
 }
 
 .map {
-  margin-top: 30px;
   max-width: 2060px;
   margin: 0 auto;
 }
 
 iframe {
   width: 100%;
-  height: 300px;
+  height: 350px;
 }
 
 .footer {
@@ -1318,8 +1320,19 @@ iframe {
   background-color: #363839;
 }
 
-.footer__wrapper {
-  margin-top: 80px;
+.footer__container {
+  padding: 20px;
+  margin-top: -100px;
+}
+
+.footer__inner {
+  padding: 20px;
+  background-color: #d1a954;
+}
+
+.footer__title {
+  text-align: center;
+  color: #363839;
 }
 
 .footer__container {
@@ -1328,8 +1341,20 @@ iframe {
 
 .footer__form {
   width: 100%;
-  height: auto;
-  background-color: aqua;
+  overflow: hidden;
+}
+.footer__form input {
+  display: block;
+  height: 30px;
+  margin-top: 10px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.footer__button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #363839;
 }
 
 @media (min-width: 560px) {
@@ -1421,6 +1446,19 @@ iframe {
   .featured__card {
     margin: 0 auto;
     vertical-align: middle;
+  }
+  .map {
+    margin-top: 50px;
+  }
+  .footer__container {
+    margin-top: -80px;
+  }
+  .footer__form input {
+    width: 45%;
+    height: 40px;
+  }
+  .footer__form {
+    display: block;
   }
 }
 
