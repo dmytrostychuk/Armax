@@ -1321,13 +1321,42 @@ iframe {
 }
 
 .footer__container {
-  position: relative;
+  padding: 20px;
+  margin-top: -100px;
+}
+
+.footer__inner {
+  padding: 20px;
+  background-color: #d1a954;
+}
+
+.footer__title {
+  text-align: center;
+  color: #363839;
 }
 
 .footer__form {
   width: 100%;
-  height: auto;
-  background-color: aqua;
+  overflow: hidden;
+}
+.footer__form input {
+  display: block;
+  height: 30px;
+  margin-top: 10px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.footer__button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #363839;
+}
+
+.footer__button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #363839;
 }
 
 @media (min-width: 560px) {
@@ -1422,6 +1451,16 @@ iframe {
   }
   .map {
     margin-top: 50px;
+  }
+  .footer__container {
+    margin-top: -80px;
+  }
+  .footer__form input {
+    width: 45%;
+    height: 40px;
+  }
+  .footer__form {
+    display: block;
   }
 }
 
