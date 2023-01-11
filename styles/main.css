@@ -521,7 +521,7 @@ label > input {
 
 .header {
   position: relative;
-  height: 890px;
+  height: 100vh;
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.55), rgb(51, 51, 51)), url("../img/lazer.jpg");
   background-position: center;
   background-repeat: repeat;
@@ -608,7 +608,7 @@ label > input {
 .nav {
   z-index: 3;
   position: absolute;
-  height: 890px;
+  height: 100vh;
   top: 0px;
   display: flex;
   justify-content: flex-start;
@@ -623,7 +623,7 @@ label > input {
   -webkit-transform: translateX(-30px);
           transform: translateX(-30px);
   background-color: #333333;
-  height: 890px;
+  height: 100vh;
 }
 
 .nav__close {
@@ -1306,8 +1306,8 @@ picture {
 .map {
   max-width: 2060px;
   margin: 0 auto;
+  margin-top: 30px;
 }
-
 iframe {
   width: 100%;
   height: 350px;
@@ -1326,13 +1326,14 @@ iframe {
 }
 
 .footer__inner {
-  padding: 20px;
+  padding: 30px 20px;
   background-color: #d1a954;
 }
 
 .footer__title {
   text-align: center;
   color: #363839;
+  margin-top: 0;
 }
 
 .footer__form {
@@ -1340,22 +1341,30 @@ iframe {
   overflow: hidden;
 }
 .footer__form input {
-  display: block;
-  height: 30px;
-  margin-top: 10px;
-  padding: 0 15px;
-  box-sizing: border-box;
+  height: 40px;
+  outline: 0px;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.footer__form input::-webkit-input-placeholder {
+  font-size: 16px;
+  padding: 0 10px;
+}
+.footer__form input::placeholder {
+  font-size: 16px;
+  padding: 0 10px;
 }
 
 .footer__button {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: #363839;
 }
 
 .footer__button {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: #363839;
 }
 
@@ -1405,7 +1414,6 @@ iframe {
     margin-left: 17px;
   }
   .nav {
-    height: 800px;
     width: 300px;
   }
   .nav__active {
@@ -1449,15 +1457,12 @@ iframe {
     margin: 0 auto;
     vertical-align: middle;
   }
-  .map {
-    margin-top: 50px;
-  }
   .footer__container {
     margin-top: -80px;
   }
   .footer__form input {
-    width: 45%;
     height: 40px;
+    width: 49%;
   }
   .footer__form {
     display: block;
@@ -1490,7 +1495,6 @@ iframe {
     justify-content: flex-start;
     -webkit-transform: translateX(-400px);
             transform: translateX(-400px);
-    height: 700px;
   }
   .nav__active {
     -webkit-transform: translateX(-30px);
@@ -1612,7 +1616,6 @@ iframe {
     -webkit-transform: translateX(0);
             transform: translateX(0);
     width: 100%;
-    height: auto;
     padding-top: 0;
     transition: 0s;
   }
