@@ -19,10 +19,10 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 2,
   infinity: true,
   spaceBetween: 10,
-  // autoplay: {
-  //   delay: 800,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 800,
+    disableOnInteraction: false,
+  },
   speed: 800,
   breakpoints: {
     480: {
