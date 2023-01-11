@@ -23,7 +23,7 @@
   padding: 20px;
 	background-color: #d1a954;
 
-  
+
 }
 
 .footer__title {
@@ -50,6 +50,12 @@
   @include mq($from: phablet) {
     display: block;
   }
+}
+
+.footer__button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #363839;
 }
 
 .footer__button {
