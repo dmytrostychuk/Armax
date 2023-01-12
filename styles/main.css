@@ -608,8 +608,8 @@ label > input {
 .nav {
   z-index: 3;
   position: absolute;
+  top: 0;
   height: 100vh;
-  top: 0px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -620,6 +620,7 @@ label > input {
 }
 
 .nav__active {
+  top: 0;
   -webkit-transform: translateX(-30px);
           transform: translateX(-30px);
   background-color: #333333;
@@ -1610,7 +1611,7 @@ iframe {
     display: none;
   }
   .nav {
-    position: relative;
+    top: 0;
     display: flex;
     flex-direction: row;
     -webkit-transform: translateX(0);
@@ -1631,6 +1632,7 @@ iframe {
             animation: menu-on 0s linear both;
   }
   .nav__item {
+    position: relative;
     margin-left: 20px;
   }
   .nav__list li {
