@@ -1,8 +1,8 @@
 .nav {
 	z-index: 3;
 	position: absolute;
+  top: 0;
   height: 100vh;
-  top: 0px;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
@@ -21,7 +21,7 @@
 	}
 
 	@include mq($from: tablet-wide) {
-    position: relative;
+    top: 0;
     display: flex;
     flex-direction: row;
     transform: translateX(0);
@@ -32,6 +32,7 @@
 }
 
 .nav__active {
+  top: 0;
   transform: translateX(-30px);
   background-color: #333333;
   height: 100vh;
@@ -93,6 +94,7 @@
   }
 
   @include mq($from: tablet-wide) {
+    position: relative;
     margin-left: 20px;
   }
 
