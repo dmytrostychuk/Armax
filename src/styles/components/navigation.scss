@@ -21,8 +21,7 @@
 	}
 
 	@include mq($from: tablet-wide) {
-    top: 0;
-    display: flex;
+    height: 100%;
     flex-direction: row;
     transform: translateX(0);
     width: 100%;  
@@ -228,7 +227,7 @@
     left: 0;
     width: auto;
     height: 100%;
-    padding: 35px 40px 0 40px;
+    padding: 0 40px 0 40px;
     margin: 0;
     align-items: center;
     flex-direction: row-reverse;
