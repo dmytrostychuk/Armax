@@ -1,0 +1,60 @@
+.footer__bottom {
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.info__block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.info__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &::first-letter {
+        color: #d1a954;
+    }
+}
+
+.info__text {
+    position: relative;
+    margin: 0;
+    padding: 7px 0;
+    font-size: 15px;
+
+   
+
+    a { 
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: #d1a954;
+        }
+    }
+}
+
+.info__link--address {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/address.svg");
+    }
+    
+}
