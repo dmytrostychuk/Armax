@@ -9,10 +9,13 @@
 }
 
 .info__block {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 20px 0;
+
+   
 }
 
 .info__title {
