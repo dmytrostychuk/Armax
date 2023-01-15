@@ -449,6 +449,18 @@ form {
   flex-direction: column;
 }
 
+svg {
+  transition: all 0.25s ease-in-out;
+  overflow: hidden;
+  vertical-align: middle;
+  fill: #ffffff;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .button {
   position: relative;
   display: block;
@@ -1316,9 +1328,10 @@ iframe {
 
 .footer {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin-top: auto;
   background-color: #363839;
+  padding-bottom: 50px;
 }
 
 .footer__container {
@@ -1375,7 +1388,6 @@ iframe {
 }
 
 .info__block {
-  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1393,35 +1405,43 @@ iframe {
   color: #d1a954;
 }
 
-.info__text {
+.info__item {
   position: relative;
   margin: 0;
   padding: 7px 0;
   font-size: 15px;
 }
-.info__text a {
-  transition: all 0.2s ease-in-out;
-}
-.info__text a:hover {
-  color: #d1a954;
+
+.info__item--color {
+  opacity: 0.7;
 }
 
-.info__link--address {
-  z-index: 100;
+.info__link {
   position: relative;
-  display: inline-block;
+  display: flex;
+  transition: all 0.25s ease-in-out;
+  line-height: 1.5;
+  align-items: center;
 }
-.info__link--address::before {
-  content: "";
-  position: absolute;
-  z-index: 40;
-  top: 0;
-  left: 0;
-  width: 80px;
-  height: 80px;
+.info__link:hover {
   color: #d1a954;
-  background-image: url('<svg fill="#ffffff" width="800px" height="800px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M49,18.92A23.74,23.74,0,0,0,25.27,42.77c0,16.48,17,31.59,22.23,35.59a2.45,2.45,0,0,0,3.12,0c5.24-4.12,22.1-19.11,22.1-35.59A23.74,23.74,0,0,0,49,18.92Zm0,33.71a10,10,0,1,1,10-10A10,10,0,0,1,49,52.63Z"/></svg>');
 }
+.info__link:hover svg {
+  fill: #d1a954;
+}
+
+.location-svg {
+  fill: #ffffff;
+  height: 40px;
+  width: 36px;
+  margin-right: 5px;
+}
+
+.clock-svg {
+  fill: #ffffff;
+  margin-right: 5px;
+}
+
 @media (min-width: 560px) {
   body {
     font-size: 16px;
@@ -1527,6 +1547,7 @@ iframe {
     margin: 0 auto;
   }
 }
+
 @media (min-width: 768px) {
   body {
     font-size: 16px;
@@ -1670,6 +1691,7 @@ iframe {
     margin-top: 0;
   }
 }
+
 @media (min-width: 1024px) {
   body {
     font-size: 20px;
@@ -1867,11 +1889,13 @@ iframe {
     padding: 0;
   }
 }
+
 @media (min-width: 768px) and (min-width: 1024px) {
   .nav__list:nth-child(1) {
     padding-top: 0;
   }
 }
+
 @media (min-width: 1248px) {
   body {
     font-size: 24px;
