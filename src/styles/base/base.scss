@@ -129,9 +129,19 @@ a {
   }
 }
 
-
-
 form {
   display: flex;
   flex-direction: column;
+}
+
+svg {
+  transition: all .25s ease-in-out;
+  overflow: hidden;
+  vertical-align: middle;
+  fill: #ffffff;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
