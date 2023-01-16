@@ -1415,6 +1415,7 @@ iframe {
 
 .info__item--color {
   opacity: 0.7;
+  margin-left: 5px;
 }
 
 .info__link {
@@ -1546,6 +1547,9 @@ iframe {
     flex-wrap: wrap;
     max-width: 500px;
     margin: 0 auto;
+  }
+  .info__block {
+    width: 45%;
   }
 }
 
@@ -1690,6 +1694,9 @@ iframe {
     height: 104px;
     width: 230px;
     margin-top: 0;
+  }
+  .info__block {
+    width: 25%;
   }
 }
 

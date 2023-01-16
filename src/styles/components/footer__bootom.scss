@@ -15,7 +15,13 @@
     width: 100%;
     margin: 20px 0;
 
-   
+    @include mq($from: phablet) {
+		width: 45%;
+	}
+
+    @include mq($from: tablet) {
+		width: 25%;
+	}
 }
 
 .info__title {
@@ -39,6 +45,7 @@
 
 .info__item--color {
     opacity: .7;
+    margin-left: 5px;
 }
 
 .info__link {
