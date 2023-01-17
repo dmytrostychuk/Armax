@@ -552,6 +552,11 @@ label > input {
   background-repeat: repeat;
 }
 
+.header-svg {
+  width: 30px;
+  height: 30px;
+}
+
 .burger-btn {
   position: relative;
   width: 30px;
@@ -779,9 +784,6 @@ label > input {
   width: 100%;
   text-transform: lowercase;
 }
-.nav__list-social li:nth-child(5) {
-  display: none;
-}
 .nav__list-social li:nth-child(2) {
   padding-bottom: 30px;
 }
@@ -868,7 +870,7 @@ label > input {
   margin-bottom: 30px;
 }
 .header__inner {
-  padding: 40px 30px;
+  padding: 40px 15px;
   background-color: rgba(51, 51, 51, 0.65);
   border-radius: 20px;
 }
@@ -915,7 +917,6 @@ label > input {
   transition: 0.3s;
 }
 .link-hover:hover {
-  letter-spacing: 0.2em;
   transition: 0.3s;
   color: rgba(255, 255, 255, 0.61);
 }
@@ -1840,9 +1841,6 @@ iframe {
   }
   .header__content-title {
     width: auto;
-  }
-  .link-hover:hover {
-    letter-spacing: 0.05em;
   }
   .header__form input::-webkit-input-placeholder {
     font-size: 16px;

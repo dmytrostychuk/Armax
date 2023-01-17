@@ -57,17 +57,33 @@
           C347.416,173.277,352.064,174.521,354.226,178.163z" />
       </g>
     </symbol>
+
+    <symbol id="facebook" viewBox="0 0 24 24">
+      <g>
+        <path
+          d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0" />
+      </g>
+    </symbol>
+
+    <symbol id="telegram" viewBox="0 0 24 24">
+      <g>
+        <path
+          d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z" />
+      </g>
+    </symbol>
   </svg>
+
   <header class="header">
     <div class="header__background">
     </div>
     <ul class="nav__list nav__list-social nav__list--desktop">
       <li class="nav__item-social"><a href="tel:+380687945051" class="link-hover">+38 (068) 999 99</a></li>
-      <li class="nav__item-social"><a href="mailto:lazerarmax@gmail.com" class="link-hover">lazerarmax@gmail.com</a>
+      <li class="nav__item-social"><a href="mailto:lazerarmax@gmail.com" class="link-hover">
+
+          lazerarmax@gmail.com</a>
       </li>
 
-      <li class="nav__item-social"><a href="https://www.facebook.com/armaxMG/" class="link-social"><img
-            src="img/facebook.svg" alt="facebook"></a></li>
+      <li class="nav__item-social"><a href="https://www.facebook.com/armaxMG/" class="link-social">
       <li class="nav__item-social nav__item--telegram"><a href="tg://resolve?domain=dimaKromiak"
           class="link-social"><img src="img/telegram.png" alt="telegram"></a>
       </li>
@@ -99,15 +115,37 @@
             </li>
           </ul>
 
-          <ul class="nav__list nav__list-social nav__list--mobile">
-            <li class="nav__item-social"><a href="tel:+380687945051" class="link-hover">+38 (068) 999 99</a></li>
-            <li class="nav__item-social"><a href="mailto:lazerarmax@gmail.com"
-                class="link-hover">lazerarmax@gmail.com</a></li>
-
-            <li class="nav__item-social"><a href="https://www.facebook.com/armaxMG/" class="link-social"><img
-                  src="img/facebook.svg" alt="facebook"></a></li>
-            <li class="nav__item-social nav__item--telegram"><a href="tg://resolve?domain=dimaKromiak"
-                class="link-social"><img src="img/telegram.png" alt="telegram"></a>
+          <ul class="nav__list nav__list-social">
+            <li class="nav__item-social">
+              <a class="link-social" href="tel:+380687945051">
+                <svg class="phone-svg" width="30" height="20">
+                  <use xlink:href="#phone"></use>
+                </svg>
+                +38 (099) 132 45 67
+              </a>
+            </li>
+            <li class="nav__item-social">
+              <a href="mailto:lazerarmax@gmail.com" class="link-social">
+                <svg class="mail-svg" width="30" height="20">
+                  <use xlink:href="#mail"></use>
+                </svg>
+                lazerarmax@gmail.com
+              </a>
+            </li>
+            <li class="nav__item-social">
+              <a href="https://www.facebook.com/armaxMG/" class="link-social">
+                <svg class="header-svg" width="30" height="20">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__item-social">
+              <a href="#" class="link-social">
+                <svg class="header-svg" width="30" height="20">
+                  <use xlink:href="#location"></use>
+                </svg>
+                45200 м. Ківерці, вул. Грушевського 26
+              </a>
             </li>
           </ul>
         </nav>
@@ -432,7 +470,15 @@
                     <use xlink:href="#mail"></use>
                   </svg>
                   lazer.armax@gmail.com
-                </a></li>
+                </a>
+              </li>
+              <li class="info__item"><a href="#" class="info__link">
+                  <svg class="" width="30" height="20">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                  facebook.com/armaxMG/
+                </a>
+              </li>
             </ul>
           </div>
 
