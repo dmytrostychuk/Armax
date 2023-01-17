@@ -2,7 +2,7 @@
 	z-index: 3;
 	position: absolute;
   top: 0;
-  height: 100vh;
+  height: 880px;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
@@ -11,10 +11,12 @@
   transform: translateX(-300px);
 
   @include mq($from: phablet) {
+    height: 800px;
     width: 300px;
   }
 
   @include mq($from: tablet) {
+    height: 700px;
     width: 320px;
     justify-content: flex-start;
     transform: translateX(-400px);
@@ -34,13 +36,15 @@
   top: 0;
   transform: translateX(-30px);
   background-color: #333333;
-  height: 100vh;
+  height: 880px;
 
   @include mq($from: phablet) {
+    height: 800px;
     transform: translateX(-40px);
   }
 
   @include mq($from: tablet) {
+    height: 700px;
     transform: translateX(-30px);
 	}
 
