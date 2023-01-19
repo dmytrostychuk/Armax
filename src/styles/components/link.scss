@@ -46,10 +46,17 @@
 }
 
 .link-social {
+	position: relative;
+	display: block;
+	padding-left: 35px;
 	transition: 0.3s;
-}
+	line-height: 1.5;  
 
-.link-social:hover {
-	transition: 0.3s;
-	opacity: 0.5;
+	&:hover {
+		color: #d1a954;
+
+		svg {
+				fill: #d1a954;
+		}
+	}
 }

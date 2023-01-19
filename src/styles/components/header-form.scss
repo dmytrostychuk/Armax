@@ -11,41 +11,40 @@
 	@include mq($from: tablet) {
 		width: 45%;
 	}
+}
 
-	input {
-		max-width: 500px;
-		height: 40px;
-		outline: 0px;
-		padding: 0 10px;
-		border: 0;
-		border-radius: 5px;
-		margin-bottom: 20px;
+input {
+	max-width: 500px;
+	height: 40px;
+	outline: 0px;
+	padding: 0 10px;
+	border: 0;
+	border-radius: 5px;
+	margin-bottom: 20px;
+
+	&::placeholder {
+		font-size: 16px;
+	}
+
+	@include mq($from: phablet) {
+		max-width: 600px;
 
 		&::placeholder {
 			font-size: 16px;
 		}
-
-		@include mq($from: phablet) {
-			max-width: 600px;
-
-			&::placeholder {
-				font-size: 16px;
-			}
-		}
-
-		@include mq($from: tablet-wide) {
-
-			&::placeholder {
-				font-size: 16px;
-			}
-		}
-
-		@include mq($from: desktop) {
-			height: 50px;
-		}
-
-		
 	}
+
+	@include mq($from: tablet-wide) {
+
+		&::placeholder {
+			font-size: 16px;
+		}
+	}
+
+	@include mq($from: desktop) {
+		height: 50px;
+	}
+
 	
 }
 

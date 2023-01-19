@@ -61,27 +61,7 @@
 }
 
 .info__link {
-    position: relative;
-    display: flex;
-    transition: all .25s ease-in-out;
-    line-height: 1.5;
-    align-items: center;
-
-    &:hover {
-        color: #d1a954;
-
-        svg {
-            fill: #d1a954;
-        }
-        
-    }
-}
-
-.location-svg {
-    fill: #ffffff;
-    height: 40px;
-    width: 36px;
-    margin-right: 5px;
+    line-height: 1.5;   
 }
 
 .clock-svg {
