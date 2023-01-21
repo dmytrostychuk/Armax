@@ -153,3 +153,10 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+.none {
+  
+  @include mq($from: tablet-wide) {
+    display: none;
+  }
+}

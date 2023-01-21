@@ -265,6 +265,7 @@
   }
 
   @include mq($from: tablet-wide) {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -342,7 +343,10 @@
   display: none;
 
   @include mq($from: tablet-wide) {
+    z-index: 1;
+    background-color: rebeccapurple;
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -352,6 +356,8 @@
   }
 }
 
-.none {
-  display: none;
+
+
+.nav-list-inner {
+
 }

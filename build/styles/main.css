@@ -549,7 +549,6 @@ label > input {
 .header__container {
   margin: 0 auto;
 }
-
 .header__background {
   z-index: 0;
   height: 100%;
@@ -792,10 +791,6 @@ label > input {
 }
 
 .nav__list--desktop {
-  display: none;
-}
-
-.none {
   display: none;
 }
 
@@ -1734,11 +1729,11 @@ input[type=file]::file-selector-button:hover {
   .section {
     margin-bottom: 0;
   }
+  .none {
+    display: none;
+  }
   .header {
     height: 800px;
-  }
-  .header__container {
-    padding-left: 140px;
   }
   .burger-btn {
     display: none;
@@ -1785,6 +1780,7 @@ input[type=file]::file-selector-button:hover {
     height: 30px;
   }
   .nav__list-social {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -1819,7 +1815,10 @@ input[type=file]::file-selector-button:hover {
     background-color: #C4C4C4;
   }
   .nav__list--desktop {
+    z-index: 1;
+    background-color: rebeccapurple;
     display: flex;
+    justify-content: space-between;
   }
   .nav__list--mobile {
     display: none;
@@ -1897,10 +1896,6 @@ input[type=file]::file-selector-button:hover {
   }
   .section {
     margin-bottom: 0;
-  }
-  .header__container {
-    padding-left: 165px;
-    height: 800px;
   }
   .nav__item {
     margin-left: 55px;

@@ -27,12 +27,9 @@
 	margin: 0 auto;
 
 	@include mq($from: tablet-wide) {
-		padding-left: 140px;
   }
 
 	@include mq($from: desktop) {
-		padding-left: 165px;
-		height: 800px;
   }
 }
 
