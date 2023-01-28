@@ -100,14 +100,14 @@
         <ul class="nav__social-list--desktop nav__social-list--svg">
           <li class="nav__social-item">
             <a href="#" class="link-social">
-              <svg class="link-social--svg" width="33" height="35">
+              <svg class="link-social--svg" width="25" height="25">
                 <use xlink:href="#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="nav__social-item">
             <a href="#" class="link-social">
-              <svg class="link-social--svg" width="40" height="35">
+              <svg class="link-social--svg" width="25" height="25">
                 <use xlink:href="#location"></use>
               </svg>
             </a>
@@ -123,55 +123,58 @@
         <h1 class="menu__title"><a class="menu__link-logo" href=" #"><img class="menu__logo" src=" img/logo.png"
               alt=""></a></h1>
         <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="calc.html" class="link-hover">Послуги</a>
-            </li>
-            <li class="nav__item">
-              <a href="calc.html" class="link-hover">Про нас</a>
-            </li>
-            <li class="nav__item">
-              <a href="calc.html" class="link-hover">Контакти</a>
-            </li>
-            <li class="nav__item">
-              <a href="calc.html" class="link-hover">Калькулятор металу</a>
-            </li>
-          </ul>
+          <div class="nav__inner">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="calc.html" class="link-hover">Послуги</a>
+              </li>
+              <li class="nav__item">
+                <a href="calc.html" class="link-hover">Про нас</a>
+              </li>
+              <li class="nav__item">
+                <a href="calc.html" class="link-hover">Контакти</a>
+              </li>
+              <li class="nav__item">
+                <a href="calc.html" class="link-hover">Калькулятор металу</a>
+              </li>
+            </ul>
 
-          <ul class="nav__list nav__list-social">
-            <li class="nav__item-social">
-              <a class="link-social" href="tel:+380687945051">
-                <svg class="link-social--svg" width="30" height="20">
-                  <use xlink:href="#phone"></use>
-                </svg>
-                +38 (099) 132 45 67
-              </a>
-            </li>
-            <li class="nav__item-social">
-              <a href="mailto:lazerarmax@gmail.com" class="link-social">
-                <svg class="link-social--svg" width="30" height="20">
-                  <use xlink:href="#mail"></use>
-                </svg>
-                lazerarmax@gmail.com
-              </a>
-            </li>
-            <li class="nav__item-social">
-              <a href="#" class="link-social">
-                <svg class="link-social--svg" width="30" height="20">
-                  <use xlink:href="#facebook"></use>
-                </svg>
-                <span class="none">facebook.com/armaxMG/</span>
-              </a>
-            </li>
-            <li class="nav__item-social">
-              <a href="#" class="link-social">
-                <svg class="link-social--svg" width="30" height="30">
-                  <use xlink:href="#location"></use>
-                </svg>
-                <span class="none">45200 м. Ківерці, вул.Грушевського 26</span>
-              </a>
-            </li>
-          </ul>
+            <ul class="nav__list nav__list-social">
+              <li class="nav__item-social">
+                <a class="link-social" href="tel:+380687945051">
+                  <svg class="link-social--svg" width="30" height="20">
+                    <use xlink:href="#phone"></use>
+                  </svg>
+                  +38 (099) 132 45 67
+                </a>
+              </li>
+              <li class="nav__item-social">
+                <a href="mailto:lazerarmax@gmail.com" class="link-social">
+                  <svg class="link-social--svg" width="30" height="20">
+                    <use xlink:href="#mail"></use>
+                  </svg>
+                  lazerarmax@gmail.com
+                </a>
+              </li>
+              <li class="nav__item-social">
+                <a href="#" class="link-social">
+                  <svg class="link-social--svg" width="30" height="20">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                  <span class="none">facebook.com/armaxMG/</span>
+                </a>
+              </li>
+              <li class="nav__item-social">
+                <a href="#" class="link-social">
+                  <svg class="link-social--svg" width="30" height="30">
+                    <use xlink:href="#location"></use>
+                  </svg>
+                  <span class="none">45200 м. Ківерці, вул.Грушевського 26</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          
         </nav>
       </div>
 
@@ -185,10 +188,10 @@
             Виготовлення виробів з металу будь-якої складності.
             Європейська якість</p>
         </div>
-        <div class="header__form header__inner">
+        <div class="header__form-container header__inner">
           <h3 class="header__form-title">Надіслати запит :</h3>
 
-          <form action="">
+          <form class="header__form" action="">
             <input class="input-name" type="text" placeholder="Ім'я">
             <input class="input-number" type="tel" placeholder="Телефон">
             <button class="button header__content-button" type="submit">Надіслати</button>
@@ -408,7 +411,7 @@
     </section>
     <section class="calculation">
       <div class="calculation__inner ">
-        <div class="container">
+        <div class="calculation__wrapper container">
           <div class="calculation__content">
             <h3 class="section__title">Замовити прорахунок проекту</h3>
             <ul class="calculation__list">
@@ -439,12 +442,12 @@
               </li>
             </ul>
           </div>
-          <div class="calculation__form">
-            <form method="post">
-              <input class="input-name" type="text" placeholder="Ім'я">
-              <input class="input-number" type="tel" placeholder="Телефон">
-              <input class="" type="email" placeholder="Електронна пошта">
-              <textarea class="form-textarea" cols="40" rows="10" placeholder="Коментар до замовлення"></textarea>
+          <div class="calculation__form-container">
+            <form class="calculation__form" method="post">
+              <input type="text" placeholder="Ім'я">
+              <input type="tel" placeholder="Телефон">
+              <input type="email" placeholder="Електронна пошта">
+              <textarea class="form-textarea" cols="40" rows="6" placeholder="Коментар до замовлення"></textarea>
               <label class="calculation__label" for="file">Завантажити файл:</label>
               <input class="calculation__input-file" type="file" id="file">
 
@@ -454,21 +457,6 @@
 
         </div>
       </div>
-
-
-
-
-
-      <!-- <div class="footer__container">
-        <div class="footer__inner">
-          <h3 class="footer__title">Замовити розрахунок проекту</h3>
-          <form class="footer__form" action="">
-            <input class="input-name" type="text" placeholder="Ім'я">
-            <input class="input-number" type="tel" placeholder="Телефон">
-            <button class="button footer__button" type="submit">Надіслати</button>
-          </form>
-        </div>
-      </div> -->
     </section>
   </main>
   <footer class="footer">

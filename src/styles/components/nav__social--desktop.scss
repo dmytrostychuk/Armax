@@ -1,40 +1,55 @@
 .nav__social--desktop-wrap {
-    z-index: 2;
-    position: relative;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #292b2c;
+    display: none;
+
+    @include mq($from: tablet-wide) {
+        display: block;
+        z-index: 2;
+        position: relative;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #292b2c; 
+    }
+   
 }
 
 .nav__social--desktop {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 0;
     padding-top: 100px;
 
-
+    
 }
 
 .nav__social-list--desktop {
-    
+    display: flex;
+    align-items: center;
 
-    svg {
-        top: 4px;
-
+    .link-social {
+        padding-left: 0;
     }
+    
+    svg {
+        position: relative;
+        padding-left: 0;
+    }
+
+    
 }
 
 .nav__social-list--svg {
-    display: flex;
-
     .nav__social-item {
-        width: 40px;
-        height: 40px;
+
+        margin-right: 0;
+        margin-left: 20px;
+    
     }
 }
 
 
 .nav__social-item {
 
-    margin: 10px;
+    margin-right: 20px;
+
 }

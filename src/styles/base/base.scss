@@ -41,6 +41,42 @@ p {
   line-height: 1.8;
 }
 
+input {
+	height: 40px;
+	outline: 0px;
+	padding: 0 10px;
+	border: 0;
+	border-radius: 5px;
+	margin-bottom: 20px;
+
+	&::placeholder {
+		font-size: 16px;
+	}
+
+	@include mq($from: phablet) {
+
+		&::placeholder {
+			font-size: 16px;
+		}
+	}
+
+	@include mq($from: tablet) {
+	}
+
+	@include mq($from: tablet-wide) {
+
+		&::placeholder {
+			font-size: 16px;
+		}
+	}
+
+	@include mq($from: desktop) {
+		height: 50px;
+	}
+
+	
+}
+
 label {
   width: 100%;
 }
@@ -137,10 +173,7 @@ a {
   }
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+
 
 svg {
   transition: all .25s ease-in-out;
