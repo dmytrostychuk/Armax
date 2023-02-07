@@ -496,6 +496,14 @@ ul {
 .button:active {
   background-color: #6e4b4b;
 }
+.calc__body {
+  background-color: #8B8B8B;
+}
+
+.calc {
+  background-color: purple;
+}
+
 .calc__sheet,
 .calc__profile-pipe {
   display: none;
@@ -516,17 +524,16 @@ ul {
   margin-bottom: 20px;
 }
 
+.calc__form {
+  display: flex;
+  flex-direction: column;
+}
+
 label {
   position: relative;
   margin-bottom: 10px;
   width: 100%;
   font-size: 18px;
-}
-
-label > input {
-  position: absolute;
-  width: 30%;
-  right: 0;
 }
 
 .result__box {
@@ -544,9 +551,16 @@ label > input {
   right: 0;
   top: 0;
   width: 40%;
-  height: 20px;
+  height: 30px;
   margin: 0;
   border: 2px solid black;
+}
+
+.development-page {
+  text-align: center;
+  color: #cf2d2d;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .header {
