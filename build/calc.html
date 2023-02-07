@@ -9,9 +9,13 @@
 	<link rel="stylesheet" href="styles/style-min.css" />
 </head>
 
-<body>
+<body class="calc__body">
 
 	<header>
+		<div class="development">
+			<p class="development-page">Вибачте, ця сторінка знаходиться на стадії розробки</p>
+			<p class="development-page">Sorry, this page is under construction</p>
+		</div>
 
 		<svg>
 			<use xlink:href="#location"></use>
@@ -28,7 +32,7 @@
 			</div>
 
 			<div class="calc__sheet calc-form-js" data-type="list">
-				<form action="">
+				<form class="calc__form" action="">
 					<label for="length">Довжина мм
 						<input class="length" type="number">
 					</label>
@@ -55,7 +59,7 @@
 				</form>
 			</div>
 			<div class="calc__profile-pipe calc-form-js" data-type="pipe">
-				<form action="">
+				<form class="calc__form" action="">
 					<label for="length">Довжина труби мм
 						<input class="length" type="number">
 					</label>

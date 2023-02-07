@@ -15,69 +15,6 @@ if (burgerBtn) {
   });
 }
 
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 2,
-  infinity: true,
-  spaceBetween: 10,
-  autoplay: {
-    delay: 800,
-    disableOnInteraction: false,
-  },
-  speed: 800,
-  breakpoints: {
-    480: {
-      spaceBetween: 30,
-      slidesPerView: 2,
-    },
-    768: {
-      spaceBetween: 50,
-      slidesPerView: 3,
-    },
-    1024: {
-      spaceBetween: 60,
-      slidesPerView: 4,
-    },
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  on: {
-    init() {
-      this.el.addEventListener('mouseenter', () => {
-        this.autoplay.stop();
-      });
-
-      this.el.addEventListener('mouseleave', () => {
-        this.autoplay.start();
-      });
-    },
-  },
-});
-
-//modal
-
-var modal = document.querySelector('.modal');
-var trigger = document.querySelector('.modal-active');
-var closeButton = document.querySelector('.close-button');
-
-function toggleModal() {
-  modal.classList.toggle('show-modal');
-
-  console.log('toggleModal');
-
-  if (window.innerWidth > 991) {
-    document.body.classList.toggle('lock');
-  } else if (!modal.classList.contains('show-modal')) {
-    document.body.classList.remove('lock');
-  }
-}
-
-trigger.addEventListener('click', toggleModal);
-closeButton.addEventListener('click', toggleModal);
-window.addEventListener('click', windowOnClick);
-
 // calc
 const calcFormButtons = document.querySelectorAll('.calc-form-button-js');
 const calcForms = document.querySelectorAll('.calc-form-js');
