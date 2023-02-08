@@ -20,7 +20,7 @@
 	}
 
     @include mq($from: tablet) {
-		width: 27%;
+		width: 30%;
 	}
 
     @include mq($from: desktop) {

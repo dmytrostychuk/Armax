@@ -64,9 +64,8 @@
 		transform: translate(-50%, -50%);
 		width: 50%;
 		height: 3px;
-		background-color: #ffffff;
+		background-color: #d1a954;
 		opacity: 0.4;
-		border-radius: 50%;
 
 		@include mq($from: tablet) {
 			left: 0;

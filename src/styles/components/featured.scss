@@ -34,10 +34,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: -5px auto;
+	margin: 25px auto;
 	width: 80px;
-	height: 40px;
+	height: 43px;
 	background-color: #ff1900;
+	border-radius: 3px;
 
 	&:before, &::after {
 		content: "";
@@ -49,11 +50,11 @@
 
 	&:before {
 		border-top: 25px solid #ff1900;
-		bottom: -25px;
+		bottom: -24px;
 	}
 
 	&::after {
-		top: -25px;
+		top: -24px;
 		border-bottom: 25px solid #ff1900;
 	}
 }

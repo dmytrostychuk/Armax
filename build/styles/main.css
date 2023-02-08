@@ -415,6 +415,7 @@ input {
   border: 0;
   border-radius: 5px;
   margin-bottom: 20px;
+  color: #949090;
 }
 input::-webkit-input-placeholder {
   font-size: 16px;
@@ -918,9 +919,8 @@ label {
           transform: translate(-50%, -50%);
   width: 50%;
   height: 3px;
-  background-color: #ffffff;
+  background-color: #d1a954;
   opacity: 0.4;
-  border-radius: 50%;
 }
 
 .header__content-subtitle {
@@ -1226,10 +1226,11 @@ picture {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -5px auto;
+  margin: 25px auto;
   width: 80px;
-  height: 40px;
+  height: 43px;
   background-color: #ff1900;
+  border-radius: 3px;
 }
 .featured__image-card:before, .featured__image-card::after {
   content: "";
@@ -1239,10 +1240,10 @@ picture {
 }
 .featured__image-card:before {
   border-top: 25px solid #ff1900;
-  bottom: -25px;
+  bottom: -24px;
 }
 .featured__image-card::after {
-  top: -25px;
+  top: -24px;
   border-bottom: 25px solid #ff1900;
 }
 
@@ -1421,8 +1422,23 @@ iframe {
   position: relative;
   z-index: 500;
   background-color: #8b8b8b;
-  margin: 0 10px;
   padding: 30px 0;
+}
+
+.calculation__title {
+  position: relative;
+}
+.calculation__title::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+  height: 3px;
+  background-color: #d1a954;
+  opacity: 0.4;
 }
 
 .calculation__item {
@@ -1506,6 +1522,7 @@ input[type=file]::file-selector-button:hover {
 .form-textarea {
   padding: 8px 15px;
   border-radius: 3px;
+  color: #949090;
 }
 .form-textarea:focus {
   outline: none;
@@ -1544,6 +1561,77 @@ input[type=file]::file-selector-button:hover {
   margin-right: 20px;
 }
 
+.ware {
+  background-color: #f6f6f6;
+  color: #404044;
+  margin-bottom: 0;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.ware__box {
+  margin-top: 30px;
+}
+
+.ware__card {
+  position: relative;
+  transition: all 0.35s ease-in-out;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+.ware__card:hover {
+  transition: all 0.35s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.ware__img {
+  width: 100%;
+  border-radius: 25% 10% 0 0;
+  object-fit: cover;
+  height: 230px;
+}
+
+.ware__figcaption {
+  padding: 30px 0;
+  background-color: #ffffff;
+}
+
+.ware__content {
+  margin: 0;
+}
+
+.ware__name::after {
+  content: "";
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90px;
+  border-top: 3px #d1a954 double;
+}
+
+.ware__name-link {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #404044;
+  transition: all 0.35s ease-in-out;
+}
+.ware__name-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.ware__name-link:hover {
+  transition: all 0.35s ease-in-out;
+  color: rgba(0, 0, 0, 0.61);
+}
 @media (min-width: 560px) {
   body {
     font-size: 16px;
@@ -1651,8 +1739,15 @@ input[type=file]::file-selector-button:hover {
   .info__block {
     width: 45%;
   }
+  .ware__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .ware__card {
+    width: 47%;
+  }
 }
-
 @media (min-width: 768px) {
   body {
     font-size: 16px;
@@ -1775,11 +1870,14 @@ input[type=file]::file-selector-button:hover {
     justify-content: space-between;
   }
   .info__block {
-    width: 27%;
+    width: 30%;
   }
   .info__menu,
   .info__schedule {
     width: 20%;
+  }
+  .calculation {
+    font-size: 15px;
   }
   .calculation__wrapper {
     display: flex;
@@ -1791,7 +1889,6 @@ input[type=file]::file-selector-button:hover {
     width: 35%;
   }
 }
-
 @media (min-width: 1024px) {
   body {
     font-size: 20px;
@@ -1959,6 +2056,14 @@ input[type=file]::file-selector-button:hover {
   .services__hover--circle:hover::before {
     right: -30px;
   }
+  .calculation__title {
+    text-align: start;
+  }
+  .calculation__title::after {
+    left: 20px;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
   .nav__social--desktop-wrap {
     display: block;
     z-index: 2;
@@ -1967,8 +2072,13 @@ input[type=file]::file-selector-button:hover {
     padding-bottom: 15px;
     background-color: #292b2c;
   }
+  .ware__box {
+    margin-top: 40px;
+  }
+  .ware__card {
+    width: 30%;
+  }
 }
-
 @media (min-width: 1248px) {
   body {
     font-size: 24px;
