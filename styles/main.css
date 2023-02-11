@@ -418,10 +418,13 @@ input {
   color: #949090;
 }
 input::-webkit-input-placeholder {
-  font-size: 16px;
+  font-size: 14px;
 }
 input::placeholder {
-  font-size: 16px;
+  font-size: 14px;
+}
+input:focus {
+  outline: 2px solid #d1a954;
 }
 
 label {
@@ -1520,12 +1523,20 @@ input[type=file]::file-selector-button:hover {
 }
 
 .form-textarea {
-  padding: 8px 15px;
+  padding: 8px 10px;
   border-radius: 3px;
   color: #949090;
+  border: 0;
 }
 .form-textarea:focus {
-  outline: none;
+  outline-offset: 0;
+  outline: 2px solid #d1a954;
+}
+.form-textarea::-webkit-input-placeholder {
+  font-size: 14px;
+}
+.form-textarea::placeholder {
+  font-size: 14px;
 }
 
 .nav__social--desktop-wrap {
@@ -1634,12 +1645,6 @@ input[type=file]::file-selector-button:hover {
 }
 @media (min-width: 560px) {
   body {
-    font-size: 16px;
-  }
-  input::-webkit-input-placeholder {
-    font-size: 16px;
-  }
-  input::placeholder {
     font-size: 16px;
   }
   .header {
@@ -1892,12 +1897,6 @@ input[type=file]::file-selector-button:hover {
 @media (min-width: 1024px) {
   body {
     font-size: 20px;
-  }
-  input::-webkit-input-placeholder {
-    font-size: 16px;
-  }
-  input::placeholder {
-    font-size: 16px;
   }
   .header {
     margin-bottom: 0px;
