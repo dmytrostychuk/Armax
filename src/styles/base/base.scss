@@ -51,31 +51,16 @@ input {
   color: #949090;
 
 	&::placeholder {
-		font-size: 16px;
+		font-size: 14px;
 	}
 
-	@include mq($from: phablet) {
-
-		&::placeholder {
-			font-size: 16px;
-		}
-	}
-
-	@include mq($from: tablet) {
-	}
-
-	@include mq($from: tablet-wide) {
-
-		&::placeholder {
-			font-size: 16px;
-		}
-	}
+  &:focus {
+    outline: 2px solid #d1a954;
+  }
 
 	@include mq($from: desktop) {
 		height: 50px;
 	}
-
-	
 }
 
 label {
@@ -194,3 +179,4 @@ ul {
     display: none;
   }
 }
+

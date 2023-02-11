@@ -124,13 +124,18 @@ input[type=file]::file-selector-button:hover {
 }
 
 .form-textarea {
-	padding: 8px 15px;
+	padding: 8px 10px;
 	border-radius: 3px;
 	color: #949090;
+	border: 0;
 
 	&:focus {
-		outline: none;
+		outline-offset: 0;
+		outline: 2px solid #d1a954;
 	}
+	&::placeholder {
+		font-size: 14px;
+  }
 }
 
 
