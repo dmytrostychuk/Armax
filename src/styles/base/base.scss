@@ -159,8 +159,6 @@ a {
   }
 }
 
-
-
 svg {
   transition: all .25s ease-in-out;
   overflow: hidden;
@@ -179,4 +177,14 @@ ul {
     display: none;
   }
 }
+
+.active {
+  color: #949090;
+
+  &:hover {
+    color: #949090;
+  }
+}
+
+
 

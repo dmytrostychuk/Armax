@@ -41,8 +41,6 @@
 		transform-origin: right;
 		transition: transform 0.25s;
 	}
-
-	
 }
 
 .link-social {
@@ -51,6 +49,14 @@
 	padding-left: 35px;
 	transition: 0.3s;
 	line-height: 1.5;  
+}
+
+.link-social {
+	display: inline-block;
+	font-size: 14px;
+}
+
+.s-link-social {
 
 	&:hover {
 		color: #d1a954;
@@ -59,12 +65,4 @@
 				fill: #d1a954;
 		}
 	}
-}
-
-.header {
-	.link-social {
-		display: inline-block;
-		font-size: 14px;
-	}
-	
 }
