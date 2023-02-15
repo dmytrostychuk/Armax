@@ -483,6 +483,13 @@ ul {
   margin: 0;
 }
 
+.active {
+  color: #949090;
+}
+.active:hover {
+  color: #949090;
+}
+
 .button {
   position: relative;
   display: block;
@@ -500,6 +507,16 @@ ul {
 .button:active {
   background-color: #6e4b4b;
 }
+.button-lang {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 .calc__body {
   background-color: #8B8B8B;
 }
@@ -990,16 +1007,17 @@ label {
   transition: 0.3s;
   line-height: 1.5;
 }
-.link-social:hover {
-  color: #d1a954;
-}
-.link-social:hover svg {
-  fill: #d1a954;
-}
 
-.header .link-social {
+.link-social {
   display: inline-block;
   font-size: 14px;
+}
+
+.s-link-social:hover {
+  color: #d1a954;
+}
+.s-link-social:hover svg {
+  fill: #d1a954;
 }
 
 .header__form-container {
@@ -1649,6 +1667,67 @@ input[type=file]::file-selector-button:hover {
   transition: all 0.35s ease-in-out;
   color: rgba(0, 0, 0, 0.61);
 }
+
+.s-header__container {
+  margin: 0 auto;
+  background-color: #292b2c;
+}
+
+.s-menu {
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+.s-header__list-lang {
+  display: flex;
+}
+
+.s-header__item-lang {
+  font-size: 16px;
+  margin-left: 15px;
+}
+.s-header__item-lang:hover {
+  transition: 0.3s;
+  color: #D1A954;
+}
+
+.s-header__block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.s-header__list-social {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.s-header__item-social {
+  position: relative;
+}
+
+.s-link-social--svg {
+  position: relative;
+}
+
+.s-nav__inner {
+  margin-top: 30px;
+}
+
+.s-nav__list li {
+  margin-bottom: 15px;
+}
+
+.s-menu__logo {
+  width: 140px;
+}
+
+.s-nav {
+  height: 170px;
+}
+
 @media (min-width: 560px) {
   body {
     font-size: 16px;
@@ -1759,6 +1838,7 @@ input[type=file]::file-selector-button:hover {
     width: 47%;
   }
 }
+
 @media (min-width: 768px) {
   body {
     font-size: 16px;
@@ -1900,6 +1980,7 @@ input[type=file]::file-selector-button:hover {
     width: 35%;
   }
 }
+
 @media (min-width: 1024px) {
   body {
     font-size: 20px;
@@ -2088,6 +2169,7 @@ input[type=file]::file-selector-button:hover {
     width: 30%;
   }
 }
+
 @media (min-width: 1248px) {
   body {
     font-size: 24px;
