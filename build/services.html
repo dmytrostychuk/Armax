@@ -75,10 +75,10 @@
 	</svg>
 
 	<header class="header">
-		<div class="s-header__container container">
+		<div class="s-header__container ">
 			<div class="menu s-menu">
 
-				<div class="s-header__block">
+				<div class="s-header__block container">
 					<button class="burger-btn" href="#"><span></span></button>
 
 					<ul class="s-header__list-lang">
@@ -87,13 +87,19 @@
 					</ul>
 				</div>
 
-				<div class="s-header__block">
+				<div class="s-header__block container">
+
+					<h1 class="s-menu__title">
+						<a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.png" alt=""
+								width="120"></a>
+					</h1>
 					<ul class="s-header__list-social">
 						<li class="s-header__item-social">
 							<a class="s-link-social" href="tel:+380687945051">
 								<svg class="s-link-social--svg" width="30" height="25">
 									<use xlink:href="#phone"></use>
 								</svg>
+								<span class="s-tablet">+380687945051</span>
 							</a>
 						</li>
 						<li class="s-header__item-social">
@@ -101,19 +107,15 @@
 								<svg class="s-link-social--svg" width="30" height="25">
 									<use xlink:href="#mail"></use>
 								</svg>
+								<span class="s-tablet">lazer.armax@gmail.com</span>
 							</a>
-						</li>
-						<li class="s-header__item-social">
-							<h1 class="menu__title">
-								<a class="menu__link-logo" href="index.html"><img class="s-menu__logo" src=" img/logo.png" alt=""
-										width="120"></a>
-							</h1>
 						</li>
 						<li class="s-header__item-social">
 							<a href="https://www.facebook.com/armaxMG" class="s-link-social">
 								<svg class="s-link-social--svg" width="30" height="25">
 									<use xlink:href="#facebook"></use>
 								</svg>
+								<span class="s-tablet">facebook.com/armaxMG</span>
 							</a>
 						</li>
 						<li class="s-header__item-social">
@@ -122,6 +124,7 @@
 								<svg class="s-link-social--svg" width="30" height="35">
 									<use xlink:href="#location"></use>
 								</svg>
+								<span class="s-tablet">вулиця Грушевського, 26, Ківерці</span>
 							</a>
 						</li>
 					</ul>

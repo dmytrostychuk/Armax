@@ -58,6 +58,12 @@
 
 .s-link-social {
 
+	@include mq($from: tablet) {
+		display: block;
+		padding-left: 40px;
+		line-height: 1.5;
+	}
+
 	&:hover {
 		color: #d1a954;
 
