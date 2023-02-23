@@ -16,6 +16,20 @@ if (burgerBtn) {
 }
 
 // calc
+
+// function showDiv(divID) {
+//   var divs = document.getElementsByTagName("div");
+
+//   for (var i = 0; i < divs.length; i++) {
+//     if (divs[i].id === divID) {
+//       divs[i].style.display = "block";
+//     } else {
+//       divs[i].style.display = "none";
+//     }
+//   }
+// }
+
+
 const calcFormButtons = document.querySelectorAll('.calc-form-button-js');
 const calcForms = document.querySelectorAll('.calc-form-js');
 
@@ -61,3 +75,13 @@ sheetBtn.addEventListener('click', function (e) {
 pipeBtn.addEventListener('click', function (e) {
   e.preventDefault();
 });
+
+
+
+
+
+
+
+
+
+

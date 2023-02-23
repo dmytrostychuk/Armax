@@ -521,10 +521,6 @@ ul {
   background-color: #8B8B8B;
 }
 
-.calc {
-  background-color: purple;
-}
-
 .calc__sheet,
 .calc__profile-pipe {
   display: none;
@@ -548,6 +544,7 @@ ul {
 .calc__form {
   display: flex;
   flex-direction: column;
+  background-color: purple;
 }
 
 label {
@@ -1674,7 +1671,7 @@ input[type=file]::file-selector-button:hover {
 
 .s-menu {
   flex-wrap: wrap;
-  padding: 30px 0;
+  padding: 30px 0 0 0;
 }
 
 .s-header__list-lang {
@@ -1725,6 +1722,20 @@ input[type=file]::file-selector-button:hover {
 
 .s-nav__list li {
   margin-bottom: 15px;
+}
+
+.s-nav {
+  position: relative;
+  padding-left: 20px;
+  background-color: gray;
+  height: 200px;
+  align-items: center;
+  text-align: center;
+}
+
+.s-nav__list {
+  height: 200px;
+  text-align: center;
 }
 
 @media (min-width: 560px) {
@@ -2001,6 +2012,7 @@ input[type=file]::file-selector-button:hover {
   }
   .s-header__item-social {
     width: 50%;
+    font-size: 16px;
   }
   .s-link-social--svg {
     position: absolute;
@@ -2195,6 +2207,15 @@ input[type=file]::file-selector-button:hover {
   }
   .ware__card {
     width: 30%;
+  }
+  .s-header__list-social {
+    width: 60%;
+    justify-content: flex-end;
+  }
+  .s-header__item-social {
+    width: 230px;
+    font-size: 16px;
+    margin-left: 30px;
   }
 }
 
