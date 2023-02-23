@@ -22,6 +22,10 @@
 		</svg>
 	</header>
 	<main class="main container">
+		<button onclick="showDiv('redDiv')">Червоний</button>
+		<button onclick="showDiv('blueDiv')">Синій</button>
+		<button onclick="showDiv('yellowDiv')">Жовтий</button>
+		<button onclick="showDiv('greenDiv')">Зелений</button>	
 		<a href="index.html">головна сторінка</a>
 		<div class="calc">
 			<div class="metal">
@@ -31,7 +35,9 @@
 				<button class="calc__pipe-btn calc-form-button-js" type="button" data-type="pipe2">Труба</button>
 			</div>
 
-			<div class="calc__sheet calc-form-js" data-type="list">
+		
+
+			<div id="redDiv" class="calc__sheet calc-form-js" style="background-color: red; height: 100px; width: 100px; display: none;">
 				<form class="calc__form" action="">
 					<label for="length">Довжина мм
 						<input class="length" type="number">
@@ -58,7 +64,7 @@
 
 				</form>
 			</div>
-			<div class="calc__profile-pipe calc-form-js" data-type="pipe">
+			<div id="blueDiv" class="calc__profile-pipe calc-form-js" style="background-color: blue; height: 100px; width: 100px; display: none;">
 				<form class="calc__form" action="">
 					<label for="length">Довжина труби мм
 						<input class="length" type="number">

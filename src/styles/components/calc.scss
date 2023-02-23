@@ -3,7 +3,7 @@
 }
 
 .calc {
-	background-color: purple;
+	
 }
 
 .calc__sheet,
@@ -29,6 +29,7 @@
 .calc__form {
 	display: flex;
 	flex-direction: column;
+	background-color: purple;
 }
 
 label {
