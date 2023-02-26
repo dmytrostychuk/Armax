@@ -1,115 +1,23 @@
+.s-header {
+	height: auto;
+}
+
 .s-header__container {
 	margin: 0 auto;
-	background-color: #292b2c;
+	background-color:  #363839;
 }
 
 .s-menu {
-	flex-wrap: wrap;
-	padding: 30px 0 0 0;
-}
-
-.s-header__list-lang {
-	display: flex;
-}
-
-.s-header__item-lang {
-	font-size: 16px;
-	margin-left: 15px;
-
-	&:hover {
-		transition: .3s;
-		color: #D1A954;
-	}
-}
-
-.s-header__block {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
-}
-
-.s-menu__title {
-	margin: 0;
-
-	@include mq($from: phablet) {
-		margin-right: 40px;
-	}
-
-	@include mq($from: tablet) {
-		margin-right: 50px;
-	}
-}
-
-.s-header__block:nth-child(2) {
-
-	@include mq($from: phablet) {
-		margin-top: 20px;
-	}
-}
-
-.s-tablet {
-	display: none;
-
-	@include mq($from: tablet) {
-		display: block;
-	}
-	
-}
-
-.s-header__list-social {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
 	align-items: center;
-
-	@include mq($from: tablet) {
-		flex-wrap: wrap;
-		justify-content: flex-end;
-	}
-
-	@include mq($from: tablet-wide) {
-		width: 60%;
-		justify-content: flex-end;
-	}
+	margin-bottom: 30px;
+	padding-top: 10px;
+	margin-bottom: 0;
 }
 
-.s-header__item-social {
-	position: relative;
 
-	@include mq($from: tablet) {
-		width: 50%;
-		font-size: 16px;
-	}
-
-	@include mq($from: tablet-wide) {
-		width: 230px;
-		font-size: 16px;
-		margin-left: 30px;
-	}
-}
-
-.s-link-social--svg {
-	position: relative;
-
-	@include mq($from: tablet) {
-		position: absolute;
-		left: 0;
-		top: 0;
-	}
-}
-
-.s-nav__inner {
-	margin-top: 70px;
-}
-
-.s-nav__list li{
-	margin-bottom: 15px;
-}
-
-.s-menu__logo {
-
-	
-}
-
-.s-nav {
+.red {
+	background-color: rebeccapurple;
 }
