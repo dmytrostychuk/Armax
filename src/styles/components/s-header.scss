@@ -2,9 +2,13 @@
 	height: auto;
 }
 
-.s-header__container {
+.s-header__nav {
 	margin: 0 auto;
 	background-color:  #363839;
+}
+
+.s-header__container {
+	margin-top: -1px;
 }
 
 .s-menu {

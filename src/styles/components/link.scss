@@ -56,8 +56,8 @@
 	font-size: 14px;
 }
 
-.s-link-social {
-
+// .s-link-social {
+.link--hover {
 	@include mq($from: tablet) {
 		display: block;
 		padding-left: 40px;
