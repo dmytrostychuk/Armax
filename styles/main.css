@@ -1009,10 +1009,10 @@ label {
   display: inline-block;
   font-size: 14px;
 }
-.s-link-social:hover {
+.link--hover:hover {
   color: #d1a954;
 }
-.s-link-social:hover svg {
+.link--hover:hover svg {
   fill: #d1a954;
 }
 
@@ -1221,6 +1221,10 @@ picture {
   margin-bottom: 20px;
 }
 
+.section__text--black {
+  color: #404044;
+}
+
 .section--center-text {
   text-align: center;
 }
@@ -1379,7 +1383,6 @@ iframe {
 .footer {
   position: relative;
   z-index: 2;
-  margin-top: auto;
   background-color: #363839;
   padding-bottom: 50px;
 }
@@ -1668,9 +1671,13 @@ input[type=file]::file-selector-button:hover {
   height: auto;
 }
 
-.s-header__container {
+.s-header__nav {
   margin: 0 auto;
   background-color: #363839;
+}
+
+.s-header__container {
+  margin-top: -1px;
 }
 
 .s-menu {
@@ -1685,6 +1692,20 @@ input[type=file]::file-selector-button:hover {
 
 .red {
   background-color: rebeccapurple;
+}
+
+.s-services {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.a-header__background {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/services-header.jpg");
+  background-position: center;
 }
 
 @media (min-width: 560px) {
@@ -1887,7 +1908,7 @@ input[type=file]::file-selector-button:hover {
     text-align: start;
     margin: 0;
   }
-  .s-link-social {
+  .link--hover {
     display: block;
     padding-left: 40px;
     line-height: 1.5;
@@ -2131,6 +2152,9 @@ input[type=file]::file-selector-button:hover {
   }
   .ware__card {
     width: 30%;
+  }
+  .s-services {
+    margin-top: 0;
   }
 }
 
