@@ -1,5 +1,14 @@
-.s-header {
-	height: auto;
+.s-header__background {
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+	position: absolute;
+	background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
+ url("../img/services-header1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .s-header__nav {
@@ -19,9 +28,4 @@
 	margin-bottom: 30px;
 	padding-top: 10px;
 	margin-bottom: 0;
-}
-
-
-.red {
-	background-color: rebeccapurple;
 }

@@ -90,7 +90,7 @@ label {
 .container {
   margin: 0 auto;
   max-width: map-get($map: $breakpoints, $key: desktop);
-  padding: 0 25px;
+  padding: 0 15px;
 
   @include mq($from: phablet) {
     padding: 0 40px;

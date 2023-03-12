@@ -3,8 +3,6 @@
 	margin: 0 auto;
 	align-items: center;
 
-
-
 	@include mq($from: tablet) {
 		width: 320px;
 		margin: 0;

@@ -1,17 +1,12 @@
 .header {
 	position: relative;
 	height: 880px;
-	background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.55), rgba(51, 51, 51, 1));
-//  url("../img/lazer.jpg");
-	background-position: center;
-	background-repeat: repeat;
 
 	@include mq($from: phablet) {
-		height: 800px;
+		height: 700px;
 	}
 
 	@include mq($from: tablet) {
-		height: 700px
 	}
 
 	@include mq($from: tablet-wide) {
@@ -37,10 +32,12 @@
 	z-index: 0;
 	height: 100%;
 	width: 100%;
-	position: fixed;
+	background-attachment: fixed;
+	position: absolute;
 	background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
  url("../img/lazer.jpg");
-	background-position: center;
-	background-repeat: repeat;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 

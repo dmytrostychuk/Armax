@@ -48,7 +48,6 @@
 	border-radius: 25% 10% 0 0;
 	object-fit: cover;
 	height: 230px;
-	
 }
 
 .ware__figcaption {
@@ -94,5 +93,7 @@
 		&:hover   {
 			transition: all 0.35s ease-in-out;
 			color: rgba(0, 0, 0, 0.61);
+
+			
 	}
 }

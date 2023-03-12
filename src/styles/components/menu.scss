@@ -45,7 +45,8 @@
   }
 
 	@include mq($from: tablet) {
-    width: 200px;
+		width: 170px;
+		
   }
 }
 

@@ -78,8 +78,8 @@
     position: absolute;
     bottom: 0;
     margin: 20px 30px;
-    padding: 10px 18px;
-    text-align: center;
+    padding: 7px 15px;
+    text-align: start;
 
     &::after {
         content: "";
@@ -99,14 +99,14 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    text-transform: uppercase;
     color: #fff;
     letter-spacing: .1em;
     line-height: 1.3em;
 
     @include mq($from: tablet-wide) {
-        font-size: 1.1em;
+        font-size: 18px;
         padding: 0 20px;
+        text-transform: uppercase;
       }
 }
 

@@ -11,12 +11,11 @@
   transform: translateX(-350px);
 
   @include mq($from: phablet) {
-    height: 800px;
+    height: 700px;
     width: 320px;
   }
 
   @include mq($from: tablet) {
-    height: 700px;
     width: 360px;
     justify-content: flex-start;
     transform: translateX(-400px);
@@ -40,12 +39,11 @@
   height: 880px;
 
   @include mq($from: phablet) {
-    height: 800px;
+    height: 700px;
     transform: translateX(-40px);
   }
 
   @include mq($from: tablet) {
-    height: 700px;
     transform: translateX(-30px);
   }
 
@@ -148,7 +146,7 @@
   }
 
   @include mq($from: desktop) {
-    margin-left: 55px;
+    margin-left: 40px;
   }
 }
 
