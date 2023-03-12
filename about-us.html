@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eu">
 
 <head>
 	<meta charset="UTF-8" />
@@ -73,10 +73,8 @@
 			</g>
 		</symbol>
 	</svg>
-
-	<header class="header ">
-		<div class="u-header__background">
-		</div>
+	<header class="header">
+		<div class="header__background a-header__background"></div>
 		<div class="nav__social--desktop-wrap">
 			<div class="nav__social--desktop container">
 				<ul class="nav__social-list--desktop">
@@ -127,10 +125,10 @@
 					<div class="nav__inner">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<a href="services.html" class="link-hover">Послуги</a>
+								<a href="services.html" class="link-hover"> Металообробка </a>
 							</li>
 							<li class="nav__item">
-								<a href="about-us.html" class="link-hover">Про нас</a>
+								<a class="link--active">Про нас</a>
 							</li>
 							<li class="nav__item">
 								<a href="contacts.html" class="link-hover">Контакти</a>
@@ -181,12 +179,13 @@
 
 			<div class="header__content--container">
 				<div class="header__content header__inner">
-					<h1 class="header__content-title">
-						Металообробка будь-якої складності на замовлення.
-					</h1>
+					<h1 class="header__content-title">Коротко про Armax MG</h1>
 					<p class="header__content-text">
-						Сучасні технології обробки металів. Виготовлення виробів з металу
-						будь-якої складності. Європейська якість
+						ArmaxMG засновано в 2019 році! ArmaxMG – це сучасний та
+						технологічно-оснащений український металообробний завод, який
+						виробляє різну продукцію з металу. Вся продукція на нашому заводі
+						в Ківерцях проходить повний цикл виробництва від креслення до
+						упаковки!
 					</p>
 				</div>
 				<div class="header__form-container header__inner">
@@ -195,7 +194,7 @@
 					<form class="header__form" action="">
 						<input class="input-name" type="text" placeholder="Ім'я" />
 						<input class="input-number" type="tel" placeholder="Телефон" />
-						<button class="button__disabled header__content-button" type="submit" disabled>
+						<button class="button header__content-button" type="submit">
 							Надіслати
 						</button>
 					</form>
@@ -205,16 +204,108 @@
 	</header>
 
 	<main class="main">
-	</main>
-	<footer class="footer">
-		<div class="footer__wrapper">
-			<div class="map">
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1259.9652061668253!2d25.452380342753024!3d50.83245286357741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47259392610572b9%3A0x3edf65d8017ef30a!2z0KLQt9Ce0JIsINCQ0YDQvNCw0LrRgSDQnNCT!5e0!3m2!1suk!2sua!4v1673270441518!5m2!1suk!2sua"
-					width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
+		<div class="container">
+			<section class="a-gallery">
+				<div class="a-gallery__card">
+					<a data-fslightbox="gallery" href="img/gallery-1.jpg" class="a-gallery__link">
+						<img src="img/gallery-1.jpg" alt="бом бом" />
+					</a>
+				</div>
+
+				<div class="a-gallery__card">
+					<a data-fslightbox="gallery" href="img/gallery-2.jpg" class="a-gallery__link">
+						<img src="img/gallery-2.jpg" alt="" />
+					</a>
+				</div>
+				<div class="a-gallery__card">
+					<a data-fslightbox="gallery" href="img/lazer.jpg">
+						<img src="img/lazer.jpg" alt="" />
+					</a>
+				</div>
+				<div class="a-gallery__card">
+					<a data-fslightbox="gallery" href="img/gallery-3.jpg">
+						<img src="img/gallery-3.jpg" alt="" />
+					</a>
+				</div>
+				<div class="a-gallery__card">
+					<a data-fslightbox="gallery" href="img/gallery-4.jpg">
+						<img src="img/gallery-4.jpg" alt="" />
+					</a>
+				</div>
+				<div class="a-gallery__card">
+					<a data-fslightbox="gallery" href="img/gallery-5.jpg">
+						<img src="img/gallery-5.jpg" alt="" />
+					</a>
+				</div>
+				<div class="a-gallery__card">
+					<a data-fslightbox="gallery" href="img/gallery-6.jpg">
+						<img src="img/gallery-6.jpg" alt="" />
+					</a>
+				</div>
+				<div class="a-gallery__card">
+					<a data-fslightbox="gallery" href="img/metal-products.jpg">
+						<img src="img/metal-products.jpg" alt="" />
+					</a>
+				</div>
+				<div class="a-gallery__card">
+					<a data-fslightbox="gallery" href="img/gallery-7.jpg">
+						<img src="img/gallery-7.jpg" alt="" />
+					</a>
+				</div>
+				<div class="a-gallery__card">
+					<a data-fslightbox="gallery" href="img/grain-bucket.jpg">
+						<img src="img/grain-bucket.jpg" alt="" />
+					</a>
+				</div>
+				<div class="a-gallery__card">
+					<a data-fslightbox="gallery" href="img/decorative-cut.jpg">
+						<img src="img/decorative-cut.jpg" alt="" />
+					</a>
+				</div>
+				<div class="a-gallery__card">
+					<a data-fslightbox="gallery" href="img/gallery-9.jpg">
+						<img src="img/gallery-9.jpg" alt="" />
+					</a>
+				</div>
+			</section>
+
+			<section class="a-privilege">
+				<div class="a-privilege__card">
+					<h4 class="section__title">Висока якість</h4>
+					<p class="section__text">
+						Ми постійно покращуємо нашу якість і крок за кроком йдемо до нових
+						її стандартів
+					</p>
+				</div>
+				<div class="a-privilege__card">
+					<h4 class="section__title">Дотримуємося термінів</h4>
+					<p class="section__text">
+						Ми постійно покращуємо нашу якість і крок за кроком йдемо до нових
+						її стандартів
+					</p>
+				</div>
+				<div class="a-privilege__card">
+					<h4 class="section__title">Уважні до клієнта</h4>
+					<p class="section__text">
+						Ми постійно покращуємо нашу якість і крок за кроком йдемо до нових
+						її стандартів
+					</p>
+				</div>
+				<div class="a-privilege__card">
+					<h4 class="section__title">Повний комплекс робіт</h4>
+					<p class="section__text">
+						Ми постійно покращуємо нашу якість і крок за кроком йдемо до нових
+						її стандартів
+					</p>
+				</div>
+
+
+			</section>
 		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__wrapper"></div>
 		<div class="footer__bootom">
 			<div class="container">
 				<div class="info">
@@ -261,7 +352,7 @@
 							<li class="info__item">
 								<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
 									class="link-social link--hover">
-									<svg class="link-social--svg " width="30" height="30">
+									<svg class="link-social--svg" width="30" height="30">
 										<use xlink:href="#location"></use>
 									</svg>
 									45200 м. Ківерці, вул.Грушевського 26
@@ -317,10 +408,8 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="js/fslightbox.js"></script>
 	<script src="js/index.js"></script>
-	<script src="js/swiper.js"></script>
 </body>
 
 </html>

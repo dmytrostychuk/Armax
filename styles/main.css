@@ -389,6 +389,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: #ffffff;
+  background-color: #363839;
 }
 
 main {
@@ -1719,8 +1720,46 @@ input[type=file]::file-selector-button:hover {
   margin-bottom: 0;
 }
 
-.u-header {
+.a-header__background {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/about-us-header.jpg");
+}
+
+.a-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 10px;
+}
+.a-gallery__card {
   position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  outline: none;
+  border: none;
+}
+.a-gallery__card img {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  transition: all 0.4s ease;
+  object-fit: cover;
+  outline: none;
+  border: none;
+}
+.a-gallery__card img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: all 0.4s ease;
+}
+
+.a-privilege {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #363839;
 }
 
 @media (min-width: 560px) {
@@ -1831,6 +1870,9 @@ input[type=file]::file-selector-button:hover {
   }
   .ware__card {
     width: 47%;
+  }
+  .a-gallery__card {
+    max-height: 200px;
   }
 }
 
@@ -1973,6 +2015,9 @@ input[type=file]::file-selector-button:hover {
   }
   .calculation__form-container {
     width: 35%;
+  }
+  .a-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -2166,6 +2211,9 @@ input[type=file]::file-selector-button:hover {
   }
   .s-services {
     margin-top: 0;
+  }
+  .a-gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
