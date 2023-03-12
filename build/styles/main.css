@@ -1756,6 +1756,9 @@ input[type=file]::file-selector-button:hover {
 }
 
 .a-privilege {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   color: #363839;
 }
 
