@@ -2,20 +2,15 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 10px 10px;
-
-	@include mq($from: phablet) {
-	}
-
+	padding-bottom: 30px;
+	
 	@include mq($from: tablet) {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
 	@include mq($from: tablet-wide) {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-	}
-
-	@include mq($from: desktop) {
-		// height: 900px;
+		padding-bottom: 50px;
 	}
 }
 
