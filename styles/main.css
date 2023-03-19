@@ -1389,7 +1389,6 @@ picture {
 .map {
   max-width: 2060px;
   margin: 0 auto;
-  margin-top: 30px;
 }
 
 iframe {
@@ -1464,8 +1463,18 @@ iframe {
 .calculation__inner {
   position: relative;
   z-index: 500;
-  background-color: #8b8b8b;
   padding: 30px 0;
+}
+
+.calculation__background {
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  position: absolute;
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/pipe.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .calculation__title {
@@ -1766,11 +1775,17 @@ input[type=file]::file-selector-button:hover {
   padding-bottom: 30px;
 }
 
+.a-privilege--color {
+  background-color: #f6f6f6;
+  color: #404044;
+}
+
 .a-privilege__inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .a-privilege__box {
   width: 50%;
   margin-bottom: 30px;
@@ -1781,10 +1796,15 @@ input[type=file]::file-selector-button:hover {
   text-align: center;
 }
 
+.a-privilege__card--position {
+  flex-direction: column;
+}
+
 .a-privilege--svg {
   fill: #363839;
   width: 90px;
   height: auto;
+  margin: 0 auto;
   margin-bottom: 10px;
 }
 .a-privilege--svg:hover {
@@ -2269,6 +2289,9 @@ input[type=file]::file-selector-button:hover {
   .a-gallery {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-bottom: 50px;
+  }
+  .a-privilege__box--size {
+    width: 30%;
   }
   .a-privilege__card {
     display: flex;
