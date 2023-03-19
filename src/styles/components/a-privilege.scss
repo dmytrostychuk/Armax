@@ -7,18 +7,27 @@
 	padding-bottom: 30px;
 }
 
+.a-privilege--color {
+	background-color: #f6f6f6;
+  color: #404044;
+}
+
 .a-privilege__inner {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-
-	@include mq($from: tablet-wide) {
-	}
 }
 
 .a-privilege__box {
 	width: 50%;
 	margin-bottom: 30px;
+}
+
+.a-privilege__box--size {
+
+	@include mq($from: tablet-wide) {
+		width: 30%;
+	}
 }
 
 .a-privilege__card {
@@ -32,11 +41,15 @@
 		padding: 30px;
 	}
 }
+.a-privilege__card--position {
+	flex-direction: column;
+}
 
 .a-privilege--svg {
 	fill: #363839;
 	width: 90px;
 	height: auto;
+	margin: 0 auto;
 	margin-bottom: 10px;
 
 	@include mq($from: phablet) {
