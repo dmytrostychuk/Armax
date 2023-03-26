@@ -29,7 +29,6 @@ if (burgerBtn) {
 //   }
 // }
 
-
 const calcFormButtons = document.querySelectorAll('.calc-form-button-js');
 const calcForms = document.querySelectorAll('.calc-form-js');
 
@@ -76,12 +75,4 @@ pipeBtn.addEventListener('click', function (e) {
   e.preventDefault();
 });
 
-
-
-
-
-
-
-
-
-
+// ---------------------------------------------------------------- фрилансер

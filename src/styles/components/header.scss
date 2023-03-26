@@ -6,26 +6,13 @@
 		height: 700px;
 	}
 
-	@include mq($from: tablet) {
-	}
-
 	@include mq($from: tablet-wide) {
 		height: 800px;
-	}
-
-	@include mq($from: desktop) {
-		// height: 900px;
 	}
 }
 
 .header__container {	
 	margin: 0 auto;
-
-	@include mq($from: tablet-wide) {
-  }
-
-	@include mq($from: desktop) {
-  }
 }
 
 .header__background {
