@@ -1,9 +1,6 @@
 .c-header {
 	height: 450px;
 
-	@include mq($from: phablet) {
-	}
-
 	@include mq($from: tablet) {
 		height: 700px;
 	}
@@ -13,10 +10,6 @@
 		background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
 	 url("../img/gallery-6.jpg");
 }
-
-.с-header__container {
-}
-
 .с-header__content {
 
 	@include mq($from: phablet) {
@@ -66,4 +59,9 @@
 	@include mq($from: tablet-wide) {
 		font-size: 25px;
 	}
+}
+
+
+.c-contacts__card {
+	position: relative;
 }
