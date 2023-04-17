@@ -43,6 +43,7 @@
 
 .calculation__title {
 	position: relative;
+	color: #f6f6f6;
 
 	@include mq($from: tablet-wide) {
 		text-align: start;

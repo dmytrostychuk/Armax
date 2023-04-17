@@ -1,19 +1,489 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eu">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ArmaxMG</title>
 	<link rel="stylesheet" href="styles/style-min.css" />
-	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	<link rel="website icon" type="png" href="../img/pngegg.png" />
 </head>
 
 <body>
-	<div class="development">
-		<p class="development-page">Вибачте, ця сторінка знаходиться на стадії розробки</p>
-		<p class="development-page">Sorry, this page is under construction</p>
-	</div>
+	<svg style="display: none">
+		<symbol id="location" viewBox="0 0 1024 1024">
+			<g>
+				<path
+					d="M512 64c-175.8 0-318.3 134.6-318.3 300.5 0 222.9 195.5 430.8 280.1 510.3 21.3 20.1 55.7 20.3 77.4 0.6 85.1-77.2 279.2-278.7 279.2-510.9C830.3 198.6 687.8 64 512 64z m0 401.1c-56.9 0-103.1-46.2-103.1-103.1S455.1 258.9 512 258.9c56.9 0 103.1 46.2 103.1 103.1S568.9 465.1 512 465.1z" />
+				<path d="M364.5 926.5a147.5 21.5 0 1 0 295 0 147.5 21.5 0 1 0-295 0Z" />
+			</g>
+		</symbol>
+
+		<symbol id="phone" viewBox="0 0 477.156 477.156">
+			<g>
+				<path d="M475.009,380.316l-2.375-7.156c-5.625-16.719-24.062-34.156-41-38.75l-62.688-17.125c-17-4.625-41.25,1.594-53.688,14.031
+          l-22.688,22.688c-82.453-22.28-147.109-86.938-169.359-169.375L145.9,161.94c12.438-12.438,18.656-36.656,14.031-53.656
+          l-17.094-62.719c-4.625-16.969-22.094-35.406-38.781-40.969L96.9,2.19c-16.719-5.563-40.563,0.063-53,12.5L9.962,48.659
+          C3.899,54.69,0.024,71.94,0.024,72.003c-1.187,107.75,41.063,211.562,117.281,287.781
+          c76.031,76.031,179.454,118.219,286.891,117.313c0.562,0,18.312-3.813,24.375-9.845l33.938-33.938
+          C474.946,420.878,480.571,397.035,475.009,380.316z" />
+			</g>
+		</symbol>
+
+		<symbol id="mail" viewBox="0 0 64 64">
+			<g>
+				<path
+					d="M63.125,9.977c-0.902-1.321-2.419-2.194-4.131-2.194H5.006c-1.676,0-3.158,0.842-4.067,2.117l31.16,25.982L63.125,9.977z" />
+				<path d="M0.006,14.328v36.889c0,2.75,2.25,5,5,5h53.988c2.75,0,5-2.25,5-5V14.461L32.099,41.09L0.006,14.328z" />
+			</g>
+		</symbol>
+
+		<symbol id="clock" viewBox="0 0 485.213 485.212">
+			<g>
+				<path d="M242.607,0C108.629,0,0.001,108.628,0.001,242.606c0,133.976,108.628,242.606,242.606,242.606
+          c133.978,0,242.604-108.631,242.604-242.606C485.212,108.628,376.585,0,242.607,0z M257.771,454.116v-29.557h-30.327v29.557
+          c-104.925-7.458-188.883-91.419-196.346-196.344h29.554v-30.327H31.098c7.463-104.928,91.421-188.886,196.346-196.349v29.554
+          h30.327V31.097c104.926,7.462,188.882,91.421,196.344,196.349h-29.552v30.327h29.552
+          C446.652,362.697,362.696,446.658,257.771,454.116z M354.226,178.163c2.072,3.615,0.83,8.266-2.782,10.368l-80.092,46.227
+          c0.691,2.577,1.582,5.066,1.582,7.848c0,16.762-13.581,30.324-30.326,30.324c-16.75,0-30.327-13.562-30.327-30.324l-82.299-47.503
+          c-7.257-4.203-9.743-13.474-5.554-20.729c4.174-7.285,13.459-9.771,20.715-5.565l82.775,47.798
+          c4.411-2.487,9.239-4.324,14.69-4.324c8.471,0,16.092,3.494,21.604,9.122l79.648-46.024
+          C347.416,173.277,352.064,174.521,354.226,178.163z" />
+			</g>
+		</symbol>
+
+		<symbol id="facebook" viewBox="0 0 24 24">
+			<g>
+				<path
+					d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0" />
+			</g>
+		</symbol>
+
+		<symbol id="telegram" viewBox="0 0 24 24">
+			<g>
+				<path
+					d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z" />
+			</g>
+		</symbol>
+
+		<symbol id="caliper" viewBox="0 0 512 512">
+			<g>
+				<path
+					d="M262.021,212.339h211.823v40.94h-22.41v-11.755h-12v11.755h-21.463v-20.471h-12v20.471h-22.094v-11.755h-12v11.755h-22.094   v-20.471h-12v20.471h-22.252v-11.755h-12v11.755h-22.252v-20.471h-12v20.471h-19.54v-17.755h-132.67v17.755H103.5v-20.471h-12   v20.471H77.324v-10.201h-12v10.201H38.16v-40.94h78.909v17.613h132.67v-47.513h-9.657v-18.068h-39.938v18.068h-71.447h-11.627   h-1.841l0-53.979h-6c-6.404,0-12.17,3.186-15.048,8.313l-2.66,4.741c-2.183,3.891-4.26,8.976-6.172,15.115   c-4.163,13.356-6.271,27.569-6.266,42.241l0,1.469H75.77l0-1.469c0.005-14.672-2.103-28.885-6.266-42.241   c-1.914-6.142-3.991-11.227-6.172-15.114l-2.66-4.742c-2.877-5.127-8.643-8.313-15.048-8.313h-6l0,53.979H26.156v29.743h0.004   v41.099h-0.004v29.185l19.191,80.108c2.958,12.345,13.889,20.966,26.583,20.966h6v-82.079h-12v68.867   c-4.374-1.85-7.748-5.685-8.913-10.55l-18.861-78.729v-15.768h27.774v22.164h12v-22.166h39.139v17.758h0v100.501h6   c12.694,0,23.626-8.622,26.585-20.968l19.056-79.533h81.029v-17.758h236.104v-64.94H262.021V212.339z M212.144,176.371h15.938   v6.068h-15.938V176.371z M129.069,194.439h71.075h37.596v23.513h-108.67V194.439z M96.805,160.198   c1.664-5.34,3.407-9.65,5.181-12.812l1.242-2.215l0,49.268h13.469v5.77l-25.614,0.06l0-1.402   C91.078,185.407,93.003,172.397,96.805,160.198z M38.156,194.439h13.469l-0.001-49.269l1.243,2.216   c1.772,3.159,3.516,7.47,5.181,12.813c3.802,12.198,5.727,25.208,5.722,38.667l0,1.402l-25.614-0.06V194.439z M137.985,359.774   c-1.166,4.866-4.541,8.702-8.915,10.553v-69.812h23.113L137.985,359.774z M155.059,288.516H129.07v-5.479h27.301L155.059,288.516z    M237.74,271.037H129.07v-11.758h0v-11.755h108.67V271.037z" />
+			</g>
+		</symbol>
+
+		<symbol id="dimension-arrow" viewBox="0 0 76 76">
+			<g>
+				<path fill-opacity="1" stroke-width="0.2" stroke-linejoin="round"
+					d="M 31,57L 36.8333,57L 31,52L 31,47L 36,51.2857L 36.0001,24.7143L 31.0001,29L 31.0001,24L 36.8334,19L 31.0001,19L 31.0001,16L 45.0001,16L 45.0001,19L 39.1668,19L 45.0001,24L 45.0001,29L 40.0001,24.7143L 40,51.2857L 45,47L 45,52L 39.1667,57L 45,57L 45,60L 31,60L 31,57 Z " />
+			</g>
+		</symbol>
+
+		<symbol id="dimension" viewBox="0 0 15 15">
+			<g>
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M3.00014 2.73895C3.00014 2.94698 2.76087 3.06401 2.59666 2.93628L1.00386 1.69744C0.875177 1.59735 0.875177 1.40286 1.00386 1.30277L2.59666 0.063928C2.76087 -0.0637944 3.00014 0.0532293 3.00014 0.261266V1.00012H9.00009V0.261296C9.00009 0.0532591 9.23936 -0.0637646 9.40358 0.0639578L10.9964 1.3028C11.1251 1.40289 11.1251 1.59738 10.9964 1.69747L9.40358 2.93631C9.23936 3.06404 9.00009 2.94701 9.00009 2.73898V2.00012H3.00014V2.73895ZM9.50002 4.99998H2.50002C2.22388 4.99998 2.00002 5.22384 2.00002 5.49998V12.5C2.00002 12.7761 2.22388 13 2.50002 13H9.50002C9.77616 13 10 12.7761 10 12.5V5.49998C10 5.22384 9.77616 4.99998 9.50002 4.99998ZM2.50002 3.99998C1.67159 3.99998 1.00002 4.67156 1.00002 5.49998V12.5C1.00002 13.3284 1.67159 14 2.50002 14H9.50002C10.3284 14 11 13.3284 11 12.5V5.49998C11 4.67156 10.3284 3.99998 9.50002 3.99998H2.50002ZM14.7389 6.00001H14V12H14.7389C14.9469 12 15.064 12.2393 14.9362 12.4035L13.6974 13.9963C13.5973 14.125 13.4028 14.125 13.3027 13.9963L12.0639 12.4035C11.9362 12.2393 12.0532 12 12.2612 12H13V6.00001H12.2612C12.0532 6.00001 11.9361 5.76074 12.0639 5.59653L13.3027 4.00373C13.4028 3.87505 13.5973 3.87505 13.6974 4.00374L14.9362 5.59653C15.0639 5.76074 14.9469 6.00001 14.7389 6.00001Z" />
+			</g>
+		</symbol>
+	</svg>
+
+	<header class="header">
+		<div class="header__background l-header__background"></div>
+		<div class="nav__social--desktop-wrap">
+			<div class="nav__social--desktop container">
+				<ul class="nav__social-list--desktop">
+					<li class="nav__social-item">
+						<a class="link-social link--hover" href="tel:+380687945051">
+							<svg class="link-social--svg" width="30" height="20">
+								<use xlink:href="#phone"></use>
+							</svg>
+							+38 (096) 123 91 21
+						</a>
+					</li>
+					<li class="nav__social-item">
+						<a href="mailto:lazerarmax@gmail.com" class="link-social link--hover">
+							<svg class="link-social--svg" width="30" height="20">
+								<use xlink:href="#mail"></use>
+							</svg>
+							lazer.armax@gmail.com
+						</a>
+					</li>
+				</ul>
+				<ul class="nav__social-list--desktop nav__social-list--svg">
+					<li class="nav__social-item">
+						<a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
+							<svg class="link-social--svg" width="25" height="25">
+								<use xlink:href="#facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="nav__social-item">
+						<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
+							class="link-social link--hover">
+							<svg class="link-social--svg" width="25" height="25">
+								<use xlink:href="#location"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="header__container container">
+			<div class="menu">
+				<button class="burger-btn"><span></span></button>
+				<h1 class="menu__title">
+					<a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.png" alt="" /></a>
+				</h1>
+				<nav class="nav">
+					<div class="nav__inner">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="services.html" class="link-hover">Металообробка</a>
+							</li>
+							<li class="nav__item">
+								<a href="about-us.html" class="link-hover">Про нас</a>
+							</li>
+							<li class="nav__item">
+								<a href="contacts.html" class="link-hover">Контакти</a>
+							</li>
+							<li class="nav__item">
+								<a href="calc.html" class="link-hover">Калькулятор металу</a>
+							</li>
+						</ul>
+
+						<ul class="nav__list nav__list-social">
+							<li class="nav__item-social">
+								<a class="link-social link--hover" href="tel:+380687945051">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#phone"></use>
+									</svg>
+									+38 (099) 132 45 67
+								</a>
+							</li>
+							<li class="nav__item-social">
+								<a href="mailto:lazerarmax@gmail.com" class="link-social link--hover">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#mail"></use>
+									</svg>
+									lazer.armax@gmail.com
+								</a>
+							</li>
+							<li class="nav__item-social">
+								<a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#facebook"></use>
+									</svg>
+									<span class="none">facebook.com/armaxMG/</span>
+								</a>
+							</li>
+							<li class="nav__item-social">
+								<a href="https://www.google.com/maps/place/%D0%A2%D0%B7%D0%9E%D0%92,+%D0%90%D1%80%D0%BC%D0%B0%D0%BA%D1%81+%D0%9C%D0%93/@50.83233,25.453636,18z/data=!4m5!3m4!1s0x0:0x3edf65d8017ef30a!8m2!3d50.8324517!4d25.4532672?hl=uk"
+									class="link-social link--hover">
+									<svg class="link-social--svg" width="30" height="30">
+										<use xlink:href="#location"></use>
+									</svg>
+									<span class="none">45200 м. Ківерці, вул.Грушевського 26</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+
+			<div class="header__content--container">
+				<div class="header__content header__inner">
+					<h1 class="header__content-title">
+						Лазерна різка металу
+					</h1>
+					<p class="header__content-text">
+						Лазерна різка металу – один з найбільш сучасних, ефективних, високоточних і економічно вигідних способів
+						розкрою та порізки різних металів.
+					</p>
+				</div>
+				<div class="header__form-container header__inner">
+					<h3 class="header__form-title">Надіслати запит :</h3>
+
+					<form class="header__form" action="">
+						<input class="input-name" type="text" placeholder="Ім'я" />
+						<input class="input-number" type="tel" placeholder="Телефон" />
+						<button class="button" type="submit">
+							Надіслати
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="section l-characteristic">
+			<div class="container">
+				<h3 class="section__title">Основні характеристики лазерного різання металу Armax MG</h3>
+				<div class="l-characteristic__container">
+					<p class="l-characteristic__name">Ermaxan FIBERMAK (Турція)</p>
+
+					<div class="l-characteristic__content">
+						<div class="l-characteristic__info">
+							<div class="l-characteristic__box" data-aos="fade-right">
+								<svg class="l-svg" width="100" height="100">
+									<use xlink:href="#dimension"></use>
+								</svg>
+								<h4 class="l-characteristic__title">
+									Максимальні розміри листа:
+								</h4>
+								<p class="l-characteristic__text">
+									Розмір робочої поверхні – <span class="l-characteristic__text--color">6000 × 2000</span> мм
+								</p>
+							</div>
+							<div class="l-characteristic__box" data-aos="fade-right">
+								<svg class="l-svg" width="100" height="100">
+									<use xlink:href="#dimension-arrow"></use>
+								</svg>
+								<h4 class="l-characteristic__title">
+									Максимальна товщина різу:
+								</h4>
+								<ul class="l-characteristic__list">
+									<li class="l-characteristic__item">Чорний метал: <span class="l-characteristic__text--color"> 20
+											мм</span></li>
+									<li class="l-characteristic__item">Нержавіюча сталь: <span class="l-characteristic__text--color">10
+											мм</span></li>
+									<li class="l-characteristic__item">Алюміній: <span class="l-characteristic__text--color">6 мм</span>
+									</li>
+								</ul>
+							</div>
+							<div class="l-characteristic__box l-characteristic__box--shadow" data-aos="fade-right">
+								<svg class="l-svg" width="100" height="100">
+									<use xlink:href="#caliper"></use>
+								</svg>
+								<h4 class="l-characteristic__title">
+									Точність позиціонування
+								</h4>
+								<p class="l-characteristic__text">
+									Точність позиціонування нашого лазера – <span class="l-characteristic__text--color">0,01 мм</span>
+								</p>
+							</div>
+						</div>
+						<div class="l-characteristic__gallery">
+							<section class="a-gallery">
+								<div class="a-gallery__card  l-characteristic__photo">
+									<a data-fslightbox="gallery" href="img/gallery-1.jpg" class="a-gallery__link">
+										<img src="img/gallery-1.jpg" alt="бом бом" />
+									</a>
+								</div>
+								<div class="a-gallery__card l-characteristic__photo">
+									<a data-fslightbox="gallery" href="img/lazer.jpg">
+										<img src="img/lazer.jpg" alt="" />
+									</a>
+								</div>
+								<div class="a-gallery__card l-characteristic__photo">
+									<a data-fslightbox="gallery" href="img/gallery-2.jpg" class="a-gallery__link">
+										<img src="img/gallery-2.jpg" alt="" />
+									</a>
+								</div>
+								<div class="a-gallery__card disabled-phablet l-characteristic__photo">
+									<a data-fslightbox="gallery" href="img/decorative-cut.jpg" class="a-gallery__link">
+										<img src="img/decorative-cut.jpg" alt="" />
+									</a>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="l-price ware">
+			<div class="container">
+				<h3 class="section__title">Ціна лазерної різки металу</h3>
+				<p class="section__text l-price__text">
+					Щоб ми могли зробити точний розрахунок вартості лазерного різання металу та терміни
+					виконання послуги, нам
+					необхідно отримати від Вас повну інформацію про виріб, детальне технічне завдання або креслення. Ціни на
+					послуги
+					лазерного різання визначається за такими основними критеріями як:</p>
+				<ul class="l-price__list">
+					<li class="l-price__item">Вид та марка металу який Вам потрібно порізати;</li>
+					<li class="l-price__item">Обсяг замовлення;</li>
+					<li class="l-price__item">Складність робіт, залежно від деталі;</li>
+					<li class="l-price__item">Давальницька чи власна сировина буде використовуватись в замовленні;</li>
+					<li class="l-price__item">Строки виконання замовлення;</li>
+				</ul>
+			</div>
+
+		</section>
+		<section class="calculation">
+			<div class="calculation__background"></div>
+			<div class="calculation__inner">
+
+				<div class="calculation__wrapper container">
+					<div class="calculation__content">
+						<h3 class="section__title calculation__title">
+							Вимоги Armax MG до креслень лазерної різки металу:
+						</h3>
+						<ul class="calculation__list">
+							<li class="calculation__item">
+								<p class="calculation__text">
+									Креслення надсилати нам в електронному вигляді на наш e-mail
+									<a href="mailto:lazerarmax@gmail.com" class="link-social l-link">
+										<svg class="link-social--svg" width="30" height="20">
+											<use xlink:href="#mail"></use>
+										</svg>
+										lazer.armax@gmail.com
+									</a> створених у програмах (AutoCAD, SolidWorks, тощо) формату DWG, DXF або PDF.
+								</p>
+							</li>
+							<li class="calculation__item">
+								<p class="calculation__text">
+									Масштаб деталей у кресленнях повинен бути - 1:1.
+								</p>
+							</li>
+							<li class="calculation__item">
+								<p class="calculation__text">
+									Всі криві деталі повинні бути із замкнутими контурами, побудовані правильними відрізками та дугами.
+								</p>
+							</li>
+							<li class="calculation__item">
+								<p class="calculation__text">
+									Разом із кресленнями вкажіть номер деталі, товщину металу, його марку, і кількість деталей.
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="calculation__form-container">
+						<form class="calculation__form" method="post">
+							<input type="text" placeholder="Ім'я" />
+							<input type="tel" placeholder="Телефон" />
+							<input type="email" placeholder="Електронна пошта" />
+							<textarea class="form-textarea" cols="40" rows="6" placeholder="Коментар до замовлення"></textarea>
+							<label class="calculation__label" for="file">Завантажити файл:</label>
+							<input class="calculation__input-file" type="file" id="file" />
+
+							<button class="header__content-button button" type="submit">
+								Надіслати
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__bootom">
+			<div class="container">
+				<div class="info">
+					<div class="info__block info__menu">
+						<h5 class="info__title">Меню</h5>
+						<ul>
+							<li class="info__item">
+								<a class="info__link" href="services.html">Послуги</a>
+							</li>
+							<li class="info__item">
+								<a class="info__link" href="about-us.html">Про нас</a>
+							</li>
+							<li class="info__item">
+								<a class="info__link" href="contacts.html">Контакти</a>
+							</li>
+							<li class="info__item">
+								<a class="info__link" href="calc.html">Калькуоятор металу</a>
+							</li>
+						</ul>
+					</div>
+					<div class="info__block info__schedule">
+						<h5 class="info__title">Послуги</h5>
+						<ul class="info__list">
+							<li class="info__item">
+								<a href="lazer.html" class="info__link">Лазерна порізка</a>
+							</li>
+							<li class="info__item">
+								<a href="lazer.html" class="info__link">Гнуття деталей</a>
+							</li>
+							<li class="info__item">
+								<a href="lazer.html" class="info__link">Гнуття труб</a>
+							</li>
+							<li class="info__item">
+								<a href="lazer.html" class="info__link">Порошкове фарбування</a>
+							</li>
+							<li class="info__item">
+								<a href="lazer.html" class="info__link">Зварювальні роботи</a>
+							</li>
+						</ul>
+					</div>
+					<div class="info__block info__address">
+						<h5 class="info__title">Адреса</h5>
+						<ul class="info__list">
+							<li class="info__item">
+								<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
+									class="link-social link--hover">
+									<svg class="link-social--svg" width="30" height="30">
+										<use xlink:href="#location"></use>
+									</svg>
+									45200 м. Ківерці, вул.Грушевського 26
+								</a>
+							</li>
+							<li class="info__item info__item--color">
+								<svg class="clock-svg" width="25" height="25">
+									<use xlink:href="#clock"></use>
+								</svg>
+								Пн - Пт 8:00 - 17:00
+							</li>
+						</ul>
+					</div>
+
+					<div class="info__block info__contact">
+						<h5 class="info__title">Наші контакти</h5>
+						<ul class="info__list">
+							<li class="info__item">
+								<a class="link-social link--hover" href="tel:+380687945051">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#phone"></use>
+									</svg>
+									+38 (096) 123 91 21
+								</a>
+							</li>
+							<li class="info__item">
+								<a class="link-social link--hover" href="tel:+380687945051">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#phone"></use>
+									</svg>
+									+38 (099) 225 50 51
+								</a>
+							</li>
+							<li class="info__item">
+								<a href="mailto:lazerarmax@gmail.com" class="link-social link--hover">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#mail"></use>
+									</svg>
+									lazer.armax@gmail.com
+								</a>
+							</li>
+							<li class="info__item">
+								<a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#facebook"></use>
+									</svg>
+									facebook.com/armaxMG/
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/fslightbox.js"></script>
 </body>
 
 </html>
