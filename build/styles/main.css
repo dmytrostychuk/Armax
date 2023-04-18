@@ -1054,6 +1054,7 @@ label {
 }
 .header__form input {
   max-width: 500px;
+  font-size: 16px;
 }
 
 .header__form-title {
@@ -1970,6 +1971,7 @@ input[type=file]::file-selector-button:hover {
   font-weight: bold;
   font-size: 16px;
   margin: 0;
+  text-transform: uppercase;
 }
 .l-characteristic__name::after {
   content: "";
@@ -2057,6 +2059,10 @@ input[type=file]::file-selector-button:hover {
           filter: saturate(100%);
 }
 
+.l-price {
+  background-color: #ffffff;
+}
+
 .l-price__item {
   position: relative;
   padding: 5px;
@@ -2076,6 +2082,11 @@ input[type=file]::file-selector-button:hover {
   background-color: #d1a954;
   border: 1px solid #404044;
 }
+
+.sb-header__background {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/sheet-bending-1.jpg");
+}
+
 @media (min-width: 560px) {
   body {
     font-size: 16px;
@@ -2245,6 +2256,7 @@ input[type=file]::file-selector-button:hover {
   }
   .l-svg {
     height: 70px;
+    margin-bottom: 0;
   }
   .l-characteristic__item {
     padding: 3px;
@@ -2254,6 +2266,7 @@ input[type=file]::file-selector-button:hover {
     display: none;
   }
 }
+
 @media (min-width: 768px) {
   body {
     font-size: 16px;
@@ -2445,7 +2458,11 @@ input[type=file]::file-selector-button:hover {
   .l-characteristic__gallery .a-gallery__card img {
     width: 100%;
   }
+  .l-svg {
+    margin-bottom: 0;
+  }
 }
+
 @media (min-width: 1024px) {
   body {
     font-size: 20px;
@@ -2664,6 +2681,9 @@ input[type=file]::file-selector-button:hover {
   .c-header__content-text {
     font-size: 25px;
   }
+  .l-svg {
+    margin-bottom: 0;
+  }
   .l-characteristic__title {
     font-size: 20px;
   }
@@ -2680,6 +2700,7 @@ input[type=file]::file-selector-button:hover {
     font-size: 16px;
   }
 }
+
 @media (min-width: 1248px) {
   body {
     font-size: 24px;
@@ -2720,5 +2741,8 @@ input[type=file]::file-selector-button:hover {
   }
   .с-header__content {
     padding: 50px;
+  }
+  .l-svg {
+    margin-bottom: 0;
   }
 }

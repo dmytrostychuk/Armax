@@ -8,6 +8,7 @@
 	font-weight: bold;
 	font-size: 16px;
 	margin: 0;
+	text-transform: uppercase;
 
 	&::after {
 		content: "";
@@ -113,9 +114,23 @@
 	display: block;
 	margin: 0 auto;
 	fill: #404044;
+	
 
 	@include mq($from: phablet) {
 		height: 70px;
+		margin-bottom: 0;
+	}
+
+	@include mq($from: tablet) {
+		margin-bottom: 0;
+	}
+
+	@include mq($from: tablet-wide) {
+		margin-bottom: 0;
+	}
+
+	@include mq($from: desktop) {
+		margin-bottom: 0;
 	}
 }
 

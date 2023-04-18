@@ -12,10 +12,11 @@
 .header__form {
 	display: flex;
 	flex-direction: column;
+	
 
 	input {
 		max-width: 500px;
-	
+		font-size: 16px;
 		@include mq($from: phablet) {
 			width: 45%;
 		}

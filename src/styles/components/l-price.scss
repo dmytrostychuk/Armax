@@ -1,3 +1,7 @@
+.l-price {
+	background-color: #ffffff;
+}
+
 .l-price__text {
 
 	@include mq($from: tablet-wide) {
