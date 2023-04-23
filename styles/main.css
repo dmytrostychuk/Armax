@@ -2087,6 +2087,18 @@ input[type=file]::file-selector-button:hover {
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/sheet-bending-1.jpg");
 }
 
+.d-header__background {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/dyeing3.jpg");
+}
+
+.w-header__background {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/metal-products.jpg");
+}
+
+.locksmith-header__background {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/locksmith4.jpg");
+}
+
 @media (min-width: 560px) {
   body {
     font-size: 16px;
@@ -2249,7 +2261,7 @@ input[type=file]::file-selector-button:hover {
     width: 290px;
   }
   .l-characteristic__box {
-    margin-top: 5px;
+    margin-top: 30px;
   }
   .l-characteristic__box--shadow {
     box-shadow: none;
