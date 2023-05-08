@@ -55,7 +55,7 @@ function formCheck(e) {
     return acc && current;
   });
   if (!Boolean(Number(isAllValid))) {
-    alert('Заполните поля правильно!');
+    alert('Заповніть поля правильно!');
     return;
   }
   formSubmit();
@@ -72,14 +72,14 @@ function checkFile(file) {
       'image/svg+xml',
     ].includes(file.type)
   ) {
-    alert('Разрешены только указанные форматы');
+    alert('Дозволені лише вказані формати');
     fileReset();
     return;
   }
 
   // проверяем размер файла (<20 Мб)
   if (file.size > maxSize) {
-    alert('Файл должен быть менее 20 Мб');
+    alert('Файл повинен бути не більше 20Мб');
     fileReset();
     return;
   }
@@ -106,7 +106,7 @@ async function formSubmit() {
     alert(result.message);
     formReset();
   } else {
-    alert('Код ошибки: ' + response.status);
+    alert('Код помилки: ' + response.status);
   }
 }
 
