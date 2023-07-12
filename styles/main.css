@@ -915,6 +915,7 @@ label {
   background-color: rgba(67, 79, 79, 0.537);
   padding: 0 20px;
   margin-bottom: 30px;
+  margin-top: 15vh;
 }
 .header__inner {
   padding: 20px 15px;
@@ -2306,6 +2307,7 @@ input[type=file]::file-selector-button:hover {
     width: 54%;
     margin-bottom: 0;
     margin-right: 20px;
+    margin-top: 0;
   }
   .header__inner {
     padding: 40px 20px;
