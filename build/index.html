@@ -331,8 +331,7 @@
             <div class="featured__content">
               <p class="featured__content-title">Якість</p>
               <p class="featured__content-text">
-                Армакс МГ працює тільки з перевіреними постачальниками і
-                виробникам
+                Гарантуємо високу якість
               </p>
             </div>
           </div>
@@ -343,7 +342,7 @@
             <div class="featured__content">
               <p class="featured__content-title">Сервіс</p>
               <p class="featured__content-text">
-                Наші фахівці нададуть будь-яку допомогу при реалізації Вашого
+                Надаємо будь-яку допомогу при реалізації Вашого
                 проекту
               </p>
             </div>
@@ -355,8 +354,7 @@
             <div class="featured__content">
               <p class="featured__content-title">Ціна</p>
               <p class="featured__content-text">
-                Ми розуміємо, що для успішної конкуренції наші ціни повинні
-                бути мінімальними
+                Конкурентні ціни. Знижки при великих об'ємах замовлень
               </p>
             </div>
           </div>
@@ -379,16 +377,8 @@
     <section class="section ware">
       <div class="container">
         <h3 class="section__title">
-          Вироби з металу на замовлення нашого виробництва
+          Каталог продукції
         </h3>
-        <p class="section__text section--center-text">
-          Виготовлення дрібних та складних деталей із металу, а також послуги
-          з механічної обробки деталей виконуємо на верстатах з ЧПУ. Беремо в
-          роботу навіть найскладніші замовлення – нестандартні
-          <span class="preview__link"> вироби з металу</span>. Виконуємо
-          великі обсяги. Ці та багато інших вироби з металу ми робимо на
-          нашому виробництві на замовлення.
-        </p>
 
         <div class="ware__box">
           <article class="ware__card" data-aos="zoom-in" data-aos-delay="150">
@@ -398,11 +388,25 @@
               </picture>
               <figcaption class="ware__figcaption">
                 <div class="ware__name">
-                  <a class="ware__name-link"> Ніжки для меблів </a>
+                  <a class="ware__name-link">Елементи меблів</a>
                 </div>
               </figcaption>
             </figure>
           </article>
+
+          <article class="ware__card" data-aos="zoom-in" data-aos-delay="150">
+            <figure class="ware__content">
+              <picture>
+                <img class="ware__img" src="img/grain-bucket.jpg" alt="grain-buckets" width="auto" height="220" />
+              </picture>
+              <figcaption class="ware__figcaption">
+                <div class="ware__name">
+                  <a class="ware__name-link">СГ обладнання</a>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
           <article class="ware__card" data-aos="zoom-in" data-aos-delay="250">
             <figure class="ware__content">
               <picture>
@@ -423,44 +427,7 @@
               </picture>
               <figcaption class="ware__figcaption">
                 <div class="ware__name">
-                  <a class="ware__name-link"> Індивідуальні замовлення </a>
-                </div>
-              </figcaption>
-            </figure>
-          </article>
-          <article class="ware__card" data-aos="zoom-in" data-aos-delay="150">
-            <figure class="ware__content">
-              <picture>
-                <img class="ware__img" src="img/grain-bucket.jpg" alt="grain-buckets" width="auto" height="220" />
-              </picture>
-              <figcaption class="ware__figcaption">
-                <div class="ware__name">
-                  <a class="ware__name-link"> Зернові ковші </a>
-                </div>
-              </figcaption>
-            </figure>
-          </article>
-          <article class="ware__card" data-aos="zoom-in" data-aos-delay="250">
-            <figure class="ware__content">
-              <picture>
-                <img class="ware__img" src="img/metal-bracket.jpg" alt="Metal-brackets" width="auto" height="220" />
-              </picture>
-              <figcaption class="ware__figcaption">
-                <div class="ware__name">
-                  <a class="ware__name-link"> Металеві кронштейни </a>
-                </div>
-              </figcaption>
-            </figure>
-          </article>
-          <article class="ware__card" data-aos="zoom-in" data-aos-delay="350">
-            <figure class="ware__content">
-              <picture>
-                <img class="ware__img" src="img/metal-furniture.jpg" alt="Commercial-equipment" width="auto"
-                  height="220" />
-              </picture>
-              <figcaption class="ware__figcaption">
-                <div class="ware__name">
-                  <a class="ware__name-link"> Торгове обладнання </a>
+                  <a class="ware__name-link"> Індивідуальні проекти </a>
                 </div>
               </figcaption>
             </figure>
@@ -518,7 +485,7 @@
             <h3 class="section__title calculation__title">
               Замовити прорахунок проекту
             </h3>
-            <ul class="calculation__list">
+            <!-- <ul class="calculation__list">
               <li class="calculation__item">
                 <p class="calculation__text">
                   Для швидкого прорахунку вартості замовлення, завантажте
@@ -548,19 +515,17 @@
                   вами зв'язатися.
                 </p>
               </li>
-            </ul>
+            </ul> -->
           </div>
           <div class="calculation__form-container">
 
             <form class="calculation__form" action="send_mail.php" name="form" method="POST">
-              <input class="input-name" type="text" placeholder="Дмитро" name="name" id="name"
-                data-reg="^([A-Za-z]+|[А-ЩЬЮЯҐЄІЇа-щьюяґєії]+)$" />
-              <input class="input-number" type="text" placeholder="example@gmail.com" name="email" id="email"
+              <input class="input-name" type="text" placeholder="Ваше ім'я" name="name" id="name" />
+              <input class="input-number" type="text" placeholder="Ваш E-mail" name="email" id="email"
                 data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" />
 
 
-              <input class="input-number" type="text" placeholder="099 575 55 51" name="phone" id="phone"
-                data-reg="^((\+380|380|0)+([0-9]){9})$" />
+              <input class="input-number" type="text" placeholder="099 123 23 12" name="phone" id="phone" />
               <textarea class="form-textarea" cols="40" rows="6" placeholder="Коментар до замовлення"></textarea>
               <label class="calculation__label" for="file">Завантажити файл:</label>
               <input class="calculation__input-file" type="file" id="file" />

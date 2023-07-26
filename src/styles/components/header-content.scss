@@ -4,7 +4,7 @@
 	@include mq($from: tablet) {
 		display: flex;
 		justify-content: space-between;
-		min-height: 360px;
+		// min-height: 360px;
 		
   }
 }
@@ -17,7 +17,6 @@
 	margin-top: 15vh;
 
 	@include mq($from: tablet) {
-		width: 54%;
 		margin-bottom: 0;
 		margin-right: 20px;
 		margin-top: 0;

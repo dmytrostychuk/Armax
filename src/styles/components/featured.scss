@@ -15,8 +15,7 @@
 	}
 
 	@include mq($from: tablet) {
-		display: flex;
-		justify-content: space-between;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 }
 

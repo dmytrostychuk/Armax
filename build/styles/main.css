@@ -761,6 +761,10 @@ label {
           animation-delay: 0.05s;
 }
 
+.nav-short {
+  height: 450px;
+}
+
 .nav__item-social {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
@@ -1061,7 +1065,6 @@ label {
   color: #404044;
   padding-bottom: 60px;
   margin-top: 40px;
-  padding-top: 30px;
 }
 
 .services__container {
@@ -1486,7 +1489,6 @@ iframe {
   background-color: #d1a954;
   opacity: 0.4;
 }
-
 .calculation__item {
   position: relative;
 }
@@ -1519,7 +1521,6 @@ iframe {
   background-color: rgba(58, 58, 58, 0.26);
   border-radius: 10px;
 }
-
 .calculation__form {
   display: flex;
   flex-direction: column;
@@ -1632,7 +1633,6 @@ input[type=file]::file-selector-button:hover {
   transition: all 0.35s ease-in-out;
   margin: 0 auto;
   margin-bottom: 30px;
-  max-width: 400px;
 }
 .ware__card:hover {
   transition: all 0.35s ease-in-out;
@@ -1643,7 +1643,6 @@ input[type=file]::file-selector-button:hover {
   width: 100%;
   border-radius: 25% 10% 0 0;
   object-fit: cover;
-  height: 230px;
 }
 
 .ware__figcaption {
@@ -1687,6 +1686,10 @@ input[type=file]::file-selector-button:hover {
   color: rgba(0, 0, 0, 0.61);
 }
 
+.s-header {
+  height: 450px;
+}
+
 .s-header__background {
   z-index: 0;
   width: 100%;
@@ -1706,6 +1709,10 @@ input[type=file]::file-selector-button:hover {
 
 .s-header__container {
   margin-top: -1px;
+}
+
+.s-header__content {
+  margin-top: 15vw;
 }
 
 .s-menu {
@@ -1827,7 +1834,6 @@ input[type=file]::file-selector-button:hover {
 .c-header__background {
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/gallery-6.jpg");
 }
-
 .c-header__content-title {
   font-size: 35px;
 }
@@ -2171,6 +2177,9 @@ input[type=file]::file-selector-button:hover {
   .info__block {
     width: 45%;
   }
+  .calculation__wrapper {
+    width: 400px;
+  }
   .ware__box {
     display: flex;
     justify-content: space-between;
@@ -2301,10 +2310,8 @@ input[type=file]::file-selector-button:hover {
   .header__content--container {
     display: flex;
     justify-content: space-between;
-    min-height: 360px;
   }
   .header__content {
-    width: 54%;
     margin-bottom: 0;
     margin-right: 20px;
     margin-top: 0;
@@ -2358,8 +2365,7 @@ input[type=file]::file-selector-button:hover {
     left: 50px;
   }
   .featured {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .info__block {
     width: 30%;
@@ -2371,14 +2377,11 @@ input[type=file]::file-selector-button:hover {
   .calculation {
     font-size: 15px;
   }
-  .calculation__wrapper {
-    display: flex;
-  }
   .calculation__content {
     margin-right: 30px;
   }
-  .calculation__form-container {
-    width: 35%;
+  .s-header__content {
+    margin-top: 5vw;
   }
   .a-gallery {
     grid-template-columns: 1fr 1fr 1fr;
@@ -2602,14 +2605,6 @@ input[type=file]::file-selector-button:hover {
   .services__hover--circle:hover::before {
     right: -30px;
   }
-  .calculation__title {
-    text-align: start;
-  }
-  .calculation__title::after {
-    left: 20px;
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-  }
   .nav__social--desktop-wrap {
     display: block;
     z-index: 2;
@@ -2620,9 +2615,6 @@ input[type=file]::file-selector-button:hover {
   }
   .ware__box {
     margin-top: 40px;
-  }
-  .ware__card {
-    width: 30%;
   }
   .s-services {
     margin-top: 0;
@@ -2647,6 +2639,7 @@ input[type=file]::file-selector-button:hover {
   }
   .с-header__content {
     padding: 50px;
+    padding-bottom: 80px;
   }
   .c-header__content-title {
     font-size: 80px;
@@ -2712,8 +2705,15 @@ input[type=file]::file-selector-button:hover {
   .info__block {
     width: 24%;
   }
-  .с-header__content {
-    padding: 50px;
+  .ware__card {
+    width: 30vw;
+    max-width: 570px;
+  }
+  .ware__img {
+    height: 300px;
+  }
+  .s-header__content {
+    margin-top: 50px;
   }
   .l-svg {
     margin-bottom: 0;

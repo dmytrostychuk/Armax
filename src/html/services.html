@@ -121,7 +121,7 @@
 				<h1 class="menu__title">
 					<a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.png" alt="logo" /></a>
 				</h1>
-				<nav class="nav">
+				<nav class="nav nav-short">
 					<div class="nav__inner">
 						<ul class="nav__list">
 							<li class="nav__item">
@@ -174,15 +174,13 @@
 				</nav>
 			</div>
 
-			<div class="header__content--container">
-				<div class="header__content header__inner">
-					<h1 class="header__content-title">
-						ArmaxMG надає комплексні послуги з металообробки
+			<div class="header__content--container s-header__content--container">
+				<div class="s-header__content header__inner">
+					<h1 class="header__content-title c-header__content-title">
+						Наші послуги
 					</h1>
 					<p class="header__content-text">
-						Металообробка — це процес зміни форми необробленого металу з
-						допомогою інструментів і технологій, у результаті якого ми
-						отримаємо готову металеву деталь чи заготівку залежно від потреби.
+
 					</p>
 				</div>
 			</div>
@@ -191,12 +189,6 @@
 
 	<main class="main">
 		<section class="section services s-services">
-			<div class="container">
-				<h3 class="section__title services__title">
-					Наші послуги по металообробці
-				</h3>
-			</div>
-
 			<div class="services__container">
 				<article class="services__card" data-aos="fade-up">
 					<figure class="services__content">
@@ -332,12 +324,12 @@
 						<figcaption class="services__figcaption">
 							<div class="services__name">
 								<a class="services__name-link">
-									Розробка технічної документації
+									Розробка КД
 								</a>
 							</div>
 							<div class="services__hover-content">
 								<h4 class="services__hover-title">
-									Розробка технічної документації
+									Розробка КД документації
 								</h4>
 								<a class="services__hover-text">
 									<span class="services__hover--circle">Детальніше</span>
@@ -358,48 +350,16 @@
 						<h3 class="section__title calculation__title">
 							Замовити прорахунок проекту
 						</h3>
-						<ul class="calculation__list">
-							<li class="calculation__item">
-								<p class="calculation__text">
-									Для швидкого прорахунку вартості замовлення, завантажте
-									креслення готових деталей та їх плоскої розгортки у форматі
-									DWG або DXF за допомогою форми або надішліть їх на пошту
-									lazer.armax@gmail.com
-								</p>
-							</li>
-							<li class="calculation__item">
-								<p class="calculation__text">
-									Разом із кресленнями вкажіть номер деталей на Вашому
-									виробництві, тип матеріалу, його марку, товщину матеріалу, і
-									кількість деталей кожного типу.
-								</p>
-							</li>
-							<li class="calculation__item">
-								<p class="calculation__text">
-									У назві файлу не використовуйте спеціальні символи (лапки,
-									дужки, тире), та символи кирилицею.
-								</p>
-							</li>
-							<li class="calculation__item">
-								<p class="calculation__text">
-									Креслення повинні бути виконані прямими, дугами і
-									полілініями. Не допускається використання сплайнів. Вкажіть
-									Ваші контакти (електронна пошта, телефон), щоб ми могли з
-									вами зв'язатися.
-								</p>
-							</li>
-						</ul>
 					</div>
 					<div class="calculation__form-container">
+
 						<form class="calculation__form" action="send_mail.php" name="form" method="POST">
-							<input class="input-name" type="text" placeholder="Дмитро" name="name" id="name"
-								data-reg="^([A-Za-z]+|[А-ЩЬЮЯҐЄІЇа-щьюяґєії]+)$" />
-							<input class="input-number" type="text" placeholder="example@gmail.com" name="email" id="email"
+							<input class="input-name" type="text" placeholder="Ваше ім'я" name="name" id="name" />
+							<input class="input-number" type="text" placeholder="Ваш E-mail" name="email" id="email"
 								data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" />
 
 
-							<input class="input-number" type="text" placeholder="099 575 55 51" name="phone" id="phone"
-								data-reg="^((\+380|380|0)+([0-9]){9})$" />
+							<input class="input-number" type="text" placeholder="099 123 23 12" name="phone" id="phone" />
 							<textarea class="form-textarea" cols="40" rows="6" placeholder="Коментар до замовлення"></textarea>
 							<label class="calculation__label" for="file">Завантажити файл:</label>
 							<input class="calculation__input-file" type="file" id="file" />

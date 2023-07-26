@@ -23,10 +23,10 @@
 
 	@include mq($from: tablet-wide) {
 		padding: 50px;
+		padding-bottom: 80px;
 	}
 
 	@include mq($from: desktop) {
-		padding: 50px;
 	}
 }
 
