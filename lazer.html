@@ -599,51 +599,18 @@
 				<div class="calculation__wrapper container">
 					<div class="calculation__content">
 						<h3 class="section__title calculation__title">
-							Вимоги Armax MG до креслень лазерної різки металу:
+							Замовити прорахунок проекту
 						</h3>
-						<ul class="calculation__list">
-							<li class="calculation__item">
-								<p class="calculation__text">
-									Креслення надсилати нам в електронному вигляді на наш e-mail
-									<a href="mailto:lazerarmax@gmail.com" class="link-social l-link">
-										<svg class="link-social--svg" width="30" height="20">
-											<use xlink:href="#mail"></use>
-										</svg>
-										lazer.armax@gmail.com
-									</a>
-									створених у програмах (AutoCAD, SolidWorks, тощо) формату
-									DWG, DXF або PDF.
-								</p>
-							</li>
-							<li class="calculation__item">
-								<p class="calculation__text">
-									Масштаб деталей у кресленнях повинен бути - 1:1.
-								</p>
-							</li>
-							<li class="calculation__item">
-								<p class="calculation__text">
-									Всі криві деталі повинні бути із замкнутими контурами,
-									побудовані правильними відрізками та дугами.
-								</p>
-							</li>
-							<li class="calculation__item">
-								<p class="calculation__text">
-									Разом із кресленнями вкажіть номер деталі, товщину металу,
-									його марку, і кількість деталей.
-								</p>
-							</li>
-						</ul>
 					</div>
 					<div class="calculation__form-container">
+
 						<form class="calculation__form" action="send_mail.php" name="form" method="POST">
-							<input class="input-name" type="text" placeholder="Дмитро" name="name" id="name"
-								data-reg="^([A-Za-z]+|[А-ЩЬЮЯҐЄІЇа-щьюяґєії]+)$" />
-							<input class="input-number" type="text" placeholder="example@gmail.com" name="email" id="email"
+							<input class="input-name" type="text" placeholder="Ваше ім'я" name="name" id="name" />
+							<input class="input-number" type="text" placeholder="Ваш E-mail" name="email" id="email"
 								data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" />
 
 
-							<input class="input-number" type="text" placeholder="099 575 55 51" name="phone" id="phone"
-								data-reg="^((\+380|380|0)+([0-9]){9})$" />
+							<input class="input-number" type="text" placeholder="099 123 23 12" name="phone" id="phone" />
 							<textarea class="form-textarea" cols="40" rows="6" placeholder="Коментар до замовлення"></textarea>
 							<label class="calculation__label" for="file">Завантажити файл:</label>
 							<input class="calculation__input-file" type="file" id="file" />
