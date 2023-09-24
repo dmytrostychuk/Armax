@@ -1,10 +1,10 @@
-<h1 align="center">
+![device@1x](https://github.com/dmytrostychuk/Armax/assets/72120575/af39fe97-fdcb-4587-addd-c8118fdba87e)<h1 align="center">
   <a href="https://dmytrostychuk.github.io/britlex/#">
     dmytrostychuk.github.io/Armax-mg/
   </a>
 </h1>
 <p align="center">
-  <img src="https://github.com/dmytrostychuk/britlex/assets/72120575/bf5f1fee-d816-4d51-bace-24c260fe0efd.jpg](https://github.com/dmytrostychuk/Armax/assets/72120575/47930abd-7f60-4d5c-80d9-20843960e9b0)">
+  <img src="![device@1x](https://github.com/dmytrostychuk/Armax/assets/72120575/24f8bbc6-d2c0-475b-97ec-91b7383115cd)">
 </p>
 <h2>
   Technologies what I used:
@@ -20,5 +20,3 @@
   <li>Swiper</li>
   <li>Figma</li>
 </ul>
-![device@1x](https://github.com/dmytrostychuk/Armax/assets/72120575/0c95267e-562d-4288-95db-0c1093b1a5aa)
-![device@1x](https://github.com/dmytrostychuk/Armax/assets/72120575/47930abd-7f60-4d5c-80d9-20843960e9b0)
