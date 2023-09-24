@@ -4,7 +4,7 @@
   </a>
 </h1>
 <p align="center">
-  <img src="![device@1x](https://github.com/dmytrostychuk/Armax/assets/72120575/29608ba0-8c2d-48f3-90fc-e1238066b517)
+  <img src="https://github.com/dmytrostychuk/Armax/assets/72120575/29608ba0-8c2d-48f3-90fc-e1238066b517
 ">
 </p>
 <h2>
