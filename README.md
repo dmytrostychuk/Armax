@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://dmytrostychuk.github.io/britlex/#">
-    dmytrostychuk.github.io/britlex/
+    dmytrostychuk.github.io/Armax-mg/
   </a>
 </h1>
 <p align="center">
@@ -20,3 +20,4 @@
   <li>Swiper</li>
   <li>Figma</li>
 </ul>
+![device@1x](https://github.com/dmytrostychuk/Armax/assets/72120575/0c95267e-562d-4288-95db-0c1093b1a5aa)
