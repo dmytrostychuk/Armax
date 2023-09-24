@@ -4,7 +4,8 @@
   </a>
 </h1>
 <p align="center">
-  <img src="![device@1x](https://github.com/dmytrostychuk/Armax/assets/72120575/24f8bbc6-d2c0-475b-97ec-91b7383115cd)">
+  <img src="![device@1x](https://github.com/dmytrostychuk/Armax/assets/72120575/29608ba0-8c2d-48f3-90fc-e1238066b517)
+">
 </p>
 <h2>
   Technologies what I used:
