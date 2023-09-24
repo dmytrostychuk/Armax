@@ -4,7 +4,7 @@
   </a>
 </h1>
 <p align="center">
-  <img src="[https://github.com/dmytrostychuk/britlex/assets/72120575/bf5f1fee-d816-4d51-bace-24c260fe0efd.jpg](https://github.com/dmytrostychuk/Armax/assets/72120575/47930abd-7f60-4d5c-80d9-20843960e9b0)">
+  <img src="https://github.com/dmytrostychuk/britlex/assets/72120575/bf5f1fee-d816-4d51-bace-24c260fe0efd.jpg](https://github.com/dmytrostychuk/Armax/assets/72120575/47930abd-7f60-4d5c-80d9-20843960e9b0)">
 </p>
 <h2>
   Technologies what I used:
