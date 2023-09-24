@@ -1,5 +1,5 @@
-![device@1x](https://github.com/dmytrostychuk/Armax/assets/72120575/af39fe97-fdcb-4587-addd-c8118fdba87e)<h1 align="center">
-  <a href="https://dmytrostychuk.github.io/Armax-Mg/#">
+<h1 align="center">
+  <a href="[https://dmytrostychuk.github.io/Armax-Mg/#](https://dmytrostychuk.github.io/Armax/index.html#)">
     dmytrostychuk.github.io/Armax-mg/
   </a>
 </h1>
