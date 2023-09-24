@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://dmytrostychuk.github.io/britlex/#">
-    dmytrostychuk.github.io/Denim/
+    dmytrostychuk.github.io/britlex/
   </a>
 </h1>
 <p align="center">
