@@ -1,5 +1,5 @@
 ![device@1x](https://github.com/dmytrostychuk/Armax/assets/72120575/af39fe97-fdcb-4587-addd-c8118fdba87e)<h1 align="center">
-  <a href="https://dmytrostychuk.github.io/britlex/#">
+  <a href="https://dmytrostychuk.github.io/Armax-Mg/#">
     dmytrostychuk.github.io/Armax-mg/
   </a>
 </h1>
@@ -13,10 +13,13 @@
   <li>HTML5</li>
   <li>CSS3</li>
   <li>JS (Jquery)</li>
+  <li>PHP</li>
   <li>BEM methodology</li>
   <li>GULP</li>  
   <li>Sass</li>  
   <li>PixelPerfect</li>
   <li>Swiper</li>
+  <li>Animation</li>
+  <li>Gallery\fslightbox.com</li>
   <li>Figma</li>
 </ul>
