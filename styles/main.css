@@ -605,6 +605,28 @@ label {
   background-size: cover;
 }
 
+.header__lang {
+  position: relative;
+}
+.header__lang select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-appearance: none;
+          appearance: none;
+  padding-right: 40px;
+  background-position: calc(100% - 10px) center;
+  background-repeat: no-repeat;
+}
+.header__lang option {
+  padding: 5px;
+}
+
+.header__btn_active {
+  color: red;
+}
+
 .burger-btn {
   position: relative;
   width: 30px;
