@@ -74,5 +74,3 @@ sheetBtn.addEventListener('click', function (e) {
 pipeBtn.addEventListener('click', function (e) {
   e.preventDefault();
 });
-
-// ---------------------------------------------------------------- фрилансер
