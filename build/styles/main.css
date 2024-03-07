@@ -605,28 +605,6 @@ label {
   background-size: cover;
 }
 
-.header__lang {
-  position: relative;
-}
-.header__lang select {
-  padding: 8px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  -webkit-appearance: none;
-          appearance: none;
-  padding-right: 40px;
-  background-position: calc(100% - 10px) center;
-  background-repeat: no-repeat;
-}
-.header__lang option {
-  padding: 5px;
-}
-
-.header__btn_active {
-  color: red;
-}
-
 .burger-btn {
   position: relative;
   width: 30px;
@@ -874,6 +852,35 @@ label {
   align-items: center;
   margin-bottom: 30px;
   padding-top: 10px;
+}
+
+.menu__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header__lang {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__btn {
+  padding: 5px 10px;
+  margin-bottom: 7px;
+  background-color: inherit;
+  color: #ffffff;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.header__btn_active {
+  background-color: rgba(136, 130, 130, 0.3647058824);
+  color: #ff1900;
+  border-radius: 3px;
 }
 
 .menu__title {
@@ -2172,6 +2179,13 @@ input[type=file]::file-selector-button:hover {
     width: 250px;
     padding: 0 0 30px 10px;
   }
+  .header__lang {
+    flex-direction: row;
+  }
+  .header__btn {
+    margin-bottom: 0px;
+    margin-left: 6px;
+  }
   .menu__logo {
     width: 150px;
   }
@@ -2572,6 +2586,9 @@ input[type=file]::file-selector-button:hover {
   .menu {
     margin-bottom: 110px;
   }
+  .header__lang {
+    margin-right: 100px;
+  }
   .menu__title {
     position: relative;
     z-index: 4;
@@ -2634,6 +2651,9 @@ input[type=file]::file-selector-button:hover {
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: #292b2c;
+  }
+  .nav__container {
+    display: flex;
   }
   .ware__box {
     margin-top: 40px;
