@@ -621,11 +621,11 @@ label {
 .burger-btn span {
   content: "";
   position: absolute;
-  left: 0;
+  left: 25px;
   top: 0;
   height: 3px;
   width: 30px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   transition: 0.3s;
 }
 .burger-btn span {
@@ -658,13 +658,13 @@ label {
   width: 17px;
 }
 .burger-btn-active::before {
-  top: 10px;
+  top: 0px;
   width: 17px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 .burger-btn-active::after {
-  top: 10px;
+  top: 0px;
   width: 17px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -1090,7 +1090,7 @@ label {
 }
 
 .services {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   color: #404044;
   padding-bottom: 60px;
   margin-top: 40px;
@@ -1098,7 +1098,7 @@ label {
 
 .services__container {
   margin: 0 auto;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .services__card {
@@ -1116,6 +1116,7 @@ label {
 
 .services__title {
   margin-top: 0;
+  padding-top: 26px;
 }
 
 .services__content {
@@ -2159,7 +2160,7 @@ input[type=file]::file-selector-button:hover {
     margin-left: 17px;
   }
   .burger-btn-active::after {
-    top: 10px;
+    top: 0px;
     width: 20px;
     margin-left: 17px;
   }
@@ -2394,7 +2395,7 @@ input[type=file]::file-selector-button:hover {
     outline: 5px solid rgba(51, 51, 51, 0.65);
   }
   .services__card {
-    outline: 5px solid #F6F6F6;
+    outline: 5px solid #f6f6f6;
   }
   .services__hover-text {
     bottom: 85px;
