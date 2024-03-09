@@ -132,6 +132,12 @@ const homeTexts = {
     en: 'We fulfill custom and exclusive orders upon request from clients - large industrial enterprises, commercial organizations, and manufacturing firms.',
     de: 'Wir erfüllen individuelle und exklusive Bestellungen auf Anfrage von Kunden - großen Industrieunternehmen, kommerziellen Organisationen und Produktionsfirmen.',
   },
+  'services_page-13': {
+    ua: 'Детальніше',
+    en: 'More details',
+    de: 'Weitere Details',
+  },
+
   'principles-page-1': {
     ua: 'Наші принципи',
     en: 'More details',
@@ -182,6 +188,142 @@ const homeTexts = {
     en: 'Thanks to years of experience, we guarantee product delivery in any situation.',
     de: 'Dank jahrelanger Erfahrung garantieren wir die Lieferung unserer Produkte in jeder Situation.',
   },
+  'wara_page-1': {
+    ua: 'Каталог продукції',
+    en: 'Product catalog',
+    de: 'Produktkatalog',
+  },
+  'wara_page-2': {
+    ua: 'Елементи меблів',
+    en: 'Furniture items',
+    de: 'Möbelstücke',
+  },
+  'wara_page-3': {
+    ua: 'СГ обладнання',
+    en: 'Agricultural equipment',
+    de: 'Landwirtschaftliche Ausrüstung',
+  },
+  'wara_page-4': {
+    ua: 'Декоративні елементи',
+    en: 'Decorative elements',
+    de: 'Dekorative Elemente',
+  },
+  'wara_page-5': {
+    ua: 'Індивідуальні проекти',
+    en: 'Custom projects',
+    de: 'Individuelle Projekte',
+  },
+  'partners_page-1': {
+    ua: 'Наші партнери',
+    en: 'Our partners',
+    de: 'Unsere Partner',
+  },
+  'partners_page-2': {
+    ua: 'Багаторічний досвід «Армакс», професійний підхід до роботи, сучасне і якісне обладнання – ось за що нас обирають найкращі компанії!',
+    en: 'Years of experience, a professional approach to work, modern and high-quality equipment - that`s why the best companies choose us!',
+    de: 'Jahrelange Erfahrung, professioneller Arbeitsansatz, modernes und hochwertiges Equipment - das ist der Grund, warum uns die besten Unternehmen wählen!',
+  },
+  'calculation_page-1': {
+    ua: 'Замовити прорахунок проекту',
+    en: 'Request a project estimate',
+    de: 'Projektkosten schätzen lassen',
+  },
+  'calculation_page-2': {
+    ua: 'Завантажити файл',
+    en: 'Upload file',
+    de: 'Datei hochladen',
+  },
+  'calculation_page-3': {
+    ua: 'Надіслати',
+    en: 'Send',
+    de: 'Senden',
+  },
+  'calculation_page-4': {
+    ua: 'Ваше ім`я',
+    en: 'Your name',
+    de: 'Ihr Name',
+  },
+  'calculation_page-5': {
+    ua: 'Електронна пошта',
+    en: 'E-mail',
+    de: 'E-mail',
+  },
+  'calculation_page-6': {
+    ua: 'Коментар до замовлення',
+    en: 'Order comment',
+    de: 'Bestellkommentar',
+  },
+
+  'footer_page-1': {
+    ua: 'Меню',
+    en: 'Menu',
+    de: 'Menu',
+  },
+  'footer_page-2': {
+    ua: 'Послуги',
+    en: 'Services',
+    de: 'Dienstleistungen',
+  },
+  'footer_page-3': {
+    ua: 'Про нас',
+    en: 'About us',
+    de: 'Über uns',
+  },
+  'footer_page-4': {
+    ua: 'Контакти',
+    en: 'Contact',
+    de: 'Kontakt',
+  },
+  'footer_page-5': {
+    ua: 'Послуги',
+    en: 'Services',
+    de: 'Service',
+  },
+  'footer_page-6': {
+    ua: 'Лазерна порізка',
+    en: 'Laser cutting',
+    de: 'Laser-Schneiden',
+  },
+  'footer_page-7': {
+    ua: 'Гнуття деталей',
+    en: 'Bending of parts',
+    de: 'Biegen von Teilen',
+  },
+  'footer_page-8': {
+    ua: 'Порошкове фарбування',
+    en: 'Powder coating',
+    de: 'Pulverbeschichtung',
+  },
+  'footer_page-9': {
+    ua: 'Зварювальні роботи',
+    en: 'Welding works',
+    de: 'Schweißarbeiten',
+  },
+  'footer_page-10': {
+    ua: 'Слюсарні роботи',
+    en: 'Locksmith works',
+    de: 'Schlosserarbeiten',
+  },
+  'footer_page-11': {
+    ua: 'Адреса',
+    en: 'Address',
+    de: 'Adresse',
+  },
+  'footer_page-12': {
+    ua: '45200 м. Ківерці, вул.Грушевського 26',
+    en: '45200, Kivertsi, Hrushevskoho St. 26',
+    de: '45200, Kivertsi, Hrushevskoho Str. 26',
+  },
+  'footer_page-13': {
+    ua: 'Пн - Пт 8:00 - 17:00',
+    en: 'Mon - Fri 8:00 AM - 5:00 PM',
+    de: 'Mo - Fr 8:00 - 17:00 Uhr',
+  },
+  'footer_page-14': {
+    ua: 'Наші контакти',
+    en: 'Our contacts',
+    de: 'Unsere Kontakte',
+  },
 };
 
 function checkPagePathName() {
@@ -198,15 +340,27 @@ function checkPagePathName() {
   }
 }
 checkPagePathName();
-
 function changeLang() {
   for (const key in currentText) {
     const elem = document.querySelector(`[data-lang=${key}]`);
     if (elem) {
-      elem.textContent = currentText[key][currentLang];
+      if (elem.tagName === 'INPUT') {
+        elem.placeholder = currentText[key][currentLang];
+        elem.value = currentText[key][currentLang]; // Додано для зміни значення інпута
+      } else {
+        elem.textContent = currentText[key][currentLang];
+      }
     }
   }
 }
+// function changeLang() {
+//   for (const key in currentText) {
+//     const elem = document.querySelector(`[data-lang=${key}]`);
+//     if (elem) {
+//       elem.textContent = currentText[key][currentLang];
+//     }
+//   }
+// }
 changeLang();
 
 langButtons.forEach((btn) => {
@@ -261,3 +415,9 @@ function checkBrowserLang() {
     return navLang;
   }
 }
+
+document
+  .getElementById('disabledLink')
+  .addEventListener('click', function (event) {
+    event.preventDefault(); // Забороняємо дійсне переходити по посиланню
+  });
