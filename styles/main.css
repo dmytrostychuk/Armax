@@ -1758,6 +1758,7 @@ input[type=file]::file-selector-button:hover {
 .s-services {
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .a-header__background {
