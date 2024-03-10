@@ -3,7 +3,7 @@ let menuNav = document.querySelector('.nav');
 
 if (burgerBtn) {
   burgerBtn.addEventListener('click', function (e) {
-    // document.body.classList.toggle('lock');
+    e.stopPropagation();
     if (menuNav.classList.contains('nav__active')) {
       menuNav.classList.remove('nav__active');
       menuNav.classList.add('nav__close');
@@ -12,6 +12,14 @@ if (burgerBtn) {
       menuNav.classList.add('nav__active');
     }
     burgerBtn.classList.toggle('burger-btn-active');
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!menuNav.contains(e.target) && !burgerBtn.contains(e.target)) {
+      menuNav.classList.remove('nav__active');
+      menuNav.classList.add('nav__close');
+      burgerBtn.classList.remove('burger-btn-active');
+    }
   });
 }
 

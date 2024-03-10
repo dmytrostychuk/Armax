@@ -302,47 +302,64 @@
 							<svg class="link-social--svg" width="30" height="20">
 								<use xlink:href="#mail"></use>
 							</svg>
-							lazer.armax@gmail.com
+							armax.km@gmail.com
 						</a>
 					</li>
 				</ul>
-				<ul class="nav__social-list--desktop nav__social-list--svg">
-					<li class="nav__social-item">
-						<a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
-							<svg class="link-social--svg" width="25" height="25">
-								<use xlink:href="#facebook"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="nav__social-item">
-						<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
-							class="link-social link--hover">
-							<svg class="link-social--svg" width="25" height="25">
-								<use xlink:href="#location"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
+				<div class="nav__container">
+					<div class="header__lang">
+						<button class="header__btn" data-btn="ua">UA</button>
+						<button class="header__btn" data-btn="en">EN</button>
+						<button class="header__btn" data-btn="de">DE</button>
+					</div>
+					<ul class="nav__social-list--desktop nav__social-list--svg">
+						<li class="nav__social-item">
+							<a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
+								<svg class="link-social--svg" width="25" height="25">
+									<use xlink:href="#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="nav__social-item">
+							<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
+								class="link-social link--hover">
+								<svg class="link-social--svg" width="25" height="25">
+									<use xlink:href="#location"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+
+				</div>
 			</div>
 		</div>
 
 		<div class="header__container container">
 			<div class="menu">
-				<button class="burger-btn"><span></span></button>
-				<h1 class="menu__title">
-					<a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.png" alt="" /></a>
-				</h1>
+
+				<div class="menu__container">
+					<button class="burger-btn"><span></span></button>
+					<h1 class="menu__title">
+						<a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.png" alt="" /></a>
+					</h1>
+					<div class="header__lang nav__list-social">
+						<button class="header__btn" data-btn="ua">UA</button>
+						<button class="header__btn" data-btn="en">EN</button>
+						<button class="header__btn" data-btn="de">DE</button>
+					</div>
+				</div>
+
 				<nav class="nav">
 					<div class="nav__inner">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<a href="services.html" class="link--active">Металообробка</a>
+								<a href="services.html" class="link-hover" data-lang="nav_page-1"></a>
 							</li>
 							<li class="nav__item">
-								<a href="about-us.html" class="link-hover">Про нас</a>
+								<a href="about-us.html" class="link-hover" data-lang="nav_page-2"></a>
 							</li>
 							<li class="nav__item">
-								<a href="contacts.html" class="link-hover">Контакти</a>
+								<a href="contacts.html" class="link-hover" data-lang="nav_page-3"></a>
 							</li>
 						</ul>
 
@@ -352,7 +369,7 @@
 									<svg class="link-social--svg" width="30" height="20">
 										<use xlink:href="#phone"></use>
 									</svg>
-									+38 (099) 132 45 67
+									+38 (096) 123 91 21
 								</a>
 							</li>
 							<li class="nav__item-social">
@@ -360,7 +377,7 @@
 									<svg class="link-social--svg" width="30" height="20">
 										<use xlink:href="#mail"></use>
 									</svg>
-									lazer.armax@gmail.com
+									armax.km@gmail.com
 								</a>
 							</li>
 							<li class="nav__item-social">
@@ -387,11 +404,9 @@
 
 			<div class="header__content--container">
 				<div class="header__content header__inner">
-					<h1 class="header__content-title">Лазерна різка металу</h1>
-					<p class="header__content-text">
-						Лазерна різка металу – один з найбільш сучасних, ефективних,
-						високоточних і економічно вигідних способів розкрою та порізки
-						різних металів.
+					<h1 class="header__content-title" data-lang="l-header_page-1"></h1>
+					<p class="header__content-text" data-lang="l-header_page-2">
+
 					</p>
 				</div>
 			</div>
@@ -401,11 +416,11 @@
 	<main class="main">
 		<section class="section l-characteristic">
 			<div class="container">
-				<h3 class="section__title">
-					Основні характеристики лазерного різання металу Armax MG
+				<h3 class="section__title" data-lang="l-char_page-1">
+
 				</h3>
 				<div class="l-characteristic__container">
-					<p class="l-characteristic__name">Ermaxan FIBERMAK (Турція)</p>
+					<p class="l-characteristic__name" data-lang="l-char_page-2"></p>
 
 					<div class="l-characteristic__content">
 						<div class="l-characteristic__info">
@@ -413,34 +428,37 @@
 								<svg class="l-svg a-privilege--svg" width="100" height="100">
 									<use xlink:href="#dimension"></use>
 								</svg>
-								<h4 class="l-characteristic__title">
-									Максимальні розміри листа:
+								<h4 class="l-characteristic__title" data-lang="l-char_page-3">
+
 								</h4>
 								<p class="l-characteristic__text">
-									Розмір робочої поверхні –
-									<span class="l-characteristic__text--color">6000 × 2000</span>
-									мм
+									<span data-lang="l-char_page-4"></span>
+
+									<span class="l-characteristic__text--color" data-lang="l-char_page-5"></span>
 								</p>
 							</div>
 							<div class="l-characteristic__box" data-aos="fade-right">
 								<svg class="l-svg a-privilege--svg" width="100" height="100">
 									<use xlink:href="#dimension-arrow"></use>
 								</svg>
-								<h4 class="l-characteristic__title">
-									Максимальна товщина різу:
+								<h4 class="l-characteristic__title" data-lang="l-char_page-6">
+
 								</h4>
 								<ul class="l-characteristic__list">
 									<li class="l-characteristic__item">
-										Чорний метал:
-										<span class="l-characteristic__text--color"> 20 мм</span>
+										<span data-lang="l-char_page-7"></span>
+
+										<span class="l-characteristic__text--color" data-lang="l-char_page-8"></span>
 									</li>
 									<li class="l-characteristic__item">
-										Нержавіюча сталь:
-										<span class="l-characteristic__text--color">10 мм</span>
+										<span data-lang="l-char_page-9"></span>
+
+										<span class="l-characteristic__text--color" data-lang="l-char_page-10"></span>
 									</li>
 									<li class="l-characteristic__item">
-										Алюміній:
-										<span class="l-characteristic__text--color">6 мм</span>
+										<span data-lang="l-char_page-11"></span>
+
+										<span class="l-characteristic__text--color" data-lang="l-char_page-12"></span>
 									</li>
 								</ul>
 							</div>
@@ -448,12 +466,13 @@
 								<svg class="l-svg a-privilege--svg" width="100" height="100">
 									<use xlink:href="#caliper"></use>
 								</svg>
-								<h4 class="l-characteristic__title">
-									Точність позиціонування
+								<h4 class="l-characteristic__title" data-lang="l-char_page-13">
+
 								</h4>
 								<p class="l-characteristic__text">
-									Точність позиціонування нашого лазера –
-									<span class="l-characteristic__text--color">0,01 мм</span>
+									<span data-lang="l-char_page-14"></span>
+
+									<span class="l-characteristic__text--color" data-lang="l-char_page-15"></span>
 								</p>
 							</div>
 						</div>
@@ -461,22 +480,22 @@
 							<section class="a-gallery">
 								<div class="a-gallery__card l-characteristic__photo">
 									<a data-fslightbox="gallery" href="img/gallery-1.jpg" class="a-gallery__link">
-										<img src="img/gallery-1.jpg" alt="бом бом" />
+										<img src="img/gallery-1.jpg" alt="lazer" />
 									</a>
 								</div>
 								<div class="a-gallery__card l-characteristic__photo">
 									<a data-fslightbox="gallery" href="img/lazer.jpg">
-										<img src="img/lazer.jpg" alt="" />
+										<img src="img/lazer.jpg" alt="lazer" />
 									</a>
 								</div>
 								<div class="a-gallery__card l-characteristic__photo">
 									<a data-fslightbox="gallery" href="img/gallery-2.jpg" class="a-gallery__link">
-										<img src="img/gallery-2.jpg" alt="" />
+										<img src="img/gallery-2.jpg" alt="lazer" />
 									</a>
 								</div>
 								<div class="a-gallery__card disabled-phablet l-characteristic__photo">
 									<a data-fslightbox="gallery" href="img/decorative-cut.jpg" class="a-gallery__link">
-										<img src="img/decorative-cut.jpg" alt="" />
+										<img src="img/decorative-cut.jpg" alt="lazer" />
 									</a>
 								</div>
 							</section>
@@ -487,7 +506,7 @@
 		</section>
 		<section class="a-privilege a-privilege--color">
 			<div class="container">
-				<h2 class="section__title">Як ми працюємо?</h2>
+				<h2 class="section__title" data-lang="a-privilege_page-10"></h2>
 				<div class="a-privilege__inner">
 					<div class="a-privilege__box a-privilege__box--size">
 						<div class="a-privilege__card a-privilege__card--position">
@@ -495,8 +514,7 @@
 								<use xlink:href="#document"></use>
 							</svg>
 							<div class="a-privilege__content">
-								<p class="a-privilege__text">
-									Ви залишаєте заявку на розрахунок чи консультацію фахівця
+								<p class="a-privilege__text" data-lang="a-privilege_page-11">
 								</p>
 							</div>
 						</div>
@@ -507,10 +525,7 @@
 								<use xlink:href="#call-center"></use>
 							</svg>
 							<div class="a-privilege__content">
-								<p class="a-privilege__text">
-									Наш менеджер зв’язується з Вами для уточнення технічного
-									завдання
-								</p>
+								<p class="a-privilege__text" data-lang="a-privilege_page-12"></p>
 							</div>
 						</div>
 					</div>
@@ -520,9 +535,8 @@
 								<use xlink:href="#price"></use>
 							</svg>
 							<div class="a-privilege__content">
-								<p class="a-privilege__text">
-									Ви отримуєте прорахунок по проекту не більше ніж за 3 робочі
-									дні
+								<p class="a-privilege__text" data-lang="a-privilege_page-13">
+
 								</p>
 							</div>
 						</div>
@@ -533,8 +547,8 @@
 								<use xlink:href="#sample"></use>
 							</svg>
 							<div class="a-privilege__content">
-								<p class="a-privilege__text">
-									Виготовлення та затвердження Вашого зразка
+								<p class="a-privilege__text" data-lang="a-privilege_page-14">
+
 								</p>
 							</div>
 						</div>
@@ -545,10 +559,7 @@
 								<use xlink:href="#handshake-deal"></use>
 							</svg>
 							<div class="a-privilege__content">
-								<p class="a-privilege__text">
-									Укладання договору та погодження графіка відвантаження
-									партій
-								</p>
+								<p class="a-privilege__text" data-lang="a-privilege_page-15"></p>
 							</div>
 						</div>
 					</div>
@@ -558,9 +569,8 @@
 								<use xlink:href="#product"></use>
 							</svg>
 							<div class="a-privilege__content">
-								<p class="a-privilege__text">
-									Запуск партії виробів у роботу, згідно з термінами
-									відвантаженн
+								<p class="a-privilege__text" data-lang="a-privilege_page-16">
+
 								</p>
 							</div>
 						</div>
@@ -570,25 +580,19 @@
 		</section>
 		<section class="l-price ware">
 			<div class="container">
-				<h3 class="section__title">Ціна лазерної різки металу</h3>
-				<p class="section__text l-price__text">
-					Щоб ми могли зробити точний розрахунок вартості лазерного різання
-					металу та терміни виконання послуги, нам необхідно отримати від Вас
-					повну інформацію про виріб, детальне технічне завдання або
-					креслення. Ціни на послуги лазерного різання визначається за такими
-					основними критеріями як:
+				<h3 class="section__title" data-lang="l-price_page-1"></h3>
+				<p class="section__text l-price__text" data-lang="l-price_page-2">
 				</p>
 				<ul class="l-price__list">
-					<li class="l-price__item">
-						Вид та марка металу який Вам потрібно порізати;
+					<li class="l-price__item" data-lang="l-price_page-3">
+
 					</li>
-					<li class="l-price__item">Обсяг замовлення;</li>
-					<li class="l-price__item">Складність робіт, залежно від деталі;</li>
-					<li class="l-price__item">
-						Давальницька чи власна сировина буде використовуватись в
-						замовленні;
+					<li class="l-price__item" data-lang="l-price_page-4"></li>
+					<li class="l-price__item" data-lang="l-price_page-5"></li>
+					<li class="l-price__item" data-lang="l-price_page-6">
+
 					</li>
-					<li class="l-price__item">Строки виконання замовлення;</li>
+					<li class="l-price__item" data-lang="l-price_page-7"></li>
 				</ul>
 			</div>
 		</section>
@@ -598,24 +602,24 @@
 			<div class="calculation__inner">
 				<div class="calculation__wrapper container">
 					<div class="calculation__content">
-						<h3 class="section__title calculation__title">
-							Замовити прорахунок проекту
-						</h3>
+						<h3 class="section__title calculation__title" data-lang="calculation_page-1"></h3>
 					</div>
 					<div class="calculation__form-container">
-
 						<form class="calculation__form" action="send_mail.php" name="form" method="POST">
-							<input class="input-name" type="text" placeholder="Ваше ім'я" name="name" id="name" />
-							<input class="input-number" type="text" placeholder="Ваш E-mail" name="email" id="email"
-								data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" />
+							<input class="input-name" type="text" placeholder="Name" name="name" id="name"
+								data-lang="calculation_page-4" />
+							<input class="input-number" type="text" placeholder="E-mail" name="email" id="email"
+								data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" data-lang="calculation_page-5" />
 
 
 							<input class="input-number" type="text" placeholder="099 123 23 12" name="phone" id="phone" />
-							<textarea class="form-textarea" cols="40" rows="6" placeholder="Коментар до замовлення"></textarea>
-							<label class="calculation__label" for="file">Завантажити файл:</label>
+							<textarea class="form-textarea" cols="40" rows="6" placeholder="Comment"
+								data-lang="calculation_page-6"></textarea>
+							<label class="calculation__label" for="file" data-lang="calculation_page-2"></label>
 							<input class="calculation__input-file" type="file" id="file" />
 
-							<input class="button button-form" type="submit" id="btn_send" value="Надіслати" />
+							<button class="button button-form" type="submit" id="btn_send" data-lang="calculation_page-3"
+								value="Надіслати">
 							</button>
 						</form>
 					</div>
@@ -628,63 +632,64 @@
 			<div class="container">
 				<div class="info">
 					<div class="info__block info__menu">
-						<h5 class="info__title">Меню</h5>
+						<h5 class="info__title" data-lang="footer_page-1"></h5>
 						<ul>
 							<li class="info__item">
-								<a class="info__link" href="services.html">Послуги</a>
+								<a class="info__link" href="services.html" data-lang="footer_page-2"></a>
 							</li>
 							<li class="info__item">
-								<a class="info__link" href="about-us.html">Про нас</a>
+								<a class="info__link" href="about-us.html" data-lang="footer_page-3"></a>
 							</li>
 							<li class="info__item">
-								<a class="info__link" href="contacts.html">Контакти</a>
+								<a class="info__link" href="contacts.html" data-lang="footer_page-4"></a>
 							</li>
 
 						</ul>
 					</div>
 					<div class="info__block info__schedule">
-						<h5 class="info__title">Послуги</h5>
+						<h5 class="info__title" data-lang="footer_page-5"></h5>
 						<ul class="info__list">
 							<li class="info__item">
-								<a href="lazer.html" class="info__link">Лазерна порізка</a>
+								<a href="lazer.html" class="info__link" data-lang="footer_page-6"></a>
 							</li>
 							<li class="info__item">
-								<a href="sheet-bending.html" class="info__link">Гнуття деталей</a>
+								<a href="sheet-bending.html" class="info__link" data-lang="footer_page-7"></a>
 							</li>
 							<li class="info__item">
-								<a href="dyeing.html" class="info__link">Порошкове фарбування</a>
+								<a href="dyeing.html" class="info__link" data-lang="footer_page-8"></a>
 							</li>
 							<li class="info__item">
-								<a href="welding.html" class="info__link">Зварювальні роботи</a>
+								<a href="welding.html" class="info__link" data-lang="footer_page-9"></a>
 							</li>
 							<li class="info__item">
-								<a href="locksmith.html" class="info__link">Слюсарні роботи</a>
+								<a href="locksmith.html" class="info__link" data-lang="footer_page-10"></a>
 							</li>
 						</ul>
 					</div>
 					<div class="info__block info__address">
-						<h5 class="info__title">Адреса</h5>
+						<h5 class="info__title" data-lang="footer_page-11"></h5>
 						<ul class="info__list">
 							<li class="info__item">
 								<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
-									class="link-social link--hover">
-									<svg class="link-social--svg" width="30" height="30">
-										<use xlink:href="#location"></use>
-									</svg>
-									45200 м. Ківерці, вул.Грушевського 26
+									class="link-social link--hover" data-lang="footer_page-12">
+
 								</a>
+								<svg class="link-social--svg" width="30" height="30">
+									<use xlink:href="#location"></use>
+								</svg>
 							</li>
 							<li class="info__item info__item--color">
-								<svg class="clock-svg" width="25" height="25">
+								<a href="" class="link-social " id="disabledLink" data-lang="footer_page-13"></a>
+								<svg class="clock-svg link-social--svg" width="25" height="25">
 									<use xlink:href="#clock"></use>
 								</svg>
-								Пн - Пт 8:00 - 17:00
 							</li>
+
 						</ul>
 					</div>
 
 					<div class="info__block info__contact">
-						<h5 class="info__title">Наші контакти</h5>
+						<h5 class="info__title" data-lang="footer_page-14"></h5>
 						<ul class="info__list">
 							<li class="info__item">
 								<a class="link-social link--hover" href="tel:+380687945051">
@@ -707,7 +712,7 @@
 									<svg class="link-social--svg" width="30" height="20">
 										<use xlink:href="#mail"></use>
 									</svg>
-									lazer.armax@gmail.com
+									armax.km@gmail.com
 								</a>
 							</li>
 							<li class="info__item">
@@ -727,6 +732,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/index.js"></script>
+	<script src="js/lang.js"></script>
 	<script src="js/swiper.js"></script>
 	<script src="js/fslightbox.js"></script>
 	<script src="js/app.js"></script>
