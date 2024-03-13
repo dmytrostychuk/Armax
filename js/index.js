@@ -47,24 +47,60 @@ for (let i = 0; i < calcFormButtons.length; i++) {
   calcFormButtons[i].addEventListener('click', handleFormButtonClick);
 }
 
-var length = document.querySelector('.length');
-var width = document.querySelector('.width');
-var weight = document.querySelector('.weight');
-let sheetBtn = document.querySelector('.calc__sheet-button');
-let pipeBtn = document.querySelector('.calc__pipe-button');
+document.addEventListener('DOMContentLoaded', function () {
+  var scrollToFormButton = document.querySelector('.scroll-to-form');
 
-sheetBtn.addEventListener('click', function (e) {
-  e.preventDefault();
-  mass.innerHTML = (
-    (Number(length.value) * Number(width.value) * Number(weight.value) * 7.85) /
-    1000000
-  ).toFixed(2);
-  area.innerHTML = (
-    (Number(length.value) * Number(width.value)) /
-    1000000
-  ).toFixed(2);
+  scrollToFormButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    var formElement = document.querySelector('.calculation');
+    formElement.scrollIntoView({ behavior: 'smooth' });
+  });
 });
 
-pipeBtn.addEventListener('click', function (e) {
-  e.preventDefault();
-});
+// Функція, що перевіряє, чи видима елемент
+function isElementPartiallyInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return rect.top < window.innerHeight && rect.bottom >= 0;
+}
+
+// Отримати кнопку прокрутки
+var scrollButton = document.getElementById('scrollButton');
+// Отримати форму
+var calculationSection = document.querySelector('.calculation');
+
+// Функція, яка перевіряє, чи видима секція "calculation" і встановлює відповідний стиль кнопці
+function toggleScrollButton() {
+  if (isElementPartiallyInViewport(calculationSection)) {
+    scrollButton.style.display = 'none'; // Секція частково видима, приховуємо кнопку
+  } else {
+    scrollButton.style.display = 'block'; // Секція не видима, показуємо кнопку
+  }
+}
+
+// Викликати toggleScrollButton() після завантаження сторінки та при зміні розміру вікна
+window.addEventListener('load', toggleScrollButton);
+window.addEventListener('resize', toggleScrollButton);
+// Прослуховування прокрутки сторінки
+window.addEventListener('scroll', toggleScrollButton);
+
+// var length = document.querySelector('.length');
+// var width = document.querySelector('.width');
+// var weight = document.querySelector('.weight');
+// let sheetBtn = document.querySelector('.calc__sheet-button');
+// let pipeBtn = document.querySelector('.calc__pipe-button');
+
+// sheetBtn.addEventListener('click', function (e) {
+//   e.preventDefault();
+//   mass.innerHTML = (
+//     (Number(length.value) * Number(width.value) * Number(weight.value) * 7.85) /
+//     1000000
+//   ).toFixed(2);
+//   area.innerHTML = (
+//     (Number(length.value) * Number(width.value)) /
+//     1000000
+//   ).toFixed(2);
+// });
+
+// pipeBtn.addEventListener('click', function (e) {
+//   e.preventDefault();
+// });

@@ -2117,6 +2117,25 @@ input[type=file]::file-selector-button:hover {
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/locksmith4.jpg");
 }
 
+.scroll-to-form {
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 30px;
+  background-color: #d1a954;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Зміна кольору посилання при наведенні */
+.scroll-to-form:hover {
+  background-color: #6e4b4b;
+}
 @media (min-width: 560px) {
   body {
     font-size: 16px;
@@ -2296,7 +2315,6 @@ input[type=file]::file-selector-button:hover {
     display: none;
   }
 }
-
 @media (min-width: 768px) {
   body {
     font-size: 16px;
@@ -2476,7 +2494,6 @@ input[type=file]::file-selector-button:hover {
     margin-bottom: 0;
   }
 }
-
 @media (min-width: 1024px) {
   body {
     font-size: 20px;
@@ -2710,7 +2727,6 @@ input[type=file]::file-selector-button:hover {
     font-size: 16px;
   }
 }
-
 @media (min-width: 1248px) {
   body {
     font-size: 24px;
