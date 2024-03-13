@@ -71,9 +71,9 @@ var calculationSection = document.querySelector('.calculation');
 // Функція, яка перевіряє, чи видима секція "calculation" і встановлює відповідний стиль кнопці
 function toggleScrollButton() {
   if (isElementPartiallyInViewport(calculationSection)) {
-    scrollButton.style.display = 'none'; // Секція частково видима, приховуємо кнопку
+    scrollButton.style.opacity = '0'; // Змінюємо прозорість кнопки на 0
   } else {
-    scrollButton.style.display = 'block'; // Секція не видима, показуємо кнопку
+    scrollButton.style.opacity = '1'; // Змінюємо прозорість кнопки на 1
   }
 }
 
