@@ -17,16 +17,19 @@ document.addEventListener('DOMContentLoaded', function () {
           method: 'POST',
           body: formData,
         });
-        if (response.ok) {
+        if (response.status >= 200 && response.status < 300) {
           let result = await response.json();
           alert(result.message);
           formPreview.innerHTML = '';
           form.reset();
         } else {
-          alert('Помилка');
+          throw new Error('Помилка: ' + response.status);
         }
-      } catch (e) {
-        alert("Помилка з'єднання з сервером");
+      } catch (err) {
+        console.error('Помилка відправлення форми:', err);
+        alert(
+          'Помилка відправлення форми. Будь ласка, спробуйте ще раз пізніше.'
+        );
       } finally {
         form.classList.remove('_sending');
       }
@@ -98,7 +101,8 @@ document.addEventListener('DOMContentLoaded', function () {
       formPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
     };
     reader.onerror = function (e) {
-      alert('Помилка');
+      console.error('Помилка завантаження файлу:', e);
+      alert('Помилка завантаження файлу.');
     };
     reader.readAsDataURL(file);
   }
