@@ -1480,8 +1480,92 @@ iframe {
   margin-right: 5px;
 }
 
-.wrapper {
-  background-color: #333;
+.calculation {
+  position: relative;
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+.calculation__inner {
+  position: relative;
+  z-index: 500;
+  padding: 20px 0;
+}
+
+.calculation__background {
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  position: absolute;
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/pipe.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.calculation__title {
+  position: relative;
+  color: #f6f6f6;
+}
+.calculation__title::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+  height: 3px;
+  background-color: #d1a954;
+  opacity: 0.4;
+}
+.calculation__item {
+  position: relative;
+}
+
+.calculation__text {
+  padding-left: 20px;
+}
+.calculation__text::after, .calculation__text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 10px;
+  height: 2px;
+  background-color: #d1a954;
+  border-radius: 5px;
+}
+.calculation__text::after {
+  top: 16px;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+.calculation__text::before {
+  top: 10px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.calculation__form-container {
+  padding: 20px 20px;
+  background-color: rgba(58, 58, 58, 0.26);
+  border-radius: 10px;
+}
+.form-textarea {
+  padding: 8px 10px;
+  border-radius: 3px;
+  color: #949090;
+  border: 0;
+}
+.form-textarea:focus {
+  outline-offset: 0;
+  outline: 2px solid #d1a954;
+}
+.form-textarea::-webkit-input-placeholder {
+  font-size: 14px;
+}
+.form-textarea::placeholder {
+  font-size: 14px;
 }
 
 .select {
@@ -1566,11 +1650,7 @@ iframe {
   max-width: 550px;
   margin: 0px auto;
   color: #fff;
-  padding: 30px 0;
-}
-
-.form * {
-  outline: none;
+  padding: 10px 0;
 }
 
 .form__body {
@@ -1602,7 +1682,7 @@ iframe {
 }
 
 .form__item {
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 10px 0px;
 }
 
 .form__label {
@@ -1615,7 +1695,7 @@ iframe {
   height: 50px;
   padding: 0px 20px;
   border-radius: 5px;
-  width: 100%;
+  width: 90%;
   font-size: 18px;
   transition: all 0.5s ease 0s;
 }
@@ -1629,9 +1709,9 @@ iframe {
 }
 
 textarea.form__input {
-  min-height: 120px;
+  min-height: 100px;
   resize: vertical;
-  padding: 20px;
+  padding: 15px;
 }
 
 .options {
@@ -1704,10 +1784,10 @@ textarea.form__input {
 .file__button {
   display: inline-flex;
   min-height: 40px;
-  border-radius: 30px;
+  border-radius: 2px;
   justify-content: center;
   align-items: center;
-  background-color: #77608d;
+  background-color: #d1a954;
   padding: 0px 20px;
 }
 
@@ -1781,7 +1861,7 @@ textarea.form__input {
   min-height: 60px;
   background-color: #7a956b;
   color: #000;
-  font-size: 18px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
@@ -2438,6 +2518,9 @@ textarea.form__input {
   .info__block {
     width: 45%;
   }
+  .calculation__wrapper {
+    width: 400px;
+  }
   .ware__box {
     display: flex;
     justify-content: space-between;
@@ -2630,6 +2713,12 @@ textarea.form__input {
   .info__menu,
   .info__schedule {
     width: 20%;
+  }
+  .calculation {
+    font-size: 15px;
+  }
+  .calculation__content {
+    margin-right: 30px;
   }
   .s-header__content {
     margin-top: 5vw;
