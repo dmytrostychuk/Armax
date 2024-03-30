@@ -471,7 +471,38 @@
       </div>
       <div class="partners__background"></div>
     </section>
-    <section class="calculation">
+
+    <div class="wrapper">
+      <div class="form">
+        <form action="#" id="form" class="form__body" enctype="multipart/form-data">
+          <h1 class="form__title">Відправка</h1>
+          <div class="form__item">
+            <label for="formName" class="form__label">Ім'я*:</label>
+            <input id="formName" type="text" name="name" class="form__input _req" required>
+          </div>
+          <div class="form__item">
+            <label for="formEmail" class="form__label">E-mail*:</label>
+            <input id="formEmail" type="email" name="email" class="form__input _req _email" required>
+          </div>
+          <div class="form__item">
+            <label for="formMessage" class="form__label">Повідомлення:</label>
+            <textarea name="message" id="formMessage" class="form__input"></textarea>
+          </div>
+          <div class="form__item">
+            <label class="form__label">Прикріпити фото:</label>
+            <div class="file">
+              <div class="file__item">
+                <input id="formImage" type="file" name="image" class="file__input" accept=".jpg, .png, .gif">
+                <div class="file__button">Обрати</div>
+              </div>
+              <div id="formPreview" class="file__preview"></div>
+            </div>
+          </div>
+          <button type="submit" class="form__button">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <!-- <section class="calculation">
       <div class="calculation__background"></div>
       <div class="calculation__inner">
         <div class="calculation__wrapper container">
@@ -499,7 +530,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
   <footer class="footer">
     <div class="footer__bootom">
