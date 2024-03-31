@@ -344,23 +344,42 @@
 						<h3 class="section__title calculation__title" data-lang="calculation_page-1"></h3>
 					</div>
 					<div class="calculation__form-container">
-						<form class="calculation__form" action="send_mail.php" name="form" method="POST">
-							<input class="input-name" type="text" placeholder="Name" name="name" id="name"
-								data-lang="calculation_page-4" />
-							<input class="input-number" type="text" placeholder="E-mail" name="email" id="email"
-								data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" data-lang="calculation_page-5" />
+						<div class="wrapper">
+							<form action="#" id="form" class="form__body calculation__form" enctype="multipart/form-data">
 
-
-							<input class="input-number" type="text" placeholder="099 123 23 12" name="phone" id="phone" />
-							<textarea class="form-textarea" cols="40" rows="6" placeholder="Comment"
-								data-lang="calculation_page-6"></textarea>
-							<label class="calculation__label" for="file" data-lang="calculation_page-2"></label>
-							<input class="calculation__input-file" type="file" id="file" />
-
-							<button class="button button-form" type="submit" id="btn_send" data-lang="calculation_page-3"
-								value="Надіслати">
-							</button>
-						</form>
+								<div class="form__item">
+									<label for="formName" class="form__label" data-lang="calculation_page-4">Ім'я</label>
+									<input id="formName" type="text" name="name" class="form__input _req">
+								</div>
+								<div class="form__item">
+									<label for="formTel" data-lang="calculation_page-7" class="form__label"></label>
+									<input id="formTel" type="tel" name="tel" class="form__input _req input-number" pattern="[0-9]{10}">
+								</div>
+								<div class="form__item">
+									<label for="formEmail" data-lang="calculation_page-5" class="form__label"></label>
+									<input id="formEmail" type="email" name="email" class="form__input _req _email">
+								</div>
+								<div class="form__item">
+									<label for="formMessage" class="form__label" data-lang="calculation_page-6"></label>
+									<textarea name="message" id="formMessage" class="form-textarea form__input form-textarea "></textarea>
+								</div>
+								<div class="form__item form__none">
+									<label for="formImage" class="form__label">Прикріпити файл (jpg, png, gif, pdf):</label>
+									<div class="file">
+										<div class="file__item">
+											<input id="formImage" type="file" name="image[]" class="file__input"
+												accept=".jpg, .png, .gif, .pdf" multiple>
+											<div class="file__button">Обрати</div>
+										</div>
+										<div id="formPreview" class="file__preview file__preview--with-icon"></div>
+									</div>
+								</div>
+								<button class="button button-form" type="submit" id="btn_send" data-lang="calculation_page-3"
+									value="Надіслати">
+									Надіслати
+								</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
