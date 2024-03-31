@@ -1742,6 +1742,14 @@ textarea.form__input {
   max-width: 100%;
 }
 
+.file__preview--with-icon {
+  background: url("icon.svg") no-repeat center center;
+}
+
+.embed-container {
+  margin-bottom: 10px; /* простор між вбудованими елементами */
+}
+
 .nav__social--desktop-wrap {
   display: none;
 }

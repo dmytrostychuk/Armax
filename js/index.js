@@ -117,7 +117,10 @@ document.addEventListener('DOMContentLoaded', function () {
     let error = formValidate(form);
 
     let formData = new FormData(form);
-    formData.append('image', formImage.files[0]);
+    let files = formImage.files;
+    for (let i = 0; i < files.length; i++) {
+      formData.append('image[]', files[i]);
+    }
 
     if (error === 0) {
       form.classList.add('_sending');
@@ -195,28 +198,25 @@ document.addEventListener('DOMContentLoaded', function () {
   const formPreview = document.getElementById('formPreview');
 
   formImage.addEventListener('change', () => {
-    uploadFile(formImage.files[0]);
+    uploadFiles(formImage.files);
   });
 
-  function uploadFile(file) {
-    if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
-      alert('Дозволяються лише зображення.');
-      formImage.value = '';
-      return;
+  function uploadFiles(files) {
+    formPreview.innerHTML = '';
+    for (let i = 0; i < files.length; i++) {
+      let file = files[i];
+      let reader = new FileReader();
+      reader.onload = function (e) {
+        let fileType = file.type.split('/')[0];
+        if (fileType === 'image') {
+          formPreview.innerHTML += `<img src="${e.target.result}" alt="Фото">`;
+        } else if (fileType === 'application') {
+          formPreview.innerHTML += `<div id="embedContainer${i}" class="embed-container"></div>`;
+          let embedContainer = document.getElementById(`embedContainer${i}`);
+          embedContainer.innerHTML = `<embed src="${e.target.result}" type="${file.type}" width="100%" style="height: 70px;" />`;
+        }
+      };
+      reader.readAsDataURL(file);
     }
-    if (file.size > 2 * 1024 * 1024) {
-      alert('Файл повинен бути меншим за 2 МБ.');
-      return;
-    }
-
-    var reader = new FileReader();
-    reader.onload = function (e) {
-      formPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
-    };
-    reader.onerror = function (e) {
-      console.error('Помилка завантаження файлу:', e);
-      alert('Помилка завантаження файлу.');
-    };
-    reader.readAsDataURL(file);
   }
 });

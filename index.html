@@ -510,42 +510,40 @@
           </div>
           <div class="calculation__form-container">
             <div class="wrapper">
-              <div class="form ">
-                <form action="#" id="form" class="form__body calculation__form" enctype="multipart/form-data">
+              <form action="#" id="form" class="form__body calculation__form" enctype="multipart/form-data">
 
-                  <div class="form__item">
-                    <label for="formName" class="form__label " data-lang="calculation_page-4"></label>
-                    <input id="formName" type="text" name="name" class="form__input _req">
-                  </div>
-                  <div class="form__item">
-                    <label for="formTel" class="form__label">телефон</label>
-                    <input id="formTel" type="tel" name="tel" class="form__input _req input-number" pattern="[0-9]{10}">
-                  </div>
-                  <div class="form__item">
-                    <label for="formEmail" data-lang="calculation_page-5" class="form__label"></label>
-                    <input id="formEmail" type="email" name="email" class="form__input _req _email">
-                  </div>
-                  <div class="form__item">
-                    <label for="formMessage" class="form__label" data-lang="calculation_page-6"></label>
-                    <textarea name="message" id="formMessage"
-                      class=" form-textarea form__input form-textarea "></textarea>
-                  </div>
-                  <div class="form__item">
-                    <label for="formImage" class="form__label">Прикріпити файл:</label data-lang="calculation_page-2">
-                    <div class="file">
-                      <div class="file__item">
-                        <input id="formImage" type="file" name="image" class="file__input"
-                          accept=".jpg, .png, .gif, .pdf">
-                        <div class="file__button">Обрати</div>
-                      </div>
-                      <div id="formPreview" class="file__preview"></div>
+                <div class="form__item">
+                  <label for="formName" class="form__label" data-lang="calculation_page-4">Ім'я</label>
+                  <input id="formName" type="text" name="name" class="form__input _req">
+                </div>
+                <div class="form__item">
+                  <label for="formTel" class="form__label">Телефон</label>
+                  <input id="formTel" type="tel" name="tel" class="form__input _req input-number" pattern="[0-9]{10}">
+                </div>
+                <div class="form__item">
+                  <label for="formEmail" data-lang="calculation_page-5" class="form__label">Email</label>
+                  <input id="formEmail" type="email" name="email" class="form__input _req _email">
+                </div>
+                <div class="form__item">
+                  <label for="formMessage" class="form__label" data-lang="calculation_page-6">Повідомлення</label>
+                  <textarea name="message" id="formMessage" class="form-textarea form__input form-textarea "></textarea>
+                </div>
+                <div class="form__item">
+                  <label for="formImage" class="form__label">Прикріпити файл (jpg, png, gif, pdf):</label>
+                  <div class="file">
+                    <div class="file__item">
+                      <input id="formImage" type="file" name="image[]" class="file__input"
+                        accept=".jpg, .png, .gif, .pdf" multiple>
+                      <div class="file__button">Обрати</div>
                     </div>
+                    <div id="formPreview" class="file__preview file__preview--with-icon"></div>
                   </div>
-                  <button class="button button-form" type="submit" id="btn_send" data-lang="calculation_page-3"
-                    value="Надіслати">
-                  </button>
-                </form>
-              </div>
+                </div>
+                <button class="button button-form" type="submit" id="btn_send" data-lang="calculation_page-3"
+                  value="Надіслати">
+                  Надіслати
+                </button>
+              </form>
             </div>
           </div>
         </div>
