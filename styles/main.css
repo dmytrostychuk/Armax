@@ -2625,8 +2625,16 @@ textarea.form__input {
     flex-direction: row;
   }
   .c-calculation__content {
-    width: 43%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
     margin-bottom: 0;
+  }
+  .c-calculation__block {
+    width: 50%;
+    height: 160px;
+    align-items: center;
   }
   .c-calculation__text {
     font-size: 20px;

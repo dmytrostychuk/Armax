@@ -74,6 +74,7 @@
 		</symbol>
 	</svg>
 	<header class="header s-header">
+		<a href="#" class="scroll-to-form" id="scrollButton">Надіслати запит</a>
 		<div class="s-header__background"></div>
 		<div class="nav__social--desktop-wrap">
 			<div class="nav__social--desktop container">
@@ -353,7 +354,8 @@
 								</div>
 								<div class="form__item">
 									<label for="formTel" data-lang="calculation_page-7" class="form__label"></label>
-									<input id="formTel" type="tel" name="tel" class="form__input _req input-number" pattern="[0-9]{10}">
+									<input id="formTel" type="tel" name="tel" class="form__input _req" pattern="[0-9]{10,15}"
+										title="Please enter a valid phone number">
 								</div>
 								<div class="form__item">
 									<label for="formEmail" data-lang="calculation_page-5" class="form__label"></label>
