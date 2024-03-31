@@ -239,19 +239,25 @@ const homeTexts = {
     de: 'Senden',
   },
   'calculation_page-4': {
-    ua: 'Ваше ім`я',
-    en: 'Your name',
-    de: 'Ihr Name',
+    ua: 'Ваше ім`я:',
+    en: 'Your name:',
+    de: 'Ihr Name:',
   },
   'calculation_page-5': {
-    ua: 'Електронна пошта',
-    en: 'E-mail',
-    de: 'E-mail',
+    ua: 'Електронна пошта:',
+    en: 'E-mail:',
+    de: 'E-mail:',
   },
   'calculation_page-6': {
-    ua: 'Коментар до замовлення',
-    en: 'Order comment',
-    de: 'Bestellkommentar',
+    ua: 'Коментар до замовлення:',
+    en: 'Order comment:',
+    de: 'Bestellkommentar:',
+  },
+
+  'calculation_page-7': {
+    ua: 'Телефон:',
+    en: 'Phone:',
+    de: 'Telefon:',
   },
 
   'footer_page-1': {
