@@ -11,9 +11,9 @@ $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->IsHTML(true);
 
 // От кого письмо
-$mail->setFrom('fenderchord@gmail.com', 'Хелоу еврібаді');
+$mail->setFrom('armax.km@gmail.com', 'Хелоу еврібаді');
 // Кому відправити
-$mail->addAddress('fenderchord@gmail.com');
+$mail->addAddress('armax.km@gmail.com');
 // Тема письма
 $mail->Subject = 'Заповнення форми через сайт';
 
