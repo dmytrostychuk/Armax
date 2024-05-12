@@ -69,8 +69,8 @@ const homeTexts = {
   },
   'preview_page-8': {
     ua: 'та покриття пластизолем.',
-    en: 'and coating with plastisol.',
-    de: 'und Beschichtung mit Plastisol.',
+    en: 'and finishes of varying complexity.',
+    de: 'und beschichtungen unterschiedlicher Komplexität.',
   },
   'services_page-1': {
     ua: 'Наші послуги',
@@ -194,9 +194,9 @@ const homeTexts = {
     de: 'Produktkatalog',
   },
   'wara_page-2': {
-    ua: 'Елементи меблів',
-    en: 'Furniture items',
-    de: 'Möbelstücke',
+    ua: 'Меблеві елементи',
+    en: 'Furniture elements',
+    de: 'Möbelelemente',
   },
   'wara_page-3': {
     ua: 'СГ обладнання',
@@ -204,7 +204,7 @@ const homeTexts = {
     de: 'Landwirtschaftliche Ausrüstung',
   },
   'wara_page-4': {
-    ua: 'Декоративні елементи',
+    ua: 'Елементи декору',
     en: 'Decorative elements',
     de: 'Dekorative Elemente',
   },
@@ -1103,6 +1103,34 @@ const homeTexts = {
     ua: 'Строки виконання замовлення;',
     en: 'Order execution terms;',
     de: 'Ausführungsfristen für Bestellungen;',
+  },
+  'news-1': {
+    ua: 'Останні новини',
+    en: 'Latest news',
+    de: 'Neueste Nachrichten',
+  },
+  'news-2': {
+    ua: 'Відкриття механічного цеху «АРМАКС МГ»!',
+    en: 'Opening of the mechanical workshop "ARMAX MG"!',
+    de: 'Eröffnung der mechanischen Werkstatt "ARMAX MG"!',
+  },
+
+  'news-3': {
+    ua: 'Ми виконуємо різноманітні механічні роботи, включаючи токарні операції, фрезерні, шліфувальні, зубонарізні роботи та гартування металу в печах.',
+    en: 'We perform various mechanical works, including turning operations, milling, grinding, gear cutting works, and metal hardening in furnaces.',
+    de: 'Wir führen verschiedene mechanische Arbeiten aus, darunter Dreharbeiten, Fräsen, Schleifen, Zahnradschneiden und Metallhärten in Öfen.',
+  },
+
+  'news-4': {
+    ua: 'Запрошуємо до співпраці зварювальника!',
+    en: 'We invite a welder to cooperation!',
+    de: 'Wir laden einen Schweißer zur Zusammenarbeit ein!',
+  },
+
+  'news-5': {
+    ua: 'Шукаємо кваліфікованого зварювальника-напівавтоматника. Основні обов’язки включатимуть зварювання металевих виробів.',
+    en: 'We are looking for a qualified semi-automatic welder. The main responsibilities will include welding metal products.',
+    de: 'Wir suchen einen qualifizierten halbautomatischen Schweißer. Zu den Hauptaufgaben gehören das Schweißen von Metallprodukten.',
   },
 };
 function checkPagePathName() {
