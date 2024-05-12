@@ -68,11 +68,13 @@
 
 .news__img {
   display: none;
-  background-size: cover;
+  width: 100%;
+  height: 100%;
 
   @include mq($from: phablet) {
     display: block;
     width: 50%;
+    height: 100%;
     float: right;
   }
 
@@ -80,6 +82,8 @@
     height: 100%;
     max-width: 100%;
     vertical-align: middle;
+    object-fit: cover;
+    opacity: 0.9;
   }
 }
 
@@ -99,7 +103,7 @@
 }
 
 .news__title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   margin: 0;
   letter-spacing: 1px;
@@ -109,6 +113,8 @@
 .news__link {
   color: #404044;
   transition: all 0.35s ease-in-out 0s;
+  line-height: 1.2em;
+  font-size: 14px;
 
   @include mq($from: phablet) {
     margin-bottom: 0;
