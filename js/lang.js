@@ -21,6 +21,26 @@ const homeTexts = {
     en: 'Contacts',
     de: 'Kontakte',
   },
+  'nav_page-4': {
+    ua: 'Продукти',
+    en: 'Products',
+    de: 'Produkte',
+  },
+  'nav_page-5': {
+    ua: 'СГ обладнання',
+    en: 'AG equipment',
+    de: 'AG Ausrüstung',
+  },
+  'nav_page-6': {
+    ua: 'Меблеві елементи',
+    en: 'Furniture elements',
+    de: 'Möbelelemente',
+  },
+  'nav_page-7': {
+    ua: 'Елементи декору',
+    en: 'Decor elements',
+    de: 'Dekorelemente',
+  },
   'header__content_page-1': {
     ua: 'Металообробка будь-якої складності на замовлення.',
     en: 'Metal processing of any complexity on order.',

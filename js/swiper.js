@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper__partners', {
   slidesPerView: 2,
   infinity: true,
   spaceBetween: 10,
@@ -36,6 +36,32 @@ const swiper = new Swiper('.swiper', {
         this.autoplay.start();
       });
     },
+  },
+});
+
+const swiperProduct = new Swiper('.swiper__product', {
+  slidesPerView: 1,
+  loop: true,
+  infinity: true,
+  spaceBetween: 10,
+  speed: 800,
+  breakpoints: {
+    480: {
+      spaceBetween: 20,
+      slidesPerView: 2,
+    },
+    768: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+    },
+    1024: {
+      spaceBetween: 30,
+      slidesPerView: 4,
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
 
