@@ -607,7 +607,7 @@ label {
 }
 
 .header-product {
-  height: 50vh;
+  height: 30vh;
 }
 
 .header__background-product {
@@ -615,10 +615,33 @@ label {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/grain-bucket-header.jpg");
-  background-position: center center;
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/metal-products.jpg");
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header__background-ag {
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/product-bucket.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__background-fe {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/product-furniture-elements.jpg");
+}
+
+.header__background-de {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/product-decore-element.jpg");
+}
+
+.header__background-co {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/product-individual.jpg");
 }
 
 .burger-btn {
@@ -1077,8 +1100,23 @@ label {
 
 .link--active {
   position: relative;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
+  transition: 0.3s;
   color: rgba(255, 255, 255, 0.61);
+}
+.link--active:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  opacity: 1;
+}
+.link--active:active:before {
+  transition: 5s;
+  background: linear-gradient(90deg, rgb(110, 75, 75) 0%, rgb(112, 51, 51) 100%);
 }
 .link--active::before {
   content: "";
@@ -1130,6 +1168,7 @@ label {
 .services__container {
   margin: 0 auto;
   background-color: #f6f6f6;
+  padding-top: 5px;
 }
 
 .services__card {
@@ -2470,9 +2509,8 @@ textarea.form__input {
 .dropdown {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 28px;
   left: 0;
-  padding-top: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 200px;
   color: black;
@@ -2480,7 +2518,6 @@ textarea.form__input {
 
 .link__dropdown {
   padding: 10px 0;
-  color: #ffffff;
   font-size: 16px;
 }
 
@@ -2488,12 +2525,21 @@ textarea.form__input {
   display: block;
   text-decoration: none;
 }
+.dropdown--width {
+  width: 230px;
+}
+
 .product {
   color: #b9b9b9;
 }
 
 .product__title {
   text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.product-container {
+  margin-top: 0;
 }
 
 .product__box {
@@ -2523,6 +2569,7 @@ textarea.form__input {
   height: 180px;
   display: flex;
   align-items: center;
+  border-bottom: 2px solid #d1a954;
 }
 .product__img img {
   width: 100%;
@@ -2657,6 +2704,47 @@ textarea.form__input {
   margin-bottom: 60px;
 }
 
+.breadcrumbs {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  letter-spacing: 1.5px;
+  color: rgba(0, 0, 0, 0.5568627451);
+}
+.breadcrumbs__list a {
+  color: #404044;
+}
+.breadcrumbs__list span {
+  color: rgba(0, 0, 0, 0.5568627451);
+  font-weight: 600;
+}
+
+.breadcrumbs__item {
+  text-align: center;
+  font-size: 14px;
+}
+.breadcrumbs__item a {
+  font-size: 14px;
+}
+.breadcrumbs__item::after {
+  content: "/";
+  margin: 0;
+  margin: 0 5px;
+  font-size: 12px;
+}
+.breadcrumbs__item:last-child::after {
+  content: "";
+}
+.breadcrumbs__item:hover a {
+  border-bottom: 2px solid #d1a954;
+  padding-bottom: 3px;
+}
 @media (min-width: 560px) {
   body {
     font-size: 16px;
@@ -2870,7 +2958,7 @@ textarea.form__input {
     display: none;
   }
   .product__img {
-    height: 230px;
+    height: 250px;
   }
   .product__name {
     font-size: 16px;
@@ -2879,7 +2967,6 @@ textarea.form__input {
     font-size: 20px;
   }
 }
-
 @media (min-width: 768px) {
   body {
     font-size: 16px;
@@ -3086,13 +3173,11 @@ textarea.form__input {
     grid-column: span 4;
   }
 }
-
 @media (min-width: 1000px) {
   .nav__item:hover .dropdown {
     display: block;
   }
 }
-
 @media (min-width: 1024px) {
   body {
     font-size: 20px;
@@ -3111,6 +3196,9 @@ textarea.form__input {
   }
   .header {
     height: 800px;
+  }
+  .header-product {
+    height: 70vh;
   }
   .burger-btn {
     display: none;
@@ -3139,9 +3227,25 @@ textarea.form__input {
     -webkit-animation: menu-on 0s linear both;
             animation: menu-on 0s linear both;
   }
+  .nav__close .nav__item {
+    -webkit-animation: none;
+            animation: none;
+  }
   .nav__item {
     position: relative;
     margin-left: 20px;
+  }
+  .nav__active .nav__item-social {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .nav__close .nav__item-social {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .nav__item-social {
+    -webkit-animation: none;
+            animation: none;
   }
   .nav__list li {
     justify-content: space-between;
@@ -3180,7 +3284,7 @@ textarea.form__input {
     position: relative;
     margin-bottom: 150px;
     font-size: 18px;
-    color: #C4C4C4;
+    color: #c4c4c4;
   }
   .nav__item---info::after {
     content: "";
@@ -3190,7 +3294,7 @@ textarea.form__input {
     width: 3px;
     height: 60px;
     border-radius: 50%;
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
   }
   .nav__list--desktop {
     z-index: 1;
@@ -3337,6 +3441,9 @@ textarea.form__input {
   .l-price__item {
     font-size: 16px;
   }
+  .product__title {
+    margin-top: 70px;
+  }
   .product__box {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     place-items: center;
@@ -3369,8 +3476,10 @@ textarea.form__input {
   .product__more-link:hover:before {
     width: 115%;
   }
+  .breadcrumbs__item::after {
+    margin: 0 10px;
+  }
 }
-
 @media (min-width: 1248px) {
   body {
     font-size: 24px;

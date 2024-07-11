@@ -47,15 +47,15 @@ const swiperProduct = new Swiper('.swiper__product', {
   speed: 800,
   breakpoints: {
     480: {
-      spaceBetween: 20,
+      spaceBetween: 15,
       slidesPerView: 2,
     },
     768: {
-      spaceBetween: 20,
+      spaceBetween: 15,
       slidesPerView: 3,
     },
     1024: {
-      spaceBetween: 30,
+      spaceBetween: 20,
       slidesPerView: 4,
     },
   },

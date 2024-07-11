@@ -31,7 +31,17 @@ const homeTexts = {
     en: 'AG equipment',
     de: 'AG Ausrüstung',
   },
+  'nav_page-5-1': {
+    ua: 'СГ обладнання',
+    en: 'AG equipment',
+    de: 'AG Ausrüstung',
+  },
   'nav_page-6': {
+    ua: 'Меблеві елементи',
+    en: 'Furniture elements',
+    de: 'Möbelelemente',
+  },
+  'nav_page-6-1': {
     ua: 'Меблеві елементи',
     en: 'Furniture elements',
     de: 'Möbelelemente',
@@ -40,6 +50,21 @@ const homeTexts = {
     ua: 'Елементи декору',
     en: 'Decor elements',
     de: 'Dekorelemente',
+  },
+  'nav_page-7-1': {
+    ua: 'Елементи декору',
+    en: 'Decor elements',
+    de: 'Dekorelemente',
+  },
+  'nav_page-8': {
+    ua: 'Індивідуальні замовлення',
+    en: 'Custom orders ',
+    de: 'Individuelle Bestellungen',
+  },
+  'nav_page-8-1': {
+    ua: 'Індивідуальні замовлення',
+    en: 'Custom orders ',
+    de: 'Individuelle Bestellungen',
   },
   'header__content_page-1': {
     ua: 'Металообробка будь-якої складності на замовлення.',
@@ -209,11 +234,17 @@ const homeTexts = {
     de: 'Dank jahrelanger Erfahrung garantieren wir die Lieferung unserer Produkte in jeder Situation.',
   },
   'wara_page-1': {
-    ua: 'Каталог продукції',
-    en: 'Product catalog',
-    de: 'Produktkatalog',
+    ua: 'Наші продукти',
+    en: 'Our products',
+    de: 'Unsere Produkte',
   },
   'wara_page-2': {
+    ua: 'Меблеві елементи',
+    en: 'Furniture elements',
+    de: 'Möbelelemente',
+  },
+
+  'wara_page-2-1': {
     ua: 'Меблеві елементи',
     en: 'Furniture elements',
     de: 'Möbelelemente',
@@ -223,7 +254,18 @@ const homeTexts = {
     en: 'Agricultural equipment',
     de: 'Landwirtschaftliche Ausrüstung',
   },
+
+  'wara_page-3-1': {
+    ua: 'СГ обладнання',
+    en: 'Agricultural equipment',
+    de: 'Landwirtschaftliche Ausrüstung',
+  },
   'wara_page-4': {
+    ua: 'Елементи декору',
+    en: 'Decorative elements',
+    de: 'Dekorative Elemente',
+  },
+  'wara_page-4-1': {
     ua: 'Елементи декору',
     en: 'Decorative elements',
     de: 'Dekorative Elemente',
@@ -233,6 +275,12 @@ const homeTexts = {
     en: 'Custom projects',
     de: 'Individuelle Projekte',
   },
+  'wara_page-5-1': {
+    ua: 'Індивідуальні проекти',
+    en: 'Custom projects',
+    de: 'Individuelle Projekte',
+  },
+
   'partners_page-1': {
     ua: 'Наші партнери',
     en: 'Our partners',
@@ -310,7 +358,18 @@ const homeTexts = {
     en: 'Laser cutting',
     de: 'Laser-Schneiden',
   },
+
+  'footer_page-6-1': {
+    ua: 'Лазерна порізка',
+    en: 'Laser cutting',
+    de: 'Laser-Schneiden',
+  },
   'footer_page-7': {
+    ua: 'Гнуття деталей',
+    en: 'Bending of parts',
+    de: 'Biegen von Teilen',
+  },
+  'footer_page-7-1': {
     ua: 'Гнуття деталей',
     en: 'Bending of parts',
     de: 'Biegen von Teilen',
@@ -320,7 +379,17 @@ const homeTexts = {
     en: 'Powder coating',
     de: 'Pulverbeschichtung',
   },
+  'footer_page-8-1': {
+    ua: 'Порошкове фарбування',
+    en: 'Powder coating',
+    de: 'Pulverbeschichtung',
+  },
   'footer_page-9': {
+    ua: 'Зварювальні роботи',
+    en: 'Welding works',
+    de: 'Schweißarbeiten',
+  },
+  'footer_page-9-1': {
     ua: 'Зварювальні роботи',
     en: 'Welding works',
     de: 'Schweißarbeiten',
@@ -329,6 +398,16 @@ const homeTexts = {
     ua: 'Слюсарні роботи',
     en: 'Locksmith works',
     de: 'Schlosserarbeiten',
+  },
+  'footer_page-10-1': {
+    ua: 'Слюсарні роботи',
+    en: 'Locksmith works',
+    de: 'Schlosserarbeiten',
+  },
+  'footer_page-11-1': {
+    ua: 'Механічна обробка',
+    en: 'Mechanical processing',
+    de: 'Mechanische Bearbeitung',
   },
   'footer_page-11': {
     ua: 'Адреса',
