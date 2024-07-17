@@ -174,3 +174,35 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 });
+
+// - modal
+var modal = document.querySelector('.modal');
+var triggers = document.querySelectorAll('.modal-active');
+var closeButton = document.querySelector('.close-button');
+
+function toggleModal() {
+  modal.classList.toggle('show-modal');
+
+  console.log('toggleModal');
+
+  if (window.innerWidth > 991) {
+    document.body.classList.toggle('lock');
+  } else if (!modal.classList.contains('show-modal')) {
+    document.body.classList.remove('lock');
+  }
+}
+
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
+
+triggers.forEach(function (trigger) {
+  trigger.addEventListener('click', toggleModal);
+});
+
+closeButton.addEventListener('click', toggleModal);
+window.addEventListener('click', windowOnClick);
+closeButton.addEventListener('click', toggleModal);
+window.addEventListener('click', windowOnClick);

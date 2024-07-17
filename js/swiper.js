@@ -1,4 +1,21 @@
-const swiper = new Swiper('.swiper__partners', {
+var swiper = new Swiper('.mySwiper', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+  zoom: true,
+});
+
+var swiper2 = new Swiper('.mySwiper2', {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper,
+  },
+  zoom: true,
+  loop: true,
+});
+
+const swiper1 = new Swiper('.swiper__partners', {
   slidesPerView: 2,
   infinity: true,
   spaceBetween: 10,
@@ -55,7 +72,7 @@ const swiperProduct = new Swiper('.swiper__product', {
       slidesPerView: 3,
     },
     1024: {
-      spaceBetween: 20,
+      spaceBetween: 10,
       slidesPerView: 4,
     },
   },

@@ -466,6 +466,10 @@ a {
   margin-top: 30px;
 }
 
+.container--margin-top {
+  margin-top: 0;
+}
+
 .section {
   margin-bottom: 40px;
 }
@@ -1502,6 +1506,24 @@ picture {
           transform: translateX(-5px);
 }
 
+.mySwiper .swiper-slide-thumb-active img {
+  opacity: 1;
+}
+
+.swiper-zoom-container img {
+  background-color: rgba(205, 205, 205, 0.6117647059);
+  border-radius: 10px;
+}
+
+.mySwiper .swiper-slide-thumb-active img {
+  background-color: rgba(205, 205, 205, 0.6117647059);
+  opacity: 1;
+}
+
+.mySwiper {
+  margin-top: 10px;
+}
+
 .partners {
   position: relative;
   color: #404044;
@@ -1913,6 +1935,10 @@ textarea.form__input {
   transition: all 0.35s ease-in-out;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+.ware__card:hover {
+  transition: all 0.35s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .ware__img {
@@ -2514,6 +2540,7 @@ textarea.form__input {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 200px;
   color: black;
+  padding: 0 7px 7px 7px;
 }
 
 .link__dropdown {
@@ -2527,6 +2554,10 @@ textarea.form__input {
 }
 .dropdown--width {
   width: 230px;
+}
+
+.dropdown--bcg {
+  background-color: #363839;
 }
 
 .product {
@@ -2561,12 +2592,12 @@ textarea.form__input {
 
 .product__img {
   text-align: center;
-  background-color: #dddddd;
+  background-color: #f2f2f2;
   padding: 10px 0;
   border-radius: 10px 10px 0 0;
   transition: all 0.3s ease;
   max-width: 100%;
-  height: 180px;
+  height: auto;
   display: flex;
   align-items: center;
   border-bottom: 2px solid #d1a954;
@@ -2579,39 +2610,41 @@ textarea.form__input {
 .product__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 10px;
+  align-items: start;
+  padding: 20px;
   height: 135px;
-  justify-content: center;
-  background-color: #dddddd;
+  justify-content: start;
+  background-color: #f2f2f2;
   border-radius: 0 0 10px 10px;
   transition: all 0.3s ease;
   text-align: center;
 }
-
 .product__name {
   font-size: 18px;
   line-height: normal;
   margin: 5px 0;
   letter-spacing: 1px;
-  word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
   transition: all 0.3s ease;
   color: #000;
+  margin-top: 10px;
 }
 
 .product__code {
-  color: #57585a;
-  font-size: 12px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
   transition: all 0.3s ease;
+  margin: 0;
 }
 
 .product__price {
   color: #d1a954;
-  font-size: 14px;
   font-weight: 700;
   margin: 0;
   letter-spacing: 1.5px;
+  margin-top: 30px;
+  font-size: 20px;
 }
 
 .product__link {
@@ -2707,12 +2740,14 @@ textarea.form__input {
 .breadcrumbs {
   margin-top: 20px;
   margin-bottom: 20px;
+  overflow-y: auto;
+  white-space: nowrap;
 }
 
 .breadcrumbs__list {
   display: flex;
+  padding-bottom: 20px;
   align-items: center;
-  flex-wrap: wrap;
   list-style: none;
   letter-spacing: 1.5px;
   color: rgba(0, 0, 0, 0.5568627451);
@@ -2744,6 +2779,240 @@ textarea.form__input {
 .breadcrumbs__item:hover a {
   border-bottom: 2px solid #d1a954;
   padding-bottom: 3px;
+}
+
+.card {
+  z-index: 3;
+  position: relative;
+  padding-top: 10px;
+}
+
+.card__bkg-container {
+  position: relative;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.card__bkg {
+  background-attachment: fixed;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background-image: url("../img/bg-document.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.card__img {
+  opacity: 0.4;
+}
+
+.card__container {
+  margin-top: 0;
+  max-width: 1200px;
+}
+
+.card-top {
+  padding: 15px 0;
+  color: #404044;
+}
+
+.card-bottom {
+  background-color: rgba(205, 205, 205, 0.6117647059);
+  border-radius: 0 0 10px 10px;
+  padding: 15px 10px;
+  color: #404044;
+}
+
+.card__article {
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin-bottom: 0;
+  color: #404044;
+  font-size: 14px;
+}
+
+.card__title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.3em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card__gallery--wrapper {
+  width: 100%;
+}
+
+.card__gallery {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.card__text {
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: center;
+  color: #0fc747;
+}
+
+.card__price {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.card__price-tablet {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.card__table {
+  width: 100%;
+  font-size: 16px;
+  text-align: start;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #404044;
+}
+.card__table th {
+  max-width: 280px;
+  font-weight: 500;
+  opacity: 1;
+  text-align: left;
+}
+.card__table td {
+  text-align: right;
+}
+.card__table th,
+.card__table td {
+  border-bottom: 1px dashed #ffffff;
+  padding: 8px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4235294118);
+  color: #323336;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+}
+
+.modal__inner {
+  position: relative;
+  z-index: 100;
+  top: 5vw;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 90%;
+  margin-top: 20px;
+}
+
+.modal__title {
+  text-align: center;
+  color: #323336;
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+.modal__text {
+  text-align: center;
+  font-size: 18px;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 0.5rem;
+  overflow: auto;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.modal__input {
+  padding-bottom: 10px;
+  border: none;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #000;
+  background-color: inherit;
+  text-align: center;
+}
+.modal__input:focus {
+  outline: 0;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+}
+
+.close-button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  right: 15px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.close-button::after, .close-button::before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 20px;
+  height: 3px;
+  background-color: #263238;
+  border-radius: 5px;
+}
+.close-button::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.close-button::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 @media (min-width: 560px) {
   body {
@@ -2958,13 +3227,34 @@ textarea.form__input {
     display: none;
   }
   .product__img {
-    height: 250px;
+    height: auto;
   }
   .product__name {
     font-size: 16px;
   }
-  .product__price {
-    font-size: 20px;
+  .card__title {
+    font-size: 25px;
+  }
+  .card__gallery {
+    width: 80%;
+  }
+  .card__text {
+    margin-top: 25px;
+  }
+  .card__price {
+    margin-top: 25px;
+  }
+  .card__table th {
+    padding-right: 50px;
+  }
+  .card__table {
+    margin: 0 auto;
+  }
+  .modal__text {
+    padding: 0 30px;
+  }
+  .modal-content {
+    padding: 20px 30px;
   }
 }
 @media (min-width: 768px) {
@@ -3164,7 +3454,7 @@ textarea.form__input {
     grid-column-gap: 35px;
   }
   .product__img {
-    height: 200px;
+    height: 250px;
   }
   .product__price {
     font-size: 16px;
@@ -3172,10 +3462,59 @@ textarea.form__input {
   .product__more {
     grid-column: span 4;
   }
-}
-@media (min-width: 1000px) {
-  .nav__item:hover .dropdown {
-    display: block;
+  .card {
+    height: 630px;
+    padding-top: 30px;
+  }
+  .card-top,
+  .card-bottom {
+    float: right;
+    width: 40%;
+    padding: 10px 15px;
+  }
+  .card-top {
+    background-color: rgba(205, 205, 205, 0.6117647059);
+    border-radius: 10px 10px 0 0;
+    padding: 20px 15px 0 15px;
+  }
+  .card-bottom {
+    padding: 20px 15px;
+  }
+  .card__article {
+    text-align: start;
+  }
+  .card__title {
+    text-align: start;
+  }
+  .card__gallery {
+    width: 54%;
+    float: left;
+  }
+  .card__text {
+    margin-top: 0;
+    text-align: start;
+  }
+  .card__price {
+    text-align: start;
+  }
+  .card__price-camera {
+    display: none;
+  }
+  .card__table th,
+  .card__table td {
+    padding: 7px 20px 7px 0;
+  }
+  .card__table {
+    margin: 0;
+    margin-top: 0px;
+  }
+  .modal__inner {
+    position: absolute;
+    max-width: 500px;
+  }
+  .close-button {
+    top: 30px;
+    right: 30px;
   }
 }
 @media (min-width: 1024px) {
@@ -3441,6 +3780,9 @@ textarea.form__input {
   .l-price__item {
     font-size: 16px;
   }
+  .nav__item:hover .dropdown {
+    display: block;
+  }
   .product__title {
     margin-top: 70px;
   }
@@ -3452,10 +3794,6 @@ textarea.form__input {
   }
   .product__card {
     padding: 10px;
-  }
-  .product__name {
-    font-size: 18px;
-    font-weight: 400;
   }
   .product__price {
     font-size: 18px;
@@ -3479,6 +3817,30 @@ textarea.form__input {
   .breadcrumbs__item::after {
     margin: 0 10px;
   }
+  .card {
+    height: 700px;
+  }
+  .card-top,
+  .card-bottom {
+    float: right;
+    width: 45%;
+  }
+  .card-top {
+    padding: 25px 25px;
+  }
+  .card-bottom {
+    padding: 25px 25px;
+  }
+  .card__title {
+    font-size: 25px;
+  }
+  .card__gallery {
+    width: 45%;
+  }
+  .card__text {
+    font-size: 18px;
+    text-align: start;
+  }
 }
 @media (min-width: 1248px) {
   body {
@@ -3495,6 +3857,9 @@ textarea.form__input {
   }
   .section {
     margin-bottom: 0;
+  }
+  .container--margin-top {
+    padding: 0 1px;
   }
   .nav__item {
     margin-left: 40px;
