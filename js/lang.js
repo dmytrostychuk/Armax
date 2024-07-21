@@ -21,6 +21,7 @@ const homeTexts = {
     en: 'Contacts',
     de: 'Kontakte',
   },
+<<<<<<< HEAD
   'nav_page-4': {
     ua: 'Продукти',
     en: 'Products',
@@ -66,6 +67,8 @@ const homeTexts = {
     en: 'Custom orders ',
     de: 'Individuelle Bestellungen',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'header__content_page-1': {
     ua: 'Металообробка будь-якої складності на замовлення.',
     en: 'Metal processing of any complexity on order.',
@@ -234,53 +237,71 @@ const homeTexts = {
     de: 'Dank jahrelanger Erfahrung garantieren wir die Lieferung unserer Produkte in jeder Situation.',
   },
   'wara_page-1': {
+<<<<<<< HEAD
     ua: 'Наші продукти',
     en: 'Our products',
     de: 'Unsere Produkte',
+=======
+    ua: 'Каталог продукції',
+    en: 'Product catalog',
+    de: 'Produktkatalog',
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   },
   'wara_page-2': {
     ua: 'Меблеві елементи',
     en: 'Furniture elements',
     de: 'Möbelelemente',
   },
+<<<<<<< HEAD
 
   'wara_page-2-1': {
     ua: 'Меблеві елементи',
     en: 'Furniture elements',
     de: 'Möbelelemente',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'wara_page-3': {
     ua: 'СГ обладнання',
     en: 'Agricultural equipment',
     de: 'Landwirtschaftliche Ausrüstung',
   },
+<<<<<<< HEAD
 
   'wara_page-3-1': {
     ua: 'СГ обладнання',
     en: 'Agricultural equipment',
     de: 'Landwirtschaftliche Ausrüstung',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'wara_page-4': {
     ua: 'Елементи декору',
     en: 'Decorative elements',
     de: 'Dekorative Elemente',
   },
+<<<<<<< HEAD
   'wara_page-4-1': {
     ua: 'Елементи декору',
     en: 'Decorative elements',
     de: 'Dekorative Elemente',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'wara_page-5': {
     ua: 'Індивідуальні проекти',
     en: 'Custom projects',
     de: 'Individuelle Projekte',
   },
+<<<<<<< HEAD
   'wara_page-5-1': {
     ua: 'Індивідуальні проекти',
     en: 'Custom projects',
     de: 'Individuelle Projekte',
   },
 
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'partners_page-1': {
     ua: 'Наші партнери',
     en: 'Our partners',
@@ -358,47 +379,60 @@ const homeTexts = {
     en: 'Laser cutting',
     de: 'Laser-Schneiden',
   },
+<<<<<<< HEAD
 
   'footer_page-6-1': {
     ua: 'Лазерна порізка',
     en: 'Laser cutting',
     de: 'Laser-Schneiden',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'footer_page-7': {
     ua: 'Гнуття деталей',
     en: 'Bending of parts',
     de: 'Biegen von Teilen',
   },
+<<<<<<< HEAD
   'footer_page-7-1': {
     ua: 'Гнуття деталей',
     en: 'Bending of parts',
     de: 'Biegen von Teilen',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'footer_page-8': {
     ua: 'Порошкове фарбування',
     en: 'Powder coating',
     de: 'Pulverbeschichtung',
   },
+<<<<<<< HEAD
   'footer_page-8-1': {
     ua: 'Порошкове фарбування',
     en: 'Powder coating',
     de: 'Pulverbeschichtung',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'footer_page-9': {
     ua: 'Зварювальні роботи',
     en: 'Welding works',
     de: 'Schweißarbeiten',
   },
+<<<<<<< HEAD
   'footer_page-9-1': {
     ua: 'Зварювальні роботи',
     en: 'Welding works',
     de: 'Schweißarbeiten',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'footer_page-10': {
     ua: 'Слюсарні роботи',
     en: 'Locksmith works',
     de: 'Schlosserarbeiten',
   },
+<<<<<<< HEAD
   'footer_page-10-1': {
     ua: 'Слюсарні роботи',
     en: 'Locksmith works',
@@ -409,6 +443,8 @@ const homeTexts = {
     en: 'Mechanical processing',
     de: 'Mechanische Bearbeitung',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'footer_page-11': {
     ua: 'Адреса',
     en: 'Address',
@@ -662,6 +698,7 @@ const homeTexts = {
     en: '100kg',
     de: '100kg',
   },
+<<<<<<< HEAD
 
   'd-header_page-17': {
     ua: ' 60 ',
@@ -684,6 +721,30 @@ const homeTexts = {
     de: '240°',
   },
 
+=======
+
+  'd-header_page-17': {
+    ua: ' 60 ',
+    en: ' 60 ',
+    de: ' 60 ',
+  },
+  'd-header_page-18': {
+    ua: ' 200 мкм.',
+    en: ' 200 microns.',
+    de: ' 200 Mikrometer.',
+  },
+  'd-header_page-19': {
+    ua: '150°',
+    en: '150°',
+    de: '150°',
+  },
+  'd-header_page-20': {
+    ua: '240°',
+    en: '240°',
+    de: '240°',
+  },
+
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'd-price_page-1': {
     ua: 'Ціна фарбування металу',
     en: 'Metal painting price',

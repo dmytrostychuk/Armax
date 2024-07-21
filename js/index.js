@@ -60,6 +60,7 @@ window.addEventListener('load', toggleScrollButton);
 window.addEventListener('resize', toggleScrollButton);
 // Прослуховування прокрутки сторінки
 window.addEventListener('scroll', toggleScrollButton);
+<<<<<<< HEAD
 
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('form');
@@ -206,3 +207,119 @@ closeButton.addEventListener('click', toggleModal);
 window.addEventListener('click', windowOnClick);
 closeButton.addEventListener('click', toggleModal);
 window.addEventListener('click', windowOnClick);
+=======
+
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('form');
+  form.addEventListener('submit', formSend);
+
+  async function formSend(e) {
+    e.preventDefault();
+
+    let error = formValidate(form);
+
+    let formData = new FormData(form);
+    let files = formImage.files;
+    for (let i = 0; i < files.length; i++) {
+      formData.append('image[]', files[i]);
+    }
+
+    if (error === 0) {
+      form.classList.add('_sending');
+      try {
+        let response = await fetch('sendmail.php', {
+          method: 'POST',
+          body: formData,
+        });
+        if (response.status >= 200 && response.status < 300) {
+          let result = await response.json();
+          alert(result.message);
+          formPreview.innerHTML = '';
+          form.reset();
+        } else {
+          throw new Error('Помилка: ' + response.status);
+        }
+      } catch (err) {
+        console.error('Помилка відправлення форми:', err);
+        alert(
+          'Помилка відправлення форми. Будь ласка, спробуйте ще раз пізніше.'
+        );
+      } finally {
+        form.classList.remove('_sending');
+      }
+    } else {
+      alert("Заповніть обов'язкові поля");
+    }
+  }
+
+  function formValidate(form) {
+    let error = 0;
+    let formReq = document.querySelectorAll('._req');
+
+    formReq.forEach((input) => {
+      formRemoveError(input);
+
+      if (input.classList.contains('_email')) {
+        if (emailTest(input)) {
+          formAddError(input);
+          error++;
+        }
+      } else if (input.type === 'checkbox' && !input.checked) {
+        formAddError(input);
+        error++;
+      } else {
+        if (!input.value.trim()) {
+          formAddError(input);
+          error++;
+        }
+        if (input.classList.contains('input-number') && !input.validity.valid) {
+          formAddError(input);
+          error++;
+        }
+      }
+    });
+
+    return error;
+  }
+
+  function formAddError(input) {
+    input.parentElement.classList.add('_error');
+    input.classList.add('_error');
+  }
+
+  function formRemoveError(input) {
+    input.parentElement.classList.remove('_error');
+    input.classList.remove('_error');
+  }
+
+  function emailTest(input) {
+    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+  }
+
+  const formImage = document.getElementById('formImage');
+  const formPreview = document.getElementById('formPreview');
+
+  formImage.addEventListener('change', () => {
+    uploadFiles(formImage.files);
+  });
+
+  function uploadFiles(files) {
+    formPreview.innerHTML = '';
+    for (let i = 0; i < files.length; i++) {
+      let file = files[i];
+      let reader = new FileReader();
+      reader.onload = function (e) {
+        let fileType = file.type.split('/')[0];
+        if (fileType === 'image') {
+          formPreview.innerHTML += `<img src="${e.target.result}" alt="Фото">`;
+        } else if (fileType === 'application') {
+          formPreview.innerHTML += `<div id="embedContainer${i}" class="embed-container"></div>`;
+          let embedContainer = document.getElementById(`embedContainer${i}`);
+          embedContainer.innerHTML = `<embed src="${e.target.result}" type="${file.type}" width="100%" style="height: 70px;" />`;
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+  }
+});
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
