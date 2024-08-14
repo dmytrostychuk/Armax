@@ -58,9 +58,10 @@ const swiper1 = new Swiper('.swiper__partners', {
 
 const swiperProduct = new Swiper('.swiper__product', {
   slidesPerView: 1,
+
   loop: true,
   infinity: true,
-  spaceBetween: 10,
+  spaceBetween: 15,
   speed: 800,
   breakpoints: {
     480: {
@@ -82,10 +83,59 @@ const swiperProduct = new Swiper('.swiper__product', {
   },
 });
 
+var swiper3 = new Swiper('.mySwiper3', {
+  slidesPerView: 1,
+
+  spaceBetween: 15,
+  breakpoints: {
+    480: {
+      spaceBetween: 15,
+      slidesPerView: 2,
+    },
+    768: {
+      spaceBetween: 15,
+      slidesPerView: 3,
+    },
+    1024: {
+      spaceBetween: 10,
+      slidesPerView: 4,
+    },
+  },
+});
+var swiper5 = new Swiper('.mySwiper5', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+
+var swiper4 = new Swiper('.mySwiper4', {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper5,
+  },
+  zoom: true,
+  loop: false,
+});
+
+var swiper7 = new Swiper('.mySwiper7', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+
+var swiper6 = new Swiper('.mySwiper6', {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: swiper7,
+  },
+  zoom: true,
+  loop: false,
+});
+
 AOS.init();
 
-// You can also pass an optional settings object
-// below listed default settings
 AOS.init({
   // Global settings:
   disable: 'false', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function

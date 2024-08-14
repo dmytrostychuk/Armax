@@ -25,6 +25,12 @@ if (burgerBtn) {
   });
 }
 
+document.querySelectorAll('.header__btn').forEach((button) => {
+  button.addEventListener('click', () => {
+    location.reload();
+  });
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   var scrollToFormButton = document.querySelector('.scroll-to-form');
 
@@ -46,134 +52,134 @@ var scrollButton = document.getElementById('scrollButton');
 // Отримати форму
 var calculationSection = document.querySelector('.calculation');
 
-// Функція, яка перевіряє, чи видима секція "calculation" і встановлює відповідний стиль кнопці
-function toggleScrollButton() {
-  if (isElementPartiallyInViewport(calculationSection)) {
-    scrollButton.style.opacity = '0'; // Змінюємо прозорість кнопки на 0
-  } else {
-    scrollButton.style.opacity = '1'; // Змінюємо прозорість кнопки на 1
-  }
-}
+// // Функція, яка перевіряє, чи видима секція "calculation" і встановлює відповідний стиль кнопці
+// function toggleScrollButton() {
+//   if (isElementPartiallyInViewport(calculationSection)) {
+//     scrollButton.style.opacity = '0'; // Змінюємо прозорість кнопки на 0
+//   } else {
+//     scrollButton.style.opacity = '1'; // Змінюємо прозорість кнопки на 1
+//   }
+// }
 
-// Викликати toggleScrollButton() після завантаження сторінки та при зміні розміру вікна
-window.addEventListener('load', toggleScrollButton);
-window.addEventListener('resize', toggleScrollButton);
-// Прослуховування прокрутки сторінки
-window.addEventListener('scroll', toggleScrollButton);
+// // Викликати toggleScrollButton() після завантаження сторінки та при зміні розміру вікна
+// window.addEventListener('load', toggleScrollButton);
+// window.addEventListener('resize', toggleScrollButton);
+// // Прослуховування прокрутки сторінки
+// window.addEventListener('scroll', toggleScrollButton);
 
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('form');
-  form.addEventListener('submit', formSend);
+// document.addEventListener('DOMContentLoaded', function () {
+//   const form = document.getElementById('form');
+//   form.addEventListener('submit', formSend);
 
-  async function formSend(e) {
-    e.preventDefault();
+//   async function formSend(e) {
+//     e.preventDefault();
 
-    let error = formValidate(form);
+//     let error = formValidate(form);
 
-    let formData = new FormData(form);
-    let files = formImage.files;
-    for (let i = 0; i < files.length; i++) {
-      formData.append('image[]', files[i]);
-    }
+//     let formData = new FormData(form);
+//     let files = formImage.files;
+//     for (let i = 0; i < files.length; i++) {
+//       formData.append('image[]', files[i]);
+//     }
 
-    if (error === 0) {
-      form.classList.add('_sending');
-      try {
-        let response = await fetch('sendmail.php', {
-          method: 'POST',
-          body: formData,
-        });
-        if (response.status >= 200 && response.status < 300) {
-          let result = await response.json();
-          alert(result.message);
-          formPreview.innerHTML = '';
-          form.reset();
-        } else {
-          throw new Error('Помилка: ' + response.status);
-        }
-      } catch (err) {
-        console.error('Помилка відправлення форми:', err);
-        alert(
-          'Помилка відправлення форми. Будь ласка, спробуйте ще раз пізніше.'
-        );
-      } finally {
-        form.classList.remove('_sending');
-      }
-    } else {
-      alert("Заповніть обов'язкові поля");
-    }
-  }
+//     if (error === 0) {
+//       form.classList.add('_sending');
+//       try {
+//         let response = await fetch('sendmail.php', {
+//           method: 'POST',
+//           body: formData,
+//         });
+//         if (response.status >= 200 && response.status < 300) {
+//           let result = await response.json();
+//           alert(result.message);
+//           formPreview.innerHTML = '';
+//           form.reset();
+//         } else {
+//           throw new Error('Помилка: ' + response.status);
+//         }
+//       } catch (err) {
+//         console.error('Помилка відправлення форми:', err);
+//         alert(
+//           'Помилка відправлення форми. Будь ласка, спробуйте ще раз пізніше.'
+//         );
+//       } finally {
+//         form.classList.remove('_sending');
+//       }
+//     } else {
+//       alert("Заповніть обов'язкові поля");
+//     }
+//   }
 
-  function formValidate(form) {
-    let error = 0;
-    let formReq = document.querySelectorAll('._req');
+//   function formValidate(form) {
+//     let error = 0;
+//     let formReq = document.querySelectorAll('._req');
 
-    formReq.forEach((input) => {
-      formRemoveError(input);
+//     formReq.forEach((input) => {
+//       formRemoveError(input);
 
-      if (input.classList.contains('_email')) {
-        if (emailTest(input)) {
-          formAddError(input);
-          error++;
-        }
-      } else if (input.type === 'checkbox' && !input.checked) {
-        formAddError(input);
-        error++;
-      } else {
-        if (!input.value.trim()) {
-          formAddError(input);
-          error++;
-        }
-        if (input.classList.contains('input-number') && !input.validity.valid) {
-          formAddError(input);
-          error++;
-        }
-      }
-    });
+//       if (input.classList.contains('_email')) {
+//         if (emailTest(input)) {
+//           formAddError(input);
+//           error++;
+//         }
+//       } else if (input.type === 'checkbox' && !input.checked) {
+//         formAddError(input);
+//         error++;
+//       } else {
+//         if (!input.value.trim()) {
+//           formAddError(input);
+//           error++;
+//         }
+//         if (input.classList.contains('input-number') && !input.validity.valid) {
+//           formAddError(input);
+//           error++;
+//         }
+//       }
+//     });
 
-    return error;
-  }
+//     return error;
+//   }
 
-  function formAddError(input) {
-    input.parentElement.classList.add('_error');
-    input.classList.add('_error');
-  }
+//   function formAddError(input) {
+//     input.parentElement.classList.add('_error');
+//     input.classList.add('_error');
+//   }
 
-  function formRemoveError(input) {
-    input.parentElement.classList.remove('_error');
-    input.classList.remove('_error');
-  }
+//   function formRemoveError(input) {
+//     input.parentElement.classList.remove('_error');
+//     input.classList.remove('_error');
+//   }
 
-  function emailTest(input) {
-    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
-  }
+//   function emailTest(input) {
+//     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+//   }
 
-  const formImage = document.getElementById('formImage');
-  const formPreview = document.getElementById('formPreview');
+//   const formImage = document.getElementById('formImage');
+//   const formPreview = document.getElementById('formPreview');
 
-  formImage.addEventListener('change', () => {
-    uploadFiles(formImage.files);
-  });
+//   formImage.addEventListener('change', () => {
+//     uploadFiles(formImage.files);
+//   });
 
-  function uploadFiles(files) {
-    formPreview.innerHTML = '';
-    for (let i = 0; i < files.length; i++) {
-      let file = files[i];
-      let reader = new FileReader();
-      reader.onload = function (e) {
-        let fileType = file.type.split('/')[0];
-        if (fileType === 'image') {
-          formPreview.innerHTML += `<img src="${e.target.result}" alt="Фото">`;
-        } else if (fileType === 'application') {
-          formPreview.innerHTML += `<div id="embedContainer${i}" class="embed-container"></div>`;
-          let embedContainer = document.getElementById(`embedContainer${i}`);
-          embedContainer.innerHTML = `<embed src="${e.target.result}" type="${file.type}" width="100%" style="height: 70px;" />`;
-        }
-      };
-      reader.readAsDataURL(file);
-    }
-  }
-});
+//   function uploadFiles(files) {
+//     formPreview.innerHTML = '';
+//     for (let i = 0; i < files.length; i++) {
+//       let file = files[i];
+//       let reader = new FileReader();
+//       reader.onload = function (e) {
+//         let fileType = file.type.split('/')[0];
+//         if (fileType === 'image') {
+//           formPreview.innerHTML += `<img src="${e.target.result}" alt="Фото">`;
+//         } else if (fileType === 'application') {
+//           formPreview.innerHTML += `<div id="embedContainer${i}" class="embed-container"></div>`;
+//           let embedContainer = document.getElementById(`embedContainer${i}`);
+//           embedContainer.innerHTML = `<embed src="${e.target.result}" type="${file.type}" width="100%" style="height: 70px;" />`;
+//         }
+//       };
+//       reader.readAsDataURL(file);
+//     }
+//   }
+// });
 
 // - modal
 var modal = document.querySelector('.modal');
@@ -206,3 +212,48 @@ closeButton.addEventListener('click', toggleModal);
 window.addEventListener('click', windowOnClick);
 closeButton.addEventListener('click', toggleModal);
 window.addEventListener('click', windowOnClick);
+
+document
+  .querySelector('.card__gallery-button-1')
+  .addEventListener('click', function () {
+    document.querySelector('.card__gallery-1').classList.add('active');
+    document.querySelector('.card__gallery-2').classList.remove('active');
+    document.querySelector('.card__gallery-3').classList.remove('active');
+    this.classList.add('active');
+    document
+      .querySelector('.card__gallery-button-2')
+      .classList.remove('active');
+    document
+      .querySelector('.card__gallery-button-3')
+      .classList.remove('active');
+  });
+
+document
+  .querySelector('.card__gallery-button-2')
+  .addEventListener('click', function () {
+    document.querySelector('.card__gallery-1').classList.remove('active');
+    document.querySelector('.card__gallery-2').classList.add('active');
+    document.querySelector('.card__gallery-3').classList.remove('active');
+    this.classList.add('active');
+    document
+      .querySelector('.card__gallery-button-1')
+      .classList.remove('active');
+    document
+      .querySelector('.card__gallery-button-3')
+      .classList.remove('active');
+  });
+
+document
+  .querySelector('.card__gallery-button-3')
+  .addEventListener('click', function () {
+    document.querySelector('.card__gallery-1').classList.remove('active');
+    document.querySelector('.card__gallery-2').classList.remove('active');
+    document.querySelector('.card__gallery-3').classList.add('active');
+    this.classList.add('active');
+    document
+      .querySelector('.card__gallery-button-1')
+      .classList.remove('active');
+    document
+      .querySelector('.card__gallery-button-2')
+      .classList.remove('active');
+  });
