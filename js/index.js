@@ -15,167 +15,6 @@ if (burgerBtn) {
     }
     burgerBtn.classList.toggle('burger-btn-active');
   });
-<<<<<<< HEAD
-
-  document.addEventListener('click', function (e) {
-    if (!menuNav.contains(e.target) && !burgerBtn.contains(e.target)) {
-      menuNav.classList.remove('nav__active');
-      menuNav.classList.add('nav__close');
-      burgerBtn.classList.remove('burger-btn-active');
-    }
-  });
-}
-
-document.querySelectorAll('.header__btn').forEach((button) => {
-  button.addEventListener('click', () => {
-    location.reload();
-  });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  var scrollToFormButton = document.querySelector('.scroll-to-form');
-
-  scrollToFormButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    var formElement = document.querySelector('.calculation');
-    formElement.scrollIntoView({ behavior: 'smooth' });
-  });
-});
-
-// Функція, що перевіряє, чи видима елемент
-function isElementPartiallyInViewport(el) {
-  var rect = el.getBoundingClientRect();
-  return rect.top < window.innerHeight && rect.bottom >= 0;
-}
-
-// Отримати кнопку прокрутки
-var scrollButton = document.getElementById('scrollButton');
-// Отримати форму
-var calculationSection = document.querySelector('.calculation');
-
-document.addEventListener('DOMContentLoaded', function () {
-  AOS.init({
-    disable: function () {
-      var isMobile = window.innerWidth < 768;
-      console.log('AOS disabled:', isMobile);
-      return isMobile;
-    },
-    startEvent: 'DOMContentLoaded',
-    initClassName: 'aos-init',
-    animatedClassName: 'aos-animate',
-    useClassNames: false,
-    disableMutationObserver: false,
-    debounceDelay: 50,
-    throttleDelay: 99,
-    offset: 100,
-    delay: 0,
-    duration: 400,
-    easing: 'ease',
-    once: true,
-    mirror: false,
-    anchorPlacement: 'top-bottom',
-  });
-});
-
-// - modal
-var modal = document.querySelector('.modal');
-var triggers = document.querySelectorAll('.modal-active');
-var closeButton = document.querySelector('.close-button');
-
-function toggleModal() {
-  modal.classList.toggle('show-modal');
-
-  console.log('toggleModal');
-
-  if (window.innerWidth > 991) {
-    document.body.classList.toggle('lock');
-  } else if (!modal.classList.contains('show-modal')) {
-    document.body.classList.remove('lock');
-  }
-}
-
-function windowOnClick(event) {
-  if (event.target === modal) {
-    toggleModal();
-  }
-}
-
-triggers.forEach(function (trigger) {
-  trigger.addEventListener('click', toggleModal);
-});
-
-closeButton.addEventListener('click', toggleModal);
-window.addEventListener('click', windowOnClick);
-closeButton.addEventListener('click', toggleModal);
-window.addEventListener('click', windowOnClick);
-
-document
-  .querySelector('.card__gallery-button-1')
-  .addEventListener('click', function () {
-    document.querySelector('.card__gallery-1').classList.add('active');
-    document.querySelector('.card__gallery-2').classList.remove('active');
-    document.querySelector('.card__gallery-3').classList.remove('active');
-    this.classList.add('active');
-    document
-      .querySelector('.card__gallery-button-2')
-      .classList.remove('active');
-    document
-      .querySelector('.card__gallery-button-3')
-      .classList.remove('active');
-  });
-
-document
-  .querySelector('.card__gallery-button-2')
-  .addEventListener('click', function () {
-    document.querySelector('.card__gallery-1').classList.remove('active');
-    document.querySelector('.card__gallery-2').classList.add('active');
-    document.querySelector('.card__gallery-3').classList.remove('active');
-    this.classList.add('active');
-    document
-      .querySelector('.card__gallery-button-1')
-      .classList.remove('active');
-    document
-      .querySelector('.card__gallery-button-3')
-      .classList.remove('active');
-  });
-
-document
-  .querySelector('.card__gallery-button-3')
-  .addEventListener('click', function () {
-    document.querySelector('.card__gallery-1').classList.remove('active');
-    document.querySelector('.card__gallery-2').classList.remove('active');
-    document.querySelector('.card__gallery-3').classList.add('active');
-    this.classList.add('active');
-    document
-      .querySelector('.card__gallery-button-1')
-      .classList.remove('active');
-    document
-      .querySelector('.card__gallery-button-2')
-      .classList.remove('active');
-  });
-document.addEventListener('DOMContentLoaded', function () {
-  AOS.init({
-    disable: function () {
-      var isMobile = window.innerWidth < 768;
-      console.log('AOS disabled:', isMobile);
-      return isMobile;
-    },
-    startEvent: 'DOMContentLoaded',
-    initClassName: 'aos-init',
-    animatedClassName: 'aos-animate',
-    useClassNames: false,
-    disableMutationObserver: false,
-    debounceDelay: 50,
-    throttleDelay: 99,
-    offset: 100,
-    delay: 0,
-    duration: 400,
-    easing: 'ease',
-    once: true,
-    mirror: false,
-    anchorPlacement: 'top-bottom',
-  });
-=======
 
   document.addEventListener('click', function (e) {
     if (!menuNav.contains(e.target) && !burgerBtn.contains(e.target)) {
@@ -334,5 +173,36 @@ document.addEventListener('DOMContentLoaded', function () {
       reader.readAsDataURL(file);
     }
   }
->>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
 });
+
+// - modal
+var modal = document.querySelector('.modal');
+var triggers = document.querySelectorAll('.modal-active');
+var closeButton = document.querySelector('.close-button');
+
+function toggleModal() {
+  modal.classList.toggle('show-modal');
+
+  console.log('toggleModal');
+
+  if (window.innerWidth > 991) {
+    document.body.classList.toggle('lock');
+  } else if (!modal.classList.contains('show-modal')) {
+    document.body.classList.remove('lock');
+  }
+}
+
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
+
+triggers.forEach(function (trigger) {
+  trigger.addEventListener('click', toggleModal);
+});
+
+closeButton.addEventListener('click', toggleModal);
+window.addEventListener('click', windowOnClick);
+closeButton.addEventListener('click', toggleModal);
+window.addEventListener('click', windowOnClick);
