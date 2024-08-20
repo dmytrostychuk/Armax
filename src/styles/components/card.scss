@@ -1,0 +1,234 @@
+.card {
+  z-index: 3;
+  position: relative;
+  padding-top: 10px;
+
+  @include mq($from: tablet) {
+    height: 630px;
+    padding-top: 30px;
+  }
+
+  @include mq($from: tablet-wide) {
+    height: 700px;
+  }
+}
+
+.card__bkg-container {
+  position: relative;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.card__bkg {
+  background-attachment: fixed;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background-image: url('../img/bg-document.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.card__img {
+  opacity: 0.4;
+}
+
+.card__container {
+  margin-top: 0;
+  max-width: 1200px;
+}
+
+.card-top,
+.card-bottom {
+  @include mq($from: tablet) {
+    float: right;
+    width: 40%;
+    padding: 10px 15px;
+  }
+
+  @include mq($from: tablet-wide) {
+    float: right;
+    width: 45%;
+  }
+}
+
+.card-top {
+  padding: 15px 0;
+  color: #404044;
+  @include mq($from: tablet) {
+    background-color: #cdcdcd9c;
+    border-radius: 10px 10px 0 0;
+    padding: 20px 15px 0 15px;
+  }
+  @include mq($from: tablet-wide) {
+    padding: 25px 25px;
+  }
+}
+
+.card-bottom {
+  background-color: #cdcdcd9c;
+  border-radius: 0 0 10px 10px;
+  padding: 15px 10px;
+  color: #404044;
+  @include mq($from: tablet) {
+    padding: 20px 15px;
+  }
+  @include mq($from: tablet-wide) {
+    padding: 25px 25px;
+  }
+}
+
+.card__article {
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin-bottom: 0;
+  color: #404044;
+  font-size: 14px;
+
+  @include mq($from: tablet) {
+    text-align: start;
+  }
+}
+
+.card__title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.3em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include mq($from: phablet) {
+    font-size: 25px;
+  }
+  @include mq($from: tablet) {
+    text-align: start;
+  }
+
+  @include mq($from: tablet-wide) {
+    font-size: 25px;
+  }
+}
+
+.card__gallery--wrapper {
+  width: 100%;
+}
+
+.card__gallery {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  @include mq($from: phablet) {
+    width: 80%;
+  }
+
+  @include mq($from: tablet) {
+    width: 54%;
+    float: left;
+  }
+
+  @include mq($from: tablet-wide) {
+    width: 45%;
+  }
+}
+
+.card__text {
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: center;
+  color: #0fc747;
+
+  @include mq($from: phablet) {
+    margin-top: 25px;
+  }
+
+  @include mq($from: tablet) {
+    margin-top: 0;
+    text-align: start;
+  }
+
+  @include mq($from: tablet-wide) {
+    font-size: 18px;
+    text-align: start;
+  }
+}
+
+.card__price {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px;
+
+  @include mq($from: phablet) {
+    margin-top: 25px;
+  }
+
+  @include mq($from: tablet) {
+    text-align: start;
+  }
+}
+
+.card__price-tablet {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.card__price-camera {
+  @include mq($from: tablet) {
+    display: none;
+  }
+}
+
+.card__table {
+  width: 100%;
+  font-size: 16px;
+  text-align: start;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #404044;
+
+  th {
+    max-width: 280px;
+    font-weight: 500;
+    opacity: 1;
+    text-align: left;
+    @include mq($from: phablet) {
+      padding-right: 50px;
+    }
+  }
+
+  td {
+    text-align: right;
+  }
+
+  th,
+  td {
+    border-bottom: 1px dashed #ffffff;
+    padding: 8px;
+
+    @include mq($from: tablet) {
+      padding: 7px 20px 7px 0;
+    }
+  }
+
+  @include mq($from: phablet) {
+    margin: 0 auto;
+  }
+  @include mq($from: tablet) {
+    margin: 0;
+    margin-top: 0px;
+  }
+}

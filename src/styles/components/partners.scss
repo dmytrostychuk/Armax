@@ -1,0 +1,20 @@
+.partners {
+	position: relative;
+	color: #404044;
+	padding-top: 10px;
+	padding-bottom: 120px;
+	margin-bottom: 0;
+}
+
+.partners__background {
+	background-attachment: fixed;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	background-image: url("../img/bg-document.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: .2;
+}

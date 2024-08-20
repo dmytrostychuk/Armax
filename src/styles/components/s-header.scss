@@ -1,0 +1,58 @@
+.s-header {
+	height:  450px;
+}
+
+.s-header__background {
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+	position: absolute;
+	background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
+ url("../img/services-header1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.s-header__nav {
+	margin: 0 auto;
+	background-color:  #363839;
+}
+
+.s-header__container {
+	margin-top: -1px;
+}
+
+.s-header__content {
+	margin-top: 15vw;
+
+	@include mq($from: tablet) {
+		margin-top: 5vw;
+	}
+
+	@include mq($from: desktop) {
+		margin-top: 50px;
+	}
+}
+
+.s-header__content--container {
+
+	@include mq($from: phablet) {
+		
+	}
+
+	@include mq($from: tablet-wide) {
+		
+	}
+}
+
+.s-menu {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+	padding-top: 10px;
+	margin-bottom: 0;
+}

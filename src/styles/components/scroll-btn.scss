@@ -1,0 +1,33 @@
+.scroll-to-form {
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 30px;
+  padding-left: 50px;
+  background-color: #d1a954;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Зміна кольору посилання при наведенні */
+.scroll-to-form:hover {
+  background-color: #6e4b4b;
+}
+
+/* Стрілка */
+.scroll-to-form::before {
+  content: '';
+  position: absolute;
+  left: 20px; /* Змініть значення відступу, щоб підігнати стрілку */
+  top: calc(50% - 8px); /* Вирівнюємо посередині відносно кнопки */
+  border: solid #b47c48;
+  border-width: 0 3px 3px 0;
+  padding: 4px;
+  transform: rotate(45deg);
+}

@@ -1,0 +1,43 @@
+.button {
+  position: relative;
+  display: block;
+  height: 50px;
+  border: none;
+  border-radius: 0;
+  text-transform: uppercase;
+  background-color: #d1a954;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+
+  &:hover {
+    background-color: #b47c48;
+  }
+
+  &:active {
+    background-color: #6e4b4b;
+  }
+
+  @include mq($from: phablet) {
+    width: 100%;
+  }
+
+  @include mq($from: tablet) {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  @include mq($from: tablet-wide) {
+  }
+}
+
+.button-lang {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}

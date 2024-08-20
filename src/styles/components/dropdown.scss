@@ -1,0 +1,34 @@
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  color: black;
+  padding: 0 7px 7px 7px;
+}
+
+.link__dropdown {
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.link__dropdown {
+  display: block;
+  text-decoration: none;
+}
+
+@include mq($from: tablet-wide) {
+  .nav__item:hover .dropdown {
+    display: block;
+  }
+}
+
+.dropdown--width {
+  width: 230px;
+}
+
+.dropdown--bcg {
+  background-color: #363839;
+}

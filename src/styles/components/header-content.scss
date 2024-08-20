@@ -1,0 +1,112 @@
+.header__content--container {
+  position: relative;
+
+  @include mq($from: tablet) {
+    display: flex;
+    justify-content: space-between;
+    // min-height: 360px;
+  }
+}
+
+.header__content {
+  z-index: 1;
+  background-color: rgba(67, 79, 79, 0.537);
+  padding: 0 20px;
+  margin-bottom: 30px;
+  margin-top: 15vh;
+
+  @include mq($from: tablet) {
+    margin-bottom: 0;
+    margin-right: 20px;
+    margin-top: 0;
+  }
+
+  @include mq($from: tablet-wide) {
+    width: 65%;
+    margin-bottom: 0;
+    margin-right: 34px;
+  }
+}
+
+.header__inner {
+  padding: 20px 15px;
+  background-color: rgba(51, 51, 51, 0.65);
+  border-radius: 20px;
+
+  @include mq($from: tablet) {
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  @include mq($from: desktop) {
+    padding: 40px 30px;
+  }
+}
+
+.header__content-title {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  line-height: 130%;
+  font-size: 24px;
+  font-weight: 500;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 3px;
+    background-color: #d1a954;
+    opacity: 0.4;
+
+    @include mq($from: tablet) {
+      left: 0;
+      bottom: -40px;
+      transform: translate(0);
+    }
+  }
+
+  @include mq($from: tablet) {
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 80px;
+    text-align: start;
+  }
+
+  @include mq($from: tablet-wide) {
+    width: auto;
+  }
+}
+
+.header__content-subtitle {
+  font-weight: 500;
+  font-size: 22px;
+
+  @include mq($from: tablet) {
+    display: block;
+    width: 500px;
+    margin-top: 20px;
+    line-height: 130%;
+  }
+}
+
+.header__content-text {
+  text-align: center;
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+
+  @include mq($from: phablet) {
+    font-size: 16px;
+  }
+
+  @include mq($from: tablet) {
+    text-align: start;
+    margin: 0;
+  }
+}

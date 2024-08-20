@@ -1,0 +1,131 @@
+.partners__slider {
+  position: relative;
+  height: 150px;
+  width: 90%;
+  margin: 0 auto;
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: rgba(51, 51, 51, 0.65);
+    transition: all 0.35s ease-in-out;
+    transform: translateX(0px);
+    opacity: 0.5;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .swiper-button-next {
+    right: -27px;
+
+    &:hover {
+      opacity: 1;
+      transform: translateX(5px);
+    }
+  }
+
+  .swiper-button-prev {
+    left: -27px;
+    &:hover {
+      opacity: 1;
+      transform: translateX(-5px);
+    }
+  }
+}
+
+.swiper-button-next {
+  top: 30px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.swiper-wrapper {
+  text-align: center;
+  align-items: center;
+}
+
+.swiper__product {
+  color: black;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(51, 51, 51, 0.65);
+  transition: all 0.35s ease-in-out;
+  transform: translateX(0px);
+  opacity: 0.5;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.swiper-button-next {
+  right: -27px;
+
+  &:hover {
+    opacity: 1;
+    transform: translateX(5px);
+  }
+}
+
+.swiper-button-prev {
+  left: -27px;
+  &:hover {
+    opacity: 1;
+    transform: translateX(-5px);
+  }
+}
+
+.mySwiper .swiper-slide-thumb-active img {
+  opacity: 1;
+}
+
+.swiper-zoom-container img {
+  background-color: #cdcdcd9c;
+  border-radius: 10px;
+}
+
+.mySwiper .swiper-slide-thumb-active img {
+  background-color: #cdcdcd9c;
+  opacity: 1;
+}
+
+.mySwiper {
+  margin-top: 10px;
+}

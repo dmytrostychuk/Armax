@@ -1,0 +1,94 @@
+.a-privilege {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: #363839;
+	padding-bottom: 30px;
+}
+
+.a-privilege--color {
+	background-color: #f6f6f6;
+  color: #404044;
+}
+
+.a-privilege__inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.a-privilege__box {
+	width: 50%;
+	margin-bottom: 30px;
+}
+
+.a-privilege__box--size {
+
+	@include mq($from: tablet-wide) {
+		width: 30%;
+	}
+}
+
+.a-privilege__card {
+	position: relative;
+	text-align: center;
+	
+
+	@include mq($from: tablet-wide) {
+		display: flex;
+		text-align: start;
+		padding: 30px;
+	}
+}
+.a-privilege__card--position {
+	flex-direction: column;
+}
+
+.a-privilege--svg {
+	fill: #363839;
+	width: 90px;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 10px;
+
+	@include mq($from: phablet) {
+		width: 110px;
+	}
+
+	@include mq($from: tablet-wide) {
+		margin-bottom: 40px;
+	}
+
+	&:hover {
+		fill: #d1a954;
+	}
+}
+
+.a-privilege__content {
+	margin-left: 15px;
+}
+
+.a-privilege__title {
+	margin: 0;
+	margin-bottom: 5px;
+	font-size: 15px;
+
+	@include mq($from: phablet) {
+		font-size: 18px;
+		font-weight: 500;
+	}
+}
+
+.a-privilege__text {
+	margin: 0;
+	font-size: 12px	;
+
+	@include mq($from: phablet) {
+		font-size: 14px;
+	}
+
+	@include mq($from: tablet-wide) {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}

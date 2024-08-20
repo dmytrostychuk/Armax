@@ -1,0 +1,264 @@
+.calculation {
+  position: relative;
+  color: #ffffff;
+  background-color: #ffffff;
+
+  @include mq($from: tablet) {
+    font-size: 15px;
+  }
+}
+
+.calculation__inner {
+  position: relative;
+  z-index: 500;
+  padding: 20px 0;
+}
+
+.calculation__background {
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  position: absolute;
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
+    url('../img/pipe.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.calculation__wrapper {
+  @include mq($from: phablet) {
+    width: 400px;
+  }
+}
+
+.calculation__content {
+  @include mq($from: tablet) {
+    margin-right: 30px;
+  }
+}
+
+.calculation__title {
+  position: relative;
+  color: #f6f6f6;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 3px;
+    background-color: #d1a954;
+    opacity: 0.4;
+
+    @include mq($from: tablet-wide) {
+    }
+  }
+}
+
+.calculation__item {
+  position: relative;
+}
+
+.calculation__text {
+  padding-left: 20px;
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 2px;
+    background-color: #d1a954;
+    border-radius: 5px;
+  }
+
+  &::after {
+    top: 16px;
+    transform: rotate(-40deg);
+  }
+
+  &::before {
+    top: 10px;
+    transform: rotate(40deg);
+  }
+}
+
+.calculation__form-container {
+  padding: 20px 20px;
+  background-color: rgba(58, 58, 58, 0.26);
+  border-radius: 10px;
+
+  @include mq($from: tablet) {
+  }
+}
+
+.calculation__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculation__label {
+  margin-top: 20px;
+}
+
+.calculation__input-file {
+  padding: 0;
+  margin-top: 10px;
+}
+
+input[type='file']::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #363839;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input[type='file']::file-selector-button:hover {
+  opacity: 0.7;
+}
+
+.form-textarea {
+  padding: 8px 10px;
+  border-radius: 3px;
+  color: #949090;
+  border: 0;
+
+  &:focus {
+    outline-offset: 0;
+    outline: 2px solid #d1a954;
+  }
+  &::placeholder {
+    font-size: 14px;
+  }
+}
+
+.form__title {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0px 0px 30px 0px;
+}
+.form__item {
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+}
+
+.form__none {
+  display: none;
+}
+.form__label {
+  font-size: 18px;
+  display: block;
+  margin: 0px 0px 10px 0px;
+}
+.form__input {
+  height: 50px;
+  border-radius: 5px;
+  width: 95%;
+  font-size: 18px;
+  transition: all 0.5s ease 0s;
+  overflow: visible;
+}
+
+.form__input:focus {
+  box-shadow: 0 0 15px #7a956b;
+}
+.form__input._error {
+  box-shadow: 0 0 15px red;
+}
+
+textarea.form__input {
+  min-height: 100px;
+  resize: vertical;
+  padding: 15px;
+}
+
+.options {
+  padding: 10px 0px 0px 0px;
+}
+.options__item {
+  margin: 0px 0px 10px 0px;
+}
+.options__input {
+  display: none;
+}
+
+.options__input:checked + .options__label::after {
+  transform: scale(1);
+}
+
+.options__label {
+  display: inline-flex;
+  font-size: 16px;
+  line-height: 140%;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.options__label::before {
+  content: '';
+  align-self: flex-start;
+  flex: 0 0 24px;
+  height: 24px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 0px 10px 0px 0px;
+}
+.options__label::after {
+  transition: transform 0.5s ease 0s;
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 16px;
+  height: 16px;
+  background-color: #7a956b;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+.file__item {
+  position: relative;
+}
+.file__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  font-size: 0;
+  cursor: pointer;
+}
+.file__button {
+  display: inline-flex;
+  min-height: 40px;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  background-color: #686862d3;
+  padding: 0px 20px;
+  font-size: 18px;
+}
+.file__preview {
+  display: inline-block;
+  max-width: 100px;
+  padding: 10px 0px 0px 0px;
+}
+.file__preview img {
+  max-width: 100%;
+}
+.file__preview--with-icon {
+  background: url('icon.svg') no-repeat center center;
+}
+
+.embed-container {
+  margin-bottom: 10px; /* простор між вбудованими елементами */
+}

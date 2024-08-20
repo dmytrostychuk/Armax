@@ -1,0 +1,15 @@
+.preview {
+  color: #404044;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-top: 40px;
+
+  @include mq($from: tablet-wide) {
+    margin-top: 60px;
+  }
+}
+
+.preview__link {
+  color: #d1a954;
+  border-bottom: 1px solid #dda429;
+}

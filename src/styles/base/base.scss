@@ -1,0 +1,189 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #363839;
+
+  @include mq($from: phablet) {
+    font-size: 16px;
+  }
+
+  @include mq($from: tablet) {
+    font-size: 16px;
+  }
+
+  @include mq($from: tablet-wide) {
+    font-size: 20px;
+  }
+
+  @include mq($from: desktop) {
+    font-size: 24px;
+  }
+}
+
+main {
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: auto;
+}
+
+p {
+  line-height: 1.8;
+}
+
+input {
+  height: 40px;
+  outline: 0px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #949090;
+
+  &::placeholder {
+    font-size: 14px;
+  }
+
+  &:focus {
+    outline: 2px solid #d1a954;
+  }
+
+  @include mq($from: desktop) {
+    height: 50px;
+  }
+}
+
+label {
+  width: 100%;
+}
+
+.header {
+  margin-bottom: 0px;
+
+  @include mq($from: phablet) {
+    margin-bottom: 0px;
+  }
+
+  @include mq($from: tablet) {
+    margin-bottom: 0px;
+  }
+
+  @include mq($from: tablet-wide) {
+    margin-bottom: 0px;
+  }
+
+  @include mq($from: desktop) {
+    margin-bottom: 0px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: map-get($map: $breakpoints, $key: desktop);
+  padding: 0 15px;
+
+  @include mq($from: phablet) {
+    padding: 0 40px;
+  }
+
+  @include mq($from: tablet) {
+    padding: 0 30px;
+  }
+
+  @include mq($from: tablet-wide) {
+    padding: 0 70px;
+  }
+
+  @include mq($from: desktop) {
+    padding: 0 130px;
+  }
+}
+
+.section {
+  margin-bottom: 0;
+  margin-bottom: $section-margin-bottom;
+
+  &--no-margin {
+    margin-bottom: 0;
+  }
+
+  @include mq($from: phablet) {
+    margin-bottom: 0;
+  }
+
+  @include mq($from: tablet) {
+    margin-bottom: 0;
+  }
+
+  @include mq($from: tablet-wide) {
+    margin-bottom: 0;
+  }
+
+  @include mq($from: desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.lock {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $max-container-width;
+  margin-top: 30px;
+}
+
+.container--margin-top {
+  margin-top: 0;
+}
+
+.section {
+  margin-bottom: $section-margin-bottom;
+
+  &--no-margin {
+    margin-bottom: 0;
+  }
+}
+
+svg {
+  transition: all 0.25s ease-in-out;
+  overflow: hidden;
+  vertical-align: middle;
+  fill: #ffffff;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.none {
+  @include mq($from: tablet-wide) {
+    display: none;
+  }
+}
+
+.active {
+  color: #949090;
+
+  &:hover {
+    color: #949090;
+  }
+}

@@ -1,0 +1,71 @@
+.calc__body {
+	background-color: #8B8B8B;
+}
+
+.calc {
+	
+}
+
+.calc__sheet,
+.calc__profile-pipe {
+	display: none;
+}
+.active {
+	display: block;
+}
+
+.disabled {
+	display: none;
+}
+
+.metal {
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+	margin-bottom: 20px;
+	
+}
+
+.calc__form {
+	display: flex;
+	flex-direction: column;
+	background-color: purple;
+}
+
+label {
+	position: relative;
+	margin-bottom: 10px;
+	width: 100%;
+	font-size: 18px;
+}
+
+label > input {
+ }
+
+ .result__box {
+	position: relative;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+ }
+
+
+#mass,
+#area,
+#mass1,
+#area1 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40%;
+  height: 30px;
+	margin: 0;
+  border: 2px solid black;
+}
+
+.development-page {
+	text-align: center;
+	color: #cf2d2d;
+	font-size: 24px;
+	font-weight: 600;
+}

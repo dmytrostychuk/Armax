@@ -1,0 +1,13 @@
+.map {
+  max-width: 2060px;
+  margin: 0 auto;
+
+  iframe {
+    width: 100%;
+    height: 350px;
+
+    @include mq($from: desktop) {
+      height: 500px;
+    }
+  }
+}

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ArmaxMG</title>
+	<link rel="stylesheet" href="styles/style-min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	<link rel="website icon" type="png" href="../img/pngegg.png" />
+
+</head>
+
+<body>
+	<svg style="display: none">
+		<symbol id="location" viewBox="0 0 1024 1024">
+			<g>
+				<path
+					d="M512 64c-175.8 0-318.3 134.6-318.3 300.5 0 222.9 195.5 430.8 280.1 510.3 21.3 20.1 55.7 20.3 77.4 0.6 85.1-77.2 279.2-278.7 279.2-510.9C830.3 198.6 687.8 64 512 64z m0 401.1c-56.9 0-103.1-46.2-103.1-103.1S455.1 258.9 512 258.9c56.9 0 103.1 46.2 103.1 103.1S568.9 465.1 512 465.1z" />
+				<path d="M364.5 926.5a147.5 21.5 0 1 0 295 0 147.5 21.5 0 1 0-295 0Z" />
+			</g>
+		</symbol>
+
+		<symbol id="phone" viewBox="0 0 477.156 477.156">
+			<g>
+				<path d="M475.009,380.316l-2.375-7.156c-5.625-16.719-24.062-34.156-41-38.75l-62.688-17.125c-17-4.625-41.25,1.594-53.688,14.031
+          l-22.688,22.688c-82.453-22.28-147.109-86.938-169.359-169.375L145.9,161.94c12.438-12.438,18.656-36.656,14.031-53.656
+          l-17.094-62.719c-4.625-16.969-22.094-35.406-38.781-40.969L96.9,2.19c-16.719-5.563-40.563,0.063-53,12.5L9.962,48.659
+          C3.899,54.69,0.024,71.94,0.024,72.003c-1.187,107.75,41.063,211.562,117.281,287.781
+          c76.031,76.031,179.454,118.219,286.891,117.313c0.562,0,18.312-3.813,24.375-9.845l33.938-33.938
+          C474.946,420.878,480.571,397.035,475.009,380.316z" />
+			</g>
+		</symbol>
+
+		<symbol id="mail" viewBox="0 0 64 64">
+			<g>
+				<path
+					d="M63.125,9.977c-0.902-1.321-2.419-2.194-4.131-2.194H5.006c-1.676,0-3.158,0.842-4.067,2.117l31.16,25.982L63.125,9.977z" />
+				<path d="M0.006,14.328v36.889c0,2.75,2.25,5,5,5h53.988c2.75,0,5-2.25,5-5V14.461L32.099,41.09L0.006,14.328z" />
+			</g>
+		</symbol>
+
+		<symbol id="clock" viewBox="0 0 485.213 485.212">
+			<g>
+				<path d="M242.607,0C108.629,0,0.001,108.628,0.001,242.606c0,133.976,108.628,242.606,242.606,242.606
+          c133.978,0,242.604-108.631,242.604-242.606C485.212,108.628,376.585,0,242.607,0z M257.771,454.116v-29.557h-30.327v29.557
+          c-104.925-7.458-188.883-91.419-196.346-196.344h29.554v-30.327H31.098c7.463-104.928,91.421-188.886,196.346-196.349v29.554
+          h30.327V31.097c104.926,7.462,188.882,91.421,196.344,196.349h-29.552v30.327h29.552
+          C446.652,362.697,362.696,446.658,257.771,454.116z M354.226,178.163c2.072,3.615,0.83,8.266-2.782,10.368l-80.092,46.227
+          c0.691,2.577,1.582,5.066,1.582,7.848c0,16.762-13.581,30.324-30.326,30.324c-16.75,0-30.327-13.562-30.327-30.324l-82.299-47.503
+          c-7.257-4.203-9.743-13.474-5.554-20.729c4.174-7.285,13.459-9.771,20.715-5.565l82.775,47.798
+          c4.411-2.487,9.239-4.324,14.69-4.324c8.471,0,16.092,3.494,21.604,9.122l79.648-46.024
+          C347.416,173.277,352.064,174.521,354.226,178.163z" />
+			</g>
+		</symbol>
+
+		<symbol id="facebook" viewBox="0 0 24 24">
+			<g>
+				<path
+					d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0" />
+			</g>
+		</symbol>
+
+		<symbol id="telegram" viewBox="0 0 24 24">
+			<g>
+				<path
+					d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z" />
+			</g>
+		</symbol>
+		<symbol id="сalendar" viewBox="-6 0 32 32">
+			<path
+				d="M0 10v14.875c0 0.813 0.688 1.5 1.531 1.5h17.25c0.844 0 1.531-0.688 1.531-1.5v-14.875c0-0.813-0.688-1.5-1.531-1.5h-1.75v-0.156c0-0.531-0.156-1.125-0.531-1.563-0.406-0.406-1.031-0.719-1.938-0.719-0.938 0-1.563 0.313-1.938 0.719-0.406 0.438-0.563 1.031-0.563 1.563v0.156h-3.813v-0.156c0-0.531-0.156-1.125-0.531-1.563-0.406-0.406-1.031-0.719-1.969-0.719-0.906 0-1.531 0.313-1.906 0.719-0.406 0.438-0.563 1.031-0.563 1.563v0.156h-1.75c-0.844 0-1.531 0.688-1.531 1.5zM2.063 24.344v-3.25h3.656v3.25h-3.656zM2.063 20.594v-3.25h3.656v3.25h-3.656zM2.063 16.844v-3.281h3.656v3.281h-3.656zM4.781 10.969v-2.625c0-0.5 0.313-0.75 0.969-0.75 0.688 0 1 0.25 1 0.75v2.625c0 0.5-0.313 0.75-1 0.75-0.656 0-0.969-0.25-0.969-0.75zM6.219 24.344v-3.25h3.688v3.25h-3.688zM6.219 20.594v-3.25h3.688v3.25h-3.688zM6.219 16.844v-3.281h3.688v3.281h-3.688zM10.406 24.344v-3.25h3.688v3.25h-3.688zM10.406 20.594v-3.25h3.688v3.25h-3.688zM10.406 16.844v-3.281h3.688v3.281h-3.688zM14.594 24.344v-3.25h3.656v3.25h-3.656zM14.594 20.594v-3.25h3.656v3.25h-3.656zM14.594 16.844v-3.281h3.656v3.281h-3.656zM13.563 10.969v-2.625c0-0.5 0.313-0.75 1-0.75 0.625 0 0.969 0.25 0.969 0.75v2.625c0 0.5-0.313 0.75-0.969 0.75-0.688 0-1-0.25-1-0.75z">
+			</path>
+
+		</symbol>
+	</svg>
+
+	<header class="header-product">
+
+		<div class="header__background-ag"></div>
+		<div class="nav__social--desktop-wrap">
+			<div class="nav__social--desktop container">
+				<ul class="nav__social-list--desktop">
+					<li class="nav__social-item">
+						<a class="link-social link--hover" href="tel:+380687945051">
+							<svg class="link-social--svg" width="30" height="20">
+								<use xlink:href="#phone"></use>
+							</svg>
+							+38 (096) 123 91 21
+						</a>
+					</li>
+					<li class="nav__social-item">
+						<a href="mailto:lazerarmax@gmail.com" class="link-social link--hover">
+							<svg class="link-social--svg" width="30" height="20">
+								<use xlink:href="#mail"></use>
+							</svg>
+							armax.km@gmail.com
+						</a>
+					</li>
+				</ul>
+
+				<div class="nav__container">
+					<div class="header__lang">
+						<button class="header__btn" data-btn="ua">UA</button>
+						<button class="header__btn" data-btn="en">EN</button>
+						<button class="header__btn" data-btn="de">DE</button>
+					</div>
+					<ul class="nav__social-list--desktop nav__social-list--svg">
+						<li class="nav__social-item">
+							<a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
+								<svg class="link-social--svg" width="25" height="25">
+									<use xlink:href="#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="nav__social-item">
+							<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
+								class="link-social link--hover">
+								<svg class="link-social--svg" width="25" height="25">
+									<use xlink:href="#location"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="header__container container">
+
+			<div class="menu menu-product">
+
+				<div class="menu__container">
+					<button class="burger-btn"><span></span></button>
+					<h1 class="menu__title">
+						<a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.png" alt="" /></a>
+					</h1>
+					<div class="header__lang nav__list-social">
+						<button class="header__btn" data-btn="ua">UA</button>
+						<button class="header__btn" data-btn="en">EN</button>
+						<button class="header__btn" data-btn="de">DE</button>
+					</div>
+				</div>
+
+				<nav class="nav">
+					<div class="nav__inner">
+						<ul class="nav__list">
+
+							<li class="nav__item">
+								<a href="about-us.html" class="link-hover" data-lang="nav_page-2"></a>
+							</li>
+							<li class="nav__item">
+								<a href="contacts.html" class="link-hover" data-lang="nav_page-3"></a>
+							</li>
+							<li class="nav__item">
+								<a href="product.html" class="link--active nav__item-link" data-lang="nav_page-4"></a>
+								<div class="dropdown">
+									<a href="ag-equipment.html" class="link__dropdown link-hover" data-lang="nav_page-5"></a>
+									<a href="furniture-elements.html" class="link__dropdown link-hover" data-lang="nav_page-6"></a>
+									<a href="decor-elements.html" class="link__dropdown link-hover" data-lang="nav_page-7"></a>
+									<a href="сustom-orders.html" class="link__dropdown link-hover" data-lang="nav_page-8"></a>
+
+								</div>
+							</li>
+							<li class="nav__item">
+								<a href="services.html" class="link-hover" data-lang="nav_page-1"></a>
+								<div class="dropdown dropdown--width">
+									<a href="lazer.html" class="link__dropdown link-hover " data-lang="footer_page-6-1"></a>
+									<a href="sheet-bending.html" class="link__dropdown link-hover" data-lang="footer_page-7-1"></a>
+									<a href="dyeing.html" class="link__dropdown link-hover" data-lang="footer_page-8-1"></a>
+									<a href="welding.html" class="link__dropdown link-hover" data-lang="footer_page-9-1"></a>
+									<a href="locksmith.html" class="link__dropdown link-hover" data-lang="footer_page-10-1"></a>
+									<a href="mechanical-processing.html" class="link__dropdown link-hover"
+										data-lang="footer_page-11-1"></a>
+								</div>
+							</li>
+
+						</ul>
+
+						<ul class="nav__list nav__list-social">
+							<li class="nav__item-social">
+								<a class="link-social link--hover" href="tel:+380687945051">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#phone"></use>
+									</svg>
+									+38 (096) 123 91 21
+								</a>
+							</li>
+							<li class="nav__item-social">
+								<a href="mailto:lazerarmax@gmail.com" class="link-social link--hover">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#mail"></use>
+									</svg>
+									armax.km@gmail.com
+								</a>
+							</li>
+							<li class="nav__item-social">
+								<a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#facebook"></use>
+									</svg>
+									<span class="none">facebook.com/armaxMG/</span>
+								</a>
+							</li>
+							<li class="nav__item-social">
+								<a href="https://www.google.com/maps/place/%D0%A2%D0%B7%D0%9E%D0%92,+%D0%90%D1%80%D0%BC%D0%B0%D0%BA%D1%81+%D0%9C%D0%93/@50.83233,25.453636,18z/data=!4m5!3m4!1s0x0:0x3edf65d8017ef30a!8m2!3d50.8324517!4d25.4532672?hl=uk"
+									class="link-social link--hover">
+									<svg class="link-social--svg" width="30" height="30">
+										<use xlink:href="#location"></use>
+									</svg>
+									<span class="none">45200 м. Ківерці, вул.Грушевського 26</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+
+			<div class="header__content--container">
+				<div class="header__content-product ">
+					<h1 class="product__title" data-lang="wara_page-3-1">
+					</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="container">
+			<div class="bucket">
+				<h2 class="section__title"><a href="front-loaders.html" class="section__link">Для фронтальних навантужувачів</a>
+				</h2>
+
+				<section>
+
+					<div class="swiper swiper__product mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="../img/cards/gak-big-beg/gak-big-beg-1.png" alt="" width="100%">
+										</div>
+										<div class="product__content">
+											<p class="product__code">№1</p>
+											<p class="product__name">Гак для біг бегів</p>
+
+											<p class="product__price">29 000 ₴</p>
+										</div>
+										<a href="../kovsh/card1.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-04</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-04</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-04</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-05</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+						</div>
+						<div class="swiper-button-prev">
+							<img src="img/arow-prev.svg" alt="prev" width="30" height="50" />
+						</div>
+						<div class="swiper-button-next">
+							<img src="img/arow-next.svg" alt="next" width="30" height="50" />
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="bucket">
+				<h2 class="section__title"><a href="#" class="section__link">Для ескаваторів</a></h2>
+				<section>
+					<div class="swiper swiper__product mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-01</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-02</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-03</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-04</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-05</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+						</div>
+						<div class="swiper-button-prev">
+							<img src="img/arow-prev.svg" alt="prev" width="30" height="50" />
+						</div>
+						<div class="swiper-button-next">
+							<img src="img/arow-next.svg" alt="next" width="30" height="50" />
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="bucket">
+				<h2 class="section__title"><a href="#" class="section__link">Для міні-навантажувачів</a></h2>
+				<section>
+					<div class="swiper swiper__product mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-01</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-02</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-03</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-04</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-05</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+						</div>
+						<div class="swiper-button-prev">
+							<img src="img/arow-prev.svg" alt="prev" width="30" height="50" />
+						</div>
+						<div class="swiper-button-next">
+							<img src="img/arow-next.svg" alt="next" width="30" height="50" />
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="bucket">
+				<h2 class="section__title"><a href="#" class="section__link">Для тракторів</a></h2>
+				<section>
+					<div class="swiper swiper__product mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-01</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-02</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-03</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-04</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="img/mo-2/mo-1.1.png" alt="" width="100">
+										</div>
+										<div class="product__content">
+											<p class="product__name">Ківш зерновий</p>
+											<p class="product__code">KVSH-05</p>
+											<p class="product__price">51 600 ₴</p>
+										</div>
+										<a href="SM-01.html" class="product__link"></a>
+								</article>
+							</div>
+						</div>
+						<div class="swiper-button-prev">
+							<img src="img/arow-prev.svg" alt="prev" width="30" height="50" />
+						</div>
+						<div class="swiper-button-next">
+							<img src="img/arow-next.svg" alt="next" width="30" height="50" />
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__bootom">
+			<div class="container">
+				<div class="info">
+					<div class="info__block info__menu">
+						<h5 class="info__title" data-lang="footer_page-1"></h5>
+						<ul>
+							<li class="info__item">
+								<a class="info__link" href="services.html" data-lang="footer_page-2"></a>
+							</li>
+							<li class="info__item">
+								<a class="info__link" href="about-us.html" data-lang="footer_page-3"></a>
+							</li>
+							<li class="info__item">
+								<a class="info__link" href="contacts.html" data-lang="footer_page-4"></a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="info__block info__schedule">
+						<h5 class="info__title" data-lang="footer_page-5"></h5>
+						<ul class="info__list">
+							<li class="info__item">
+								<a href="lazer.html" class="info__link" data-lang="footer_page-6"></a>
+							</li>
+							<li class="info__item">
+								<a href="sheet-bending.html" class="info__link" data-lang="footer_page-7"></a>
+							</li>
+							<li class="info__item">
+								<a href="dyeing.html" class="info__link" data-lang="footer_page-8"></a>
+							</li>
+							<li class="info__item">
+								<a href="welding.html" class="info__link" data-lang="footer_page-9"></a>
+							</li>
+							<li class="info__item">
+								<a href="locksmith.html" class="info__link" data-lang="footer_page-10"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="info__block info__address">
+						<h5 class="info__title" data-lang="footer_page-11"></h5>
+						<ul class="info__list">
+							<li class="info__item">
+								<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
+									class="link-social link--hover" data-lang="footer_page-12">
+
+								</a>
+								<svg class="link-social--svg" width="30" height="30">
+									<use xlink:href="#location"></use>
+								</svg>
+							</li>
+							<li class="info__item info__item--color">
+								<a href="" class="link-social " id="disabledLink" data-lang="footer_page-13"></a>
+								<svg class="clock-svg link-social--svg" width="25" height="25">
+									<use xlink:href="#clock"></use>
+								</svg>
+							</li>
+
+						</ul>
+					</div>
+
+					<div class="info__block info__contact">
+						<h5 class="info__title" data-lang="footer_page-14"></h5>
+						<ul class="info__list">
+							<li class="info__item">
+								<a class="link-social link--hover" href="tel:+380687945051">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#phone"></use>
+									</svg>
+									+38 (096) 123 91 21
+								</a>
+							</li>
+							<li class="info__item">
+								<a class="link-social link--hover" href="tel:+380687945051">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#phone"></use>
+									</svg>
+									+38 (099) 225 50 51
+								</a>
+							</li>
+							<li class="info__item">
+								<a href="mailto:lazerarmax@gmail.com" class="link-social link--hover">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#mail"></use>
+									</svg>
+									armax.km@gmail.com
+								</a>
+							</li>
+							<li class="info__item">
+								<a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#facebook"></use>
+									</svg>
+									facebook.com/armaxMG/
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/lang.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="js/index.js"></script>
+
+	<script src="js/swiper.js"></script>
+
+	<script src="js/fslightbox.js"></script>
+
+	<script src="https://kit.fontawesome.com/fce9a50d02.js" crossorigin="anonymous"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>

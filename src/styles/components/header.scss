@@ -1,0 +1,77 @@
+.header {
+  position: relative;
+  height: 880px;
+
+  @include mq($from: phablet) {
+    height: 700px;
+  }
+
+  @include mq($from: tablet-wide) {
+    height: 800px;
+  }
+}
+
+.header__container {
+  margin: 0 auto;
+}
+
+.header__background {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  position: absolute;
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
+    url('../img/lazer.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-product {
+  height: 30vh;
+  @include mq($from: tablet-wide) {
+    height: 70vh;
+  }
+}
+
+.header__background-product {
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
+    url('../img/metal-products.jpg');
+
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__background-ag {
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
+    url('../img/product-bucket.jpg');
+
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__background-fe {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
+    url('../img/product-furniture-elements.jpg');
+}
+
+.header__background-de {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
+    url('../img/product-decore-element.jpg');
+}
+
+.header__background-co {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
+    url('../img/product-individual.jpg');
+}
