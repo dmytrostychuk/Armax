@@ -21,6 +21,7 @@ const homeTexts = {
     en: 'Contacts',
     de: 'Kontakte',
   },
+<<<<<<< HEAD
   'nav_page-4': {
     ua: 'Продукти',
     en: 'Products',
@@ -71,6 +72,8 @@ const homeTexts = {
     en: 'News',
     de: 'Nachrichten',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'header__content_page-1': {
     ua: 'Металообробка будь-якої складності на замовлення.',
     en: 'Metal processing of any complexity on order.',
@@ -239,47 +242,63 @@ const homeTexts = {
     de: 'Dank jahrelanger Erfahrung garantieren wir die Lieferung unserer Produkte in jeder Situation.',
   },
   'wara_page-1': {
+<<<<<<< HEAD
     ua: 'Наші продукти',
     en: 'Our products',
     de: 'Unsere Produkte',
+=======
+    ua: 'Каталог продукції',
+    en: 'Product catalog',
+    de: 'Produktkatalog',
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   },
   'wara_page-2': {
     ua: 'Меблеві елементи',
     en: 'Furniture elements',
     de: 'Möbelelemente',
   },
+<<<<<<< HEAD
 
   'wara_page-2-1': {
     ua: 'Меблеві елементи',
     en: 'Furniture elements',
     de: 'Möbelelemente',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'wara_page-3': {
     ua: 'СГ обладнання',
     en: 'Agricultural equipment',
     de: 'Landwirtschaftliche Ausrüstung',
   },
+<<<<<<< HEAD
 
   'wara_page-3-1': {
     ua: 'СГ обладнання',
     en: 'Agricultural equipment',
     de: 'Landwirtschaftliche Ausrüstung',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'wara_page-4': {
     ua: 'Елементи декору',
     en: 'Decorative elements',
     de: 'Dekorative Elemente',
   },
+<<<<<<< HEAD
   'wara_page-4-1': {
     ua: 'Елементи декору',
     en: 'Decorative elements',
     de: 'Dekorative Elemente',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'wara_page-5': {
     ua: 'Індивідуальні проекти',
     en: 'Custom projects',
     de: 'Individuelle Projekte',
   },
+<<<<<<< HEAD
   'wara_page-5-1': {
     ua: 'Індивідуальні проекти',
     en: 'Custom projects',
@@ -291,6 +310,8 @@ const homeTexts = {
     de: 'Nachrichten',
   },
 
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'partners_page-1': {
     ua: 'Наші партнери',
     en: 'Our partners',
@@ -368,47 +389,60 @@ const homeTexts = {
     en: 'Laser cutting',
     de: 'Laser-Schneiden',
   },
+<<<<<<< HEAD
 
   'footer_page-6-1': {
     ua: 'Лазерна порізка',
     en: 'Laser cutting',
     de: 'Laser-Schneiden',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'footer_page-7': {
     ua: 'Гнуття деталей',
     en: 'Bending of parts',
     de: 'Biegen von Teilen',
   },
+<<<<<<< HEAD
   'footer_page-7-1': {
     ua: 'Гнуття деталей',
     en: 'Bending of parts',
     de: 'Biegen von Teilen',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'footer_page-8': {
     ua: 'Порошкове фарбування',
     en: 'Powder coating',
     de: 'Pulverbeschichtung',
   },
+<<<<<<< HEAD
   'footer_page-8-1': {
     ua: 'Порошкове фарбування',
     en: 'Powder coating',
     de: 'Pulverbeschichtung',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'footer_page-9': {
     ua: 'Зварювальні роботи',
     en: 'Welding works',
     de: 'Schweißarbeiten',
   },
+<<<<<<< HEAD
   'footer_page-9-1': {
     ua: 'Зварювальні роботи',
     en: 'Welding works',
     de: 'Schweißarbeiten',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'footer_page-10': {
     ua: 'Слюсарні роботи',
     en: 'Locksmith works',
     de: 'Schlosserarbeiten',
   },
+<<<<<<< HEAD
   'footer_page-10-1': {
     ua: 'Слюсарні роботи',
     en: 'Locksmith works',
@@ -419,6 +453,8 @@ const homeTexts = {
     en: 'Mechanical processing',
     de: 'Mechanische Bearbeitung',
   },
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
   'footer_page-11': {
     ua: 'Адреса',
     en: 'Address',
@@ -672,6 +708,7 @@ const homeTexts = {
     en: '100kg',
     de: '100kg',
   },
+<<<<<<< HEAD
 
   'd-header_page-17': {
     ua: ' 60 ',
@@ -2284,6 +2321,578 @@ const homeTexts = {
 };
 
 // Перевіряємо шлях сторінки і задаємо текстові змінні
+=======
+
+  'd-header_page-17': {
+    ua: ' 60 ',
+    en: ' 60 ',
+    de: ' 60 ',
+  },
+  'd-header_page-18': {
+    ua: ' 200 мкм.',
+    en: ' 200 microns.',
+    de: ' 200 Mikrometer.',
+  },
+  'd-header_page-19': {
+    ua: '150°',
+    en: '150°',
+    de: '150°',
+  },
+  'd-header_page-20': {
+    ua: '240°',
+    en: '240°',
+    de: '240°',
+  },
+
+  'd-price_page-1': {
+    ua: 'Ціна фарбування металу',
+    en: 'Metal painting price',
+    de: 'Metalllackierungspreis',
+  },
+  'd-price_page-2': {
+    ua: 'Щоб ми могли зробити точний розрахунок вартості послуг фарбування та терміни виконання замовлення, нам необхідно отримати від Вас повну інформацію про виріб, детальне технічне завдання або креслення. Ціни на послуги із фарбування визначається за такими основними критеріями як:',
+    en: 'In order for us to make an accurate calculation of the cost of painting services and the timing of order fulfillment, we need to receive from you full information about the product, detailed technical specifications or drawings. Prices for painting services are determined by such basic criteria as:',
+    de: 'Um eine genaue Kalkulation der Kosten für Lackierdienstleistungen und die Termine für die Auftragsabwicklung vornehmen zu können, benötigen wir von Ihnen vollständige Informationen über das Produkt, detaillierte technische Spezifikationen oder Zeichnungen. Die Preise für Lackierdienstleistungen werden anhand solcher grundlegender Kriterien bestimmt wie:',
+  },
+  'd-price_page-4': {
+    ua: 'Площа фарбування;',
+    en: 'Painting area;',
+    de: 'Lackierfläche;',
+  },
+  'd-price_page-5': {
+    ua: 'Геометрична форма виробу;',
+    en: 'Geometric shape of the product;',
+    de: 'Geometrische Form des Produkts;',
+  },
+  'd-price_page-6': {
+    ua: 'Ступінь готовності поверхні до фарбування;',
+    en: 'Surface readiness for painting;',
+    de: 'Oberflächenbereitschaft für die Lackierung;',
+  },
+  'd-price_page-7': {
+    ua: 'Габаритні розміри;',
+    en: 'Overall dimensions;',
+    de: 'Gesamtabmessungen;',
+  },
+  'd-price_page-8': {
+    ua: 'Матеріал виготовлення;',
+    en: 'Material of manufacture;',
+    de: 'Herstellungsmaterial;',
+  },
+  //------------lazer
+  'l-header_page-1': {
+    ua: 'Лазерна різка металу',
+    en: '',
+    de: '',
+  },
+  'l-header_page-2': {
+    ua: 'Лазерна різка металу – один з найбільш сучасних, ефективних, високоточних і економічно вигідних способів розкрою та порізки різних металів.',
+    en: '',
+    de: '',
+  },
+  'l-header_page-1': {
+    ua: 'Лазерна різка металу',
+    en: 'Metal laser cutting',
+    de: 'Metall-Laserschneiden',
+  },
+  'l-header_page-2': {
+    ua: 'Лазерна різка металу – один з найбільш сучасних, ефективних, високоточних і економічно вигідних способів розкрою та порізки різних металів.',
+    en: 'Metal laser cutting is one of the most modern, efficient, precise, and economically advantageous methods of cutting various metals.',
+    de: 'Das Laserschneiden von Metall ist eine der modernsten, effizientesten, präzisesten und wirtschaftlich vorteilhaftesten Methoden zum Schneiden verschiedener Metalle.',
+  },
+  'l-char_page-1': {
+    ua: 'Основні характеристики лазерного різання металу Armax MG',
+    en: 'Main characteristics of Armax MG metal laser cutting',
+    de: 'Hauptmerkmale des Metall-Laserschneidens Armax MG',
+  },
+  'l-char_page-2': {
+    ua: 'Ermaxan FIBERMAK (Турція)',
+    en: 'Ermaxan FIBERMAK (Turkey)',
+    de: 'Ermaxan FIBERMAK (Türkei)',
+  },
+  'l-char_page-3': {
+    ua: 'Максимальні розміри листа:',
+    en: 'Maximum sheet dimensions:',
+    de: 'Maximale Blechabmessungen:',
+  },
+  'l-char_page-4': {
+    ua: 'Розмір робочої поверхні –',
+    en: 'Work surface size -',
+    de: 'Arbeitsflächengröße -',
+  },
+  'l-char_page-5': {
+    ua: '6000 × 2000мм',
+    en: '6000 × 2000mm',
+    de: '6000 × 2000mm',
+  },
+  'l-char_page-6': {
+    ua: 'Максимальна товщина різу:',
+    en: 'Maximum cutting thickness:',
+    de: 'Maximale Schnittstärke:',
+  },
+  'l-char_page-7': {
+    ua: 'Чорний метал:',
+    en: 'Black metal:',
+    de: 'Schwarzes Metall:',
+  },
+  'l-char_page-8': {
+    ua: ' 20 мм',
+    en: ' 20 mm',
+    de: ' 20 mm',
+  },
+  'l-char_page-9': {
+    ua: 'Нержавіюча сталь:',
+    en: 'Stainless steel:',
+    de: 'Edelstahl:',
+  },
+  'l-char_page-10': {
+    ua: '10 мм',
+    en: '10 mm',
+    de: '10 mm',
+  },
+  'l-char_page-11': {
+    ua: 'Алюміній:',
+    en: 'Aluminum:',
+    de: 'Aluminium:',
+  },
+  'l-char_page-12': {
+    ua: '6 мм',
+    en: '6 mm',
+    de: '6 mm',
+  },
+  'l-char_page-13': {
+    ua: 'Точність позиціонування',
+    en: 'Positioning accuracy',
+    de: 'Positioniergenauigkeit',
+  },
+  'l-char_page-14': {
+    ua: 'Точність позиціонування нашого лазера –',
+    en: 'The positioning accuracy of our laser is -',
+    de: 'Die Positioniergenauigkeit unseres Lasers beträgt -',
+  },
+  'l-char_page-15': {
+    ua: '0,01 мм',
+    en: '0.01 mm',
+    de: '0,01 mm',
+  },
+  'l-price_page-1': {
+    ua: 'Ціна лазерної різки металу',
+    en: 'Metal laser cutting price',
+    de: 'Preis für Metall-Laserschneiden',
+  },
+  'l-price_page-2': {
+    ua: 'Щоб ми могли зробити точний розрахунок вартості лазерного різання металу та терміни виконання послуги, нам необхідно отримати від Вас повну інформацію про виріб, детальне технічне завдання або креслення. Ціни на послуги лазерного різання визначається за такими основними критеріями як:',
+    en: 'In order for us to make an accurate calculation of the cost of metal laser cutting and the timing of service execution, we need to receive from you full information about the product, detailed technical specifications or drawings. Prices for laser cutting services are determined by such basic criteria as:',
+    de: 'Um eine genaue Kalkulation der Kosten für das Laserschneiden von Metall und die Termine für die Ausführung des Service vornehmen zu können, benötigen wir von Ihnen vollständige Informationen über das Produkt, detaillierte technische Spezifikationen oder Zeichnungen. Die Preise für Laserschneidedienste werden anhand solcher grundlegender Kriterien bestimmt wie:',
+  },
+  'l-price_page-3': {
+    ua: 'Вид та марка металу який Вам потрібно порізати;',
+    en: 'Type and brand of metal you need to cut;',
+    de: 'Art und Marke des Metalls, das Sie schneiden müssen;',
+  },
+  'l-price_page-4': {
+    ua: 'Обсяг замовлення;',
+    en: 'Order volume;',
+    de: 'Auftragsvolumen;',
+  },
+  'l-price_page-5': {
+    ua: 'Складність робіт, залежно від деталі;',
+    en: 'Complexity of work, depending on the detail;',
+    de: 'Komplexität der Arbeit, abhängig vom Detail;',
+  },
+  'l-price_page-6': {
+    ua: 'Давальницька чи власна сировина буде використовуватись в замовленні;',
+    en: 'Supplier or own raw materials will be used in the order;',
+    de: 'Lieferant oder eigene Rohstoffe werden für die Bestellung verwendet;',
+  },
+  'l-price_page-7': {
+    ua: 'Строки виконання замовлення;',
+    en: 'Order execution timeframes;',
+    de: 'Auftragsausführungsfristen;',
+  },
+  //------------locksmith
+  'ls-header-page-1': {
+    ua: 'Слюсарні роботи',
+    en: 'Locksmith works',
+    de: 'Schlosserarbeiten',
+  },
+  'ls-header-page-2': {
+    ua: 'Наша компанія надає послуги зі cлюсарних роботи на сучасному обладнанні, за вигідними цінами та у погоджені терміни!',
+    en: 'Our company provides locksmith services on modern equipment, at favorable prices and within agreed terms!',
+    de: 'Unser Unternehmen bietet Schlosserdienstleistungen an modernen Geräten, zu günstigen Preisen und innerhalb vereinbarter Fristen!',
+  },
+  'ls-char-page-1': {
+    ua: 'Основні види слюсарних робіт Armax MG',
+    en: 'Main types of locksmith works at Armax MG',
+    de: 'Haupttypen von Schlosserarbeiten bei Armax MG',
+  },
+  'ls-char-page-2': {
+    ua: 'Зачищення швів після зварювання.',
+    en: 'Cleaning weld seams.',
+    de: 'Reinigung der Schweißnähte.',
+  },
+  'ls-char-page-3': {
+    ua: 'Свердління отворів.',
+    en: 'Drilling holes.',
+    de: 'Bohren von Löchern.',
+  },
+  'ls-char-page-4': {
+    ua: 'Стрічко пиляльні роботи.',
+    en: 'Band sawing work.',
+    de: 'Bandsägearbeit.',
+  },
+  'ls-price-page-1': {
+    ua: 'Ціна зварювання металу',
+    en: 'Metal welding price',
+    de: 'Metallschweißpreis',
+  },
+  'ls-price-page-2': {
+    ua: 'Щоб ми могли зробити точний розрахунок вартості',
+    en: 'In order for us to make an accurate calculation of the cost',
+    de: 'Damit wir eine genaue Berechnung des Preises vornehmen können',
+  },
+  'ls-price-page-3': {
+    ua: 'слюсарних робіт',
+    en: 'locksmith works',
+    de: 'Schlosserarbeiten',
+  },
+  'ls-price-page-4': {
+    ua: 'та терміни виконання послуги, нам необхідно отримати від Вас повну інформацію про виріб, детальне технічне завдання або креслення. Ціни на послуги',
+    en: 'and the timing of the service, we need to receive full information from you about the product, detailed technical specifications, or drawings. Prices for services',
+    de: 'und die Ausführungsfristen des Dienstes benötigen wir von Ihnen vollständige Informationen über das Produkt, detaillierte technische Spezifikationen oder Zeichnungen. Preise für Dienstleistungen',
+  },
+  'ls-price-page-5': {
+    ua: 'слюсарних робіт',
+    en: 'locksmith works',
+    de: 'Schlosserarbeiten',
+  },
+  'ls-price-page-6': {
+    ua: 'Cкладності робіт;',
+    en: 'Work complexity;',
+    de: 'Arbeitskomplexität;',
+  },
+  'ls-price-page-7': {
+    ua: 'Виду металу;',
+    en: 'Type of metal;',
+    de: 'Metallart;',
+  },
+  'ls-price-page-8': {
+    ua: 'Додаткових видів механічної обробки;',
+    en: 'Additional types of mechanical processing;',
+    de: 'Zusätzliche Arten mechanischer Bearbeitung;',
+  },
+  'ls-price-page-9': {
+    ua: 'Строки виконання замовлення;',
+    en: 'Order execution timeframes;',
+    de: 'Auftragsausführungsfristen;',
+  },
+  'ls-price-page-10': {
+    ua: 'визначається за такими основними критеріями як:',
+    en: 'is determined by such basic criteria as:',
+    de: 'wird anhand solcher grundlegender Kriterien bestimmt wie:',
+  },
+  's-header_pag-1': {
+    ua: 'Наші послуги',
+    en: 'Our services',
+    de: 'Unsere Dienstleistungen',
+  },
+  's-services_page-1': {
+    ua: 'Зварювальні роботи',
+    en: 'Welding works',
+    de: 'Schweißarbeiten',
+  },
+  's-services_page-2': {
+    ua: 'Зварювання металу — це процес сплавлення двох металевих частин разом, із застосуванням тепла та тиску для утворення міцного зв`язку металу. Тепло генерується електричною дугою або полум`ям, а тиск прикладається за допомогою зварювального інструменту.',
+    en: 'Metal welding is the process of melting two metal parts together, using heat and pressure to form a strong metal bond. Heat is generated by an electric arc or flame, and pressure is applied using a welding tool.',
+    de: 'Metallschweißen ist der Prozess des Schmelzens zweier Metallteile zusammen unter Verwendung von Hitze und Druck zur Bildung einer starken Metallverbindung. Die Hitze wird durch einen Lichtbogen oder eine Flamme erzeugt, und der Druck wird mit einem Schweißwerkzeug ausgeübt.',
+  },
+  's-services_page-3': {
+    ua: 'Детальніше',
+    en: 'Learn more',
+    de: 'Erfahren Sie mehr',
+  },
+  's-services_page-4': {
+    ua: 'Слюсарні роботи',
+    en: 'Locksmith works',
+    de: 'Schlosserarbeiten',
+  },
+  's-services_page-5': {
+    ua: 'Слюсарні роботи — це процес обробки металів, який зазвичай доповнює інші види металообробки і доводить виріб до готового стану.',
+    en: 'Locksmith works are the process of metal processing, which typically complements other types of metalworking and brings the product to a finished state.',
+    de: 'Schlosserarbeiten sind der Prozess der Metallverarbeitung, der in der Regel andere Arten der Metallbearbeitung ergänzt und das Produkt in einen fertigen Zustand bringt.',
+  },
+  's-services_page-6': {
+    ua: 'Детальніше',
+    en: 'Learn more',
+    de: 'Erfahren Sie mehr',
+  },
+  's-services_page-7': {
+    ua: 'Розробка КД',
+    en: 'Development of design documentation',
+    de: 'Entwicklung von Konstruktionsdokumentation',
+  },
+  's-services_page-8': {
+    ua: 'Розробка КД документації',
+    en: 'Development of design documentation',
+    de: 'Entwicklung von Konstruktionsdokumentation',
+  },
+  's-services_page-9': {
+    ua: 'Детальніше',
+    en: 'Learn more',
+    de: 'Erfahren Sie mehr',
+  },
+  //-----------sheet bending
+  'sd-header_page-1': {
+    ua: 'Гнуття металу',
+    en: 'Metal bending',
+    de: 'Metallbiegung',
+  },
+  'sd-header_page-2': {
+    ua: 'Наша компанія пропонує послуги зі згинання листового металу на сучасному обладнанні, за вигідними цінами та у узгоджені терміни!',
+    en: 'Our company offers services for bending sheet metal on modern equipment, at favorable prices and within agreed terms!',
+    de: 'Unser Unternehmen bietet Dienstleistungen für das Biegen von Blech auf modernen Anlagen zu günstigen Preisen und innerhalb vereinbarter Fristen an!',
+  },
+  'sd-char_page-1': {
+    ua: 'Основні характеристики листозгину Armax MG',
+    en: 'Main characteristics of the Armax MG sheet bender',
+    de: 'Hauptmerkmale des Armax MG-Blechbiegers',
+  },
+  'sd-char_page-2': {
+    ua: 'Ermaxan power-bend pro (Турція)',
+    en: 'Ermaxan power-bend pro (Turkey)',
+    de: 'Ermaxan Power-Bend Pro (Türkei)',
+  },
+  'sd-char_page-3': {
+    ua: 'Максимальна довжина гнуття:',
+    en: 'Maximum bending length:',
+    de: 'Maximale Biegelänge:',
+  },
+  'sd-char_page-4': {
+    ua: 'становить',
+    en: 'to become',
+    de: 'werden',
+  },
+  'sd-char_page-5': {
+    ua: '3000 мм.',
+    en: '3000 mm.',
+    de: '3000 mm.',
+  },
+  'sd-char_page-6': {
+    ua: 'Максимальна товщина заготовки:',
+    en: 'Maximum blank thickness:',
+    de: 'Maximale Blechdicke:',
+  },
+  'sd-char_page-7': {
+    ua: 'становить',
+    en: 'to become',
+    de: 'werden',
+  },
+  'sd-char_page-8': {
+    ua: '6 мм.',
+    en: '6 mm.',
+    de: '6 mm.',
+  },
+  'sd-char_page-9': {
+    ua: 'Точність згинання металу:',
+    en: 'Metal bending accuracy:',
+    de: 'Metallbiegen Genauigkeit:',
+  },
+  'sd-char_page-10': {
+    ua: 'становить до',
+    en: 'up to',
+    de: 'bis zu',
+  },
+  'sd-char_page-11': {
+    ua: '0.5 мм',
+    en: '0.5 mm',
+    de: '0,5 mm',
+  },
+  'sd-char_page-12': {
+    ua: 'Максимальне робоче зусилля',
+    en: 'Maximum working force',
+    de: 'Maximale Arbeitskraft',
+  },
+  'sd-char_page-13': {
+    ua: 'становить',
+    en: 'to become',
+    de: 'werden',
+  },
+  'sd-char_page-14': {
+    ua: '90 тонн',
+    en: '90 tons',
+    de: '90 Tonnen',
+  },
+  'sd-price_page-1': {
+    ua: 'Ціна гнуття металу',
+    en: 'Metal bending price',
+    de: 'Preis für Metallbiegen',
+  },
+  'sd-price_page-2': {
+    ua: 'Щоб ми могли зробити точний розрахунок вартості послуг із',
+    en: 'In order for us to make an accurate calculation of the cost of services for',
+    de: 'Damit wir eine genaue Berechnung der Kosten für Dienstleistungen ausführen können, benötigen wir',
+  },
+  'sd-price_page-3': {
+    ua: 'гнуття металу',
+    en: 'metal bending,',
+    de: 'Metallbiegen,',
+  },
+  'sd-price_page-4': {
+    ua: 'та терміни виконання замовлення, нам необхідно отримати від Вас повну інформацію про виріб, детальне технічне завдання або креслення. Ціни на послуги із гнуття металу визначається за такими основними критеріями як:',
+    en: 'and the terms of order execution, we need to receive complete information from you about the product, detailed technical specifications, or drawings. Prices for metal bending services are determined by such main criteria as:',
+    de: 'und die Bedingungen der Auftragsausführung benötigen wir vollständige Informationen von Ihnen über das Produkt, detaillierte technische Spezifikationen oder Zeichnungen. Die Preise für Metallbiegedienstleistungen werden anhand folgender Hauptkriterien bestimmt:',
+  },
+  'sd-price_page-5': {
+    ua: 'Довжину згину та товщину металу;',
+    en: 'Length of bend and metal thickness;',
+    de: 'Bieglänge und Metallstärke;',
+  },
+  'sd-price_page-6': {
+    ua: 'Обсяг замовлення;',
+    en: 'Order volume;',
+    de: 'Bestellvolumen;',
+  },
+  'sd-price_page-7': {
+    ua: 'Складність робіт, залежно від деталі;',
+    en: 'Complexity of work, depending on the detail;',
+    de: 'Komplexität der Arbeit, abhängig von der Detailgenauigkeit;',
+  },
+  'sd-price_page-8': {
+    ua: 'Давальницька чи власна сировина буде використовуватись в замовленні;',
+    en: 'Whether supplied or own raw material will be used in the order;',
+    de: 'Ob geliefertes oder eigenes Rohmaterial für die Bestellung verwendet wird;',
+  },
+  'sd-price_page-9': {
+    ua: 'Строки виконання замовлення;',
+    en: 'Order execution terms;',
+    de: 'Ausführungsfristen für Bestellungen;',
+  },
+  //--------welding
+  'w-header_page-1': {
+    ua: 'Зварювальні роботи',
+    en: 'Welding works',
+    de: 'Schweißarbeiten',
+  },
+  'w-header_page-2': {
+    ua: 'Наша компанія надає послуги зі зварювання металу на сучасному обладнанні, за вигідними цінами та у погоджені терміни!',
+    en: 'Our company provides metal welding services on modern equipment, at favorable prices, and within agreed terms!',
+    de: 'Unser Unternehmen bietet Metallschweißdienstleistungen auf modernen Geräten zu günstigen Preisen und innerhalb vereinbarter Fristen!',
+  },
+  'w-char_page-1': {
+    ua: 'Основні характеристики зварювання металу Armax MG',
+    en: 'Main characteristics of metal welding Armax MG',
+    de: 'Hauptmerkmale des Metallschweißens Armax MG',
+  },
+  'w-char_page-2': {
+    ua: 'Види зварювання металу:',
+    en: 'Types of metal welding:',
+    de: 'Arten des Metallschweißens:',
+  },
+  'w-char_page-3': {
+    ua: 'Зварювання напівавтоматом;',
+    en: 'Semi-automatic welding;',
+    de: 'Halbautomatisches Schweißen;',
+  },
+  'w-char_page-4': {
+    ua: 'Аргонове зварювання;',
+    en: 'Argon welding;',
+    de: 'Argon-Schweißen;',
+  },
+  'w-char_page-5': {
+    ua: 'Ручне дугове зварювання;',
+    en: 'Manual arc welding;',
+    de: 'Manuelles Lichtbogenschweißen;',
+  },
+  'w-char_page-6': {
+    ua: 'Максимальна товщина зварювання:',
+    en: 'Maximum welding thickness:',
+    de: 'Maximale Schweißdicke:',
+  },
+  'w-char_page-7': {
+    ua: 'становить ',
+    en: 'is ',
+    de: 'ist ',
+  },
+  'w-char_page-8': {
+    ua: 'від 1 до 40 мм',
+    en: 'from 1 to 40 mm',
+    de: 'von 1 bis 40 mm',
+  },
+  'w-price_page-1': {
+    ua: 'Ціна зварювання металу',
+    en: 'Metal welding price',
+    de: 'Preis für Metallschweißen',
+  },
+  'w-price_page-2': {
+    ua: 'Щоб ми могли зробити точний розрахунок вартості',
+    en: 'In order for us to make an accurate calculation of the cost',
+    de: 'Damit wir eine genaue Berechnung der Kosten durchführen können',
+  },
+  'w-price_page-3': {
+    ua: 'зварювання металу',
+    en: 'of metal welding',
+    de: 'des Metallschweißens',
+  },
+  'w-price_page-4': {
+    ua: 'та терміни виконання послуги, нам необхідно отримати від Вас повну інформацію про виріб, детальне технічне завдання або креслення. Ціни на послуги лазерного різання визначається за такими основними критеріями як:',
+    en: 'and the terms of service execution, we need to receive full information from you about the product, detailed technical specifications, or drawings. Prices for laser cutting services are determined by such main criteria as:',
+    de: 'und die Bedingungen für die Ausführung der Dienstleistung benötigen wir von Ihnen vollständige Informationen über das Produkt, detaillierte technische Spezifikationen oder Zeichnungen. Die Preise für Laserbearbeitungsdienstleistungen werden anhand folgender Hauptkriterien bestimmt:',
+  },
+  'w-price_page-5': {
+    ua: 'Cкладності робіт;',
+    en: 'Complexity of work;',
+    de: 'Arbeitskomplexität;',
+  },
+  'w-price_page-6': {
+    ua: 'Товщини матеріалу;',
+    en: 'Material thickness;',
+    de: 'Materialstärke;',
+  },
+  'w-price_page-7': {
+    ua: 'Виду зварювання;',
+    en: 'Type of welding;',
+    de: 'Art des Schweißens;',
+  },
+  'w-price_page-8': {
+    ua: 'Додаткових видів механічної обробки;',
+    en: 'Additional types of mechanical processing;',
+    de: 'Zusätzliche Arten der mechanischen Bearbeitung;',
+  },
+  'w-price_page-9': {
+    ua: 'Строки виконання замовлення;',
+    en: 'Order execution terms;',
+    de: 'Ausführungsfristen für Bestellungen;',
+  },
+  'news-1': {
+    ua: 'Останні новини',
+    en: 'Latest news',
+    de: 'Neueste Nachrichten',
+  },
+  'news-2': {
+    ua: 'Відкриття механічного цеху «АРМАКС МГ»!',
+    en: 'Opening of the mechanical workshop "ARMAX MG"!',
+    de: 'Eröffnung der mechanischen Werkstatt "ARMAX MG"!',
+  },
+
+  'news-3': {
+    ua: 'Ми виконуємо різноманітні механічні роботи, включаючи токарні операції, фрезерні, шліфувальні, зубонарізні роботи та гартування металу в печах.',
+    en: 'We perform various mechanical works, including turning operations, milling, grinding, gear cutting works, and metal hardening in furnaces.',
+    de: 'Wir führen verschiedene mechanische Arbeiten aus, darunter Dreharbeiten, Fräsen, Schleifen, Zahnradschneiden und Metallhärten in Öfen.',
+  },
+
+  'news-4': {
+    ua: 'Запрошуємо до співпраці зварювальника!',
+    en: 'We invite a welder to cooperation!',
+    de: 'Wir laden einen Schweißer zur Zusammenarbeit ein!',
+  },
+
+  'news-5': {
+    ua: 'Шукаємо кваліфікованого зварювальника-напівавтоматника. Основні обов’язки включатимуть зварювання металевих виробів.',
+    en: 'We are looking for a qualified semi-automatic welder. The main responsibilities will include welding metal products.',
+    de: 'Wir suchen einen qualifizierten halbautomatischen Schweißer. Zu den Hauptaufgaben gehören das Schweißen von Metallprodukten.',
+  },
+};
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
 function checkPagePathName() {
   switch (currentPathName) {
     case '/index.html':
@@ -2295,8 +2904,11 @@ function checkPagePathName() {
   }
 }
 checkPagePathName();
+<<<<<<< HEAD
 
 // Функція для зміни мови
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
 function changeLang() {
   checkPagePathName(); // Оновлення поточного тексту залежно від шляху сторінки
   for (const key in currentText) {
@@ -2358,6 +2970,7 @@ document
   .addEventListener('click', function (event) {
     event.preventDefault(); // Забороняємо дійсне переходити по посиланню
   });
+<<<<<<< HEAD
 // Функція для перевірки та активації кнопки мови
 function checkActiveLangButton() {
   const savedLang = localStorage.getItem('language') || 'ua'; // За замовчуванням 'ua'
@@ -2392,3 +3005,5 @@ document.querySelectorAll('[data-btn]').forEach((btn) => {
     checkActiveLangButton(); // Перевіряємо та оновлюємо активну кнопку
   });
 });
+=======
+>>>>>>> 6c26f1ce918eee52b71bd164af7c9b5e3679af7a
