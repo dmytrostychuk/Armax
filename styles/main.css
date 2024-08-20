@@ -511,7 +511,6 @@ ul {
   pointer-events: none;
   transition: all 0.35s ease-out;
 }
-
 .button {
   position: relative;
   display: block;
@@ -618,7 +617,6 @@ label {
   z-index: 0;
   height: 100%;
   width: 100%;
-  background-attachment: fixed;
   position: absolute;
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/lazer.jpg");
   background-position: center center;
@@ -627,17 +625,18 @@ label {
 }
 
 .header-product {
-  height: 40vh;
+  height: auto;
+  position: relative;
 }
-
 .header__background-product {
   z-index: 0;
   position: absolute;
   height: 100%;
   width: 100%;
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/metal-products.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .header__background-ag {
@@ -646,22 +645,33 @@ label {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/product-bucket.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .header__background-fe {
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/product-furniture-elements.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 .header__background-de {
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/product-decore-element.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .header__background-co {
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/product-individual.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header__background-news {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/news.avif");
+  background-size: cover;
 }
 
 .burger-btn {
@@ -680,7 +690,7 @@ label {
 .burger-btn span {
   content: "";
   position: absolute;
-  left: 25px;
+  left: 0;
   top: 0;
   height: 3px;
   width: 30px;
@@ -1351,6 +1361,13 @@ picture {
   color: #404044;
 }
 
+.section__title--hover {
+  transition: 0.3s;
+}
+.section__title--hover:hover {
+  color: #fcb045;
+}
+
 .section__text {
   font-size: 16px;
   line-height: 1.5em;
@@ -1549,27 +1566,6 @@ picture {
 .mySwiper5,
 .mySwiper7 {
   margin-top: 10px;
-}
-
-.partners {
-  position: relative;
-  color: #404044;
-  padding-top: 10px;
-  padding-bottom: 120px;
-  margin-bottom: 0;
-}
-
-.partners__background {
-  background-attachment: fixed;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  background-image: url("../img/bg-document.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.2;
 }
 
 .map {
@@ -2140,6 +2136,10 @@ textarea.form__input {
   transition: all 0.35s ease-in-out 0s;
 }
 
+.news__block-page {
+  width: 100%;
+}
+
 .s-header {
   height: 450px;
 }
@@ -2613,6 +2613,7 @@ textarea.form__input {
 
 .product__title {
   text-transform: uppercase;
+  letter-spacing: 0.3vw;
 }
 
 .product-container {
@@ -3665,24 +3666,6 @@ textarea.form__input {
   .header {
     height: 800px;
   }
-  .header-product {
-    height: 70vh;
-  }
-  .header__background-product {
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .header__background-ag {
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .header__background-fe {
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   .burger-btn {
     display: none;
   }
@@ -3875,6 +3858,9 @@ textarea.form__input {
   .news__blok {
     width: 50%;
   }
+  .news__block-page {
+    width: 100%;
+  }
   .s-services {
     margin-top: 0;
   }
@@ -4051,5 +4037,13 @@ textarea.form__input {
   }
   .product__img {
     height: 260px;
+  }
+}
+@media screen and (max-width: 767px) {
+  [data-aos] {
+    opacity: 1 !important;
+    -webkit-transform: none !important;
+            transform: none !important;
+    transition: none !important;
   }
 }

@@ -66,6 +66,11 @@ const homeTexts = {
     en: 'Custom orders ',
     de: 'Individuelle Bestellungen',
   },
+  'nav_page-9': {
+    ua: 'Новини',
+    en: 'News',
+    de: 'Nachrichten',
+  },
   'header__content_page-1': {
     ua: 'Металообробка будь-якої складності на замовлення.',
     en: 'Metal processing of any complexity on order.',
@@ -279,6 +284,11 @@ const homeTexts = {
     ua: 'Індивідуальні проекти',
     en: 'Custom projects',
     de: 'Individuelle Projekte',
+  },
+  'wara_page-6': {
+    ua: 'Новини',
+    en: 'News',
+    de: 'Nachrichten',
   },
 
   'partners_page-1': {
@@ -2273,6 +2283,7 @@ const homeTexts = {
   },
 };
 
+// Перевіряємо шлях сторінки і задаємо текстові змінні
 function checkPagePathName() {
   switch (currentPathName) {
     case '/index.html':
@@ -2284,6 +2295,8 @@ function checkPagePathName() {
   }
 }
 checkPagePathName();
+
+// Функція для зміни мови
 function changeLang() {
   checkPagePathName(); // Оновлення поточного тексту залежно від шляху сторінки
   for (const key in currentText) {
@@ -2300,6 +2313,7 @@ function changeLang() {
 }
 changeLang();
 
+// Додаємо обробники подій на кнопки мов
 langButtons.forEach((btn) => {
   btn.addEventListener('click', (event) => {
     currentLang = event.target.dataset.btn;
@@ -2310,39 +2324,25 @@ langButtons.forEach((btn) => {
   });
 });
 
+// Функція для скидання активного класу
 function resetActiveClass(arr, activeClass) {
   arr.forEach((elem) => {
     elem.classList.remove(activeClass);
   });
 }
 
-function checkActiveLengButton() {
-  switch (currentLang) {
-    case 'ua':
-      document
-        .querySelector('[data-btn="ua"]')
-        .classList.add('header__btn_active');
-      break;
-    case 'en':
-      document
-        .querySelector('[data-btn="en"]')
-        .classList.add('header__btn_active');
-      break;
-    case 'de':
-      document
-        .querySelector('[data-btn="de"]')
-        .classList.add('header__btn_active');
-      break;
-
-    default:
-      document
-        .querySelector('[data-btn="ua"]')
-        .classList.add('header__btn_active');
-      break;
-  }
+// Функція для перевірки та активації кнопки мови
+function checkActiveLangButton() {
+  const savedLang = localStorage.getItem('language') || 'ua'; // За замовчуванням 'ua'
+  currentLang = savedLang;
+  document
+    .querySelector(`[data-btn="${savedLang}"]`)
+    .classList.add('header__btn_active');
+  changeLang(); // Оновлюємо текст відповідно до збереженої мови
 }
-checkActiveLengButton();
+checkActiveLangButton();
 
+// Перевірка мови браузера
 function checkBrowserLang() {
   const navLang = navigator.language.slice(0, 2).toLowerCase();
   const result = allLangs.some((elem) => {
@@ -2358,3 +2358,37 @@ document
   .addEventListener('click', function (event) {
     event.preventDefault(); // Забороняємо дійсне переходити по посиланню
   });
+// Функція для перевірки та активації кнопки мови
+function checkActiveLangButton() {
+  const savedLang = localStorage.getItem('language') || 'ua'; // За замовчуванням 'ua'
+  currentLang = savedLang;
+
+  // Знаходимо всі кнопки для вибору мови
+  const langButtons = document.querySelectorAll('[data-btn]');
+
+  // Скидаємо активний клас для всіх кнопок
+  langButtons.forEach((btn) => {
+    btn.classList.remove('header__btn_active');
+  });
+
+  // Додаємо активний клас до відповідних кнопок
+  document.querySelectorAll(`[data-btn="${savedLang}"]`).forEach((btn) => {
+    btn.classList.add('header__btn_active');
+  });
+
+  changeLang(); // Оновлюємо текст відповідно до збереженої мови
+}
+
+// Перевірка мови при завантаженні сторінки
+document.addEventListener('DOMContentLoaded', function () {
+  checkActiveLangButton();
+});
+
+// Додаємо обробники подій на всі кнопки мов
+document.querySelectorAll('[data-btn]').forEach((btn) => {
+  btn.addEventListener('click', (event) => {
+    currentLang = event.target.dataset.btn;
+    localStorage.setItem('language', event.target.dataset.btn);
+    checkActiveLangButton(); // Перевіряємо та оновлюємо активну кнопку
+  });
+});
