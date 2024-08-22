@@ -67,6 +67,9 @@
     svg {
       fill: #f6f6f6; /* Зміна кольору SVG при наведенні */
     }
+    .span--color {
+      color: #f6f6f6;
+    }
   }
 }
 
@@ -108,7 +111,7 @@
 
 .news__title {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0;
   letter-spacing: 1px;
   margin-bottom: 15px;
@@ -165,5 +168,27 @@
   flex-direction: column;
   @include mq($from: phablet) {
     flex-direction: row;
+  }
+}
+
+.news__mail {
+  z-index: 1;
+  color: #404044;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.35s ease-in-out 0s;
+}
+
+.span--color {
+  color: #d1a954;
+  transition: all 0.35s ease-in-out 0s;
+}
+
+.news__block-page {
+  width: 100%;
+
+  @include mq($from: tablet-wide) {
+    width: 100%;
   }
 }

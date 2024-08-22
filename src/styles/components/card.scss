@@ -232,3 +232,12 @@
     margin-top: 0px;
   }
 }
+
+.card__gallery.active {
+  display: block;
+}
+
+.card-none,
+.card__gallery-block {
+  display: none;
+}

@@ -41,3 +41,24 @@
   cursor: pointer;
   transition: 0.3s;
 }
+
+.card__slider-button {
+  margin-right: 25px;
+  background-color: #d1a954;
+  font-size: 18px;
+  outline: 0;
+  color: #fff;
+  border: 0;
+  padding: 15px 20px;
+  margin-top: 25px;
+}
+
+.card__slider-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__slider-button.active {
+  background-color: #b47c48;
+  color: rgba(255, 255, 255, 0.7098039216);
+}

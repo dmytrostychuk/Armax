@@ -143,11 +143,11 @@
 
   @include mq($from: tablet-wide) {
     position: relative;
-    margin-left: 20px;
+    // margin-left: 20px;
   }
 
   @include mq($from: desktop) {
-    margin-left: 40px;
+    // margin-left: 40px;
   }
 }
 
@@ -222,6 +222,7 @@
 
   li {
     margin-bottom: 20px;
+
     letter-spacing: 0.05em;
     line-height: 20px;
 
@@ -234,6 +235,8 @@
       margin-bottom: 0;
       font-size: 18px;
       font-weight: 400;
+      padding: 5px 10px;
+      padding-top: 10px;
     }
   }
 
@@ -252,6 +255,14 @@
     flex-direction: row;
     width: 100%;
     padding: 0;
+  }
+}
+
+.nav__item-dropdown {
+  &:hover {
+    @include mq($from: tablet-wide) {
+      background-color: #4f4e4eab;
+    }
   }
 }
 

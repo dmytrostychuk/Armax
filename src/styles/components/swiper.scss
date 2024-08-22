@@ -129,3 +129,10 @@
 .mySwiper {
   margin-top: 10px;
 }
+
+.mySwiper .swiper-slide-thumb-active img,
+.mySwiper5 .swiper-slide-thumb-active img,
+.mySwiper7 .swiper-slide-thumb-active img {
+  background-color: rgba(205, 205, 205, 0.6117647059);
+  opacity: 1;
+}

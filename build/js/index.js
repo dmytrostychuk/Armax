@@ -74,15 +74,12 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// - modal
 var modal = document.querySelector('.modal');
 var triggers = document.querySelectorAll('.modal-active');
 var closeButton = document.querySelector('.close-button');
 
 function toggleModal() {
   modal.classList.toggle('show-modal');
-
-  console.log('toggleModal');
 
   if (window.innerWidth > 991) {
     document.body.classList.toggle('lock');
@@ -97,12 +94,11 @@ function windowOnClick(event) {
   }
 }
 
+// Додаємо обробники подій для відкриття та закриття модального вікна
 triggers.forEach(function (trigger) {
   trigger.addEventListener('click', toggleModal);
 });
 
-closeButton.addEventListener('click', toggleModal);
-window.addEventListener('click', windowOnClick);
 closeButton.addEventListener('click', toggleModal);
 window.addEventListener('click', windowOnClick);
 

@@ -19,7 +19,7 @@
   z-index: 0;
   height: 100%;
   width: 100%;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   position: absolute;
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
     url('../img/lazer.jpg');
@@ -29,9 +29,11 @@
 }
 
 .header-product {
-  height: 30vh;
+  // height: 40vh;
+  height: auto;
+  position: relative;
   @include mq($from: tablet-wide) {
-    height: 70vh;
+    // height: 70vh;
   }
 }
 
@@ -42,8 +44,7 @@
   width: 100%;
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
     url('../img/metal-products.jpg');
-
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -55,8 +56,7 @@
   width: 100%;
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
     url('../img/product-bucket.jpg');
-
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -64,14 +64,39 @@
 .header__background-fe {
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
     url('../img/product-furniture-elements.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .header__background-de {
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
     url('../img/product-decore-element.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .header__background-co {
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
     url('../img/product-individual.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.header__background-news {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
+    url('../img/news.avif');
+  background-size: cover;
+}
+
+.diagonal-bg {
+  position: fixed;
+  z-index: -1;
+  background: url(../img/bg-dropdown.svg) center center;
+  width: 100%;
+  height: 100vh;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  transition: all 0.35s ease-out;
 }
