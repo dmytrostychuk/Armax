@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
 	<svg style="display: none">
 		<symbol id="location" viewBox="0 0 1024 1024">
 			<g>
@@ -66,7 +67,11 @@
 	</svg>
 
 	<header class="header-product">
+		<button class="button__scroll" id="scrollButton" onclick="scrollToTop()">
+			<span class="scroll__aroww">Вгору</span>
+		</button>
 		<div class="header__background header__background-news"></div>
+
 		<div class="nav__social--desktop-wrap">
 			<div class="nav__social--desktop container">
 				<ul class="nav__social-list--desktop">
@@ -116,106 +121,103 @@
 				</div>
 			</div>
 		</div>
-		<div class="test">
+		<div class="header__container container">
+			<div class="menu menu-product">
 
-			<div class="header__container container">
-				<div class="menu menu-product">
-
-					<div class="menu__container">
-						<button class="burger-btn"><span></span></button>
-						<h1 class="menu__title">
-							<a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.png" alt="" /></a>
-						</h1>
-						<div class="header__lang nav__list-social">
-							<button class="header__btn" data-btn="ua">UA</button>
-							<button class="header__btn" data-btn="en">EN</button>
-							<button class="header__btn" data-btn="de">DE</button>
-						</div>
+				<div class="menu__container">
+					<button class="burger-btn"><span></span></button>
+					<h1 class="menu__title">
+						<a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.png" alt="" /></a>
+					</h1>
+					<div class="header__lang nav__list-social">
+						<button class="header__btn" data-btn="ua">UA</button>
+						<button class="header__btn" data-btn="en">EN</button>
+						<button class="header__btn" data-btn="de">DE</button>
 					</div>
-
-					<nav class="nav">
-						<div class="nav__inner">
-							<ul class="nav__list">
-
-								<li class="nav__item">
-									<a href="about-us.html" class="link-hover" data-lang="nav_page-2"></a>
-								</li>
-								<li class="nav__item">
-									<a href="contacts.html" class="link-hover" data-lang="nav_page-3"></a>
-								</li>
-								<li class="nav__item">
-									<a href="news.html" class="link--active" data-lang="nav_page-9"></a>
-								</li>
-								<li class="nav__item">
-									<a href="product.html" class=" link-hover nav__item-link" data-lang="nav_page-4"></a>
-									<div class="dropdown">
-										<a href="ag-equipment.html" class="link__dropdown link-hover " data-lang="nav_page-5"></a>
-										<a href="furniture-elements.html" class="link__dropdown link-hover" data-lang="nav_page-6"></a>
-										<a href="decor-elements.html" class="link__dropdown link-hover" data-lang="nav_page-7"></a>
-										<a href="сustom-orders.html" class="link__dropdown link-hover" data-lang="nav_page-8"></a>
-
-									</div>
-								</li>
-
-								<li class="nav__item">
-									<a href="services.html" class="link-hover" data-lang="nav_page-1"></a>
-									<div class="dropdown dropdown--width">
-										<a href="lazer.html" class="link__dropdown link-hover " data-lang="footer_page-6-1"></a>
-										<a href="sheet-bending.html" class="link__dropdown link-hover" data-lang="footer_page-7-1"></a>
-										<a href="dyeing.html" class="link__dropdown link-hover" data-lang="footer_page-8-1"></a>
-										<a href="welding.html" class="link__dropdown link-hover" data-lang="footer_page-9-1"></a>
-										<a href="locksmith.html" class="link__dropdown link-hover" data-lang="footer_page-10-1"></a>
-										<a href="mechanical-processing.html" class="link__dropdown link-hover"
-											data-lang="footer_page-11-1"></a>
-									</div>
-								</li>
-							</ul>
-
-							<ul class="nav__list nav__list-social">
-								<li class="nav__item-social">
-									<a class="link-social link--hover" href="tel:+380687945051">
-										<svg class="link-social--svg" width="30" height="20">
-											<use xlink:href="#phone"></use>
-										</svg>
-										+38 (096) 123 91 21
-									</a>
-								</li>
-								<li class="nav__item-social">
-									<a href="mailto:lazerarmax@gmail.com" class="link-social link--hover">
-										<svg class="link-social--svg" width="30" height="20">
-											<use xlink:href="#mail"></use>
-										</svg>
-										armax.km@gmail.com
-									</a>
-								</li>
-								<li class="nav__item-social">
-									<a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
-										rel="noopener noreferrer">
-										<svg class="link-social--svg" width="30" height="20">
-											<use xlink:href="#facebook"></use>
-										</svg>
-										<span class="none">facebook.com/armaxMG/</span>
-									</a>
-								</li>
-								<li class="nav__item-social">
-									<a href="https://www.google.com/maps/place/%D0%A2%D0%B7%D0%9E%D0%92,+%D0%90%D1%80%D0%BC%D0%B0%D0%BA%D1%81+%D0%9C%D0%93/@50.83233,25.453636,18z/data=!4m5!3m4!1s0x0:0x3edf65d8017ef30a!8m2!3d50.8324517!4d25.4532672?hl=uk"
-										class="link-social link--hover" target="_blank" rel="noopener noreferrer">
-										<svg class="link-social--svg" width="30" height="30">
-											<use xlink:href="#location"></use>
-										</svg>
-										<span class="none">45200 м. Ківерці, вул.Грушевського 26</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
 				</div>
 
-				<div class="header__content--container">
-					<div class="header__content-product ">
-						<h1 class="product__title" data-lang="wara_page-6">
-						</h1>
+				<nav class="nav">
+					<div class="nav__inner">
+						<ul class="nav__list">
+
+							<li class="nav__item">
+								<a href="about-us.html" class="link-hover" data-lang="nav_page-2"></a>
+							</li>
+							<li class="nav__item">
+								<a href="contacts.html" class="link-hover" data-lang="nav_page-3"></a>
+							</li>
+							<li class="nav__item">
+								<a href="news.html" class="link--active" data-lang="nav_page-9"></a>
+							</li>
+							<li class="nav__item">
+								<a href="product.html" class=" link-hover nav__item-link" data-lang="nav_page-4"></a>
+								<div class="dropdown">
+									<a href="ag-equipment.html" class="link__dropdown link-hover " data-lang="nav_page-5"></a>
+									<a href="furniture-elements.html" class="link__dropdown link-hover" data-lang="nav_page-6"></a>
+									<a href="decor-elements.html" class="link__dropdown link-hover" data-lang="nav_page-7"></a>
+									<a href="сustom-orders.html" class="link__dropdown link-hover" data-lang="nav_page-8"></a>
+
+								</div>
+							</li>
+
+							<li class="nav__item">
+								<a href="services.html" class="link-hover" data-lang="nav_page-1"></a>
+								<div class="dropdown dropdown--width">
+									<a href="lazer.html" class="link__dropdown link-hover " data-lang="footer_page-6-1"></a>
+									<a href="sheet-bending.html" class="link__dropdown link-hover" data-lang="footer_page-7-1"></a>
+									<a href="dyeing.html" class="link__dropdown link-hover" data-lang="footer_page-8-1"></a>
+									<a href="welding.html" class="link__dropdown link-hover" data-lang="footer_page-9-1"></a>
+									<a href="locksmith.html" class="link__dropdown link-hover" data-lang="footer_page-10-1"></a>
+									<a href="mechanical-processing.html" class="link__dropdown link-hover"
+										data-lang="footer_page-11-1"></a>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="nav__list nav__list-social">
+							<li class="nav__item-social">
+								<a class="link-social link--hover" href="tel:+380687945051">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#phone"></use>
+									</svg>
+									+38 (096) 123 91 21
+								</a>
+							</li>
+							<li class="nav__item-social">
+								<a href="mailto:lazerarmax@gmail.com" class="link-social link--hover">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#mail"></use>
+									</svg>
+									armax.km@gmail.com
+								</a>
+							</li>
+							<li class="nav__item-social">
+								<a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
+									rel="noopener noreferrer">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#facebook"></use>
+									</svg>
+									<span class="none">facebook.com/armaxMG/</span>
+								</a>
+							</li>
+							<li class="nav__item-social">
+								<a href="https://www.google.com/maps/place/%D0%A2%D0%B7%D0%9E%D0%92,+%D0%90%D1%80%D0%BC%D0%B0%D0%BA%D1%81+%D0%9C%D0%93/@50.83233,25.453636,18z/data=!4m5!3m4!1s0x0:0x3edf65d8017ef30a!8m2!3d50.8324517!4d25.4532672?hl=uk"
+									class="link-social link--hover" target="_blank" rel="noopener noreferrer">
+									<svg class="link-social--svg" width="30" height="30">
+										<use xlink:href="#location"></use>
+									</svg>
+									<span class="none">45200 м. Ківерці, вул.Грушевського 26</span>
+								</a>
+							</li>
+						</ul>
 					</div>
+				</nav>
+			</div>
+
+			<div class="header__content--container">
+				<div class="header__content-product ">
+					<h1 class="product__title" data-lang="wara_page-6">
+					</h1>
 				</div>
 			</div>
 		</div>
@@ -225,27 +227,383 @@
 	</header>
 
 	<main class="main">
+		<button class="button__scroll" id="scrollButton" onclick="scrollToTop()">
+			<span class="">Вгору</span>
+		</button>
 		<section class="news-page">
 			<div class="container">
 				<div class="news-page__container">
-					<article class="news-page__card">
-						<figure class="card__content">
-							<picture class="">
-								<source srcset="img/news/lazer-cuting-bodor.jpg" media="(max-width: 768px)" width="100" />
-								<source srcset="img/news/lazer-cuting-bodor.jpg" media="(max-width: 1200px)" width="210" />
-								<img srcset="img/news/lazer-cuting-bodor.jpg" srcset="img/card-13-@2x.jpg 2x" alt="Проверка доверия"
-									width="298" height="260" />
-							</picture>
+					<article class="news-page__card news-page__article">
+						<figure class="card__content test">
+							<div class="news-page__img-container news-page__img-container--article">
+								<picture>
+									<source srcset="img/news/nwes-page-article.webp" media="(max-width: 768px)" width="100" />
+									<source srcset="img/news/nwes-page-article.webp" media="(max-width: 1200px)" width="210" />
+									<img srcset="img/news/nwes-page-article.webp" srcset="img/card-13-@2x.jpg 2x" alt="Проверка доверия"
+										width="298" height="260" />
+								</picture>
+								<div class="news-page__info">
+									<span class="news-page__month">Серп</span>
+									<span class="news-page__day">28</span>
+									<span class="news-page__year">2024</span>
+									<time datetime="2022-01-20T12:48:42Z" class="news-page__time">15:40</time>
+								</div>
+							</div>
+
+
 							<figcaption class="card__figcaption">
-								<div class="card__title card__title-category">
-									<a href="#" class="card__title-link">
-									</a>
+								<div>
+									<h3 class="info__title">Як обрати металеві елементи для комерційного простору: від меблів до
+										декору
+									</h3>
+								</div>
+								<div class="section__text--article">
+									<div class="full-text">
+
+										<p class="section__text--article">Сучасний дизайн комерційних приміщень усе більше звертається до
+											металу як до
+											ключового матеріалу. Його використовують для створення меблів, декору та
+											функціональних елементів, що відповідають стилю лофт, який набув великої
+											популярності завдяки своїй індустріальній естетиці. Як компанія, що спеціалізується на
+											обробці металів та виготовленні металевих деталей, хочемо поділиться порадами щодо
+											вибору оптимальних металевих елементів для вашого простору.</p>
+
+										<h5 class="text--weight--size">Переваги металевих елементів</h5>
+										<p class="section__text--article">Метал є ідеальним матеріалом для комерційних приміщень завдяки
+											своїм ключовим
+											перевагам:</p>
+										<ol class="news-page__list">
+											<li><span class="text--weight">Міцність і надійність:</span> Металеві елементи можуть витримувати
+												значні
+												навантаження, що є важливим для меблів і конструкцій у комерційних просторах.</li>
+											<li><span class="text--weight"> Стійкість до зносу: </span>Метал не боїться фізичних ушкоджень та
+												впливу вологи, що
+												робить його ідеальним для використання в різних умовах.</li>
+											<li><span class="text--weight"> Стійкість до зносу: </span>Металеві деталі надають простору
+												сучасного, індустріального
+												вигляду, який підходить для різних інтер’єрів, особливо у стилі лофт.</li>
+										</ol>
+										</p>
+										<h5 class="text--weight--size">Як обрати металеві меблі</h5>
+										<p class="section__text--article">Під час вибору металевих меблів для вашого простору варто звернути
+											увагу на кілька
+											важливих аспектів:</p>
+										<ol class="news-page__list--number">
+											<li><span class="text--weight">Призначення меблів.</span> Залежно від того, для чого будуть
+												використовуватись меблі
+												— чи то для кафе, офісу або магазину — необхідно врахувати їх міцність, зручність
+												та функціональність.</li>
+											<li><span class="text--weight">Тип металу. </span>Наприклад, нержавіюча сталь підходить для
+												приміщень з високою
+												вологістю, таких як ресторани або кухні, тоді як латунь може стати елегантним
+												рішенням для офісів чи готелів.</li>
+											<li><span class="text--weight">Обробка та покриття. </span>Щоб захистити меблі від корозії та
+												зберегти їх зовнішній
+												вигляд, метал може бути пофарбований, хромований або покритий спеціальними
+												захисними засобами.</li>
+										</ol>
+										<h5 class="text--weight--size">Металевий декор у стилі лофт</h5>
+										<p class="section__text--article">Стиль лофт, який став надзвичайно популярним у дизайні комерційних
+											просторів,
+											особливо підкреслює використання металу в декорі. Ось кілька ідей для використання
+											металевих деталей:</p>
+										<ol class="news-page__list">
+											<li><span class="text--weight">Металеві полиці та стелажі. </span> Вони додають індустріального
+												вигляду та
+												забезпечують зручність зберігання.</li>
+											<li><span class="text--weight">Світильники з металу. </span>Вони створюють акцентні точки
+												освітлення та додають
+												атмосфери лофт-простору.</li>
+											<li><span class="text--weight">Металеві перегородки. </span>Вони допомагають розділити простір,
+												зберігаючи при
+												цьому відчуття відкритості та простоти.</li>
+										</ol>
+										<h5 class="text--weight--size">Поєднання металу з іншими матеріалами</h5>
+										<p class="section__text--article">Для створення гармонійного інтер’єру важливо правильно поєднувати
+											метал із іншими
+											матеріалами:</p>
+										<ol class="news-page__list">
+											<li><span class="text--weight">Дерево.</span>Металеві конструкції добре поєднуються з
+												дерев&#39;яними елементами,
+												додаючи інтер&#39;єру тепла та природності.</li>
+											<li><span class="text--weight">Скло.</span>Метал і скло разом створюють сучасний вигляд з акцентом
+												на прозорість і
+												легкість.</li>
+											<li><span class="text--weight">Тканина.</span>М&#39;які текстильні елементи на металевих меблях
+												додають затишку і
+												зручності.</li>
+										</ol>
+										<p class="section__text--article">Металеві елементи меблів і декору не тільки додають стиль та
+											функціональність, але й
+											підкреслюють індивідуальність вашого простору.</p>
+										<p class="section__text--article">Будемо раді бачити у нас в Компанії «АРМАКС МГ» та із задоволенням
+											допоможемо вам
+											вибрати та створити саме ті металеві деталі, які зроблять ваш комерційний простір
+											унікальним. Ми гарантуємо високу якість продукції та індивідуальний підхід до кожного
+											клієнта.</p>
+									</div>
+									<button class="read-more-btn modal-active menu__btn">
+										<span class="text">Читати більше</span>
+										<span class="icon">▼</span> <!-- Стрілка вниз -->
+									</button>
 								</div>
 							</figcaption>
 						</figure>
-						<time datetime="2022-01-20T12:48:42Z" class="card__time">
-							15:44
-						</time>
+					</article>
+
+					<article class="news-page__card ">
+						<figure class="card__content test">
+							<div class="news-page__img-container">
+								<picture>
+									<source srcset="img/news/lazer-cuting-bodor.png" media="(max-width: 768px)" width="100" />
+									<source srcset="img/news/lazer-cuting-bodor.png" media="(max-width: 1200px)" width="210" />
+									<img srcset="img/news/lazer-cuting-bodor.png" srcset="img/card-13-@2x.jpg 2x" alt="Проверка доверия"
+										width="298" height="260" />
+								</picture>
+								<div class="news-page__info">
+									<span class="news-page__month">Серп</span>
+									<span class="news-page__day">06</span>
+									<span class="news-page__year">2024</span>
+									<time datetime="2022-01-20T12:48:42Z" class="news-page__time">15:44</time>
+								</div>
+							</div>
+
+
+							<figcaption class="card__figcaption">
+								<div>
+									<h3 class="info__title">Тендер на закупівлю обладнання!</h3>
+								</div>
+								<div class="section__text">
+									<p class="full-text">
+										Нове обладнання, яке буде закуплене, забезпечить компанії можливість розширити свої можливості в
+										обробці металів завдяки високій потужності та ефективності. Bodor Laser C3 3000 W Maxphotonics
+										відзначається
+										швидкістю різання, високою точністю та здатністю працювати з різними типами металів, що дозволить
+										підвищити ефективність виробництва та зменшити витрати на обробку.
+
+										«Ця закупівля є важливим кроком для нашої компанії, оскільки вона дозволить нам залишатися на
+										передовій лінії технологічного розвитку та відповідати на зростаючий попит наших клієнтів», —
+										зазначив
+										Сергій - начальник лазерної дільниці.
+
+										Армаакс планує завершити процес закупівлі та інтеграції нового лазера в найближчі місяці, що
+										дозволить
+										суттєво покращити виробничі можливості компанії.
+
+										Для отримання додаткової інформації про закупівлю та технічні деталі, будь ласка, звертайтесь
+										за електронною поштою <a href="mailto:armaxofis@gmail.com" class="news__mail"><span
+												class="span--color">armaxofis@gmail.com</span></a>.
+									</p>
+									<button class="read-more-btn modal-active menu__btn">
+										<span class="text">Читати більше</span>
+										<span class="icon">▼</span> <!-- Стрілка вниз -->
+									</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="news-page__card">
+						<figure class="card__content test">
+							<div class="news-page__img-container">
+								<picture>
+									<source srcset="img/news/pipe-bending.png" media="(max-width: 768px)" width="100" />
+									<source srcset="img/news/pipe-bending.png" media="(max-width: 1200px)" width="210" />
+									<img srcset="img/news/pipe-bending.png" srcset="img/card-13-@2x.jpg 2x" alt="" width="298"
+										height="260" />
+								</picture>
+								<div class="news-page__info">
+									<span class="news-page__month">Серп</span>
+									<span class="news-page__day">06</span>
+									<span class="news-page__year">2024</span>
+									<time datetime="2022-01-20T12:48:42Z" class="news-page__time">15:44</time>
+								</div>
+							</div>
+
+
+							<figcaption class="card__figcaption">
+								<div>
+									<h3 class="info__title">Тендер на закупівлю обладнання!</h3>
+								</div>
+								<div class="section__text">
+									<p class="full-text">
+										Компанія "АрмаксМГ" оголосила тендер на закупівлю гідравлічного трубогинного верстата від виробника
+										Maxphotonics CNC 3D 50 4Axes-2Radius / Hydraulic pipe bending machine CNC 3D 50
+										4Axes-2Radius, відомого своєю високою якістю та надійністю обладнання. Гідравлічний трубогинний
+										верстат призначений для високоточного гнуття труб різного діаметра, що необхідно для виробництва
+										деталей складної форми та підвищення продуктивності. Оголошений тендер є частиною стратегії
+										модернізації виробничих ліній "АрмаксМГ" з метою покращення якості продукції, зменшення витрат та
+										скорочення часу виробництва.
+
+										Для отримання додаткової інформації про закупівлю та технічні деталі, будь ласка, звертайтесь
+										за електронною поштою <a href="mailto:armaxofis@gmail.com" class="news__mail"><span
+												class="span--color">armaxofis@gmail.com</span></a>.
+									</p>
+									<button class="read-more-btn modal-active menu__btn">
+										<span class="text">Читати більше</span>
+										<span class="icon">▼</span> <!-- Стрілка вниз -->
+									</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="news-page__card ">
+						<figure class="card__content test">
+							<div class="news-page__img-container">
+								<picture>
+									<source srcset="img/news/lazer-cuting-pipe.avif" media="(max-width: 768px)" width="100" />
+									<source srcset="img/news/lazer-cuting-pipe.avif" media="(max-width: 1200px)" width="210" />
+									<img srcset="img/news/lazer-cuting-pipe.avif" srcset="img/card-13-@2x.jpg 2x" alt="Проверка доверия"
+										width="298" height="260" />
+								</picture>
+								<div class="news-page__info">
+									<span class="news-page__month">Серп</span>
+									<span class="news-page__day">06</span>
+									<span class="news-page__year">2024</span>
+									<time datetime="2022-01-20T12:48:42Z" class="news-page__time">15:44</time>
+								</div>
+							</div>
+
+
+							<figcaption class="card__figcaption">
+								<div>
+									<h3 class="info__title">Тендер на закупівлю обладнання!</h3>
+								</div>
+								<div class="section__text">
+									<p class="full-text">
+										Оголошено тендер на постачання лазерного верстата для лазерної порізки труб від виробника ACME. Це
+										новітнє
+										обладнання, що використовує лазерні технології, забезпечує високу точність і швидкість різання труб
+										різного діаметра і товщини, що значно покращує ефективність обробки. Лазерний верстат ACME
+										відрізняється відмінною якістю обробки, мінімальним відходом матеріалу і низьким рівнем шуму, що
+										робить його ідеальним для сучасного виробництва.
+
+										Для отримання додаткової інформації про закупівлю та технічні деталі, будь ласка, звертайтесь до
+										за електронною поштою <a href="mailto:armaxofis@gmail.com" class="news__mail"><span
+												class="span--color">armaxofis@gmail.com</span></a>.
+									</p>
+									<button class="read-more-btn modal-active menu__btn">
+										<span class="text">Читати більше</span>
+										<span class="icon">▼</span> <!-- Стрілка вниз -->
+									</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="news-page__card">
+						<figure class="card__content test">
+							<div class="news-page__img-container">
+								<picture>
+									<div class="news-page__video">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/CS66bPvbtpw?si=sF1yumO5kDzCHMk9"
+											title="YouTube video player" frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+								</picture>
+								<div class="news-page__info">
+									<span class="news-page__month">Чер</span>
+									<span class="news-page__day">27</span>
+									<span class="news-page__year">2024</span>
+									<time datetime="2024-06-31T12:48:42Z" class="news-page__time">10:20</time>
+								</div>
+							</div>
+
+
+							<figcaption class="card__figcaption">
+								<div>
+									<h3 class="info__title">Команда "АРМАКС МГ " щиро вдячна усім ...</h3>
+								</div>
+								<div class="section__text">
+									<p class="full-text">
+										Команда "АРМАКС МГ" щиро вдячна усім, хто активно підтримав нас у відновленні військової техніки для
+										Збройних Сил України. Ваша небайдужість і допомога стали критично важливими у цей складний час.
+										Завдяки вашій підтримці ми змогли відновити та вдосконалити техніку, що дозволяє нашим військовим
+										виконувати свої завдання на найвищому рівні.Спільними зусиллями ластівку -
+										полкову землерийну машину, яка риє окопи і може замінити півсотні людей, поставили на колеса.
+
+										Ми вдячні за кожен внесок, кожну допомогу та моральну підтримку. Ваша активність та щирість є
+										важливим натхненням для нас. Сподіваємося на подальшу співпрацю та взаємопідтримку.
+
+										Ще раз дякуємо вам за вашу допомогу та довіру!
+									</p>
+									<button class="read-more-btn modal-active menu__btn">
+										<span class="text">Читати більше</span>
+										<span class="icon">▼</span> <!-- Стрілка вниз -->
+									</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="news-page__card">
+						<figure class="card__content test">
+							<div class="news-page__img-container">
+								<picture>
+									<div class="news-page__video">
+										<iframe src="https://www.youtube.com/embed/3SaxY9uG6yM?si=OFly_WcxyNk-JCT8"
+											title="YouTube video player" frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+								</picture>
+								<div class="news-page__info">
+									<span class="news-page__month">Тра</span>
+									<span class="news-page__day">28</span>
+									<span class="news-page__year">2024</span>
+									<time datetime="2024-05-31T12:48:42Z" class="news-page__time">18:35</time>
+								</div>
+							</div>
+
+
+							<figcaption class="card__figcaption">
+								<div>
+									<h3 class="info__title">«Ластівка», яка заміняє 50 воїнів</h3>
+								</div>
+								<div class="section__text">
+									<p class="full-text">
+										Волинян просять відремонтувати ластівку – полкову землерийну машину, яка риє окопи, як аж 50 бійців
+										разом. Довгий час машина слугувала допомогою для 24 ОМБр, але вийшли з ладу її основні механізми. За
+										допомогою «ластівки» за день можна спорудити до кілометра окопів на лінії фронту, особливо там, де
+										лопати не допомагають.
+									</p>
+									<button class="read-more-btn modal-active menu__btn">
+										<span class="text">Читати більше</span>
+										<span class="icon">▼</span> <!-- Стрілка вниз -->
+									</button>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="news-page__card">
+						<figure class="card__content test">
+							<div class="news-page__img-container">
+								<picture>
+									<source srcset="img/news/new-ceh.jpg" media="(max-width: 768px)" width="100" />
+									<source srcset="img/news/new-ceh.jpg" media="(max-width: 1200px)" width="210" />
+									<img srcset="img/news/new-ceh.jpg" srcset="img/card-13-@2x.jpg 2x" alt="" width="298" height="260" />
+								</picture>
+								<div class="news-page__info">
+									<span class="news-page__month">Бер</span>
+									<span class="news-page__day">01</span>
+									<span class="news-page__year">2024</span>
+									<time datetime="2024-06-31T12:48:42Z" class="news-page__time">08:00</time>
+								</div>
+							</div>
+
+
+							<figcaption class="card__figcaption">
+								<div>
+									<h3 class="info__title" data-lang="news-2"></h3>
+								</div>
+								<div class="section__text">
+									<p class="full-text" data-lang="news-3">
+									</p>
+									<button class="read-more-btn modal-active menu__btn">
+										<span class="text">Читати більше</span>
+										<span class="icon">▼</span> <!-- Стрілка вниз -->
+									</button>
+								</div>
+							</figcaption>
+						</figure>
 					</article>
 				</div>
 			</div>
@@ -266,6 +624,12 @@
 							</li>
 							<li class="info__item">
 								<a class="info__link" href="contacts.html" data-lang="footer_page-4"></a>
+							</li>
+							<li class="info__item">
+								<a class="info__link" href="news.html" data-lang="footer_page-15"></a>
+							</li>
+							<li class="info__item">
+								<a class="info__link" href="product.html" data-lang="footer_page-16"></a>
 							</li>
 
 						</ul>
@@ -288,10 +652,13 @@
 							<li class="info__item">
 								<a href="locksmith.html" class="info__link" data-lang="footer_page-10"></a>
 							</li>
+							<li class="info__item">
+								<a href="mechanical-processing.html" class="info__link" data-lang="footer_page-17"></a>
+							</li>
 						</ul>
 					</div>
 					<div class="info__block info__address">
-						<h5 class="info__title" data-lang="footer_page-11">Адреса</h5>
+						<h5 class="info__title" data-lang="footer_page-11"></h5>
 						<ul class="info__list">
 							<li class="info__item">
 								<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
@@ -354,9 +721,71 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+
+
+
+		document.addEventListener('DOMContentLoaded', function () {
+			var blocks = document.querySelectorAll('.news-page__card');
+
+			function toggleReadMore() {
+				blocks.forEach(function (block) {
+					var fullText = block.querySelector('.full-text');
+					var readMoreBtn = block.querySelector('.read-more-btn');
+
+					if (window.innerWidth > 1200) {
+						fullText.classList.add('expanded1');
+					} else {
+						fullText.classList.remove('expanded1');
+					}
+				});
+			}
+
+			// Викликаємо функцію при завантаженні сторінки
+			toggleReadMore();
+
+			// Додаємо обробник події для зміни розміру вікна
+			window.addEventListener('resize', toggleReadMore);
+
+			// Додаємо обробник події для кнопки в кожному блоці
+			blocks.forEach(function (block) {
+				var readMoreBtn = block.querySelector('.read-more-btn');
+				var fullText = block.querySelector('.full-text');
+
+				if (readMoreBtn) {
+					readMoreBtn.addEventListener('click', function () {
+						var isExpanded = fullText.classList.toggle('expanded');
+						readMoreBtn.classList.toggle('expanded', isExpanded); // Додаємо/видаляємо клас для кнопки
+						readMoreBtn.querySelector('.text').textContent = isExpanded ? 'Сховати' : 'Читати більше';
+					});
+				}
+			});
+		});
+
+
+		// Функція для перевірки скролінгу
+		window.onscroll = function () {
+			const scrollButton = document.getElementById("scrollButton");
+			if (document.documentElement.scrollTop > document.documentElement.scrollHeight * 0.05) {
+				scrollButton.classList.add("visible"); // Додати клас для показу кнопки
+			} else {
+				scrollButton.classList.remove("visible"); // Видалити клас для приховування кнопки
+			}
+		};
+
+		// Функція для скролу догори
+		function scrollToTop() {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth' // Плавний скролінг
+			});
+		}
+
+	</script>
+	<script src="js/fslightbox.js"></script>
 	<script src="js/index.js"></script>
 	<script src="js/form-calculation.js"></script>
-	<script src="js/fslightbox.js"></script>
+
 	<script src="js/app.js"></script>
 	<script src="js/lang.js"></script>
 </body>

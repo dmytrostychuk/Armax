@@ -62,3 +62,63 @@
   background-color: #b47c48;
   color: rgba(255, 255, 255, 0.7098039216);
 }
+
+.button__scroll {
+  position: fixed;
+  padding: 5px;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 55px;
+  background-color: #d1a954;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  transition: 0.3s ease;
+  pointer-events: none;
+  font-size: 16px;
+}
+
+.button__scroll.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.button__scroll:hover {
+  background-color: #b47c48;
+  transition: 0.3s ease;
+}
+
+.button__scroll span {
+  display: block;
+}
+
+.content {
+  height: 200vh;
+}
+
+.scroll__aroww {
+  margin-top: 20px;
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 3px;
+    height: 17px;
+    background-color: #fff;
+  }
+
+  &::after {
+    right: 33px;
+    transform: rotate(-45deg);
+  }
+
+  &::before {
+    left: 33px;
+    transform: rotate(45deg);
+  }
+}

@@ -1,48 +1,52 @@
 document.addEventListener('DOMContentLoaded', function () {
-  document
-    .getElementById('modalForm')
-    .addEventListener('submit', function (event) {
-      event.preventDefault(); // Запобігає стандартному надсиланню форми
+  const form = document.getElementById('modalForm');
 
-      const contactInput = document.querySelector('input[name="contact"]');
+  let formSubmitted = false; // Додаємо прапорець для перевірки
 
-      // Перевірка довжини інпуту
-      if (contactInput.value.length < 6) {
-        alert('Контакт має містити не менше 6 символів');
-        return;
-      }
+  form.addEventListener('submit', function (event) {
+    event.preventDefault(); // Запобігаємо перезавантаженню сторінки
 
-      const formData = new FormData(this); // Отримання даних форми
+    if (formSubmitted) return; // Якщо форма вже була відправлена, припиняємо виконання
 
-      fetch(this.action, {
-        method: 'POST',
-        body: formData,
+    formSubmitted = true; // Встановлюємо прапорець
+
+    const submitButton = form.querySelector('button[type="submit"]');
+    submitButton.disabled = true; // Вимикаємо кнопку, щоб уникнути повторного натискання
+
+    const formData = new FormData(form);
+
+    fetch('/send_email_modal.php', {
+      method: 'POST',
+      body: formData,
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        // Видаляємо клас 'lock' з body
+        document.body.classList.remove('lock');
+
+        // Знаходимо модальне вікно та видаляємо клас 'show-modal'
+        const modal = document.querySelector('.modal');
+        if (modal.classList.contains('show-modal')) {
+          modal.classList.remove('show-modal');
+        }
+
+        // Можете показати повідомлення про успішну відправку
+        alert('Ваш запит відправлено!');
+        closeModal(); // Закриваємо модальне вікно після відправки форми
+
+        formSubmitted = false; // Скидаємо прапорець після завершення запиту
+        submitButton.disabled = false; // Повторно вмикаємо кнопку після завершення запиту
       })
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.json();
-        })
-        .then((data) => {
-          // Використання alert для відображення повідомлення
-          alert(data.message);
-          // Закриття модального вікна після надсилання повідомлення
-          closeModal();
-          // Очищення форми після успішного надсилання
-          document.getElementById('modalForm').reset();
-        })
-        .catch((error) => {
-          console.error('Error:', error); // Обробка помилок
-          alert('Щось пішло не так. Спробуйте ще раз.');
-        });
-    });
-
-  function closeModal() {
-    const modal = document.querySelector('.modal');
-    modal.classList.remove('show-modal'); // Знімає клас show-modal з модального вікна
-    document.body.classList.remove('lock'); // Знімає клас lock з body
-  }
-
-  console.log('JavaScript завантажений та працює');
+      .catch((error) => {
+        console.error('Помилка:', error);
+        alert('Сталася помилка при відправці форми.');
+        formSubmitted = false; // Скидаємо прапорець у випадку помилки
+        submitButton.disabled = false; // Повторно вмикаємо кнопку у випадку помилки
+      });
+  });
 });
+
+function closeModal() {
+  const modal = document.querySelector('.modal');
+  modal.classList.remove('show-modal'); // Приховуємо модальне вікно, знімаючи клас
+}

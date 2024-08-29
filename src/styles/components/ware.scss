@@ -1,9 +1,14 @@
 .ware {
   background-color: #f6f6f6;
   color: #404044;
-  margin-bottom: 0;
+  margin: 0 10px;
   padding-bottom: 40px;
+
   padding-top: 30px;
+
+  @include mq($from: phablet) {
+    margin: 0;
+  }
 }
 
 .ware__box {
@@ -17,6 +22,8 @@
 
   @include mq($from: tablet-wide) {
     margin-top: 40px;
+    flex-wrap: nowrap;
+    gap: 10px;
   }
 }
 
@@ -44,11 +51,14 @@
 
 .ware__img {
   width: 100%;
-  border-radius: 25% 10% 0 0;
   object-fit: cover;
 
   @include mq($from: desktop) {
     height: 300px;
+  }
+
+  @include mq($from: tablet-wide) {
+    border-radius: 0;
   }
 }
 

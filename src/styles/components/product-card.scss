@@ -171,8 +171,9 @@
   }
   @include mq($from: tablet-wide) {
     grid-column: span 1;
-    place-items: center;
-    margin-top: 0;
+    text-align: left;
+    margin-top: 40px;
+    padding-right: 150px;
   }
 }
 
@@ -191,13 +192,13 @@
   top: 0;
   left: 0;
   display: block;
-  background: #d6d6d64b;
-  width: 40px;
-  height: 40px;
+  background: #d1a954;
+  width: 110px;
+  height: 45px;
   transition: all 0.3s ease;
 
   @include mq($from: tablet-wide) {
-    top: -10px;
+    top: -7px;
     left: -10px;
   }
 }
@@ -226,14 +227,14 @@
 }
 .product__more-link:hover:before {
   width: 100%;
-  background-color: #5bb860;
+  background-color: #d1a954;
   @include mq($from: tablet-wide) {
     width: 115%;
   }
 }
 
 .product__more-link:active:before {
-  background-color: #438346;
+  background-color: #b47c48;
 }
 
 .product__more-link:active {

@@ -146,6 +146,7 @@ document
       .querySelector('.card__gallery-button-2')
       .classList.remove('active');
   });
+
 document.addEventListener('DOMContentLoaded', function () {
   AOS.init({
     disable: function () {

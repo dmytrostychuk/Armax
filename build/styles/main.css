@@ -496,6 +496,15 @@ ul {
   color: #949090;
 }
 
+.text--weight {
+  font-weight: 600;
+}
+
+.text--weight--size {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
 .button {
   position: relative;
   display: block;
@@ -544,6 +553,65 @@ ul {
 .card__slider-button.active {
   background-color: #b47c48;
   color: rgba(255, 255, 255, 0.7098039216);
+}
+
+.button__scroll {
+  position: fixed;
+  padding: 5px;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 55px;
+  background-color: #d1a954;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  transition: 0.3s ease;
+  pointer-events: none;
+  font-size: 16px;
+}
+
+.button__scroll.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.button__scroll:hover {
+  background-color: #b47c48;
+  transition: 0.3s ease;
+}
+
+.button__scroll span {
+  display: block;
+}
+
+.content {
+  height: 200vh;
+}
+
+.scroll__aroww {
+  margin-top: 20px;
+}
+.scroll__aroww::after, .scroll__aroww::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  width: 3px;
+  height: 17px;
+  background-color: #fff;
+}
+.scroll__aroww::after {
+  right: 33px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.scroll__aroww::before {
+  left: 33px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .calc__body {
@@ -1394,6 +1462,10 @@ picture {
   padding-bottom: 50px;
 }
 
+.section--top {
+  padding-top: 10px;
+}
+
 .section--featured {
   line-height: 1.8;
   color: #404044;
@@ -1569,7 +1641,9 @@ picture {
   opacity: 1;
 }
 
-.mySwiper {
+.mySwiper,
+.mySwiper5,
+.mySwiper7 {
   margin-top: 10px;
 }
 
@@ -1977,7 +2051,7 @@ textarea.form__input {
 .ware {
   background-color: #f6f6f6;
   color: #404044;
-  margin-bottom: 0;
+  margin: 0 10px;
   padding-bottom: 40px;
   padding-top: 30px;
 }
@@ -1999,7 +2073,6 @@ textarea.form__input {
 
 .ware__img {
   width: 100%;
-  border-radius: 25% 10% 0 0;
   object-fit: cover;
 }
 
@@ -2764,9 +2837,9 @@ textarea.form__input {
   top: 0;
   left: 0;
   display: block;
-  background: rgba(214, 214, 214, 0.2941176471);
-  width: 40px;
-  height: 40px;
+  background: #d1a954;
+  width: 110px;
+  height: 45px;
   transition: all 0.3s ease;
 }
 
@@ -2799,11 +2872,11 @@ textarea.form__input {
 
 .product__more-link:hover:before {
   width: 100%;
-  background-color: #5bb860;
+  background-color: #d1a954;
 }
 
 .product__more-link:active:before {
-  background-color: #438346;
+  background-color: #b47c48;
 }
 
 .product__more-link:active {
@@ -3067,8 +3140,11 @@ textarea.form__input {
 
 .modal__input {
   padding-bottom: 10px;
+  height: auto;
+  font-size: 18px;
   border: none;
   width: 70%;
+  padding-bottom: 10px;
   margin: 0 auto;
   margin-bottom: 20px;
   border-bottom: 1px solid #000;
@@ -3118,6 +3194,145 @@ textarea.form__input {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+
+.news-page__container iframe {
+  height: 100%;
+  width: 100%;
+  height: 260px;
+}
+
+.news-page__video {
+  width: 100%;
+}
+
+.card__content {
+  margin: 0;
+}
+
+.news-page__card {
+  color: #404044;
+  margin-bottom: 60px;
+}
+.news-page__card img {
+  object-fit: cover;
+  min-height: 130px;
+  max-height: 250px;
+  width: 100%;
+}
+
+.news-page__img-container--article {
+  height: 130px;
+}
+.news-page__img-container--article img {
+  height: 130px;
+}
+
+.news-page__img-container {
+  position: relative;
+}
+
+.news-page__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-grid;
+  background-color: #d1a954;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+.news-page__info span {
+  padding: 2px 5px;
+  letter-spacing: 1.5px;
+}
+
+.card__figcaption {
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.news-page__month {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.news-page__day {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.news-page__time {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.news-page__title {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.info__title--article {
+  margin-top: 0;
+}
+
+.section__text--article {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.news-page__list {
+  list-style-type: disc;
+  padding-left: 16px;
+}
+
+.news-page__list--number {
+  list-style-type: auto;
+  padding-left: 16px;
+}
+
+.read-more-btn {
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  height: auto;
+  padding: 7px 15px;
+  border: none;
+  background-color: #d1a954;
+  color: #ffffff;
+  display: inline-flex;
+}
+
+.full-text {
+  max-height: 100px; /* Висота для прихованого тексту */
+  overflow: hidden;
+  transition: max-height 0.5s ease; /* Плавна анімація для max-height */
+  line-height: 1.2;
+}
+
+.full-text.expanded {
+  max-height: 2500px; /* Висота для розгорнутого тексту */
+}
+
+.read-more-btn.expanded {
+  background-color: #b47c48; /* Фон кнопки при розгорнутому тексті */
+  color: #fff; /* Колір тексту при розгорнутому тексті */
+}
+
+.read-more-btn .icon {
+  margin-left: 8px;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.read-more-btn.expanded .icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); /* Повертає іконку на 180 градусів при розгортанні */
+}
+
 @media (min-width: 560px) {
   body {
     font-size: 16px;
@@ -3221,6 +3436,9 @@ textarea.form__input {
   }
   .calculation__wrapper {
     width: 400px;
+  }
+  .ware {
+    margin: 0;
   }
   .ware__box {
     display: flex;
@@ -3358,7 +3576,15 @@ textarea.form__input {
   .modal-content {
     padding: 20px 30px;
   }
+  .news-page__img-container {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .section__text--article {
+    font-size: 16px;
+  }
 }
+
 @media (min-width: 768px) {
   body {
     font-size: 16px;
@@ -3616,6 +3842,7 @@ textarea.form__input {
     right: 30px;
   }
 }
+
 @media (min-width: 1024px) {
   body {
     font-size: 20px;
@@ -3821,6 +4048,11 @@ textarea.form__input {
   }
   .ware__box {
     margin-top: 40px;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  .ware__img {
+    border-radius: 0;
   }
   .news__blok:nth-of-type(2) {
     direction: ltr;
@@ -3912,14 +4144,15 @@ textarea.form__input {
   }
   .product__more {
     grid-column: span 1;
-    place-items: center;
-    margin-top: 0;
+    text-align: left;
+    margin-top: 40px;
+    padding-right: 150px;
   }
   .product__more-link {
     padding: 0;
   }
   .product__more-link:before {
-    top: -10px;
+    top: -7px;
     left: -10px;
   }
   .product__more-link:hover:before {
@@ -3952,7 +4185,35 @@ textarea.form__input {
     font-size: 18px;
     text-align: start;
   }
+  .news-page__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .news-page__container picture {
+    height: 260px;
+    width: 100%;
+  }
+  .card__content {
+    position: -webkit-sticky;
+    position: sticky;
+    padding-top: 30px;
+    top: 0;
+    right: 0;
+    float: right;
+  }
+  .news-page__card {
+    float: right;
+    width: 45%;
+  }
+  .news-page__article {
+    width: 100%;
+  }
+  .news-page__img-container {
+    max-width: 100%;
+  }
 }
+
 @media (min-width: 1248px) {
   body {
     font-size: 24px;

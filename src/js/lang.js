@@ -439,6 +439,21 @@ const homeTexts = {
     en: 'Our contacts',
     de: 'Unsere Kontakte',
   },
+  'footer_page-15': {
+    ua: 'Новини',
+    en: 'News',
+    de: 'Nachrichten',
+  },
+  'footer_page-16': {
+    ua: 'Продукти',
+    en: 'Products',
+    de: 'Produkte',
+  },
+  'footer_page-17': {
+    ua: 'Механічна обробка',
+    en: 'Mechanical Processing',
+    de: 'Mechanische Bearbeitung',
+  },
   //---------about us
   'header-content_page-1': {
     ua: 'Коротко про нас',
@@ -1225,9 +1240,9 @@ const homeTexts = {
   },
 
   'news-3': {
-    ua: 'Ми виконуємо різноманітні механічні роботи, включаючи токарні операції, фрезерні, шліфувальні, зубонарізні роботи та гартування металу в печах.',
-    en: 'We perform various mechanical works, including turning operations, milling, grinding, gear cutting works, and metal hardening in furnaces.',
-    de: 'Wir führen verschiedene mechanische Arbeiten aus, darunter Dreharbeiten, Fräsen, Schleifen, Zahnradschneiden und Metallhärten in Öfen.',
+    ua: 'Ми раді оголосити про урочисте відкриття нового механічного цеху в м. Луцьк, що стане важливою віхою в розвитку нашого підприємства. Цей сучасний цех обладнано передовими верстатами для токарних, фрезерувальних, шліфувальних та гартувальних робіт, що забезпечить високий рівень точності та якості обробки деталей. Токарні верстати дозволять виготовляти деталі з неперевершеною точністю, фрезерні забезпечать складне оброблення з урахуванням найвищих стандартів, шліфувальні верстати нададуть ідеальну обробку поверхонь, а гартувальні установки підвищать міцність і довговічність матеріалів. Відкриття цього цеху дозволить нам значно розширити наші можливості, покращити ефективність виконання замовлень та задовольнити потреби наших клієнтів на новому рівні.',
+    en: 'We are pleased to announce the grand opening of a new mechanical workshop in Lutsk, which will mark an important milestone in the development of our company. This modern workshop is equipped with advanced machines for turning, milling, grinding, and hardening operations, ensuring a high level of precision and quality in part processing. Turning machines will allow for the production of parts with unparalleled accuracy, milling machines will provide complex processing according to the highest standards, grinding machines will deliver perfect surface finishes, and hardening installations will enhance the strength and durability of materials. The opening of this workshop will significantly expand our capabilities, improve the efficiency of order fulfillment, and meet our customers` needs at a new level.',
+    de: 'Wir freuen uns, die feierliche Eröffnung einer neuen mechanischen Werkstatt in Lutsk bekannt zu geben, die einen wichtigen Meilenstein in der Entwicklung unseres Unternehmens darstellt. Diese moderne Werkstatt ist mit fortschrittlichen Maschinen für Dreh-, Fräs-, Schleif- und Härtearbeiten ausgestattet, die ein hohes Maß an Präzision und Qualität bei der Bearbeitung von Teilen gewährleisten. Drehmaschinen ermöglichen die Herstellung von Teilen mit unvergleichlicher Genauigkeit, Fräsmaschinen bieten komplexe Bearbeitung nach höchsten Standards, Schleifmaschinen sorgen für perfekte Oberflächenbearbeitung, und Härteeinrichtungen verbessern die Festigkeit und Haltbarkeit der Materialien. Die Eröffnung dieser Werkstatt wird unsere Möglichkeiten erheblich erweitern, die Effizienz bei der Auftragsabwicklung verbessern und die Bedürfnisse unserer Kunden auf einem neuen Niveau erfüllen.',
   },
 
   'news-4': {
