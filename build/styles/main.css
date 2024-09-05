@@ -687,6 +687,30 @@ label {
   height: 880px;
 }
 
+.index-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.fullwidth-box.video-background .fullwidth-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  min-height: 100%;
+  min-width: 100%;
+  -webkit-transform-style: preserve-3d;
+}
+
 .header__container {
   margin: 0 auto;
 }
