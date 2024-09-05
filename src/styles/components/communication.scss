@@ -1,0 +1,35 @@
+.communication {
+  // color: #363839;
+  color: #ffffff;
+
+  @include mq($from: tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.communication__title {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  // color: #363839;
+  color: #ffffff;
+  margin-top: 0;
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 20px;
+  padding: 0 50px;
+
+  @include mq($from: tablet) {
+    padding: 0;
+  }
+
+  @include mq($from: desktop) {
+    margin-right: 50px;
+  }
+}
+
+.communication__container {
+  max-width: 1700px;
+}

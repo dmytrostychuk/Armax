@@ -1,17 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('modalForm');
+  const closeButton = document.querySelector('.close-button');
 
-  let formSubmitted = false; // Додаємо прапорець для перевірки
+  closeButton.addEventListener('click', closeModal);
+
+  let formSubmitted = false;
 
   form.addEventListener('submit', function (event) {
-    event.preventDefault(); // Запобігаємо перезавантаженню сторінки
+    event.preventDefault();
 
-    if (formSubmitted) return; // Якщо форма вже була відправлена, припиняємо виконання
+    if (formSubmitted) return;
 
-    formSubmitted = true; // Встановлюємо прапорець
+    formSubmitted = true;
 
     const submitButton = form.querySelector('button[type="submit"]');
-    submitButton.disabled = true; // Вимикаємо кнопку, щоб уникнути повторного натискання
+    submitButton.disabled = true;
 
     const formData = new FormData(form);
 
@@ -21,27 +24,24 @@ document.addEventListener('DOMContentLoaded', function () {
     })
       .then((response) => response.text())
       .then((data) => {
-        // Видаляємо клас 'lock' з body
         document.body.classList.remove('lock');
 
-        // Знаходимо модальне вікно та видаляємо клас 'show-modal'
         const modal = document.querySelector('.modal');
         if (modal.classList.contains('show-modal')) {
           modal.classList.remove('show-modal');
         }
 
-        // Можете показати повідомлення про успішну відправку
         alert('Ваш запит відправлено!');
         closeModal(); // Закриваємо модальне вікно після відправки форми
 
-        formSubmitted = false; // Скидаємо прапорець після завершення запиту
-        submitButton.disabled = false; // Повторно вмикаємо кнопку після завершення запиту
+        formSubmitted = false;
+        submitButton.disabled = false;
       })
       .catch((error) => {
         console.error('Помилка:', error);
         alert('Сталася помилка при відправці форми.');
-        formSubmitted = false; // Скидаємо прапорець у випадку помилки
-        submitButton.disabled = false; // Повторно вмикаємо кнопку у випадку помилки
+        formSubmitted = false;
+        submitButton.disabled = false;
       });
   });
 });

@@ -6,6 +6,11 @@ const currentPathName = window.location.pathname;
 let currentTextObject = {};
 
 const homeTexts = {
+  'send-button': {
+    ua: 'Надіслати запит',
+    en: 'Send request',
+    de: 'Anfrage senden',
+  },
   'nav_page-1': {
     ua: 'Металообробка',
     en: 'Metal processing',
@@ -2295,6 +2300,52 @@ const homeTexts = {
     en: 'This table support has a 6 mm thick base. Its design features intersecting elements, adding originality and a modern look. This design ensures high stability and reliability, making the support suitable for use with large and heavy tabletops. The support is powder-coated, providing additional protection and durability.',
 
     de: 'Diese Tischstütze hat eine 6 mm dicke Basis. Ihre Konstruktion besteht aus sich kreuzenden Elementen, was ihr Originalität und ein modernes Aussehen verleiht. Dieses Design gewährleistet eine hohe Stabilität und Zuverlässigkeit und macht die Stütze für den Einsatz mit großen und schweren Tischplatten geeignet. Die Stütze ist pulverbeschichtet, was zusätzlichen Schutz und Langlebigkeit bietet.',
+  },
+
+  'news-index-1': {
+    ua: 'Тендер на закупівлю обладнання!',
+    en: 'Tender for equipment procurement!',
+    de: 'Ausschreibung für den Einkauf von Ausrüstung!',
+  },
+
+  'news-index-2': {
+    ua: 'Підприємство має на меті закупити обладнання, а саме: Лазер листовий Bodor Laser C3 3000 W Maxphotonics. Вартість має бути вказана з ПДВ. Прохання комерційні пропозиції надсилати на електронну пошту:',
+    en: 'The company aims to purchase equipment, specifically: Sheet laser Bodor Laser C3 3000 W Maxphotonics. The price must be indicated with VAT. Please send commercial offers to the email:',
+    de: 'Das Unternehmen beabsichtigt, Ausrüstung zu kaufen, und zwar: Blechlaser Bodor Laser C3 3000 W Maxphotonics. Der Preis muss inklusive Mehrwertsteuer angegeben werden. Bitte senden Sie Ihre kommerziellen Angebote per E-Mail an:',
+  },
+
+  'news-index-3': {
+    ua: 'Тендер на закупівлю обладнання!',
+    en: 'Tender for equipment procurement!',
+    de: 'Ausschreibung für den Einkauf von Ausrüstung!',
+  },
+
+  'news-index-4': {
+    ua: 'Підприємство має на меті закупити обладнання, а саме: Гідравлічний трубогинний верстат CNC 3D 50 4Axes-2Radius Maxphotonics. Вартість має бути вказана з ПДВ. Прохання комерційні пропозиції надсилати на електронну пошту:',
+    en: 'The company aims to purchase equipment, specifically: Hydraulic pipe bending machine CNC 3D 50 4Axes-2Radius Maxphotonics. The price must be indicated with VAT. Please send commercial offers to the email:',
+    de: 'Das Unternehmen beabsichtigt, Ausrüstung zu kaufen, und zwar: Hydraulische Rohrbiegemaschine CNC 3D 50 4Axes-2Radius Maxphotonics. Der Preis muss inklusive Mehrwertsteuer angegeben werden. Bitte senden Sie Ihre kommerziellen Angebote per E-Mail an:',
+  },
+
+  'news-index-5': {
+    ua: 'Більше новин',
+    en: 'More news',
+    de: 'Mehr Nachrichten',
+  },
+  'calc-1': {
+    ua: 'Залишилися запитання? Залиште свої дані, ми з Вами зв`яжемося!',
+    en: 'Have any questions? Leave your details, and we will contact you!',
+    de: 'Haben Sie Fragen? Hinterlassen Sie Ihre Daten, und wir werden uns mit Ihnen in Verbindung setzen!',
+  },
+
+  'calc-2': {
+    ua: 'Напишіть',
+    en: 'Write',
+    de: 'Schreiben',
+  },
+  'calc-3': {
+    ua: 'нам',
+    en: 'to us',
+    de: 'uns',
   },
 };
 

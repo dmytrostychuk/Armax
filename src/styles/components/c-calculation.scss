@@ -7,7 +7,6 @@
   flex-direction: column;
 
   @include mq($from: phablet) {
-    width: 450px;
   }
 
   @include mq($from: tablet) {

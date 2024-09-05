@@ -28,7 +28,6 @@
 
 .calculation__wrapper {
   @include mq($from: phablet) {
-    width: 400px;
   }
 }
 

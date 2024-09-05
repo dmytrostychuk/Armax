@@ -614,6 +614,10 @@ ul {
           transform: rotate(45deg);
 }
 
+.button-form {
+  padding: 0 30px;
+}
+
 .calc__body {
   background-color: #8B8B8B;
 }
@@ -2654,7 +2658,7 @@ textarea.form__input {
   right: 20px;
   padding: 15px 30px;
   padding-left: 50px;
-  background-color: #d1a954;
+  background-color: #b47c48;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -2675,7 +2679,7 @@ textarea.form__input {
   position: absolute;
   left: 20px; /* Змініть значення відступу, щоб підігнати стрілку */
   top: calc(50% - 8px); /* Вирівнюємо посередині відносно кнопки */
-  border: solid #b47c48;
+  border: solid #d1a954;
   border-width: 0 3px 3px 0;
   padding: 4px;
   -webkit-transform: rotate(45deg);
@@ -3333,6 +3337,78 @@ textarea.form__input {
           transform: rotate(180deg); /* Повертає іконку на 180 градусів при розгортанні */
 }
 
+.communication {
+  color: #ffffff;
+}
+
+.communication__title {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 0;
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 20px;
+  padding: 0 50px;
+}
+
+.communication__container {
+  max-width: 1700px;
+}
+
+.button-slip {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.button-slip__link {
+  background-color: inherit;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+}
+.button-slip__link:hover .button-slip__link-text {
+  left: 30px;
+}
+.button-slip__link:hover .button-slip__link-box {
+  background-color: #6e4b4b;
+}
+
+.button-slip__link-text {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: 0;
+  text-align: start;
+  transition: left 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 50px;
+  color: #eeeeee;
+}
+
+.button-slip__link-span {
+  border-bottom: 3px solid #b47c48;
+}
+
+.button-slip__link-box {
+  margin-left: 60px;
+  height: 180px;
+  width: 180px;
+  background: #d1a954;
+  transition: background 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+
+.button-slip__link-text--down {
+  top: 75%;
+  border-bottom: 3px solid #b47c48;
+}
+
 @media (min-width: 560px) {
   body {
     font-size: 16px;
@@ -3434,9 +3510,6 @@ textarea.form__input {
   .info__block {
     width: 45%;
   }
-  .calculation__wrapper {
-    width: 400px;
-  }
   .ware {
     margin: 0;
   }
@@ -3500,9 +3573,6 @@ textarea.form__input {
   }
   .c-header__content-text {
     font-size: 20px;
-  }
-  .c-calculation__wrapper {
-    width: 450px;
   }
   .l-characteristic__content {
     display: flex;
@@ -3840,6 +3910,14 @@ textarea.form__input {
   .close-button {
     top: 30px;
     right: 30px;
+  }
+  .communication {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .communication__title {
+    padding: 0;
   }
 }
 
@@ -4264,5 +4342,8 @@ textarea.form__input {
   }
   .product__card {
     max-width: 320px;
+  }
+  .communication__title {
+    margin-right: 50px;
   }
 }
