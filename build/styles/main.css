@@ -689,16 +689,25 @@ label {
 
 .index-video {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
+  top: 0;
+  left: 0;
+  z-index: 0;
   min-height: 100%;
   min-width: 100%;
-  height: auto;
-  width: auto;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+}
+
+.video-overlay {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c);
+  pointer-events: none; /* Щоб накладання не блокувало кліки по відео */
 }
 
 .fullwidth-box.video-background .fullwidth-video {
@@ -769,6 +778,10 @@ label {
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/product-individual.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.a-header__background {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/about-us-header.webp");
 }
 
 .header__background-news {
@@ -907,6 +920,10 @@ label {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
 }
+.nav__active .nav__item:nth-child(5) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
 .nav__close .nav__item {
   -webkit-animation: menu-off 0.2s linear both;
           animation: menu-off 0.2s linear both;
@@ -926,6 +943,10 @@ label {
 .nav__close .nav__item:nth-child(4) {
   -webkit-animation-delay: 0.25s;
           animation-delay: 0.25s;
+}
+.nav__close .nav__item:nth-child(5) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 .nav__close .nav__item .nav__list-social:nth-child(1) {
   -webkit-animation-delay: 0.2s;
@@ -971,6 +992,10 @@ label {
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
 }
+.nav__active .nav__item-social:nth-child(5) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
 .nav__close .nav__item-social {
   -webkit-animation: menu-off 0.2s linear both;
           animation: menu-off 0.2s linear both;
@@ -990,6 +1015,10 @@ label {
 .nav__close .nav__item-social:nth-child(4) {
   -webkit-animation-delay: 0.05s;
           animation-delay: 0.05s;
+}
+.nav__close .nav__item-social:nth-child(5) {
+  -webkit-animation-delay: 0.01s;
+          animation-delay: 0.01s;
 }
 
 .nav__list {
@@ -1028,6 +1057,7 @@ label {
 }
 
 .menu {
+  z-index: 2;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -2319,10 +2349,6 @@ textarea.form__input {
   padding-bottom: 0;
 }
 
-.a-header__background {
-  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url("../img/about-us-header.jpg");
-}
-
 .a-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -3404,7 +3430,7 @@ textarea.form__input {
 
 .button-slip__link-text {
   position: absolute;
-  top: 50%;
+  top: 45%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   left: 0;
@@ -3429,7 +3455,7 @@ textarea.form__input {
 }
 
 .button-slip__link-text--down {
-  top: 75%;
+  top: 70%;
   border-bottom: 3px solid #b47c48;
 }
 
@@ -3695,6 +3721,9 @@ textarea.form__input {
   .button {
     margin: 0;
     margin-top: 20px;
+  }
+  .index-video {
+    object-fit: none;
   }
   .burger-btn-active {
     -webkit-transform: translateX(220px);
@@ -4369,5 +4398,11 @@ textarea.form__input {
   }
   .communication__title {
     margin-right: 50px;
+  }
+}
+
+@media (min-width: 1940px) {
+  .index-video {
+    object-fit: cover;
   }
 }

@@ -11,8 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="website icon" type="png" href="https://github.com/dmytrostychuk/Armax/blob/master/src/img/pngegg.png?raw=true/>
   <meta property=" og:title" content="ArmaxMG">
@@ -121,12 +119,14 @@
   <header class="header">
     <a href="#" class="scroll-to-form" id="scrollButton" data-lang="send-button"></a>
     <div class="fullwidth-video">
-      <video class="index-video" src="https://magnet.com.ua/wp-content/uploads/magnet-video.mp4" autoplay playsinline
-        loop muted></video>
-    </div>
-    <!-- <div class="header__background">
 
-    </div> -->
+      <video class="index-video fullwidth-video" autoplay playsinline loop muted preload="auto">
+        <source src="https://armax-mg.com.ua/video/index-video-vertical.mp4" media="(max-width: 768px)"
+          type="video/mp4">
+        <source src="https://armax-mg.com.ua/video/index-video3.mp4" media="(min-width: 769px)" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+    </div>
     <div class="nav__social--desktop-wrap">
       <div class="nav__social--desktop container">
         <ul class="nav__social-list--desktop">
@@ -180,20 +180,15 @@
               </a>
             </li>
           </ul>
-
         </div>
-
       </div>
     </div>
-
     <div class="header__container container">
-
       <div class="menu">
-
         <div class="menu__container">
           <button class="burger-btn"><span></span></button>
           <h3 class="menu__title">
-            <a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.png" alt="" /></a>
+            <a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.avif" alt="" /></a>
           </h3>
           <div class="header__lang nav__list-social">
             <button class="header__btn" data-btn="ua">UA</button>
@@ -201,7 +196,6 @@
             <button class="header__btn" data-btn="de">DE</button>
           </div>
         </div>
-
         <nav class="nav">
           <div class="nav__inner">
             <ul class="nav__list">
@@ -260,6 +254,15 @@
                 </a>
               </li>
               <li class="nav__item-social">
+                <a href="https://www.instagram.com/armax.mg?igsh=aWJ0ZnE2MGkxNThj" class="link-social link--hover"
+                  target="_blank" rel="noopener noreferrer">
+                  <svg class="link-social--svg" width="30" height="20">
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                  <span class="none">instagram.com/armaxMG/</span>
+                </a>
+              </li>
+              <li class="nav__item-social">
                 <a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
                   rel="noopener noreferrer">
                   <svg class="link-social--svg" width="30" height="20">
@@ -281,7 +284,6 @@
           </div>
         </nav>
       </div>
-
       <div class="header__content--container">
         <div class="header__content header__inner">
           <h1 class="header__content-title" data-lang="header__content_page-1">
@@ -297,7 +299,6 @@
     <div class="container">
       <section class="section preview">
         <p class="section__title" data-lang="preview_page-1">
-
         </p>
         <p class="section__text">
           <span data-lang="preview_page-2"></span>
@@ -319,7 +320,7 @@
         <article class="services__card" data-aos="fade-up">
           <figure class="services__content">
             <picture>
-              <img class="services__img" src="img/lazer.jpg" alt="lazer working" width="300" height="200" />
+              <img class="services__img" src="img/lazer.webp" alt="lazer working" width="300" height="200" />
             </picture>
             <figcaption class="services__figcaption">
               <div class="services__name">
@@ -349,7 +350,6 @@
               </div>
               <div class="services__hover-content">
                 <h4 class="services__hover-title" data-lang="services_page-6">
-
                 </h4>
                 <a class="services__hover-text" href="sheet-bending.html">
                   <span class="services__hover--circle" data-lang="services_page-7">Детальніше</span>
@@ -367,12 +367,10 @@
             <figcaption class="services__figcaption">
               <div class="services__name">
                 <a class="services__name-link" href="dyeing.html" data-lang="services_page-9">
-
                 </a>
               </div>
               <div class="services__hover-content">
                 <h4 class="services__hover-title" data-lang="services_page-8">
-
                 </h4>
                 <a class="services__hover-text" href="dyeing.html">
                   <span class="services__hover--circle" data-lang="services_page-10"></span>
@@ -385,17 +383,15 @@
         <article class="services__card" data-aos="fade-up">
           <figure class="services__content">
             <picture>
-              <img class="services__img" src="img/metal-products.jpg" alt="all services" width="300" height="200" />
+              <img class="services__img" src="img/metal-products.webp" alt="all services" width="300" height="200" />
             </picture>
             <figcaption class="services__figcaption">
               <div class="services__name">
                 <a class="services__name-link" href="services.html" data-lang="services_page-11">
-
                 </a>
               </div>
               <div class="services__hover-content">
                 <h4 class="services__hover-title" data-lang="services_page-12">
-
                 </h4>
                 <a class="services__hover-text" href="services.html">
                   <span class="services__hover--circle" data-lang="services_page-13"></span>
@@ -411,7 +407,6 @@
       <div class="container">
         <h3 class="section__title" data-lang="principles-page-1"></h3>
         <p class="section__text section--center-text" data-lang="principles-page-2">
-
         </p>
         <div class="featured">
           <div class="featured__card" data-aos="zoom-in" data-aos-delay="50">
@@ -431,7 +426,6 @@
             <div class="featured__content">
               <p class="featured__content-title" data-lang="principles-page-5"></p>
               <p class="featured__content-text" data-lang="principles-page-6">
-
               </p>
             </div>
           </div>
@@ -442,7 +436,6 @@
             <div class="featured__content">
               <p class="featured__content-title" data-lang="principles-page-7"></p>
               <p class="featured__content-text" data-lang="principles-page-8">
-
               </p>
             </div>
           </div>
@@ -453,7 +446,6 @@
             <div class="featured__content">
               <p class="featured__content-title" data-lang="principles-page-9"></p>
               <p class="featured__content-text" data-lang="principles-page-10">
-
               </p>
             </div>
           </div>
@@ -463,15 +455,13 @@
 
     <section class="section services ware">
       <div>
-
         <h3 class="section__title"><a href="product.html" class="section__title section__title--hover"
             data-lang="wara_page-1"></a></h3>
-
         <div class="ware__box">
           <article class="ware__card" data-aos="zoom-in" data-aos-delay="150">
             <figure class="ware__content">
               <picture>
-                <img class="ware__img" src="img/table-legs.jpg" alt="table-legs" width="auto" height="220" />
+                <img class="ware__img" src="img/table-legs.webp" alt="table-legs" width="auto" height="220" />
               </picture>
               <figcaption class="ware__figcaption">
                 <div class="ware__name">
@@ -484,7 +474,7 @@
           <article class="ware__card" data-aos="zoom-in" data-aos-delay="150">
             <figure class="ware__content">
               <picture>
-                <img class="ware__img" src="img/grain-bucket.jpg" alt="grain-buckets" width="auto" height="220" />
+                <img class="ware__img" src="img/product-bucket.webp" alt="grain-buckets" width="auto" height="220" />
               </picture>
               <figcaption class="ware__figcaption">
                 <div class="ware__name">
@@ -497,7 +487,7 @@
           <article class="ware__card" data-aos="zoom-in" data-aos-delay="250">
             <figure class="ware__content">
               <picture>
-                <img class="ware__img" src="img/decorative-cut.jpg" alt="decorative-elements" width="auto"
+                <img class="ware__img" src="img/product-decore-element.webp" alt="decorative-elements" width="auto"
                   height="220" />
               </picture>
               <figcaption class="ware__figcaption">
@@ -510,7 +500,8 @@
           <article class="ware__card" data-aos="zoom-in" data-aos-delay="350">
             <figure class="ware__content">
               <picture>
-                <img class="ware__img" src="img/individual.jpg" alt="Individual-orders" width="auto" height="220" />
+                <img class="ware__img" src="img/product-individual.webp" alt="Individual-orders" width="auto"
+                  height="220" />
               </picture>
               <figcaption class="ware__figcaption">
                 <div class="ware__name">
@@ -545,7 +536,6 @@
                     class="span--color">armaxofis@gmail.com</span></a>
               </div>
             </div>
-
           </div>
           <div class="news__blok">
             <div class="news__img">
@@ -564,9 +554,7 @@
                     class="span--color">armaxofis@gmail.com</span></a>
               </div>
             </div>
-
           </div>
-
         </div>
         <div class="product__more">
           <a href="news.html" class="product__more-link">
@@ -578,11 +566,8 @@
           </a>
         </div>
       </div>
-
-
       </div>
     </section>
-
 
     <section class="calculation">
       <div class="calculation__background"></div>
@@ -591,19 +576,13 @@
           <div class="communication">
             <h5 class="communication__title" data-aos="fade-up" data-lang="calc-1">
             </h5>
-
             <div class="button-slip">
               <button type="button" class="modal-active button-slip__link menu__btn">
                 <div><span class="button-slip__link-text" data-lang="calc-2"></span><br><span
                     class="button-slip__link-text button-slip__link-text--down" data-lang="calc-3"></span></div>
                 <div class="button-slip__link-box"></div>
-
-
               </button>
             </div>
-
-
-
           </div>
         </div>
       </div>
@@ -631,7 +610,6 @@
               <li class="info__item">
                 <a class="info__link" href="product.html" data-lang="footer_page-16"></a>
               </li>
-
             </ul>
           </div>
           <div class="info__block info__schedule">
@@ -663,7 +641,6 @@
               <li class="info__item">
                 <a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
                   class="link-social link--hover" data-lang="footer_page-12" target="_blank" rel="noopener noreferrer">
-
                 </a>
                 <svg class="link-social--svg" width="30" height="30">
                   <use xlink:href="#location"></use>
@@ -675,10 +652,8 @@
                   <use xlink:href="#clock"></use>
                 </svg>
               </li>
-
             </ul>
           </div>
-
           <div class="info__block info__contact">
             <h5 class="info__title" data-lang="footer_page-14"></h5>
             <ul class="info__list">
@@ -724,7 +699,6 @@
                   instagram.com/armax.mg
                 </a>
               </li>
-              </li>
             </ul>
           </div>
         </div>
@@ -751,9 +725,9 @@
     </div>
   </div>
   <script src="js/lang.js"></script>
+  <!-- animation -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="../js/form-card.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="js/app.js"></script>
   <script src="js/index.js"></script>
 </body>
