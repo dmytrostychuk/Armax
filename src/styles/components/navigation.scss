@@ -90,6 +90,9 @@
     &:nth-child(4) {
       animation-delay: 0.9s;
     }
+    &:nth-child(5) {
+      animation-delay: 1s;
+    }
 
     @include mq($from: tablet-wide) {
       opacity: 1;
@@ -113,6 +116,9 @@
 
     &:nth-child(4) {
       animation-delay: 0.25s;
+    }
+    &:nth-child(5) {
+      animation-delay: 0.2s;
     }
 
     .nav__list-social {
@@ -176,6 +182,9 @@
     &:nth-child(4) {
       animation-delay: 1.3s;
     }
+    &:nth-child(5) {
+      animation-delay: 1.4s;
+    }
 
     @include mq($from: tablet-wide) {
       animation: none;
@@ -199,6 +208,9 @@
 
     &:nth-child(4) {
       animation-delay: 0.05s;
+    }
+    &:nth-child(5) {
+      animation-delay: 0.01s;
     }
     @include mq($from: tablet-wide) {
       animation: none;

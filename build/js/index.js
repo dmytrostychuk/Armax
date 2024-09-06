@@ -45,6 +45,66 @@ function isElementPartiallyInViewport(el) {
   return rect.top < window.innerHeight && rect.bottom >= 0;
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  var blocks = document.querySelectorAll('.news-page__card');
+
+  function toggleReadMore() {
+    blocks.forEach(function (block) {
+      var fullText = block.querySelector('.full-text');
+      var readMoreBtn = block.querySelector('.read-more-btn');
+
+      if (window.innerWidth > 1200) {
+        fullText.classList.add('expanded1');
+      } else {
+        fullText.classList.remove('expanded1');
+      }
+    });
+  }
+
+  // Викликаємо функцію при завантаженні сторінки
+  toggleReadMore();
+
+  // Додаємо обробник події для зміни розміру вікна
+  window.addEventListener('resize', toggleReadMore);
+
+  // Додаємо обробник події для кнопки в кожному блоці
+  blocks.forEach(function (block) {
+    var readMoreBtn = block.querySelector('.read-more-btn');
+    var fullText = block.querySelector('.full-text');
+
+    if (readMoreBtn) {
+      readMoreBtn.addEventListener('click', function () {
+        var isExpanded = fullText.classList.toggle('expanded');
+        readMoreBtn.classList.toggle('expanded', isExpanded); // Додаємо/видаляємо клас для кнопки
+        readMoreBtn.querySelector('.text').textContent = isExpanded
+          ? 'Сховати'
+          : 'Читати більше';
+      });
+    }
+  });
+});
+
+// Функція для перевірки скролінгу
+window.onscroll = function () {
+  const scrollButton = document.getElementById('scrollButton');
+  if (
+    document.documentElement.scrollTop >
+    document.documentElement.scrollHeight * 0.05
+  ) {
+    scrollButton.classList.add('visible'); // Додати клас для показу кнопки
+  } else {
+    scrollButton.classList.remove('visible'); // Видалити клас для приховування кнопки
+  }
+};
+
+// Функція для скролу догори
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', // Плавний скролінг
+  });
+}
+
 // Отримати кнопку прокрутки
 var scrollButton = document.getElementById('scrollButton');
 // Отримати форму
@@ -148,25 +208,61 @@ document
   });
 
 document.addEventListener('DOMContentLoaded', function () {
-  AOS.init({
-    disable: function () {
-      var isMobile = window.innerWidth < 768;
-      console.log('AOS disabled:', isMobile);
-      return isMobile;
-    },
-    startEvent: 'DOMContentLoaded',
-    initClassName: 'aos-init',
-    animatedClassName: 'aos-animate',
-    useClassNames: false,
-    disableMutationObserver: false,
-    debounceDelay: 50,
-    throttleDelay: 99,
-    offset: 100,
-    delay: 0,
-    duration: 400,
-    easing: 'ease',
-    once: true,
-    mirror: false,
-    anchorPlacement: 'top-bottom',
+  var blocks = document.querySelectorAll('.news-page__card');
+
+  function toggleReadMore() {
+    blocks.forEach(function (block) {
+      var fullText = block.querySelector('.full-text');
+      var readMoreBtn = block.querySelector('.read-more-btn');
+
+      if (window.innerWidth > 1200) {
+        fullText.classList.add('expanded1');
+      } else {
+        fullText.classList.remove('expanded1');
+      }
+    });
+  }
+
+  // Викликаємо функцію при завантаженні сторінки
+  toggleReadMore();
+
+  // Додаємо обробник події для зміни розміру вікна
+  window.addEventListener('resize', toggleReadMore);
+
+  // Додаємо обробник події для кнопки в кожному блоці
+  blocks.forEach(function (block) {
+    var readMoreBtn = block.querySelector('.read-more-btn');
+    var fullText = block.querySelector('.full-text');
+
+    if (readMoreBtn) {
+      readMoreBtn.addEventListener('click', function () {
+        var isExpanded = fullText.classList.toggle('expanded');
+        readMoreBtn.classList.toggle('expanded', isExpanded); // Додаємо/видаляємо клас для кнопки
+        readMoreBtn.querySelector('.text').textContent = isExpanded
+          ? 'Сховати'
+          : 'Читати більше';
+      });
+    }
   });
 });
+
+// Функція для перевірки скролінгу
+window.onscroll = function () {
+  const scrollButton = document.getElementById('scrollButton');
+  if (
+    document.documentElement.scrollTop >
+    document.documentElement.scrollHeight * 0.05
+  ) {
+    scrollButton.classList.add('visible'); // Додати клас для показу кнопки
+  } else {
+    scrollButton.classList.remove('visible'); // Видалити клас для приховування кнопки
+  }
+};
+
+// Функція для скролу догори
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', // Плавний скролінг
+  });
+}

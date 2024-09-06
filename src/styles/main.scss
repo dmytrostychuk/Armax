@@ -1,11 +1,9 @@
 @import './utils/variables';
 @import './utils/functions';
 @import './utils/mixins';
-
 @import './base/normilize';
 @import './base/fonts';
 @import './base/base';
-
 @import './components/button';
 @import './components/calc';
 @import './components/header';
@@ -28,31 +26,21 @@
 @import './components/nav__social--desktop';
 @import './components/ware';
 @import './components/news';
-
 @import './components/s-header';
 @import './components/s-services';
-
-@import './components/about-us';
 @import './components/a-gallery';
 @import './components/a-privilege';
 @import './components/work';
-
 @import './components/c-header';
 @import './components/c-communication';
 @import './components/c-calculation';
-
 @import './components/l-header';
 @import './components/l-characteristic';
 @import './components/l-price';
-
 @import './components/sb-header';
-
 @import './components/d-header';
-
 @import './components/w-header';
-
 @import './components/locksmith-header';
-
 @import './components/c-calc';
 @import './components/scroll-btn';
 @import './components/dropdown';

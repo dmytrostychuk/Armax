@@ -64,6 +64,17 @@
 					d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0" />
 			</g>
 		</symbol>
+		<symbol id="instagram" viewBox="0 0 256 256">
+			<g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+			<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+			<g id="SVGRepo_iconCarrier">
+				<path
+					d="M160,128a32,32,0,1,1-32-32A32.03667,32.03667,0,0,1,160,128Zm68-44v88a56.06353,56.06353,0,0,1-56,56H84a56.06353,56.06353,0,0,1-56-56V84A56.06353,56.06353,0,0,1,84,28h88A56.06353,56.06353,0,0,1,228,84Zm-52,44a48,48,0,1,0-48,48A48.05436,48.05436,0,0,0,176,128Zm16-52a12,12,0,1,0-12,12A12,12,0,0,0,192,76Z" />
+			</g>
+
+		</symbol>
 	</svg>
 
 	<header class="header-product">
@@ -109,6 +120,14 @@
 							</a>
 						</li>
 						<li class="nav__social-item">
+							<a href="https://www.instagram.com/armax.mg?igsh=aWJ0ZnE2MGkxNThj" class="link-social link--hover"
+								target="_blank" rel="noopener noreferrer">
+								<svg class="link-social--svg" width="25" height="25">
+									<use xlink:href="#instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="nav__social-item">
 							<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
 								class="link-social link--hover" target="_blank" rel="noopener noreferrer">
 								<svg class="link-social--svg" width="25" height="25">
@@ -127,7 +146,7 @@
 				<div class="menu__container">
 					<button class="burger-btn"><span></span></button>
 					<h1 class="menu__title">
-						<a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.png" alt="" /></a>
+						<a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.avif" alt="" /></a>
 					</h1>
 					<div class="header__lang nav__list-social">
 						<button class="header__btn" data-btn="ua">UA</button>
@@ -191,6 +210,15 @@
 										<use xlink:href="#mail"></use>
 									</svg>
 									armax.km@gmail.com
+								</a>
+							</li>
+							<li class="nav__item-social">
+								<a href="https://www.instagram.com/armax.mg?igsh=aWJ0ZnE2MGkxNThj" class="link-social link--hover"
+									target="_blank" rel="noopener noreferrer">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#instagram"></use>
+									</svg>
+									<span class="none">instagram.com/armaxMG/</span>
 								</a>
 							</li>
 							<li class="nav__item-social">
@@ -717,77 +745,22 @@
 									facebook.com/armaxMG/
 								</a>
 							</li>
+							<li class="info__item">
+								<a href="https://www.instagram.com/armax.mg?igsh=aWJ0ZnE2MGkxNThj" class="link-social link--hover"
+									target="_blank" rel="noopener noreferrer">
+									<svg class="link-social--svg" width="25" height="25">
+										<use xlink:href="#instagram"></use>
+									</svg>
+									instagram.com/armax.mg
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<script>
-
-
-
-		document.addEventListener('DOMContentLoaded', function () {
-			var blocks = document.querySelectorAll('.news-page__card');
-
-			function toggleReadMore() {
-				blocks.forEach(function (block) {
-					var fullText = block.querySelector('.full-text');
-					var readMoreBtn = block.querySelector('.read-more-btn');
-
-					if (window.innerWidth > 1200) {
-						fullText.classList.add('expanded1');
-					} else {
-						fullText.classList.remove('expanded1');
-					}
-				});
-			}
-
-			// Викликаємо функцію при завантаженні сторінки
-			toggleReadMore();
-
-			// Додаємо обробник події для зміни розміру вікна
-			window.addEventListener('resize', toggleReadMore);
-
-			// Додаємо обробник події для кнопки в кожному блоці
-			blocks.forEach(function (block) {
-				var readMoreBtn = block.querySelector('.read-more-btn');
-				var fullText = block.querySelector('.full-text');
-
-				if (readMoreBtn) {
-					readMoreBtn.addEventListener('click', function () {
-						var isExpanded = fullText.classList.toggle('expanded');
-						readMoreBtn.classList.toggle('expanded', isExpanded); // Додаємо/видаляємо клас для кнопки
-						readMoreBtn.querySelector('.text').textContent = isExpanded ? 'Сховати' : 'Читати більше';
-					});
-				}
-			});
-		});
-
-
-		// Функція для перевірки скролінгу
-		window.onscroll = function () {
-			const scrollButton = document.getElementById("scrollButton");
-			if (document.documentElement.scrollTop > document.documentElement.scrollHeight * 0.05) {
-				scrollButton.classList.add("visible"); // Додати клас для показу кнопки
-			} else {
-				scrollButton.classList.remove("visible"); // Видалити клас для приховування кнопки
-			}
-		};
-
-		// Функція для скролу догори
-		function scrollToTop() {
-			window.scrollTo({
-				top: 0,
-				behavior: 'smooth' // Плавний скролінг
-			});
-		}
-
-	</script>
-	<script src="js/fslightbox.js"></script>
 	<script src="js/index.js"></script>
-	<script src="js/form-calculation.js"></script>
-
 	<script src="js/app.js"></script>
 	<script src="js/lang.js"></script>
 </body>
