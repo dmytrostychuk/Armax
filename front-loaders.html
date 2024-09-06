@@ -113,15 +113,17 @@
 					</div>
 					<ul class="nav__social-list--desktop nav__social-list--svg">
 						<li class="nav__social-item">
-							<a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
-								<svg class="link-social--svg" width="25" height="25">
+							<a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
+								rel="noopener noreferrer">
+								<svg class="link-social--svg" width="25" height="25" target="_blank" rel="noopener noreferrer">
 									<use xlink:href="#facebook"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="nav__social-item">
 							<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
-								class="link-social link--hover">
+								class="link-social link--hover" target="_blank" rel="noopener noreferrer" target="_blank"
+								rel="noopener noreferrer">
 								<svg class="link-social--svg" width="25" height="25">
 									<use xlink:href="#location"></use>
 								</svg>
@@ -160,17 +162,19 @@
 							<li class="nav__item">
 								<a href="contacts.html" class="link-hover" data-lang="nav_page-3"></a>
 							</li>
-							<li class="nav__item">
-								<a href="product.html" class="link--active nav__item-link" data-lang="nav_page-4"></a>
+
+
+							<li class="nav__item nav__item-dropdown">
+								<a href="product.html" class="link-hover nav__item-link" data-lang="nav_page-4"></a>
 								<div class="dropdown">
-									<a href="ag-equipment.html" class="link__dropdown link-hover" data-lang="nav_page-5"></a>
+									<a href="ag-equipment.html" class="link__dropdown link-hover " data-lang="nav_page-5"></a>
 									<a href="furniture-elements.html" class="link__dropdown link-hover" data-lang="nav_page-6"></a>
 									<a href="decor-elements.html" class="link__dropdown link-hover" data-lang="nav_page-7"></a>
 									<a href="сustom-orders.html" class="link__dropdown link-hover" data-lang="nav_page-8"></a>
 
 								</div>
 							</li>
-							<li class="nav__item">
+							<li class="nav__item nav__item-dropdown">
 								<a href="services.html" class="link-hover" data-lang="nav_page-1"></a>
 								<div class="dropdown dropdown--width">
 									<a href="lazer.html" class="link__dropdown link-hover " data-lang="footer_page-6-1"></a>
@@ -181,6 +185,9 @@
 									<a href="mechanical-processing.html" class="link__dropdown link-hover"
 										data-lang="footer_page-11-1"></a>
 								</div>
+							</li>
+							<li class="nav__item">
+								<a href="news.html" class="link-hover" data-lang="nav_page-9"></a>
 							</li>
 
 						</ul>
@@ -203,7 +210,8 @@
 								</a>
 							</li>
 							<li class="nav__item-social">
-								<a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
+								<a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
+									rel="noopener noreferrer">
 									<svg class="link-social--svg" width="30" height="20">
 										<use xlink:href="#facebook"></use>
 									</svg>
@@ -212,7 +220,7 @@
 							</li>
 							<li class="nav__item-social">
 								<a href="https://www.google.com/maps/place/%D0%A2%D0%B7%D0%9E%D0%92,+%D0%90%D1%80%D0%BC%D0%B0%D0%BA%D1%81+%D0%9C%D0%93/@50.83233,25.453636,18z/data=!4m5!3m4!1s0x0:0x3edf65d8017ef30a!8m2!3d50.8324517!4d25.4532672?hl=uk"
-									class="link-social link--hover">
+									class="link-social link--hover" target="_blank" rel="noopener noreferrer">
 									<svg class="link-social--svg" width="30" height="30">
 										<use xlink:href="#location"></use>
 									</svg>
@@ -226,7 +234,7 @@
 
 			<div class="header__content--container">
 				<div class="header__content-product ">
-					<h1 class="product__title" data-lang="">Фронтальні навантажувачі
+					<h1 class="product__title" data-lang="breadcrumbs-3-1">Фронтальні навантажувачі
 					</h1>
 				</div>
 			</div>
@@ -238,93 +246,167 @@
 			<div class="bucket">
 				<div class="breadcrumbs">
 					<ul class="breadcrumbs__list">
-						<li class="breadcrumbs__item"><a href="product.html">Продукти</a></li>
-						<li class="breadcrumbs__item"><a href="ag-equipment.html">СГ обладнання</a></li>
-						<li class="breadcrumbs__item"><span>Фронтальні навантажувачі</span>
+						<li class="breadcrumbs__item"><a href="product.html" data-lang="breadcrumbs-1">Продукти</a></li>
+						<li class="breadcrumbs__item"><a href="ag-equipment.html" data-lang="breadcrumbs-2">СГ обладнання</a></li>
+						<li class="breadcrumbs__item"><span data-lang="breadcrumbs-3">Фронтальні навантажувачі</span>
 					</ul>
 				</div>
 
 				<section>
 					<div class="goods">
 						<div class="product__box">
-							<article class="product__card">
-								<div class="product__card-container">
-									<div class="product__img">
-										<img src="../img/cards/gak-big-beg/gak-big-beg-1.png" alt="" width="100%">
-									</div>
-									<div class="product__content">
-										<p class="product__code">№1</p>
-										<p class="product__name">Гак для біг бегів</p>
 
-										<p class="product__price">29 000 ₴</p>
+							<article class="product__card">
+								<div class="product__card-container">
+									<div class="product__img">
+										<img src="../img/cards/grain-bucket-2cub/1.png" alt="" width="100%">
 									</div>
-									<a href="card1.html" class="product__link"></a>
+									<div class="product__content">
+
+										<p class="product__name" data-lang="breadcrumbs-4-9"></p>
+										<p class="card__article">
+											<span data-lang="article-9"></span>
+										</p>
+										<p class="product__price" data-lang="card-text-10-8"></p>
+									</div>
+									<a href="../ag-equipment/grain-bucket-2cub.html" class="product__link"></a>
 							</article>
 							<article class="product__card">
 								<div class="product__card-container">
 									<div class="product__img">
+										<img src="../img/cards/grain-bucket-1cub/1.png" alt="" width="100%">
 									</div>
 									<div class="product__content">
-										<p class="product__code">Очікуйте на оновлення товару!</p>
+
+										<p class="product__name" data-lang="breadcrumbs-4-8"></p>
+										<p class="card__article">
+											<span data-lang="article-8"></span>
+										</p>
+										<p class="product__price" data-lang="card-text-10-7"></p>
 									</div>
+									<a href="../ag-equipment/grain-bucket-1cub.html" class="product__link"></a>
 							</article>
 							<article class="product__card">
 								<div class="product__card-container">
 									<div class="product__img">
+										<img src="../img/cards/gak-big-beg/1.png" alt="" width="100%">
 									</div>
 									<div class="product__content">
-										<p class="product__code">Очікуйте на оновлення товару!</p>
+
+										<p class="product__name" data-lang="breadcrumbs-4"></p>
+										<p class="card__article">
+											<span data-lang="article-1"></span>
+										</p>
+										<p class="product__price" data-lang="card-text-10"></p>
 									</div>
+									<a href="../ag-equipment/hook-for-big-beg.html" class="product__link"></a>
 							</article>
 							<article class="product__card">
 								<div class="product__card-container">
 									<div class="product__img">
+										<img src="../img/cards/bucket-2400/1.png" alt="" width="100%">
 									</div>
 									<div class="product__content">
-										<p class="product__code">Очікуйте на оновлення товару!</p>
+
+										<p class="product__name" data-lang="breadcrumbs-4-4"></p>
+										<p class="card__article">
+											<span data-lang="article-4"></span>
+										</p>
+										<p class="product__price" data-lang="card-text-10-3"></p>
 									</div>
+									<a href="../ag-equipment/bucket-2400.html" class="product__link"></a>
 							</article>
 							<article class="product__card">
 								<div class="product__card-container">
 									<div class="product__img">
+										<img src="../img/cards/dump-JCB/1.png" alt="" width="100%">
 									</div>
 									<div class="product__content">
-										<p class="product__code">Очікуйте на оновлення товару!</p>
+
+										<p class="product__name" data-lang="breadcrumbs-4-6"></p>
+										<p class="card__article">
+											<span data-lang="article-6"></span>
+										</p>
+										<p class="product__price" data-lang="card-text-10-5"></p>
 									</div>
+									<a href="../ag-equipment/dump-JCB.html" class="product__link"></a>
 							</article>
 							<article class="product__card">
 								<div class="product__card-container">
 									<div class="product__img">
+										<img src="../img/cards/bale-fork/1.png" alt="" width="100%">
 									</div>
 									<div class="product__content">
-										<p class="product__code">Очікуйте на оновлення товару!</p>
+
+										<p class="product__name" data-lang="breadcrumbs-4-2"></p>
+										<p class="card__article">
+											<span data-lang="article-2"></span>
+										</p>
+										<p class="product__price" data-lang="card-text-10-1"></p>
 									</div>
+									<a href="../ag-equipment/bale-fork.html" class="product__link"></a>
 							</article>
 							<article class="product__card">
 								<div class="product__card-container">
 									<div class="product__img">
+										<img src="../img/cards/bucket-mixer/1.png" alt="" width="100%">
 									</div>
 									<div class="product__content">
-										<p class="product__code">Очікуйте на оновлення товару!</p>
+
+										<p class="product__name" data-lang="breadcrumbs-4-51"></p>
+										<p class="card__article">
+											<span data-lang="article-5"></span>
+										</p>
+										<p class="product__price" data-lang="card-text-10-4"></p>
 									</div>
+									<a href="../ag-equipment/bucket-mixer.html" class="product__link"></a>
 							</article>
 							<article class="product__card">
 								<div class="product__card-container">
 									<div class="product__img">
+										<img src="../img/cards/jcbmanitou-4m3-loader-bucket/1.png" alt="" width="100%">
 									</div>
 									<div class="product__content">
-										<p class="product__code">Очікуйте на оновлення товару!</p>
+
+										<p class="product__name" data-lang="breadcrumbs-4-10"></p>
+										<p class="card__article">
+											<span data-lang="article-10"></span>
+										</p>
+										<p class="product__price" data-lang="card-text-10-9"></p>
 									</div>
+									<a href="../ag-equipment/jcbmanitou-4m3-loader-bucket.html" class="product__link"></a>
 							</article>
-							<!-- <div class="product__more">
-								<a href="chassis.html" class="product__more-link">
-									<span>Більше товару</span>
-									<svg width="13px" height="10px" viewBox="0 0 13 10">
-										<path d="M1,5 L11,5"></path>
-										<polyline points="8 1 12 5 8 9"></polyline>
-									</svg>
-								</a>
-							</div> -->
+							<article class="product__card">
+								<div class="product__card-container">
+									<div class="product__img">
+										<img src="../img/cards/fork-for-silage/1.png" alt="" width="100%">
+									</div>
+									<div class="product__content">
+
+										<p class="product__name" data-lang="breadcrumbs-4-7"></p>
+										<p class="card__article">
+											<span data-lang="article-7"></span>
+										</p>
+										<p class="product__price" data-lang="card-text-10-6"></p>
+									</div>
+									<a href="../ag-equipment/fork-for-silage.html" class="product__link"></a>
+							</article>
+							<article class="product__card">
+								<div class="product__card-container">
+									<div class="product__img">
+										<img src="../img/cards/big-bag-filler-bucket/1.png" alt="" width="100%">
+									</div>
+									<div class="product__content">
+
+										<p class="product__name" data-lang="breadcrumbs-4-3"></p>
+										<p class="card__article">
+											<span data-lang="article-3"></span>
+										</p>
+										<p class="product__price" data-lang="card-text-10-2"></p>
+									</div>
+									<a href="../ag-equipment/big-bag-filler-bucket.html" class="product__link"></a>
+							</article>
+
 						</div>
 
 					</div>
@@ -349,6 +431,12 @@
 							<li class="info__item">
 								<a class="info__link" href="contacts.html" data-lang="footer_page-4"></a>
 							</li>
+							<li class="info__item">
+								<a class="info__link" href="news.html" data-lang="footer_page-15"></a>
+							</li>
+							<li class="info__item">
+								<a class="info__link" href="product.html" data-lang="footer_page-16"></a>
+							</li>
 
 						</ul>
 					</div>
@@ -370,6 +458,9 @@
 							<li class="info__item">
 								<a href="locksmith.html" class="info__link" data-lang="footer_page-10"></a>
 							</li>
+							<li class="info__item">
+								<a href="mechanical-processing.html" class="info__link" data-lang="footer_page-17"></a>
+							</li>
 						</ul>
 					</div>
 					<div class="info__block info__address">
@@ -377,7 +468,7 @@
 						<ul class="info__list">
 							<li class="info__item">
 								<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
-									class="link-social link--hover" data-lang="footer_page-12">
+									class="link-social link--hover" data-lang="footer_page-12" target="_blank" rel="noopener noreferrer">
 
 								</a>
 								<svg class="link-social--svg" width="30" height="30">
@@ -422,11 +513,21 @@
 								</a>
 							</li>
 							<li class="info__item">
-								<a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
+								<a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
+									rel="noopener noreferrer">
 									<svg class="link-social--svg" width="30" height="20">
 										<use xlink:href="#facebook"></use>
 									</svg>
 									facebook.com/armaxMG/
+								</a>
+							</li>
+							<li class="info__item">
+								<a href="https://www.instagram.com/armax.mg?igsh=aWJ0ZnE2MGkxNThj" class="link-social link--hover"
+									target="_blank" rel="noopener noreferrer">
+									<svg class="link-social--svg" width="25" height="25">
+										<use xlink:href="#instagram"></use>
+									</svg>
+									instagram.com/armax.mg
 								</a>
 							</li>
 						</ul>
@@ -436,15 +537,8 @@
 		</div>
 	</footer>
 	<script src="js/lang.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/index.js"></script>
-
-	<script src="js/swiper.js"></script>
-
-	<script src="js/fslightbox.js"></script>
-
-	<script src="https://kit.fontawesome.com/fce9a50d02.js" crossorigin="anonymous"></script>
 	<script src="js/app.js"></script>
 </body>
 

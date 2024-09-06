@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eu">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8" />
@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 	<link rel="website icon" type="png" href="../img/pngegg.png" />
+
 </head>
 
 <body>
@@ -72,10 +73,17 @@
 					d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z" />
 			</g>
 		</symbol>
+		<symbol id="сalendar" viewBox="-6 0 32 32">
+			<path
+				d="M0 10v14.875c0 0.813 0.688 1.5 1.531 1.5h17.25c0.844 0 1.531-0.688 1.531-1.5v-14.875c0-0.813-0.688-1.5-1.531-1.5h-1.75v-0.156c0-0.531-0.156-1.125-0.531-1.563-0.406-0.406-1.031-0.719-1.938-0.719-0.938 0-1.563 0.313-1.938 0.719-0.406 0.438-0.563 1.031-0.563 1.563v0.156h-3.813v-0.156c0-0.531-0.156-1.125-0.531-1.563-0.406-0.406-1.031-0.719-1.969-0.719-0.906 0-1.531 0.313-1.906 0.719-0.406 0.438-0.563 1.031-0.563 1.563v0.156h-1.75c-0.844 0-1.531 0.688-1.531 1.5zM2.063 24.344v-3.25h3.656v3.25h-3.656zM2.063 20.594v-3.25h3.656v3.25h-3.656zM2.063 16.844v-3.281h3.656v3.281h-3.656zM4.781 10.969v-2.625c0-0.5 0.313-0.75 0.969-0.75 0.688 0 1 0.25 1 0.75v2.625c0 0.5-0.313 0.75-1 0.75-0.656 0-0.969-0.25-0.969-0.75zM6.219 24.344v-3.25h3.688v3.25h-3.688zM6.219 20.594v-3.25h3.688v3.25h-3.688zM6.219 16.844v-3.281h3.688v3.281h-3.688zM10.406 24.344v-3.25h3.688v3.25h-3.688zM10.406 20.594v-3.25h3.688v3.25h-3.688zM10.406 16.844v-3.281h3.688v3.281h-3.688zM14.594 24.344v-3.25h3.656v3.25h-3.656zM14.594 20.594v-3.25h3.656v3.25h-3.656zM14.594 16.844v-3.281h3.656v3.281h-3.656zM13.563 10.969v-2.625c0-0.5 0.313-0.75 1-0.75 0.625 0 0.969 0.25 0.969 0.75v2.625c0 0.5-0.313 0.75-0.969 0.75-0.688 0-1-0.25-1-0.75z">
+			</path>
+
+		</symbol>
 	</svg>
-	<header class="header s-header">
-		<a href="#" class="scroll-to-form" id="scrollButton">Надіслати запит</a>
-		<div class="s-header__background"></div>
+
+	<header class="header-product">
+
+		<div class="header__background-ag"></div>
 		<div class="nav__social--desktop-wrap">
 			<div class="nav__social--desktop container">
 				<ul class="nav__social-list--desktop">
@@ -96,6 +104,7 @@
 						</a>
 					</li>
 				</ul>
+
 				<div class="nav__container">
 					<div class="header__lang">
 						<button class="header__btn" data-btn="ua">UA</button>
@@ -122,11 +131,13 @@
 					</ul>
 
 				</div>
+
 			</div>
 		</div>
 
 		<div class="header__container container">
-			<div class="menu">
+
+			<div class="menu menu-product">
 
 				<div class="menu__container">
 					<button class="burger-btn"><span></span></button>
@@ -220,202 +231,83 @@
 				</nav>
 			</div>
 
-			<div class="header__content--container s-header__content--container">
-				<div class="s-header__content header__inner">
-					<h1 class="header__content-title c-header__content-title" data-lang="s-header_pag-1">
-
+			<div class="header__content--container">
+				<div class="header__content-product ">
+					<h1 class="product__title" data-lang="breadcrumbs-3-3">
 					</h1>
-					<p class="header__content-text">
-
-					</p>
 				</div>
 			</div>
 		</div>
 	</header>
 
 	<main class="main">
-		<section class="section services s-services">
-			<div class="services__container">
-				<article class="services__card" data-aos="fade-up">
-					<figure class="services__content">
-						<picture>
-							<img class="services__img" src="img/lazer.jpg" alt="lazer" width="300" height="200" />
-						</picture>
-						<figcaption class="services__figcaption">
-							<div class="services__name">
-								<a class="services__name-link" href="lazer.html" data-lang="services_page-2"></a>
-							</div>
-							<div class="services__hover-content">
-								<h4 class="services__hover-title" data-lang="services_page-3">
-								</h4>
-								<a class="services__hover-text" href="lazer.html">
-									<span class="services__hover--circle" data-lang="services_page-4"></span>
-								</a>
-								<a class="services__link" href="lazer.html"></a>
-							</div>
-						</figcaption>
-					</figure>
-				</article>
-				<article class="services__card" data-aos="fade-up">
-					<figure class="services__content">
-						<picture>
-							<img class="services__img" src="img/sheet-bending.jpg" alt="sheet-bending" width="300" height="200" />
-						</picture>
-						<figcaption class="services__figcaption">
-							<div class="services__name">
-								<a class="services__name-link" href="sheet-bending.html" data-lang="services_page-5"></a>
-							</div>
-							<div class="services__hover-content">
-								<h4 class="services__hover-title" data-lang="services_page-6"></h4>
-								<a class="services__hover-text" href="sheet-bending.html">
-									<span class="services__hover--circle" data-lang="services_page-7"></span>
-								</a>
-								<a class="services__link" href="sheet-bending.html"></a>
-							</div>
-						</figcaption>
-					</figure>
-				</article>
-				<article class="services__card" data-aos="fade-up">
-					<figure class="services__content">
-						<picture>
-							<img class="services__img" src="img/powder-painting.jpg" alt="painting" width="300" height="200" />
-						</picture>
-						<figcaption class="services__figcaption">
-							<div class="services__name">
-								<a class="services__name-link" href="dyeing.html" data-lang="services_page-9"></a>
-							</div>
-							<div class="services__hover-content">
-								<h4 class="services__hover-title" data-lang="services_page-8"></h4>
-								<a class="services__hover-text" href="dyeing.html">
-									<span class="services__hover--circle" data-lang="services_page-10"></span>
-								</a>
-								<a class="services__link" href="dyeing.html"></a>
-							</div>
-						</figcaption>
-					</figure>
-				</article>
-				<article class="services__card" data-aos="fade-up">
-					<figure class="services__content">
-						<picture>
-							<img class="services__img" src="img/metal-products.jpg" alt="welding" width="300" height="200" />
-						</picture>
-						<figcaption class="services__figcaption">
-							<div class="services__name">
-								<a class="services__name-link" href="welding.html" data-lang="s-services_page-1">
-
-								</a>
-							</div>
-							<div class="services__hover-content">
-								<h4 class="services__hover-title" data-lang="s-services_page-2">
-								</h4>
-								<a class="services__hover-text" href="welding.html">
-									<span class="services__hover--circle" data-lang="s-services_page-3"></span>
-								</a>
-								<a class="services__link" href="welding.html"></a>
-							</div>
-						</figcaption>
-					</figure>
-				</article>
-				<article class="services__card" data-aos="fade-up">
-					<figure class="services__content">
-						<picture>
-							<img class="services__img" src="img/locksmith.jpg" alt="locksmith" width="300" height="200" />
-						</picture>
-						<figcaption class="services__figcaption">
-							<div class="services__name">
-								<a class="services__name-link" href="locksmith.html" data-lang="s-services_page-4">
-
-								</a>
-							</div>
-							<div class="services__hover-content">
-								<h4 class="services__hover-title" data-lang="s-services_page-5">
-
-								</h4>
-								<a class="services__hover-text" href="locksmith.html">
-									<span class="services__hover--circle" data-lang="s-services_page-6"></span>
-								</a>
-								<a class="services__link" href="locksmith.html"></a>
-							</div>
-						</figcaption>
-					</figure>
-				</article>
-				<article class="services__card" data-aos="fade-up">
-					<figure class="services__content">
-						<picture>
-							<img class="services__img" src="img/dev-draw.jpg" alt="dev-draw" width="300" height="200" />
-						</picture>
-						<figcaption class="services__figcaption">
-							<div class="services__name">
-								<a class="services__name-link" data-lang="s-services_page-7">
-
-								</a>
-							</div>
-							<div class="services__hover-content">
-								<h4 class="services__hover-title" data-lang="s-services_page-8">
-
-								</h4>
-								<a class="services__hover-text">
-									<span class="services__hover--circle" data-lang="s-services_page-9"></span>
-								</a>
-								<a class="services__link"></a>
-							</div>
-						</figcaption>
-					</figure>
-				</article>
-			</div>
-		</section>
-
-		<section class="calculation">
-			<div class="calculation__background"></div>
-			<div class="calculation__inner">
-				<div class="calculation__wrapper container">
-					<div class="calculation__content">
-						<h3 class="section__title calculation__title" data-lang="calculation_page-1"></h3>
-					</div>
-					<div class="calculation__form-container">
-						<div class="wrapper">
-							<form action="#" id="form" class="form__body calculation__form" enctype="multipart/form-data">
-
-								<div class="form__item">
-									<label for="formName" class="form__label" data-lang="calculation_page-4">Ім'я</label>
-									<input id="formName" type="text" name="name" class="form__input _req">
-								</div>
-								<div class="form__item">
-									<label for="formTel" data-lang="calculation_page-7" class="form__label"></label>
-									<input id="formTel" type="tel" name="tel" class="form__input _req" pattern="[0-9]{10,15}"
-										title="Please enter a valid phone number">
-								</div>
-								<div class="form__item">
-									<label for="formEmail" data-lang="calculation_page-5" class="form__label"></label>
-									<input id="formEmail" type="email" name="email" class="form__input _req _email">
-								</div>
-								<div class="form__item">
-									<label for="formMessage" class="form__label" data-lang="calculation_page-6"></label>
-									<textarea name="message" id="formMessage" class="form-textarea form__input form-textarea "></textarea>
-								</div>
-								<div class="form__item form__none">
-									<label for="formImage" class="form__label">Прикріпити файл (jpg, png, gif, pdf):</label>
-									<div class="file">
-										<div class="file__item">
-											<input id="formImage" type="file" name="image[]" class="file__input"
-												accept=".jpg, .png, .gif, .pdf" multiple>
-											<div class="file__button">Обрати</div>
-										</div>
-										<div id="formPreview" class="file__preview file__preview--with-icon"></div>
-									</div>
-								</div>
-								<button class="button button-form" type="submit" id="btn_send" data-lang="calculation_page-3"
-									value="Надіслати">
-									Надіслати
-								</button>
-							</form>
-						</div>
-					</div>
+		<div class="container">
+			<div class="bucket">
+				<div class="breadcrumbs">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="product.html" data-lang="breadcrumbs-1">Продукти</a></li>
+						<li class="breadcrumbs__item"><a href="ag-equipment.html" data-lang="breadcrumbs-2">СГ обладнання</a></li>
+						<li class="breadcrumbs__item"><span data-lang="breadcrumbs-3-4"></span>
+					</ul>
 				</div>
-			</div>
-		</section>
-	</main>
 
+				<section>
+					<div class="goods">
+						<div class="product__box">
+							<article class="product__card">
+								<div class="product__card-container">
+									<div class="product__img">
+										<img src="../img/cards/excavator-bucket-kubata-cx/1.png" alt="" width="100%">
+									</div>
+									<div class="product__content">
+
+										<p class="product__name" data-lang="breadcrumbs-exc-5-1"></p>
+										<p class="card__article">
+											<span data-lang="article-exc-2-1"></span>
+										</p>
+										<p class="product__price" data-lang="card-price-exc-1"></p>
+									</div>
+									<a href="../ag-equipment/excavator-bucket-kubata-cx.html" class="product__link"></a>
+							</article>
+							<article class="product__card">
+								<div class="product__card-container">
+									<div class="product__img">
+										<img src="../img/cards/excavator-bucket-400/1.png" alt="" width="100%">
+									</div>
+									<div class="product__content">
+
+										<p class="product__name" data-lang="breadcrumbs-exc-5-2"></p>
+										<p class="card__article">
+											<span data-lang="article-exc-2-2"></span>
+										</p>
+										<p class="product__price" data-lang="card-price-exc-2"></p>
+									</div>
+									<a href="../ag-equipment/excavator-bucket-400.html" class="product__link"></a>
+							</article>
+							<article class="product__card">
+								<div class="product__card-container">
+									<div class="product__img">
+										<img src="../img/cards/excavator-planning-bucket-1000/1.png" alt="" width="100%">
+									</div>
+									<div class="product__content">
+
+										<p class="product__name" data-lang="breadcrumbs-exc-5-3"></p>
+										<p class="card__article">
+											<span data-lang="article-exc-2-3"></span>
+										</p>
+										<p class="product__price" data-lang="card-price-exc-3"></p>
+									</div>
+									<a href="../ag-equipment/excavator-planning-bucket-1000.html" class="product__link"></a>
+							</article>
+
+						</div>
+
+					</div>
+				</section>
+			</div>
+
+		</div>
+	</main>
 	<footer class="footer">
 		<div class="footer__bootom">
 			<div class="container">
@@ -537,9 +429,9 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/lang.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/index.js"></script>
-	<script src="js/lang.js"></script>
 	<script src="js/app.js"></script>
 </body>
 
