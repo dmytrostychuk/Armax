@@ -11,10 +11,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="website icon" type="png" href="../img/pngegg.png" />
+  <link rel="website icon" type="png" href="https://github.com/dmytrostychuk/Armax/blob/master/src/img/pngegg.png?raw=true/>
+  <meta property=" og:title" content="ArmaxMG">
+  <meta property="og:image" content="https://raw.githubusercontent.com/dmytrostychuk/Armax/master/src/img/lazer.jpg">
+  <meta property="og:url" content="https://armax-mg.com.ua/">
+  <meta property="og:type" content="website">
+  <!-- Hotjar Tracking Code for https://armax-mg.com.ua/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5123808, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KGM4TCE8MB">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'G-KGM4TCE8MB');
+  </script>
 </head>
 
 <body>
@@ -79,12 +102,31 @@
       </path>
 
     </symbol>
+
+    <symbol id="instagram" viewBox="0 0 256 256">
+      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+      <g id="SVGRepo_iconCarrier">
+        <path
+          d="M160,128a32,32,0,1,1-32-32A32.03667,32.03667,0,0,1,160,128Zm68-44v88a56.06353,56.06353,0,0,1-56,56H84a56.06353,56.06353,0,0,1-56-56V84A56.06353,56.06353,0,0,1,84,28h88A56.06353,56.06353,0,0,1,228,84Zm-52,44a48,48,0,1,0-48,48A48.05436,48.05436,0,0,0,176,128Zm16-52a12,12,0,1,0-12,12A12,12,0,0,0,192,76Z" />
+      </g>
+
+    </symbol>
   </svg>
 
   <header class="header">
-    <a href="#" class="scroll-to-form" id="scrollButton">Надіслати запит</a>
+    <a href="#" class="scroll-to-form" id="scrollButton" data-lang="send-button"></a>
+    <div class="fullwidth-video">
 
-    <div class="header__background"></div>
+      <video class="index-video fullwidth-video" autoplay playsinline loop muted preload="auto">
+        <source src="https://armax-mg.com.ua/video/index-video-vertical.mp4" media="(max-width: 768px)"
+          type="video/mp4">
+        <source src="https://armax-mg.com.ua/video/index-video3.mp4" media="(min-width: 769px)" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+    </div>
     <div class="nav__social--desktop-wrap">
       <div class="nav__social--desktop container">
         <ul class="nav__social-list--desktop">
@@ -108,49 +150,52 @@
 
         <div class="nav__container">
           <div class="header__lang">
-            <button class="header__btn" data-btn="ua">UA</button>
+            <button class="header__btn " data-btn="ua">UA</button>
             <button class="header__btn" data-btn="en">EN</button>
             <button class="header__btn" data-btn="de">DE</button>
           </div>
           <ul class="nav__social-list--desktop nav__social-list--svg">
             <li class="nav__social-item">
-              <a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
+              <a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
+                rel="noopener noreferrer">
                 <svg class="link-social--svg" width="25" height="25">
                   <use xlink:href="#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="nav__social-item">
+              <a href="https://www.instagram.com/armax.mg?igsh=aWJ0ZnE2MGkxNThj" class="link-social link--hover"
+                target="_blank" rel="noopener noreferrer">
+                <svg class="link-social--svg" width="25" height="25">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav__social-item">
               <a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
-                class="link-social link--hover">
+                class="link-social link--hover" target="_blank" rel="noopener noreferrer">
                 <svg class="link-social--svg" width="25" height="25">
                   <use xlink:href="#location"></use>
                 </svg>
               </a>
             </li>
           </ul>
-
         </div>
-
       </div>
     </div>
-
     <div class="header__container container">
-
       <div class="menu">
-
         <div class="menu__container">
           <button class="burger-btn"><span></span></button>
-          <h1 class="menu__title">
-            <a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.png" alt="" /></a>
-          </h1>
+          <h3 class="menu__title">
+            <a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.avif" alt="" /></a>
+          </h3>
           <div class="header__lang nav__list-social">
             <button class="header__btn" data-btn="ua">UA</button>
             <button class="header__btn" data-btn="en">EN</button>
             <button class="header__btn" data-btn="de">DE</button>
           </div>
         </div>
-
         <nav class="nav">
           <div class="nav__inner">
             <ul class="nav__list">
@@ -163,7 +208,7 @@
               </li>
 
 
-              <li class="nav__item">
+              <li class="nav__item nav__item-dropdown">
                 <a href="product.html" class="link-hover nav__item-link" data-lang="nav_page-4"></a>
                 <div class="dropdown">
                   <a href="ag-equipment.html" class="link__dropdown link-hover " data-lang="nav_page-5"></a>
@@ -173,7 +218,7 @@
 
                 </div>
               </li>
-              <li class="nav__item">
+              <li class="nav__item nav__item-dropdown">
                 <a href="services.html" class="link-hover" data-lang="nav_page-1"></a>
                 <div class="dropdown dropdown--width">
                   <a href="lazer.html" class="link__dropdown link-hover " data-lang="footer_page-6-1"></a>
@@ -185,6 +230,10 @@
                     data-lang="footer_page-11-1"></a>
                 </div>
               </li>
+              <li class="nav__item">
+                <a href="news.html" class="link-hover" data-lang="nav_page-9"></a>
+              </li>
+
             </ul>
 
             <ul class="nav__list nav__list-social">
@@ -205,7 +254,17 @@
                 </a>
               </li>
               <li class="nav__item-social">
-                <a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
+                <a href="https://www.instagram.com/armax.mg?igsh=aWJ0ZnE2MGkxNThj" class="link-social link--hover"
+                  target="_blank" rel="noopener noreferrer">
+                  <svg class="link-social--svg" width="30" height="20">
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                  <span class="none">instagram.com/armaxMG/</span>
+                </a>
+              </li>
+              <li class="nav__item-social">
+                <a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
+                  rel="noopener noreferrer">
                   <svg class="link-social--svg" width="30" height="20">
                     <use xlink:href="#facebook"></use>
                   </svg>
@@ -214,7 +273,7 @@
               </li>
               <li class="nav__item-social">
                 <a href="https://www.google.com/maps/place/%D0%A2%D0%B7%D0%9E%D0%92,+%D0%90%D1%80%D0%BC%D0%B0%D0%BA%D1%81+%D0%9C%D0%93/@50.83233,25.453636,18z/data=!4m5!3m4!1s0x0:0x3edf65d8017ef30a!8m2!3d50.8324517!4d25.4532672?hl=uk"
-                  class="link-social link--hover">
+                  class="link-social link--hover" target="_blank" rel="noopener noreferrer">
                   <svg class="link-social--svg" width="30" height="30">
                     <use xlink:href="#location"></use>
                   </svg>
@@ -225,7 +284,6 @@
           </div>
         </nav>
       </div>
-
       <div class="header__content--container">
         <div class="header__content header__inner">
           <h1 class="header__content-title" data-lang="header__content_page-1">
@@ -241,7 +299,6 @@
     <div class="container">
       <section class="section preview">
         <p class="section__title" data-lang="preview_page-1">
-
         </p>
         <p class="section__text">
           <span data-lang="preview_page-2"></span>
@@ -255,13 +312,15 @@
       </section>
     </div>
 
-    <section class="section services">
-      <h3 class="section__title services__title" data-lang="services_page-1"></h3>
+    <section class="section services section--top">
+
+      <h3 class="section__title "><a href="services.html" class="section__title section__title--hover "
+          data-lang="services_page-1"></a></h3>
       <div class="services__container">
         <article class="services__card" data-aos="fade-up">
           <figure class="services__content">
             <picture>
-              <img class="services__img" src="img/lazer.jpg" alt="lazer working" width="300" height="200" />
+              <img class="services__img" src="img/lazer.webp" alt="lazer working" width="300" height="200" />
             </picture>
             <figcaption class="services__figcaption">
               <div class="services__name">
@@ -283,7 +342,7 @@
         <article class="services__card" data-aos="fade-up">
           <figure class="services__content">
             <picture>
-              <img class="services__img" src="img/sheet-bending.jpg" alt="sheet-bending" width="300" height="200" />
+              <img class="services__img" src="img/sheet-bending.webp" alt="sheet-bending" width="300" height="200" />
             </picture>
             <figcaption class="services__figcaption">
               <div class="services__name">
@@ -291,7 +350,6 @@
               </div>
               <div class="services__hover-content">
                 <h4 class="services__hover-title" data-lang="services_page-6">
-
                 </h4>
                 <a class="services__hover-text" href="sheet-bending.html">
                   <span class="services__hover--circle" data-lang="services_page-7">Детальніше</span>
@@ -304,17 +362,15 @@
         <article class="services__card" data-aos="fade-up">
           <figure class="services__content">
             <picture>
-              <img class="services__img" src="img/powder-painting.jpg" alt="dyeing working" width="300" height="200" />
+              <img class="services__img" src="img/powder-painting.webp" alt="dyeing working" width="300" height="200" />
             </picture>
             <figcaption class="services__figcaption">
               <div class="services__name">
                 <a class="services__name-link" href="dyeing.html" data-lang="services_page-9">
-
                 </a>
               </div>
               <div class="services__hover-content">
                 <h4 class="services__hover-title" data-lang="services_page-8">
-
                 </h4>
                 <a class="services__hover-text" href="dyeing.html">
                   <span class="services__hover--circle" data-lang="services_page-10"></span>
@@ -327,17 +383,15 @@
         <article class="services__card" data-aos="fade-up">
           <figure class="services__content">
             <picture>
-              <img class="services__img" src="img/metal-products.jpg" alt="all services" width="300" height="200" />
+              <img class="services__img" src="img/metal-products.webp" alt="all services" width="300" height="200" />
             </picture>
             <figcaption class="services__figcaption">
               <div class="services__name">
                 <a class="services__name-link" href="services.html" data-lang="services_page-11">
-
                 </a>
               </div>
               <div class="services__hover-content">
                 <h4 class="services__hover-title" data-lang="services_page-12">
-
                 </h4>
                 <a class="services__hover-text" href="services.html">
                   <span class="services__hover--circle" data-lang="services_page-13"></span>
@@ -353,7 +407,6 @@
       <div class="container">
         <h3 class="section__title" data-lang="principles-page-1"></h3>
         <p class="section__text section--center-text" data-lang="principles-page-2">
-
         </p>
         <div class="featured">
           <div class="featured__card" data-aos="zoom-in" data-aos-delay="50">
@@ -373,7 +426,6 @@
             <div class="featured__content">
               <p class="featured__content-title" data-lang="principles-page-5"></p>
               <p class="featured__content-text" data-lang="principles-page-6">
-
               </p>
             </div>
           </div>
@@ -384,7 +436,6 @@
             <div class="featured__content">
               <p class="featured__content-title" data-lang="principles-page-7"></p>
               <p class="featured__content-text" data-lang="principles-page-8">
-
               </p>
             </div>
           </div>
@@ -395,7 +446,6 @@
             <div class="featured__content">
               <p class="featured__content-title" data-lang="principles-page-9"></p>
               <p class="featured__content-text" data-lang="principles-page-10">
-
               </p>
             </div>
           </div>
@@ -403,16 +453,15 @@
       </div>
     </section>
 
-    <section class="section ware">
-      <div class="container">
-        <h3 class="section__title" data-lang="wara_page-1">
-        </h3>
-
+    <section class="section services ware">
+      <div>
+        <h3 class="section__title"><a href="product.html" class="section__title section__title--hover"
+            data-lang="wara_page-1"></a></h3>
         <div class="ware__box">
           <article class="ware__card" data-aos="zoom-in" data-aos-delay="150">
             <figure class="ware__content">
               <picture>
-                <img class="ware__img" src="img/table-legs.jpg" alt="table-legs" width="auto" height="220" />
+                <img class="ware__img" src="img/table-legs.webp" alt="table-legs" width="auto" height="220" />
               </picture>
               <figcaption class="ware__figcaption">
                 <div class="ware__name">
@@ -425,7 +474,7 @@
           <article class="ware__card" data-aos="zoom-in" data-aos-delay="150">
             <figure class="ware__content">
               <picture>
-                <img class="ware__img" src="img/grain-bucket.jpg" alt="grain-buckets" width="auto" height="220" />
+                <img class="ware__img" src="img/product-bucket.webp" alt="grain-buckets" width="auto" height="220" />
               </picture>
               <figcaption class="ware__figcaption">
                 <div class="ware__name">
@@ -438,7 +487,7 @@
           <article class="ware__card" data-aos="zoom-in" data-aos-delay="250">
             <figure class="ware__content">
               <picture>
-                <img class="ware__img" src="img/decorative-cut.jpg" alt="decorative-elements" width="auto"
+                <img class="ware__img" src="img/product-decore-element.webp" alt="decorative-elements" width="auto"
                   height="220" />
               </picture>
               <figcaption class="ware__figcaption">
@@ -451,7 +500,8 @@
           <article class="ware__card" data-aos="zoom-in" data-aos-delay="350">
             <figure class="ware__content">
               <picture>
-                <img class="ware__img" src="img/individual.jpg" alt="Individual-orders" width="auto" height="220" />
+                <img class="ware__img" src="img/product-individual.webp" alt="Individual-orders" width="auto"
+                  height="220" />
               </picture>
               <figcaption class="ware__figcaption">
                 <div class="ware__name">
@@ -466,186 +516,77 @@
 
     <section class="news">
       <div class="container">
-        <h3 class="section__title" data-lang="news-1"></h3>
+        <h3 class="section__title"><a href="news.html" class="section__title section__title--hover"
+            data-lang="news-1"></a></h3>
         <div class="news__container">
-
+          <div class="news__blok ">
+            <div class="news__img">
+              <img src="img/news/lazer-cuting-bodor.png" alt="new ceh">
+            </div>
+            <div class="news__content-container">
+              <div class="news__content">
+                <h2 class="news__title" data-lang="news-index-1"></h2>
+                <time datatime="2024-08-06" class="news__time">
+                  <svg class="news__svg " width="30" height="30">
+                    <use xlink:href="#сalendar"></use>
+                  </svg>
+                  06.08.2024</time>
+                <a href="news.html" class="section__text  news__link" data-lang="news-index-2"> </a>
+                <a href="mailto:armaxofis@gmail.com" class="news__mail"><span
+                    class="span--color">armaxofis@gmail.com</span></a>
+              </div>
+            </div>
+          </div>
           <div class="news__blok">
             <div class="news__img">
-              <img src="img/news/new-ceh.jpg" alt="new ceh">
+              <img src="img/news/pipe-bending.png" alt="new ceh">
             </div>
             <div class="news__content-container">
               <div class="news__content">
-                <h2 class="news__title" data-lang="news-2"></h2>
-                <time datatime="2024-05-01" class="news__time">
+                <h2 class="news__title" data-lang="news-index-3"></h2>
+                <time datatime="2024-08-06" class="news__time">
                   <svg class="news__svg " width="30" height="30">
                     <use xlink:href="#сalendar"></use>
                   </svg>
-                  01.05.2024</time>
-                <a class="section__text  news__link" data-lang="news-3"></a>
+                  06.08.2024</time>
+                <a href="news.html" class="section__text  news__link" data-lang="news-index-4"> </a>
+                <a href="mailto:armaxofis@gmail.com" class="news__mail"><span
+                    class="span--color">armaxofis@gmail.com</span></a>
               </div>
             </div>
-
           </div>
-          <div class="news__blok">
-            <div class="news__img">
-              <img src="img/news/welding-work.jpg" alt="">
-            </div>
-            <div class="news__content-container">
-              <div class="news__content">
-                <h2 class="news__title" data-lang="news-4"></h2>
-                <time datatime="2024-03-31" class="news__time">
-                  <svg class="news__svg " width="30" height="30">
-                    <use xlink:href="#сalendar"></use>
-                  </svg>
-                  31.03.2024</time>
-                <a class="section__text  news__link" data-lang="news-5"></a>
-              </div>
-            </div>
-
-          </div>
-          <div class="news__blok news__blok-mobile">
-            <div class="news__video news__img">
-              <iframe src="https://www.youtube.com/embed/3SaxY9uG6yM?si=OFly_WcxyNk-JCT8" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="news__content-container">
-              <div class="news__content">
-                <h2 class="news__title">«Ластівка», яка заміняє 50 воїнів</h2>
-                <time datatime="2024-03-31" class="news__time">
-                  <svg class="news__svg " width="30" height="30">
-                    <use xlink:href="#сalendar"></use>
-                  </svg>
-                  28.04.2024
-                </time>
-                <a class="section__text  news__link">Довгий час машина слугувала допомогою для 24 ОМБр, але вийшли з
-                  ладу її основні механізми. За допомогою ластівки, за день можна спорудити до кілометра окопів на лінії
-                  фронту, особливо там, де лотати не допомагають.</a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="news__blok news__blok-mobile">
-            <div class=" news__img news__video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/CS66bPvbtpw?si=sF1yumO5kDzCHMk9"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="news__content-container">
-              <div class="news__content">
-                <h2 class="news__title">Команда "АРМАКС МГ " щиро вдячна усім небайдужим за активну підтримку та
-                  допомогу у відновленні техніки</h2>
-                <time datatime="2024-03-31" class="news__time">
-                  <svg class="news__svg " width="30" height="30">
-                    <use xlink:href="#сalendar"></use>
-                  </svg>
-                  02.07.2024
-                </time>
-                <a class="section__text  news__link">Ремонт спеціальної техніки упродовж трьох
-                  тижнів виконувало маталообробне підприємтво АрмаксМГ у Ківерцях. Спільними зусиллями ластівку -
-                  полкову землерийну машину, яка риє окопи і може замінити півсотні людей, поставили на колеса</a>
-              </div>
-            </div>
-
-          </div>
-
         </div>
-
+        <div class="product__more">
+          <a href="news.html" class="product__more-link">
+            <span data-lang="news-index-5"></span>
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+        </div>
       </div>
       </div>
     </section>
 
-
-
-    <section class="section partners">
-      <div class="container">
-        <div>
-          <h3 class="section__title" data-lang="partners_page-1"></h3>
-          <p class="section__text section--center-text" data-lang="partners_page-2"></p>
-        </div>
-        <div class="partners__slider">
-          <div class="swiper swiper__partners">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="img/skf-logo.svg" alt="skf" width="190" height="150" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/ua-bruk.png" alt="ua-bruk" width="190" height="34" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/cvg-logo.png" alt="cvg" width="190" height="190" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/globino-logo.png" alt="globino" width="190" height="180" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/limo-logo.png" alt="limo" width="190" height="180" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-prev">
-            <img src="img/arow-prev.svg" alt="prev" width="30" height="50" />
-          </div>
-          <div class="swiper-button-next">
-            <img src="img/arow-next.svg" alt="next" width="30" height="50" />
-          </div>
-        </div>
-      </div>
-      <div class="partners__background"></div>
-    </section>
     <section class="calculation">
       <div class="calculation__background"></div>
       <div class="calculation__inner">
         <div class="calculation__wrapper container">
-          <div class="calculation__content">
-            <h3 class="section__title calculation__title" data-lang="calculation_page-1"></h3>
-          </div>
-          <div class="calculation__form-container">
-            <div class="wrapper">
-              <form action="#" id="form" class="form__body calculation__form" enctype="multipart/form-data">
-
-                <div class="form__item">
-                  <label for="formName" class="form__label" data-lang="calculation_page-4">Ім'я</label>
-                  <input id="formName" type="text" name="name" class="form__input _req">
-                </div>
-                <div class="form__item">
-                  <label for="formTel" data-lang="calculation_page-7" class="form__label"></label>
-                  <input id="formTel" type="tel" name="tel" class="form__input _req" pattern="[0-9]{10,15}"
-                    title="Please enter a valid phone number">
-                </div>
-                <div class="form__item">
-                  <label for="formEmail" data-lang="calculation_page-5" class="form__label"></label>
-                  <input id="formEmail" type="email" name="email" class="form__input _req _email">
-                </div>
-                <div class="form__item">
-                  <label for="formMessage" class="form__label" data-lang="calculation_page-6"></label>
-                  <textarea name="message" id="formMessage" class="form-textarea form__input form-textarea "></textarea>
-                </div>
-                <div class="form__item form__none">
-                  <label for="formImage" class="form__label">Прикріпити файл (jpg, png, gif, pdf):</label>
-                  <div class="file">
-                    <div class="file__item">
-                      <input id="formImage" type="file" name="image[]" class="file__input"
-                        accept=".jpg, .png, .gif, .pdf" multiple>
-                      <div class="file__button">Обрати</div>
-                    </div>
-                    <div id="formPreview" class="file__preview file__preview--with-icon"></div>
-                  </div>
-                </div>
-                <button class="button button-form" type="submit" id="btn_send" data-lang="calculation_page-3"
-                  value="Надіслати">
-                  Надіслати
-                </button>
-              </form>
+          <div class="communication">
+            <h5 class="communication__title" data-aos="fade-up" data-lang="calc-1">
+            </h5>
+            <div class="button-slip">
+              <button type="button" class="modal-active button-slip__link menu__btn">
+                <div><span class="button-slip__link-text" data-lang="calc-2"></span><br><span
+                    class="button-slip__link-text button-slip__link-text--down" data-lang="calc-3"></span></div>
+                <div class="button-slip__link-box"></div>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
-
   </main>
   <footer class="footer">
     <div class="footer__bootom">
@@ -663,7 +604,12 @@
               <li class="info__item">
                 <a class="info__link" href="contacts.html" data-lang="footer_page-4"></a>
               </li>
-
+              <li class="info__item">
+                <a class="info__link" href="news.html" data-lang="footer_page-15"></a>
+              </li>
+              <li class="info__item">
+                <a class="info__link" href="product.html" data-lang="footer_page-16"></a>
+              </li>
             </ul>
           </div>
           <div class="info__block info__schedule">
@@ -684,6 +630,9 @@
               <li class="info__item">
                 <a href="locksmith.html" class="info__link" data-lang="footer_page-10"></a>
               </li>
+              <li class="info__item">
+                <a href="mechanical-processing.html" class="info__link" data-lang="footer_page-17"></a>
+              </li>
             </ul>
           </div>
           <div class="info__block info__address">
@@ -691,8 +640,7 @@
             <ul class="info__list">
               <li class="info__item">
                 <a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
-                  class="link-social link--hover" data-lang="footer_page-12">
-
+                  class="link-social link--hover" data-lang="footer_page-12" target="_blank" rel="noopener noreferrer">
                 </a>
                 <svg class="link-social--svg" width="30" height="30">
                   <use xlink:href="#location"></use>
@@ -704,10 +652,8 @@
                   <use xlink:href="#clock"></use>
                 </svg>
               </li>
-
             </ul>
           </div>
-
           <div class="info__block info__contact">
             <h5 class="info__title" data-lang="footer_page-14"></h5>
             <ul class="info__list">
@@ -736,11 +682,21 @@
                 </a>
               </li>
               <li class="info__item">
-                <a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
+                <a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
+                  rel="noopener noreferrer">
                   <svg class="link-social--svg" width="30" height="20">
                     <use xlink:href="#facebook"></use>
                   </svg>
                   facebook.com/armaxMG/
+                </a>
+              </li>
+              <li class="info__item">
+                <a href="https://www.instagram.com/armax.mg?igsh=aWJ0ZnE2MGkxNThj" class="link-social link--hover"
+                  target="_blank" rel="noopener noreferrer">
+                  <svg class="link-social--svg" width="25" height="25">
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                  instagram.com/armax.mg
                 </a>
               </li>
             </ul>
@@ -749,17 +705,31 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal">
+    <div class="modal__inner">
+      <div class="modal-content">
+        <button class="close-button" onclick="closeModal()"></button>
+        <section class="modal__content">
+          <h4 class="modal__title">Зворотній зв'язок</h4>
+          <p class="modal__text">Залиште Ваш номер телефону, або електрону адресу, і наш менеджер якнайшвидше звʼяжеться
+            з Вами!</p>
+          <form id="modalForm" class="modal__form" method="POST" action="/send_email_modal.php"
+            enctype="multipart/form-data">
+            <input class="modal__input" type="text" name="contact" placeholder="телефон або e-mail" required
+              minlength="6">
+            <button class="button button-modal" type="submit">Відправити запит</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
   <script src="js/lang.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- animation -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/index.js"></script>
-
-  <script src="js/swiper.js"></script>
-
-  <script src="js/fslightbox.js"></script>
-
-  <script src="https://kit.fontawesome.com/fce9a50d02.js" crossorigin="anonymous"></script>
+  <script src="../js/form-card.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
