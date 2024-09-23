@@ -2347,6 +2347,26 @@ const homeTexts = {
     en: 'to us',
     de: 'uns',
   },
+  'modal-1': {
+    ua: "Зворотній зв'язок",
+    en: 'Feedback',
+    de: 'Rückmeldung',
+  },
+  'modal-2': {
+    ua: 'Залиште Ваш номер телефону, або електрону адресу, і наш менеджер якнайшвидше звʼяжеться з Вами!',
+    en: 'Leave your phone number or email address, and our manager will contact you as soon as possible!',
+    de: 'Hinterlassen Sie Ihre Telefonnummer oder E-Mail-Adresse, und unser Manager wird sich so schnell wie möglich mit Ihnen in Verbindung setzen!',
+  },
+  'modal-3': {
+    ua: 'Відправити запит',
+    en: 'Send Request',
+    de: 'Anfrage senden',
+  },
+  'modal-4': {
+    ua: 'телефон або e-mail',
+    en: 'phone or email',
+    de: 'Telefon oder E-Mail',
+  },
 };
 
 // Перевіряємо шлях сторінки і задаємо текстові змінні
