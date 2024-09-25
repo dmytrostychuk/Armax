@@ -31,3 +31,12 @@
   padding: 4px;
   transform: rotate(45deg);
 }
+
+.scroll-to-form {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+}

@@ -84,17 +84,23 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Функція для перевірки скролінгу
-window.onscroll = function () {
+// Функція для перевірки видимості блоку calculation
+function checkCalculationVisibility() {
   const scrollButton = document.getElementById('scrollButton');
-  if (
-    document.documentElement.scrollTop >
-    document.documentElement.scrollHeight * 0.05
-  ) {
-    scrollButton.classList.add('visible'); // Додати клас для показу кнопки
+  const calculationSection = document.querySelector('.calculation');
+  const rect = calculationSection.getBoundingClientRect();
+
+  // Перевірка, чи блок calculation повністю видимий на екрані
+  if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+    scrollButton.classList.remove('visible'); // Сховати кнопку
   } else {
-    scrollButton.classList.remove('visible'); // Видалити клас для приховування кнопки
+    scrollButton.classList.add('visible'); // Показати кнопку
   }
+}
+
+// Додати обробник події скролу
+window.onscroll = function () {
+  checkCalculationVisibility();
 };
 
 // Функція для скролу догори
@@ -107,8 +113,6 @@ function scrollToTop() {
 
 // Отримати кнопку прокрутки
 var scrollButton = document.getElementById('scrollButton');
-// Отримати форму
-var calculationSection = document.querySelector('.calculation');
 
 document.addEventListener('DOMContentLoaded', function () {
   AOS.init({
@@ -133,6 +137,9 @@ document.addEventListener('DOMContentLoaded', function () {
     anchorPlacement: 'top-bottom',
   });
 });
+
+// Викликати функцію при завантаженні сторінки
+checkCalculationVisibility();
 
 var modal = document.querySelector('.modal');
 var triggers = document.querySelectorAll('.modal-active');

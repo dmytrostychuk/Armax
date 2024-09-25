@@ -1541,9 +1541,9 @@ const homeTexts = {
   'card-text-8': { ua: 'Основна сталь:', en: 'Main steel:', de: 'Grundstahl:' },
   'card-text-9': { ua: 'Кріплення:', en: 'Mounting:', de: 'Befestigung:' },
   'card-text-10': {
-    ua: 'Ціну уточнюйте1',
+    ua: 'Ціну уточнюйте',
     en: 'Price on request',
-    de: 'beg',
+    de: 'Preis auf Anfrage',
   },
   'card-text-10-1': {
     ua: 'Ціну уточнюйте',
@@ -1563,7 +1563,7 @@ const homeTexts = {
   'card-text-10-4': {
     ua: 'Ціну уточнюйте ',
     en: 'Price on request',
-    de: '2400',
+    de: 'Preis auf Anfrage',
   },
   'card-text-10-5': {
     ua: 'Ціну уточнюйте',
@@ -1578,12 +1578,12 @@ const homeTexts = {
   'card-text-10-7': {
     ua: 'Ціну уточнюйте',
     en: 'Price on request',
-    de: '1',
+    de: 'Preis auf Anfrage',
   },
   'card-text-10-8': {
     ua: 'Ціну уточнюйте',
     en: 'Price on request',
-    de: '2',
+    de: 'Preis auf Anfrage',
   },
   'card-text-10-9': {
     ua: 'Ціну уточнюйте',

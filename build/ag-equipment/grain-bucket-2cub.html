@@ -79,9 +79,20 @@
 			</path>
 
 		</symbol>
+		<symbol id="instagram" viewBox="0 0 256 256">
+			<g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+			<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+			<g id="SVGRepo_iconCarrier">
+				<path
+					d="M160,128a32,32,0,1,1-32-32A32.03667,32.03667,0,0,1,160,128Zm68-44v88a56.06353,56.06353,0,0,1-56,56H84a56.06353,56.06353,0,0,1-56-56V84A56.06353,56.06353,0,0,1,84,28h88A56.06353,56.06353,0,0,1,228,84Zm-52,44a48,48,0,1,0-48,48A48.05436,48.05436,0,0,0,176,128Zm16-52a12,12,0,1,0-12,12A12,12,0,0,0,192,76Z" />
+			</g>
+
+		</symbol>
 	</svg>
 
-	<header class="">
+	<header>
 		<div class="nav__social--desktop-wrap">
 			<div class="nav__social--desktop container">
 				<ul class="nav__social-list--desktop">
@@ -111,15 +122,24 @@
 					</div>
 					<ul class="nav__social-list--desktop nav__social-list--svg">
 						<li class="nav__social-item">
-							<a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
+							<a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
+								rel="noopener noreferrer">
 								<svg class="link-social--svg" width="25" height="25">
 									<use xlink:href="#facebook"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="nav__social-item">
+							<a href="https://www.instagram.com/armax.mg?igsh=aWJ0ZnE2MGkxNThj" class="link-social link--hover"
+								target="_blank" rel="noopener noreferrer">
+								<svg class="link-social--svg" width="25" height="25">
+									<use xlink:href="#instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="nav__social-item">
 							<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
-								class="link-social link--hover">
+								class="link-social link--hover" target="_blank" rel="noopener noreferrer">
 								<svg class="link-social--svg" width="25" height="25">
 									<use xlink:href="#location"></use>
 								</svg>
@@ -141,7 +161,7 @@
 					<div class="menu__container">
 						<button class="burger-btn"><span></span></button>
 						<h1 class="menu__title">
-							<a class="menu__link-logo" href="../index.html"><img class="menu__logo" src="img/logo.avif"
+							<a class="menu__link-logo" href="../index.html"><img class="menu__logo" src="../img/logo.avif"
 									alt="logo" /></a>
 						</h1>
 						<div class="header__lang nav__list-social">
@@ -161,19 +181,21 @@
 								<li class="nav__item">
 									<a href="../contacts.html" class="link-hover" data-lang="nav_page-3"></a>
 								</li>
-								<li class="nav__item">
-									<a href="../product.html" class="link--active nav__item-link" data-lang="nav_page-4"></a>
-									<div class="dropdown dropdown--bcg">
-										<a href="../ag-equipment.html" class="link__dropdown link-hover" data-lang="nav_page-5"></a>
+
+
+								<li class="nav__item nav__item-dropdown">
+									<a href="../product.html" class="link-hover nav__item-link" data-lang="nav_page-4"></a>
+									<div class="dropdown">
+										<a href="../ag-equipment.html" class="link__dropdown link-hover " data-lang="nav_page-5"></a>
 										<a href="../furniture-elements.html" class="link__dropdown link-hover" data-lang="nav_page-6"></a>
 										<a href="../decor-elements.html" class="link__dropdown link-hover" data-lang="nav_page-7"></a>
 										<a href="../сustom-orders.html" class="link__dropdown link-hover" data-lang="nav_page-8"></a>
 
 									</div>
 								</li>
-								<li class="nav__item">
+								<li class="nav__item nav__item-dropdown">
 									<a href="../services.html" class="link-hover" data-lang="nav_page-1"></a>
-									<div class="dropdown dropdown--width dropdown--bcg">
+									<div class="dropdown dropdown--width">
 										<a href="../lazer.html" class="link__dropdown link-hover " data-lang="footer_page-6-1"></a>
 										<a href="../sheet-bending.html" class="link__dropdown link-hover" data-lang="footer_page-7-1"></a>
 										<a href="../dyeing.html" class="link__dropdown link-hover" data-lang="footer_page-8-1"></a>
@@ -182,6 +204,9 @@
 										<a href="../mechanical-processing.html" class="link__dropdown link-hover"
 											data-lang="footer_page-11-1"></a>
 									</div>
+								</li>
+								<li class="nav__item">
+									<a href="../news.html" class="link-hover" data-lang="nav_page-9"></a>
 								</li>
 
 							</ul>
@@ -204,7 +229,17 @@
 									</a>
 								</li>
 								<li class="nav__item-social">
-									<a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
+									<a href="https://www.instagram.com/armax.mg?igsh=aWJ0ZnE2MGkxNThj" class="link-social link--hover"
+										target="_blank" rel="noopener noreferrer">
+										<svg class="link-social--svg" width="30" height="20">
+											<use xlink:href="#instagram"></use>
+										</svg>
+										<span class="none">instagram.com/armaxMG/</span>
+									</a>
+								</li>
+								<li class="nav__item-social">
+									<a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
+										rel="noopener noreferrer">
 										<svg class="link-social--svg" width="30" height="20">
 											<use xlink:href="#facebook"></use>
 										</svg>
@@ -213,7 +248,7 @@
 								</li>
 								<li class="nav__item-social">
 									<a href="https://www.google.com/maps/place/%D0%A2%D0%B7%D0%9E%D0%92,+%D0%90%D1%80%D0%BC%D0%B0%D0%BA%D1%81+%D0%9C%D0%93/@50.83233,25.453636,18z/data=!4m5!3m4!1s0x0:0x3edf65d8017ef30a!8m2!3d50.8324517!4d25.4532672?hl=uk"
-										class="link-social link--hover">
+										class="link-social link--hover" target="_blank" rel="noopener noreferrer">
 										<svg class="link-social--svg" width="30" height="30">
 											<use xlink:href="#location"></use>
 										</svg>
@@ -382,34 +417,42 @@
 						<h5 class="info__title" data-lang="footer_page-1"></h5>
 						<ul>
 							<li class="info__item">
-								<a class="info__link" href="../services.html" data-lang="footer_page-2"></a>
+								<a class="info__link" href="services.html" data-lang="footer_page-2"></a>
 							</li>
 							<li class="info__item">
-								<a class="info__link" href="../about-us.html" data-lang="footer_page-3"></a>
+								<a class="info__link" href="about-us.html" data-lang="footer_page-3"></a>
 							</li>
 							<li class="info__item">
-								<a class="info__link" href="../contacts.html" data-lang="footer_page-4"></a>
+								<a class="info__link" href="contacts.html" data-lang="footer_page-4"></a>
 							</li>
-
+							<li class="info__item">
+								<a class="info__link" href="news.html" data-lang="footer_page-15"></a>
+							</li>
+							<li class="info__item">
+								<a class="info__link" href="product.html" data-lang="footer_page-16"></a>
+							</li>
 						</ul>
 					</div>
 					<div class="info__block info__schedule">
 						<h5 class="info__title" data-lang="footer_page-5"></h5>
 						<ul class="info__list">
 							<li class="info__item">
-								<a href="../lazer.html" class="info__link" data-lang="footer_page-6"></a>
+								<a href="lazer.html" class="info__link" data-lang="footer_page-6"></a>
 							</li>
 							<li class="info__item">
-								<a href="../sheet-bending.html" class="info__link" data-lang="footer_page-7"></a>
+								<a href="sheet-bending.html" class="info__link" data-lang="footer_page-7"></a>
 							</li>
 							<li class="info__item">
-								<a href="../dyeing.html" class="info__link" data-lang="footer_page-8"></a>
+								<a href="dyeing.html" class="info__link" data-lang="footer_page-8"></a>
 							</li>
 							<li class="info__item">
-								<a href="../welding.html" class="info__link" data-lang="footer_page-9"></a>
+								<a href="welding.html" class="info__link" data-lang="footer_page-9"></a>
 							</li>
 							<li class="info__item">
-								<a href="../locksmith.html" class="info__link" data-lang="footer_page-10"></a>
+								<a href="locksmith.html" class="info__link" data-lang="footer_page-10"></a>
+							</li>
+							<li class="info__item">
+								<a href="mechanical-processing.html" class="info__link" data-lang="footer_page-17"></a>
 							</li>
 						</ul>
 					</div>
@@ -418,8 +461,7 @@
 						<ul class="info__list">
 							<li class="info__item">
 								<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
-									class="link-social link--hover" data-lang="footer_page-12">
-
+									class="link-social link--hover" data-lang="footer_page-12" target="_blank" rel="noopener noreferrer">
 								</a>
 								<svg class="link-social--svg" width="30" height="30">
 									<use xlink:href="#location"></use>
@@ -431,10 +473,8 @@
 									<use xlink:href="#clock"></use>
 								</svg>
 							</li>
-
 						</ul>
 					</div>
-
 					<div class="info__block info__contact">
 						<h5 class="info__title" data-lang="footer_page-14"></h5>
 						<ul class="info__list">
@@ -463,7 +503,8 @@
 								</a>
 							</li>
 							<li class="info__item">
-								<a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
+								<a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
+									rel="noopener noreferrer">
 									<svg class="link-social--svg" width="30" height="20">
 										<use xlink:href="#facebook"></use>
 									</svg>
@@ -491,14 +532,12 @@
 			<div class="modal-content">
 				<button class="close-button" onclick="closeModal()"></button>
 				<section class="modal__content">
-					<h4 class="modal__title">Зворотній зв'язок</h4>
-					<p class="modal__text">Залиште Ваш номер телефону, або електрону адресу, і наш менеджер якнайшвидше звʼяжеться
-						з Вами!</p>
+					<h4 class="modal__title" data-lang="modal-1"></h4>
+					<p class="modal__text" data-lang="modal-2"></p>
 					<form id="modalForm" class="modal__form" method="POST" action="/send_email_modal.php"
 						enctype="multipart/form-data">
-						<input class="modal__input" type="text" name="contact" placeholder="телефон або e-mail" required
-							minlength="6">
-						<button class="button button-modal" type="submit">Відправити запит</button>
+						<input class="modal__input" type="text" name="contact" placeholder="tel or e-mail" required minlength="6">
+						<button class="button button-modal" type="submit" data-lang="modal-3"></button>
 					</form>
 				</section>
 			</div>
@@ -508,6 +547,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="../js/index.js"></script>
+	<script src="../js/form-card.js"></script>
 	<script src="../js/swiper.js"></script>
 	<script src="../js/app.js"></script>
 </body>
