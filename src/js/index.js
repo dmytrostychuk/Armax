@@ -84,63 +84,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Функція для перевірки видимості блоку calculation
-function checkCalculationVisibility() {
-  const scrollButton = document.getElementById('scrollButton');
-  const calculationSection = document.querySelector('.calculation');
-  const rect = calculationSection.getBoundingClientRect();
-
-  // Перевірка, чи блок calculation повністю видимий на екрані
-  if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-    scrollButton.classList.remove('visible'); // Сховати кнопку
-  } else {
-    scrollButton.classList.add('visible'); // Показати кнопку
-  }
-}
-
-// Додати обробник події скролу
-window.onscroll = function () {
-  checkCalculationVisibility();
-};
-
-// Функція для скролу догори
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth', // Плавний скролінг
-  });
-}
-
-// Отримати кнопку прокрутки
-var scrollButton = document.getElementById('scrollButton');
-
-document.addEventListener('DOMContentLoaded', function () {
-  AOS.init({
-    disable: function () {
-      var isMobile = window.innerWidth < 768;
-      console.log('AOS disabled:', isMobile);
-      return isMobile;
-    },
-    startEvent: 'DOMContentLoaded',
-    initClassName: 'aos-init',
-    animatedClassName: 'aos-animate',
-    useClassNames: false,
-    disableMutationObserver: false,
-    debounceDelay: 50,
-    throttleDelay: 99,
-    offset: 100,
-    delay: 0,
-    duration: 400,
-    easing: 'ease',
-    once: true,
-    mirror: false,
-    anchorPlacement: 'top-bottom',
-  });
-});
-
-// Викликати функцію при завантаженні сторінки
-checkCalculationVisibility();
-
 var modal = document.querySelector('.modal');
 var triggers = document.querySelectorAll('.modal-active');
 var closeButton = document.querySelector('.close-button');

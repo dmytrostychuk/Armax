@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ArmaxMG</title>
+	<link rel="stylesheet" href="styles/style-min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	<link rel="website icon" type="png" href="../img/pngegg.png" />
+</head>
+
+<body>
+	<svg style="display: none">
+		<symbol id="instagram" viewBox="0 0 256 256">
+			<g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+			<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+			<g id="SVGRepo_iconCarrier">
+				<path
+					d="M160,128a32,32,0,1,1-32-32A32.03667,32.03667,0,0,1,160,128Zm68-44v88a56.06353,56.06353,0,0,1-56,56H84a56.06353,56.06353,0,0,1-56-56V84A56.06353,56.06353,0,0,1,84,28h88A56.06353,56.06353,0,0,1,228,84Zm-52,44a48,48,0,1,0-48,48A48.05436,48.05436,0,0,0,176,128Zm16-52a12,12,0,1,0-12,12A12,12,0,0,0,192,76Z" />
+			</g>
+
+		</symbol>
+		<symbol id="location" viewBox="0 0 1024 1024">
+			<g>
+				<path
+					d="M512 64c-175.8 0-318.3 134.6-318.3 300.5 0 222.9 195.5 430.8 280.1 510.3 21.3 20.1 55.7 20.3 77.4 0.6 85.1-77.2 279.2-278.7 279.2-510.9C830.3 198.6 687.8 64 512 64z m0 401.1c-56.9 0-103.1-46.2-103.1-103.1S455.1 258.9 512 258.9c56.9 0 103.1 46.2 103.1 103.1S568.9 465.1 512 465.1z" />
+				<path d="M364.5 926.5a147.5 21.5 0 1 0 295 0 147.5 21.5 0 1 0-295 0Z" />
+			</g>
+		</symbol>
+
+		<symbol id="phone" viewBox="0 0 477.156 477.156">
+			<g>
+				<path d="M475.009,380.316l-2.375-7.156c-5.625-16.719-24.062-34.156-41-38.75l-62.688-17.125c-17-4.625-41.25,1.594-53.688,14.031
+          l-22.688,22.688c-82.453-22.28-147.109-86.938-169.359-169.375L145.9,161.94c12.438-12.438,18.656-36.656,14.031-53.656
+          l-17.094-62.719c-4.625-16.969-22.094-35.406-38.781-40.969L96.9,2.19c-16.719-5.563-40.563,0.063-53,12.5L9.962,48.659
+          C3.899,54.69,0.024,71.94,0.024,72.003c-1.187,107.75,41.063,211.562,117.281,287.781
+          c76.031,76.031,179.454,118.219,286.891,117.313c0.562,0,18.312-3.813,24.375-9.845l33.938-33.938
+          C474.946,420.878,480.571,397.035,475.009,380.316z" />
+			</g>
+		</symbol>
+
+		<symbol id="mail" viewBox="0 0 64 64">
+			<g>
+				<path
+					d="M63.125,9.977c-0.902-1.321-2.419-2.194-4.131-2.194H5.006c-1.676,0-3.158,0.842-4.067,2.117l31.16,25.982L63.125,9.977z" />
+				<path d="M0.006,14.328v36.889c0,2.75,2.25,5,5,5h53.988c2.75,0,5-2.25,5-5V14.461L32.099,41.09L0.006,14.328z" />
+			</g>
+		</symbol>
+
+		<symbol id="clock" viewBox="0 0 485.213 485.212">
+			<g>
+				<path d="M242.607,0C108.629,0,0.001,108.628,0.001,242.606c0,133.976,108.628,242.606,242.606,242.606
+          c133.978,0,242.604-108.631,242.604-242.606C485.212,108.628,376.585,0,242.607,0z M257.771,454.116v-29.557h-30.327v29.557
+          c-104.925-7.458-188.883-91.419-196.346-196.344h29.554v-30.327H31.098c7.463-104.928,91.421-188.886,196.346-196.349v29.554
+          h30.327V31.097c104.926,7.462,188.882,91.421,196.344,196.349h-29.552v30.327h29.552
+          C446.652,362.697,362.696,446.658,257.771,454.116z M354.226,178.163c2.072,3.615,0.83,8.266-2.782,10.368l-80.092,46.227
+          c0.691,2.577,1.582,5.066,1.582,7.848c0,16.762-13.581,30.324-30.326,30.324c-16.75,0-30.327-13.562-30.327-30.324l-82.299-47.503
+          c-7.257-4.203-9.743-13.474-5.554-20.729c4.174-7.285,13.459-9.771,20.715-5.565l82.775,47.798
+          c4.411-2.487,9.239-4.324,14.69-4.324c8.471,0,16.092,3.494,21.604,9.122l79.648-46.024
+          C347.416,173.277,352.064,174.521,354.226,178.163z" />
+			</g>
+		</symbol>
+
+		<symbol id="facebook" viewBox="0 0 24 24">
+			<g>
+				<path
+					d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0" />
+			</g>
+		</symbol>
+
+		<symbol id="telegram" viewBox="0 0 24 24">
+			<g>
+				<path
+					d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z" />
+			</g>
+		</symbol>
+
+		<symbol id="caliper" viewBox="0 0 512 512">
+			<g>
+				<path
+					d="M262.021,212.339h211.823v40.94h-22.41v-11.755h-12v11.755h-21.463v-20.471h-12v20.471h-22.094v-11.755h-12v11.755h-22.094   v-20.471h-12v20.471h-22.252v-11.755h-12v11.755h-22.252v-20.471h-12v20.471h-19.54v-17.755h-132.67v17.755H103.5v-20.471h-12   v20.471H77.324v-10.201h-12v10.201H38.16v-40.94h78.909v17.613h132.67v-47.513h-9.657v-18.068h-39.938v18.068h-71.447h-11.627   h-1.841l0-53.979h-6c-6.404,0-12.17,3.186-15.048,8.313l-2.66,4.741c-2.183,3.891-4.26,8.976-6.172,15.115   c-4.163,13.356-6.271,27.569-6.266,42.241l0,1.469H75.77l0-1.469c0.005-14.672-2.103-28.885-6.266-42.241   c-1.914-6.142-3.991-11.227-6.172-15.114l-2.66-4.742c-2.877-5.127-8.643-8.313-15.048-8.313h-6l0,53.979H26.156v29.743h0.004   v41.099h-0.004v29.185l19.191,80.108c2.958,12.345,13.889,20.966,26.583,20.966h6v-82.079h-12v68.867   c-4.374-1.85-7.748-5.685-8.913-10.55l-18.861-78.729v-15.768h27.774v22.164h12v-22.166h39.139v17.758h0v100.501h6   c12.694,0,23.626-8.622,26.585-20.968l19.056-79.533h81.029v-17.758h236.104v-64.94H262.021V212.339z M212.144,176.371h15.938   v6.068h-15.938V176.371z M129.069,194.439h71.075h37.596v23.513h-108.67V194.439z M96.805,160.198   c1.664-5.34,3.407-9.65,5.181-12.812l1.242-2.215l0,49.268h13.469v5.77l-25.614,0.06l0-1.402   C91.078,185.407,93.003,172.397,96.805,160.198z M38.156,194.439h13.469l-0.001-49.269l1.243,2.216   c1.772,3.159,3.516,7.47,5.181,12.813c3.802,12.198,5.727,25.208,5.722,38.667l0,1.402l-25.614-0.06V194.439z M137.985,359.774   c-1.166,4.866-4.541,8.702-8.915,10.553v-69.812h23.113L137.985,359.774z M155.059,288.516H129.07v-5.479h27.301L155.059,288.516z    M237.74,271.037H129.07v-11.758h0v-11.755h108.67V271.037z" />
+			</g>
+		</symbol>
+
+		<symbol id="dimension-arrow" viewBox="0 0 76 76">
+			<g>
+				<path fill-opacity="1" stroke-width="0.2" stroke-linejoin="round"
+					d="M 31,57L 36.8333,57L 31,52L 31,47L 36,51.2857L 36.0001,24.7143L 31.0001,29L 31.0001,24L 36.8334,19L 31.0001,19L 31.0001,16L 45.0001,16L 45.0001,19L 39.1668,19L 45.0001,24L 45.0001,29L 40.0001,24.7143L 40,51.2857L 45,47L 45,52L 39.1667,57L 45,57L 45,60L 31,60L 31,57 Z " />
+			</g>
+		</symbol>
+
+		<symbol id="dimension" viewBox="0 0 15 15">
+			<g>
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M3.00014 2.73895C3.00014 2.94698 2.76087 3.06401 2.59666 2.93628L1.00386 1.69744C0.875177 1.59735 0.875177 1.40286 1.00386 1.30277L2.59666 0.063928C2.76087 -0.0637944 3.00014 0.0532293 3.00014 0.261266V1.00012H9.00009V0.261296C9.00009 0.0532591 9.23936 -0.0637646 9.40358 0.0639578L10.9964 1.3028C11.1251 1.40289 11.1251 1.59738 10.9964 1.69747L9.40358 2.93631C9.23936 3.06404 9.00009 2.94701 9.00009 2.73898V2.00012H3.00014V2.73895ZM9.50002 4.99998H2.50002C2.22388 4.99998 2.00002 5.22384 2.00002 5.49998V12.5C2.00002 12.7761 2.22388 13 2.50002 13H9.50002C9.77616 13 10 12.7761 10 12.5V5.49998C10 5.22384 9.77616 4.99998 9.50002 4.99998ZM2.50002 3.99998C1.67159 3.99998 1.00002 4.67156 1.00002 5.49998V12.5C1.00002 13.3284 1.67159 14 2.50002 14H9.50002C10.3284 14 11 13.3284 11 12.5V5.49998C11 4.67156 10.3284 3.99998 9.50002 3.99998H2.50002ZM14.7389 6.00001H14V12H14.7389C14.9469 12 15.064 12.2393 14.9362 12.4035L13.6974 13.9963C13.5973 14.125 13.4028 14.125 13.3027 13.9963L12.0639 12.4035C11.9362 12.2393 12.0532 12 12.2612 12H13V6.00001H12.2612C12.0532 6.00001 11.9361 5.76074 12.0639 5.59653L13.3027 4.00373C13.4028 3.87505 13.5973 3.87505 13.6974 4.00374L14.9362 5.59653C15.0639 5.76074 14.9469 6.00001 14.7389 6.00001Z" />
+			</g>
+		</symbol>
+
+		<symbol id="call-center" viewBox="0 0 512 512">
+			<path class="st0" d="M454.68,432.847l-3.636-21.04c-3.123-18.113-15.724-33.858-33.705-42.112l-76.546-35.17
+					c-9.398-4.309-12.085-17.935-12.356-18.672c-0.829-1.226-2.232-1.964-4.387-1.964c-0.064,0-0.13,0-0.194,0
+					c-1.834,0.233-3.336,1.475-3.832,3.175l-8.833,31.002l-55.19,100.154l-55.052-99.821l-8.981-31.335
+					c-0.478-1.692-1.984-2.942-4.505-3.222c-1.588,0-3.047,0.753-4.148,2.609c-0.026,0.14-2.684,13.75-12.108,18.074l-76.558,35.17
+					c-17.974,8.261-30.571,23.998-33.696,42.112l-3.636,21.04c-1.428,8.245,0.604,19.767,8.44,25.59
+					c0.922,0.691,2.079,1.716,3.544,3.02C83.391,473.957,126.268,512,256.001,512c129.708,0,172.596-38.043,186.69-50.543
+					c1.467-1.296,2.628-2.329,3.552-3.02C454.082,452.606,456.112,441.084,454.68,432.847z" />
+			<path class="st0" d="M292.478,125.333c18.55,34.813,43.954,82.507,55.042,89.432l2.104,1.312l7.712-60.217
+					c2.114-26.452-6.39-51.49-23.942-70.504c-19.186-20.784-47.395-32.702-77.393-32.702c-30,0-58.21,11.918-77.396,32.702
+					c-17.554,19.006-26.06,44.052-23.942,70.566l7.016,59.612l2.347-2.562c4.841-5.272,13.564-10.776,24.606-17.748
+					c25.538-16.118,63.922-40.341,94.07-88.128C285.494,112.22,288.819,118.462,292.478,125.333z" />
+			<path class="st0" d="M102.108,242.685c1.293,5.38,6.056,9.138,11.582,9.138c0.934,0,1.869-0.117,2.785-0.334l20.076-4.822
+					c3.83-0.916,6.93-3.688,8.321-7.376l0.827,0.054l-0.376-1.506c0.452-1.894,0.464-3.75,0.037-5.536l-10.466-43.315
+					c-2.51-15.101-3.783-28.012-3.783-38.393c0-68.866,56.026-124.89,124.89-124.89c68.862,0,124.887,56.024,124.887,124.89
+					c0,10.373-1.273,23.292-3.966,38.874l-10.283,42.834c-0.151,0.637-0.244,1.281-0.28,1.957l-0.41,0.916
+					c-0.136,0.303-13.977,30.233-56.97,38.672c-2.232-4.122-6.537-6.724-11.296-6.724h-25.904c-7.086,0-12.851,5.769-12.851,12.857
+					v10.132c0,7.088,5.765,12.857,12.851,12.857h25.904c5.388,0,10.198-3.432,12.032-8.47c25.732-4.41,42.942-15.24,52.886-23.61
+					c10.303-8.664,16.462-17.539,19.484-22.624l13.441,3.222c0.914,0.217,1.85,0.334,2.784,0.334c5.526,0,10.287-3.758,11.58-9.138
+					l10.284-42.834c1.531-6.39-2.419-12.834-8.806-14.371l-7.424-1.778c1.762-12.531,2.656-23.664,2.656-33.106
+					C406.598,67.562,339.04,0,256.001,0c-83.039,0-150.597,67.562-150.597,150.597c0,9.441,0.893,20.574,2.655,33.098l-7.43,1.786
+					c-6.388,1.537-10.336,7.981-8.802,14.371L102.108,242.685z" />
+		</symbol>
+
+		<symbol id="document" viewBox="0 0 435.531 435.531">
+			<path d="M349.41,238.278l50.526-158.151l-50.526-16.14V31.215H246.84L149.137,0l-9.976,31.215H86.122v166.032L35.595,355.416
+		l50.527,16.14v32.767h102.576l97.696,31.208l9.974-31.208h53.042V238.278z M381.083,89.851l-31.673,99.14V79.733L381.083,89.851z
+		 M158.859,18.853l38.692,12.362h-42.642L158.859,18.853z M54.448,345.692l31.674-99.151V355.81L54.448,345.692z M276.672,416.679
+		l-38.679-12.356h42.628L276.672,416.679z M334.41,389.323H101.122V46.215H334.41V389.323z" />
+			<rect x="129.433" y="78.963" width="178.259" height="15" />
+			<rect x="129.433" y="116.478" width="178.259" height="15" />
+			<rect x="129.433" y="153.995" width="178.259" height="15" />
+			<rect x="129.433" y="229.027" width="178.259" height="15" />
+			<rect x="127.841" y="304.059" width="178.259" height="15" />
+			<rect x="127.841" y="266.543" width="178.259" height="15" />
+			<rect x="127.841" y="191.51" width="178.259" height="15" />
+			<rect x="129.433" y="341.575" width="178.259" height="15" />
+		</symbol>
+
+		<symbol id="price" viewBox="0 0 60 60">
+			<path d="M60,4.293c0-2.206-1.794-4-4-4H4c-2.206,0-4,1.794-4,4c0,1.859,1.28,3.411,3,3.858v48.556l3-3l6,6l6-6l6,6l6-6l6,6l6-6l6,6
+		l6-6l3,3V8.151C58.72,7.704,60,6.152,60,4.293z M55,51.879l-1-1l-6,6l-6-6l-6,6l-6-6l-6,6l-6-6l-6,6l-6-6l-1,1V8.293v-3h50v3
+		V51.879z M57,6.024V3.293H3v2.731C2.403,5.679,2,5.032,2,4.293c0-1.103,0.897-2,2-2h52c1.103,0,2,0.897,2,2
+		C58,5.032,57.597,5.679,57,6.024z" />
+			<path d="M44,40.293H29c-0.552,0-1,0.447-1,1s0.448,1,1,1h15c0.552,0,1-0.447,1-1S44.552,40.293,44,40.293z" />
+			<path d="M48.29,40.583c-0.18,0.189-0.29,0.439-0.29,0.71c0,0.26,0.11,0.52,0.29,0.71c0.19,0.18,0.45,0.29,0.71,0.29
+		c0.26,0,0.52-0.11,0.71-0.29c0.18-0.19,0.29-0.45,0.29-0.71c0-0.271-0.11-0.521-0.29-0.71C49.33,40.213,48.67,40.213,48.29,40.583z
+		" />
+			<path d="M49,26.293H34c-0.552,0-1,0.447-1,1s0.448,1,1,1h15c0.552,0,1-0.447,1-1S49.552,26.293,49,26.293z" />
+			<path d="M49,33.293H39c-0.552,0-1,0.447-1,1s0.448,1,1,1h10c0.552,0,1-0.447,1-1S49.552,33.293,49,33.293z" />
+			<path
+				d="M28,34.293c0,0.553,0.448,1,1,1h2c0.552,0,1-0.447,1-1s-0.448-1-1-1h-2C28.448,33.293,28,33.74,28,34.293z" />
+			<path
+				d="M45,20.293c0-0.553-0.448-1-1-1H29c-0.552,0-1,0.447-1,1s0.448,1,1,1h15C44.552,21.293,45,20.846,45,20.293z" />
+			<path
+				d="M48.29,19.583c-0.18,0.189-0.29,0.439-0.29,0.71c0,0.26,0.11,0.52,0.29,0.71c0.19,0.18,0.45,0.29,0.71,0.29
+		c0.27,0,0.52-0.11,0.71-0.29c0.18-0.19,0.29-0.45,0.29-0.71s-0.11-0.521-0.29-0.71C49.34,19.213,48.66,19.213,48.29,19.583z" />
+			<path d="M30.71,28.003c0.18-0.19,0.29-0.44,0.29-0.71c0-0.271-0.11-0.521-0.29-0.71c-0.37-0.37-1.04-0.37-1.42,0
+		c-0.18,0.189-0.29,0.439-0.29,0.71c0,0.27,0.11,0.52,0.29,0.71c0.19,0.18,0.45,0.29,0.71,0.29
+		C30.26,28.293,30.52,28.183,30.71,28.003z" />
+			<path
+				d="M35.71,35.003c0.18-0.19,0.29-0.44,0.29-0.71c0-0.271-0.11-0.53-0.29-0.71c-0.37-0.37-1.04-0.37-1.42,0
+		c-0.18,0.189-0.29,0.45-0.29,0.71s0.11,0.52,0.29,0.71c0.19,0.18,0.45,0.29,0.71,0.29C35.26,35.293,35.52,35.183,35.71,35.003z" />
+			<path d="M17,21.394v-1.101c0-0.553-0.448-1-1-1s-1,0.447-1,1v1.104c-1.091,0.222-2.085,0.801-2.818,1.668
+		c-0.611,0.722-0.894,1.646-0.794,2.603c0.102,0.979,0.606,1.887,1.383,2.491L15,29.893v5.438c-1.161-0.414-2-1.514-2-2.816
+		c0-0.553-0.448-1-1-1s-1,0.447-1,1c0,2.414,1.721,4.434,4,4.899v0.878c0,0.553,0.448,1,1,1s1-0.447,1-1v-0.882
+		c1.091-0.222,2.085-0.801,2.819-1.668c0.611-0.724,0.893-1.648,0.793-2.605c-0.103-0.978-0.606-1.885-1.383-2.488L17,28.916v-5.438
+		c1.161,0.414,2,1.514,2,2.816c0,0.553,0.448,1,1,1s1-0.447,1-1C21,23.879,19.279,21.859,17,21.394z M18.001,32.228
+		c0.349,0.271,0.576,0.68,0.622,1.118c0.043,0.41-0.075,0.803-0.331,1.105c-0.348,0.411-0.798,0.699-1.292,0.875v-3.878
+		L18.001,32.228z M13.999,26.581c-0.35-0.272-0.576-0.681-0.622-1.12c-0.042-0.409,0.075-0.801,0.331-1.104
+		c0.348-0.411,0.798-0.699,1.292-0.875v3.877L13.999,26.581z" />
+			<circle cx="40" cy="11.293" r="1" />
+			<circle cx="36" cy="11.293" r="1" />
+			<circle cx="44" cy="11.293" r="1" />
+			<circle cx="32" cy="11.293" r="1" />
+			<circle cx="48" cy="11.293" r="1" />
+			<circle cx="20" cy="11.293" r="1" />
+			<circle cx="24" cy="11.293" r="1" />
+			<circle cx="28" cy="11.293" r="1" />
+			<circle cx="52" cy="11.293" r="1" />
+			<circle cx="16" cy="11.293" r="1" />
+			<circle cx="12" cy="11.293" r="1" />
+			<circle cx="8" cy="11.293" r="1" />
+		</symbol>
+
+		<symbol id="sample" viewBox="0 0 24 24">
+			<path opacity="0.4"
+				d="M22 16.5V19.5C22 21 21 22 19.5 22H6C6.41 22 6.83 21.94 7.22 21.81C7.33 21.77 7.43999 21.73 7.54999 21.68C7.89999 21.54 8.24001 21.34 8.54001 21.08C8.63001 21.01 8.73001 20.92 8.82001 20.83L8.85999 20.79L15.66 14H19.5C21 14 22 15 22 16.5Z"
+				fill="#292D32" />
+			<path opacity="0.6"
+				d="M18.3694 11.29L15.6594 14L8.85938 20.79C9.55937 20.07 9.99939 19.08 9.99939 18V8.33996L12.7094 5.62996C13.7694 4.56996 15.1894 4.56996 16.2494 5.62996L18.3694 7.74996C19.4294 8.80996 19.4294 10.23 18.3694 11.29Z"
+				fill="#292D32" />
+			<path
+				d="M7.5 2H4.5C3 2 2 3 2 4.5V18C2 18.27 2.02999 18.54 2.07999 18.8C2.10999 18.93 2.13999 19.06 2.17999 19.19C2.22999 19.34 2.28 19.49 2.34 19.63C2.35 19.64 2.35001 19.65 2.35001 19.65C2.36001 19.65 2.36001 19.65 2.35001 19.66C2.49001 19.94 2.65 20.21 2.84 20.46C2.95 20.59 3.06001 20.71 3.17001 20.83C3.28001 20.95 3.4 21.05 3.53 21.15L3.54001 21.16C3.79001 21.35 4.06 21.51 4.34 21.65C4.35 21.64 4.35001 21.64 4.35001 21.65C4.50001 21.72 4.65 21.77 4.81 21.82C4.94 21.86 5.07001 21.89 5.20001 21.92C5.46001 21.97 5.73 22 6 22C6.41 22 6.83 21.94 7.22 21.81C7.33 21.77 7.43999 21.73 7.54999 21.68C7.89999 21.54 8.24001 21.34 8.54001 21.08C8.63001 21.01 8.73001 20.92 8.82001 20.83L8.85999 20.79C9.55999 20.07 10 19.08 10 18V4.5C10 3 9 2 7.5 2ZM6 19.5C5.17 19.5 4.5 18.83 4.5 18C4.5 17.17 5.17 16.5 6 16.5C6.83 16.5 7.5 17.17 7.5 18C7.5 18.83 6.83 19.5 6 19.5Z"
+				fill="#292D32" />
+		</symbol>
+
+		<symbol id="handshake-deal" viewBox="0 0 491.064 491.064">
+			<path d="M491.064,203.188l-11.312-11.312l-114.48,114.48c-0.432-0.488-0.776-1.04-1.24-1.512l-67.312-67.312l10.344-10.344
+			l-11.312-11.312L272,239.628c-12.728,12.72-32.432,14.48-47.096,5.272l58.136-57.68c0.008-0.008,0.008-0.016,0.016-0.024l152-152
+			l-11.312-11.312L277.408,170.22l-10.344-10.344c-1.496-1.504-3.536-2.344-5.656-2.344H232.72l-13.656-13.656l-112-112
+			L95.752,43.188l74.344,74.344l-102.32,102.32l-56.96-52.216L0,179.436l93.408,85.616v20.48c0,2.12,0.84,4.16,2.344,5.656
+			l34.6,34.6c-3.16,4.264-4.944,9.368-4.944,14.776c0,13.472,10.736,24.408,24.088,24.88c0.464,13.056,10.944,23.536,24,24
+			c0.464,13.056,10.944,23.536,24,24c0.472,13.352,11.416,24.088,24.88,24.088c3.4,0,6.696-0.696,9.736-1.984l0.608,0.608
+			c6.04,6.048,14.08,9.376,22.632,9.376c8.552,0,16.584-3.328,22.624-9.376l86.056-86.056c6.048-6.048,9.376-14.08,9.376-22.624
+			c0-2.048-0.216-4.064-0.592-6.04L491.064,203.188z M79.584,230.676l101.824-101.832l20.688,20.688L101.168,250.46L79.584,230.676z
+			 M156.72,346.908c-1.696,1.688-3.944,2.624-6.344,2.624c-4.944,0-8.968-4.024-8.968-8.968c0-2.4,0.936-4.648,2.624-6.344
+			l38.064-38.064c1.696-1.688,3.944-2.624,6.344-2.624c4.944,0,8.968,4.024,8.968,8.968c0,2.4-0.936,4.648-2.624,6.344
+			L156.72,346.908z M180.72,370.908c-1.696,1.688-3.944,2.624-6.344,2.624c-4.944,0-8.968-4.024-8.968-8.968
+			c0-2.4,0.936-4.648,2.624-6.344l38.064-38.064c1.696-1.688,3.944-2.624,6.344-2.624c4.944,0,8.968,4.024,8.968,8.968
+			c0,2.4-0.936,4.648-2.624,6.344L180.72,370.908z M204.72,394.908c-1.696,1.688-3.944,2.624-6.344,2.624
+			c-4.944,0-8.968-4.024-8.968-8.968c0-2.4,0.936-4.648,2.624-6.344l38.064-38.064c1.696-1.688,3.944-2.624,6.344-2.624
+			c4.944,0,8.968,4.024,8.968,8.968c0,2.4-0.936,4.648-2.624,6.344L204.72,394.908z M228.72,418.908
+			c-1.696,1.688-3.944,2.624-6.344,2.624c-4.944,0-8.968-4.024-8.968-8.968c0-2.4,0.936-4.648,2.624-6.344l38.064-38.064
+			c1.696-1.688,3.944-2.624,6.344-2.624c4.944,0,8.968,4.024,8.968,8.968c0,2.4-0.936,4.648-2.624,6.344L228.72,418.908z
+			 M352.72,338.788l-86.056,86.056c-5.816,5.816-15.736,5.976-21.864,0.616l33.304-33.304c4.704-4.712,7.304-10.984,7.304-17.656
+			c0-13.472-10.736-24.408-24.088-24.88c-0.464-13.056-10.944-23.536-24-24c-0.464-13.056-10.944-23.536-24-24
+			c-0.472-13.352-11.416-24.088-24.88-24.088c-6.672,0-12.944,2.6-17.656,7.312l-29.376,29.376l-32-32v-17.376l104-104
+			l10.344,10.344c1.496,1.504,3.536,2.344,5.656,2.344h28.688l7.976,7.976l-58.8,58.344c-1.512,1.504-2.368,3.56-2.36,5.696
+			c0.008,2.136,0.864,4.184,2.384,5.68c21.032,20.72,55.144,20.592,76.016-0.296l2.096-2.088l67.312,67.312
+			c3.024,3.024,4.688,7.04,4.688,11.32C357.408,331.756,355.744,335.764,352.72,338.788z" />
+			<path d="M55.784,349.044l-14.04,7.68c2.632,4.808,5.48,9.6,8.464,14.232l13.456-8.656C60.88,357.98,58.232,353.524,55.784,349.044
+			z" />
+			<path d="M169.936,447.98l-5.608,14.984c5.128,1.92,10.416,3.68,15.728,5.232l4.496-15.352
+			C179.616,451.396,174.704,449.764,169.936,447.98z" />
+			<path d="M115.952,418.452l-9.608,12.8c4.4,3.304,8.984,6.488,13.608,9.464l8.656-13.456
+			C124.304,424.484,120.04,421.524,115.952,418.452z" />
+
+			<path d="M141.88,435.156l-7.68,14.032c4.816,2.632,9.8,5.136,14.816,7.432l6.664-14.544
+		C151.008,439.932,146.368,437.604,141.88,435.156z" />
+			<path d="M92.648,398.244l-11.32,11.304c3.888,3.896,7.968,7.696,12.12,11.296l10.488-12.088
+			C100.064,405.404,96.272,401.86,92.648,398.244z" />
+			<path d="M72.448,374.948l-12.8,9.6c3.312,4.416,6.808,8.752,10.392,12.888l12.088-10.488C78.8,383.1,75.544,379.06,72.448,374.948
+				z" />
+			<path d="M29.952,260.98l-15.96,1.136c0.384,5.48,0.976,11.016,1.752,16.464l15.84-2.256
+					C30.864,271.244,30.312,266.084,29.952,260.98z" />
+			<path
+				d="M13.992,229.004c-0.392,5.44-0.584,11-0.584,16.528v0.024l16-0.024c0-5.152,0.184-10.336,0.544-15.392L13.992,229.004z" />
+			<path d="M34.304,291.484l-15.632,3.4c1.168,5.384,2.544,10.784,4.088,16.048l15.352-4.496
+						C36.68,301.532,35.4,296.5,34.304,291.484z" />
+			<path d="M42.976,321.052l-14.992,5.6c1.92,5.136,4.048,10.28,6.336,15.28l14.552-6.648
+							C46.744,330.62,44.76,325.836,42.976,321.052z" />
+			<path
+				d="M441.944,335.276c-2.144,4.672-4.472,9.312-6.928,13.8l14.04,7.68c2.632-4.816,5.136-9.8,7.432-14.816L441.944,335.276z" />
+			<path
+				d="M427.136,362.34c-2.784,4.32-5.752,8.576-8.816,12.664l12.8,9.608c3.296-4.384,6.48-8.968,9.472-13.608L427.136,362.34z" />
+			<path d="M408.624,387.004c-3.352,3.872-6.888,7.672-10.512,11.288l11.304,11.32c3.896-3.888,7.696-7.968,11.296-12.12
+			L408.624,387.004z" />
+			<path
+				d="M452.72,306.396c-1.448,4.92-3.08,9.84-4.864,14.624l14.984,5.6c1.928-5.144,3.68-10.44,5.232-15.728L452.72,306.396z" />
+			<path d="M459.24,276.284c-0.728,5.088-1.648,10.192-2.728,15.176l15.64,3.384c1.16-5.352,2.144-10.832,2.92-16.304L459.24,276.284
+			z" />
+			<path
+				d="M386.816,408.812c-3.856,3.344-7.896,6.6-12.008,9.688l9.6,12.8c4.408-3.304,8.744-6.8,12.888-10.392L386.816,408.812z" />
+			<path d="M199.496,456.652l-3.384,15.632c5.352,1.16,10.832,2.144,16.304,2.92l2.256-15.832
+				C209.584,458.644,204.48,457.724,199.496,456.652z" />
+			<path
+				d="M461.408,245.532c0,5.144-0.176,10.336-0.536,15.416l15.96,1.128c0.384-5.464,0.576-11.032,0.576-16.544H461.408z" />
+			<path d="M276.184,459.356c-5.072,0.72-10.232,1.272-15.344,1.632l1.136,15.96c5.48-0.384,11.016-0.976,16.464-1.752
+			L276.184,459.356z" />
+			<path
+				d="M245.408,461.532c-5.144,0-10.32-0.176-15.4-0.536l-1.128,15.96c5.456,0.384,11.024,0.576,16.536,0.576L245.408,461.532z" />
+			<path
+				d="M362.16,427.292c-4.288,2.76-8.744,5.408-13.248,7.872l7.68,14.04c4.832-2.648,9.616-5.488,14.224-8.456L362.16,427.292z" />
+			<path d="M335.144,442.068c-4.664,2.128-9.448,4.12-14.224,5.896l5.592,14.992c5.136-1.92,10.28-4.048,15.28-6.336L335.144,442.068
+			z" />
+			<path d="M306.296,452.836c-4.904,1.432-9.928,2.712-14.952,3.808l3.4,15.632c5.384-1.168,10.784-2.544,16.048-4.088
+			L306.296,452.836z" />
+			<path d="M338.728,33.82l-7.048,14.368c4.44,2.176,9.008,4.632,13.576,7.296l8.064-13.824
+			C348.416,38.804,343.504,36.164,338.728,33.82z" />
+			<path d="M245.408,13.532l-3.344,0.024l0.232,16l3.112-0.024c4.224,0,8.352,0.096,12.384,0.288l0.752-15.984
+			C254.264,13.636,249.896,13.532,245.408,13.532z" />
+			<path d="M307.68,21.716l-4.488,15.36c4.84,1.416,9.704,3.072,14.456,4.928l5.832-14.896
+			C318.288,25.076,312.976,23.268,307.68,21.716z" />
+			<path d="M275.032,15.172l-1.856,15.888c5.168,0.608,10.272,1.408,15.168,2.384l3.12-15.696
+			C286.16,16.692,280.632,15.828,275.032,15.172z" />
+			<path
+				d="M161.176,29.292c-5.128,2-10.24,4.208-15.2,6.568l6.856,14.456c4.624-2.192,9.392-4.256,14.168-6.12L161.176,29.292z" />
+			<path d="M192.816,19.524c-5.368,1.248-10.752,2.696-15.992,4.32l4.728,15.288c4.872-1.512,9.88-2.864,14.88-4.024L192.816,19.524z
+			" />
+			<path d="M225.528,14.372c-5.496,0.472-11.032,1.136-16.448,1.992l2.496,15.808c5.032-0.8,10.184-1.424,15.304-1.856
+			L225.528,14.372z" />
+		</symbol>
+
+		<symbol id="product" viewBox="0 0 52 52">
+			<path
+				d="m24 35.33a.81.81 0 0 1 .81.71v11.52a2.44 2.44 0 0 1 -2.32 2.44h-16.42a2.45 2.45 0 0 1 -2.44-2.28v-11.57a.81.81 0 0 1 .71-.81h19.66zm23.61 0a.82.82 0 0 1 .81.71v11.52a2.44 2.44 0 0 1 -2.33 2.44h-16.42a2.44 2.44 0 0 1 -2.43-2.28v-11.57a.81.81 0 0 1 .71-.81h19.61zm-29.92 3.37-.09.07-4.6 5.06-2.11-2a.62.62 0 0 0 -.79-.07l-.08.07-.87.78a.49.49 0 0 0 -.07.71l.07.08 3 2.83a1.25 1.25 0 0 0 .87.36 1.15 1.15 0 0 0 .87-.36l5.52-5.84a.63.63 0 0 0 .06-.72l-.06-.07-.87-.78a.61.61 0 0 0 -.85-.12zm23.61 0-.09.07-4.66 5.06-2.11-2a.61.61 0 0 0 -.78-.07l-.09.07-.87.78a.49.49 0 0 0 -.06.71l.06.08 3 2.83a1.25 1.25 0 0 0 .87.36 1.14 1.14 0 0 0 .87-.36l5.56-5.89a.65.65 0 0 0 0-.72v-.07l-.87-.78a.61.61 0 0 0 -.83-.07zm-18.76-11.52a2.36 2.36 0 0 1 2.27 2.28v2.61a.81.81 0 0 1 -.66.81h-21.39a.78.78 0 0 1 -.76-.7v-2.55a2.38 2.38 0 0 1 2.13-2.44h18.41zm25.18 0a2.36 2.36 0 0 1 2.28 2.28v2.61a.81.81 0 0 1 -.66.81h-21.4a.78.78 0 0 1 -.75-.71v-2.54a2.38 2.38 0 0 1 2.13-2.44h18.4zm-12-17a.81.81 0 0 1 .8.71v11.48a2.44 2.44 0 0 1 -2.28 2.44h-16.37a2.46 2.46 0 0 1 -2.44-2.29v-11.52a.81.81 0 0 1 .71-.8h19.62zm-6.27 3.37-.08.07-4.66 5.06-2.11-2a.61.61 0 0 0 -.78-.07l-.09.07-.87.78a.5.5 0 0 0 -.07.71l.07.08 3 2.82a1.22 1.22 0 0 0 .87.37 1.13 1.13 0 0 0 .87-.37l5.53-5.83a.65.65 0 0 0 .05-.72l-.05-.07-.87-.78a.62.62 0 0 0 -.77-.15zm6.31-11.55a2.44 2.44 0 0 1 2.43 2.28v2.61a.83.83 0 0 1 -.71.81h-22.86a.81.81 0 0 1 -.81-.7v-2.56a2.44 2.44 0 0 1 2.27-2.44z" />
+		</symbol>
+	</svg>
+
+	<header class="header">
+		<a href="#" class="scroll-to-form" id="scrollButton" data-lang="send-button"></a>
+		<div class="header__background mp-header__background"></div>
+		<div class="nav__social--desktop-wrap">
+			<div class="nav__social--desktop container">
+				<ul class="nav__social-list--desktop">
+					<li class="nav__social-item">
+						<a class="link-social link--hover" href="tel:+380687945051">
+							<svg class="link-social--svg" width="30" height="20">
+								<use xlink:href="#phone"></use>
+							</svg>
+							+38 (096) 123 91 21
+						</a>
+					</li>
+					<li class="nav__social-item">
+						<a href="mailto:lazerarmax@gmail.com" class="link-social link--hover">
+							<svg class="link-social--svg" width="30" height="20">
+								<use xlink:href="#mail"></use>
+							</svg>
+							armax.km@gmail.com
+						</a>
+					</li>
+				</ul>
+				<div class="nav__container">
+					<div class="header__lang">
+						<button class="header__btn " data-btn="ua">UA</button>
+						<button class="header__btn" data-btn="en">EN</button>
+						<button class="header__btn" data-btn="de">DE</button>
+					</div>
+					<ul class="nav__social-list--desktop nav__social-list--svg">
+						<li class="nav__social-item">
+							<a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
+								rel="noopener noreferrer">
+								<svg class="link-social--svg" width="25" height="25">
+									<use xlink:href="#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="nav__social-item">
+							<a href="https://www.instagram.com/armax.mg?igsh=aWJ0ZnE2MGkxNThj" class="link-social link--hover"
+								target="_blank" rel="noopener noreferrer">
+								<svg class="link-social--svg" width="25" height="25">
+									<use xlink:href="#instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="nav__social-item">
+							<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
+								class="link-social link--hover" target="_blank" rel="noopener noreferrer">
+								<svg class="link-social--svg" width="25" height="25">
+									<use xlink:href="#location"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="header__container container">
+			<div class="menu">
+
+				<div class="menu__container">
+					<button class="burger-btn"><span></span></button>
+					<h1 class="menu__title">
+						<a class="menu__link-logo" href="index.html"><img class="menu__logo" src="img/logo.avif" alt="" /></a>
+					</h1>
+					<div class="header__lang nav__list-social">
+						<button class="header__btn" data-btn="ua">UA</button>
+						<button class="header__btn" data-btn="en">EN</button>
+						<button class="header__btn" data-btn="de">DE</button>
+					</div>
+				</div>
+
+				<nav class="nav">
+					<div class="nav__inner">
+						<ul class="nav__list">
+
+							<li class="nav__item">
+								<a href="about-us.html" class="link-hover" data-lang="nav_page-2"></a>
+							</li>
+							<li class="nav__item">
+								<a href="contacts.html" class="link-hover" data-lang="nav_page-3"></a>
+							</li>
+
+
+							<li class="nav__item nav__item-dropdown">
+								<a href="product.html" class="link-hover nav__item-link" data-lang="nav_page-4"></a>
+								<div class="dropdown">
+									<a href="ag-equipment.html" class="link__dropdown link-hover " data-lang="nav_page-5"></a>
+									<a href="furniture-elements.html" class="link__dropdown link-hover" data-lang="nav_page-6"></a>
+									<a href="decor-elements.html" class="link__dropdown link-hover" data-lang="nav_page-7"></a>
+									<a href="сustom-orders.html" class="link__dropdown link-hover" data-lang="nav_page-8"></a>
+
+								</div>
+							</li>
+							<li class="nav__item nav__item-dropdown">
+								<a href="services.html" class="link-hover" data-lang="nav_page-1"></a>
+								<div class="dropdown dropdown--width">
+									<a href="lazer.html" class="link__dropdown link-hover " data-lang="footer_page-6-1"></a>
+									<a href="sheet-bending.html" class="link__dropdown link-hover" data-lang="footer_page-7-1"></a>
+									<a href="dyeing.html" class="link__dropdown link-hover" data-lang="footer_page-8-1"></a>
+									<a href="welding.html" class="link__dropdown link-hover" data-lang="footer_page-9-1"></a>
+									<a href="locksmith.html" class="link__dropdown link-hover" data-lang="footer_page-10-1"></a>
+									<a href="mechanical-processing.html" class="link__dropdown link-hover"
+										data-lang="footer_page-11-1"></a>
+								</div>
+							</li>
+							<li class="nav__item">
+								<a href="news.html" class="link-hover" data-lang="nav_page-9"></a>
+							</li>
+
+						</ul>
+
+						<ul class="nav__list nav__list-social">
+							<li class="nav__item-social">
+								<a class="link-social link--hover" href="tel:+380687945051">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#phone"></use>
+									</svg>
+									+38 (096) 123 91 21
+								</a>
+							</li>
+							<li class="nav__item-social">
+								<a href="mailto:lazerarmax@gmail.com" class="link-social link--hover">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#mail"></use>
+									</svg>
+									armax.km@gmail.com
+								</a>
+							</li>
+							<li class="nav__item-social">
+								<a href="https://www.instagram.com/armax.mg?igsh=aWJ0ZnE2MGkxNThj" class="link-social link--hover"
+									target="_blank" rel="noopener noreferrer">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#instagram"></use>
+									</svg>
+									<span class="none">instagram.com/armaxMG/</span>
+								</a>
+							</li>
+							<li class="nav__item-social">
+								<a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
+									rel="noopener noreferrer">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#facebook"></use>
+									</svg>
+									<span class="none">facebook.com/armaxMG/</span>
+								</a>
+							</li>
+							<li class="nav__item-social">
+								<a href="https://www.google.com/maps/place/%D0%A2%D0%B7%D0%9E%D0%92,+%D0%90%D1%80%D0%BC%D0%B0%D0%BA%D1%81+%D0%9C%D0%93/@50.83233,25.453636,18z/data=!4m5!3m4!1s0x0:0x3edf65d8017ef30a!8m2!3d50.8324517!4d25.4532672?hl=uk"
+									class="link-social link--hover" target="_blank" rel="noopener noreferrer">
+									<svg class="link-social--svg" width="30" height="30">
+										<use xlink:href="#location"></use>
+									</svg>
+									<span class="none">45200 м. Ківерці, вул.Грушевського 26</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+
+			<div class="header__content--container">
+				<div class="header__content header__inner">
+					<h1 class="header__content-title" data-lang="mp-header_page-1"></h1>
+					<p class="header__content-text" data-lang="mp-header_page-2">
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="section l-characteristic">
+			<div class="container">
+				<h3 class="section__title" data-lang="mp-char_page-1">
+
+				</h3>
+				<div class="l-characteristic__container">
+
+					<div class="l-characteristic__content">
+						<div class="l-characteristic__info mp-characteristic__info">
+							<div class="l-characteristic__box" data-aos="fade-right">
+								<p class="l-characteristic__text">
+									<span data-lang="mp-char_page-4"></span>
+								</p>
+							</div>
+							<div class="l-characteristic__box l-characteristic__box--shadow" data-aos="fade-right">
+
+								<h4 class="l-characteristic__title" data-lang="mp-char_page-13">
+
+								</h4>
+								<div>
+									<p class="l-characteristic__text">
+										<span class="text--weight" data-lang="mp-char_page-14"></span>
+										<span data-lang="mp-char_page-14-1"></span>
+									</p>
+								</div>
+								<div>
+									<p class="l-characteristic__text">
+										<span class="text--weight" data-lang="mp-char_page-15"></span>
+										<span data-lang="mp-char_page-15-1"></span>
+									</p>
+								</div>
+								<div>
+									<p class="l-characteristic__text">
+										<span class="text--weight" data-lang="mp-char_page-16"></span>
+										<span data-lang="mp-char_page-16-1"></span>
+									</p>
+								</div>
+								<div>
+									<p class="l-characteristic__text">
+										<span class="text--weight" data-lang="mp-char_page-17"></span>
+										<span data-lang="mp-char_page-17-1"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="l-characteristic__gallery">
+							<section class="a-gallery">
+								<div class="a-gallery__card l-characteristic__photo">
+									<a data-fslightbox="gallery" href="img/mechanical-processing.webp" class="a-gallery__link">
+										<img src="img/mechanical-processing.webp" alt="lazer" />
+									</a>
+								</div>
+
+								<div class="a-gallery__card l-characteristic__photo">
+									<a data-fslightbox="gallery" href="img/mp-4.webp" class="a-gallery__link">
+										<img src="img/mp-4.webp" alt="lazer" />
+									</a>
+								</div>
+
+								<div class="a-gallery__card l-characteristic__photo">
+									<a data-fslightbox="gallery" href="img/mp-2.webp">
+										<img src="img/mp-2.webp" alt="lazer" />
+									</a>
+								</div>
+								<div class="a-gallery__card  l-characteristic__photo">
+									<a data-fslightbox="gallery" href="img/mp-3.webp" class="a-gallery__link">
+										<img src="img/mp-3.webp" alt="lazer" />
+									</a>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="a-privilege a-privilege--color">
+			<div class="container">
+				<h2 class="section__title" data-lang="a-privilege_page-10"></h2>
+				<div class="a-privilege__inner">
+					<div class="a-privilege__box a-privilege__box--size">
+						<div class="a-privilege__card a-privilege__card--position">
+							<svg class="a-privilege--svg" width="30" height="20">
+								<use xlink:href="#document"></use>
+							</svg>
+							<div class="a-privilege__content">
+								<p class="a-privilege__text" data-lang="a-privilege_page-11">
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="a-privilege__box a-privilege__box--size">
+						<div class="a-privilege__card a-privilege__card--position">
+							<svg class="a-privilege--svg" width="30" height="20">
+								<use xlink:href="#call-center"></use>
+							</svg>
+							<div class="a-privilege__content">
+								<p class="a-privilege__text" data-lang="a-privilege_page-12"></p>
+							</div>
+						</div>
+					</div>
+					<div class="a-privilege__box a-privilege__box--size">
+						<div class="a-privilege__card a-privilege__card--position">
+							<svg class="a-privilege--svg" width="30" height="20">
+								<use xlink:href="#price"></use>
+							</svg>
+							<div class="a-privilege__content">
+								<p class="a-privilege__text" data-lang="a-privilege_page-13">
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="a-privilege__box a-privilege__box--size">
+						<div class="a-privilege__card a-privilege__card--position">
+							<svg class="a-privilege--svg" width="30" height="20">
+								<use xlink:href="#sample"></use>
+							</svg>
+							<div class="a-privilege__content">
+								<p class="a-privilege__text" data-lang="a-privilege_page-14">
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="a-privilege__box a-privilege__box--size">
+						<div class="a-privilege__card a-privilege__card--position">
+							<svg class="a-privilege--svg" width="30" height="20">
+								<use xlink:href="#handshake-deal"></use>
+							</svg>
+							<div class="a-privilege__content">
+								<p class="a-privilege__text" data-lang="a-privilege_page-15"></p>
+							</div>
+						</div>
+					</div>
+					<div class="a-privilege__box a-privilege__box--size">
+						<div class="a-privilege__card a-privilege__card--position">
+							<svg class="a-privilege--svg" width="30" height="20">
+								<use xlink:href="#product"></use>
+							</svg>
+							<div class="a-privilege__content">
+								<p class="a-privilege__text" data-lang="a-privilege_page-16">
+
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="l-price ware">
+			<div class="container">
+				<h3 class="section__title" data-lang="mp-price_page-1"></h3>
+				<p class="section__text l-price__text" data-lang="mp-price_page-2">
+				</p>
+				<ul class="l-price__list">
+					<li class="l-price__item" data-lang="mp-price_page-4"></li>
+					<li class="l-price__item" data-lang="l-price_page-5"></li>
+					<li class="l-price__item" data-lang="l-price_page-6">
+
+					</li>
+					<li class="l-price__item" data-lang="l-price_page-7"></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="calculation">
+			<div class="calculation__background"></div>
+			<div class="calculation__inner">
+				<div class="calculation__wrapper container">
+					<div class="communication">
+						<h5 class="communication__title" data-aos="fade-up" data-lang="calc-1">
+						</h5>
+						<div class="button-slip">
+							<button type="button" class="modal-active button-slip__link menu__btn">
+								<div><span class="button-slip__link-text" data-lang="calc-2"></span><br><span
+										class="button-slip__link-text button-slip__link-text--down" data-lang="calc-3"></span></div>
+								<div class="button-slip__link-box"></div>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__bootom">
+			<div class="container">
+				<div class="info">
+					<div class="info__block info__menu">
+						<h5 class="info__title" data-lang="footer_page-1"></h5>
+						<ul>
+							<li class="info__item">
+								<a class="info__link" href="../services.html" data-lang="footer_page-2"></a>
+							</li>
+							<li class="info__item">
+								<a class="info__link" href="../about-us.html" data-lang="footer_page-3"></a>
+							</li>
+							<li class="info__item">
+								<a class="info__link" href="../contacts.html" data-lang="footer_page-4"></a>
+							</li>
+							<li class="info__item">
+								<a class="info__link" href="../news.html" data-lang="footer_page-15"></a>
+							</li>
+							<li class="info__item">
+								<a class="info__link" href="../product.html" data-lang="footer_page-16"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="info__block info__schedule">
+						<h5 class="info__title" data-lang="footer_page-5"></h5>
+						<ul class="info__list">
+							<li class="info__item">
+								<a href="../lazer.html" class="info__link" data-lang="footer_page-6"></a>
+							</li>
+							<li class="info__item">
+								<a href="../sheet-bending.html" class="info__link" data-lang="footer_page-7"></a>
+							</li>
+							<li class="info__item">
+								<a href="../dyeing.html" class="info__link" data-lang="footer_page-8"></a>
+							</li>
+							<li class="info__item">
+								<a href="../welding.html" class="info__link" data-lang="footer_page-9"></a>
+							</li>
+							<li class="info__item">
+								<a href="../locksmith.html" class="info__link" data-lang="footer_page-10"></a>
+							</li>
+							<li class="info__item">
+								<a href="../mechanical-processing.html" class="info__link" data-lang="footer_page-17"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="info__block info__address">
+						<h5 class="info__title" data-lang="footer_page-11"></h5>
+						<ul class="info__list">
+							<li class="info__item">
+								<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
+									class="link-social link--hover" data-lang="footer_page-12" target="_blank" rel="noopener noreferrer">
+								</a>
+								<svg class="link-social--svg" width="30" height="30">
+									<use xlink:href="#location"></use>
+								</svg>
+							</li>
+							<li class="info__item info__item--color">
+								<a href="" class="link-social " id="disabledLink" data-lang="footer_page-13"></a>
+								<svg class="clock-svg link-social--svg" width="25" height="25">
+									<use xlink:href="#clock"></use>
+								</svg>
+							</li>
+						</ul>
+					</div>
+					<div class="info__block info__contact">
+						<h5 class="info__title" data-lang="footer_page-14"></h5>
+						<ul class="info__list">
+							<li class="info__item">
+								<a class="link-social link--hover" href="tel:+380687945051">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#phone"></use>
+									</svg>
+									+38 (096) 123 91 21
+								</a>
+							</li>
+							<li class="info__item">
+								<a class="link-social link--hover" href="tel:+380687945051">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#phone"></use>
+									</svg>
+									+38 (099) 225 50 51
+								</a>
+							</li>
+							<li class="info__item">
+								<a href="mailto:lazerarmax@gmail.com" class="link-social link--hover">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#mail"></use>
+									</svg>
+									armax.km@gmail.com
+								</a>
+							</li>
+							<li class="info__item">
+								<a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
+									rel="noopener noreferrer">
+									<svg class="link-social--svg" width="30" height="20">
+										<use xlink:href="#facebook"></use>
+									</svg>
+									facebook.com/armaxMG/
+								</a>
+							</li>
+							<li class="info__item">
+								<a href="https://www.instagram.com/armax.mg?igsh=aWJ0ZnE2MGkxNThj" class="link-social link--hover"
+									target="_blank" rel="noopener noreferrer">
+									<svg class="link-social--svg" width="25" height="25">
+										<use xlink:href="#instagram"></use>
+									</svg>
+									instagram.com/armax.mg
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal">
+		<div class="modal__inner">
+			<div class="modal-content">
+				<button class="close-button" onclick="closeModal()"></button>
+				<section class="modal__content">
+					<h4 class="modal__title" data-lang="modal-1"></h4>
+					<p class="modal__text" data-lang="modal-2"></p>
+					<form id="modalForm" class="modal__form" method="POST" action="/send_email_modal.php"
+						enctype="multipart/form-data">
+						<input class="modal__input" type="text" name="contact" placeholder="tel or e-mail" required minlength="6">
+						<button class="button button-modal" type="submit" data-lang="modal-3"></button>
+					</form>
+				</section>
+			</div>
+		</div>
+	</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="js/index.js"></script>
+	<script src="../js/form-card.js"></script>
+	<script src="js/lang.js"></script>
+	<script src="js/fslightbox.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>

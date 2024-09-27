@@ -1,202 +1,202 @@
 .l-characteristic {
-	color: #404044;
+  color: #404044;
 }
 
 .l-characteristic__name {
-	position: relative;
-	color: #777777;
-	font-weight: bold;
-	font-size: 16px;
-	margin: 0;
-	text-transform: uppercase;
+  position: relative;
+  color: #777777;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  text-transform: uppercase;
 
-	&::after {
-		content: "";
-		position: absolute;
-		bottom: -10px;
-		left: 0;
-		width: 80%;
-		height: 3px;
-		background-color: #d1a954;
-	}
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80%;
+    height: 3px;
+    background-color: #d1a954;
+  }
 
-	@include mq($from: tablet) {
-		width: 40%;
-	}
+  @include mq($from: tablet) {
+    width: 40%;
+  }
 }
 
 .l-characteristic__content {
-	margin-top: 40px;
-	padding: 10px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	box-shadow: rgba(0,0,0,.05) 0 6px 24px 0, rgba(0,0,0,.08) 0 0 0 1px;
+  margin-top: 40px;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
 
-	@include mq($from: phablet) {
-		display: flex;
-		justify-content: space-around;
-		margin-bottom: 30px;
-	}
+  @include mq($from: phablet) {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
 }
 
 .l-characteristic__gallery {
-	position: relative;
-	margin-top: 50px;
+  position: relative;
+  margin-top: 50px;
 
-	@include mq($from: phablet) {
-		width: 50%;
-		margin-top: 0;
-		padding-left: 30px;
+  @include mq($from: phablet) {
+    width: 50%;
+    margin-top: 0;
+    padding-left: 30px;
 
-		&::after {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 10px;
-			width: 5px;
-			height: 100%;
-			background-color: #d1a954;
-		}
-	}
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 10px;
+      width: 5px;
+      height: 100%;
+      background-color: #d1a954;
+    }
+  }
 
-	@include mq($from: tablet) {
-		width: 40%;
+  @include mq($from: tablet) {
+    width: 40%;
 
-		&::after {
-			left: 0;
-		}
-	}
+    &::after {
+      left: 0;
+    }
+  }
 
-	.a-gallery {
-		
-		@include mq($from: phablet) {
-			display: flex;
-			flex-direction: column;
-			padding-bottom: 0;
-		}
-	}
+  .a-gallery {
+    @include mq($from: phablet) {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0;
+    }
+  }
 
-	.a-gallery__card  {
-		transition: filter 0.4s ease;
-		max-height: 210px;
-	}
+  .a-gallery__card {
+    transition: filter 0.4s ease;
+    max-height: 210px;
+  }
 
-	.a-gallery__card img {
+  .a-gallery__card img {
+    @include mq($from: phablet) {
+      width: 290px;
+    }
 
-		@include mq($from: phablet) {
-			width: 290px;
-		}
-
-		@include mq($from: tablet) {
-			width: 100%;
-		}
-	}
+    @include mq($from: tablet) {
+      width: 100%;
+    }
+  }
 }
 
 .l-characteristic__box {
-	margin-top: 30px;
-	padding-bottom: 10px;
-	box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 
-	@include mq($from: phablet) {
-		margin-top: 30px;
-	}
+  @include mq($from: phablet) {
+    margin-top: 30px;
+  }
 }
 
 .l-characteristic__box--shadow {
-
-	@include mq($from: phablet) {
-		box-shadow: none;
-	}
+  @include mq($from: phablet) {
+    box-shadow: none;
+  }
 }
 
 .l-svg {
-	display: block;
-	margin: 0 auto;
-	fill: #404044;
-	
+  display: block;
+  margin: 0 auto;
+  fill: #404044;
 
-	@include mq($from: phablet) {
-		height: 70px;
-		margin-bottom: 0;
-	}
+  @include mq($from: phablet) {
+    height: 70px;
+    margin-bottom: 0;
+  }
 
-	@include mq($from: tablet) {
-		margin-bottom: 0;
-	}
+  @include mq($from: tablet) {
+    margin-bottom: 0;
+  }
 
-	@include mq($from: tablet-wide) {
-		margin-bottom: 0;
-	}
+  @include mq($from: tablet-wide) {
+    margin-bottom: 0;
+  }
 
-	@include mq($from: desktop) {
-		margin-bottom: 0;
-	}
+  @include mq($from: desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .l-characteristic__title {
-	font-size: 16px;
-	font-weight: 600;
-	text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
 
-	@include mq($from: tablet-wide) {
-		font-size: 20px;
-	}
+  @include mq($from: tablet-wide) {
+    font-size: 20px;
+  }
 }
 
 .l-characteristic__text {
-	font-size: 14px;
-	text-align: center;
+  font-size: 14px;
+  text-align: center;
 
-	@include mq($from: tablet-wide) {
-		font-size: 17px;
-	}
+  @include mq($from: tablet-wide) {
+    font-size: 17px;
+  }
 }
 
 .l-characteristic__text--color {
-	color: #d1a954;
+  color: #d1a954;
 }
 
 .l-characteristic__item {
-	position: relative;
-	padding: 10px;
-	padding-left: 25px;
+  position: relative;
+  padding: 10px;
+  padding-left: 25px;
 
-	&::after {
-		content: "";
-		position: absolute;
-		width: 10px;
-		height: 2px;
-		background-color: #d1a954;
-		left: 10px;
-		top: 50%;
-		transform: translate(-50% -50%);
-	}
+  &::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #d1a954;
+    left: 10px;
+    top: 50%;
+    transform: translate(-50% -50%);
+  }
 
-	@include mq($from: phablet) {
-		padding: 3px;
-		padding-left: 25px;
-	}
+  @include mq($from: phablet) {
+    padding: 3px;
+    padding-left: 25px;
+  }
 
-	@include mq($from: tablet-wide) {
-		font-size: 17px;
-	}
+  @include mq($from: tablet-wide) {
+    font-size: 17px;
+  }
 }
 
 .disabled-phablet {
-
-	@include mq($from: phablet) {
-		display: none;
-	}
+  @include mq($from: phablet) {
+    display: none;
+  }
 }
 
 .l-characteristic__photo {
-	transition-property: none;
-	filter: saturate(0%);
-	transition: filter 0.4s ease;
+  transition-property: none;
+  filter: saturate(0%);
+  transition: filter 0.4s ease;
 
-	&:hover {
-		filter: saturate(100%);
-	}
+  &:hover {
+    filter: saturate(100%);
+  }
 }
 
+.mp-characteristic__info {
+  @include mq($from: phablet) {
+    width: 50%;
+  }
+}

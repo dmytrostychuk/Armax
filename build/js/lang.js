@@ -1137,6 +1137,106 @@ const homeTexts = {
     en: 'Order execution terms;',
     de: 'Ausführungsfristen für Bestellungen;',
   },
+
+  //------mechanical-processing
+  'mp-header_page-1': {
+    ua: 'Механічна обробка',
+    en: 'Mechanical processing',
+    de: 'Mechanische Bearbeitung',
+  },
+  'mp-header_page-2': {
+    ua: 'Механічна обробка – це послуги токарної, фрезерної та шліфувальної обробки металів з використанням сучасного обладнання ЧПК. Компанія забезпечує високу точність і продуктивність для серійного та індивідуального виробництва деталей.',
+    en: 'Mechanical processing is the service of turning, milling, and grinding metal with the use of modern CNC equipment. The company ensures high precision and productivity for both serial and custom part production.',
+    de: 'Mechanische Bearbeitung umfasst Dreh-, Fräs- und Schleifdienste für Metalle unter Verwendung moderner CNC-Ausrüstung. Das Unternehmen gewährleistet hohe Präzision und Produktivität für die Serien- und Einzelteilproduktion.',
+  },
+  'mp-char_page-1': {
+    ua: 'Послуги по механічній обробці металу',
+    en: 'Metal machining services',
+    de: 'Dienstleistungen zur mechanischen Metallbearbeitung',
+  },
+  'mp-char_page-4': {
+    ua: 'Компанія «АрмаксМГ» надає послуги з механічної обробки металів, зокрема виробництва деталей за індивідуальними проектами. Ми виконуємо замовлення будь-якої складності та обсягу, використовуючи різноманітні метали.',
+    en: 'The company "ArmaxMG" provides metal machining services, including the production of parts based on custom projects. We handle orders of any complexity and volume, using various metals.',
+    de: 'Die Firma „ArmaxMG“ bietet Dienstleistungen zur mechanischen Bearbeitung von Metallen an, einschließlich der Herstellung von Teilen nach individuellen Projekten. Wir bearbeiten Aufträge jeder Komplexität und jedes Umfangs unter Verwendung verschiedener Metalle.',
+  },
+  'mp-char_page-13': {
+    ua: 'Переваги обробки металу в «АрмаксМГ»:',
+    en: 'Advantages of metal machining at "ArmaxMG":',
+    de: 'Vorteile der Metallbearbeitung bei „ArmaxMG“:',
+  },
+  'mp-char_page-14': {
+    ua: 'Сучасне обладнання ЧПК:',
+    en: 'Modern CNC equipment:',
+    de: 'Moderne CNC-Ausrüstung:',
+  },
+
+  'mp-char_page-14-1': {
+    ua: 'Наше високоточне обладнання дозволяє виготовляти деталі відповідно до затверджених креслень, забезпечуючи відмінну якість завдяки використанню інноваційних технологій.',
+    en: 'Our high-precision equipment allows the production of parts according to approved drawings, ensuring excellent quality through the use of innovative technologies.',
+    de: 'Unsere hochpräzisen Maschinen ermöglichen die Herstellung von Teilen nach genehmigten Zeichnungen und gewährleisten dank innovativer Technologien eine hervorragende Qualität.',
+  },
+
+  'mp-char_page-15': {
+    ua: 'Автоматизація процесів:',
+    en: 'Process automation:',
+    de: 'Prozessautomatisierung:',
+  },
+
+  'mp-char_page-15-1': {
+    ua: 'Щоб уникнути неточностей і браку, більшість операцій виконується автоматизовано під наглядом досвідчених фахівців.',
+    en: 'To avoid inaccuracies and defects, most operations are automated under the supervision of experienced specialists.',
+    de: 'Um Ungenauigkeiten und Mängel zu vermeiden, werden die meisten Prozesse automatisiert unter der Aufsicht erfahrener Fachleute durchgeführt.',
+  },
+  'mp-char_page-16': {
+    ua: 'Професійні майстри:',
+    en: 'Professional craftsmen:',
+    de: 'Professionelle Fachkräfte:',
+  },
+  'mp-char_page-16-1': {
+    ua: 'Наші експерти мають багаторічний досвід у сфері металообробки, що гарантує високу якість виконаних робіт.',
+    en: 'Our experts have many years of experience in metalworking, which guarantees the high quality of the work performed.',
+    de: 'Unsere Experten haben langjährige Erfahrung in der Metallbearbeitung, was die hohe Qualität der ausgeführten Arbeiten gewährleistet.',
+  },
+  'mp-char_page-17': {
+    ua: 'Доступні ціни:',
+    en: 'Affordable prices:',
+    de: 'Erschwingliche Preise:',
+  },
+  'mp-char_page-17-1': {
+    ua: 'Ми пропонуємо конкурентну вартість послуг, що дозволяє нашим клієнтам не переплачувати.',
+    en: 'We offer competitive service prices, allowing our clients to avoid overpaying.',
+    de: 'Wir bieten wettbewerbsfähige Preise für unsere Dienstleistungen, sodass unsere Kunden nicht zu viel bezahlen müssen.',
+  },
+  'mp-price_page-1': {
+    ua: 'Механічна обробка металу',
+    en: 'Metal machining',
+    de: 'Mechanische Metallbearbeitung',
+  },
+  'mp-price_page-2': {
+    ua: 'Щоб ми могли зробити точний розрахунок вартості механічної обробки металу та терміни виконання послуги, нам необхідно отримати від Вас повну інформацію про виріб, детальне технічне завдання або креслення. Ціни на механічну обробку визначаються за такими основними критеріями як:',
+    en: 'To provide an accurate cost estimate for metal machining and service completion time, we need complete information about the product, a detailed technical specification, or a drawing from you. The price of machining is determined by the following key criteria:',
+    de: 'Um eine genaue Kostenschätzung für die mechanische Metallbearbeitung und die Ausführungszeiten zu erstellen, benötigen wir von Ihnen vollständige Informationen über das Produkt, eine detaillierte technische Spezifikation oder eine Zeichnung. Die Preise für die mechanische Bearbeitung werden nach folgenden Hauptkriterien bestimmt:',
+  },
+  'mp-price_page-3': {
+    ua: 'Механічна обробка металу',
+    en: 'Metal machining',
+    de: 'Mechanische Metallbearbeitung',
+  },
+
+  'mp-price_page-4': {
+    ua: 'Вид та марка металу, який Вам потрібно обробити;',
+    en: 'The type and grade of metal that needs to be machined;',
+    de: 'Die Art und Sorte des Metalls, das bearbeitet werden muss;',
+  },
+
+  'mp-services_page-1': {
+    ua: 'Детальніше',
+    en: 'Learn more',
+    de: 'Erfahren Sie mehr',
+  },
+
+  'mp-services_page-6': {},
+
   //--------welding
   'w-header_page-1': {
     ua: 'Зварювальні роботи',

@@ -3,6 +3,10 @@
   max-width: 320px;
   font-size: 14px;
   line-height: 25px;
+  margin: 0 auto;
+  @include mq($from: tablet) {
+    margin: 0;
+  }
 }
 
 .button-slip__link {

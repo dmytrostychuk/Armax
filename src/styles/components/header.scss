@@ -135,6 +135,12 @@
   background-size: cover;
 }
 
+.mp-header__background {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c),
+    url('../img/mechanical-processing.webp');
+  background-size: cover;
+}
+
 .diagonal-bg {
   position: fixed;
   z-index: -1;
