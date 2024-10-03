@@ -84,56 +84,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Функція для перевірки скролінгу
-window.onscroll = function () {
-  const scrollButton = document.getElementById('scrollButton');
-  if (
-    document.documentElement.scrollTop >
-    document.documentElement.scrollHeight * 0.05
-  ) {
-    scrollButton.classList.add('visible'); // Додати клас для показу кнопки
-  } else {
-    scrollButton.classList.remove('visible'); // Видалити клас для приховування кнопки
-  }
-};
-
-// Функція для скролу догори
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth', // Плавний скролінг
-  });
-}
-
-// Отримати кнопку прокрутки
-var scrollButton = document.getElementById('scrollButton');
-// Отримати форму
-var calculationSection = document.querySelector('.calculation');
-
-document.addEventListener('DOMContentLoaded', function () {
-  AOS.init({
-    disable: function () {
-      var isMobile = window.innerWidth < 768;
-      console.log('AOS disabled:', isMobile);
-      return isMobile;
-    },
-    startEvent: 'DOMContentLoaded',
-    initClassName: 'aos-init',
-    animatedClassName: 'aos-animate',
-    useClassNames: false,
-    disableMutationObserver: false,
-    debounceDelay: 50,
-    throttleDelay: 99,
-    offset: 100,
-    delay: 0,
-    duration: 400,
-    easing: 'ease',
-    once: true,
-    mirror: false,
-    anchorPlacement: 'top-bottom',
-  });
-});
-
 var modal = document.querySelector('.modal');
 var triggers = document.querySelectorAll('.modal-active');
 var closeButton = document.querySelector('.close-button');

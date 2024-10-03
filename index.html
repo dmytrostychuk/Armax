@@ -188,7 +188,7 @@
         <div class="menu__container">
           <button class="burger-btn"><span></span></button>
           <h3 class="menu__title">
-            <a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.avif" alt="" /></a>
+            <a class="menu__link-logo" href="index.html"><img class="menu__logo" src=" img/logo.avif" alt="logo" /></a>
           </h3>
           <div class="header__lang nav__list-social">
             <button class="header__btn" data-btn="ua">UA</button>
@@ -711,14 +711,12 @@
       <div class="modal-content">
         <button class="close-button" onclick="closeModal()"></button>
         <section class="modal__content">
-          <h4 class="modal__title">Зворотній зв'язок</h4>
-          <p class="modal__text">Залиште Ваш номер телефону, або електрону адресу, і наш менеджер якнайшвидше звʼяжеться
-            з Вами!</p>
+          <h4 class="modal__title" data-lang="modal-1"></h4>
+          <p class="modal__text" data-lang="modal-2"></p>
           <form id="modalForm" class="modal__form" method="POST" action="/send_email_modal.php"
             enctype="multipart/form-data">
-            <input class="modal__input" type="text" name="contact" placeholder="телефон або e-mail" required
-              minlength="6">
-            <button class="button button-modal" type="submit">Відправити запит</button>
+            <input class="modal__input" type="text" name="contact" placeholder="tel or e-mail" required minlength="6">
+            <button class="button button-modal" type="submit" data-lang="modal-3"></button>
           </form>
         </section>
       </div>
