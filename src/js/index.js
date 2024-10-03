@@ -39,6 +39,26 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+window.onscroll = function () {
+  const scrollButton = document.getElementById('scrollButton');
+  if (
+    document.documentElement.scrollTop >
+    document.documentElement.scrollHeight * 0.05
+  ) {
+    scrollButton.classList.add('visible'); // Додати клас для показу кнопки
+  } else {
+    scrollButton.classList.remove('visible'); // Видалити клас для приховування кнопки
+  }
+};
+
+// Функція для скролу догори
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', // Плавний скролінг
+  });
+}
+
 // Функція, що перевіряє, чи видима елемент
 function isElementPartiallyInViewport(el) {
   var rect = el.getBoundingClientRect();
@@ -175,6 +195,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Викликаємо функцію при завантаженні сторінки
   toggleReadMore();
+  // Функція для перевірки скролінгу
 
   // Додаємо обробник події для зміни розміру вікна
   window.addEventListener('resize', toggleReadMore);
@@ -195,24 +216,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-
-// Функція для перевірки скролінгу
-window.onscroll = function () {
-  const scrollButton = document.getElementById('scrollButton');
-  if (
-    document.documentElement.scrollTop >
-    document.documentElement.scrollHeight * 0.05
-  ) {
-    scrollButton.classList.add('visible'); // Додати клас для показу кнопки
-  } else {
-    scrollButton.classList.remove('visible'); // Видалити клас для приховування кнопки
-  }
-};
-
-// Функція для скролу догори
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth', // Плавний скролінг
-  });
-}

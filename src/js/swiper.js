@@ -133,3 +133,10 @@ var swiper6 = new Swiper('.mySwiper6', {
   zoom: true,
   loop: false,
 });
+
+var swiper = new Swiper('.mySwiper', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
