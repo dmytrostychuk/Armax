@@ -2476,54 +2476,54 @@ const homeTexts = {
 
   // -------news
 
-  'article-1': {
+  'article-news-1': {
     ua: 'Як обрати металеві елементи для комерційного простору: від меблів до декору',
     en: 'How to choose metal elements for a commercial space: from furniture to decor',
     de: 'Wie man Metallelemente für gewerbliche Räume auswählt: von Möbeln bis hin zur Dekoration',
   },
-  'article-2': {
+  'article-news-2': {
     ua: 'Сучасний дизайн комерційних приміщень усе більше звертається до металу як до ключового матеріалу. Його використовують для створення меблів, декору та функціональних елементів, що відповідають стилю лофт, який набув великої популярності завдяки своїй індустріальній естетиці. Як компанія, що спеціалізується на обробці металів та виготовленні металевих деталей, ми хочемо поділитися порадами щодо вибору оптимальних металевих елементів для вашого простору.',
     en: 'Modern commercial space design increasingly turns to metal as a key material. It is used to create furniture, decor, and functional elements that fit the loft style, which has gained great popularity thanks to its industrial aesthetic. As a company specializing in metalworking and manufacturing metal parts, we would like to share tips on choosing the best metal elements for your space.',
     de: 'Das moderne Design von Geschäftsräumen greift immer mehr auf Metall als Schlüsselmaterial zurück. Es wird zur Herstellung von Möbeln, Dekorationen und funktionalen Elementen verwendet, die dem Loft-Stil entsprechen, der dank seiner industriellen Ästhetik große Popularität erlangt hat. Als Unternehmen, das auf die Metallbearbeitung und die Herstellung von Metallelementen spezialisiert ist, möchten wir Ihnen einige Tipps zur Auswahl der besten Metallelemente für Ihren Raum geben.',
   },
 
-  'article-3': {
+  'article-news-3': {
     ua: 'Переваги металевих елементів',
     en: 'Advantages of metal elements',
     de: 'Vorteile von Metallelementen',
   },
 
-  'article-4': {
+  'article-news-4': {
     ua: 'Метал є ідеальним матеріалом для комерційних приміщень завдяки своїм ключовим перевагам:',
     en: 'Metal is the ideal material for commercial spaces due to its key advantages:',
     de: 'Metall ist das ideale Material für gewerbliche Räume aufgrund seiner wesentlichen Vorteile:',
   },
-  'article-5': {
+  'article-news-5': {
     ua: 'Міцність і надійність:',
     en: 'Strength and reliability:',
     de: 'Festigkeit und Zuverlässigkeit:',
   },
-  'article-6': {
+  'article-news-6': {
     ua: 'Металеві елементи можуть витримувати значні навантаження, що є важливим для меблів і конструкцій у комерційних просторах.',
     en: 'Metal elements can withstand significant loads, which is important for furniture and structures in commercial spaces.',
     de: 'Metallelemente können erhebliche Belastungen aushalten, was für Möbel und Konstruktionen in gewerblichen Räumen von Bedeutung ist.',
   },
-  'article-7': {
+  'article-news-7': {
     ua: 'Стійкість до зносу:',
     en: 'Durability:',
     de: 'Langlebigkeit:',
   },
-  'article-8': {
+  'article-news-8': {
     ua: 'Метал не боїться фізичних ушкоджень та впливу вологи, що робить його ідеальним для використання в різних умовах.',
     en: 'Metal is resistant to physical damage and moisture, making it ideal for use in various conditions.',
     de: 'Metall ist unempfindlich gegenüber physischen Beschädigungen und Feuchtigkeit, was es ideal für den Einsatz unter verschiedenen Bedingungen macht.',
   },
-  'article-9': {
+  'article-news-9': {
     ua: 'Стійкість до зносу:',
     en: 'Durability:',
     de: 'Langlebigkeit:',
   },
-  'article-10': {
+  'article-news-10': {
     ua: 'Металеві деталі надають простору сучасного, індустріального вигляду, який підходить для різних інтер’єрів, особливо у стилі лофт.',
     en: 'Metal details give the space a modern, industrial look that fits various interiors, especially in the loft style.',
     de: 'Metallelemente verleihen dem Raum ein modernes, industrielles Aussehen, das zu verschiedenen Innenräumen passt, insbesondere im Loft-Stil.',
