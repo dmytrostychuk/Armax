@@ -1637,6 +1637,10 @@ picture {
   opacity: 1;
 }
 
+.co-news-page__container {
+  position: relative;
+}
+
 .partners {
   position: relative;
   color: #404044;
@@ -3335,6 +3339,33 @@ textarea.form__input {
   border-bottom: 3px solid #b47c48;
 }
 
+.co-news-page__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.co-page__card {
+  position: relative;
+  width: 47%;
+  height: 100%;
+  margin: 5px;
+  width: 100%;
+  border: 1px solid transparent;
+  overflow: hidden;
+  padding: 10px;
+  font-size: 0;
+}
+.co-page__card:hover {
+  border-color: #959393;
+}
+
+.co-images {
+  outline: 2px solid #000;
+  font-size: 0;
+}
+
 @media (min-width: 560px) {
   body {
     font-size: 16px;
@@ -4209,6 +4240,10 @@ textarea.form__input {
   }
   .news-page__img-container {
     max-width: 100%;
+  }
+  .co-page__card {
+    float: right;
+    width: 25%;
   }
 }
 

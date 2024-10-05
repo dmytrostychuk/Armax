@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 	<link rel="website icon" type="png" href="../img/pngegg.png" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 	<meta property="og:title" content="ArmaxMG">
 	<meta property="og:image" content="../img/lazer.jpg">
 	<meta property="og:url" content="https://armax-mg.com.ua/">
@@ -270,6 +272,81 @@
 	</header>
 
 	<main class="main">
+
+
+		<button class="button__scroll" id="scrollButton" onclick="scrollToTop()">
+			<span class="scroll__aroww">Вгору</span>
+		</button>
+
+		<section class="news-page">
+			<div class="container">
+				<div class="co-news-page__container">
+					<article class="co-page__card">
+							<div class="co-images">
+								<div class="swiper mySwiper-10">
+									<div class="swiper-wrapper co-swiper-wrapper">
+										<div class="swiper-slide"><a data-fslightbox="gallery" href="../img/custom-orders/body-armor-rack/1.jpg" class="a-gallery__link">
+											<img src="./img/custom-orders/body-armor-rack/1.jpg" alt="dyeing" />
+										</a></div>
+										<div class="swiper-slide"><a data-fslightbox="gallery" href="../img/custom-orders/body-armor-rack/2.jpg">
+											<img src="../img/custom-orders/body-armor-rack/2.jpg" alt="dyeing" />
+										</a></div>
+										<div class="swiper-slide"><a data-fslightbox="gallery" href="../img/custom-orders/body-armor-rack/3.jpg">
+											<img src="../img/custom-orders/body-armor-rack/3.jpg" alt="dyeing" />
+										</a></div>
+										<div class="swiper-slide"><a data-fslightbox="gallery" href="../img/custom-orders/body-armor-rack/4.jpg">
+											<img src="../img/custom-orders/body-armor-rack/4.jpg" alt="dyeing" />
+										</a></div>
+									</div>
+									<div class="swiper-button-prev">
+										<img src="img/arow-prev.svg" alt="prev" width="30" height="50" />
+									</div>
+									<div class="swiper-button-next">
+										<img src="img/arow-next.svg" alt="next" width="30" height="50" />
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+
+							<div>
+								text
+							</div>
+					</article>
+					<article class="co-page__card">
+						<div class="co-images" style="position: relative;">
+							<div class="swiper mySwiper-10">
+								<div class="swiper-wrapper co-swiper-wrapper">
+									<div class="swiper-slide"><a data-fslightbox="gallery" href="../img/custom-orders/body-armor-rack/1.jpg" class="a-gallery__link">
+										<img src="./img/custom-orders/body-armor-rack/1.jpg" alt="dyeing" />
+									</a></div>
+									<div class="swiper-slide"><a data-fslightbox="gallery" href="../img/custom-orders/body-armor-rack/2.jpg">
+										<img src="../img/custom-orders/body-armor-rack/2.jpg" alt="dyeing" />
+									</a></div>
+									<div class="swiper-slide"><a data-fslightbox="gallery" href="../img/custom-orders/body-armor-rack/3.jpg">
+										<img src="../img/custom-orders/body-armor-rack/3.jpg" alt="dyeing" />
+									</a></div>
+									<div class="swiper-slide"><a data-fslightbox="gallery" href="../img/custom-orders/body-armor-rack/4.jpg">
+										<img src="../img/custom-orders/body-armor-rack/4.jpg" alt="dyeing" />
+									</a></div>
+								</div>
+								<div class="swiper-button-prev">
+									<img src="img/arow-prev.svg" alt="prev" width="30" height="50" />
+								</div>
+								<div class="swiper-button-next">
+									<img src="img/arow-next.svg" alt="next" width="30" height="50" />
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+
+						<div>
+							text
+						</div>
+				</article>
+
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer class="footer">
 		<div class="footer__bootom">
@@ -392,10 +469,14 @@
 			</div>
 		</div>
 	</footer>
+	
 	<script src="js/lang.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="js/index.js"></script>
+	<script src="js/swiper.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/fslightbox.js"></script>
 </body>
 
 </html>

@@ -134,9 +134,15 @@ var swiper6 = new Swiper('.mySwiper6', {
   loop: false,
 });
 
-var swiper = new Swiper('.mySwiper', {
+
+var swiper10 = new Swiper(".mySwiper-10", {
+  
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
