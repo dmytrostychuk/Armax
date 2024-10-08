@@ -1,36 +1,113 @@
 .co-news-page__container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
 
-    
+.co-page-card__container {
+  background-color: #f6f6f6;
+  padding: 8px;
 }
 
 .co-page__card {
-    position: relative;
-    width: 47%;
-    height: 100%;
-    margin: 5px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  width: 49%;
+  outline: 1px solid transparent;
+  font-size: 0;
+
+  img {
+    max-height: 100%;
     width: 100%;
-    border: 1px solid transparent;
-    overflow: hidden;
-    padding: 10px;
-    font-size: 0;
-    @media (min-width: 1024px) {
-        float: right;
-        width: 25%;
-    }
+  }
 
-    &:hover {
-        border-color: #959393;
-    }
+  .swiper-button-prev-10 {
+    object-fit: scale-down;
+  }
+  @include mq($from: tablet-wide) {
+    float: right;
+    width: 32%;
+  }
 
+  &:hover {
+    @include mq($from: tablet-wide) {
+      border-color: #959393;
+    }
+  }
 }
 
+.swiper-slide {
+  img {
+    overflow: hidden;
+  }
+}
 
 .co-images {
-    outline: 2px solid #000;
-    font-size: 0;
+  position: relative;
+  outline: 1px solid #000;
+  font-size: 0;
+  background-color: #f6f6f6;
+
+  .co-photo {
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
+.co-product__name {
+  margin: 0;
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-align: start;
+  height: 30px;
+  word-spacing: 0;
+
+  @include mq($from: phablet) {
+    font-size: 18px;
+  }
+}
+
+.co-characteristic {
+  margin: 0;
+  margin-top: 10px;
+  line-height: 1;
+  font-weight: 600;
+  word-spacing: 0;
+  font-weight: 500;
+}
+
+.co-table {
+  margin-top: 10px;
+  width: 100%;
+
+  tr {
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+  }
+  th {
+    width: 100%;
+    text-align: start;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.co-info {
+  line-height: 1.2;
+  font-size: 13px;
+  word-spacing: 0;
+
+  @include mq($from: phablet) {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+}
