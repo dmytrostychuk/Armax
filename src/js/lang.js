@@ -2437,6 +2437,19 @@ const homeTexts = {
     en: 'More news',
     de: 'Mehr Nachrichten',
   },
+
+  'news-index-6': {
+    ua: 'Від ідеї до результату - Інтерв`ю з керівником',
+    en: 'From Idea to Result - An Interview with the Director',
+    de: 'Von der Idee zum Ergebnis - Ein Interview mit dem Geschäftsführer',
+  },
+
+  'news-index-7': {
+    ua: 'У інтерв`ю ви дізнаєтесь про унікальні можливості компанії АрмаксМГ, такі як лазерна порізка, гнуття, механічна обробка, порошкове фарбування та зварювання металу. АрмаксМГ продовжує працювати і розвиватись, незважаючи на виклики війни, отримуючи нові замовлення та підтримку у вигляді грантів від USAID.',
+    en: 'In the interview, you will learn about the unique capabilities of ArmaxMG, such as laser cutting, bending, machining, powder coating, and metal welding. ArmaxMG continues to operate and grow despite the challenges of the war, receiving new orders and support in the form of grants from USAID.',
+    de: 'Im Interview erfahren Sie mehr über die einzigartigen Möglichkeiten von ArmaxMG, wie Laserschneiden, Biegen, mechanische Bearbeitung, Pulverbeschichtung und Metallschweißen. ArmaxMG arbeitet und wächst trotz der Herausforderungen des Krieges weiter, erhält neue Aufträge und Unterstützung in Form von Zuschüssen von USAID.',
+  },
+
   'calc-1': {
     ua: 'Залишилися запитання? Залиште свої дані, ми з Вами зв`яжемося!',
     en: 'Have any questions? Leave your details, and we will contact you!',

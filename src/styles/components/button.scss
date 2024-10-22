@@ -134,4 +134,11 @@
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
+
+  @include mq($from: desktop) {
+    height: 40px;
+    width: 70%;
+    display: block;
+    margin: 15px auto;
+  }
 }

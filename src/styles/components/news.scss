@@ -17,6 +17,8 @@
 }
 
 .news__blok {
+  display: flex;
+  flex-direction: column;
   position: relative;
   background-color: #f6f6f6;
   padding: 15px;
@@ -46,6 +48,7 @@
   @include mq($from: phablet) {
     padding: 0;
     margin-bottom: 0;
+    display: -webkit-box;
   }
 
   @include mq($from: tablet-wide) {
@@ -74,9 +77,13 @@
 }
 
 .news__img {
-  display: none;
   width: 100%;
   height: 100%;
+
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
 
   @include mq($from: phablet) {
     display: block;
