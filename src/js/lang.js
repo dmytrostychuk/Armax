@@ -286,7 +286,7 @@ const homeTexts = {
     de: 'Individuelle Projekte',
   },
   'wara_page-5-1': {
-    ua: 'Індивідуальні проекти',
+    ua: 'Індивідуальні проекти та декоративні елементи',
     en: 'Custom projects',
     de: 'Individuelle Projekte',
   },
