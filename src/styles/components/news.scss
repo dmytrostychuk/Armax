@@ -99,6 +99,10 @@
     object-fit: cover;
     opacity: 0.9;
   }
+
+  .news__img--img {
+    object-fit: contain;
+  }
 }
 
 .news__content-container {

@@ -643,9 +643,9 @@ const homeTexts = {
     de: 'sind (BxHxT):',
   },
   'd-header_page-16': {
-    ua: '2000х1500х1000 мм.',
-    en: '2000x1500x1000 mm.',
-    de: '2000x1500x1000 mm.',
+    ua: '2500х1500х1000 мм.',
+    en: '2500x1500x1000 mm.',
+    de: '2500x1500x1000 mm.',
   },
   'd-header_page-7': {
     ua: 'Товщина шару нанесення:',
@@ -2458,6 +2458,17 @@ const homeTexts = {
     ua: 'Погляньте на роботу нашої команди у виробничому процесі! Коротке відео з дрона і землі показує моменти, де працівники демонструють професіоналізм і взаємодію з сучасним обладнанням. Відчуйте атмосферу, де людські вміння та інновації об`єднуються для створення якісних продуктів!',
     en: 'Take a look at our team in action during the production process! A short video captured by drone and from the ground showcases moments where employees demonstrate professionalism and interact with modern equipment. Feel the atmosphere where human skills and innovation come together to create quality products!',
     de: 'Werfen Sie einen Blick auf die Arbeit unseres Teams im Produktionsprozess! Ein kurzes Video, aufgenommen mit einer Drohne und vom Boden aus, zeigt Momente, in denen Mitarbeiter Professionalität zeigen und mit moderner Ausrüstung interagieren. Spüren Sie die Atmosphäre, in der menschliche Fähigkeiten und Innovationen zur Herstellung hochwertiger Produkte zusammenkommen!',
+  },
+  'news-index-10': {
+    ua: 'Незабаром відкриття нового цеху АрмаксМГ!',
+    en: 'The grand opening of a new ArmaxMG workshop is coming soon!',
+    de: 'Die Eröffnung einer neuen Werkstatt von ArmaxMG steht bevor!',
+  },
+
+  'news-index-11': {
+    ua: 'Ми раді поділитися чудовою новиною — незабаром відбудеться відкриття п`ятого цеху Армакс МГ! Новий цех оснащено сучасним лазерним труборізом, який значно розширить наші виробничі можливості та дозволить виконувати ще більш складні завдання з високою точністю. На нашому сайті ви зможете побачити весь процес створення цього цеху: від початкового будівництва до запуску інноваційного обладнання. Долучайтеся до історії розвитку Армакс МГ разом із нами!',
+    en: 'We are excited to share great news — the fifth Armax MG workshop is opening soon! The new workshop is equipped with a state-of-the-art laser tube cutter, which will significantly expand our production capabilities and enable us to perform even more complex tasks with exceptional precision. On our website, you will be able to see the entire process of creating this workshop: from the initial construction to the launch of innovative equipment. Join us in the journey of Armax MG`s growth!',
+    de: 'Wir freuen uns, großartige Neuigkeiten zu teilen – bald wird die fünfte Werkstatt von Armax MG eröffnet! Die neue Werkstatt ist mit einem hochmodernen Laserschneider für Rohre ausgestattet, der unsere Produktionsmöglichkeiten erheblich erweitert und es uns ermöglicht, noch komplexere Aufgaben mit höchster Präzision zu erledigen. Auf unserer Website können Sie den gesamten Prozess der Entstehung dieser Werkstatt verfolgen: von der anfänglichen Konstruktion bis hin zur Inbetriebnahme innovativer Geräte. Seien Sie Teil der Erfolgsgeschichte von Armax MG!',
   },
 
   'calc-1': {
