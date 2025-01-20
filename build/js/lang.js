@@ -2919,112 +2919,136 @@ const homeTexts = {
     en: 'This table support has a 6 mm thick base. Its design features intersecting elements, adding originality and a modern look. This design ensures high stability and reliability, making the support suitable for use with large and heavy tabletops. The support is powder-coated, providing additional protection and durability.',
 
     de: 'Diese Tischstütze hat eine 6 mm dicke Basis. Ihre Konstruktion besteht aus sich kreuzenden Elementen, was ihr Originalität und ein modernes Aussehen verleiht. Dieses Design gewährleistet eine hohe Stabilität und Zuverlässigkeit und macht die Stütze für den Einsatz mit großen und schweren Tischplatten geeignet. Die Stütze ist pulverbeschichtet, was zusätzlichen Schutz und Langlebigkeit bietet.',
+
+    pl: 'Ten wspornik stołu ma podstawę o grubości 6 mm. Jego konstrukcja charakteryzuje się przecinającymi się elementami, co nadaje mu oryginalności i nowoczesnego wyglądu. Taki design zapewnia wysoką stabilność i niezawodność, co czyni wspornik odpowiednim do stosowania z dużymi i ciężkimi blatami. Wspornik jest malowany proszkowo, co zapewnia dodatkową ochronę i trwałość.',
   },
 
   'news-index-1': {
     ua: 'Тендер на закупівлю обладнання!',
     en: 'Tender for equipment procurement!',
     de: 'Ausschreibung für den Einkauf von Ausrüstung!',
+    pl: 'Przetarg na zakup sprzętu!',
   },
 
   'news-up': {
     ua: 'Вгору',
     en: 'Up',
     de: 'Nach oben',
+    pl: 'Do góry',
   },
 
   'news-index-2': {
     ua: 'Підприємство має на меті закупити обладнання, а саме: Лазер листовий Bodor Laser C3 3000 W Maxphotonics. Вартість має бути вказана з ПДВ. Прохання комерційні пропозиції надсилати на електронну пошту:',
     en: 'The company aims to purchase equipment, specifically: Sheet laser Bodor Laser C3 3000 W Maxphotonics. The price must be indicated with VAT. Please send commercial offers to the email:',
     de: 'Das Unternehmen beabsichtigt, Ausrüstung zu kaufen, und zwar: Blechlaser Bodor Laser C3 3000 W Maxphotonics. Der Preis muss inklusive Mehrwertsteuer angegeben werden. Bitte senden Sie Ihre kommerziellen Angebote per E-Mail an:',
+    pl: 'Firma zamierza zakupić sprzęt, a mianowicie: laser do cięcia blach Bodor Laser C3 3000 W Maxphotonics. Cena musi być podana z VAT. Prosimy o przesyłanie ofert handlowych na adres e-mail:',
   },
 
   'news-index-3': {
     ua: 'Тендер на закупівлю обладнання!',
     en: 'Tender for equipment procurement!',
     de: 'Ausschreibung für den Einkauf von Ausrüstung!',
+    pl: 'Przetarg na zakup sprzętu!',
   },
 
   'news-index-4': {
     ua: 'Підприємство має на меті закупити обладнання, а саме: Гідравлічний трубогинний верстат CNC 3D 50 4Axes-2Radius Maxphotonics. Вартість має бути вказана з ПДВ. Прохання комерційні пропозиції надсилати на електронну пошту:',
     en: 'The company aims to purchase equipment, specifically: Hydraulic pipe bending machine CNC 3D 50 4Axes-2Radius Maxphotonics. The price must be indicated with VAT. Please send commercial offers to the email:',
     de: 'Das Unternehmen beabsichtigt, Ausrüstung zu kaufen, und zwar: Hydraulische Rohrbiegemaschine CNC 3D 50 4Axes-2Radius Maxphotonics. Der Preis muss inklusive Mehrwertsteuer angegeben werden. Bitte senden Sie Ihre kommerziellen Angebote per E-Mail an:',
+    pl: 'Firma zamierza zakupić sprzęt, a mianowicie: hydrauliczna giętarka do rur CNC 3D 50 4Axes-2Radius Maxphotonics. Cena musi być podana z VAT. Prosimy o przesyłanie ofert handlowych na adres e-mail:',
   },
 
   'news-index-5': {
     ua: 'Більше новин',
     en: 'More news',
     de: 'Mehr Nachrichten',
+    pl: 'Więcej wiadomości',
   },
 
   'news-index-6': {
     ua: 'Від ідеї до результату - Інтерв`ю з керівником',
     en: 'From Idea to Result - An Interview with the Director',
     de: 'Von der Idee zum Ergebnis - Ein Interview mit dem Geschäftsführer',
+    pl: 'Od pomysłu do rezultatu - Wywiad z dyrektorem',
   },
 
   'news-index-7': {
     ua: 'У інтерв`ю ви дізнаєтесь про унікальні можливості компанії АрмаксМГ, такі як лазерна порізка, гнуття, механічна обробка, порошкове фарбування та зварювання металу. АрмаксМГ продовжує працювати і розвиватись, незважаючи на виклики війни, отримуючи нові замовлення та підтримку у вигляді грантів від USAID.',
     en: 'In the interview, you will learn about the unique capabilities of ArmaxMG, such as laser cutting, bending, machining, powder coating, and metal welding. ArmaxMG continues to operate and grow despite the challenges of the war, receiving new orders and support in the form of grants from USAID.',
     de: 'Im Interview erfahren Sie mehr über die einzigartigen Möglichkeiten von ArmaxMG, wie Laserschneiden, Biegen, mechanische Bearbeitung, Pulverbeschichtung und Metallschweißen. ArmaxMG arbeitet und wächst trotz der Herausforderungen des Krieges weiter, erhält neue Aufträge und Unterstützung in Form von Zuschüssen von USAID.',
+    pl: 'W wywiadzie dowiesz się o unikalnych możliwościach ArmaxMG, takich jak cięcie laserowe, gięcie, obróbka mechaniczna, malowanie proszkowe i spawanie metali. ArmaxMG nadal działa i rozwija się pomimo wyzwań wojennych, otrzymując nowe zamówienia i wsparcie w postaci grantów od USAID.',
   },
+
   'news-index-8': {
     ua: 'ArmaxMG: Технології за хвилину',
     en: 'ArmaxMG: Technology in a Minute',
     de: 'ArmaxMG: Technologie in einer Minute',
+    pl: 'ArmaxMG: Technologia w minutę',
   },
+
   'news-index-9': {
     ua: 'Погляньте на роботу нашої команди у виробничому процесі! Коротке відео з дрона і землі показує моменти, де працівники демонструють професіоналізм і взаємодію з сучасним обладнанням. Відчуйте атмосферу, де людські вміння та інновації об`єднуються для створення якісних продуктів!',
     en: 'Take a look at our team in action during the production process! A short video captured by drone and from the ground showcases moments where employees demonstrate professionalism and interact with modern equipment. Feel the atmosphere where human skills and innovation come together to create quality products!',
     de: 'Werfen Sie einen Blick auf die Arbeit unseres Teams im Produktionsprozess! Ein kurzes Video, aufgenommen mit einer Drohne und vom Boden aus, zeigt Momente, in denen Mitarbeiter Professionalität zeigen und mit moderner Ausrüstung interagieren. Spüren Sie die Atmosphäre, in der menschliche Fähigkeiten und Innovationen zur Herstellung hochwertiger Produkte zusammenkommen!',
+    pl: 'Zobacz nasz zespół w akcji podczas procesu produkcyjnego! Krótkie wideo nagrane dronem i z ziemi pokazuje momenty, w których pracownicy wykazują profesjonalizm i współpracują z nowoczesnym sprzętem. Poczuj atmosferę, gdzie ludzkie umiejętności i innowacje łączą się, aby tworzyć wysokiej jakości produkty!',
   },
+
   'news-index-10': {
     ua: 'Незабаром відкриття нового цеху АрмаксМГ!',
     en: 'The grand opening of a new ArmaxMG workshop is coming soon!',
     de: 'Die Eröffnung einer neuen Werkstatt von ArmaxMG steht bevor!',
+    pl: 'Wkrótce wielkie otwarcie nowego warsztatu ArmaxMG!',
   },
 
   'news-index-11': {
     ua: 'Ми раді поділитися чудовою новиною — незабаром відбудеться відкриття п`ятого цеху Армакс МГ! Новий цех оснащено сучасним лазерним труборізом, який значно розширить наші виробничі можливості та дозволить виконувати ще більш складні завдання з високою точністю. На нашому сайті ви зможете побачити весь процес створення цього цеху: від початкового будівництва до запуску інноваційного обладнання. Долучайтеся до історії розвитку Армакс МГ разом із нами!',
     en: 'We are excited to share great news — the fifth Armax MG workshop is opening soon! The new workshop is equipped with a state-of-the-art laser tube cutter, which will significantly expand our production capabilities and enable us to perform even more complex tasks with exceptional precision. On our website, you will be able to see the entire process of creating this workshop: from the initial construction to the launch of innovative equipment. Join us in the journey of Armax MG`s growth!',
     de: 'Wir freuen uns, großartige Neuigkeiten zu teilen – bald wird die fünfte Werkstatt von Armax MG eröffnet! Die neue Werkstatt ist mit einem hochmodernen Laserschneider für Rohre ausgestattet, der unsere Produktionsmöglichkeiten erheblich erweitert und es uns ermöglicht, noch komplexere Aufgaben mit höchster Präzision zu erledigen. Auf unserer Website können Sie den gesamten Prozess der Entstehung dieser Werkstatt verfolgen: von der anfänglichen Konstruktion bis hin zur Inbetriebnahme innovativer Geräte. Seien Sie Teil der Erfolgsgeschichte von Armax MG!',
+    pl: 'Cieszymy się, że możemy podzielić się wspaniałą wiadomością — już wkrótce otwarcie piątego warsztatu Armax MG! Nowy warsztat wyposażony jest w nowoczesny laser do cięcia rur, który znacząco rozszerzy nasze możliwości produkcyjne i pozwoli realizować jeszcze bardziej skomplikowane zadania z wyjątkową precyzją. Na naszej stronie internetowej będziecie mogli zobaczyć cały proces tworzenia tego warsztatu: od początkowej budowy po uruchomienie innowacyjnego sprzętu. Dołączcie do historii rozwoju Armax MG razem z nami!',
   },
 
   'calc-1': {
     ua: 'Залишилися запитання? Залиште свої дані, ми з Вами зв`яжемося!',
     en: 'Have any questions? Leave your details, and we will contact you!',
     de: 'Haben Sie Fragen? Hinterlassen Sie Ihre Daten, und wir werden uns mit Ihnen in Verbindung setzen!',
+    pl: 'Masz pytania? Zostaw swoje dane, a my się z Tobą skontaktujemy!',
   },
 
   'calc-2': {
     ua: 'Напишіть',
     en: 'Write',
     de: 'Schreiben',
+    pl: 'Napisz',
   },
   'calc-3': {
     ua: 'нам',
     en: 'to us',
     de: 'uns',
+    pl: 'do nas',
   },
   'modal-1': {
     ua: "Зворотній зв'язок",
     en: 'Feedback',
     de: 'Rückmeldung',
+    pl: 'Opinie',
   },
   'modal-2': {
     ua: 'Залиште Ваш номер телефону, або електрону адресу, і наш менеджер якнайшвидше звʼяжеться з Вами!',
     en: 'Leave your phone number or email address, and our manager will contact you as soon as possible!',
     de: 'Hinterlassen Sie Ihre Telefonnummer oder E-Mail-Adresse, und unser Manager wird sich so schnell wie möglich mit Ihnen in Verbindung setzen!',
+    pl: 'Zostaw swój numer telefonu lub adres e-mail, a nasz menedżer skontaktuje się z Tobą jak najszybciej!',
   },
   'modal-3': {
     ua: 'Відправити запит',
     en: 'Send Request',
     de: 'Anfrage senden',
+    pl: 'Wyślij zapytanie',
   },
   'modal-4': {
     ua: 'телефон або e-mail',
     en: 'phone or email',
     de: 'Telefon oder E-Mail',
+    pl: 'telefon lub e-mail',
   },
 
   // -------news
@@ -3033,53 +3057,55 @@ const homeTexts = {
     ua: 'Як обрати металеві елементи для комерційного простору: від меблів до декору',
     en: 'How to choose metal elements for a commercial space: from furniture to decor',
     de: 'Wie man Metallelemente für gewerbliche Räume auswählt: von Möbeln bis hin zur Dekoration',
+    pl: 'Jak wybrać metalowe elementy do przestrzeni komercyjnej: od mebli po dekoracje',
   },
   'article-news-2': {
     ua: 'Сучасний дизайн комерційних приміщень усе більше звертається до металу як до ключового матеріалу. Його використовують для створення меблів, декору та функціональних елементів, що відповідають стилю лофт, який набув великої популярності завдяки своїй індустріальній естетиці. Як компанія, що спеціалізується на обробці металів та виготовленні металевих деталей, ми хочемо поділитися порадами щодо вибору оптимальних металевих елементів для вашого простору.',
     en: 'Modern commercial space design increasingly turns to metal as a key material. It is used to create furniture, decor, and functional elements that fit the loft style, which has gained great popularity thanks to its industrial aesthetic. As a company specializing in metalworking and manufacturing metal parts, we would like to share tips on choosing the best metal elements for your space.',
     de: 'Das moderne Design von Geschäftsräumen greift immer mehr auf Metall als Schlüsselmaterial zurück. Es wird zur Herstellung von Möbeln, Dekorationen und funktionalen Elementen verwendet, die dem Loft-Stil entsprechen, der dank seiner industriellen Ästhetik große Popularität erlangt hat. Als Unternehmen, das auf die Metallbearbeitung und die Herstellung von Metallelementen spezialisiert ist, möchten wir Ihnen einige Tipps zur Auswahl der besten Metallelemente für Ihren Raum geben.',
+    pl: 'Nowoczesny projekt przestrzeni komercyjnych coraz częściej sięga po metal jako kluczowy materiał. Wykorzystuje się go do tworzenia mebli, dekoracji i elementów funkcjonalnych, które wpisują się w styl loftowy, cieszący się dużą popularnością dzięki swojej industrialnej estetyce. Jako firma specjalizująca się w obróbce metalu i produkcji metalowych elementów, chcemy podzielić się wskazówkami dotyczącymi wyboru najlepszych metalowych elementów do Twojej przestrzeni.',
   },
-
   'article-news-3': {
     ua: 'Переваги металевих елементів',
     en: 'Advantages of metal elements',
     de: 'Vorteile von Metallelementen',
+    pl: 'Zalety metalowych elementów',
   },
-
   'article-news-4': {
     ua: 'Метал є ідеальним матеріалом для комерційних приміщень завдяки своїм ключовим перевагам:',
     en: 'Metal is the ideal material for commercial spaces due to its key advantages:',
     de: 'Metall ist das ideale Material für gewerbliche Räume aufgrund seiner wesentlichen Vorteile:',
+    pl: 'Metal jest idealnym materiałem do przestrzeni komercyjnych ze względu na swoje kluczowe zalety:',
   },
   'article-news-5': {
     ua: 'Міцність і надійність:',
     en: 'Strength and reliability:',
     de: 'Festigkeit und Zuverlässigkeit:',
+    pl: 'Wytrzymałość i niezawodność:',
   },
   'article-news-6': {
     ua: 'Металеві елементи можуть витримувати значні навантаження, що є важливим для меблів і конструкцій у комерційних просторах.',
     en: 'Metal elements can withstand significant loads, which is important for furniture and structures in commercial spaces.',
     de: 'Metallelemente können erhebliche Belastungen aushalten, was für Möbel und Konstruktionen in gewerblichen Räumen von Bedeutung ist.',
+    pl: 'Metalowe elementy mogą wytrzymać znaczne obciążenia, co jest istotne dla mebli i konstrukcji w przestrzeniach komercyjnych.',
   },
   'article-news-7': {
     ua: 'Стійкість до зносу:',
     en: 'Durability:',
     de: 'Langlebigkeit:',
+    pl: 'Trwałość:',
   },
   'article-news-8': {
     ua: 'Метал не боїться фізичних ушкоджень та впливу вологи, що робить його ідеальним для використання в різних умовах.',
     en: 'Metal is resistant to physical damage and moisture, making it ideal for use in various conditions.',
     de: 'Metall ist unempfindlich gegenüber physischen Beschädigungen und Feuchtigkeit, was es ideal für den Einsatz unter verschiedenen Bedingungen macht.',
-  },
-  'article-news-9': {
-    ua: 'Стійкість до зносу:',
-    en: 'Durability:',
-    de: 'Langlebigkeit:',
+    pl: 'Metal jest odporny na uszkodzenia fizyczne i wilgoć, co czyni go idealnym do wykorzystania w różnych warunkach.',
   },
   'article-news-10': {
     ua: 'Металеві деталі надають простору сучасного, індустріального вигляду, який підходить для різних інтер’єрів, особливо у стилі лофт.',
     en: 'Metal details give the space a modern, industrial look that fits various interiors, especially in the loft style.',
     de: 'Metallelemente verleihen dem Raum ein modernes, industrielles Aussehen, das zu verschiedenen Innenräumen passt, insbesondere im Loft-Stil.',
+    pl: 'Metalowe detale nadają przestrzeni nowoczesny, industrialny wygląd, który pasuje do różnych wnętrz, szczególnie w stylu loftowym.',
   },
 };
 
