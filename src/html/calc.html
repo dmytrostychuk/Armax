@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор вартості</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .container {
+        max-width: 400px;
+        margin: auto;
+        text-align: center;
+      }
+      input {
+        padding: 8px;
+        margin: 10px 0;
+        width: 100px;
+        text-align: center;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        background-color: #f4f4f4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Калькулятор вартості роботи</h2>
+      <label for="minutes">Введіть хвилини роботи:</label>
+      <input type="number" id="minutes" value="60" oninput="calculate()" />
+
+      <table>
+        <thead>
+          <tr>
+            <th>Умови</th>
+            <th>Сума (грн)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Собівартість без ПДВ</td>
+            <td id="cost_no_vat">0</td>
+          </tr>
+          <tr>
+            <td>Собівартість з ПДВ (+20%)</td>
+            <td id="cost_vat">0</td>
+          </tr>
+          <tr>
+            <td>Ціна з ПДВ + 30% прибутку</td>
+            <td id="cost_profit">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+      function calculate() {
+        let minutes = document.getElementById('minutes').value;
+        let costPerMinute = 16.15;
+        let costWithVAT = 19.38;
+        let costWithProfit = 25.19;
+
+        document.getElementById('cost_no_vat').innerText = (
+          minutes * costPerMinute
+        ).toFixed(2);
+        document.getElementById('cost_vat').innerText = (
+          minutes * costWithVAT
+        ).toFixed(2);
+        document.getElementById('cost_profit').innerText = (
+          minutes * costWithProfit
+        ).toFixed(2);
+      }
+
+      calculate();
+    </script>
+  </body>
+</html>
