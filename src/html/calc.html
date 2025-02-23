@@ -10,7 +10,7 @@
         margin: 20px;
       }
       .container {
-        max-width: 400px;
+        max-width: 600px;
         margin: auto;
         text-align: center;
       }
@@ -34,13 +34,113 @@
       th {
         background-color: #f4f4f4;
       }
+      .checkbox-group {
+        text-align: left;
+        margin-top: 10px;
+      }
+      .checkbox-group label {
+        display: block;
+      }
+      button {
+        padding: 8px 16px;
+        margin-top: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <h2>Калькулятор вартості роботи</h2>
-      <label for="minutes">Введіть хвилини роботи:</label>
-      <input type="number" id="minutes" value="60" oninput="calculate()" />
+
+      <div>
+        <label for="minutes">Введіть хвилини роботи:</label>
+        <input
+          type="number"
+          id="minutes"
+          placeholder="0"
+          oninput="calculate()"
+        />
+      </div>
+
+      <div>
+        <label for="cutLength">Введіть довжину різу (м):</label>
+        <input
+          type="number"
+          id="cutLength"
+          placeholder="0"
+          step="0.1"
+          oninput="calculate()"
+        />
+      </div>
+
+      <div class="checkbox-group">
+        <label for="thickness">Виберіть товщину металу:</label>
+        <input
+          type="radio"
+          name="thickness"
+          id="thickness0.8"
+          onchange="calculate()"
+        />
+        0.8 мм<br />
+        <input
+          type="radio"
+          name="thickness"
+          id="thickness1"
+          onchange="calculate()"
+        />
+        1 мм<br />
+        <input
+          type="radio"
+          name="thickness"
+          id="thickness1.5"
+          onchange="calculate()"
+        />
+        1.5 мм<br />
+        <input
+          type="radio"
+          name="thickness"
+          id="thickness2"
+          onchange="calculate()"
+        />
+        2 мм<br />
+        <input
+          type="radio"
+          name="thickness"
+          id="thickness2.5"
+          onchange="calculate()"
+        />
+        2.5 мм<br />
+        <input
+          type="radio"
+          name="thickness"
+          id="thickness3"
+          onchange="calculate()"
+        />
+        3 мм<br />
+        <input
+          type="radio"
+          name="thickness"
+          id="thickness4"
+          onchange="calculate()"
+        />
+        4 мм<br />
+        <input
+          type="radio"
+          name="thickness"
+          id="thickness5"
+          onchange="calculate()"
+        />
+        5 мм<br />
+      </div>
+
+      <button onclick="resetValues()">Обнулити</button>
 
       <table>
         <thead>
@@ -69,21 +169,119 @@
     <script>
       function calculate() {
         let minutes = document.getElementById('minutes').value;
-        let costPerMinute = 16.15;
-        let costWithVAT = 19.38;
-        let costWithProfit = 25.19;
+        let cutLength = document.getElementById('cutLength').value;
 
-        document.getElementById('cost_no_vat').innerText = (
-          minutes * costPerMinute
-        ).toFixed(2);
-        document.getElementById('cost_vat').innerText = (
-          minutes * costWithVAT
-        ).toFixed(2);
-        document.getElementById('cost_profit').innerText = (
-          minutes * costWithProfit
-        ).toFixed(2);
+        // Якщо метраж введений, деактивуємо хвилини і товщину металу
+        if (cutLength > 0) {
+          document.getElementById('minutes').disabled = true;
+          disableThickness(true);
+        } else {
+          document.getElementById('minutes').disabled = false;
+          disableThickness(false);
+        }
+
+        // Якщо хвилини введені, деактивуємо метраж і товщину металу
+        if (minutes > 0) {
+          document.getElementById('cutLength').disabled = true;
+          disableThickness(true);
+        } else {
+          document.getElementById('cutLength').disabled = false;
+          disableThickness(false);
+        }
+
+        let thicknesses = ['0.8', '1', '1.5', '2', '2.5', '3', '4', '5'];
+        let thickness = 0;
+        for (let i = 0; i < thicknesses.length; i++) {
+          if (document.getElementById('thickness' + thicknesses[i]).checked) {
+            thickness = thicknesses[i];
+            break;
+          }
+        }
+
+        // Для кожної товщини металу встановлюємо значення собівартості
+        let costDetails = {
+          0.8: {
+            cost_no_vat: 10.5,
+            cost_with_vat: 12.6,
+            cost_with_profit: 16.38,
+          },
+          1: { cost_no_vat: 12, cost_with_vat: 14.4, cost_with_profit: 18.72 },
+          1.5: { cost_no_vat: 21.2, cost_with_vat: 25.4, cost_with_profit: 33 },
+          2: { cost_no_vat: 25, cost_with_vat: 30, cost_with_profit: 39 },
+          2.5: { cost_no_vat: 30, cost_with_vat: 36, cost_with_profit: 46.8 },
+          3: { cost_no_vat: 35, cost_with_vat: 42, cost_with_profit: 54.6 },
+          4: { cost_no_vat: 40, cost_with_vat: 48, cost_with_profit: 62.4 },
+          5: { cost_no_vat: 45, cost_with_vat: 54, cost_with_profit: 70.2 },
+        };
+
+        let cuttingTimePerMeter = 0;
+        switch (thickness) {
+          case '0.8':
+            cuttingTimePerMeter = 10;
+            break;
+          case '1':
+            cuttingTimePerMeter = 12;
+            break;
+          case '1.5':
+            cuttingTimePerMeter = 20;
+            break;
+          case '2':
+            cuttingTimePerMeter = 25;
+            break;
+          case '2.5':
+            cuttingTimePerMeter = 30;
+            break;
+          case '3':
+            cuttingTimePerMeter = 35;
+            break;
+          case '4':
+            cuttingTimePerMeter = 40;
+            break;
+          case '5':
+            cuttingTimePerMeter = 45;
+            break;
+        }
+
+        // Обчислюємо загальну вартість з врахуванням часу та метражу
+        let cost_no_vat = costDetails[thickness]?.cost_no_vat || 0;
+        let cost_with_vat = costDetails[thickness]?.cost_with_vat || 0;
+        let cost_with_profit = costDetails[thickness]?.cost_with_profit || 0;
+
+        let totalTime = minutes * cost_no_vat + cutLength * cuttingTimePerMeter;
+        let totalVAT = totalTime * 1.2; // Собівартість з ПДВ
+        let totalProfit = totalVAT * 1.3; // Ціна з ПДВ і прибутком
+
+        document.getElementById('cost_no_vat').innerText = totalTime.toFixed(2);
+        document.getElementById('cost_vat').innerText = totalVAT.toFixed(2);
+        document.getElementById('cost_profit').innerText =
+          totalProfit.toFixed(2);
       }
 
+      function disableThickness(disable) {
+        let thicknesses = ['0.8', '1', '1.5', '2', '2.5', '3', '4', '5'];
+        for (let i = 0; i < thicknesses.length; i++) {
+          document.getElementById('thickness' + thicknesses[i]).disabled =
+            disable;
+        }
+      }
+
+      // Функція для обнулення значень
+      function resetValues() {
+        document.getElementById('minutes').value = '';
+        document.getElementById('cutLength').value = '';
+        let thicknesses = ['0.8', '1', '1.5', '2', '2.5', '3', '4', '5'];
+        for (let i = 0; i < thicknesses.length; i++) {
+          document.getElementById('thickness' + thicknesses[i]).checked = false;
+        }
+        document.getElementById('cost_no_vat').innerText = '0';
+        document.getElementById('cost_vat').innerText = '0';
+        document.getElementById('cost_profit').innerText = '0';
+        document.getElementById('minutes').disabled = false;
+        document.getElementById('cutLength').disabled = false;
+        disableThickness(false);
+      }
+
+      // Ініціалізація калькулятора
       calculate();
     </script>
   </body>
