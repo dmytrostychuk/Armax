@@ -16,9 +16,20 @@
       }
       input {
         padding: 8px;
-        margin: 10px 0;
+        margin: 10px 5px;
         width: 100px;
         text-align: center;
+      }
+      button {
+        padding: 8px 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-left: 5px;
+      }
+      button:hover {
+        background-color: #0056b3;
       }
       table {
         width: 100%;
@@ -41,18 +52,6 @@
       .checkbox-group label {
         display: block;
       }
-      button {
-        padding: 8px 16px;
-        margin-top: 10px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-      }
-      button:hover {
-        background-color: #0056b3;
-      }
     </style>
   </head>
   <body>
@@ -67,6 +66,7 @@
           placeholder="0"
           oninput="calculate()"
         />
+        <button onclick="resetInput('minutes')">Обнулити</button>
       </div>
 
       <div>
@@ -78,6 +78,7 @@
           step="0.1"
           oninput="calculate()"
         />
+        <button onclick="resetInput('cutLength')">Обнулити</button>
       </div>
 
       <div class="checkbox-group">
@@ -87,6 +88,7 @@
           name="thickness"
           id="thickness0.8"
           onchange="calculate()"
+          checked
         />
         0.8 мм<br />
         <input
@@ -140,8 +142,6 @@
         5 мм<br />
       </div>
 
-      <button onclick="resetValues()">Обнулити</button>
-
       <table>
         <thead>
           <tr>
@@ -151,16 +151,16 @@
         </thead>
         <tbody>
           <tr>
-            <td>Собівартість без ПДВ</td>
+            <td>Собівартість</td>
             <td id="cost_no_vat">0</td>
           </tr>
           <tr>
-            <td>Собівартість з ПДВ (+20%)</td>
-            <td id="cost_vat">0</td>
+            <td>Ціна з націнкою 30%</td>
+            <td id="cost_profit">0</td>
           </tr>
           <tr>
-            <td>Ціна з ПДВ + 30% прибутку</td>
-            <td id="cost_profit">0</td>
+            <td>Ціна з націнкою 30% + ПДВ 20%</td>
+            <td id="cost_vat">0</td>
           </tr>
         </tbody>
       </table>
@@ -168,120 +168,68 @@
 
     <script>
       function calculate() {
-        let minutes = document.getElementById('minutes').value;
-        let cutLength = document.getElementById('cutLength').value;
+        let minutes = parseFloat(document.getElementById('minutes').value) || 0;
+        let cutLength =
+          parseFloat(document.getElementById('cutLength').value) || 0;
 
-        // Якщо метраж введений, деактивуємо хвилини і товщину металу
-        if (cutLength > 0) {
-          document.getElementById('minutes').disabled = true;
-          disableThickness(true);
-        } else {
-          document.getElementById('minutes').disabled = false;
-          disableThickness(false);
-        }
+        // Блокування іншого поля при введенні
+        document.getElementById('minutes').disabled = cutLength > 0;
+        document.getElementById('cutLength').disabled = minutes > 0;
 
-        // Якщо хвилини введені, деактивуємо метраж і товщину металу
-        if (minutes > 0) {
-          document.getElementById('cutLength').disabled = true;
-          disableThickness(true);
-        } else {
-          document.getElementById('cutLength').disabled = false;
-          disableThickness(false);
-        }
+        // Блокування товщини металу при введенні хвилин
+        document
+          .querySelectorAll('input[name="thickness"]')
+          .forEach((radio) => {
+            radio.disabled = minutes > 0;
+          });
 
-        let thicknesses = ['0.8', '1', '1.5', '2', '2.5', '3', '4', '5'];
-        let thickness = 0;
-        for (let i = 0; i < thicknesses.length; i++) {
-          if (document.getElementById('thickness' + thicknesses[i]).checked) {
-            thickness = thicknesses[i];
-            break;
-          }
-        }
-
-        // Для кожної товщини металу встановлюємо значення собівартості
-        let costDetails = {
-          0.8: {
-            cost_no_vat: 10.5,
-            cost_with_vat: 12.6,
-            cost_with_profit: 16.38,
-          },
-          1: { cost_no_vat: 12, cost_with_vat: 14.4, cost_with_profit: 18.72 },
-          1.5: { cost_no_vat: 21.2, cost_with_vat: 25.4, cost_with_profit: 33 },
-          2: { cost_no_vat: 25, cost_with_vat: 30, cost_with_profit: 39 },
-          2.5: { cost_no_vat: 30, cost_with_vat: 36, cost_with_profit: 46.8 },
-          3: { cost_no_vat: 35, cost_with_vat: 42, cost_with_profit: 54.6 },
-          4: { cost_no_vat: 40, cost_with_vat: 48, cost_with_profit: 62.4 },
-          5: { cost_no_vat: 45, cost_with_vat: 54, cost_with_profit: 70.2 },
+        // Вибір товщини металу
+        let thicknesses = {
+          0.8: 15.0,
+          1: 18.0,
+          1.5: 21.2,
+          2: 24.5,
+          2.5: 28.0,
+          3: 31.5,
+          4: 36.0,
+          5: 40.5,
         };
 
-        let cuttingTimePerMeter = 0;
-        switch (thickness) {
-          case '0.8':
-            cuttingTimePerMeter = 10;
-            break;
-          case '1':
-            cuttingTimePerMeter = 12;
-            break;
-          case '1.5':
-            cuttingTimePerMeter = 20;
-            break;
-          case '2':
-            cuttingTimePerMeter = 25;
-            break;
-          case '2.5':
-            cuttingTimePerMeter = 30;
-            break;
-          case '3':
-            cuttingTimePerMeter = 35;
-            break;
-          case '4':
-            cuttingTimePerMeter = 40;
-            break;
-          case '5':
-            cuttingTimePerMeter = 45;
-            break;
-        }
+        let selectedThickness = Object.keys(thicknesses).find(
+          (thickness) =>
+            document.getElementById('thickness' + thickness).checked
+        );
 
-        // Обчислюємо загальну вартість з врахуванням часу та метражу
-        let cost_no_vat = costDetails[thickness]?.cost_no_vat || 0;
-        let cost_with_vat = costDetails[thickness]?.cost_with_vat || 0;
-        let cost_with_profit = costDetails[thickness]?.cost_with_profit || 0;
+        let costPerMeterWithoutVAT = thicknesses[selectedThickness];
 
-        let totalTime = minutes * cost_no_vat + cutLength * cuttingTimePerMeter;
-        let totalVAT = totalTime * 1.2; // Собівартість з ПДВ
-        let totalProfit = totalVAT * 1.3; // Ціна з ПДВ і прибутком
+        // Фіксована собівартість за хвилину роботи
+        let fixedMinuteCost = 16.15;
 
-        document.getElementById('cost_no_vat').innerText = totalTime.toFixed(2);
-        document.getElementById('cost_vat').innerText = totalVAT.toFixed(2);
+        let totalCostNoVAT =
+          minutes * fixedMinuteCost + cutLength * costPerMeterWithoutVAT;
+        let totalCostProfit = totalCostNoVAT * 1.3; // Додаємо 30% націнки
+        let totalCostVAT = totalCostProfit * 1.2; // Додаємо 20% ПДВ
+
+        document.getElementById('cost_no_vat').innerText =
+          totalCostNoVAT.toFixed(2);
         document.getElementById('cost_profit').innerText =
-          totalProfit.toFixed(2);
+          totalCostProfit.toFixed(2);
+        document.getElementById('cost_vat').innerText = totalCostVAT.toFixed(2);
       }
 
-      function disableThickness(disable) {
-        let thicknesses = ['0.8', '1', '1.5', '2', '2.5', '3', '4', '5'];
-        for (let i = 0; i < thicknesses.length; i++) {
-          document.getElementById('thickness' + thicknesses[i]).disabled =
-            disable;
-        }
-      }
-
-      // Функція для обнулення значень
-      function resetValues() {
-        document.getElementById('minutes').value = '';
-        document.getElementById('cutLength').value = '';
-        let thicknesses = ['0.8', '1', '1.5', '2', '2.5', '3', '4', '5'];
-        for (let i = 0; i < thicknesses.length; i++) {
-          document.getElementById('thickness' + thicknesses[i]).checked = false;
-        }
-        document.getElementById('cost_no_vat').innerText = '0';
-        document.getElementById('cost_vat').innerText = '0';
-        document.getElementById('cost_profit').innerText = '0';
+      function resetInput(id) {
+        document.getElementById(id).value = '';
         document.getElementById('minutes').disabled = false;
         document.getElementById('cutLength').disabled = false;
-        disableThickness(false);
+        document
+          .querySelectorAll('input[name="thickness"]')
+          .forEach((radio) => {
+            radio.disabled = false;
+          });
+        calculate();
       }
 
-      // Ініціалізація калькулятора
+      // Початковий розрахунок
       calculate();
     </script>
   </body>

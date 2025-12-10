@@ -146,3 +146,23 @@ var swiper10 = new Swiper(".mySwiper-10", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// About Us Slider
+const aboutUsSwiper = new Swiper('.about-us-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  speed: 800,
+  navigation: {
+    nextEl: '.about-us-swiper-button-next',
+    prevEl: '.about-us-swiper-button-prev',
+  },
+  scrollbar: {
+    el: '.about-us-swiper-scrollbar',
+    draggable: true,
+  },
+});

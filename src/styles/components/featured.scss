@@ -4,8 +4,11 @@
 }
 
 .featured {
-	margin-top: 80px;
 	margin-bottom: 30px;
+	display: grid;
+		grid-template-columns: 1fr 1fr;
+		row-gap: 10px;
+		column-gap: 10px;	
 
 	@include mq($from: phablet) {
 		display: grid;
@@ -20,7 +23,7 @@
 }
 
 .featured__card {
-	margin-top: 50px;
+	margin-top: 10px;
 
 	@include mq($from: phablet) {
 		margin: 0 auto;

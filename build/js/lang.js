@@ -91,13 +91,13 @@ const homeTexts = {
     pl: 'Aktualności',
   },
   'header__content_page-1': {
-    ua: 'Металообробка будь-якої складності на замовлення.',
+    ua: 'Армакс МГ -  ',
     en: 'Metal processing of any complexity on order.',
     de: 'Metallverarbeitung jeder Komplexität auf Bestellung.',
     pl: 'Obróbka metalu o dowolnym stopniu złożoności na zamówienie.',
   },
   'header__content_page-2': {
-    ua: 'Ми використовуємо передове обладнання та сучасні методи обробки металу. Це дозволяє нам досягати найвищої якості, ефективності та точності у виробництві. Ваші проекти завжди будуть на крок попереду.',
+    ua: 'ваші ідеальні меблі починаються з наших надійних деталей',
     en: 'We use advanced equipment and modern metal processing methods. This allows us to achieve the highest quality, efficiency, and accuracy in production. Your projects will always be one step ahead.',
     de: 'Wir verwenden modernste Ausrüstung und fortschrittliche Metallverarbeitungsmethoden. Dies ermöglicht es uns, die höchste Qualität, Effizienz und Genauigkeit in der Produktion zu erreichen. Ihre Projekte werden immer einen Schritt voraus sein.',
     pl: 'Używamy zaawansowanego sprzętu i nowoczesnych metod obróbki metalu. Dzięki temu osiągamy najwyższą jakość, wydajność i precyzję w produkcji. Twoje projekty zawsze będą o krok do przodu.',
@@ -152,10 +152,12 @@ const homeTexts = {
   },
 
   'services_page-1': {
-    ua: 'Наші послуги',
-    en: 'Our services',
-    de: 'Unsere Dienstleistungen',
-    pl: 'Nasze usługi',
+    ua: 'Наше виробництво',
+en: 'Our manufacturing',
+de: 'Unsere Produktion',
+pl: 'Nasza produkcja',
+
+
   },
   'services_page-2': {
     ua: 'Лазерна порізка',
