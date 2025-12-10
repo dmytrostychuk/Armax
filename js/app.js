@@ -1,5 +1,5 @@
 const form = document.forms['form'];
-const formArr = Array.from(form);
+const formArr = form ? Array.from(form) : [];
 const validFormArr = [];
 
 const file = document.querySelector('#file');
@@ -7,24 +7,32 @@ const fileName = document.querySelector('#file_name');
 const fileBtnClose = document.querySelector('#file_btn_close');
 const maxSize = 20 * 1024 * 1024;
 
-formArr.forEach((el) => {
-  if (el.hasAttribute('data-reg')) {
-    el.setAttribute('is-valid', '0');
-    validFormArr.push(el);
-  }
-});
+if (formArr.length > 0) {
+  formArr.forEach((el) => {
+    if (el.hasAttribute('data-reg')) {
+      el.setAttribute('is-valid', '0');
+      validFormArr.push(el);
+    }
+  });
+}
 
-form.addEventListener('input', inputHandler);
-form.addEventListener('submit', formCheck);
+if (form) {
+  form.addEventListener('input', inputHandler);
+  form.addEventListener('submit', formCheck);
+}
 
-file.addEventListener('change', (e) => {
-  checkFile(file.files[0]);
-});
+if (file) {
+  file.addEventListener('change', (e) => {
+    checkFile(file.files[0]);
+  });
+}
 
-fileBtnClose.addEventListener('click', (e) => {
-  e.preventDefault();
-  fileReset();
-});
+if (fileBtnClose) {
+  fileBtnClose.addEventListener('click', (e) => {
+    e.preventDefault();
+    fileReset();
+  });
+}
 
 function inputHandler({ target }) {
   if (target.hasAttribute('data-reg')) {
