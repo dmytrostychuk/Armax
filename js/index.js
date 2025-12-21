@@ -222,3 +222,60 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+// PDF Viewer Modal
+document.addEventListener('DOMContentLoaded', function() {
+  const pdfModal = document.getElementById('pdfModal');
+  const pdfViewer = document.getElementById('pdfViewer');
+  const closePdfModal = document.getElementById('closePdfModal');
+  const viewButtons = document.querySelectorAll('.testimonials__view');
+
+  // Open PDF modal
+  if (viewButtons.length > 0 && pdfModal && pdfViewer) {
+    viewButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        const pdfPath = this.getAttribute('data-pdf');
+        if (pdfPath) {
+          pdfViewer.src = pdfPath;
+          pdfModal.classList.add('show-modal');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+  }
+
+  // Close PDF modal
+  if (closePdfModal && pdfModal) {
+    closePdfModal.addEventListener('click', function() {
+      pdfModal.classList.remove('show-modal');
+      if (pdfViewer) {
+        pdfViewer.src = '';
+      }
+      document.body.style.overflow = '';
+    });
+  }
+
+  // Close modal when clicking outside
+  if (pdfModal) {
+    pdfModal.addEventListener('click', function(e) {
+      if (e.target === pdfModal) {
+        pdfModal.classList.remove('show-modal');
+        if (pdfViewer) {
+          pdfViewer.src = '';
+        }
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && pdfModal && pdfModal.classList.contains('show-modal')) {
+      pdfModal.classList.remove('show-modal');
+      if (pdfViewer) {
+        pdfViewer.src = '';
+      }
+      document.body.style.overflow = '';
+    }
+  });
+});

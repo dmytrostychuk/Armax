@@ -3767,6 +3767,179 @@ textarea.form__input {
   word-spacing: 0;
 }
 
+.testimonials {
+  background-color: #f6f6f6;
+  color: #404044;
+  padding: 60px 0;
+  margin-top: 40px;
+}
+
+.testimonials__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.testimonials__card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.testimonials__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.testimonials__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f6f6f6;
+}
+
+.testimonials__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.testimonials__avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.testimonials__info {
+  flex: 1;
+}
+
+.testimonials__name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  color: #404044;
+}
+
+.testimonials__position {
+  font-size: 14px;
+  color: #949090;
+  margin: 0;
+}
+
+.testimonials__content {
+  flex: 1;
+  margin-bottom: 25px;
+}
+
+.testimonials__text {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #404044;
+  margin: 0;
+  text-align: justify;
+}
+
+.testimonials__footer {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 2px solid #f6f6f6;
+}
+
+.testimonials__actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonials__view,
+.testimonials__download {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #d1a954;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+.testimonials__view:hover,
+.testimonials__download:hover {
+  color: #b8943f;
+  transform: translateX(5px);
+  background-color: #eeeeee;
+}
+.testimonials__view svg,
+.testimonials__download svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+}
+
+.testimonials__download:hover {
+  transform: translateX(5px);
+}
+
+.modal-pdf {
+  z-index: 200;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 20px;
+}
+.modal-pdf__inner {
+  position: relative;
+  width: 95%;
+  max-width: 1200px;
+  height: 90vh;
+  margin: 0 auto;
+  top: auto;
+  left: auto;
+  transform: none;
+}
+
+.modal-pdf__content {
+  height: 100%;
+  padding: 50px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-pdf__wrapper {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+}
+
+.modal-pdf__wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 @media (min-width: 560px) {
   body {
     font-size: 16px;
@@ -4398,6 +4571,41 @@ textarea.form__input {
   .button-slip {
     margin: 0;
   }
+  .testimonials__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .testimonials__card {
+    padding: 35px;
+  }
+  .testimonials__avatar {
+    width: 70px;
+    height: 70px;
+  }
+  .testimonials__name {
+    font-size: 20px;
+  }
+  .testimonials__position {
+    font-size: 16px;
+  }
+  .testimonials__text {
+    font-size: 16px;
+  }
+  .testimonials__actions {
+    justify-content: flex-start;
+  }
+  .testimonials__view,
+  .testimonials__download {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+  .modal-pdf__inner {
+    width: 90%;
+    max-width: 1000px;
+  }
+  .modal-pdf__content {
+    padding: 60px 20px 20px 20px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -4794,6 +5002,10 @@ textarea.form__input {
     word-spacing: 3px;
     padding: 0 10px;
   }
+  .testimonials {
+    margin-top: 60px;
+    padding: 80px 0;
+  }
 }
 
 @media (min-width: 1248px) {
@@ -4912,6 +5124,16 @@ textarea.form__input {
   .co-page__card {
     float: right;
     width: 24%;
+  }
+  .testimonials__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .testimonials__card {
+    padding: 40px;
+  }
+  .modal-pdf__inner {
+    max-width: 1200px;
   }
 }
 
