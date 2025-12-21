@@ -132,50 +132,56 @@ triggers.forEach(function (trigger) {
 closeButton.addEventListener('click', toggleModal);
 window.addEventListener('click', windowOnClick);
 
-document
-  .querySelector('.card__gallery-button-1')
-  .addEventListener('click', function () {
-    document.querySelector('.card__gallery-1').classList.add('active');
-    document.querySelector('.card__gallery-2').classList.remove('active');
-    document.querySelector('.card__gallery-3').classList.remove('active');
+const cardGalleryButton1 = document.querySelector('.card__gallery-button-1');
+if (cardGalleryButton1) {
+  cardGalleryButton1.addEventListener('click', function () {
+    const gallery1 = document.querySelector('.card__gallery-1');
+    const gallery2 = document.querySelector('.card__gallery-2');
+    const gallery3 = document.querySelector('.card__gallery-3');
+    const button2 = document.querySelector('.card__gallery-button-2');
+    const button3 = document.querySelector('.card__gallery-button-3');
+    if (gallery1) gallery1.classList.add('active');
+    if (gallery2) gallery2.classList.remove('active');
+    if (gallery3) gallery3.classList.remove('active');
     this.classList.add('active');
-    document
-      .querySelector('.card__gallery-button-2')
-      .classList.remove('active');
-    document
-      .querySelector('.card__gallery-button-3')
-      .classList.remove('active');
+    if (button2) button2.classList.remove('active');
+    if (button3) button3.classList.remove('active');
   });
+}
 
-document
-  .querySelector('.card__gallery-button-2')
-  .addEventListener('click', function () {
-    document.querySelector('.card__gallery-1').classList.remove('active');
-    document.querySelector('.card__gallery-2').classList.add('active');
-    document.querySelector('.card__gallery-3').classList.remove('active');
+const cardGalleryButton2 = document.querySelector('.card__gallery-button-2');
+if (cardGalleryButton2) {
+  cardGalleryButton2.addEventListener('click', function () {
+    const gallery1 = document.querySelector('.card__gallery-1');
+    const gallery2 = document.querySelector('.card__gallery-2');
+    const gallery3 = document.querySelector('.card__gallery-3');
+    const button1 = document.querySelector('.card__gallery-button-1');
+    const button3 = document.querySelector('.card__gallery-button-3');
+    if (gallery1) gallery1.classList.remove('active');
+    if (gallery2) gallery2.classList.add('active');
+    if (gallery3) gallery3.classList.remove('active');
     this.classList.add('active');
-    document
-      .querySelector('.card__gallery-button-1')
-      .classList.remove('active');
-    document
-      .querySelector('.card__gallery-button-3')
-      .classList.remove('active');
+    if (button1) button1.classList.remove('active');
+    if (button3) button3.classList.remove('active');
   });
+}
 
-document
-  .querySelector('.card__gallery-button-3')
-  .addEventListener('click', function () {
-    document.querySelector('.card__gallery-1').classList.remove('active');
-    document.querySelector('.card__gallery-2').classList.remove('active');
-    document.querySelector('.card__gallery-3').classList.add('active');
+const cardGalleryButton3 = document.querySelector('.card__gallery-button-3');
+if (cardGalleryButton3) {
+  cardGalleryButton3.addEventListener('click', function () {
+    const gallery1 = document.querySelector('.card__gallery-1');
+    const gallery2 = document.querySelector('.card__gallery-2');
+    const gallery3 = document.querySelector('.card__gallery-3');
+    const button1 = document.querySelector('.card__gallery-button-1');
+    const button2 = document.querySelector('.card__gallery-button-2');
+    if (gallery1) gallery1.classList.remove('active');
+    if (gallery2) gallery2.classList.remove('active');
+    if (gallery3) gallery3.classList.add('active');
     this.classList.add('active');
-    document
-      .querySelector('.card__gallery-button-1')
-      .classList.remove('active');
-    document
-      .querySelector('.card__gallery-button-2')
-      .classList.remove('active');
+    if (button1) button1.classList.remove('active');
+    if (button2) button2.classList.remove('active');
   });
+}
 
 document.addEventListener('DOMContentLoaded', function () {
   var blocks = document.querySelectorAll('.news-page__card');
@@ -213,6 +219,63 @@ document.addEventListener('DOMContentLoaded', function () {
           ? 'Сховати'
           : 'Читати більше';
       });
+    }
+  });
+});
+
+// PDF Viewer Modal
+document.addEventListener('DOMContentLoaded', function() {
+  const pdfModal = document.getElementById('pdfModal');
+  const pdfViewer = document.getElementById('pdfViewer');
+  const closePdfModal = document.getElementById('closePdfModal');
+  const viewButtons = document.querySelectorAll('.testimonials__view');
+
+  // Open PDF modal
+  if (viewButtons.length > 0 && pdfModal && pdfViewer) {
+    viewButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        const pdfPath = this.getAttribute('data-pdf');
+        if (pdfPath) {
+          pdfViewer.src = pdfPath;
+          pdfModal.classList.add('show-modal');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+  }
+
+  // Close PDF modal
+  if (closePdfModal && pdfModal) {
+    closePdfModal.addEventListener('click', function() {
+      pdfModal.classList.remove('show-modal');
+      if (pdfViewer) {
+        pdfViewer.src = '';
+      }
+      document.body.style.overflow = '';
+    });
+  }
+
+  // Close modal when clicking outside
+  if (pdfModal) {
+    pdfModal.addEventListener('click', function(e) {
+      if (e.target === pdfModal) {
+        pdfModal.classList.remove('show-modal');
+        if (pdfViewer) {
+          pdfViewer.src = '';
+        }
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && pdfModal && pdfModal.classList.contains('show-modal')) {
+      pdfModal.classList.remove('show-modal');
+      if (pdfViewer) {
+        pdfViewer.src = '';
+      }
+      document.body.style.overflow = '';
     }
   });
 });
