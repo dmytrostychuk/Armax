@@ -1309,8 +1309,12 @@ label {
   background-color: #d1a954;
   font-weight: 600;
   transition: all 0.35s ease-in-out;
+  margin-bottom: 3px;
 }
 .services__card:hover .services__hover-content {
+  opacity: 0.6;
+}
+.services__card:hover .services__hover-content-1 {
   opacity: 1;
 }
 
@@ -1325,22 +1329,18 @@ label {
 
 .services__name {
   position: absolute;
-  bottom: 0;
-  margin: 20px 30px;
-  padding: 7px 15px;
-  text-align: start;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
 }
 .services__name::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #d1a954;
-  transform: skewX(-35deg);
   bottom: 0;
   left: 0;
 }
-
 .services__name-link {
   z-index: 1;
   position: relative;
@@ -1348,8 +1348,8 @@ label {
   left: 0;
   width: 100%;
   color: #fff;
-  letter-spacing: 0.1em;
   line-height: 1.3em;
+  font-size: 16px;
 }
 
 picture {
@@ -1358,11 +1358,13 @@ picture {
 
 .services__img {
   width: 100%;
-  max-height: 200px;
+  max-height: 150x;
   object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
 }
 .services__hover-content {
-  background: linear-gradient(0deg, rgba(51, 51, 51, 0.4), rgba(51, 51, 51, 0.9));
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.4));
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1371,8 +1373,12 @@ picture {
   height: auto;
   padding: 20px;
   color: #000000;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.35s ease-in-out;
+}
+
+.services__hover-content-1 {
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0), rgba(51, 51, 51, 0));
 }
 
 .services__link::after {
@@ -1784,6 +1790,7 @@ picture {
   flex-direction: column;
   background-color: #f6f6f6;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .about-us__content {
   flex: 1;
@@ -1817,6 +1824,7 @@ picture {
   text-align: justify;
 }
 .about-us__text p {
+  position: relative;
   margin-bottom: 15px;
 }
 .about-us__text p:last-child {
@@ -3770,8 +3778,8 @@ textarea.form__input {
 .testimonials {
   background-color: #f6f6f6;
   color: #404044;
-  padding: 60px 0;
-  margin-top: 40px;
+  padding: 30px 0;
+  padding-bottom: 50px;
 }
 
 .testimonials__container {
@@ -4021,7 +4029,7 @@ textarea.form__input {
     padding-bottom: 30px;
   }
   .services__img {
-    height: 200px;
+    height: 170px;
   }
   .services__hover-text {
     bottom: 80px;
@@ -4762,10 +4770,12 @@ textarea.form__input {
   }
   .services__card:hover .services__hover-title {
     transform: scale(1);
+    background-color: rgba(51, 51, 51, 0.5);
+    border-radius: 10px;
+    padding: 5px;
   }
   .services__name-link {
     font-size: 18px;
-    padding: 0 20px;
     text-transform: uppercase;
   }
   .services__img {
@@ -5003,8 +5013,8 @@ textarea.form__input {
     padding: 0 10px;
   }
   .testimonials {
-    margin-top: 60px;
-    padding: 80px 0;
+    padding: 30px 0;
+    padding-bottom: 50px;
   }
 }
 
@@ -5039,9 +5049,40 @@ textarea.form__input {
   }
   .services__container {
     max-width: 100%;
+    display: flex;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    padding: 0;
+  }
+  .services__card:hover {
+    outline: 2px solid rgba(51, 51, 51, 0.65);
+    transform: scale(0.7);
   }
   .services__card {
-    max-height: 370px;
+    max-height: 550px;
+    outline: 0px solid #f6f6f6;
+    margin: 0 1px;
+  }
+  .services__content {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .services__img {
+    height: 550px;
+    max-height: 550px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+  }
+  .services__card:hover .services__img {
+    transform: scale(1);
+  }
+  .services__hover-content {
+    padding: 5px;
   }
   .partners-slider-section {
     padding: 70px 0;
