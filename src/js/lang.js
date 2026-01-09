@@ -24,6 +24,12 @@ const homeTexts = {
     de: 'Über uns',
     pl: 'O nas',
   },
+  'about-us-title': {
+    ua: 'Про нас',
+    en: 'About us',
+    de: 'Über uns',
+    pl: 'O nas',
+  },
   'nav_page-3': {
     ua: 'Контакти',
     en: 'Contacts',
@@ -91,17 +97,57 @@ const homeTexts = {
     pl: 'Aktualności',
   },
   'header__content_page-1': {
-    ua: 'Армакс МГ -  ',
-    en: 'Metal processing of any complexity on order.',
-    de: 'Metallverarbeitung jeder Komplexität auf Bestellung.',
-    pl: 'Obróbka metalu o dowolnym stopniu złożoności na zamówienie.',
+   ua: 'Armax MG —',
+en: 'Armax MG —',
+de: 'Armax MG —',
+pl: 'Armax MG —',
   },
+
   'header__content_page-2': {
-    ua: 'ваші ідеальні меблі починаються з наших надійних деталей',
-    en: 'We use advanced equipment and modern metal processing methods. This allows us to achieve the highest quality, efficiency, and accuracy in production. Your projects will always be one step ahead.',
-    de: 'Wir verwenden modernste Ausrüstung und fortschrittliche Metallverarbeitungsmethoden. Dies ermöglicht es uns, die höchste Qualität, Effizienz und Genauigkeit in der Produktion zu erreichen. Ihre Projekte werden immer einen Schritt voraus sein.',
-    pl: 'Używamy zaawansowanego sprzętu i nowoczesnych metod obróbki metalu. Dzięki temu osiągamy najwyższą jakość, wydajność i precyzję w produkcji. Twoje projekty zawsze będą o krok do przodu.',
+    ua: 'Ваші ідеальні вироби починаються з наших надійних деталей',
+en: 'Your perfect products start with our reliable components',
+de: 'Ihre perfekten Produkte beginnen mit unseren zuverlässigen Komponenten',
+pl: 'Twoje idealne produkty zaczynają się od naszych niezawodnych komponentów',
+},
+
+'about-us__title-1': {
+   ua: 'Armax MG — український виробник металевих виробів',
+en: 'Armax MG — a Ukrainian manufacturer of metal products',
+de: 'Armax MG — ein ukrainischer Hersteller von Metallprodukten',
+pl: 'Armax MG — ukraiński producent wyrobów metalowych',
   },
+
+  'about-us-text-1': {
+    ua: 'років досвіду та 2000+ проєктів.',
+en: 'years of experience and 2000+ projects.',
+de: 'Jahre Erfahrung und über 2000 Projekte.',
+pl: 'lat doświadczenia i ponad 2000 projektów.',
+  },
+  
+
+  'about-us-text-2': {
+    ua: 'Ми створюємо готові металеві вироби для меблевої, аграрної, будівельної та промислової галузей на 3 виробничих майданчиках.',
+en: 'We produce finished metal products for the furniture, agricultural, construction, and industrial sectors at 3 production sites.',
+de: 'Wir fertigen fertige Metallprodukte für die Möbel-, Agrar-, Bau- und Industriebranchen an 3 Produktionsstandorten.',
+pl: 'Tworzymy gotowe wyroby metalowe dla branży meblarskiej, rolniczej, budowlanej i przemysłowej w 3 zakładach produkcyjnych.',
+
+  },
+'about-us-text-3': {
+  ua: 'Наша команда з понад 120 фахівців гарантує точність, міцність та стабільність серійного виробництва.',
+  en: 'Our team of over 120 specialists guarantees precision, strength, and stability in serial production.',
+  de: 'Unser Team aus über 120 Fachkräften garantiert Präzision, Festigkeit und Stabilität in der Serienproduktion.',
+  pl: 'Nasz zespół ponad 120 specjalistów gwarantuje precyzję, wytrzymałość i stabilność produkcji seryjnej.',
+  
+  },
+
+  'about-us-text-4': {
+    ua: '— надійна металева основа для вашого продукту.',
+    en: '— a reliable metal foundation for your product.',
+    de: '— eine zuverlässige metallische Grundlage für Ihr Produkt.',
+    pl: '— niezawodna metalowa podstawa dla Twojego produktu.',
+    
+  },
+  
   'preview_page-1': {
     ua: 'Виконуємо комплексну високоточну металообробку на верстатах з ЧПК',
     en: 'We perform comprehensive high-precision metal processing on CNC machines.',
@@ -160,10 +206,11 @@ pl: 'Nasza produkcja',
 
   },
   'services_page-2': {
-    ua: 'Лазерна порізка',
-    en: 'Laser cutting',
-    de: 'Laserschneiden',
-    pl: 'Cięcie laserowe',
+    ua: 'Лазерна порізка листового металу',
+en: 'Laser cutting of sheet metal',
+de: 'Laserschneiden von Blech',
+pl: 'Laserowe cięcie blachy',
+
   },
   'services_page-3': {
     ua: 'Лазер дозволяє виконувати як легкі, так і складні деталі, гарантуючи високу точність і відмінну швидкість роботи.',
@@ -178,10 +225,11 @@ pl: 'Nasza produkcja',
     pl: 'Więcej szczegółów',
   },
   'services_page-5': {
-    ua: 'Гнуття деталей',
-    en: 'Bending of parts',
-    de: 'Biegen von Teilen',
-    pl: 'Gięcie elementów',
+    ua: 'Гнуття листового металу',
+en: 'Sheet metal bending',
+de: 'Blechbiegen',
+pl: 'Gięcie blachy',
+
   },
   'services_page-6': {
     ua: 'Гнуття металу - э однією з основних сфер застосування листового металу є виготовлення виробів із зігнутих листових деталей.',
@@ -231,6 +279,157 @@ pl: 'Nasza produkcja',
     de: 'Weitere Details',
     pl: 'Więcej szczegółów',
   },
+
+  'services_page-14': {
+    ua: 'Лазерна порізка труби',
+en: 'Laser cutting of tubes',
+de: 'Laserschneiden von Rohren',
+pl: 'Laserowe cięcie rur',
+
+  },
+  'services_page-15': {
+    ua: 'Трубний лазер — це обладнання для точної різки труб і профілів під зварювання та складання.',
+en: 'A tube laser is equipment for precise cutting of pipes and profiles for welding and assembly.',
+de: 'Ein Rohrlaser ist eine Anlage für das präzise Schneiden von Rohren und Profilen zum Schweißen und Montieren.',
+pl: 'Laser rurowy to urządzenie do precyzyjnego cięcia rur i profili do spawania i montażu.',
+
+  },
+
+  'services_page-16': {
+    ua: 'Гнуття труби',
+en: 'Tube bending',
+de: 'Rohrbiegen',
+pl: 'Gięcie rur',
+
+  },
+
+  'services_page-17': {
+    ua: 'Гнуття труби — це точне згинання труб під заданим кутом і радіусом без деформацій.',
+    en: 'Tube bending is the precise bending of pipes to a specified angle and radius without deformation.',
+    de: 'Rohrbiegen ist das präzise Biegen von Rohren in einem vorgegebenen Winkel und Radius ohne Verformungen.',
+    pl: 'Gięcie rur to precyzyjne wyginanie rur pod zadanym kątem i promieniem bez deformacji.',
+  },
+
+  'services_page-18': {
+    ua: 'Токарний верстат з ЧПК',
+en: 'CNC lathe',
+de: 'CNC-Drehmaschine',
+pl: 'Tokarka CNC',
+  },
+
+  'services_page-19': {
+    ua: 'Токарний верстат ЧПУ обточує деталі: робить вали, втулки, різьбу, посадкові поверхні та точні циліндричні елементи.',
+en: 'A CNC lathe machines parts: producing shafts, bushings, threads, bearing surfaces, and precise cylindrical elements.',
+de: 'Eine CNC-Drehmaschine bearbeitet Teile: Sie fertigt Wellen, Buchsen, Gewinde, Passflächen und präzise zylindrische Elemente.',
+pl: 'Tokarka CNC obrabia detale: wykonuje wały, tuleje, gwinty, powierzchnie pasowane oraz precyzyjne elementy cylindryczne.',
+
+  },
+
+  'testimonials-1': {
+    ua: 'Відгуки наших партнерів',
+en: 'Reviews from our partners',
+de: 'Bewertungen unserer Partner',
+pl: 'Opinie naszych partnerów',
+
+  },
+
+  'testimonials-2': {
+    ua: 'Західно український гольф та кантрі клуб',
+en: 'Western Ukrainian Golf & Country Club',
+de: 'Westukrainischer Golf- und Country-Club',
+pl: 'Zachodnioukraiński Golf & Country Club',
+
+
+  },
+  
+  'testimonials-3': {
+    ua: 'Окремо хочемо відзначити технічну компетентність фахівців ARMAX MG. Під час співпраці компанія неодноразово проявляла готовність до опрацювання складних технічних завдань, пропонувала інноваційні рішення та забезпечувала якісний супровід на всіх етапах - від узгодження вимог до контролю якості готової продукції.',
+en: 'We would like to especially highlight the technical expertise of ARMAX MG specialists. During our collaboration, the company repeatedly demonstrated a willingness to tackle complex technical challenges, offered innovative solutions, and provided high-quality support at all stages — from requirement coordination to quality control of the finished products.',
+de: 'Besonders möchten wir die technische Kompetenz der ARMAX MG-Spezialisten hervorheben. Während der Zusammenarbeit zeigte das Unternehmen wiederholt die Bereitschaft, komplexe technische Aufgaben zu bearbeiten, bot innovative Lösungen an und gewährleistete eine qualitativ hochwertige Betreuung in allen Phasen – von der Abstimmung der Anforderungen bis zur Qualitätskontrolle der fertigen Produkte.',
+pl: 'Chcielibyśmy szczególnie wyróżnić kompetencje techniczne specjalistów ARMAX MG. Podczas współpracy firma wielokrotnie wykazywała gotowość do rozwiązywania skomplikowanych zadań technicznych, proponowała innowacyjne rozwiązania i zapewniała wysokiej jakości wsparcie na wszystkich etapach – od uzgadniania wymagań po kontrolę jakości gotowych produktów.',
+
+  },
+
+  'testimonials-4': {
+    ua: 'Переглянути',
+    en: 'View',
+    de: 'Ansehen',
+    pl: 'Zobacz',
+    
+  },
+
+  'testimonials-4-1': {
+    ua: 'Переглянути',
+    en: 'View',
+    de: 'Ansehen',
+    pl: 'Zobacz',
+  },
+
+  'testimonials-4-2': {
+    ua: 'Переглянути',
+    en: 'View',
+    de: 'Ansehen',
+    pl: 'Zobacz',
+    
+  },
+
+  'testimonials-5': {
+    ua: 'Завантажити',
+en: 'Download',
+de: 'Herunterladen',
+pl: 'Pobierz',
+
+  },
+
+  'testimonials-5-1': {
+    ua: 'Завантажити',
+en: 'Download',
+de: 'Herunterladen',
+pl: 'Pobierz',
+
+  },
+
+  'testimonials-5-2': {
+    ua: 'Завантажити',
+en: 'Download',
+de: 'Herunterladen',
+pl: 'Pobierz',
+
+  },
+
+  'testimonials-6': {
+    ua: 'ХЙОРТ КНУДСЕН УКРАЇНА',
+en: 'HJORT KNUDSEN UKRAINE',
+de: 'HJORT KNUDSEN UKRAINE',
+pl: 'HJORT KNUDSEN UKRAINA',
+
+  },
+
+  'testimonials-7': {
+    ua: 'Вважаємо ARMAX MG надійним та професійним партнером і рекомендуємо компанію для реалізації проєктів, що потребують високих стандартів якості та довгострокової взаємодії.',
+    en: 'We consider ARMAX MG a reliable and professional partner and recommend the company for projects that require high quality standards and long-term collaboration.',
+    de: 'Wir betrachten ARMAX MG als einen zuverlässigen und professionellen Partner und empfehlen das Unternehmen für Projekte, die hohe Qualitätsstandards und eine langfristige Zusammenarbeit erfordern.',
+    pl: 'Uważamy ARMAX MG za niezawodnego i profesjonalnego partnera i polecamy firmę do realizacji projektów wymagających wysokich standardów jakości oraz długoterminowej współpracy.',
+    
+  },
+
+  'testimonials-8': {
+    ua: 'Модерн-Експо',
+    en: 'Modern-Expo',
+    de: 'Modern-Expo',
+    pl: 'Modern-Expo',
+    
+  },
+
+  'testimonials-9': {
+    ua: 'За весь період взаємодії ARMAX MG зарекомендувала себе як надійний виробник, який відповідально ставиться до виконання поставлених завдань. Вироби вирізняються стабільною якістю та точністю виконання, а всі технічні вимоги та специфікації дотримуються в повному обсязі. Постачання здійснюються ритмічно та без затримок, а за необхідності компанія легко адаптується до змін у графіках і швидко реагує на наші запити.',
+en: 'Throughout our collaboration, ARMAX MG has proven itself as a reliable manufacturer that takes responsibility for fulfilling assigned tasks. Their products stand out for consistent quality and precision, and all technical requirements and specifications are fully met. Deliveries are timely and without delays, and the company easily adapts to schedule changes and responds quickly to our requests when needed.',
+de: 'Während der gesamten Zusammenarbeit hat sich ARMAX MG als zuverlässiger Hersteller erwiesen, der verantwortungsvoll die ihm übertragenen Aufgaben erfüllt. Die Produkte zeichnen sich durch gleichbleibende Qualität und Präzision aus, und alle technischen Anforderungen und Spezifikationen werden vollständig eingehalten. Die Lieferungen erfolgen pünktlich und ohne Verzögerungen, und bei Bedarf passt sich das Unternehmen leicht an Terminänderungen an und reagiert schnell auf unsere Anfragen.',
+pl: 'W całym okresie współpracy ARMAX MG wykazała się jako niezawodny producent, który odpowiedzialnie podchodzi do realizacji powierzonych zadań. Produkty wyróżniają się stałą jakością i precyzją wykonania, a wszystkie wymagania techniczne i specyfikacje są w pełni przestrzegane. Dostawy realizowane są rytmicznie i bez opóźnień, a w razie potrzeby firma łatwo dostosowuje się do zmian w harmonogramach i szybko reaguje na nasze zapytania.',
+
+  },
+  
+
 
   'principles-page-1': {
     ua: 'Наші принципи',
@@ -306,16 +505,18 @@ pl: 'Nasza produkcja',
     pl: 'Elementy meblowe',
   },
   'wara_page-2-1': {
-    ua: 'Меблеві елементи',
-    en: 'Furniture elements',
-    de: 'Möbelelemente',
-    pl: 'Elementy meblowe',
+    ua: 'Металеві опори та каркаси для стільців та ліжок',
+en: 'Metal supports and frames for chairs and beds',
+de: 'Metallstützen und Rahmen für Stühle und Betten',
+pl: 'Metalowe podpory i stelaże do krzeseł i łóżek',
+
   },
   'wara_page-3': {
-    ua: 'СГ обладнання',
-    en: 'Agricultural equipment',
-    de: 'Landwirtschaftliche Ausrüstung',
-    pl: 'Sprzęt rolniczy',
+    ua: 'Сільськогосподарське обладнання',
+en: 'Agricultural equipment',
+de: 'Landwirtschaftliche Geräte',
+pl: 'Sprzęt rolniczy',
+
   },
   'wara_page-3-1': {
     ua: 'СГ обладнання',
@@ -324,10 +525,11 @@ pl: 'Nasza produkcja',
     pl: 'Sprzęt rolniczy',
   },
   'wara_page-4': {
-    ua: 'Елементи декору',
-    en: 'Decorative elements',
-    de: 'Dekorative Elemente',
-    pl: 'Elementy dekoracyjne',
+    ua: 'Меблева фурнітура',
+en: 'Furniture fittings',
+de: 'Möbelbeschläge',
+pl: 'Okucia meblowe',
+
   },
   'wara_page-4-1': {
     ua: 'Елементи декору',
@@ -1203,6 +1405,8 @@ pl: 'Nasza produkcja',
     de: 'Erfahren Sie mehr',
     pl: 'Dowiedz się więcej',
   },
+
+
 
   //-----------sheet bending
   'sd-header_page-1': {

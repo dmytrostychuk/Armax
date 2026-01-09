@@ -24,6 +24,10 @@
 
   @include mq($from: desktop) {
     max-width: 100%;
+    display: flex;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    padding: 0;
   }
 }
 
@@ -35,20 +39,37 @@
   background-color: #d1a954;
   font-weight: 600;
   transition: all 0.35s ease-in-out;
+  margin-bottom: 3px;
 
   &:hover {
     @include mq($from: tablet) {
       outline: 5px solid rgba(51, 51, 51, 0.65);
+      
+    }
+
+    @include mq($from: desktop) {
+      outline: 2px solid rgba(51, 51, 51, 0.65);
+      transform: scale(0.7);
+      
     }
   }
 
   &:hover .services__hover-content {
+    opacity: .6;
+    
+  }
+
+  &:hover .services__hover-content-1 {
     opacity: 1;
+    
   }
 
   &:hover .services__hover-title {
     @include mq($from: tablet-wide) {
       transform: scale(1);
+      background-color: rgba(51, 51, 51, 0.5);
+      border-radius: 10px;
+      padding: 5px;
     }
   }
 
@@ -57,7 +78,9 @@
   }
 
   @include mq($from: desktop) {
-    max-height: 370px;
+    max-height: 550px;
+    outline: 0px solid #f6f6f6;
+    margin: 0 1px;
   }
 }
 
@@ -68,24 +91,34 @@
 
 .services__content {
   margin: 0;
+
+  @include mq($from: desktop) {
+    position: relative;
+  overflow: hidden; // Обрізає все, що виходить за межі
+  width: 100%;      
+  height: 100%; 
+  }
+  
 }
+
+
 
 .services__name {
   position: absolute;
-  bottom: 0;
-  margin: 20px 30px;
-  padding: 7px 15px;
-  text-align: start;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
 
   &::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #d1a954;
-    transform: skewX(-35deg);
     bottom: 0;
     left: 0;
+  }
+
+  @include mq($from: desktop) {
   }
 }
 
@@ -96,12 +129,11 @@
   left: 0;
   width: 100%;
   color: #fff;
-  letter-spacing: 0.1em;
   line-height: 1.3em;
+  font-size: 16px;
 
   @include mq($from: tablet-wide) {
     font-size: 18px;
-    padding: 0 20px;
     text-transform: uppercase;
   }
 }
@@ -112,11 +144,13 @@ picture {
 
 .services__img {
   width: 100%;
-  max-height: 200px;
+  max-height: 150x;
   object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
 
   @include mq($from: phablet) {
-    height: 200px;
+    height: 170px;
   }
 
   @include mq($from: tablet-wide) {
@@ -124,15 +158,37 @@ picture {
     height: 300px;
   }
 
-  @include mq($from: tablet-wide) {
+  @include mq($from: desktop) {
+    height: 550px;
+    max-height: 550px;
+    width: 100%;
+  object-fit: cover;   // Заповнює контейнер без деформації (прибирає ваші коричневі краї)
+  display: block;
+  transition: transform 0.5s ease;
+  transform: scale(1.1); 
+  }
+
+}
+
+@include mq($from: desktop) {
+  .services__card:hover {
+    .services__img {
+      // Фото зменшується, але завдяки тому, що воно було 1.5,
+      // при 0.7 воно все ще буде достатньо великим, щоб закрити фон.
+      transform: scale(1); 
+      
+    }
   }
 }
+
+
+
 
 .services__hover-content {
   background: linear-gradient(
     0deg,
-    rgba(51, 51, 51, 0.4),
-    rgba(51, 51, 51, 0.9)
+    rgba(51, 51, 51, 0.9),
+    rgba(51, 51, 51, 0.4)
   );
   position: absolute;
   top: 0;
@@ -142,8 +198,20 @@ picture {
   height: auto;
   padding: 20px;
   color: #000000;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.35s ease-in-out;
+
+  @include mq($from: desktop) {
+    padding: 5px;
+  }
+}
+
+.services__hover-content-1 {
+  background: linear-gradient(
+    0deg,
+    rgba(51, 51, 51, 0),
+    rgba(51, 51, 51, 0)
+  );
 }
 
 .services__link {
