@@ -73,10 +73,12 @@ document.addEventListener('DOMContentLoaded', function () {
       var fullText = block.querySelector('.full-text');
       var readMoreBtn = block.querySelector('.read-more-btn');
 
-      if (window.innerWidth > 1200) {
-        fullText.classList.add('expanded1');
-      } else {
-        fullText.classList.remove('expanded1');
+      if (fullText && readMoreBtn) {
+        if (window.innerWidth > 1200) {
+          fullText.classList.add('expanded1');
+        } else {
+          fullText.classList.remove('expanded1');
+        }
       }
     });
   }
@@ -92,13 +94,16 @@ document.addEventListener('DOMContentLoaded', function () {
     var readMoreBtn = block.querySelector('.read-more-btn');
     var fullText = block.querySelector('.full-text');
 
-    if (readMoreBtn) {
-      readMoreBtn.addEventListener('click', function () {
+    if (readMoreBtn && fullText) {
+      readMoreBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
         var isExpanded = fullText.classList.toggle('expanded');
-        readMoreBtn.classList.toggle('expanded', isExpanded); // Додаємо/видаляємо клас для кнопки
-        readMoreBtn.querySelector('.text').textContent = isExpanded
-          ? 'Сховати'
-          : 'Читати більше';
+        readMoreBtn.classList.toggle('expanded', isExpanded);
+        var textSpan = readMoreBtn.querySelector('.text');
+        if (textSpan) {
+          textSpan.textContent = isExpanded ? 'Сховати' : 'Читати більше';
+        }
       });
     }
   });
@@ -183,45 +188,7 @@ if (cardGalleryButton3) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  var blocks = document.querySelectorAll('.news-page__card');
-
-  function toggleReadMore() {
-    blocks.forEach(function (block) {
-      var fullText = block.querySelector('.full-text');
-      var readMoreBtn = block.querySelector('.read-more-btn');
-
-      if (window.innerWidth > 1200) {
-        fullText.classList.add('expanded1');
-      } else {
-        fullText.classList.remove('expanded1');
-      }
-    });
-  }
-
-  // Викликаємо функцію при завантаженні сторінки
-  toggleReadMore();
-  // Функція для перевірки скролінгу
-
-  // Додаємо обробник події для зміни розміру вікна
-  window.addEventListener('resize', toggleReadMore);
-
-  // Додаємо обробник події для кнопки в кожному блоці
-  blocks.forEach(function (block) {
-    var readMoreBtn = block.querySelector('.read-more-btn');
-    var fullText = block.querySelector('.full-text');
-
-    if (readMoreBtn) {
-      readMoreBtn.addEventListener('click', function () {
-        var isExpanded = fullText.classList.toggle('expanded');
-        readMoreBtn.classList.toggle('expanded', isExpanded); // Додаємо/видаляємо клас для кнопки
-        readMoreBtn.querySelector('.text').textContent = isExpanded
-          ? 'Сховати'
-          : 'Читати більше';
-      });
-    }
-  });
-});
+// Дублікат коду видалено - функціональність вже реалізована вище
 
 // PDF Viewer Modal
 document.addEventListener('DOMContentLoaded', function() {
