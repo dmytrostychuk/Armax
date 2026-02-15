@@ -156,10 +156,13 @@
 	}
 
 	@include mq($from: desktop) {
-		height: 400px;
+		height: 550px;
 	}
 
 
+.swiper {
+	margin-right: 0;
+}
 	
 }
 
@@ -180,7 +183,10 @@
 	}
 
 	@include mq($from: desktop) {
-		height: 400px;
+		height: 550px;
+		width: 80%;
+		margin-right: 0;
+		margin-left: 0;
 	}
 
 	

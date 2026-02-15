@@ -75,6 +75,7 @@
 }
 
 .swiper__product {
+  padding: 10px 0;
   color: black;
 }
 
@@ -117,7 +118,7 @@
 }
 
 .swiper-zoom-container img {
-  background-color: #cdcdcd9c;
+  background-color: #ffffff81;
   border-radius: 10px;
 }
 
@@ -135,7 +136,7 @@
 .mySwiper .swiper-slide-thumb-active img,
 .mySwiper5 .swiper-slide-thumb-active img,
 .mySwiper7 .swiper-slide-thumb-active img {
-  background-color: rgba(205, 205, 205, 0.6117647059);
+  background-color: #ffffff81;
   opacity: 1;
 }
 

@@ -62,8 +62,9 @@
   }
 
   @include mq($from: desktop) {
-    max-height: 550px;
+    max-height: 50  0px;
     height: auto;
+    width: 32%;
   }
 }
 
@@ -82,14 +83,14 @@
   border-radius: 10px;
   
 
-  @include mq($from: desktop) { 
-    height: auto;
-    max-height: 550px;
-  }
+ 
 
   @include mq($from: tablet-wide) {
     border-radius: 0;
     border-radius: 10px;
+  }
+  @include mq($from: desktop) { 
+    height: 500px;
   }
 }
 
@@ -188,5 +189,14 @@
   @include mq($from: desktop) { 
     font-size: 25px;
     bottom: 60px;
+  }
+}
+
+
+.product__ware {
+  
+
+  @include mq($from: desktop) { 
+    margin-top: 0px;
   }
 }

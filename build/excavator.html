@@ -19,17 +19,6 @@
 
 <body>
 	<svg style="display: none">
-		<symbol id="instagram" viewBox="0 0 256 256">
-			<g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-			<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-
-			<g id="SVGRepo_iconCarrier">
-				<path
-					d="M160,128a32,32,0,1,1-32-32A32.03667,32.03667,0,0,1,160,128Zm68-44v88a56.06353,56.06353,0,0,1-56,56H84a56.06353,56.06353,0,0,1-56-56V84A56.06353,56.06353,0,0,1,84,28h88A56.06353,56.06353,0,0,1,228,84Zm-52,44a48,48,0,1,0-48,48A48.05436,48.05436,0,0,0,176,128Zm16-52a12,12,0,1,0-12,12A12,12,0,0,0,192,76Z" />
-			</g>
-
-		</symbol>
 		<symbol id="location" viewBox="0 0 1024 1024">
 			<g>
 				<path
@@ -90,11 +79,37 @@
 			</path>
 
 		</symbol>
+		<symbol id="instagram" viewBox="0 0 256 256">
+			<g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+			<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+			<g id="SVGRepo_iconCarrier">
+				<path
+					d="M160,128a32,32,0,1,1-32-32A32.03667,32.03667,0,0,1,160,128Zm68-44v88a56.06353,56.06353,0,0,1-56,56H84a56.06353,56.06353,0,0,1-56-56V84A56.06353,56.06353,0,0,1,84,28h88A56.06353,56.06353,0,0,1,228,84Zm-52,44a48,48,0,1,0-48,48A48.05436,48.05436,0,0,0,176,128Zm16-52a12,12,0,1,0-12,12A12,12,0,0,0,192,76Z" />
+			</g>
+
+		</symbol>
+
+		<symbol id="linkedin" viewBox="0 0 310 310">
+			<g id="XMLID_801_">
+			  <path id="XMLID_802_" d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73
+				C77.16,101.969,74.922,99.73,72.16,99.73z"/>
+			  <path id="XMLID_803_" d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4
+				c22.626,0,41.033-18.41,41.033-41.038C82.1,18.743,63.692,0.341,41.066,0.341z"/>
+			  <path id="XMLID_804_" d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599
+				c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5h62.097c2.762,0,5-2.238,5-5v-98.918c0-33.333,9.054-46.319,32.29-46.319
+				c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995
+				C310,145.43,300.549,94.761,230.454,94.761z"/>
+			</g>
+	  
+		  </symbol>
 	</svg>
 
 	<header class="header-product">
 
-		<div class="header__background-ag"></div>
+		<canvas id="particles-canvas" class="header__background-fe"></canvas>
+		<div class="header__background-fe-overlay"></div>
 		<div class="nav__social--desktop-wrap">
 			<div class="nav__social--desktop container">
 				<ul class="nav__social-list--desktop">
@@ -115,7 +130,6 @@
 						</a>
 					</li>
 				</ul>
-
 				<div class="nav__container">
 					<div class="header__lang">
 						<button class="header__btn " data-btn="ua">UA</button>
@@ -161,7 +175,7 @@
 				<div class="menu__container">
 					<button class="burger-btn"><span></span></button>
 					<h1 class="menu__title">
-						<a class="menu__link-logo" href="index.html"><img class="menu__logo" src="img/logo.avif" alt="" /></a>
+						<a class="menu__link-logo" href="index.html"><img class="menu__logo" src="img/logo.avif" alt="logo" /></a>
 					</h1>
 					<div class="header__lang nav__list-social">
 						<button class="header__btn" data-btn="ua">UA</button>
@@ -174,42 +188,46 @@
 				<nav class="nav">
 					<div class="nav__inner">
 						<ul class="nav__list">
-
-							<li class="nav__item">
-								<a href="about-us.html" class="link-hover" data-lang="nav_page-2"></a>
-							</li>
-							<li class="nav__item">
-								<a href="contacts.html" class="link-hover" data-lang="nav_page-3"></a>
-							</li>
-
-
-							<li class="nav__item nav__item-dropdown">
-								<a href="product.html" class="link-hover nav__item-link" data-lang="nav_page-4"></a>
-								<div class="dropdown">
-									<a href="ag-equipment.html" class="link__dropdown link-hover " data-lang="nav_page-5"></a>
-									<a href="furniture-elements.html" class="link__dropdown link-hover" data-lang="nav_page-6"></a>
-									<a href="decor-elements.html" class="link__dropdown link-hover" data-lang="nav_page-7"></a>
-									<a href="сustom-orders.html" class="link__dropdown link-hover" data-lang="nav_page-8"></a>
-
-								</div>
-							</li>
-							<li class="nav__item nav__item-dropdown">
-								<a href="services.html" class="link-hover" data-lang="nav_page-1"></a>
-								<div class="dropdown dropdown--width">
-									<a href="lazer.html" class="link__dropdown link-hover " data-lang="footer_page-6-1"></a>
-									<a href="sheet-bending.html" class="link__dropdown link-hover" data-lang="footer_page-7-1"></a>
-									<a href="dyeing.html" class="link__dropdown link-hover" data-lang="footer_page-8-1"></a>
-									<a href="welding.html" class="link__dropdown link-hover" data-lang="footer_page-9-1"></a>
-									<a href="locksmith.html" class="link__dropdown link-hover" data-lang="footer_page-10-1"></a>
-									<a href="mechanical-processing.html" class="link__dropdown link-hover"
-										data-lang="footer_page-11-1"></a>
-								</div>
-							</li>
-							<li class="nav__item">
-								<a href="news.html" class="link-hover" data-lang="nav_page-9"></a>
-							</li>
-
-						</ul>
+						
+						              <li class="nav__item">
+						                <a href="about-us.html" class="link-hover" data-lang="nav_page-2"></a>
+						              </li>
+						              <li class="nav__item">
+						                <a href="contacts.html" class="link-hover" data-lang="nav_page-3"></a>
+						              </li>
+						
+						
+						              <li class="nav__item nav__item-dropdown">
+						                <a href="product.html" class="link-hover nav__item-link" data-lang="nav_page-4"></a>
+						                <div class="dropdown">
+						                  <a href="furniture-elements.html" class="link__dropdown link-hover" data-lang="nav_page-6"></a>
+						                  <a href="chair-frames.html" class="link__dropdown link-hover" data-lang="wara_page-7"></a>
+						                  <a href="furniture-fittings.html" class="link__dropdown link-hover" data-lang="wara_page-4"></a>
+						                  <a href="outdoor-furniture.html" class="link__dropdown link-hover" data-lang="wara_page-8"></a>
+						                  <a href="ag-equipment.html" class="link__dropdown link-hover  link--active" data-lang="nav_page-5"></a>
+						                  <a href="сustom-orders.html" class="link__dropdown link-hover" data-lang="nav_page-8"></a>
+						
+						                </div>
+						              </li>
+						              <li class="nav__item nav__item-dropdown">
+						                <a href="services.html" class="link-hover" data-lang="nav_page-1"></a>
+						                <div class="dropdown dropdown--width">
+						                  <a href="lazer.html" class="link__dropdown link-hover " data-lang="footer_page-6-1"></a>
+						                  <a href="lazer-tube.html" class="link__dropdown link-hover " data-lang="services_page-14"></a>
+						                  <a href="sheet-bending.html" class="link__dropdown link-hover" data-lang="footer_page-7-1"></a>
+						                  <a href="tube-bending.html" class="link__dropdown link-hover " data-lang="services_page-16" disabled></a>
+						                  <a href="dyeing.html" class="link__dropdown link-hover" data-lang="footer_page-8-1"></a>
+						                  <a href="welding.html" class="link__dropdown link-hover" data-lang="footer_page-9-1"></a>
+						                  <a href="locksmith.html" class="link__dropdown link-hover" data-lang="footer_page-10-1"></a>
+						                  <a href="mechanical-processing.html" class="link__dropdown link-hover"
+						                    data-lang="footer_page-11-1"></a>
+						                </div>
+						              </li>
+						              <li class="nav__item">
+						                <a href="news.html" class="link-hover" data-lang="nav_page-9"></a>
+						              </li>
+						
+						            </ul>
 
 						<ul class="nav__list nav__list-social">
 							<li class="nav__item-social">
@@ -262,12 +280,13 @@
 
 			<div class="header__content--container">
 				<div class="header__content-product ">
-					<h1 class="product__title" data-lang="breadcrumbs-3-3">
+					<h1 class="product__title header__content-title" data-lang="breadcrumbs-3-3">
 					</h1>
 				</div>
 			</div>
 		</div>
 	</header>
+
 
 	<main class="main">
 		<div class="container">
@@ -283,52 +302,51 @@
 				<section>
 					<div class="goods">
 						<div class="product__box">
-							<article class="product__card">
-								<div class="product__card-container">
-									<div class="product__img">
-										<img src="../img/cards/excavator-bucket-kubata-cx/1.png" alt="" width="100%">
-									</div>
-									<div class="product__content">
+								<article class="product__card fe-product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="../img/cards/excavator-bucket-kubata-cx/1.png" alt="" width="100%">
+										</div>
+										<div class="product__content fe-product__content">
 
-										<p class="product__name" data-lang="breadcrumbs-exc-5-1"></p>
-										<p class="card__article">
-											<span data-lang="article-exc-2-1"></span>
-										</p>
-										<p class="product__price" data-lang="card-price-exc-1"></p>
-									</div>
-									<a href="../ag-equipment/excavator-bucket-kubata-cx.html" class="product__link"></a>
-							</article>
-							<article class="product__card">
-								<div class="product__card-container">
-									<div class="product__img">
-										<img src="../img/cards/excavator-bucket-400/1.png" alt="" width="100%">
-									</div>
-									<div class="product__content">
+											<p class="product__name" data-lang="breadcrumbs-exc-5-1"></p>
+											<p class="card__article">
+												<span data-lang="article-exc-2-1"></span>
+											</p>
+											<p class="product__price" data-lang="card-price-exc-1"></p>
+										</div>
+										<a href="../ag-equipment/excavator-bucket-kubata-cx.html" class="product__link"></a>
+								</article>
+								<article class="product__card fe-product__card">
+									<div class="product__card-container ">
+										<div class="product__img">
+											<img src="../img/cards/excavator-bucket-400/1.png" alt="" width="100%">
+										</div>
+										<div class="product__content fe-product__content">
 
-										<p class="product__name" data-lang="breadcrumbs-exc-5-2"></p>
-										<p class="card__article">
-											<span data-lang="article-exc-2-2"></span>
-										</p>
-										<p class="product__price" data-lang="card-price-exc-2"></p>
-									</div>
-									<a href="../ag-equipment/excavator-bucket-400.html" class="product__link"></a>
-							</article>
-							<article class="product__card">
-								<div class="product__card-container">
-									<div class="product__img">
-										<img src="../img/cards/excavator-planning-bucket-1000/1.png" alt="" width="100%">
-									</div>
-									<div class="product__content">
+											<p class="product__name" data-lang="breadcrumbs-exc-5-2"></p>
+											<p class="card__article">
+												<span data-lang="article-exc-2-2"></span>
+											</p>
+											<p class="product__price" data-lang="card-price-exc-2"></p>
+										</div>
+										<a href="../ag-equipment/excavator-bucket-400.html" class="product__link"></a>
+								</article>
+								<article class="product__card fe-product__card">
+									<div class="product__card-container">
+										<div class="product__img">
+											<img src="../img/cards/excavator-planning-bucket-1000/1.png" alt="" width="100%">
+										</div>
+										<div class="product__content fe-product__content">
 
-										<p class="product__name" data-lang="breadcrumbs-exc-5-3"></p>
-										<p class="card__article">
-											<span data-lang="article-exc-2-3"></span>
-										</p>
-										<p class="product__price" data-lang="card-price-exc-3"></p>
-									</div>
-									<a href="../ag-equipment/excavator-planning-bucket-1000.html" class="product__link"></a>
-							</article>
-
+											<p class="product__name" data-lang="breadcrumbs-exc-5-3"></p>
+											<p class="card__article">
+												<span data-lang="article-exc-2-3"></span>
+											</p>
+											<p class="product__price" data-lang="card-price-exc-3"></p>
+										</div>
+										<a href="../ag-equipment/excavator-planning-bucket-1000.html" class="product__link"></a>
+								</article>
 						</div>
 
 					</div>
@@ -339,129 +357,113 @@
 	</main>
 	<footer class="footer">
 		<div class="footer__bootom">
-			<div class="container">
-				<div class="info">
-					<div class="info__block info__menu">
-						<h5 class="info__title" data-lang="footer_page-1"></h5>
-						<ul>
-							<li class="info__item">
-								<a class="info__link" href="services.html" data-lang="footer_page-2"></a>
-							</li>
-							<li class="info__item">
-								<a class="info__link" href="about-us.html" data-lang="footer_page-3"></a>
-							</li>
-							<li class="info__item">
-								<a class="info__link" href="contacts.html" data-lang="footer_page-4"></a>
-							</li>
-							<li class="info__item">
-								<a class="info__link" href="news.html" data-lang="footer_page-15"></a>
-							</li>
-							<li class="info__item">
-								<a class="info__link" href="product.html" data-lang="footer_page-16"></a>
-							</li>
-
-						</ul>
-					</div>
-					<div class="info__block info__schedule">
-						<h5 class="info__title" data-lang="footer_page-5"></h5>
-						<ul class="info__list">
-							<li class="info__item">
-								<a href="lazer.html" class="info__link" data-lang="footer_page-6"></a>
-							</li>
-							<li class="info__item">
-								<a href="sheet-bending.html" class="info__link" data-lang="footer_page-7"></a>
-							</li>
-							<li class="info__item">
-								<a href="dyeing.html" class="info__link" data-lang="footer_page-8"></a>
-							</li>
-							<li class="info__item">
-								<a href="welding.html" class="info__link" data-lang="footer_page-9"></a>
-							</li>
-							<li class="info__item">
-								<a href="locksmith.html" class="info__link" data-lang="footer_page-10"></a>
-							</li>
-							<li class="info__item">
-								<a href="mechanical-processing.html" class="info__link" data-lang="footer_page-17"></a>
-							</li>
-						</ul>
-					</div>
-					<div class="info__block info__address">
-						<h5 class="info__title" data-lang="footer_page-11"></h5>
-						<ul class="info__list">
-							<li class="info__item">
-								<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
-									class="link-social link--hover" data-lang="footer_page-12" target="_blank" rel="noopener noreferrer">
-
-								</a>
-								<svg class="link-social--svg" width="30" height="30">
-									<use xlink:href="#location"></use>
-								</svg>
-							</li>
-							<li class="info__item info__item--color">
-								<a href="" class="link-social " id="disabledLink" data-lang="footer_page-13"></a>
-								<svg class="clock-svg link-social--svg" width="25" height="25">
-									<use xlink:href="#clock"></use>
-								</svg>
-							</li>
-
-						</ul>
-					</div>
-
-					<div class="info__block info__contact">
-						<h5 class="info__title" data-lang="footer_page-14"></h5>
-						<ul class="info__list">
-							<li class="info__item">
-								<a class="link-social link--hover" href="tel:+380687945051">
-									<svg class="link-social--svg" width="30" height="20">
-										<use xlink:href="#phone"></use>
-									</svg>
-									+38 (096) 123 91 21
-								</a>
-							</li>
-							<li class="info__item">
-								<a class="link-social link--hover" href="tel:+380687945051">
-									<svg class="link-social--svg" width="30" height="20">
-										<use xlink:href="#phone"></use>
-									</svg>
-									+38 (099) 225 50 51
-								</a>
-							</li>
-							<li class="info__item">
-								<a href="mailto:lazerarmax@gmail.com" class="link-social link--hover">
-									<svg class="link-social--svg" width="30" height="20">
-										<use xlink:href="#mail"></use>
-									</svg>
-									armax.km@gmail.com
-								</a>
-							</li>
-							<li class="info__item">
-								<a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
-									rel="noopener noreferrer">
-									<svg class="link-social--svg" width="30" height="20">
-										<use xlink:href="#facebook"></use>
-									</svg>
-									facebook.com/armaxMG/
-								</a>
-							</li>
-							<li class="info__item">
-								<a href="https://www.instagram.com/armax.mg?igsh=aWJ0ZnE2MGkxNThj" class="link-social link--hover"
-									target="_blank" rel="noopener noreferrer">
-									<svg class="link-social--svg" width="25" height="25">
-										<use xlink:href="#instagram"></use>
-									</svg>
-									instagram.com/armax.mg
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+		  <div class="container">
+			<div class="info">
+			  <div class="info__block info__menu">
+				<h5 class="info__title" data-lang="footer_page-1"></h5>
+				<ul>
+				  <li class="info__item">
+					<a class="info__link" href="services.html" data-lang="footer_page-2"></a>
+				  </li>
+				  <li class="info__item">
+					<a class="info__link" href="about-us.html" data-lang="footer_page-3"></a>
+				  </li>
+				  <li class="info__item">
+					<a class="info__link" href="contacts.html" data-lang="footer_page-4"></a>
+				  </li>
+				  <li class="info__item">
+					<a class="info__link" href="news.html" data-lang="footer_page-15"></a>
+				  </li>
+				  <li class="info__item">
+					<a class="info__link" href="product.html" data-lang="footer_page-16"></a>
+				  </li>
+				</ul>
+			  </div>
+			  <div class="info__block info__address">
+				<h5 class="info__title" data-lang="footer_page-11"></h5>
+				<ul class="info__list">
+				  <li class="info__item">
+					<a href="https://www.google.com/maps?ll=50.83233,25.453636&z=18&t=m&hl=uk&gl=UA&mapclient=embed&cid=4530451728570446602"
+					  class="link-social link--hover" data-lang="footer_page-12" target="_blank" rel="noopener noreferrer">
+					</a>
+					<svg class="link-social--svg" width="30" height="30">
+					  <use xlink:href="#location"></use>
+					</svg>
+				  </li>
+				  <li class="info__item info__item--color">
+					<a href="" class="link-social " id="disabledLink" data-lang="footer_page-13"></a>
+					<svg class="clock-svg link-social--svg" width="25" height="25">
+					  <use xlink:href="#clock"></use>
+					</svg>
+				  </li>
+				</ul>
+			  </div>
+			  <div class="info__block info__contact">
+				<h5 class="info__title" data-lang="footer_page-14"></h5>
+				<ul class="info__list">
+				  <li class="info__item">
+					<a class="link-social link--hover" href="tel:+38961239121">
+					  <svg class="link-social--svg" width="30" height="20">
+						<use xlink:href="#phone"></use>
+					  </svg>
+					  +38 (096) 123 91 21
+					</a>
+				  </li>
+				  <li class="info__item">
+					<a class="link-social link--hover" href="tel:+380992255051">
+					  <svg class="link-social--svg" width="30" height="20">
+						<use xlink:href="#phone"></use>
+					  </svg>
+					  +38 (099) 225 50 51
+					</a>
+				  </li>
+				  <li class="info__item">
+					<a href="mailto:armax.km@gmail.com" class="link-social link--hover">
+					  <svg class="link-social--svg" width="30" height="20">
+						<use xlink:href="#mail"></use>
+					  </svg>
+					  armax.km@gmail.com
+					</a>
+				  </li>
+				  <li class="info__item">
+					<a href="https://www.facebook.com/armaxMG" class="link-social link--hover" target="_blank"
+					  rel="noopener noreferrer">
+					  <svg class="link-social--svg" width="30" height="20">
+						<use xlink:href="#facebook"></use>
+					  </svg>
+					  facebook.com/armaxMG/
+					</a>
+				  </li>
+				  <li class="info__item">
+					<a href="https://www.instagram.com/armax.mg?igsh=aWJ0ZnE2MGkxNThj" class="link-social link--hover"
+					  target="_blank" rel="noopener noreferrer">
+					  <svg class="link-social--svg" width="25" height="25">
+						<use xlink:href="#instagram"></use>
+					  </svg>
+					  instagram.com/armax.mg
+					</a>
+				  </li>
+				  <li class="info__item">
+					<a href="https://www.linkedin.com/company/armax-mg/posts/?feedView=all" class="link-social link--hover"
+					  target="_blank" rel="noopener noreferrer">
+					  <svg class="link-social--svg" width="25" height="25">
+						<use xlink:href="#linkedin"></use>
+					  </svg>
+					  linkedin.com/armax-mg
+					</a>
+				  </li>
+				</ul>
+			  </div>
 			</div>
+		  </div>
 		</div>
-	</footer>
+	  </footer>
 	<script src="js/lang.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/index.js"></script>
 	<script src="js/app.js"></script>
+	
+	<script src="js/particles.js"></script>
 </body>
 
 </html>

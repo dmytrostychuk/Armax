@@ -81,7 +81,10 @@
   position: relative;
   padding-bottom: 8px;
   transition: 0.3s;
-  color: rgba(255, 255, 255, 0.61);
+  pointer-events:all; 
+    cursor: default;     
+    color: rgb(199, 199, 199);          
+    text-decoration: none; 
 
   &:hover:before {
     transform: scaleX(1);
@@ -113,6 +116,11 @@
       rgba(112, 51, 51, 1) 100%
     );
   }
+}
+
+.link--active-father {
+  color: rgba(255, 255, 255, 0.61);  
+    text-decoration: none; 
 }
 
 .l-link {

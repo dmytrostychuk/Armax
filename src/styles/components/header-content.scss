@@ -1,10 +1,13 @@
 .header__content--container {
+  display: flex;
+  justify-content: center;
   position: relative;
 
   @include mq($from: tablet) {
     display: flex;
     justify-content: space-between;
     // min-height: 360px;
+    margin-top: 50px;
   }
 }
 
@@ -25,12 +28,14 @@
     width: 65%;
     margin-bottom: 0;
     margin-right: 34px;
+    
   }
 }
 
 .header__content-product {
   line-height: 1.5;
-  max-width: 60%;
+  max-width: 100%;
+  z-index: 1;
 }
 
 .header__inner {
@@ -50,12 +55,13 @@
 .header__content-title {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-top: 10vh;
   text-align: center;
   letter-spacing: 0.05em;
   line-height: 130%;
-  font-size: 5em;
-  font-weight: 100;
+  font-size: 4.5em;
+  font-weight: 600;
+  text-transform: uppercase;
 
   &::after {
     content: '';
@@ -70,7 +76,7 @@
 
     @include mq($from: tablet) {
       left: 0;
-      bottom: -40px;
+      margin-top: 10vh;
       transform: translate(0);
     }
   }
@@ -81,7 +87,7 @@
   @include mq($from: tablet) {
     font-size: 80px;
     margin: 0;
-    margin-bottom: 40px;
+    margin-top: 10vh;
     text-align: start;
   }
 
@@ -100,6 +106,14 @@
     margin-top: 20px;
     line-height: 130%;
   }
+}
+
+.header__content-title--size {
+
+  @include mq($from: tablet) {
+    font-size: 2.5em;
+  }
+  
 }
 
 .header__content-text {

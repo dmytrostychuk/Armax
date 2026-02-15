@@ -146,3 +146,19 @@
     padding: 0 10px;
   }
 }
+
+.co-section__text {
+  .full-text {
+    margin-bottom: 10px;
+  }
+  
+  .read-more-btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+    
+    @include mq($from: tablet-wide) {
+      width: auto;
+    }
+  }
+}

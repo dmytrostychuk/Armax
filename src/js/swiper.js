@@ -58,7 +58,7 @@ const swiper1 = new Swiper('.swiper__partners', {
 
 const swiperProduct = new Swiper('.swiper__product', {
   slidesPerView: 1,
-
+autoplay: true,
   loop: true,
   infinity: true,
   spaceBetween: 15,
@@ -75,6 +75,11 @@ const swiperProduct = new Swiper('.swiper__product', {
     1024: {
       spaceBetween: 10,
       slidesPerView: 4,
+    },
+
+    1300: {
+      spaceBetween: 10,
+      slidesPerView: 5,
     },
   },
   navigation: {

@@ -13,10 +13,11 @@ const homeTexts = {
     pl: 'Wyślij zapytanie',
   },
   'nav_page-1': {
-    ua: 'Металообробка',
-    en: 'Metal processing',
-    de: 'Metallverarbeitung',
-    pl: 'Obróbka metalu',
+    ua: 'Наше виробництво',
+en: 'Our production',
+de: 'Unsere Produktion',
+pl: 'Nasza produkcja',
+
   },
   'nav_page-2': {
     ua: 'Про нас',
@@ -55,16 +56,18 @@ const homeTexts = {
     pl: 'Sprzęt rolniczy',
   },
   'nav_page-6': {
-    ua: 'Меблеві елементи',
-    en: 'Furniture elements',
-    de: 'Möbelelemente',
-    pl: 'Elementy meblowe',
+    ua: 'Металеві опори',
+en: 'Metal supports',
+de: 'Metallstützen',
+pl: 'Metalowe podpory',
+
   },
   'nav_page-6-1': {
-    ua: 'Меблеві елементи',
-    en: 'Furniture elements',
-    de: 'Möbelelemente',
-    pl: 'Elementy meblowe',
+    ua: 'Металеві опори',
+en: 'Metal supports',
+de: 'Metallstützen',
+pl: 'Metalowe podpory',
+
   },
   'nav_page-7': {
     ua: 'Елементи декору',
@@ -373,6 +376,14 @@ pl: 'Chcielibyśmy szczególnie wyróżnić kompetencje techniczne specjalistów
     
   },
 
+  'testimonials-4-3': {
+    ua: 'Переглянути',
+    en: 'View',
+    de: 'Ansehen',
+    pl: 'Zobacz',
+    
+  },
+
   'testimonials-5': {
     ua: 'Завантажити',
 en: 'Download',
@@ -390,6 +401,14 @@ pl: 'Pobierz',
   },
 
   'testimonials-5-2': {
+    ua: 'Завантажити',
+en: 'Download',
+de: 'Herunterladen',
+pl: 'Pobierz',
+
+  },
+
+  'testimonials-5-3': {
     ua: 'Завантажити',
 en: 'Download',
 de: 'Herunterladen',
@@ -429,6 +448,23 @@ pl: 'W całym okresie współpracy ARMAX MG wykazała się jako niezawodny produ
 
   },
   
+
+  'testimonials-10': {
+    ua: 'MEBLE-OKMED Demko Spółka Jawna',
+en: 'MEBLE-OKMED Demko General Partnership',
+de: 'MEBLE-OKMED Demko Offene Handelsgesellschaft',
+pl: 'MEBLE-OKMED Demko Spółka Jawna',
+
+  },
+
+  'testimonials-11': {
+    ua: 'Ми особливо цінуємо професійний підхід, високий рівень технічних компетенцій та гнучкість у адаптації до специфічних потреб нашого виробничого процесу.',
+en: 'We particularly value the professional approach, high level of technical expertise, and flexibility in adapting to the specific needs of our production process.',
+de: 'Wir schätzen besonders den professionellen Ansatz, das hohe Niveau an technischer Kompetenz sowie die Flexibilität bei der Anpassung an die spezifischen Anforderungen unseres Produktionsprozesses.',
+pl: 'Szczególnie cenimy profesjonalne podejście, wysoki poziom kompetencji technicznych oraz elastyczność w dostosowywaniu się do specyficznych potrzeb naszego procesu produkcyjnego.',
+
+  },
+
 
 
   'principles-page-1': {
@@ -505,10 +541,11 @@ pl: 'W całym okresie współpracy ARMAX MG wykazała się jako niezawodny produ
     pl: 'Elementy meblowe',
   },
   'wara_page-2-1': {
-    ua: 'Металеві опори та каркаси для стільців та ліжок',
-en: 'Metal supports and frames for chairs and beds',
-de: 'Metallstützen und Rahmen für Stühle und Betten',
-pl: 'Metalowe podpory i stelaże do krzeseł i łóżek',
+    ua: 'Металеві опори',
+en: 'Metal supports',
+de: 'Metallstützen',
+pl: 'Metalowe podpory',
+
 
   },
   'wara_page-3': {
@@ -544,16 +581,39 @@ pl: 'Okucia meblowe',
     pl: 'Projekty na zamówienie',
   },
   'wara_page-5-1': {
-    ua: 'Індивідуальні проекти та декоративні елементи',
+    ua: 'Індивідуальні проекти',
     en: 'Custom projects',
     de: 'Individuelle Projekte',
-    pl: 'Projekty na zamówienie i elementy dekoracyjne',
+    pl: 'Projekty na zamówienie',
   },
   'wara_page-6': {
     ua: 'Новини',
     en: 'News',
     de: 'Nachrichten',
     pl: 'Aktualności',
+  },
+
+  'wara_page-7': {
+    ua: 'Каркаси стільців',
+en: 'Chair frames',
+de: 'Stuhlgestelle',
+pl: 'Stelaże krzeseł',
+
+  },
+
+  'wara_page-8': {
+    ua: 'Вуличні меблі',
+en: 'Outdoor furniture',
+de: 'Gartenmöbel',
+pl: 'Meble ogrodowe',
+  },
+
+  'wara_page-9': {
+    ua: 'Меблева фурнітура',
+en: 'Furniture fittings',
+de: 'Möbelbeschläge',
+pl: 'Okucia meblowe',
+
   },
 
   'partners_page-1': {
@@ -618,10 +678,11 @@ pl: 'Okucia meblowe',
     pl: 'Menu',
   },
   'footer_page-2': {
-    ua: 'Послуги',
-    en: 'Services',
-    de: 'Dienstleistungen',
-    pl: 'Usługi',
+    ua: 'Виробництво',
+en: 'Production',
+de: 'Produktion',
+pl: 'Produkcja',
+
   },
   'footer_page-3': {
     ua: 'Про нас',
@@ -654,16 +715,18 @@ pl: 'Okucia meblowe',
     pl: 'Cięcie laserowe',
   },
   'footer_page-7': {
-    ua: 'Гнуття деталей',
-    en: 'Bending of parts',
-    de: 'Biegen von Teilen',
-    pl: 'Gięcie części',
+    ua: 'Гнуття металу',
+en: 'Metal bending',
+de: 'Metallbiegen',
+pl: 'Gięcie metalu',
+
   },
   'footer_page-7-1': {
-    ua: 'Гнуття деталей',
-    en: 'Bending of parts',
-    de: 'Biegen von Teilen',
-    pl: 'Gięcie części',
+    ua: 'Гнуття металу',
+en: 'Metal bending',
+de: 'Metallbiegen',
+pl: 'Gięcie metalu',
+
   },
   'footer_page-8': {
     ua: 'Порошкове фарбування',
@@ -2025,82 +2088,82 @@ pl: 'Okucia meblowe',
     pl: 'Artykuł:',
   },
   'article-1': {
-    ua: '1',
-    en: '1',
-    de: '1',
-    pl: '1',
+    ua: 'H-UN-JCB',
+    en: 'H-UN-JCB',
+    de: 'H-UN-JCB',
+    pl: 'H-UN-JCB',
   },
   'article-2': {
-    ua: '2',
-    en: '2',
-    de: '2',
-    pl: '2',
+    ua: 'K-TK-JCB',
+    en: 'K-TK-JCB',
+    de: 'K-TK-JCB',
+    pl: 'K-TK-JCB',
   },
   'article-3': {
-    ua: '3',
-    en: '3',
-    de: '3',
-    pl: '3',
+    ua: 'K-BEG-20-MAN',
+    en: 'K-BEG-20-MAN',
+    de: 'K-BEG-20-MAN',
+    pl: 'K-BEG-20-MAN',
   },
   'article-4': {
-    ua: '4',
-    en: '4',
-    de: '4',
-    pl: '4',
+    ua: 'K-ZR-24-JCB',
+    en: 'K-ZR-24-JCB',
+    de: 'K-ZR-24-JCB',
+    pl: 'K-ZR-24-JCB',
   },
   'article-5': {
-    ua: '5',
-    en: '5',
-    de: '5',
-    pl: '5',
+    ua: 'K-BD-15-JCB',
+    en: 'K-BD-15-JCB',
+    de: 'K-BD-15-JCB',
+    pl: 'K-BD-15-JCB',
   },
   'article-6': {
-    ua: '6',
-    en: '6',
-    de: '6',
-    pl: '6',
+    ua: 'K-SN-JCB',
+    en: 'K-SN-JCB',
+    de: 'K-SN-JCB',
+    pl: 'K-SN-JCB',
   },
   'article-7': {
-    ua: '7',
-    en: '7',
-    de: '7',
-    pl: '7',
+    ua: 'K-SL-JCB',
+    en: 'K-SL-JCB',
+    de: 'K-SL-JCB',
+    pl: 'K-SL-JCB',
   },
   'article-8': {
-    ua: '8',
-    en: '8',
-    de: '8',
-    pl: '8',
+    ua: 'K-UN-10-JCB',
+    en: 'K-UN-10-JCB',
+    de: 'K-UN-10-JCB',
+    pl: 'K-UN-10-JCB',
   },
   'article-9': {
-    ua: '9',
-    en: '9',
-    de: '9',
-    pl: '9',
+    ua: 'K-ZR-20-JCB',
+    en: 'K-ZR-20-JCB',
+    de: 'K-ZR-20-JCB',
+    pl: 'K-ZR-20-JCB',
   },
   'article-10': {
-    ua: '10',
-    en: '10',
-    de: '10',
-    pl: '10',
+    ua: 'K-UN-40-JCB',
+    en: 'K-UN-10-JCB',
+    de: 'K-UN-10-JCB',
+    pl: 'K-UN-10-JCB',
   },
   'article-exc-2-1': {
-    ua: 'exc',
-    en: 'exc',
-    de: 'exc',
-    pl: 'exc',
+    ua: 'K-EB-ST-30',
+    en: 'K-EB-ST-30',
+    de: 'K-EB-ST-30',
+    pl: 'K-EB-ST-30',
   },
   'article-exc-2-2': {
-    ua: 'exc2',
-    en: 'exc2',
-    de: 'exc2',
-    pl: 'exc2',
+    ua: 'K-EB-ST-40',
+    en: 'K-EB-ST-40',
+    de: 'K-EB-ST-40',
+    pl: 'K-EB-ST-40',
   },
   'article-exc-2-3': {
-    ua: 'exc3',
-    en: 'exc3',
-    de: 'exc3',
-    pl: 'exc3',
+    ua: 'K-EB-PL-10',
+    en: 'K-EB-PL-10',
+    de: 'K-EB-PL-10',
+    pl: 'K-EB-PL-10',
   },
   'card-text-1': {
     ua: 'Є в наявності',
@@ -2375,6 +2438,13 @@ pl: 'Okucia meblowe',
     de: 'Die 2400 Körnerschaufel ist ein landwirtschaftliches Gerät, das für den Umgang mit Getreidekulturen ausgelegt ist. Es wird normalerweise zum Laden, Bewegen und Entladen von Getreide verwendet.',
     pl: 'Łyżka 2400 do zboża to sprzęt rolniczy przeznaczony do pracy z uprawami zbożowymi. Zwykle stosowana jest do załadunku, transportu i rozładunku zboża.',
   },
+
+  'card-text-13-10': {
+    ua: 'Ківш-наповнювач для Біг Бегів — це високоефективне навісне обладнання, розроблене для швидкого та точного фасування сипучих матеріалів у м`які контейнери (Big Bag). Цей агрегат поєднує в собі функції звичайного навантажувального ковша та стаціонарного дозатора, що дозволяє суттєво оптимізувати логістичні процеси на підприємстві.',
+en: 'The Big Bag Filling Bucket is a highly efficient attachment designed for fast and accurate bagging of bulk materials into flexible intermediate bulk containers (Big Bags). This unit combines the functions of a standard loading bucket and a stationary dispenser, significantly optimizing logistics processes at the facility.',
+de: 'Die Big-Bag-Schaufel ist ein hocheffizientes Anbaugerät, das für das schnelle und präzise Abfüllen von Schüttgütern in flexible Container (Big Bags) entwickelt wurde. Dieses Gerät kombiniert die Funktionen einer herkömmlichen Ladeschaufel und eines stationären Dosierers, was die Logistikprozesse im Unternehmen erheblich optimiert.',
+pl: 'Łyżka do napełniania Big Bagów to wysoce wydajny osprzęt przeznaczony do szybkiego i precyzyjnego pakowania materiałów sypkich do miękkich kontenerów (Big Bag). Urządzenie to łączy w sobie funkcje standardowej łyżki załadowczej oraz stacjonarnego dozownika, co pozwala na znaczną optymalizację procesów logistycznych w przedsiębiorstwie.'
+  },
   'card-text-exc-13': {
     ua: 'Ківш екскаваторний Kubota CX - це навісне обладнання, розроблене для екскаваторів серії Kubota CX, призначене для виконання земляних робіт, таких як копання, розпушування, завантаження та переміщення ґрунту, піску і гравію. Виготовлений з високоякісної сталі, цей ківш забезпечує міцність і довговічність при важких навантаженнях. Він доступний у різних розмірах для виконання специфічних завдань і оптимізований для максимальної продуктивності. Ківш легко встановлюється на екскаватори Kubota CX, забезпечуючи надійну і ефективну роботу.',
     en: 'The Kubota CX excavator bucket is an attachment designed for Kubota CX series excavators, intended for earthmoving tasks such as digging, loosening, loading, and transporting soil, sand, and gravel. Made from high-quality steel, this bucket ensures strength and durability under heavy loads. It is available in various sizes to perform specific tasks and is optimized for maximum productivity. The bucket is easy to install on Kubota CX excavators, providing reliable and efficient operation.',
@@ -2393,6 +2463,8 @@ pl: 'Okucia meblowe',
     de: 'Der Planier-Baggerlöffel ist ein spezialisiertes Gerät für Bagger, das zum präzisen Nivellieren und Planieren von Oberflächen entwickelt wurde, wie zum Beispiel das Vorbereiten von Fundamenten für den Bau, das Erstellen von Landschaftselementen oder das Verlegen von Straßen. Er hat ein breites, flaches Design mit einer Schneidekante, die einen gleichmäßigen Schnitt von Erde und anderen Materialien gewährleistet. Der Löffel besteht aus hochwertigem Stahl, um Haltbarkeit und Abriebfestigkeit zu gewährleisten. Sein Design ermöglicht präzises und gleichmäßiges Arbeiten, was die Produktivität und Qualität der ausgeführten Aufgaben steigert.',
     pl: 'Łyżka do planowania koparkowa to specjalistyczny osprzęt do koparek, przeznaczony do precyzyjnego wyrównywania i planowania powierzchni, takich jak przygotowanie fundamentów pod budowę, tworzenie elementów krajobrazowych lub układanie dróg. Posiada szeroką, płaską konstrukcję z ostrzem tnącym, co zapewnia równomierne cięcie gleby i innych materiałów. Łyżka wykonana jest z wysokiej jakości stali, co zapewnia jej trwałość i odporność na zużycie. Dzięki swojej konstrukcji pozwala na precyzyjną i równomierną pracę, co zwiększa wydajność i jakość wykonywanych zadań.',
   },
+
+  
 
   'card-text-12': {
     ua: 'Опис:',
@@ -2429,10 +2501,10 @@ pl: 'Okucia meblowe',
   },
 
   'fe-article-1': {
-    ua: 'Артикул',
-    en: '',
-    de: '',
-    pl: 'Artykuł',
+    ua: 'DPOS03',
+    en: 'DPOS03',
+    de: 'DPOS03',
+    pl: 'DPOS03',
   },
 
   'fe-material': {
@@ -2471,7 +2543,7 @@ pl: 'Okucia meblowe',
   },
 
   'fe-name-2': {
-    ua: 'Опора стола "Панель',
+    ua: 'Опора стола "Панель"',
     en: 'Table support "Panel"',
     de: 'Tischstütze "Panel"',
     pl: 'Wspornik stołu "Panel"',
@@ -2485,10 +2557,10 @@ pl: 'Okucia meblowe',
   },
 
   'fe-article-2': {
-    ua: 'Артикул',
-    en: '',
-    de: '',
-    pl: 'Artykuł',
+    ua: 'EVO02',
+    en: 'EVO02',
+    de: 'EVO02',
+    pl: 'EVO02',
   },
 
   'fe-weight-2': {
@@ -2576,10 +2648,10 @@ pl: 'Okucia meblowe',
   },
 
   'fe-article-4': {
-    ua: 'Артикул',
-    en: '',
-    de: '',
-    pl: 'Artykuł',
+    ua: 'EVO03',
+    en: 'EVO03',
+    de: 'EVO03',
+    pl: 'EVO03',
   },
   'fe-weight-4': {
     ua: '16 кг',
@@ -2594,10 +2666,10 @@ pl: 'Okucia meblowe',
     pl: 'Cena na zapytanie',
   },
   'fe-description-4': {
-    ua: 'Опора стола "Х" має сучасний та індустріальний дизайн...',
-    en: 'The table support "X" features a modern and industrial design...',
-    de: 'Die Tischstütze "X" hat ein modernes und industrielles Design...',
-    pl: 'Wspornik stołu "X" charakteryzuje się nowoczesnym i przemysłowym designem...',
+    ua: 'Опора стола "Х" має сучасний та індустріальний дизайн',
+    en: 'The table support "X" features a modern and industrial design',
+    de: 'Die Tischstütze "X" hat ein modernes und industrielles Design',
+    pl: 'Wspornik stołu "X" charakteryzuje się nowoczesnym i przemysłowym designem',
   },
   'fe-name-5': {
     ua: 'Опора стола U DELTA',
@@ -2612,10 +2684,10 @@ pl: 'Okucia meblowe',
     pl: 'Wspornik stołu U DELTA',
   },
   'fe-article-5': {
-    ua: 'Артикул',
-    en: '',
-    de: '',
-    pl: 'Artykuł',
+    ua: 'ST-OS3',
+    en: 'ST-OS3',
+    de: 'ST-OS3',
+    pl: 'ST-OS3',
   },
   'fe-weight-5': {
     ua: '12 кг',
@@ -2648,10 +2720,10 @@ pl: 'Okucia meblowe',
     pl: 'Wspornik stołu 8x4 4x3',
   },
   'fe-article-6': {
-    ua: 'Артикул',
-    en: '',
-    de: '',
-    pl: 'Artykuł',
+    ua: 'STO46',
+    en: 'STO46',
+    de: 'STO46',
+    pl: 'STO46',
   },
   'fe-weight-6': {
     ua: '3 кг',
@@ -2684,10 +2756,10 @@ pl: 'Okucia meblowe',
     pl: 'Wspornik stołu T Ø550',
   },
   'fe-article-7': {
-    ua: 'Артикул',
-    en: '',
-    de: '',
-    pl: 'Artykuł',
+    ua: 'STO47',
+    en: 'STO47',
+    de: 'STO47',
+    pl: 'STO47',
   },
   'fe-weight-7': {
     ua: '19 кг',
@@ -2721,10 +2793,10 @@ pl: 'Okucia meblowe',
     pl: 'Wspornik stołu TT 820x550',
   },
   'fe-article-8': {
-    ua: 'Артикул',
-    en: '',
-    de: '',
-    pl: 'Artykuł',
+    ua: 'STO48',
+    en: 'STO48',
+    de: 'STO48',
+    pl: 'STO48',
   },
   'fe-weight-8': {
     ua: '25 кг',
@@ -2757,10 +2829,10 @@ pl: 'Okucia meblowe',
     pl: 'Wspornik stołu XXR',
   },
   'fe-article-9': {
-    ua: 'Артикул',
-    en: '',
-    de: '',
-    pl: 'Artykuł',
+    ua: 'ST-OS4',
+    en: 'ST-OS4',
+    de: 'ST-OS4',
+    pl: 'ST-OS4',
   },
   'fe-weight-9': {
     ua: '45 кг',
@@ -2793,10 +2865,10 @@ pl: 'Okucia meblowe',
     pl: 'Podstawa stołu UR',
   },
   'fe-article-10': {
-    ua: 'Артикул',
-    en: '',
-    de: '',
-    pl: 'Artykuł',
+    ua: 'ST-OS6',
+    en: 'ST-OS6',
+    de: 'ST-OS6',
+    pl: 'ST-OS6',
   },
   'fe-weight-10': {
     ua: '13 кг',
@@ -2833,10 +2905,10 @@ pl: 'Okucia meblowe',
   },
 
   'fe-article-11': {
-    ua: 'Артикул',
-    en: '',
-    de: '',
-    pl: 'Artykuł',
+    ua: 'ST-OS8',
+    en: 'ST-OS8',
+    de: 'ST-OS8',
+    pl: 'ST-OS8',
   },
   'fe-weight-11': {
     ua: '12 кг',
@@ -2874,10 +2946,10 @@ pl: 'Okucia meblowe',
   },
 
   'fe-article-12': {
-    ua: 'Артикул',
-    en: '',
-    de: '',
-    pl: 'Artykuł',
+    ua: 'ST-OS18',
+    en: 'ST-OS18',
+    de: 'ST-OS18',
+    pl: 'ST-OS18',
   },
   'fe-weight-12': {
     ua: '7 кг',
@@ -2915,10 +2987,10 @@ pl: 'Okucia meblowe',
   },
 
   'fe-article-13': {
-    ua: 'Артикул',
-    en: '',
-    de: '',
-    pl: 'Artykuł',
+    ua: 'ST-OS19',
+    en: 'ST-OS19',
+    de: 'ST-OS19',
+    pl: 'ST-OS19',
   },
   'fe-weight-13': {
     ua: '8 кг',
@@ -2953,10 +3025,10 @@ pl: 'Okucia meblowe',
   },
 
   'fe-article-14': {
-    ua: 'Артикул',
-    en: '',
-    de: '',
-    pl: 'Artykuł',
+    ua: 'ST-OS19',
+    en: 'ST-OS19',
+    de: 'ST-OS19',
+    pl: 'ST-OS19',
   },
   'fe-weight-14': {
     ua: '19 кг',
@@ -2991,10 +3063,10 @@ pl: 'Okucia meblowe',
   },
 
   'fe-article-15': {
-    ua: 'Артикул',
-    en: '',
-    de: '',
-    pl: 'Artykuł',
+    ua: 'STOS28',
+    en: 'STOS28',
+    de: 'STOS28',
+    pl: 'STOS28',
   },
   'fe-weight-15': {
     ua: '30 кг',
@@ -3029,10 +3101,10 @@ pl: 'Okucia meblowe',
   },
 
   'fe-article-16': {
-    ua: 'Артикул',
-    en: '',
-    de: '',
-    pl: 'Artykuł',
+    ua: 'STOS33',
+    en: 'STOS33',
+    de: 'STOS33',
+    pl: 'STOS33',
   },
 
   'fe-weight-16': {
@@ -3064,10 +3136,10 @@ pl: 'Okucia meblowe',
   },
 
   'fe-article-17': {
-    ua: 'Артикул',
-    en: 'Article',
-    de: 'Artikel',
-    pl: 'Artykuł',
+    ua: 'STOS36',
+    en: 'STOS36',
+    de: 'STOS36',
+    pl: 'STOS36',
   },
 
   'fe-weight-17': {
@@ -3102,10 +3174,10 @@ pl: 'Okucia meblowe',
     pl: 'Podstawa stołu XXS 73x75/3',
   },
   'fe-article-18': {
-    ua: 'Артикул',
-    en: 'Article',
-    de: 'Artikel',
-    pl: 'Artykuł',
+    ua: 'STOS38',
+    en: 'STOS38',
+    de: 'STOS38',
+    pl: 'STOS38',
   },
   'fe-weight-18': {
     ua: '10 кг',
@@ -3313,6 +3385,541 @@ pl: 'Okucia meblowe',
     de: 'Metallelemente verleihen dem Raum ein modernes, industrielles Aussehen, das zu verschiedenen Innenräumen passt, insbesondere im Loft-Stil.',
     pl: 'Metalowe detale nadają przestrzeni nowoczesny, industrialny wygląd, który pasuje do różnych wnętrz, szczególnie w stylu loftowym.',
   },
+  'cf-name-1': {
+    ua: 'PRO Seat Curve',
+    en: 'PRO Seat Curve',
+    de: 'PRO Seat Curve',
+    pl: 'PRO Seat Curve',
+  },
+  'cf-article-1': {
+    ua: 'CH-ARC-01',
+    en: 'CH-ARC-01',
+    de: 'CH-ARC-01',
+    pl: 'CH-ARC-01',
+  },
+  'cf-breadcrumbs-1': {
+    ua: 'CH-ARC-01',
+    en: 'CH-ARC-01',
+    de: 'CH-ARC-01',
+    pl: 'CH-ARC-01',
+  },
+'cf-сoating-name': {
+  ua: 'Покриття:',
+  en: 'Coating:',
+  de: 'Beschichtung:',
+  pl: 'Powłoka:',
+  },
+  'cf-сoating': {
+    ua: 'Порошкова фарба',
+    en: 'Powder paint',
+    de: 'Pulverlack',
+    pl: 'Farba proszkowa',
+  },
+
+  'cf-description-1': {
+    ua: 'Вишуканий стілець з плавними дугоподібними підлокітниками, що переходять у ніжки. Поєднання тонкого металевого каркаса та м’якої круглої подушки створює ефект легкості. Ідеально підходить для сучасних віталень, затишних кафе або як акцентний елемент у спальні.',
+en: 'An elegant chair with smooth arched armrests that flow into the legs. The combination of a slender metal frame and a soft round cushion creates a sense of lightness. Perfect for modern living rooms, cozy cafés, or as an accent piece in a bedroom.',
+de: 'Ein eleganter Stuhl mit sanft geschwungenen Armlehnen, die in die Beine übergehen. Die Kombination aus einem filigranen Metallgestell und einem weichen runden Kissen vermittelt ein Gefühl von Leichtigkeit. Ideal für moderne Wohnzimmer, gemütliche Cafés oder als Akzentmöbel im Schlafzimmer.',
+pl: 'Eleganckie krzesło z płynnymi, łukowymi podłokietnikami przechodzącymi w nogi. Połączenie smukłej metalowej konstrukcji z miękką, okrągłą poduszką tworzy efekt lekkości. Idealne do nowoczesnych salonów, przytulnych kawiarni lub jako element akcentowy w sypialni.',
+
+  },
+  'cf-name-2': {
+    ua: 'PRO Seat Classic Arm',
+    en: 'PRO Seat Classic Arm',
+    de: 'PRO Seat Classic Arm',
+    pl: 'PRO Seat Classic Arm',
+  },
+  'cf-article-2': {
+    ua: 'CH-S-LINE-02',
+    en: 'CH-S-LINE-02',
+    de: 'CH-S-LINE-02',
+    pl: 'CH-S-LINE-02',
+  },
+  'cf-description-2': {
+    ua: 'Ергономічна модель на консольній рамі (без задніх ніжок), що забезпечує легке пружиніння під час сидіння. Спинка прикрашена вертикальними лініями, що додає виробу офісної строгості. Найкращий вибір для переговорних кімнат, робочих кабінетів та зон очікування.',
+en: 'An ergonomic model on a cantilever frame (without rear legs) that provides gentle flex while sitting. The backrest is decorated with vertical lines, adding a sense of office formality. The best choice for meeting rooms, offices, and waiting areas.',
+de: 'Ein ergonomisches Modell auf einem Freischwingerrahmen (ohne hintere Beine), das beim Sitzen eine leichte Federung bietet. Die Rückenlehne ist mit vertikalen Linien verziert, die dem Produkt eine sachliche Büroästhetik verleihen. Die beste Wahl für Besprechungsräume, Arbeitsbüros und Wartebereiche.',
+pl: 'Ergonomiczny model na ramie wspornikowej (bez tylnych nóg), zapewniający lekką sprężystość podczas siedzenia. Oparcie ozdobione pionowymi liniami nadaje produktowi biurową elegancję. Najlepszy wybór do sal konferencyjnych, gabinetów oraz stref oczekiwania.',
+
+  },
+  'cf-name-3': {
+    ua: 'PRO Seat Soft Back',
+    en: 'PRO Seat Soft Back',
+    de: 'PRO Seat Soft Back',
+    pl: 'PRO Seat Soft Back',
+  },
+  'cf-article-3': {
+    ua: 'CH-MOD-03',
+    en: 'CH-MOD-03',
+    de: 'CH-MOD-03',
+    pl: 'CH-MOD-03',
+  },
+  'cf-description-3': {
+    ua: 'Комфортна модель з інтегрованими підлокітниками та м’якою ергономічною спинкою. Конструкція розроблена для тривалого сидіння, забезпечуючи надійну підтримку спини. Лаконічний дизайн дозволяє гармонійно вписати стілець у будь-який обідній гарнітур.',
+en: 'A comfortable model with integrated armrests and a soft ergonomic backrest. The design is intended for prolonged sitting, providing reliable back support. The minimalist design allows the chair to blend seamlessly into any dining set.',
+de: 'Ein komfortables Modell mit integrierten Armlehnen und einer weichen ergonomischen Rückenlehne. Die Konstruktion ist für längeres Sitzen ausgelegt und bietet zuverlässige Unterstützung für den Rücken. Das klare Design ermöglicht eine harmonische Integration des Stuhls in jede Essgruppe.',
+pl: 'Komfortowy model ze zintegrowanymi podłokietnikami oraz miękkim, ergonomicznym oparciem. Konstrukcja została zaprojektowana z myślą o długim siedzeniu, zapewniając solidne wsparcie dla pleców. Minimalistyczny design pozwala harmonijnie dopasować krzesło do każdego zestawu jadalnianego.',
+
+  },
+
+  'cf-name-4': {
+    ua: 'PRO Seat Minimal',
+    en: 'PRO Seat Minimal',
+    de: 'PRO Seat Minimal',
+    pl: 'PRO Seat Minimal',
+  },
+  'cf-article-4': {
+    ua: 'CH-SLM-04',
+    en: 'CH-SLM-04',
+    de: 'CH-SLM-04',
+    pl: 'CH-SLM-04',
+  },
+  'cf-description-4': {
+    ua: 'Ультратонкий та компактний стілець для тих, хто цінує вільний простір. Чотири стійкі ніжки та витончена спинка роблять його візуально майже невагомим. Відмінне рішення для невеликих кухонь, терас або фуд-кортів у стилі лофт.',
+en: 'An ultra-thin and compact chair for those who value open space. Four stable legs and a refined backrest make it visually almost weightless. An excellent solution for small kitchens, terraces, or loft-style food courts.',
+de: 'Ein ultradünner und kompakter Stuhl für alle, die freien Raum schätzen. Vier stabile Beine und eine elegante Rückenlehne lassen ihn optisch nahezu schwerelos wirken. Eine hervorragende Lösung für kleine Küchen, Terrassen oder Food-Courts im Loft-Stil.',
+pl: 'Ultracienkie i kompaktowe krzesło dla osób ceniących wolną przestrzeń. Cztery stabilne nogi oraz subtelne oparcie sprawiają, że wizualnie wydaje się niemal nieważkie. Doskonałe rozwiązanie do małych kuchni, na tarasy lub do food courtów w stylu loftowym.',
+
+  },
+  'cf-name-5': {
+    ua: 'PRO Seat Lounge Soft',
+    en: 'PRO Seat Lounge Soft',
+    de: 'PRO Seat Lounge Soft',
+    pl: 'PRO Seat Lounge Soft',
+  },
+  'cf-article-5': {
+    ua: 'CH-SFT-05',
+    en: 'CH-SFT-05',
+    de: 'CH-SFT-05',
+    pl: 'CH-SFT-05',
+  },
+  'cf-description-5': {
+    ua: 'Дизайнерське крісло для відпочинку, головною особливістю якого є м\'яка спинка-валик. Глибока посадка та об’ємна подушка сидіння гарантують максимальний релакс. Це справжній арт-об’єкт, який стане центром вашої лаунж-зони або вітальні.',
+    en: 'A designer lounge chair whose main feature is a soft cylindrical backrest. The deep seat and voluminous seat cushion guarantee maximum relaxation. It is a true art object that will become the centerpiece of your lounge area or living room.',
+    de: 'Ein дизайнерischer Relaxsessel, dessen Hauptmerkmal eine weiche, zylindrische Rückenlehne ist. Die tiefe Sitzfläche und das voluminöse Sitzkissen garantieren maximale Entspannung. Ein echtes Kunstobjekt, das zum Mittelpunkt Ihrer Lounge-Zone oder Ihres Wohnzimmers wird.',
+    pl: 'Designerski fotel wypoczynkowy, którego główną cechą jest miękkie oparcie w formie wałka. Głębokie siedzisko oraz obszerna poduszka siedziska gwarantują maksymalny relaks. To prawdziwy obiekt artystyczny, który stanie się centralnym elementem strefy lounge lub salonu.',
+    
+  },
+  'cf-name-6': {
+    ua: 'PRO Seat Cube',
+    en: 'PRO Seat Cube',
+    de: 'PRO Seat Cube',
+    pl: 'PRO Seat Cube',
+  },
+  'cf-article-6': {
+    ua: 'CH-KUB-06',
+    en: 'CH-KUB-06',
+    de: 'CH-KUB-06',
+    pl: 'CH-KUB-06',
+  },
+  'cf-description-6': {
+    ua: 'Масивне та надійне крісло в індустріальному стилі. Чіткі геометричні форми каркаса контрастують з м\'якими, затишними подушками. Конструкція основи створює ефект "підвішеного" сидіння, що додає моделі оригінальності.',
+en: 'A massive and reliable chair in an industrial style. The clear geometric shapes of the frame contrast with soft, cozy cushions. The base design creates a "suspended" seat effect, adding originality to the model.',
+de: 'Ein massiver und zuverlässiger Stuhl im Industrie-Stil. Die klaren geometrischen Formen des Gestells kontrastieren mit weichen, gemütlichen Kissen. Die Konstruktion der Basis erzeugt einen „schwebenden“ Sitzeffekt, der dem Modell Originalität verleiht.',
+pl: 'Masywny i solidny fotel w stylu industrialnym. Wyraźne geometryczne kształty ramy kontrastują z miękkimi, przytulnymi poduszkami. Konstrukcja podstawy tworzy efekt „zawieszonego” siedziska, co dodaje modelowi oryginalności.',
+
+  },
+  'cf-name-7': {
+    ua: 'PRO Seat Cube Open',
+    en: 'PRO Seat Cube Open',
+    de: 'PRO Seat Cube Open',
+    pl: 'PRO Seat Cube Open',
+  },
+  'cf-article-7': {
+    ua: 'CH-GEO-07',
+    en: 'CH-GEO-07',
+    de: 'CH-GEO-07',
+    pl: 'CH-GEO-07',
+  },
+  'cf-description-7': {
+    ua: 'Втілення архітектурної строгості. Каркас у формі ідеального куба виконаний з міцного металевого профілю. Модель виглядає дуже сучасно і "чисто", без зайвих деталей. Підходить для стильних офісів, коворкінгів та концептуальних інтер\'єрів.',
+en: 'An embodiment of architectural rigor. The frame, shaped as a perfect cube, is made from strong metal profiles. The model looks very modern and "clean," without unnecessary details. Suitable for stylish offices, coworking spaces, and conceptual interiors.',
+de: 'Die Verkörperung architektonischer Strenge. Der Rahmen in Form eines perfekten Würfels besteht aus robusten Metallprofilen. Das Modell wirkt sehr modern und „sauber“, ohne unnötige Details. Geeignet für stilvolle Büros, Coworking-Spaces und konzeptionelle Innenräume.',
+pl: 'Ucieleśnienie architektonicznej surowości. Rama w kształcie idealnej kostki wykonana jest z wytrzymałych profili metalowych. Model wygląda bardzo nowocześnie i „czysto”, bez zbędnych detali. Nadaje się do stylowych biur, przestrzeni coworkingowych oraz konceptualnych wnętrz.',
+
+  },
+  'cf-name-8': {
+    ua: 'PRO Seat Relax',
+    en: 'PRO Seat Relax',
+    de: 'PRO Seat Relax',
+    pl: 'PRO Seat Relax',
+  },
+  'cf-article-8': {
+    ua: 'CH-ANG-08',
+    en: 'CH-ANG-08',
+    de: 'CH-ANG-08',
+    pl: 'CH-ANG-08',
+  },
+  'cf-description-8': {
+    ua: 'Низьке крісло з ідеальним кутом нахилу для відпочинку. Тонкі, але міцні підлокітники та відкрита рама створюють динамічний силует. Це крісло створене для читання книг або неквапливої розмови за кавою.',
+en: 'A low chair with the perfect recline angle for relaxation. Thin yet sturdy armrests and an open frame create a dynamic silhouette. This chair is designed for reading books or leisurely coffee conversations.',
+de: 'Ein niedriger Stuhl mit dem perfekten Neigungswinkel zum Entspannen. Dünne, aber robuste Armlehnen und ein offener Rahmen erzeugen eine dynamische Silhouette. Dieser Stuhl ist zum Lesen von Büchern oder für entspannte Kaffeegespräche gedacht.',
+pl: 'Niskie krzesło z idealnym kątem nachylenia do odpoczynku. Cienkie, lecz wytrzymałe podłokietniki oraz otwarta rama tworzą dynamiczną sylwetkę. To krzesło stworzone jest do czytania książek lub spokojnych rozmów przy kawie.',
+
+  },
+  'cf-name-9': {
+    ua: 'PRO Seat Bistro',
+    en: 'PRO Seat Bistro',
+    de: 'PRO Seat Bistro',
+    pl: 'PRO Seat Bistro',
+  },
+  'cf-article-9': {
+    ua: 'CH-VRT-09',
+    en: 'CH-VRT-09',
+    de: 'CH-VRT-09',
+    pl: 'CH-VRT-09',
+  },
+  'cf-description-9': {
+    ua: 'Сучасне прочитання класичного стільця з вертикальними прутами на спинці. Висока спинка забезпечує відмінну підтримку, а закруглені кути рами пом\'якшують строгий металевий характер. Універсальна модель для дому та ресторанів.',
+en: 'A modern take on the classic chair with vertical rods on the backrest. The high back provides excellent support, and the rounded frame corners soften the strict metal character. A versatile model for homes and restaurants.',
+de: 'Eine moderne Interpretation des klassischen Stuhls mit vertikalen Stäben in der Rückenlehne. Die hohe Rückenlehne bietet hervorragende Unterstützung, und die abgerundeten Rahmenecken mildern den strengen Metallcharakter. Ein vielseitiges Modell für Zuhause und Restaurants.',
+pl: 'Nowoczesna interpretacja klasycznego krzesła z pionowymi prętami w oparciu. Wysokie oparcie zapewnia doskonałe wsparcie, a zaokrąglone narożniki ramy łagodzą surowy charakter metalu. Uniwersalny model do domu i restauracji.',
+
+  },
+  'cf-name-10': {
+    ua: 'PRO Seat Basic Back',
+    en: 'PRO Seat Basic Back',
+    de: 'PRO Seat Basic Back',
+    pl: 'PRO Seat Basic Back',
+  },
+  'cf-article-10': {
+    ua: 'CH-STD-10',
+    en: 'CH-STD-10',
+    de: 'CH-STD-10',
+    pl: 'CH-STD-10',
+  },
+  'cf-description-10': {
+    ua: 'Практичний та надійний стілець, натхненний естетикою навчальних закладів та студій. Прямокутна спинка та лаконічне сидіння роблять його зручним для щоденного використання. Міцний каркас витримає інтенсивні навантаження в громадських місцях.',
+en: 'A practical and reliable chair inspired by the aesthetics of educational institutions and studios. The rectangular backrest and minimalist seat make it comfortable for daily use. The sturdy frame can withstand heavy use in public spaces.',
+de: 'Ein praktischer und zuverlässiger Stuhl, inspiriert von der Ästhetik von Bildungseinrichtungen und Studios. Die rechteckige Rückenlehne und der schlichte Sitz machen ihn komfortabel für den täglichen Gebrauch. Der robuste Rahmen hält intensiver Nutzung in öffentlichen Bereichen stand.',
+pl: 'Praktyczne i niezawodne krzesło, inspirowane estetyką placówek edukacyjnych i studiów. Prostokątne oparcie i minimalistyczne siedzisko czynią je wygodnym do codziennego użytkowania. Solidna rama wytrzyma intensywne obciążenia w miejscach publicznych.',
+
+  },
+  'cf-name-11': {
+    ua: 'PRO Seat Bar',
+    en: 'PRO Seat Bar',
+    de: 'PRO Seat Bar',
+    pl: 'PRO Seat Bar',
+  },
+  'cf-article-11': {
+    ua: 'CH-BAR-11',
+    en: 'CH-BAR-11',
+    de: 'CH-BAR-11',
+    pl: 'CH-BAR-11',
+  },
+  'cf-description-11': {
+    ua: 'Елегантний барний стілець на високих ніжках зі спеціальною перекладиною для ніг. Отвір у верхній частині спинки служить не лише елементом дизайну, а й зручною ручкою для переміщення стільця. Ідеальний для барних стійок та високих столів.',
+en: 'An elegant bar stool with high legs and a dedicated footrest. The opening at the top of the backrest serves not only as a design element but also as a convenient handle for moving the chair. Ideal for bar counters and high tables.',
+de: 'Ein eleganter Barstuhl mit hohen Beinen und einer speziellen Fußstütze. Die Öffnung im oberen Bereich der Rückenlehne dient nicht nur als Designelement, sondern auch als praktischer Griff zum Bewegen des Stuhls. Ideal für Bartheken und hohe Tische.',
+pl: 'Elegancki stołek barowy na wysokich nogach ze specjalną poprzeczką na nogi. Otwór w górnej części oparcia pełni nie tylko funkcję designerską, ale także wygodnego uchwytu do przenoszenia krzesła. Idealny do lad barowych i wysokich stołów.',
+
+  },
+  'cf-name-12': {
+    ua: 'PRO Seat Bar Ring',
+    en: 'PRO Seat Bar Ring',
+    de: 'PRO Seat Bar Ring',
+    pl: 'PRO Seat Bar Ring',
+  },
+  'cf-article-12': {
+    ua: 'CH-BASE-12',
+    en: 'CH-BASE-12',
+    de: 'CH-BASE-12',
+    pl: 'CH-BASE-12',
+  },
+  'cf-description-12': {
+    ua: 'Базовий металевий каркас барного стільця з оригінальною геометрією основи. Це ідеальна заготовка для створення індивідуального дизайну — ви можете додати будь-яке сидіння на свій смак (дерев\'яне, м\'яке або пластикове). Стійка конструкція для професійного використання.',
+en: 'A basic metal frame for a bar stool with an original base geometry. It is an ideal base for creating a custom design — you can add any seat of your choice (wooden, upholstered, or plastic). A stable construction for professional use.',
+de: 'Ein grundlegendes Metallgestell für einen Barstuhl mit einer originellen Geometrie der Basis. Es ist die ideale Grundlage für ein individuelles Design — Sie können jeden Sitz nach Ihrem Geschmack hinzufügen (aus Holz, gepolstert oder aus Kunststoff). Eine stabile Konstruktion für den professionellen Einsatz.',
+pl: 'Podstawowa metalowa rama stołka barowego z oryginalną geometrią podstawy. To idealna baza do stworzenia indywidualnego projektu — możesz dodać dowolne siedzisko według własnego gustu (drewniane, tapicerowane lub plastikowe). Stabilna konstrukcja do użytku profesjonalnego.',
+
+  },
+'ff-name-1': {
+    ua: 'Bed Lift Mechanism',
+    en: 'Bed Lift Mechanism',
+    de: 'Bed Lift Mechanism',
+    pl: 'Bed Lift Mechanism',
+  },
+  'ff-article-1': {
+    ua: 'MF-LIFT-01',
+    en: 'MF-LIFT-01',
+    de: 'MF-LIFT-01',
+    pl: 'MF-LIFT-01',
+  },
+  'ff-description-1': {
+    ua: 'Надійний механізм для паралельного підйому основи ліжка або ніші дивана. Забезпечує плавний хід та стійку фіксацію у відкритому положенні. Виготовлений з високоміцної сталі з антикорозійним покриттям. Розрахований на роботу з потужними газовими амортизаторами.',
+en: 'A reliable mechanism for parallel lifting of a bed base or sofa storage compartment. It ensures smooth operation and stable fixation in the open position. Made of high-strength steel with an anti-corrosion coating. Designed to work with powerful gas springs.',
+de: 'Ein zuverlässiger Mechanismus für den parallelen Hub des Bettbodens oder des Stauraums eines Sofas. Er sorgt für einen sanften Lauf und eine stabile Fixierung in geöffneter Position. Hergestellt aus hochfestem Stahl mit Korrosionsschutzbeschichtung. Ausgelegt für den Einsatz mit leistungsstarken Gasdruckfedern.',
+pl: 'Niezawodny mechanizm do równoległego podnoszenia podstawy łóżka lub schowka w sofie. Zapewnia płynne działanie oraz stabilne mocowanie w pozycji otwartej. Wykonany z wysokowytrzymałej stali z powłoką antykorozyjną. Przystosowany do pracy z mocnymi siłownikami gazowymi.',
+
+  },
+  'ff-name-2': {
+    ua: 'Click-Clack Mechanism',
+    en: 'Click-Clack Mechanism',
+    de: 'Click-Clack Mechanism',
+    pl: 'Click-Clack Mechanism',
+  },
+  'ff-article-2': {
+    ua: 'MF-TRNS-02',
+    en: 'MF-TRNS-02',
+    de: 'MF-TRNS-02',
+    pl: 'MF-TRNS-02',
+  },
+  'ff-description-2': {
+    ua: 'Складний багатопозиційний механізм для трансформації диванів та крісел. Дозволяє змінювати кут нахилу спинки або трансформувати меблі у спальне місце. Відрізняється підвищеною зносостійкістю вузлів тертя та точністю роботи важелів.',
+    en: 'A complex multi-position mechanism for transforming sofas and armchairs. It allows changing the backrest angle or converting the furniture into a sleeping surface. It features increased wear resistance of friction components and precise lever operation.',
+    de: 'Ein komplexer Mehrpositionsmechanismus zur Verwandlung von Sofas und Sesseln. Er ermöglicht die Veränderung des Neigungswinkels der Rückenlehne oder die Umwandlung der Möbel in eine Liegefläche. Er zeichnet sich durch eine erhöhte Verschleißfestigkeit der Reibungselemente und eine präzise Hebelmechanik aus.',
+    pl: 'Złożony, wielopozycyjny mechanizm do transformacji sof i foteli. Umożliwia zmianę kąta nachylenia oparcia lub przekształcenie mebla w miejsce do spania. Charakteryzuje się zwiększoną odpornością na zużycie elementów tarcia oraz precyzją działania dźwigni.',
+    
+  },
+  'ff-name-3': {
+    ua: 'Universal Sofa Lift Mechanism',
+    en: 'Universal Sofa Lift Mechanism',
+    de: 'Universal Sofa Lift Mechanism',
+    pl: 'Universal Sofa Lift Mechanism',
+  },
+  'ff-article-3': {
+    ua: 'MF-LIFT-03',
+    en: 'MF-LIFT-03',
+    de: 'MF-LIFT-03',
+    pl: 'MF-LIFT-03',
+  },
+  'ff-description-3': {
+    ua: 'Компактний підйомник трикутного типу для доступу до білизняних ящиків. Проста і надійна конструкція забезпечує легкий монтаж. Оптимальне рішення для меблів середнього розміру та дитячих ліжок.',
+en: 'A compact triangular-type lift for accessing storage compartments. The simple and reliable design ensures easy installation. An optimal solution for medium-sized furniture and children’s beds.',
+de: 'Ein kompakter Hubmechanismus in Dreiecksform für den Zugang zu Bettkästen. Die einfache und zuverlässige Konstruktion ermöglicht eine leichte Montage. Eine optimale Lösung für Möbel mittlerer Größe und Kinderbetten.',
+pl: 'Kompaktowy podnośnik typu trójkątnego umożliwiający dostęp do pojemników na pościel. Prosta i niezawodna konstrukcja zapewnia łatwy montaż. Optymalne rozwiązanie do mebli średniej wielkości oraz łóżek dziecięcych.',
+
+  },
+  'ff-name-4': {
+    ua: 'U-Shaped Furniture Leg',
+    en: 'U-Shaped Furniture Leg',
+    de: 'U-Shaped Furniture Leg',
+    pl: 'U-Shaped Furniture Leg',
+  },
+  'ff-article-4': {
+    ua: 'MF-LEG-U04',
+    en: 'MF-LEG-U04',
+    de: 'MF-LEG-U04',
+    pl: 'MF-LEG-U04',
+  },
+  'ff-description-4': {
+    ua: 'Стильна П-подібна ніжка з металевого профілю. Ідеально підходить для тумб, комодів та м’яких меблів у стилі Loft. Посилена монтажна пластина гарантує стійкість конструкції навіть при значних навантаженнях.',
+en: 'A stylish U-shaped leg made of metal profile. Perfect for cabinets, dressers, and upholstered furniture in a Loft style. The reinforced mounting plate guarantees structural stability even under heavy loads.',
+de: 'Ein stilvolles U-förmiges Bein aus Metallprofil. Ideal für Schränke, Kommoden und Polstermöbel im Loft-Stil. Die verstärkte Montageplatte garantiert Stabilität der Konstruktion auch bei hohen Belastungen.',
+pl: 'Stylowa noga w kształcie litery U wykonana z profilu metalowego. Idealna do szafek, komód oraz mebli tapicerowanych w stylu loftowym. Wzmocniona płytka montażowa gwarantuje stabilność konstrukcji nawet przy dużych obciążeniach.',
+
+  },
+  'ff-name-5': {
+    ua: 'Modern L-Shaped Sofa Leg',
+    en: 'Modern L-Shaped Sofa Leg',
+    de: 'Modern L-Shaped Sofa Leg',
+    pl: 'Modern L-Shaped Sofa Leg',
+  },
+  'ff-article-5': {
+    ua: 'MF-LEG-A05',
+    en: 'MF-LEG-A05',
+    de: 'MF-LEG-A05',
+    pl: 'MF-LEG-A05',
+  },
+  'ff-description-5': {
+    ua: 'Витончена кутова опора зі складним геометричним профілем. Завдяки звуженій донизу формі додає меблям візуальної легкості. Виконана з листової сталі методом точного згину. Порошкове фарбування забезпечує ідеальний вигляд на роки.',
+en: 'A refined corner leg with a complex geometric profile. Its tapered shape toward the bottom adds visual lightness to the furniture. Made from sheet steel using precision bending. Powder coating ensures a flawless appearance for years.',
+de: 'Ein filigranes Eckbein mit einem komplexen geometrischen Profil. Die nach unten verjüngte Form verleiht den Möbeln visuelle Leichtigkeit. Hergestellt aus Stahlblech durch präzises Biegen. Die Pulverbeschichtung sorgt für ein perfektes Erscheinungsbild über viele Jahre.',
+pl: 'Smukła narożna noga o złożonym profilu geometrycznym. Zwężająca się ku dołowi forma dodaje meblom wizualnej lekkości. Wykonana z blachy stalowej metodą precyzyjnego gięcia. Malowanie proszkowe zapewnia idealny wygląd przez lata.',
+
+  },
+  'ff-name-7': {
+    ua: 'Adjustable Ratchet Headrest Mechanism',
+    en: 'Adjustable Ratchet Headrest Mechanism',
+    de: 'Adjustable Ratchet Headrest Mechanism',
+    pl: 'Adjustable Ratchet Headrest Mechanism',
+  },
+  'ff-article-7': {
+    ua: 'MF-HNG-07',
+    en: 'MF-HNG-07',
+    de: 'MF-HNG-07',
+    pl: 'MF-HNG-07',
+  },
+  'ff-description-7': {
+    ua: 'Механізм типу "ножиці" для прихованого монтажу або складних вузлів меблів. Використовується для відкидних елементів, де потрібна жорстка фіксація та компактність у складеному стані. Оцинкована поверхня захищає від вологи.',
+en: 'A scissor-type mechanism for concealed installation or complex furniture assemblies. Used for folding elements where rigid fixation and compactness in the folded position are required. The galvanized surface protects against moisture.',
+de: 'Ein Scherenmechanismus für die verdeckte Montage oder komplexe Möbelkonstruktionen. Wird für klappbare Elemente eingesetzt, bei denen eine starre Fixierung und Kompaktheit im zusammengeklappten Zustand erforderlich sind. Die verzinkte Oberfläche schützt vor Feuchtigkeit.',
+pl: 'Mechanizm typu „nożyce” do ukrytego montażu lub złożonych węzłów meblowych. Stosowany do elementów uchylnych, gdzie wymagana jest sztywna blokada i kompaktowość w stanie złożonym. Ocynkowana powierzchnia chroni przed wilgocią.',
+
+    
+  },
+  'ff-name-8': {
+    ua: 'U-Shaped Folding Frame Hinge',
+    en: 'U-Shaped Folding Frame Hinge',
+    de: 'U-Shaped Folding Frame Hinge',
+    pl: 'U-Shaped Folding Frame Hinge',
+  },
+  'ff-article-8': {
+    ua: 'MF-BRKT-08',
+    en: 'MF-BRKT-08',
+    de: 'MF-BRKT-08',
+    pl: 'MF-BRKT-08',
+  },
+  'ff-description-8': {
+    ua: 'Сполучна фурнітура для монтажу несучих елементів меблів. Висока точність перфорації отворів дозволяє швидко та надійно з’єднати деталі каркаса. Витримує великі статичні навантаження.',
+en: 'Connecting hardware for mounting load-bearing furniture elements. High-precision hole perforation allows quick and reliable joining of frame components. Withstands heavy static loads.',
+de: 'Verbindungsbeschläge für die Montage tragender Möbelelemente. Die hohe Präzision der Lochperforation ermöglicht ein schnelles und zuverlässiges Verbinden der Rahmenteile. Hält hohen statischen Belastungen stand.',
+pl: 'Okucia łączące do montażu elementów nośnych mebli. Wysoka precyzja perforacji otworów umożliwia szybkie i niezawodne łączenie elementów konstrukcji. Wytrzymuje duże obciążenia statyczne.',
+
+  },
+  'ff-name-9': {
+    ua: 'Sofa Bed Pull-Out Release Handle',
+    en: 'Sofa Bed Pull-Out Release Handle',
+    de: 'Sofa Bed Pull-Out Release Handle',
+    pl: 'Sofa Bed Pull-Out Release Handle',
+  },
+  'ff-article-9': {
+    ua: 'MF-LCK-09',
+    en: 'MF-LCK-09',
+    de: 'MF-LCK-09',
+    pl: 'MF-LCK-09',
+  },
+  'ff-description-9': {
+    ua: 'Фіксатор із пружинним механізмом для швидкого замикання кришок, люків або знімних панелей меблів. Ергономічна ручка забезпечує зручне відкривання одним рухом. Часто використовується в офісних меблях та спеціалізованому обладнанні.',
+en: 'A spring-loaded latch for quick locking of lids, hatches, or removable furniture panels. The ergonomic handle allows easy one-motion opening. Commonly used in office furniture and specialized equipment.',
+de: 'Ein federbelasteter Verschlussmechanismus zum schnellen Verriegeln von Deckeln, Klappen oder abnehmbaren Möbelplatten. Der ergonomische Griff ermöglicht einfaches Öffnen mit einer Bewegung. Häufig verwendet in Büromöbeln und Spezialausrüstungen.',
+pl: 'Zatrzask z mechanizmem sprężynowym do szybkiego zamykania pokryw, klap lub zdejmowanych paneli meblowych. Ergonomiczna rączka umożliwia wygodne otwieranie jednym ruchem. Często stosowany w meblach biurowych i specjalistycznym wyposażeniu.',
+
+  },
+  'ff-name-10': {
+    ua: 'Heavy-Duty Sofa Frame Hinge',
+    en: 'Heavy-Duty Sofa Frame Hinge',
+    de: 'Heavy-Duty Sofa Frame Hinge',
+    pl: 'Heavy-Duty Sofa Frame Hinge',
+  },
+  'ff-article-10': {
+    ua: 'MF-HNG-10',
+    en: 'MF-HNG-10',
+    de: 'MF-HNG-10',
+    pl: 'MF-HNG-10',
+  },
+  'ff-description-10': {
+    ua: 'Класична петля з потовщеними стінками для важких меблевих фасадів та відкидних кришок. Багатосекційний шарнір забезпечує відсутність люфтів та плавність ходу протягом усього терміну експлуатації.',
+en: 'A classic hinge with reinforced walls for heavy furniture fronts and flip-top lids. The multi-section hinge ensures no play and smooth movement throughout its service life.',
+de: 'Ein klassisches Scharnier mit verstärkten Wänden für schwere Möbelfronten und Klappdeckel. Das mehrteilige Scharnier gewährleistet Spielfreiheit und gleichmäßige Bewegung über die gesamte Lebensdauer.',
+pl: 'Klasyczne zawiasy z pogrubionymi ściankami do ciężkich frontów meblowych i klap. Wielosekcyjny zawias zapewnia brak luzów i płynność ruchu przez cały okres użytkowania.',
+
+  },
+  'of-name-1': {
+    ua: 'ARMO',
+    en: 'ARMO',
+    de: 'ARMO',
+    pl: 'ARMO',
+  },
+  'of-article-1': {
+    ua: 'SF-BNCH-01',
+    en: 'SF-BNCH-01',
+    de: 'SF-BNCH-01',
+    pl: 'SF-BNCH-01',
+  },
+  'of-description-1': {
+    ua: 'Сучасна вулична лава в стилі мінімалізму. Масивні металеві боковини з порошковим покриттям забезпечують стійкість до вандалізму та корозії. Сидіння виконане з товстого дерев\'яного бруса, обробленого захисною лазур\'ю для роботи в будь-яких погодних умовах. Ідеально підходить для парків, скверів та вхідних груп ТРЦ.',
+en: 'A modern outdoor bench in a minimalist style. Massive metal side supports with powder coating provide resistance to vandalism and corrosion. The seat is made of thick wooden beams treated with protective glaze for use in all weather conditions. Ideal for parks, squares, and shopping mall entrance areas.',
+de: 'Eine moderne Outdoor-Bank im minimalistischen Stil. Massive Metallseiten mit Pulverbeschichtung bieten Widerstand gegen Vandalismus und Korrosion. Die Sitzfläche besteht aus dicken Holzbalken, die mit einer schützenden Lasur für den Einsatz bei allen Wetterbedingungen behandelt sind. Ideal für Parks, Plätze und Eingangsbereiche von Einkaufszentren.',
+pl: 'Nowoczesna ławka zewnętrzna w stylu minimalistycznym. Masywne metalowe boki z powłoką proszkową zapewniają odporność na wandalizm i korozję. Siedzisko wykonane jest z grubych drewnianych belek zabezpieczonych lazurą ochronną do użytkowania w każdych warunkach pogodowych. Idealna do parków, skwerów oraz stref wejściowych centrów handlowych.',
+
+  },
+  'of-name-2': {
+    ua: 'FORZA',
+    en: 'FORZA',
+    de: 'FORZA',
+    pl: 'FORZA',
+  },
+  'of-article-2': {
+    ua: 'SF-TBL-02',
+    en: 'SF-TBL-02',
+    de: 'SF-TBL-02',
+    pl: 'SF-TBL-02',
+  },
+  'of-description-2': {
+    ua: 'Високий вуличний стіл з перфорованою металевою стільницею. Кругла стільниця не затримує воду, що робить його ідеальним для літніх терас та фуд-кортів просто неба. Стійка центральна опора з широкою основою гарантує стабільність навіть на нерівних поверхнях.',
+en: 'A tall outdoor table with a perforated metal tabletop. The round surface does not retain water, making it ideal for summer terraces and open-air food courts. A sturdy central pedestal with a wide base ensures stability even on uneven surfaces.',
+de: 'Ein hoher Outdoor-Tisch mit perforierter Metalltischplatte. Die runde Tischplatte hält kein Wasser zurück und ist somit ideal für Sommerterrassen und Open-Air-Foodcourts. Ein stabiler Zentralfuß mit breiter Basis sorgt für sicheren Stand auch auf unebenen Flächen.',
+pl: 'Wysoki stół zewnętrzny z perforowanym metalowym blatem. Okrągły blat nie zatrzymuje wody, co czyni go idealnym rozwiązaniem na letnie tarasy i food courty na świeżym powietrzu. Stabilna centralna noga z szeroką podstawą zapewnia pewność nawet na nierównym podłożu.',
+
+  },
+  'of-name-3': {
+    ua: 'URBIX LINE',
+    en: 'URBIX LINE',
+    de: 'URBIX LINE',
+    pl: 'URBIX LINE',
+  },
+  'of-article-3': {
+    ua: 'SF-SET-03',
+    en: 'SF-SET-03',
+    de: 'SF-SET-03',
+    pl: 'SF-SET-03',
+  },
+  'of-description-3': {
+    ua: 'Цілісна антивандальна конструкція, що обʼєднує круглий стіл та чотири сидіння. Зигзагоподібна рама з металевого профілю додає динаміки дизайну. Поєднання дерева та металу створює затишну зону для відпочинку в кампусах університетів, парках або на заправках.',
+en: 'A solid anti-vandal structure combining a round table and four seats. The zigzag-shaped metal frame adds a dynamic touch to the design. The combination of wood and metal creates a comfortable outdoor seating area for university campuses, parks, or gas stations.',
+de: 'Eine massive vandalismussichere Konstruktion, die einen runden Tisch und vier Sitzplätze vereint. Der zickzackförmige Rahmen aus Metallprofil verleiht dem Design Dynamik. Die Kombination aus Holz und Metall schafft einen gemütlichen Ruhebereich für Universitätscampusse, Parks oder Tankstellen.',
+pl: 'Solidna konstrukcja antywandalowa łącząca okrągły stół i cztery siedziska. Zygzakowata rama z profilu metalowego nadaje projektowi dynamiki. Połączenie drewna i metalu tworzy komfortową strefę wypoczynku na kampusach uniwersyteckich, w parkach lub na stacjach benzynowych.',
+
+  },
+  'of-name-4': {
+    ua: 'URBIX',
+    en: 'URBIX',
+    de: 'URBIX',
+    pl: 'URBIX',
+  },
+  'of-article-4': {
+    ua: 'SF-SET-04',
+    en: 'SF-SET-04',
+    de: 'SF-SET-04',
+    pl: 'SF-SET-04',
+  },
+  'of-description-4': {
+    ua: 'Класичний стіл для пікніка з двома лавами на єдиному металевому каркасі. Традиційна форма в сучасному виконанні. Завдяки цілісній конструкції набір не потребує анкерного кріплення (його важко перемістити без спецзасобів), але передбачає таку можливість. Оптимальний вибір для зон барбекю та прибудинкових територій.',
+en: 'A classic picnic table with two benches on a single metal frame. A traditional form in a modern interpretation. Thanks to the solid construction, the set does not require anchoring (it is difficult to move without special equipment), but this option is предусмотрена. An optimal choice for barbecue areas and residential surroundings.',
+de: 'Ein klassischer Picknicktisch mit zwei Bänken auf einem gemeinsamen Metallrahmen. Traditionelle Form in moderner Ausführung. Dank der massiven Konstruktion ist keine Verankerung erforderlich (ohne Spezialausrüstung schwer zu versetzen), diese Option ist jedoch vorgesehen. Eine optimale Wahl für Grillplätze und wohnungsnahe Außenbereiche.',
+pl: 'Klasyczny stół piknikowy z dwiema ławkami na wspólnej metalowej ramie. Tradycyjna forma w nowoczesnym wydaniu. Dzięki solidnej konstrukcji zestaw nie wymaga kotwienia (trudny do przestawienia bez specjalistycznego sprzętu), choć taka możliwość jest przewidziana. Optymalny wybór do stref grillowych oraz terenów przydomowych.',
+
+  },
+
+  'of-name-5': {
+    ua: 'FORZA LINE',
+    en: 'FORZA LINE',
+    de: 'FORZA LINE',
+    pl: 'FORZA LINE',
+  },
+  'of-article-5': {
+    ua: 'SF-TBL-05',
+    en: 'SF-TBL-05',
+    de: 'SF-TBL-05',
+    pl: 'SF-TBL-05',
+  },
+  'of-description-5': {
+    ua: 'Елегантний вуличний стіл для кавʼярень та терас. Поєднує в собі тонку металеву триногу та стільницю з натурального дерева (або HPL-панелі). Дизайн підкреслює легкість простору, залишаючись при цьому міцним та довговічним виробом.',
+en: 'An elegant outdoor table for cafés and terraces. It combines a slim metal tripod base with a tabletop made of natural wood (or an HPL panel). The design emphasizes visual lightness while remaining a strong and durable product.',
+de: 'Ein eleganter Outdoor-Tisch für Cafés und Terrassen. Er vereint ein schlankes Metall-Dreibeingestell mit einer Tischplatte aus Naturholz (oder HPL-Platte). Das Design unterstreicht die Leichtigkeit des Raumes und bleibt dabei robust und langlebig.',
+pl: 'Elegancki stół zewnętrzny do kawiarni i na tarasy. Łączy smukłą metalową trójnogą podstawę z blatem z naturalnego drewna (lub płyty HPL). Design podkreśla lekkość przestrzeni, zachowując jednocześnie trwałość i solidność produktu.',
+
+  },
+  'of-name-6': {
+    ua: 'URBOX',
+    en: 'URBOX',
+    de: 'URBOX',
+    pl: 'URBOX',
+  },
+  'of-article-6': {
+    ua: 'SF-BIN-06',
+    en: 'SF-BIN-06',
+    de: 'SF-BIN-06',
+    pl: 'SF-BIN-06',
+  },
+  'of-description-6': {
+    ua: 'Дизайнерська металева урна з похилим дашком, що захищає від опадів та роздування сміття вітром. Лаконічний чорний корпус з антикорозійним покриттям робить її непомітною, але функціональною частиною міського пейзажу. Передбачена зручна система очищення та кріплення до поверхні.',
+en: 'A designer metal litter bin with a sloped canopy that protects against precipitation and prevents waste from being blown away by the wind. The minimalist black body with an anti-corrosion coating makes it a discreet yet functional element of the urban landscape. Equipped with a convenient cleaning system and surface mounting option.',
+de: 'Ein Designer-Metallabfallbehälter mit schrägem Dach, das vor Niederschlag schützt und das Verwehen von Abfällen durch den Wind verhindert. Das schlichte schwarze Gehäuse mit Korrosionsschutzbeschichtung macht ihn zu einem unauffälligen, aber funktionalen Bestandteil des Stadtbildes. Mit praktischem Entleerungssystem und Möglichkeit zur Bodenbefestigung.',
+pl: 'Designerski metalowy kosz na śmieci ze skośnym daszkiem, który chroni przed opadami i zapobiega rozwiewaniu odpadów przez wiatr. Lakoniczny czarny korpus z powłoką antykorozyjną sprawia, że jest dyskretnym, a jednocześnie funkcjonalnym elementem miejskiego krajobrazu. Wyposażony w wygodny system opróżniania oraz możliwość mocowania do podłoża.',
+
+  },
 };
 
 // Перевіряємо шлях сторінки і задаємо текстові змінні
@@ -3330,17 +3937,19 @@ checkPagePathName();
 
 // Функція для зміни мови
 function changeLang() {
-  checkPagePathName(); // Оновлення поточного тексту залежно від шляху сторінки
+  checkPagePathName();
+
   for (const key in currentText) {
-    const elem = document.querySelector(`[data-lang=${key}]`);
-    if (elem) {
+    const elems = document.querySelectorAll(`[data-lang="${key}"]`);
+
+    elems.forEach(elem => {
       if (elem.tagName === 'INPUT') {
         elem.placeholder = currentText[key][currentLang];
-        elem.value = currentText[key][currentLang]; // Додано для зміни значення інпута
+        elem.value = currentText[key][currentLang];
       } else {
         elem.textContent = currentText[key][currentLang];
       }
-    }
+    });
   }
 }
 changeLang();

@@ -14,24 +14,24 @@
 .testimonials__container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+  gap: 10px;
   margin-top: 40px;
 
   @include mq($from: tablet) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 20px;
   }
 
   @include mq($from: desktop) {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
   }
 }
 
 .testimonials__card {
   background-color: #ffffff;
   border-radius: 15px;
-  padding: 30px;
+  padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
@@ -43,11 +43,11 @@
   }
 
   @include mq($from: tablet) {
-    padding: 35px;
+    padding: 20px;
   }
 
   @include mq($from: desktop) {
-    padding: 40px;
+    padding: 15px;
   }
 }
 

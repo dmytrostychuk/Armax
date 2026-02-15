@@ -1,13 +1,31 @@
 .breadcrumbs {
   margin-top: 20px;
   margin-bottom: 20px;
-  overflow-y: auto;
+  overflow-x: auto; /* Змінено на горизонтальний скрол */
   white-space: nowrap;
+  
+  /* Для Firefox: колір повзунка та колір фону (прозорий) */
+  scrollbar-width: thin;
+  scrollbar-color: #d3d3d3 transparent; 
+}
+
+/* Для Chrome, Safari та Edge */
+.breadcrumbs::-webkit-scrollbar {
+  height: 6px; /* Висота горизонтального скролу */
+}
+
+.breadcrumbs::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3; /* Світло-сірий колір повзунка */
+  border-radius: 10px;       /* Закруглення */
+}
+
+.breadcrumbs::-webkit-scrollbar-track {
+  background: transparent;   /* Фон доріжки залишаємо прозорим */
 }
 
 .breadcrumbs__list {
   display: flex;
-  padding-bottom: 20px;
+  padding-bottom: 10px; /* Трохи зменшив відступ, щоб скрол був ближче */
   align-items: center;
   list-style: none;
   letter-spacing: 1.5px;
@@ -20,8 +38,14 @@
   span {
     color: #0000008e;
     font-weight: 600;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #d1a954;
   }
+
+  
 }
+
+/* Інша частина вашого коду без змін... */
 .breadcrumbs__item {
   text-align: center;
   font-size: 14px;
@@ -31,13 +55,8 @@
 
   &::after {
     content: '/';
-    margin: 0;
     margin: 0 5px;
     font-size: 12px;
-
-    @include mq($from: tablet-wide) {
-      margin: 0 10px;
-    }
   }
 
   &:last-child::after {
@@ -47,12 +66,5 @@
   &:hover a {
     border-bottom: 2px solid #d1a954;
     padding-bottom: 3px;
-  }
-}
-
-.breadcrumbs__list span {
-  color: rgba(0, 0, 0, 0.5568627451);
-  font-weight: 600;
-  padding-bottom: 3px;
-  border-bottom: 2px solid #d1a954;
+    }
 }
