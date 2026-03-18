@@ -827,6 +827,78 @@ label {
   position: relative;
 }
 
+/* Header Content Styles */
+.header__content--container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header__content {
+  z-index: 1;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  margin-top: 15vh;
+}
+
+.header__content-product {
+  line-height: 1.5;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.header__inner {
+  padding: 20px 15px;
+  border-radius: 20px;
+}
+
+.header__content-title {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10vh;
+  text-align: center;
+  letter-spacing: 0.05em;
+  line-height: 130%;
+  font-size: 4.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.header__content-title::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 3px;
+  background-color: #d1a954;
+  opacity: 0.4;
+}
+
+.header__content-subtitle {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.header__content-text {
+  text-align: center;
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.header__container-text {
+  padding: 15px;
+}
+
+.header__wrapper {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(51, 51, 51, 0.65);
+  margin-top: 100px;
+}
+
 .burger-btn {
   position: relative;
   width: 30px;
@@ -1127,77 +1199,6 @@ label {
     opacity: 0;
   }
 }
-.header__content--container {
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-
-.header__content {
-  z-index: 1;
-  padding: 0 20px;
-  margin-bottom: 30px;
-  margin-top: 15vh;
-}
-
-.header__content-product {
-  line-height: 1.5;
-  max-width: 100%;
-  z-index: 1;
-}
-
-.header__inner {
-  padding: 20px 15px;
-  border-radius: 20px;
-}
-
-.header__content-title {
-  position: relative;
-  margin: 0 auto;
-  margin-top: 10vh;
-  text-align: center;
-  letter-spacing: 0.05em;
-  line-height: 130%;
-  font-size: 4.5em;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.header__content-title::after {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 30%;
-  height: 3px;
-  background-color: #d1a954;
-  opacity: 0.4;
-}
-
-.header__content-subtitle {
-  font-weight: 500;
-  font-size: 22px;
-}
-
-.header__content-text {
-  text-align: center;
-  line-height: 1.6em;
-  letter-spacing: 0.1em;
-  font-size: 22px;
-  font-weight: 400;
-}
-
-.header__container-text {
-  padding: 15px;
-}
-
-.header__wrapper {
-  position: relative;
-  z-index: 1;
-  background-color: rgba(51, 51, 51, 0.65);
-  margin-top: 100px;
-}
-
 .link-hover {
   position: relative;
   padding-bottom: 8px;
@@ -1843,7 +1844,7 @@ picture {
 
 .about-us__title-hello {
   font-size: 35px;
-  font-weight: 500;
+  font-weight: 700;
   margin: 30px 0;
 }
 
@@ -2468,6 +2469,7 @@ textarea.form__input {
   transition: all 0.35s ease-in-out 0s;
   display: flex;
   margin-bottom: 15px;
+  height: 300px;
 }
 .news__blok svg {
   fill: #404044;
@@ -2504,6 +2506,7 @@ textarea.form__input {
 }
 .news__img .news__img--img {
   object-fit: contain;
+  height: 100%;
 }
 
 .news__content {
@@ -4277,6 +4280,10 @@ textarea.form__input {
   .header {
     height: 700px;
   }
+  .header__content-text {
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
   .burger-btn {
     width: 40px;
     height: 20px;
@@ -4333,10 +4340,6 @@ textarea.form__input {
   }
   .menu-product {
     margin-bottom: 10px;
-  }
-  .header__content-text {
-    font-size: 24px;
-    padding-bottom: 30px;
   }
   .services__img {
     height: 170px;
@@ -4581,40 +4584,6 @@ textarea.form__input {
   .index-video {
     object-fit: none;
   }
-  .burger-btn-active {
-    transform: translateX(220px);
-  }
-  .nav {
-    width: 360px;
-    justify-content: flex-start;
-    transform: translateX(-400px);
-  }
-  .nav__active {
-    transform: translateX(-30px);
-  }
-  .nav__list li {
-    margin-bottom: 25px;
-  }
-  .nav__list {
-    justify-content: end;
-    width: 250px;
-    padding-left: 0;
-  }
-  .nav__list-social li {
-    font-size: 18px;
-  }
-  .menu {
-    margin-bottom: 50px;
-  }
-  .menu__logo {
-    width: 170px;
-  }
-  .menu-product {
-    margin-bottom: 10px;
-  }
-  .menu-product {
-    margin-bottom: 10px;
-  }
   .header__content--container {
     display: flex;
     justify-content: space-between;
@@ -4657,6 +4626,40 @@ textarea.form__input {
   }
   .header__wrapper {
     margin-top: 150px;
+  }
+  .burger-btn-active {
+    transform: translateX(220px);
+  }
+  .nav {
+    width: 360px;
+    justify-content: flex-start;
+    transform: translateX(-400px);
+  }
+  .nav__active {
+    transform: translateX(-30px);
+  }
+  .nav__list li {
+    margin-bottom: 25px;
+  }
+  .nav__list {
+    justify-content: end;
+    width: 250px;
+    padding-left: 0;
+  }
+  .nav__list-social li {
+    font-size: 18px;
+  }
+  .menu {
+    margin-bottom: 50px;
+  }
+  .menu__logo {
+    width: 170px;
+  }
+  .menu-product {
+    margin-bottom: 10px;
+  }
+  .menu-product {
+    margin-bottom: 10px;
   }
   .link--hover {
     display: block;
@@ -4988,6 +4991,17 @@ textarea.form__input {
   .header-product {
     height: 50vw;
   }
+  .header__content {
+    width: 65%;
+    margin-bottom: 0;
+    margin-right: 34px;
+  }
+  .header__content-title {
+    width: auto;
+  }
+  .header__wrapper {
+    margin-top: 200px;
+  }
   .burger-btn {
     display: none;
   }
@@ -5103,17 +5117,6 @@ textarea.form__input {
   }
   .menu-product {
     margin-bottom: 10px;
-  }
-  .header__content {
-    width: 65%;
-    margin-bottom: 0;
-    margin-right: 34px;
-  }
-  .header__content-title {
-    width: auto;
-  }
-  .header__wrapper {
-    margin-top: 200px;
   }
   .preview {
     margin-top: 60px;
@@ -5355,7 +5358,7 @@ textarea.form__input {
   }
   .news-page__card {
     float: right;
-    width: 45%;
+    width: 31%;
   }
   .news-page__article {
     width: 100%;
@@ -5420,12 +5423,12 @@ textarea.form__input {
   .header-product {
     height: 33vw;
   }
+  .header__inner {
+    padding: 40px 30px;
+  }
   .nav__list-social {
     height: 90 0px;
     justify-content: center;
-  }
-  .header__inner {
-    padding: 40px 30px;
   }
   .services__container {
     max-width: 100%;
