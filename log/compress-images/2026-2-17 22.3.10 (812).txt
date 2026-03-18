@@ -1,0 +1,8 @@
+File from: [src/img/news/lazer-cuting-pipe.jpg]
+
+File to: [build/img/news/lazer-cuting-pipe.jpg]
+
+Compression algorithm: [mozjpeg]
+
+Description: Error: Command failed: D:\IT\Armax\Armax\node_modules\mozjpeg\vendor\cjpeg.exe -quality 75 -outfile build/img/news/lazer-cuting-pipe.jpg src/img/news/lazer-cuting-pipe.jpg
+Unrecognized input file format --- perhaps you need -targa

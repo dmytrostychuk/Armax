@@ -14,6 +14,9 @@ const multipipe = require('multipipe');
 const rename = require('gulp-rename');
 const gulpStylelint = require('@ronilaukkarinen/gulp-stylelint');
 const compress_images = require('compress-images');
+const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
+const htmlmin = require('gulp-htmlmin');
 
 gulp.task('styles', function () {
   return multipipe(
@@ -53,15 +56,18 @@ gulp.task('lint-css', function () {
 });
 
 gulp.task('min-js', function () {
-  return multipipe(gulp.src('src/js/*.js'), gulp.dest('build/js'));
+  return multipipe(
+    gulp.src('src/js/*.js'),
+    babel({
+      presets: ['@babel/env'],
+    }),
+    uglify(),
+    gulp.dest('build/js')
+  );
 });
 
 gulp.task('clean', function () {
   return del('build');
-});
-
-gulp.task('images', function () {
-  return gulp.src('src/img/**').pipe(gulp.dest('build/img'));
 });
 
 gulp.task('fonts', function () {
@@ -70,8 +76,8 @@ gulp.task('fonts', function () {
 
 gulp.task('img-compress', async function () {
   return await compress_images(
-    'src/**/*.{jpg,JPG,jpeg,JPEG,png,svg,gif}',
-    'build/',
+    'src/img/**/*.{jpg,JPG,jpeg,JPEG,png,svg,gif,webp,avif}',
+    'build/img/',
     {
       compress_force: false,
       statistic: true,
@@ -84,7 +90,7 @@ gulp.task('img-compress', async function () {
         command: ['-quality', '75'],
       },
     },
-    { png: { engine: 'pngquant', command: ['--quality=30-70', '-o'] } },
+    { png: { engine: 'pngquant', command: ['--quality=65-80', '-o'] } },
     { svg: { engine: 'svgo', command: '--multipass' } },
     {
       gif: {
@@ -117,26 +123,36 @@ gulp.task('img-compress', async function () {
 
 gulp.task('html', function () {
   return multipipe(
-    gulp.src('src/html/**/*.html', { since: gulp.lastRun('html') }),
-    debug({ title: 'html' }),
+    gulp.src('src/html/**/*.html'),
+    /*
+    htmlmin({
+      collapseWhitespace: true,
+      removeComments: true,
+      minifyJS: false,
+      minifyCSS: false,
+    }),
+    */
+    debug({ title: 'html-debug' }),
     gulp.dest('build')
   ).on(
     'error',
-    notify.onError(function (err) {
-      return {
-        title: 'html',
-        message: err.message,
-      };
-    })
+    function (err) {
+      console.error('HTML Error:', err.message);
+      this.emit('end');
+    }
   );
+});
+
+gulp.task('copy-images', function () {
+  return gulp.src('src/img/**/*').pipe(gulp.dest('build/img'));
 });
 
 gulp.task(
   'build',
   gulp.series(
     'clean',
-    gulp.parallel('html', 'lint-css', 'styles', 'min-js'),
-    'images',
+    gulp.parallel('html', 'lint-css', 'styles', 'min-js', 'copy-images'),
+    'img-compress',
     'fonts'
   )
 );
@@ -148,8 +164,9 @@ gulp.task('watch', function () {
 
   gulp.watch('src/styles/**/*.*', gulp.series('styles', 'lint-css'));
 
-  gulp.watch('src/img/**/*.*', gulp.series('images'));
+  gulp.watch('src/img/**/*.*', gulp.series('copy-images', 'img-compress'));
 });
+
 
 gulp.task('serve', function () {
   browserSync.init({

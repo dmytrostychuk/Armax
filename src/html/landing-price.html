@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ArmaxMG | Premium Elements</title>
+    
+    <!-- Google Fonts -->
+    <link rel="website icon" type="png" href="https://github.com/dmytrostychuk/Armax/blob/master/src/img/pngegg.png?raw=true/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --border: #eeeeee;
+            --accent: #000000;
+            --gray: #888888;
+            --transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* --- Базові стилі --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* --- Плавний курсор (тільки для десктопа) --- */
+        @media (min-width: 1025px) {
+            body, button, a, .card__visual { cursor: none !important; }
+            .cursor-dot, .cursor-follower {
+                position: fixed; top: 0; left: 0; pointer-events: none; z-index: 10000; border-radius: 50%; will-change: transform;
+            }
+            .cursor-dot { width: 6px; height: 6px; background: #fff; mix-blend-mode: difference; }
+            .cursor-follower { width: 40px; height: 40px; border: 1px solid rgba(128, 128, 128, 0.5); }
+            body.cursor-active .cursor-follower { width: 80px; height: 80px; background: rgba(0,0,0,0.03); border-color: transparent; }
+        }
+
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+
+        /* --- Header --- */
+        header {
+            position: fixed; top: 0; width: 100%; padding: 15px 0; z-index: 100;
+            backdrop-filter: blur(15px); background: rgba(255,255,255,0.8);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+
+        .logo-wrapper { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text); }
+        .logo-img { width: 100px; height: 60px; object-fit: cover; border-radius: 4px;}
+        .logo-text { font-weight: 600; font-size: 1.1rem; letter-spacing: 1px; text-transform: uppercase; }
+
+        .switchers { display: flex; gap: 20px; }
+        .switcher-group { display: flex; gap: 5px; }
+        .btn-s {
+            background: none; border: none; font-size: 0.75rem; padding: 5px 8px;
+            color: #aaa; transition: 0.3s; font-family: inherit; font-weight: 400;
+        }
+        .btn-s.active { color: var(--text); font-weight: 600; border-bottom: 2px solid var(--text); }
+
+        /* --- Hero --- */
+        .hero { padding: 160px 0 40px; text-align: center; }
+        .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 300; letter-spacing: -2px; margin-bottom: 30px; }
+
+        .category-nav { display: flex; justify-content: center; gap: 10px; margin-bottom: 60px; flex-wrap: wrap; }
+        .cat-btn {
+            background: #f8f8f8; border: 1px solid #eee; padding: 12px 24px;
+            border-radius: 50px; font-size: 0.85rem; color: #666; transition: var(--transition);
+        }
+        .cat-btn.active { background: var(--text); color: #fff; border-color: var(--text); }
+
+        /* --- Catalog Grid --- */
+        .catalog-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 60px 30px; padding-bottom: 100px;
+        }
+
+        /* --- Product Card --- */
+        .card { opacity: 0; transform: translateY(40px); transition: var(--transition); }
+        .card.is-visible { opacity: 1; transform: translateY(0); }
+
+        .card__visual {
+            position: relative; aspect-ratio: 1/1; background: #ffffff;
+            overflow: hidden; border-radius: 4px; border: 1px solid #f9f9f9;
+            touch-action: pan-y; user-select: none;
+        }
+
+        .card__slider {
+            display: flex; height: 100%; width: 100%;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform;
+        }
+        .card__slider img {
+            width: 100%; height: 100%; object-fit: contain;
+            flex-shrink: 0; pointer-events: none; background-color: #f0f0f073;
+            
+            
+        }
+
+        .card__nav {
+            position: absolute; top: 0; height: 100%; width: 100%;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 0 10px; pointer-events: none; opacity: 0; transition: 0.3s;
+        }
+        .card:hover .card__nav { opacity: 1; }
+        .nav-btn {
+            width: 36px; height: 36px; border-radius: 50%; border: 1px solid #eee;
+            background: rgba(255,255,255,0.9); display: flex; align-items: center; 
+            justify-content: center; pointer-events: auto;
+        }
+
+        .card__info { padding-top: 20px; }
+        .sku { font-size: 0.7rem; color: #bbb; text-transform: uppercase; letter-spacing: 0.5px; }
+        .title { font-size: 1.1rem; font-weight: 600; margin: 5px 0; min-height: 2.8rem; display: flex; align-items: center; }
+        .desc { font-size: 0.85rem; color: #666; height: 45px; overflow: hidden; margin-bottom: 12px; }
+        .specs { font-size: 0.8rem; border-top: 1px solid var(--border); padding-top: 10px; color: #999; }
+        .price { display: block; margin-top: 15px; font-size: 1.4rem; font-weight: 300; }
+
+        footer { padding: 60px 0; text-align: center; border-top: 1px solid var(--border); color: #999; font-size: 0.8rem; }
+
+        /* --- Адаптивність --- */
+        @media (max-width: 768px) {
+            .container { padding: 0 20px; }
+            .header-content { flex-direction: column; gap: 10px; }
+            .hero { padding: 140px 0 40px; }
+            .card__nav { opacity: 1; }
+            .nav-btn { width: 32px; height: 32px; }
+            .cursor-dot, .cursor-follower { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Курсор -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo-wrapper">
+                <img src="img/logo.avif" alt="Logo" class="logo-img">
+            </a>
+            <div class="switchers">
+                <div class="switcher-group" id="lang-switcher">
+                    <button class="btn-s active" onclick="setLang('ua', this)">UA</button>
+                    <button class="btn-s" onclick="setLang('en', this)">EN</button>
+                    <button class="btn-s" onclick="setLang('de', this)">DE</button>
+                    <button class="btn-s" onclick="setLang('pl', this)">PL</button>
+                </div>
+                <div class="switcher-group" id="curr-switcher">
+                    <button class="btn-s active" onclick="setCurr('UAH', this)">₴</button>
+                    <button class="btn-s" onclick="setCurr('USD', this)">$</button>
+                    <button class="btn-s" onclick="setCurr('EUR', this)">€</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 id="hero-title">Каталог</h1>
+            <div class="category-nav" id="category-nav"></div>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="catalog-grid" id="catalog"></div>
+    </main>
+
+    <footer id="footer-text"></footer>
+
+    <script>
+        // --- СТАН ПРОЕКТУ ---
+        let currentLang = 'ua';
+        let currentCurr = 'UAH';
+        let activeCategory = 'legs';
+        let rates = { USD: 0.024, EUR: 0.022, UAH: 1 };
+
+        const translations = {
+            ua: { title: "Каталог продукції", sku: "Арт.", dims: "Розмір", request: "Ціна за запитом", footer: "© 2018 ArmaxMG. Всі права захищені.", cats: { legs: "Меблеві опори", chairs: "Каркаси стільців", mechanisms: "Механізми", outdoor: "Вуличні меблі", beds: "Ліжка" } },
+            en: { title: "Product Catalog", sku: "SKU", dims: "Size", request: "Price on request", footer: "© 2018 ArmaxMG. All rights reserved.", cats: { legs: "Furniture Legs", chairs: "Chair Frames", mechanisms: "Mechanisms", outdoor: "Outdoor Furniture", beds: "Beds" } },
+            de: { title: "Produktkatalog", sku: "Art.", dims: "Größe", request: "Preis auf Anfrage", footer: "© 2018 ArmaxMG. Alle Rechte vorbehalten.", cats: { legs: "Möbelbeine", chairs: "Stuhlgestelle", mechanisms: "Mechanismen", outdoor: "Outdoor-Möbel", beds: "Betten" } },
+            pl: { title: "Katalog produktów", sku: "Kod", dims: "Wymiary", request: "Cena na zapytanie", footer: "© 2018 ArmaxMG. Wszelkie prawa zastrzeżone.", cats: { legs: "Nogi meblowe", chairs: "Ramy krzeseł", mechanisms: "Mechanizmy", outdoor: "Meble ogrodowe", beds: "Łóżka" } }
+        };
+
+        // --- ДАНІ ТОВАРІВ ---
+        // --- ЗАМІНІТЬ ЦЕЙ БЛОК У ВАШОМУ СКРИПТІ (productsData) ---
+
+const productsData = [
+    // Попередні товари
+    {
+        id: 1, category: 'legs', priceUah: 1760, sku: 'DPOS03', dims: "700х720х150",
+        imgs: ['../img/furniture-elements/DPOS03/1.png', '../img/furniture-elements/DPOS03/2.png'],
+        name: { ua: "Опора стола з дерев'яною вставкою", en: "Table leg with wooden insert", de: "Tischbein mit Holzeinsatz", pl: "Noga stołowa z drewnianą wstawką" },
+        desc: { ua: "Опора стола з дерев`яною вставкою має стильний та сучасний дизайн.", en: "Table leg with wooden insert features a stylish and modern design.", de: "Tischbein mit Holzeinsatz besticht durch modernes Design.", pl: "Noga stołowa z drewnianą wstawką cechuje się nowoczesnym designem." }
+    },
+    {
+        id: 2, category: 'chairs', priceUah: 1422, sku: 'CH-ARC-01', dims: "761x553x522",
+        imgs: ['../img/chair-frames/stilets-kafe-duha/1.png', '../img/chair-frames/stilets-kafe-duha/2.png'],
+        name: { ua: "PRO Seat Curve", en: "PRO Seat Curve", de: "PRO Seat Curve", pl: "PRO Seat Curve" },
+        desc: { ua: "Легкий каркас з округлими лініями для кафе та житлових інтер’єрів.", en: "Light frame with rounded lines for cafes and residential interiors.", de: "Leichtes Gestell mit abgerundeten Linien.", pl: "Lekka rama o zaokrąglonych liniach." }
+    },
+    {
+        id: 38, category: 'beds', priceUah: 0, sku: 'BD-FRM-LIFT-01', dims: "2000x1600x200",
+        imgs: ["../img/furniture-fittings/karkas-lizhka-metal-pidyomnyi-mehanizm/1.png", "../img/furniture-fittings/karkas-lizhka-metal-pidyomnyi-mehanizm/2.png"],
+        name: { 
+            ua: "Металевий каркас для ліжка", 
+            en: "Metal Bed Frame", 
+            de: "Metallbettgestell", 
+            pl: "Metalowa rama łóżka" 
+        },
+        
+        desc: { 
+            ua: "Металевий каркас для ліжка з міцною зварною конструкцією. Забезпечує надійну підтримку матраца.", 
+            en: "Metal bed frame with a solid welded construction. Provides reliable mattress support.", 
+            de: "Metallbettgestell mit solider Schweißkonstruktion. Bietet zuverlässige Unterstützung für die Matratze.", 
+            pl: "Metalowa rama łóżka o solidnej konstrukcji spawanej. Zapewnia niezawodne podparcie materaca." 
+        }
+    },
+    {
+        id: 3, category: 'mechanisms', priceUah: 273, sku: 'MF-LIFT-01', dims: "309x235x50",
+        imgs: ['../img/furniture-fittings/mehanizm-pidyomu-lizhka-paralelnyi/1.png', '../img/furniture-fittings/mehanizm-pidyomu-lizhka-paralelnyi/2.png'],
+        name: { ua: "Bed Lift Mechanism", en: "Bed Lift Mechanism", de: "Bettlift-Mechanismus", pl: "Mechanizm Bed Lift" },
+        desc: { ua: "Підйомний механізм для ліжок із нішами.", en: "Lifting mechanism for beds with storage niches.", de: "Hebemechanismus für Betten mit Stauraumnischen.", pl: "Mechanizm podnoszący do łóżek з niszami." }
+    },
+    {
+        id: 4, category: 'outdoor', priceUah: 11700, sku: 'SF-BNCH-01', dims: "1500х500х500",
+        imgs: ['../img/outdoor-furniture/lava-parkova-loft-metal-derevo/1.png', '../img/outdoor-furniture/lava-parkova-loft-metal-derevo/2.png'],
+        name: { ua: "ARMO", en: "ARMO", de: "ARMO", pl: "ARMO" },
+        desc: { ua: "Сучасна вулична лава в стилі мінімалізму.", en: "Modern outdoor bench in a minimalist style.", de: "Moderne Außenbank im minimalistischen Stil.", pl: "Nowoczesna ławka zewnętrzna w stylu minimalistycznym." }
+    },
+
+    // --- НОВІ МЕБЛЕВІ ОПОРИ ---
+    {
+        id: 5, category: 'legs', priceUah: 2220, sku: 'EVO03', dims: "700х720х200",
+        imgs: ['../img/furniture-elements/EVO03/1.png', '../img/furniture-elements/EVO03/2.png'],
+        name: { ua: "Опора стола Х", en: "Table Leg X", de: "Tischbein X", pl: "Noga stołowa X" },
+        desc: { ua: "Опора стола 'Х' має сучасний та індустріальний дизайн.", en: "Table leg 'X' features a modern industrial design.", de: "Tischbein 'X' hat ein modernes industrielles Design.", pl: "Noga stołowa 'X' posiada nowoczesny industrialny design." }
+    },
+    {
+        id: 6, category: 'legs', priceUah: 2570, sku: 'ST-OS26', dims: "800х720х800",
+        imgs: ['../img/furniture-elements/ST-OS26/1.png', '../img/furniture-elements/ST-OS26/2.png'],
+        name: { ua: "Опора стола XXO 7x1", en: "Table Leg XXO 7x1", de: "Tischbein XXO 7x1", pl: "Noga stołowa XXO 7x1" },
+        desc: { ua: "Підходить для використання в інтер'єрах з круглими або овальними стільницями.", en: "Perfect for interiors with round or oval tabletops.", de: "Ideal für Innenräume mit runden oder ovalen Tischplatten.", pl: "Idealna do wnętrz z okrągłymi lub owalnymi blatami." }
+    },
+    {
+        id: 7, category: 'legs', priceUah: 1650, sku: 'ST-OS19', dims: "700х390х700",
+        imgs: ['../img/furniture-elements/ST-OS19/1.png', '../img/furniture-elements/ST-OS19/2.png'],
+        name: { ua: "Опора для журнального столика", en: "Coffee Table Leg", de: "Couchtischbein", pl: "Noga do stolika kawowego" },
+        desc: { ua: "Забезпечує одночасно міцність і стильний дизайн у сучасних інтер'єрах.", en: "Provides both strength and stylish design in modern interiors.", de: "Bietet Stabilität und stilvolles Design für moderne Interieurs.", pl: "Zapewnia wytrzymałość i stylowy wygląd w nowoczesnych wnętrzach." }
+    },
+    {
+        id: 8, category: 'legs', priceUah: 1615, sku: 'STO47', dims: "550х730х550",
+        imgs: ['../img/furniture-elements/STO47/1.png', '../img/furniture-elements/STO47/2.png'],
+        name: { ua: "Опора стола T ф550", en: "Table Leg T f550", de: "Tischbein T f550", pl: "Noga stołowa T f550" },
+        desc: { ua: "Ідеально для кафе, ресторанів або офісів, поєднуючи естетику та функціональність.", en: "Perfect for cafes, restaurants, or offices, combining aesthetics and functionality.", de: "Ideal für Cafés, Restaurants oder Büros, vereint Ästhetik und Funktionalität.", pl: "Idealna do kawiarni, restauracji lub biur, łącząc estetykę i funkcjonalność." }
+    },
+    {
+        id: 9, category: 'legs', priceUah: 2675, sku: 'STO48', dims: "820х730х550",
+        imgs: ['../img/furniture-elements/STO48/1.png', '../img/furniture-elements/STO48/2.png'],
+        name: { ua: "Опора стола TT 820x550", en: "Table Leg TT 820x550", de: "Tischbein TT 820x550", pl: "Noga stołowa TT 820x550" },
+        desc: { ua: "Має сучасний дизайн та міцну конструкцію.", en: "Features a modern design and durable construction.", de: "Verfügt über ein modernes Design und eine robuste Konstruktion.", pl: "Charakteryzuje się nowoczesnym designem i solidną konstrukcją." }
+    },
+    {
+        id: 10, category: 'legs', priceUah: 1220, sku: 'STOS28', dims: "800х720х800",
+        imgs: ['../img/furniture-elements/STOS28/1.png', '../img/furniture-elements/STOS28/2.png'],
+        name: { ua: "Опора стола XXV 7х1", en: "Table Leg XXV 7х1", de: "Tischbein XXV 7х1", pl: "Noga stołowa XXV 7х1" },
+        desc: { ua: "Додає інтер'єру оригінальності та стилю, підходить для різних типів стільниць.", en: "Adds originality and style to the interior, suitable for various tabletops.", de: "Verleiht dem Interieur Originalität und Stil, passend für verschiedene Tischplatten.", pl: "Dodaje wnętrzu oryginalności i stylu, pasuje do różnych rodzajów blatów." }
+    },
+    {
+        id: 11, category: 'legs', priceUah: 2280, sku: 'STOS33', dims: "450х705х450",
+        imgs: ['../img/furniture-elements/STOS33/1.png', '../img/furniture-elements/STOS33/2.png'],
+        name: { ua: "Опора стола T 45x45", en: "Table Leg T 45x45", de: "Tischbein T 45x45", pl: "Noga stołowa T 45x45" },
+        desc: { ua: "Сучасний і мінімалістичний вигляд підходить для використання в різних інтер'єрах.", en: "Modern and minimalist look suitable for various interiors.", de: "Moderner und minimalistischer Look, passend für verschiedene Interieurs.", pl: "Nowoczesny i minimalistyczny wygląd pasujący do różnych wnętrz." }
+    },
+    {
+        id: 12, category: 'legs', priceUah: 1720, sku: 'STOS38', dims: "870х730х600",
+        imgs: ['../img/furniture-elements/STOS38/1.png', '../img/furniture-elements/STOS38/2.png'],
+        name: { ua: "Опора стола ХХS 73x75/3", en: "Table Leg ХХS 73x75/3", de: "Tischbein ХХS 73x75/3", pl: "Noga stołowa ХХS 73x75/3" },
+        desc: { ua: "Забезпечує високу стійкість, підходячи для великих та важких стільниць.", en: "Ensures high stability, suitable for large and heavy tabletops.", de: "Garantiert hohe Stabilität, geeignet für große und schwere Tischplatten.", pl: "Zapewnia wysoką stabilność, odpowiednia do dużych i ciężkich blatów." }
+    },
+    {
+        id: 13, category: 'legs', priceUah: 4740, sku: 'STO50', dims: "1500х720х700",
+        imgs: ['../img/furniture-elements/ST-OS4/1.png', '../img/furniture-elements/ST-OS4/2.png'],
+        name: { ua: "Опора стола STO50", en: "Table Leg STO50", de: "Tischbein STO50", pl: "Noga stołowa STO50" },
+        desc: { ua: "Індустріальна металева опора з високою жорсткістю конструкції.", en: "Industrial metal leg with high structural rigidity.", de: "Industrielles Metallbein mit hoher struktureller Steifigkeit.", pl: "Industrialna metalowa noga o wysokiej sztywności konstrukcji." }
+    },
+    
+    {
+        id: 14, category: 'mechanisms', priceUah: 305, sku: 'MF-TRNS-02', dims: "285x75х30",
+        imgs: ["../img/furniture-fittings/mehanizm-transformatsii-dyvana/1.png", "../img/furniture-fittings/mehanizm-transformatsii-dyvana/2.png"],
+        name: { ua: "Click-Clack Mechanism", en: "Click-Clack Mechanism", de: "Klick-Klack-Mechanismus", pl: "Mechanizm Klik-Klak" },
+        desc: { ua: "Механізм трансформації для диванів типу «книжка».", en: "Transformation mechanism for click-clack (book-type) sofas.", de: "Transformationsmechanismus für Schlafsofas vom Typ Klappsofa.", pl: "Mechanizm transformacji do sof typu wersalka." }
+    },
+    {
+        id: 15, category: 'mechanisms', priceUah: 164, sku: 'MF-LIFT-03', dims: "363x280x28",
+        imgs: ["../img/furniture-fittings/mehanizm-pidyomu-trykutnyi/1.png", "../img/furniture-fittings/mehanizm-pidyomu-trykutnyi/2.png"],
+        name: { ua: "Universal Sofa Lift Mechanism", en: "Universal Sofa Lift Mechanism", de: "Universal Sofa Hebemechanismus", pl: "Uniwersalny mechanizm podnoszenia sofy" },
+        desc: { ua: "Підйомний механізм для легкого доступу до ящиків у диванах та софах.", en: "Lifting mechanism for easy access to storage drawers in sofas.", de: "Hebemechanismus für den einfachen Zugang zu Bettkästen in Sofas.", pl: "Mechanizm podnoszący ułatwiający dostęp do skrzyń w sofach." }
+    },
+    {
+        id: 16, category: 'mechanisms', priceUah: 160, sku: 'MF-LEG-U04', dims: "300x120x50",
+        imgs: ["../img/furniture-fittings/opora-mebleva-metaleva-p-podibna/1.png", "../img/furniture-fittings/opora-mebleva-metaleva-p-podibna/2.png"],
+        name: { ua: "U-Shaped Furniture Leg", en: "U-Shaped Furniture Leg", de: "U-förmiger Möbelfuß", pl: "Noga meblowa w kształcie litery U" },
+        desc: { ua: "Металева опора для столів, лавок або корпусних меблів.", en: "Metal support for tables, benches, or cabinet furniture.", de: "Metallfuß für Tische, Bänke oder Korpusmöbel.", pl: "Metalowa noga do stołów, ławek lub mebli skrzyniowych." }
+    },
+    {
+        id: 17, category: 'mechanisms', priceUah: 121, sku: 'MF-LEG-A05', dims: "130x160x50",
+        imgs: ["../img/furniture-fittings/nozhka-mebleva-kutova-dyzainerska/1.png", "../img/furniture-fittings/nozhka-mebleva-kutova-dyzainerska/2.png"],
+        name: { ua: "Modern L-Shaped Sofa Leg", en: "Modern L-Shaped Sofa Leg", de: "Moderner L-förmiger Sofafuß", pl: "Nowoczesna noga do sofy L" },
+        desc: { ua: "Опора ідеально підходить для сучасних диванів, крісел та тумб.", en: "Perfect support for modern sofas, armchairs, and cabinets.", de: "Ideale Stütze für moderne Sofas, Sessel und Schränke.", pl: "Idealna noga do nowoczesnych sof, foteli i komód." }
+    },
+    // {
+    //     id: 18, category: 'mechanisms', priceUah: 1, sku: 'MF-HNG-07', dims: "156x126x49",
+    //     imgs: ["../img/furniture-fittings/zavis-meblevyi-pruzhynnyi/1.png", "../img/furniture-fittings/zavis-meblevyi-pruzhynnyi/2.png"],
+    //     name: { ua: "Adjustable Ratchet Headrest Mechanism", en: "Adjustable Ratchet Headrest Mechanism", de: "Verstellbarer Ratschen-Kopfstützenmechanismus", pl: "Regulowany mechanizm zagłówka" },
+    //     desc: { ua: "Функціональний механізм для регулювання кута нахилу підголівників або підлокітників.", en: "Functional mechanism for adjusting the angle of headrests or armrests.", de: "Funktionsmechanismus zur Verstellung des Winkels von Kopfstützen oder Armlehnen.", pl: "Funkcjonalny mechanizm do regulacji kąta nachylenia zagłówków lub podłokietników." }
+    // },
+    {
+        id: 19, category: 'mechanisms', priceUah: 135, sku: 'MF-BRKT-08', dims: "110х68х88",
+        imgs: ["../img/furniture-fittings/kronshtein-fiksator-meblevyi/1.png", "../img/furniture-fittings/kronshtein-fiksator-meblevyi/2.png"],
+        name: { ua: "U-Shaped Folding Frame Hinge", en: "U-Shaped Folding Frame Hinge", de: "U-förmiges Klapprahmenscharnier", pl: "Zawias składany U" },
+        desc: { ua: "Посилена П-подібна завіса для надійного з’єднання елементів меблевого каркаса.", en: "Reinforced U-shaped hinge for secure connection of furniture frame elements.", de: "Verstärktes U-förmiges Scharnier für die sichere Verbindung von Möbelrahmenteilen.", pl: "Wzmocniony zawias U do niezawodnego łączenia elementów ramy meblowej." }
+    },
+    {
+        id: 20, category: 'mechanisms', priceUah: 180, sku: 'MF-LCK-09', dims: "110x50x90",
+        imgs: ["../img/furniture-fittings/zashchipka-pruzhynna-metaleva/1.png", "../img/furniture-fittings/zashchipka-pruzhynna-metaleva/2.png"],
+        name: { ua: "Sofa Bed Pull-Out Release Handle", en: "Sofa Bed Pull-Out Release Handle", de: "Auslösegriff für Schlafsofas", pl: "Uchwyt zwalniający do sof" },
+        desc: { ua: "Ручка-важіль для механізмів трансформації диванів.", en: "Lever handle for sofa transformation mechanisms.", de: "Hebelgriff für Sofa-Transformationsmechanismen.", pl: "Uchwyt dźwigniowy do mechanizmów transformacji sof." }
+    },
+    {
+        id: 21, category: 'mechanisms', priceUah: 90, sku: 'MF-HNG-10', dims: "91x33x80",
+        imgs: ["../img/furniture-fittings/petlya-mebleva-posylena/1.png", "../img/furniture-fittings/petlya-mebleva-posylena/2.png"],
+        name: { ua: "Heavy-Duty Sofa Frame Hinge", en: "Heavy-Duty Sofa Frame Hinge", de: "Hochleistungs-Sofarahmenscharnier", pl: "Wzmocniony zawias ramy sofy" },
+        desc: { ua: "Посилена меблева петля для надійного з’єднання елементів каркаса м'яких меблів.", en: "Heavy-duty furniture hinge for reliable connection of upholstered furniture frame elements.", de: "Hochleistungsscharnier für die zuverlässige Verbindung von Polstermöbelrahmenteilen.", pl: "Wzmocniony zawias meblowy do niezawodnego łączenia elementów ramy mebli tapicerowanych." }
+    },
+    {
+        id: 22, category: 'chairs', priceUah: 1900, sku: 'CH-S-LINE-02', dims: "832x582x572",
+        imgs: ["../img/chair-frames/stilets-ofis-konsolnyi/1.png", "../img/chair-frames/stilets-ofis-konsolnyi/2.png"],
+        name: { ua: "PRO Seat Classic Arm", en: "PRO Seat Classic Arm", de: "PRO Seat Classic Arm", pl: "PRO Seat Classic Arm" },
+        desc: { ua: "Класичний каркас з підлокітниками.", en: "Classic frame with armrests.", de: "Klassisches Gestell mit Armlehnen.", pl: "Klasyczna rama z podłokietnikami." }
+    },
+    {
+        id: 23, category: 'chairs', priceUah: 1420, sku: 'PS-SFB-01', dims: "661x572x542",
+        imgs: ["../img/chair-frames/stilets-modern-myahe/1.png", "../img/chair-frames/stilets-modern-myahe/2.png"],
+        name: { ua: "PRO Seat Soft Back", en: "PRO Seat Soft Back", de: "PRO Seat Soft Back", pl: "PRO Seat Soft Back" },
+        desc: { ua: "Каркас з м’якою спинкою для підвищеного комфорту.", en: "Frame with a soft back for increased comfort.", de: "Gestell mit weicher Rückenlehne für erhöhten Komfort.", pl: "Rama z miękkim oparciem dla większego komfortu." }
+    },
+    {
+        id: 24, category: 'chairs', priceUah: 1220, sku: 'PS-MIN-01', dims: "757x571x571",
+        imgs: ["../img/chair-frames/stilets-minimal-tonkyi/1.png", "../img/chair-frames/stilets-minimal-tonkyi/2.png"],
+        name: { ua: "PRO Seat Minimal", en: "PRO Seat Minimal", de: "PRO Seat Minimal", pl: "PRO Seat Minimal" },
+        desc: { ua: "Мінімалістичний каркас для серійного виробництва.", en: "Minimalist frame for mass production.", de: "Minimalistisches Gestell für die Serienproduktion.", pl: "Minimalistyczna rama do produkcji seryjnej." }
+    },
+    {
+        id: 25, category: 'chairs', priceUah: 1550, sku: 'CH-SFT-05', dims: "700x640x640",
+        imgs: ["../img/chair-frames/krislo-myahe-tsylindr/1.png", "../img/chair-frames/krislo-myahe-tsylindr/2.png"],
+        name: { ua: "PRO Seat Lounge Soft", en: "PRO Seat Lounge Soft", de: "PRO Seat Lounge Soft", pl: "PRO Seat Lounge Soft" },
+        desc: { ua: "М’який лаунж-каркас для зон відпочинку та HoReCa.", en: "Soft lounge frame for relaxation areas and HoReCa.", de: "Weiches Lounge-Gestell für Ruhebereiche und HoReCa.", pl: "Miękka rama lounge do stref wypoczynku i HoReCa." }
+    },
+    {
+        id: 26, category: 'chairs', priceUah: 2600, sku: 'CH-KUB-06', dims: "760x730x700",
+        imgs: ["../img/chair-frames/krislo-loft-kvadrat/1.png", "../img/chair-frames/krislo-loft-kvadrat/2.png"],
+        name: { ua: "PRO Seat Cube", en: "PRO Seat Cube", de: "PRO Seat Cube", pl: "PRO Seat Cube" },
+        desc: { ua: "Геометричний каркас у стилі modern / loft.", en: "Geometric frame in modern / loft style.", de: "Geometrisches Gestell im Modern- / Loft-Stil.", pl: "Geometryczna rama w stylu modern / loft." }
+    },
+    {
+        id: 27, category: 'chairs', priceUah: 2300, sku: 'CH-GEO-07', dims: "690x610x540",
+        imgs: ["../img/chair-frames/krislo-karkas-heometriya/1.png", "../img/chair-frames/krislo-karkas-heometriya/2.png"],
+        name: { ua: "PRO Seat Cube Open", en: "PRO Seat Cube Open", de: "PRO Seat Cube Open", pl: "PRO Seat Cube Open" },
+        desc: { ua: "Відкритий кубічний каркас для контрактних просторів.", en: "Open cubic frame for contract spaces.", de: "Offenes kubisches Gestell für Objektbereiche.", pl: "Otwarta rama sześcienna do przestrzeni kontraktowych." }
+    },
+    {
+        id: 28, category: 'chairs', priceUah: 2870, sku: 'CH-ANG-08', dims: "936x682x630",
+        imgs: ["../img/chair-frames/krislo-nyzke-minimalizm/1.png", "../img/chair-frames/krislo-nyzke-minimalizm/2.png"],
+        name: { ua: "PRO Seat Relax", en: "PRO Seat Relax", de: "PRO Seat Relax", pl: "PRO Seat Relax" },
+        desc: { ua: "Низький каркас з нахилом для релакс-зон.", en: "Low tilted frame for relaxation zones.", de: "Niedriges, geneigtes Gestell für Relaxzonen.", pl: "Niska, nachylona rama do stref relaksu." }
+    },
+    {
+        id: 29, category: 'chairs', priceUah: 1515, sku: 'CH-VRT-09', dims: "810x572x520",
+        imgs: ["../img/chair-frames/stilets-videnskyi-modern/1.png", "../img/chair-frames/stilets-videnskyi-modern/2.png"],
+        name: { ua: "PRO Seat Bistro", en: "PRO Seat Bistro", de: "PRO Seat Bistro", pl: "PRO Seat Bistro" },
+        desc: { ua: "Базовий каркас зі спинкою для мас-маркету.", en: "Basic frame with backrest for the mass market.", de: "Basisgestell mit Rückenlehne für den Massenmarkt.", pl: "Podstawowa rama z oparciem dla rynku masowego." }
+    },
+    {
+        id: 30, category: 'chairs', priceUah: 1140, sku: 'CH-STD-10', dims: "755x497x470",
+        imgs: ["../img/chair-frames/stilets-praktyk-bazovyi/1.png", "../img/chair-frames/stilets-praktyk-bazovyi/2.png"],
+        name: { ua: "PRO Seat Basic Back", en: "PRO Seat Basic Back", de: "PRO Seat Basic Back", pl: "PRO Seat Basic Back" },
+        desc: { ua: "Базовий каркас зі спинкою для мас-маркету.", en: "Essential frame with backrest for the mass market.", de: "Standardgestell mit Rückenlehne für den Massenmarkt.", pl: "Podstawowa rama z oparciem dla rynku masowego." }
+    },
+    {
+        id: 31, category: 'chairs', priceUah: 850, sku: 'CH-BAR-11', dims: "842x532x532",
+        imgs: ["../img/chair-frames/stilets-barnyi-vysokyi/1.png", "../img/chair-frames/stilets-barnyi-vysokyi/2.png"],
+        name: { ua: "PRO Seat Bar", en: "PRO Seat Bar", de: "PRO Seat Bar", pl: "PRO Seat Bar" },
+        desc: { ua: "Каркас барного стільця.", en: "Bar stool frame.", de: "Barhockergestell.", pl: "Rama stołka barowego." }
+    },
+    {
+        id: 32, category: 'chairs', priceUah: 1650, sku: 'CH-BASE-12', dims: "760 х 420 х 360",
+        imgs: ["../img/chair-frames/karkas-barnoho-stiltsia/1.png", "../img/chair-frames/karkas-barnoho-stiltsia/3.png"],
+        name: { ua: "PRO Seat Bar Ring", en: "PRO Seat Bar Ring", de: "PRO Seat Bar Ring", pl: "PRO Seat Bar Ring" },
+        desc: { ua: "Барний каркас з круговою опорою для ніг, стабільний для HoReCa.", en: "Bar frame with a circular footrest, stable for HoReCa.", de: "Bargestell mit kreisförmiger Fußstütze, stabil für HoReCa.", pl: "Rama barowa z okrągłym podnóżkiem, stabilna dla HoReCa." }
+    },
+    {
+        id: 33, category: 'outdoor', priceUah: 7500, sku: 'SF-TBL-02', dims: "600х600х1200",
+        imgs: ["../img/outdoor-furniture/stil-barnyi-vulychnyi-perforovanyi/1.png", "../img/outdoor-furniture/stil-barnyi-vulychnyi-perforovanyi/2.png"],
+        name: { ua: "FORZA", en: "FORZA", de: "FORZA", pl: "FORZA" },
+        desc: { 
+            ua: "Стійка центральна опора з широкою основою гарантує стабільність навіть на нерівних поверхнях.", 
+            en: "Stable central support with a wide base ensures stability even on uneven surfaces.", 
+            de: "Stabile Mittelsäule mit breitem Fuß garantiert Standfestigkeit auch auf unebenen Flächen.", 
+            pl: "Stabilna noga centralna z szeroką podstawą gwarantuje stabilność nawet na nierównych powierzchniach." 
+        }
+    },
+    {
+        id: 34, category: 'outdoor', priceUah: 17000, sku: 'SF-SET-03', dims: "950х950х740",
+        imgs: ["../img/outdoor-furniture/piknik-nabir-kruhlyi-vulychnyi/1.png", "../img/outdoor-furniture/piknik-nabir-kruhlyi-vulychnyi/2.png"],
+        name: { ua: "URBIX LINE", en: "URBIX LINE", de: "URBIX LINE", pl: "URBIX LINE" },
+        desc: { 
+            ua: "Цілісна антивандальна конструкція, що обʼєднує круглий стіл та чотири сидіння.", 
+            en: "Solid anti-vandal construction combining a round table and four seats.", 
+            de: "Solide Anti-Vandalismus-Konstruktion, die einen runden Tisch und vier Sitze kombiniert.", 
+            pl: "Solidna konstrukcja wandaloodporna łącząca okrągły stół i cztery siedziska." 
+        }
+    },
+    {
+        id: 35, category: 'outdoor', priceUah: 16000, sku: 'SF-SET-04', dims: "1500х720х740",
+        imgs: ["../img/outdoor-furniture/stil-piknik-z-lavamy-priamokutnyi/1.png", "../img/outdoor-furniture/stil-piknik-z-lavamy-priamokutnyi/2.png"],
+        name: { ua: "URBIX", en: "URBIX", de: "URBIX", pl: "URBIX" },
+        desc: { 
+            ua: "Класичний стіл для пікніка з двома лавами на єдиному металевому каркасі.", 
+            en: "Classic picnic table with two benches on a single metal frame.", 
+            de: "Klassischer Picknicktisch mit zwei Bänken auf einem gemeinsamen Metallgestell.", 
+            pl: "Klasyczny stół piknikowy z dwiema ławkami na wspólnej metalowej ramie." 
+        }
+    },
+    {
+        id: 36, category: 'outdoor', priceUah: 5900, sku: 'SF-TBL-05', dims: "600х600х750",
+        imgs: ["../img/outdoor-furniture/stil-bistro-vulychnyi-derevo-metal/1.png", "../img/outdoor-furniture/stil-bistro-vulychnyi-derevo-metal/2.png"],
+        name: { ua: "FORZA LINE", en: "FORZA LINE", de: "FORZA LINE", pl: "FORZA LINE" },
+        desc: { 
+            ua: "Елегантний вуличний стіл для кавʼярень та терас.", 
+            en: "Elegant outdoor table for cafes and terraces.", 
+            de: "Eleganter Außentisch für Cafés und Terrassen.", 
+            pl: "Elegancki stół zewnętrzny do kawiarni i na tarasy." 
+        }
+    },
+    {
+        id: 37, category: 'outdoor', priceUah: 4800, sku: 'SF-BIN-06', dims: "500х280х720",
+        imgs: ["../img/outdoor-furniture/urna-vulychna-metaleva-modern/1.png", "../img/outdoor-furniture/urna-vulychna-metaleva-modern/2.png"],
+        name: { ua: "URBOX", en: "URBOX", de: "URBOX", pl: "URBOX" },
+        desc: { 
+            ua: "Дизайнерська металева урна з похилим дашком, що захищає від опадів.", 
+            en: "Designer metal trash bin with a sloped roof protecting from precipitation.", 
+            de: "Designer-Metallabfalleimer mit Schrägdach zum Schutz vor Niederschlag.", 
+            pl: "Designerski metalowy kosz na śmieci ze skośnym dachem chroniącym przed opadami." 
+        }
+    },
+    {
+        id: 39,
+        category: 'beds', // Нова категорія
+        priceUah: 10200,
+        sku: 'BD-BNK-03',
+        dims: "2090x960x1400",
+        imgs: [
+            "./img/custom-orders/lizhko-dvoyarusne-metaleve/1.png",
+            "./img/custom-orders/lizhko-dvoyarusne-metaleve/2.png"
+        ],
+        name: {
+            ua: "Двоярусне ліжко",
+            en: "Bunk Bed",
+            de: "Etagenbett",
+            pl: "Łóżko piętrowe"
+        },
+        desc: {
+            ua: "Професійне двоярусне ліжко для військових казарм, модульних містечок, хостелів та гуртожитків.",
+            en: "Professional bunk bed for military barracks, modular towns, hostels, and dormitories.",
+            de: "Professionelles Etagenbett für Militärkasernen, Modularstädte, Hostels und Wohnheime.",
+            pl: "Profesjonalne łóżko piętrowe do koszar wojskowych, miasteczek modułowych, hosteli i akademików."
+        }
+    }
+    
+];
+
+// --- ПІСЛЯ ЦЬОГО БЛОКУ КОД ЗАЛИШАЄТЬСЯ БЕЗ ЗМІН ---
+
+       
+
+        // --- ЛОГІКА ВАЛЮТ ---
+        async function fetchRates() {
+            try {
+                const res = await fetch('https://api.exchangerate-api.com/v4/latest/UAH');
+                const data = await res.json();
+                rates = { UAH: 1, USD: data.rates.USD, EUR: data.rates.EUR };
+            } catch(e) { console.warn("Rates API failed"); }
+            render();
+        }
+
+        // --- РЕНДЕР СТОРІНКИ ---
+        function render() {
+            const t = translations[currentLang];
+            document.getElementById('hero-title').innerText = t.title;
+            document.getElementById('footer-text').innerText = t.footer;
+
+            // Навігація категорій
+            document.getElementById('category-nav').innerHTML = Object.keys(t.cats).map(k => `
+                <button class="cat-btn ${activeCategory===k?'active':''}" onclick="setCategory('${k}', this)">${t.cats[k]}</button>
+            `).join('');
+
+            // Сітка товарів
+            const filtered = productsData.filter(p => p.category === activeCategory);
+            document.getElementById('catalog').innerHTML = filtered.map(p => `
+                <article class="card">
+                    <div class="card__visual" data-id="${p.id}">
+                        <div class="card__slider" id="slider-${p.id}" data-index="0">
+                            ${p.imgs.map(img => `<img src="${img}" alt="Product">`).join('')}
+                        </div>
+                        ${p.imgs.length > 1 ? `
+                        <div class="card__nav">
+                            <button class="nav-btn" onclick="moveSlide(${p.id}, -1)">←</button>
+                            <button class="nav-btn" onclick="moveSlide(${p.id}, 1)">→</button>
+                        </div>` : ''}
+                    </div>
+                    <div class="card__info">
+                        <span class="sku">${t.sku}: ${p.sku}</span>
+                        <h2 class="title">${p.name[currentLang]}</h2>
+                        <p class="desc">${p.desc[currentLang]}</p>
+                        <div class="specs">${t.dims}: <strong>${p.dims}</strong></div>
+                        <span class="price">${p.priceUah > 0 ? (p.priceUah * rates[currentCurr]).toFixed(currentCurr==='UAH'?0:2) + ' ' + (currentCurr==='UAH'?'₴':currentCurr==='USD'?'$':'€') : t.request}</span>
+                    </div>
+                </article>
+            `).join('');
+
+            initSliders();
+            setupIntersection();
+        }
+
+        // --- УНІВЕРСАЛЬНИЙ СЛАЙДЕР (Pointer Events) ---
+        function initSliders() {
+    const visuals = document.querySelectorAll('.card__visual');
+    visuals.forEach(visual => {
+        let startX = 0;
+        let isDown = false;
+
+        visual.onpointerdown = (e) => {
+            // ФІКС: Якщо клікнули на стрілку, не вмикаємо логіку свайпу
+            if (e.target.closest('.nav-btn')) return; 
+
+            startX = e.clientX;
+            isDown = true;
+            visual.setPointerCapture(e.pointerId);
+        };
+
+        visual.onpointerup = (e) => {
+            if (!isDown) return;
+            isDown = false;
+            visual.releasePointerCapture(e.pointerId); // Звільняємо вказівник
+
+            const diff = startX - e.clientX;
+            const id = visual.dataset.id;
+            if (Math.abs(diff) > 50) {
+                moveSlide(id, diff > 0 ? 1 : -1);
+            }
+        };
+    });
+}
+
+        window.moveSlide = (id, dir) => {
+            const slider = document.getElementById(`slider-${id}`);
+            if(!slider) return;
+            const imgs = slider.querySelectorAll('img');
+            let idx = (parseInt(slider.dataset.index) + dir + imgs.length) % imgs.length;
+            slider.style.transform = `translateX(-${idx * 100}%)`;
+            slider.dataset.index = idx;
+        };
+
+        // --- КЕРУВАННЯ СТАНОМ ---
+        function setLang(l, btn) {
+            currentLang = l;
+            document.querySelectorAll('#lang-switcher .btn-s').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            render();
+        }
+
+        function setCurr(c, btn) {
+            currentCurr = c;
+            document.querySelectorAll('#curr-switcher .btn-s').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            render();
+        }
+
+        function setCategory(c, btn) {
+            activeCategory = c;
+            document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            render();
+        }
+
+        function setupIntersection() {
+            const obs = new IntersectionObserver(entries => {
+                entries.forEach((entry, i) => {
+                    if(entry.isIntersecting) setTimeout(() => entry.target.classList.add('is-visible'), i*50);
+                });
+            }, {threshold: 0.1});
+            document.querySelectorAll('.card').forEach(c => obs.observe(c));
+        }
+
+        // --- ПЛАВНИЙ КУРСОР ---
+        const dot = document.querySelector('.cursor-dot');
+        const follower = document.querySelector('.cursor-follower');
+        let mX = 0, mY = 0, dX = 0, dY = 0, fX = 0, fY = 0;
+
+        document.addEventListener('mousemove', e => { mX = e.clientX; mY = e.clientY; });
+
+        function animateCursor() {
+            dX += (mX - dX) * 0.2; dY += (mY - dY) * 0.2;
+            fX += (mX - fX) * 0.1; fY += (mY - fY) * 0.1;
+            if(dot) dot.style.transform = `translate3d(${dX}px, ${dY}px, 0) translate(-50%, -50%)`;
+            if(follower) follower.style.transform = `translate3d(${fX}px, ${fY}px, 0) translate(-50%, -50%)`;
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+
+        document.addEventListener('mouseover', e => {
+            if(e.target.closest('button, a, .card__visual')) document.body.classList.add('cursor-active');
+        });
+        document.addEventListener('mouseout', e => {
+            if(e.target.closest('button, a, .card__visual')) document.body.classList.remove('cursor-active');
+        });
+
+        // Запуск
+        fetchRates();
+    </script>
+</body>
+</html>

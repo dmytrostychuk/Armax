@@ -1,0 +1,8 @@
+File from: [src/img/pipe-bending.jpg]
+
+File to: [build/img/pipe-bending.jpg]
+
+Compression algorithm: [mozjpeg]
+
+Description: Error: Command failed: D:\IT\Armax\Armax\node_modules\mozjpeg\vendor\cjpeg.exe -quality 75 -outfile build/img/pipe-bending.jpg src/img/pipe-bending.jpg
+Unrecognized input file format --- perhaps you need -targa

@@ -56,14 +56,14 @@ pl: 'Nasza produkcja',
     pl: 'Sprzęt rolniczy',
   },
   'nav_page-6': {
-    ua: 'Металеві опори',
+    ua: 'Меблеві опори (ніжки)',
 en: 'Metal supports',
 de: 'Metallstützen',
 pl: 'Metalowe podpory',
 
   },
   'nav_page-6-1': {
-    ua: 'Металеві опори',
+    ua: 'Меблеві опори для столу',
 en: 'Metal supports',
 de: 'Metallstützen',
 pl: 'Metalowe podpory',
@@ -136,10 +136,10 @@ pl: 'Tworzymy gotowe wyroby metalowe dla branży meblarskiej, rolniczej, budowla
 
   },
 'about-us-text-3': {
-  ua: 'Наша команда з понад 120 фахівців гарантує точність, міцність та стабільність серійного виробництва.',
-  en: 'Our team of over 120 specialists guarantees precision, strength, and stability in serial production.',
-  de: 'Unser Team aus über 120 Fachkräften garantiert Präzision, Festigkeit und Stabilität in der Serienproduktion.',
-  pl: 'Nasz zespół ponad 120 specjalistów gwarantuje precyzję, wytrzymałość i stabilność produkcji seryjnej.',
+  ua: 'Виробництво металевих виробів у Луцьку: наша команда з понад 120 фахівців гарантує точність та якість.',
+  en: 'Production of metal products in Lutsk: our team of over 120 specialists guarantees precision and quality.',
+  de: 'Herstellung von Metallprodukten in Luzk: Unser Team aus über 120 Fachkräften garantiert Präzision und Qualität.',
+  pl: 'Produkcja wyrobów metalowych w Łucku: nasz zespół ponad 120 specjalistów gwarantuje precyzję i jakość.',
   
   },
 
@@ -541,7 +541,7 @@ pl: 'Szczególnie cenimy profesjonalne podejście, wysoki poziom kompetencji tec
     pl: 'Elementy meblowe',
   },
   'wara_page-2-1': {
-    ua: 'Металеві опори',
+    ua: 'Меблеві опори (ніжки)',
 en: 'Metal supports',
 de: 'Metallstützen',
 pl: 'Metalowe podpory',
@@ -821,7 +821,7 @@ pl: 'Gięcie metalu',
     pl: 'O nas',
   },
   'header-content_page-2': {
-    ua: 'Armax MG – сучасне та технологічно-оснащене українське виробництво, спеціалізуємось на металообробці з 2018 року. Надаємо повний комплекс послуг з обробки металу: лазерного різання, згинання, зварювання металевих виробів та фарбування.',
+    ua: 'Armax MG – сучасне та технологічно-оснащене українське виробництво в Луцьку, спеціалізуємось на металообробці з 2018 року. Надаємо повний комплекс послуг: лазерна порізка, гнуття, зварювання металоконструкцій та меблевих опор.',
     en: 'Armax MG is a modern and technologically equipped Ukrainian manufacturing company specializing in metal processing since 2018. We provide a full range of metal processing services including laser cutting, bending, welding of metal products, and painting.',
     de: 'Armax MG ist ein modernes und technologisch ausgestattetes ukrainisches Produktionsunternehmen, das sich seit 2018 auf die Metallverarbeitung spezialisiert hat. Wir bieten eine umfassende Palette von Metallverarbeitungsdienstleistungen an, darunter Laserschneiden, Biegen, Schweißen von Metallprodukten und Lackieren.',
     pl: 'Armax MG to nowoczesna i technologicznie wyposażona ukraińska firma produkcyjna specjalizująca się w obróbce metali od 2018 roku. Oferujemy pełen zakres usług obróbki metali, w tym cięcie laserowe, gięcie, spawanie produktów metalowych i malowanie.',
@@ -2262,6 +2262,12 @@ pl: 'Gięcie metalu',
     de: '1150 kg',
     pl: '1150 kg',
   },
+  'card-text-8-1': {
+    ua: 'Довжина',
+en: 'Length',
+de: 'Länge',
+pl: 'Długość',
+  },
   'card-text-exc-7': {
     ua: '42 кг',
     en: '42 kg',
@@ -3285,6 +3291,45 @@ pl: 'Łyżka do napełniania Big Bagów to wysoce wydajny osprzęt przeznaczony 
     pl: 'Cieszymy się, że możemy podzielić się wspaniałą wiadomością — już wkrótce otwarcie piątego warsztatu Armax MG! Nowy warsztat wyposażony jest w nowoczesny laser do cięcia rur, który znacząco rozszerzy nasze możliwości produkcyjne i pozwoli realizować jeszcze bardziej skomplikowane zadania z wyjątkową precyzją. Na naszej stronie internetowej będziecie mogli zobaczyć cały proces tworzenia tego warsztatu: od początkowej budowy po uruchomienie innowacyjnego sprzętu. Dołączcie do historii rozwoju Armax MG razem z nami!',
   },
 
+  'news-index-12': {
+    ua: 'Міжнародна меблева виставка',
+en: 'International furniture exhibition',
+de: 'Internationale Möbelmesse',
+pl: 'Międzynarodowe targi meblowe',
+  },
+  'news-index-13': {
+    ua: 'Ми провели серію стратегічних зустрічей, обговорили перспективи серійного виробництва металевих компонентів та заклали основу для нових партнерств із провідними європейськими компаніями.',
+en: 'We held a series of strategic meetings, discussed the prospects of serial production of metal components, and laid the foundation for new partnerships with leading European companies.',
+de: 'Wir führten eine Reihe strategischer Treffen durch, diskutierten die Perspektiven der Serienproduktion von Metallkomponenten und legten den Grundstein für neue Partnerschaften mit führenden europäischen Unternehmen.',
+pl: 'Przeprowadziliśmy serię strategicznych spotkań, omówiliśmy perspektywy seryjnej produkcji komponentów metalowych oraz stworzyliśmy podstawy do nowych partnerstw z wiodącymi europejskimi firmami.',
+  },
+  'news-index-13-1': {
+    ua: 'Більше трьохсот експонентів, з різних країн Європи та Азії.\n\nПотужна концентрація виробників, постачальників та інноваційних рішень для меблевої індустрії.\n\nМи провели серію стратегічних зустрічей, обговорили перспективи серійного виробництва металевих компонентів та заклали основу для нових партнерств із провідними європейськими компаніями.\n\nЦе були дні інтенсивної роботи, живого нетворкінгу та реальних можливостей для масштабування.',
+    en: 'More than three hundred exhibitors from various countries across Europe and Asia.\n\nA powerful concentration of manufacturers, suppliers, and innovative solutions for the furniture industry.\n\nWe held a series of strategic meetings, discussed the prospects of serial production of metal components, and laid the foundation for new partnerships with leading European companies.\n\nThese were days of intensive work, active networking, and real opportunities for scaling.',
+    de: 'Mehr als dreihundert Aussteller aus verschiedenen Ländern Europas und Asiens.\n\nEine starke Konzentration von Herstellern, Lieferanten und innovativen Lösungen für die Möbelindustrie.\n\nWir führten eine Reihe strategischer Treffen durch, diskutierten die Perspektiven der Serienproduktion von Metallkomponenten und legten den Grundstein für neue Partnerschaften mit führenden europäischen Unternehmen.\n\nEs waren Tage intensiver Arbeit, lebendigen Networkings und realer Möglichkeiten zur Skalierung.',
+    pl: 'Ponad trzystu wystawców z różnych krajów Europy i Azji.\n\nSilna koncentracja producentów, dostawców oraz innowacyjnych rozwiązań dla branży meblarskiej.\n\nPrzeprowadziliśmy serię strategicznych spotkań, omówiliśmy perspektywy seryjnej produkcji komponentów metalowych oraz stworzyliśmy podstawy do nowych partnerstw z wiodącymi europejskimi firmami.\n\nByły to dni intensywnej pracy, aktywnego networkingu oraz realnych możliwości skalowania.',
+   },
+
+  'news-index-14': {
+    ua: 'Армакс МГ отримала сертифікат TÜV',
+en: 'Armax MG has received the TÜV certificate',
+de: 'Armax MG hat das TÜV-Zertifikat erhalten',
+pl: 'Armax MG otrzymała certyfikat TÜV',
+  },
+  'news-index-15': {
+    ua: 'Компанія Армакс МГ успішно пройшла аудит та отримала міжнародний сертифікат TÜV, що підтверджує відповідність наших виробничих процесів європейським стандартам якості та безпеки.',
+en: 'Armax MG has successfully passed the audit and received the international TÜV certificate, confirming that our production processes comply with European quality and safety standards.',
+de: 'Armax MG hat das Audit erfolgreich bestanden und das internationale TÜV-Zertifikat erhalten, das bestätigt, dass unsere Produktionsprozesse den europäischen Qualitäts- und Sicherheitsstandards entsprechen.',
+pl: 'Firma Armax MG pomyślnie przeszła audyt i otrzymała międzynarodowy certyfikat TÜV, potwierdzający zgodność naszych procesów produkcyjnych z europejskimi standardami jakości i bezpieczeństwa.',
+  },
+
+  'news-index-16': {
+    ua: 'Компанія Армакс МГ успішно пройшла аудит та отримала міжнародний сертифікат TÜV, що підтверджує відповідність наших виробничих процесів європейським стандартам якості та безпеки.\n\nЦе важливий крок у розвитку компанії та ще одне підтвердження того, що ми працюємо за найвищими вимогами до контролю якості, технологій і організації виробництва.\n\nМи продовжуємо вдосконалюватися та відкриті до нових партнерств і міжнародних проєктів.',
+en: 'Armax MG has successfully passed the audit and received the international TÜV certificate, confirming that our production processes comply with European quality and safety standards.\n\nThis is an important milestone in the company’s development and further proof that we operate in accordance with the highest requirements for quality control, technology, and production management.\n\nWe continue to improve and remain open to new partnerships and international projects.',
+de: 'Armax MG hat das Audit erfolgreich bestanden und das internationale TÜV-Zertifikat erhalten, das die Übereinstimmung unserer Produktionsprozesse mit europäischen Qualitäts- und Sicherheitsstandards bestätigt.\n\nDies ist ein wichtiger Schritt in der Entwicklung des Unternehmens und ein weiterer Beweis dafür, dass wir nach höchsten Anforderungen an Qualitätskontrolle, Technologie und Produktionsorganisation arbeiten.\n\nWir entwickeln uns kontinuierlich weiter und sind offen für neue Partnerschaften und internationale Projekte.',
+pl: 'Firma Armax MG pomyślnie przeszła audyt i otrzymała międzynarodowy certyfikat TÜV, potwierdzający zgodność naszych procesów produkcyjnych z europejskimi standardami jakości i bezpieczeństwa.\n\nTo ważny krok w rozwoju firmy oraz kolejne potwierdzenie, że działamy zgodnie z najwyższymi wymaganiami w zakresie kontroli jakości, technologii i organizacji produkcji.\n\nNieustannie się rozwijamy i pozostajemy otwarci na nowe partnerstwa oraz projekty międzynarodowe.',
+  },
+
   'calc-1': {
     ua: 'Залишилися запитання? Залиште свої дані, ми з Вами зв`яжемося!',
     en: 'Have any questions? Leave your details, and we will contact you!',
@@ -3805,6 +3850,25 @@ de: 'Ein klassisches Scharnier mit verstärkten Wänden für schwere Möbelfront
 pl: 'Klasyczne zawiasy z pogrubionymi ściankami do ciężkich frontów meblowych i klap. Wielosekcyjny zawias zapewnia brak luzów i płynność ruchu przez cały okres użytkowania.',
 
   },
+'ff-name-11': {
+  ua: 'Металевий каркас для ліжка',
+  en: 'Metal bed frame',
+  de: 'Metallbettrahmen',
+  pl: 'Metalowa rama łóżka',
+  },
+  'ff-article-11': {
+    ua: 'BD-FRM-LIFT-01',
+    en: 'BD-FRM-LIFT-01',
+    de: 'BD-FRM-LIFT-01',
+    pl: 'BD-FRM-LIFT-01',
+  },
+  'ff-description-11': {
+    ua: 'Металевий каркас для ліжка з міцною зварною конструкцією. Забезпечує надійну підтримку матраца та довгий термін експлуатації. Підходить для житлових, готельних і комерційних приміщень.',
+en: 'A metal bed frame with a durable welded structure. Provides reliable mattress support and a long service life. Suitable for residential, hotel, and commercial use.',
+de: 'Ein Metallbettrahmen mit robuster Schweißkonstruktion. Gewährleistet eine zuverlässige Unterstützung der Matratze und eine lange Lebensdauer. Geeignet für Wohnräume, Hotels und gewerbliche Anwendungen.',
+pl: 'Metalowa rama łóżka z wytrzymałą konstrukcją spawaną. Zapewnia solidne podparcie materaca oraz długą żywotność. Odpowiednia do zastosowań domowych, hotelowych i komercyjnych.',
+  },
+
   'of-name-1': {
     ua: 'ARMO',
     en: 'ARMO',
@@ -3920,6 +3984,25 @@ de: 'Ein Designer-Metallabfallbehälter mit schrägem Dach, das vor Niederschlag
 pl: 'Designerski metalowy kosz na śmieci ze skośnym daszkiem, który chroni przed opadami i zapobiega rozwiewaniu odpadów przez wiatr. Lakoniczny czarny korpus z powłoką antykorozyjną sprawia, że jest dyskretnym, a jednocześnie funkcjonalnym elementem miejskiego krajobrazu. Wyposażony w wygodny system opróżniania oraz możliwość mocowania do podłoża.',
 
   },
+  'co-name-1': {
+    ua: 'Двоярусне ліжко',
+en: 'Bunk bed',
+de: 'Etagenbett',
+pl: 'Łóżko piętrowe',
+  },
+  'co-text-1': {
+    ua: 'Професійне двоярусне ліжко для використання у військових казармах, модульних містечках, польових таборах, хостелах та гуртожитках. Конструкція розрахована на надвисокі навантаження та щоденну експлуатацію в складних умовах. Це ідеальне поєднання ергономіки, безпеки та довговічності.',
+en: 'Professional bunk bed designed for use in military barracks, modular camps, field camps, hostels, and dormitories. The structure is engineered for extremely high loads and daily operation in harsh conditions. It is an ideal combination of ergonomics, safety, and durability.',
+de: 'Professionelles Etagenbett für den Einsatz in Militärkasernen, Modulstädten, Feldlagern, Hostels und Wohnheimen. Die Konstruktion ist für extrem hohe Belastungen und den täglichen Einsatz unter anspruchsvollen Bedingungen ausgelegt. Eine ideale Kombination aus Ergonomie, Sicherheit und Langlebigkeit.',
+pl: 'Profesjonalne łóżko piętrowe przeznaczone do użytku w koszarach wojskowych, miasteczkach modułowych, obozach polowych, hostelach oraz akademikach. Konstrukcja została zaprojektowana z myślą o bardzo wysokich obciążeniach i codziennej eksploatacji w trudnych warunkach. To idealne połączenie ergonomii, bezpieczeństwa i trwałości.',
+  },
+  'co-read-1': {
+    ua: 'Читати більше',
+en: 'Read more',
+de: 'Mehr lesen',
+pl: 'Czytaj więcej',
+  },
+  
 };
 
 // Перевіряємо шлях сторінки і задаємо текстові змінні
@@ -3976,12 +4059,22 @@ function resetActiveClass(arr, activeClass) {
 function checkActiveLangButton() {
   const savedLang = localStorage.getItem('language') || 'ua'; // За замовчуванням 'ua'
   currentLang = savedLang;
-  document
-    .querySelector(`[data-btn="${savedLang}"]`)
-    .classList.add('header__btn_active');
+
+  // Знаходимо всі кнопки для вибору мови
+  const buttons = document.querySelectorAll('[data-btn]');
+
+  // Скидаємо активний клас для всіх кнопок
+  buttons.forEach((btn) => {
+    btn.classList.remove('header__btn_active');
+  });
+
+  // Додаємо активний клас до відповідних кнопок
+  document.querySelectorAll(`[data-btn="${savedLang}"]`).forEach((btn) => {
+    btn.classList.add('header__btn_active');
+  });
+
   changeLang(); // Оновлюємо текст відповідно до збереженої мови
 }
-checkActiveLangButton();
 
 // Перевірка мови браузера
 function checkBrowserLang() {
@@ -3999,28 +4092,8 @@ document
   .addEventListener('click', function (event) {
     event.preventDefault(); // Забороняємо дійсне переходити по посиланню
   });
-// Функція для перевірки та активації кнопки мови
-function checkActiveLangButton() {
-  const savedLang = localStorage.getItem('language') || 'ua'; // За замовчуванням 'ua'
-  currentLang = savedLang;
 
-  // Знаходимо всі кнопки для вибору мови
-  const langButtons = document.querySelectorAll('[data-btn]');
-
-  // Скидаємо активний клас для всіх кнопок
-  langButtons.forEach((btn) => {
-    btn.classList.remove('header__btn_active');
-  });
-
-  // Додаємо активний клас до відповідних кнопок
-  document.querySelectorAll(`[data-btn="${savedLang}"]`).forEach((btn) => {
-    btn.classList.add('header__btn_active');
-  });
-
-  changeLang(); // Оновлюємо текст відповідно до збереженої мови
-}
-
-// Перевірка мови при завантаженні сторінки
+// Ініціалізація при завантаженні сторінки
 document.addEventListener('DOMContentLoaded', function () {
   checkActiveLangButton();
 });
@@ -4028,8 +4101,8 @@ document.addEventListener('DOMContentLoaded', function () {
 // Додаємо обробники подій на всі кнопки мов
 document.querySelectorAll('[data-btn]').forEach((btn) => {
   btn.addEventListener('click', (event) => {
-    currentLang = event.target.dataset.btn;
-    localStorage.setItem('language', event.target.dataset.btn);
+    currentLang = event.currentTarget.dataset.btn;
+    localStorage.setItem('language', event.currentTarget.dataset.btn);
     checkActiveLangButton(); // Перевіряємо та оновлюємо активну кнопку
   });
 });

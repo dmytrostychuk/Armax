@@ -93,6 +93,15 @@ document.addEventListener('DOMContentLoaded', function () {
   blocks.forEach(function (block) {
     var readMoreBtn = block.querySelector('.read-more-btn');
     var fullText = block.querySelector('.full-text');
+    var lang = document.documentElement.lang || 'uk';
+    var translations = {
+      'uk': { more: 'Читати більше', hide: 'Сховати' },
+      'en': { more: 'Read more', hide: 'Hide' },
+      'pl': { more: 'Czytaj więcej', hide: 'Ukryj' },
+      'de': { more: 'Mehr lesen', hide: 'Verbergen' },
+      'fr': { more: 'Lire la suite', hide: 'Masquer' }
+    };
+    var labels = translations[lang] || translations['uk'];
 
     if (readMoreBtn && fullText) {
       readMoreBtn.addEventListener('click', function (e) {
@@ -102,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
         readMoreBtn.classList.toggle('expanded', isExpanded);
         var textSpan = readMoreBtn.querySelector('.text');
         if (textSpan) {
-          textSpan.textContent = isExpanded ? 'Сховати' : 'Читати більше';
+          textSpan.textContent = isExpanded ? labels.hide : labels.more;
         }
       });
     }

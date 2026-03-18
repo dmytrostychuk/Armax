@@ -1,0 +1,8 @@
+File from: [src/img/metal-bracket.jpg]
+
+File to: [build/img/metal-bracket.jpg]
+
+Compression algorithm: [mozjpeg]
+
+Description: Error: Command failed: D:\IT\Armax\Armax\node_modules\mozjpeg\vendor\cjpeg.exe -quality 75 -outfile build/img/metal-bracket.jpg src/img/metal-bracket.jpg
+Unrecognized input file format --- perhaps you need -targa

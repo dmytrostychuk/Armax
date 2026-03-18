@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://armax-mg.com.ua/sitemap.xml
